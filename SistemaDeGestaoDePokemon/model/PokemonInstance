@@ -1,0 +1,110 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace GestaoDePokemon.model
+{
+    public class PokemonInstance
+    {
+        private readonly List<PokemonMove> _moves = new();
+
+        public Pokemon Species { get; }
+
+        public PokemonForm Form { get; }
+
+        public PokemonGender Gender { get; }
+
+        public int Level { get; private set; }
+
+        public IReadOnlyList<PokemonMove> Moves =>
+            _moves.AsReadOnly();
+
+        // IVs
+        public IndividualValues IVs { get; }
+
+        // EVs
+        public EffortValues EVs { get; }
+
+        // Natureza
+        public PokemonNature Nature { get; }
+
+        // Habilidade
+        public PokemonAbility Ability { get; }
+
+        public AbilitySlot AbilitySlot { get; }
+
+        public PokemonInstance(
+            Pokemon species,
+            PokemonForm form,
+            PokemonGender gender,
+            int level,
+            IndividualValues ivs,
+            PokemonNature nature,
+            PokemonAbility ability,
+            AbilitySlot abilitySlot,
+            params PokemonMove[] moves)
+        {
+            Species = species
+                ?? throw new ArgumentNullException(nameof(species));
+
+            Form = form
+                ?? throw new ArgumentNullException(nameof(form));
+
+            if (!species.Forms.Contains(form))
+                throw new ArgumentException(
+                    "Essa forma não pertence à espécie informada."
+                );
+
+            if (!Enum.IsDefined(gender))
+                throw new ArgumentException("Gênero inválido.");
+
+            if (level < 1 || level > 100)
+                throw new ArgumentOutOfRangeException(nameof(level));
+
+            if (!Enum.IsDefined(nature))
+                throw new ArgumentException("Natureza inválida.");
+
+            if (ability == null)
+                throw new ArgumentNullException(nameof(ability));
+
+            if (!Enum.IsDefined(abilitySlot))
+                throw new ArgumentException("Slot de habilidade inválido.");
+
+            bool hasAbility = form.Abilities.Any(
+                a => a.Ability.Id == ability.Id
+                     && a.Slot == abilitySlot
+            );
+
+            if (!hasAbility)
+                throw new ArgumentException(
+                    "Essa habilidade não está disponível para essa forma."
+                );
+
+            if (moves == null)
+                throw new ArgumentNullException(nameof(moves));
+
+            if (moves.Length > 4)
+                throw new ArgumentException(
+                    "Um Pokémon não pode possuir mais de quatro movimentos."
+                );
+
+            if (Array.Exists(moves, move => move == null))
+                throw new ArgumentException(
+                    "A lista não pode conter movimentos nulos."
+                );
+
+            Gender = gender;
+            Level = level;
+
+            IVs = ivs;
+            EVs = new EffortValues();
+
+            Nature = nature;
+
+            Ability = ability;
+            AbilitySlot = abilitySlot;
+
+            _moves.AddRange(moves);
+        }
+    }
+}
