@@ -1,0 +1,18 @@
+# Arquivos gerados pelo .NET
+[Bb]in/
+[Oo]bj/
+
+# Executáveis e símbolos de depuração
+*.exe
+*.pdb
+
+# Arquivos de configuração locais
+*.user
+*.suo
+
+# IDEs
+.vs/
+.idea/
+
+# Resultados de testes
+TestResults/
