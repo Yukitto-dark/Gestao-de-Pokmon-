@@ -1,0 +1,5 @@
+C:\Users\Home\OneDrive\Desktop\Gestao-de-Pokmon--main\SistemaDeGestaoDePokemon\obj\Debug\net10.0-windows\Window1.g.cs
+C:\Users\Home\OneDrive\Desktop\Gestao-de-Pokmon--main\SistemaDeGestaoDePokemon\obj\Debug\net10.0-windows\Windowmenu.g.cs
+C:\Users\Home\OneDrive\Desktop\Gestao-de-Pokmon--main\SistemaDeGestaoDePokemon\obj\Debug\net10.0-windows\App.g.cs
+C:\Users\Home\OneDrive\Desktop\Gestao-de-Pokmon--main\SistemaDeGestaoDePokemon\obj\Debug\net10.0-windows\GestaoDePokemon_MarkupCompile.cache
+C:\Users\Home\OneDrive\Desktop\Gestao-de-Pokmon--main\SistemaDeGestaoDePokemon\obj\Debug\net10.0-windows\GestaoDePokemon_MarkupCompile.lref
