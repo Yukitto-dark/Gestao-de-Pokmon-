@@ -18,7 +18,7 @@ namespace GestaoDePokemon.model
         Dragon,
         Ghost,
         Dark,
-        Steel,
-        Fairy
+        Steel
+        
     }
 }
