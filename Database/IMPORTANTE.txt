@@ -1,0 +1,8 @@
+colocar a seguinte função no app.xaml.cs junto de "using GestaoDePokemon.Database;":
+
+protected override void OnStartup(StartupEventArgs e)
+{
+   base.OnStartup(e);
+   DatabaseInitializer.Inicializar();
+}
+
