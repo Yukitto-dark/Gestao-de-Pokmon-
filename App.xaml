@@ -1,10 +1,9 @@
-
-<Application x:Class="GestaoDePokemon.App"
+﻿<Application x:Class="GestaoDePokemon.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             StartupUri="Window1.xaml">
-
+             xmlns:local="clr-namespace:GestaoDePokemon"
+             StartupUri="MainWindow.xaml">
     <Application.Resources>
+         
     </Application.Resources>
-
 </Application>

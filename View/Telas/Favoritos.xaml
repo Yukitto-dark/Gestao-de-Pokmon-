@@ -1,0 +1,25 @@
+﻿<Page x:Class="GestaoDePokemon.View.Telas.Favoritos"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GestaoDePokemon.View.Telas"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Favoritos"
+      Background="Black">
+
+    <Viewbox Stretch="Uniform">
+        <Grid Width="800" Height="450">
+            <Image Source="/View/Telas - background/Favoritos.png" Stretch="Uniform"/>
+            <Button x:Name="Voltar__Home" Click="Navegar_Click" Content="Button" HorizontalAlignment="Left" Height="41" Margin="368,407,0,0" VerticalAlignment="Top" Width="64" Opacity="0"/>
+            <Image x:Name="Favorito_1" Tag="1" HorizontalAlignment="Left" Height="39" Margin="258,81,0,0" VerticalAlignment="Top" Width="45" Stretch="Uniform"/>
+            <Image x:Name="Favorito_2" Tag="2" HorizontalAlignment="Left" Height="39" Margin="498,81,0,0" VerticalAlignment="Top" Width="45" Stretch="Uniform"/>
+            <Image x:Name="Favorito_3" Tag="3" HorizontalAlignment="Left" Height="39" Margin="218,202,0,0" VerticalAlignment="Top" Width="45" Stretch="Uniform"/>
+            <Image x:Name="Favorito_4" Tag="4" HorizontalAlignment="Left" Height="39" Margin="538,202,0,0" VerticalAlignment="Top" Width="45" Stretch="Uniform"/>
+            <Image x:Name="Favorito_5" Tag="5" HorizontalAlignment="Left" Height="39" Margin="258,322,0,0" VerticalAlignment="Top" Width="45" Stretch="Uniform"/>
+            <Image x:Name="Favorito_6" Tag="6" HorizontalAlignment="Left" Height="39" Margin="498,322,0,0" VerticalAlignment="Top" Width="45" Stretch="Uniform"/>
+
+        </Grid>
+    </Viewbox>
+</Page>

@@ -10,8 +10,24 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="controller\" />
-    <Folder Include="view\" />
+    <Folder Include="Controller\" />
+    <Folder Include="Data\" />
+    <Folder Include="View\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="View\Telas - background\*.png" />
+    <Resource Include="View\Telas - background\*.png" />
+    <None Remove="View\images\Tipagem\*.png" />
+    <Resource Include="View\images\Tipagem\*.png" />
+    <None Remove="View\images\hert-full.png" />
+    <Resource Include="View\images\hert-full.png" />
+    <None Remove="View\images\hert-full-vazio.png" />
+    <Resource Include="View\images\hert-full-vazio.png" />
+    <None Remove="View\fonts\*.ttf" />
+    <Resource Include="View\fonts\*.ttf" />
+    <None Remove="View\cursors\*.cur" />
+    <Resource Include="View\cursors\*.cur" />
   </ItemGroup>
 
 </Project>
