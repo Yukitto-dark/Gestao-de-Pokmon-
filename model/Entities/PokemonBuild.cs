@@ -10,15 +10,23 @@ namespace GestaoDePokemon.model
     /// </summary>
     public class PokemonBuild
     {
-        private readonly List<PokemonMove> _moves = new();
+        private List<PokemonMove> _moves = new();
 
         public int Id { get; set; }
 
-        public Pokemon Species { get; }
+        public int PokemonTeamId { get; private set; }
 
-        public PokemonForm Form { get; }
+        public PokemonTeam Team { get; private set; } = null!;
 
-        public PokemonGender Gender { get; }
+        public int SpeciesId { get; private set; }
+
+        public Pokemon Species { get; private set; } = null!;
+
+        public int PokemonFormId { get; private set; }
+
+        public PokemonForm Form { get; private set; } = null!;
+
+        public PokemonGender Gender { get; private set; }
 
         public int Level { get; private set; }
 
@@ -26,16 +34,28 @@ namespace GestaoDePokemon.model
 
         public IndividualValues IVs { get; private set; }
 
-        public EffortValues EVs { get; }
+        public EffortValues EVs { get; private set; }
 
         public PokemonNature Nature { get; private set; }
 
-        public PokemonAbility Ability { get; private set; }
+        public int AbilityId { get; private set; }
+
+        public PokemonAbility Ability { get; private set; } = null!;
 
         public AbilitySlot AbilitySlot { get; private set; }
 
         // Opcional: permite validar o Learnset contra um jogo específico.
         public string? GameVersion { get; private set; }
+
+        // Construtor privado utilizado pelo Entity Framework Core.
+        private PokemonBuild()
+        {
+            Species = null!;
+            Form = null!;
+            Ability = null!;
+            Team = null!;
+            EVs = new EffortValues();
+        }
 
         public PokemonBuild(
             Pokemon species,
@@ -50,6 +70,8 @@ namespace GestaoDePokemon.model
         {
             Species = species ?? throw new ArgumentNullException(nameof(species));
             Form = form ?? throw new ArgumentNullException(nameof(form));
+            SpeciesId = species.Id;
+            PokemonFormId = form.Id;
 
             if (!species.Forms.Any(f => SameForm(f, form)))
                 throw new ArgumentException("Essa forma não pertence à espécie.", nameof(form));
@@ -79,6 +101,7 @@ namespace GestaoDePokemon.model
             EVs = new EffortValues();
             Nature = nature;
             Ability = ability;
+            AbilityId = ability.Id;
             AbilitySlot = abilitySlot;
 
             foreach (PokemonMove move in moves)
@@ -113,6 +136,7 @@ namespace GestaoDePokemon.model
         {
             ValidateAbility(Form, ability, slot);
             Ability = ability;
+            AbilityId = ability.Id;
             AbilitySlot = slot;
         }
 

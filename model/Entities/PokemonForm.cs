@@ -5,14 +5,17 @@ namespace GestaoDePokemon.model
 {
     public class PokemonForm
     {
-        private readonly List<PokemonType> _types = new();
-        private readonly IReadOnlyList<PokemonType> _typesView;
+        private List<PokemonType> _types = new();
 
         public int Id { get; set; }
 
+        public int PokemonId { get; set; }
+
+        public Pokemon Pokemon { get; set; } = null!;
+
         public string FormName { get; set; } = "Normal";
 
-        public IReadOnlyList<PokemonType> Types => _typesView;
+        public IReadOnlyList<PokemonType> Types => _types.AsReadOnly();
 
         public BaseStats Stats { get; set; }
 
@@ -22,11 +25,6 @@ namespace GestaoDePokemon.model
 
         // O conjunto de movimentos pode variar entre formas.
         public List<LearnableMove> Learnset { get; set; } = new();
-
-        public PokemonForm()
-        {
-            _typesView = _types.AsReadOnly();
-        }
 
         public void AddType(PokemonType type)
         {

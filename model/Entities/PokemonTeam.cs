@@ -7,7 +7,7 @@ namespace GestaoDePokemon.model
     public class PokemonTeam
     {
         private const int MaxMembers = 6;
-        private readonly List<PokemonBuild> _members = new();
+        private List<PokemonBuild> _members = new();
 
         public int Id { get; set; }
 
@@ -16,6 +16,12 @@ namespace GestaoDePokemon.model
         public IReadOnlyList<PokemonBuild> Members => _members.AsReadOnly();
 
         public int MemberCount => _members.Count;
+
+        // Construtor privado utilizado pelo Entity Framework Core.
+        private PokemonTeam()
+        {
+            Name = string.Empty;
+        }
 
         public PokemonTeam(string name)
         {

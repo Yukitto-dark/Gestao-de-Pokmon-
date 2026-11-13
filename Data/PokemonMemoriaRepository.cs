@@ -27,5 +27,7 @@ namespace GestaoDePokemon.Data
         }
 
         public string? ObterSpriteUrl(int id) => null;
+
+        public string? ObterSpriteDetalheUrl(int id, bool shiny) => null;
     }
 }

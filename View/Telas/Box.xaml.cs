@@ -1,10 +1,14 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
 using GestaoDePokemon.Controller;
+using GestaoDePokemon.Data;
+using GestaoDePokemon.model;
+using System.Windows.Controls.Primitives;
 
 namespace GestaoDePokemon.View.Telas
 {
@@ -15,6 +19,7 @@ namespace GestaoDePokemon.View.Telas
     {
         private readonly BoxController _controller = new();
         private readonly Image[] _slots;
+        private bool _mostrarShiny;
 
         private static readonly BitmapImage CoracaoCheio = new(new Uri("pack://application:,,,/View/images/hert-full.png"));
         private static readonly BitmapImage CoracaoVazio = new(new Uri("pack://application:,,,/View/images/hert-full-vazio.png"));
@@ -83,9 +88,10 @@ namespace GestaoDePokemon.View.Telas
             Id_TextBox.Text = string.Empty;
             Nome_TextBox.Text = string.Empty;
 
-            Regiao_Kanto.IsChecked = true;
-            Regiao_Johto.IsChecked = true;
-            Regiao_Hoenn.IsChecked = true;
+            // Nenhuma região marcada significa mostrar todas as regiões.
+            Regiao_Kanto.IsChecked = false;
+            Regiao_Johto.IsChecked = false;
+            Regiao_Hoenn.IsChecked = false;
 
             foreach (UIElement filho in Tipos_Hotspots.Children)
             {
@@ -102,15 +108,79 @@ namespace GestaoDePokemon.View.Telas
             Nome_TextBox.Visibility = Visibility.Collapsed;
             Por_Id.Visibility = Visibility.Visible;
             Por_Nome.Visibility = Visibility.Visible;
+
+            _controller.LimparFiltros();
+            AtualizarPagina();
         }
 
         private void Aplicar_Filtros_Click(object sender, RoutedEventArgs e)
         {
+            int? numeroDex = null;
+            string textoId = Id_TextBox.Text.Trim();
+
+            if (textoId.Length > 0)
+            {
+                if (!int.TryParse(textoId, out int id) || id < 1)
+                {
+                    MessageBox.Show(
+                        "Informe um número de Pokédex válido.",
+                        "Filtro por número",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Warning);
+                    Id_TextBox.Focus();
+                    return;
+                }
+
+                numeroDex = id;
+            }
+
+            var tiposSelecionados = new List<PokemonType>();
+            foreach (ToggleButton hotspot in Tipos_Hotspots.Children.OfType<ToggleButton>())
+            {
+                if (hotspot.IsChecked != true)
+                    continue;
+
+                string? nomeTipo = hotspot.ToolTip?.ToString();
+                if (Enum.TryParse(nomeTipo, ignoreCase: true, out PokemonType tipo) &&
+                    !tiposSelecionados.Contains(tipo))
+                {
+                    tiposSelecionados.Add(tipo);
+                }
+            }
+
+            var regioesSelecionadas = new List<int>();
+            if (Regiao_Kanto.IsChecked == true) regioesSelecionadas.Add(1);
+            if (Regiao_Johto.IsChecked == true) regioesSelecionadas.Add(2);
+            if (Regiao_Hoenn.IsChecked == true) regioesSelecionadas.Add(3);
+
+            string? nome = string.IsNullOrWhiteSpace(Nome_TextBox.Text)
+                ? null
+                : Nome_TextBox.Text.Trim();
+
+            _controller.AplicarFiltros(new PokemonFilter
+            {
+                Types = tiposSelecionados,
+                // Lista vazia = sem filtro regional; uma ou mais marcadas =
+                // somente Pokémon das regiões selecionadas.
+                OriginRegionIds = regioesSelecionadas,
+                OnlyFavorites = Filtro_Favoritos.IsChecked == true,
+                NationalDexNumber = numeroDex,
+                NameContains = nome
+            });
+
+            AtualizarPagina();
+            PainelFiltros.Visibility = Visibility.Collapsed;
         }
 
         private void AtualizarPagina()
         {
-            Numeração_Box.Content = $"{_controller.PaginaAtual} - {_controller.TotalPaginas}";
+            int totalResultados = _controller.TotalResultados;
+            Numeração_Box.Content = totalResultados == 0
+                ? "0 - 0"
+                : $"{_controller.PaginaAtual} - {_controller.TotalPaginas}";
+            Numeração_Box.ToolTip = totalResultados == 0
+                ? "Nenhum Pokémon encontrado com os filtros selecionados."
+                : $"{totalResultados} Pokémon encontrados.";
 
             IReadOnlyList<int> ids = _controller.ObterIdsDaPagina();
 
@@ -132,7 +202,10 @@ namespace GestaoDePokemon.View.Telas
             }
 
             _controller.LimparSelecao();
+            _mostrarShiny = false;
             Imagem_Pokemon.Source = null;
+            Shine.IsEnabled = false;
+            Shine.ToolTip = "Selecione um Pokémon";
             Botao_Favorito.IsEnabled = false;
             Selecao_Slot.Visibility = Visibility.Collapsed;
             AtualizarCoracao();
@@ -147,18 +220,54 @@ namespace GestaoDePokemon.View.Telas
 
             int coluna = Math.Clamp((int)((ponto.X - 247) / 63), 0, 5);
             int linha = Math.Clamp((int)((ponto.Y - 121) / 59), 0, 4);
-            int indice = linha * 6 + coluna;
-
             int? id = _controller.Selecionar(coluna, linha);
 
             if (id is null)
+            {
+                _mostrarShiny = false;
+                Imagem_Pokemon.Source = null;
+                Shine.IsEnabled = false;
+                Shine.ToolTip = "Selecione um Pokémon";
+                Botao_Favorito.IsEnabled = false;
+                Selecao_Slot.Visibility = Visibility.Collapsed;
+                AtualizarCoracao();
                 return;
+            }
 
-            Imagem_Pokemon.Source = _slots[indice].Source;
+            _mostrarShiny = false;
+            AtualizarImagemDetalhe();
+            Shine.IsEnabled = true;
+            Shine.ToolTip = "Exibir sprite shiny";
             Botao_Favorito.IsEnabled = true;
             Selecao_Slot.Margin = new Thickness(247 + coluna * 63, 121 + linha * 59, 0, 0);
             Selecao_Slot.Visibility = Visibility.Visible;
             AtualizarCoracao();
+        }
+
+        private void Shine_Click(object sender, RoutedEventArgs e)
+        {
+            if (_controller.IdSelecionado is null)
+                return;
+
+            _mostrarShiny = !_mostrarShiny;
+            AtualizarImagemDetalhe();
+            Shine.ToolTip = _mostrarShiny
+                ? "Exibir sprite normal"
+                : "Exibir sprite shiny";
+        }
+
+        private void AtualizarImagemDetalhe()
+        {
+            if (_controller.IdSelecionado is not int id)
+            {
+                Imagem_Pokemon.Source = null;
+                return;
+            }
+
+            string? url = _controller.ObterSpriteDetalheUrl(id, _mostrarShiny);
+            Imagem_Pokemon.Source = url is null
+                ? null
+                : new BitmapImage(new Uri(url, UriKind.Absolute));
         }
 
         private void Favorito_Click(object sender, RoutedEventArgs e)
@@ -178,7 +287,10 @@ namespace GestaoDePokemon.View.Telas
                 return;
             }
 
-            AtualizarCoracao();
+            if (Filtro_Favoritos.IsChecked == true)
+                AtualizarPagina();
+            else
+                AtualizarCoracao();
         }
 
         private void AtualizarCoracao()
