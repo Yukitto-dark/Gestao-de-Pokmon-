@@ -18,7 +18,7 @@ namespace GestaoDePokemon.Controller
 
         private readonly IFavoritosRepository _favoritos;
         private readonly IPokemonRepository _pokemons;
-
+        private PokemonFilter _filtroAtual = new();
         private int _paginaAtual = 1;
 
         public BoxController(
@@ -31,13 +31,25 @@ namespace GestaoDePokemon.Controller
 
         public int PaginaAtual => _paginaAtual;
 
+        public int TotalResultados => _pokemons.Contar(_filtroAtual);
+
         public int TotalPaginas =>
-            Math.Max(1, (_pokemons.Total + ItensPorPagina - 1) / ItensPorPagina);
+            Math.Max(1, (TotalResultados + ItensPorPagina - 1) / ItensPorPagina);
 
         public int? IdSelecionado { get; private set; }
 
         public IReadOnlyList<int> ObterIdsDaPagina() =>
-            _pokemons.ObterIds(_paginaAtual, ItensPorPagina);
+            _pokemons.ObterIds(_filtroAtual, _paginaAtual, ItensPorPagina);
+
+        public void AplicarFiltros(PokemonFilter filtro)
+        {
+            ArgumentNullException.ThrowIfNull(filtro);
+            _filtroAtual = filtro;
+            _paginaAtual = 1;
+            IdSelecionado = null;
+        }
+
+        public void LimparFiltros() => AplicarFiltros(new PokemonFilter());
 
         public int? Selecionar(int coluna, int linha)
         {
@@ -45,7 +57,16 @@ namespace GestaoDePokemon.Controller
                 return null;
 
             int indice = linha * 6 + coluna;
-            IdSelecionado = (_paginaAtual - 1) * ItensPorPagina + indice + 1;
+            IReadOnlyList<int> ids = _pokemons.ObterIds(
+                _filtroAtual, _paginaAtual, ItensPorPagina);
+
+            if (indice >= ids.Count)
+            {
+                IdSelecionado = null;
+                return null;
+            }
+
+            IdSelecionado = ids[indice];
             return IdSelecionado;
         }
 
@@ -70,6 +91,9 @@ namespace GestaoDePokemon.Controller
         public bool EhFavorito(int id) => _favoritos.EhFavorito(id);
 
         public string? ObterSpriteUrl(int id) => _pokemons.ObterSpriteUrl(id);
+
+        public string? ObterSpriteDetalheUrl(int id, bool shiny) =>
+            _pokemons.ObterSpriteDetalheUrl(id, shiny);
 
         public ResultadoFavorito AlternarFavorito(out bool limiteAtingido)
         {

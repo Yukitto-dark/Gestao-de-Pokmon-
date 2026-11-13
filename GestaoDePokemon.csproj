@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -20,6 +20,8 @@
     <Resource Include="View\Telas - background\*.png" />
     <None Remove="View\images\Tipagem\*.png" />
     <Resource Include="View\images\Tipagem\*.png" />
+    <None Remove="View\images\types\*.png" />
+    <Resource Include="View\images\types\*.png" />
     <None Remove="View\images\hert-full.png" />
     <Resource Include="View\images\hert-full.png" />
     <None Remove="View\images\hert-full-vazio.png" />
@@ -28,6 +30,30 @@
     <Resource Include="View\fonts\*.ttf" />
     <None Remove="View\cursors\*.cur" />
     <Resource Include="View\cursors\*.cur" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Mantém a árvore frontNormal/frontShiny/mini no diretório de saída. -->
+    <None Remove="View/images/pokemon/**/*.png" />
+    <Resource Remove="View/images/pokemon/**/*.png" />
+    <Content Include="View/images/pokemon/**/*.png"
+             CopyToOutputDirectory="PreserveNewest"
+             CopyToPublishDirectory="PreserveNewest">
+      <TargetPath>View/images/pokemon/%(RecursiveDir)%(Filename)%(Extension)</TargetPath>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Database/Seed/pokemon-seed.json"
+                      LogicalName="GestaoDePokemon.Database.Seed.pokemon-seed.json" />
   </ItemGroup>
 
 </Project>
