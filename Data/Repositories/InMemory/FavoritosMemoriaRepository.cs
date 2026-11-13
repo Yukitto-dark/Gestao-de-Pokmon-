@@ -1,30 +1,32 @@
 using System;
 using System.Collections.Generic;
-
 using GestaoDePokemon.Data.Repositories.Contracts;
+
 namespace GestaoDePokemon.Data.Repositories.InMemory
 {
-    public class FavoritosMemoriaRepository : IFavoritosRepository
+    public sealed class FavoritosMemoriaRepository : IFavoritosRepository
     {
+        private const int MaximoFavoritos = 6;
+
         private readonly List<int> _ids = new();
 
-        public int Limite => 6;
+        public int Limite => MaximoFavoritos;
 
-        public IReadOnlyList<int> Ids => _ids;
+        public IReadOnlyList<int> Ids => _ids.AsReadOnly();
 
         public event Action? Alterado;
 
-        public bool EhFavorito(int id) => _ids.Contains(id);
+        public bool EhFavorito(int id)
+        {
+            return _ids.Contains(id);
+        }
 
-        public bool Alternar(int id, out bool limiteAtingido)
+        public bool Adicionar(int id, out bool limiteAtingido)
         {
             limiteAtingido = false;
 
-            if (_ids.Remove(id))
-            {
-                Alterado?.Invoke();
+            if (id <= 0 || EhFavorito(id))
                 return false;
-            }
 
             if (_ids.Count >= Limite)
             {
@@ -34,7 +36,27 @@ namespace GestaoDePokemon.Data.Repositories.InMemory
 
             _ids.Add(id);
             Alterado?.Invoke();
+
             return true;
+        }
+
+        public bool Remover(int id)
+        {
+            if (!_ids.Remove(id))
+                return false;
+
+            Alterado?.Invoke();
+            return true;
+        }
+
+        public bool Alternar(int id, out bool limiteAtingido)
+        {
+            limiteAtingido = false;
+
+            if (Remover(id))
+                return false;
+
+            return Adicionar(id, out limiteAtingido);
         }
     }
 }

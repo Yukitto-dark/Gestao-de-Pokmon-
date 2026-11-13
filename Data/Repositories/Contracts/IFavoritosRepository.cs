@@ -11,6 +11,10 @@ namespace GestaoDePokemon.Data.Repositories.Contracts
 
         event Action? Alterado;
 
+        bool Adicionar(int id, out bool limiteAtingido);
+
+        bool Remover(int id);
+
         bool EhFavorito(int id);
 
         bool Alternar(int id, out bool limiteAtingido);
