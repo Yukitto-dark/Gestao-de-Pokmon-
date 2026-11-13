@@ -44,3 +44,14 @@ O projeto usa `EnsureCreated()` enquanto o modelo inicial é estabilizado. Antes
 - Após gerar os JSONs, compile e abra a aplicação. O `DatabaseInitializer` importa o catálogo e os learnsets no SQLite de forma incremental, sem apagar favoritos, times, Pokémon ou sprites.
 
 Fonte dos dados de movimentos e learnsets: CSVs do repositório `PokeAPI/pokeapi`, em `data/v2/csv/`. O script guarda os JSONs gerados no próprio projeto para que possam ser versionados no Git e não seja necessário baixar os CSVs novamente em cada inicialização.
+
+
+## Relacionamentos de evolução
+
+- `PokemonEvolution` representa uma relação direta entre uma espécie de origem (`FromPokemonId`) e uma espécie de destino (`ToPokemonId`). A tabela `Evolutions` possui chaves estrangeiras para as duas espécies.
+- Para gerar os dados da Pokédex #001–#386, execute na raiz do projeto: `python3 scripts/gerar_seed_evolucoes.py`. O script baixa `pokemon_species.csv`, `pokemon_evolution.csv` e as tabelas auxiliares do repositório oficial `PokeAPI/pokeapi`, e gera `Database/Seed/pokemon-evolutions-seed.json`.
+- O seed considera os grupos de jogos principais das gerações I–III: Red/Blue, Yellow, Gold/Silver, Crystal, Ruby/Sapphire, Emerald e FireRed/LeafGreen. Quando a mesma regra aparece em mais de um grupo, os nomes são agrupados em `GameVersion` para evitar duplicar a relação.
+- O `DatabaseInitializer` importa as relações de forma incremental. Ao abrir o aplicativo, cada relação liga o registro de origem ao registro de destino por suas chaves estrangeiras; executar o seed novamente não duplica os vínculos nem apaga registros existentes.
+- O modelo atual armazena nível, item, horário, amizade, beleza, gênero, local, movimento exigido e grupos de jogos. Algumas condições especiais mais novas ou muito específicas da PokeAPI (por exemplo, comparação entre Attack/Defense e expressões internas de condições) ainda não têm campos próprios em `PokemonEvolution`; o gerador avisa quando encontra essas condições e preserva o vínculo entre as espécies.
+
+Fonte dos dados de evolução: `PokeAPI/pokeapi`, arquivos `data/v2/csv/pokemon_species.csv`, `pokemon_evolution.csv`, `evolution_triggers.csv`, `version_groups.csv`, `items.csv`, `locations.csv` e `moves.csv`.

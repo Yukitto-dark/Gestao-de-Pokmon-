@@ -59,6 +59,11 @@ public static class DatabaseInitializer
         SeedMoveCatalogAndLearnsets(db);
         db.SaveChanges();
 
+        // Relacionamentos pai/filho: importa as evoluções sem duplicar registros
+        // e sem apagar relações que já existam no banco.
+        SeedEvolutions(db);
+        db.SaveChanges();
+
         transaction.Commit();
     }
 
@@ -385,6 +390,168 @@ public static class DatabaseInitializer
                 GameVersion = seed.GameVersion
             });
         }
+    }
+
+    /// <summary>
+    /// Importa as relações diretas de evolução a partir do JSON gerado por
+    /// scripts/gerar_seed_evolucoes.py. O seed é opcional até ser gerado.
+    /// </summary>
+    private static void SeedEvolutions(AppDbContext db)
+    {
+        string seedPath = Path.Combine(
+            AppContext.BaseDirectory,
+            "Database",
+            "Seed",
+            "pokemon-evolutions-seed.json");
+
+        if (!File.Exists(seedPath))
+            return;
+
+        List<PokemonEvolutionSeed> seeds;
+        using (FileStream stream = File.OpenRead(seedPath))
+        {
+            seeds = JsonSerializer.Deserialize<List<PokemonEvolutionSeed>>(stream, SeedJsonOptions)
+                ?? throw new InvalidDataException("O seed de evoluções está vazio ou inválido.");
+        }
+
+        if (seeds.Count == 0)
+            throw new InvalidDataException("O seed de evoluções não contém relacionamentos.");
+
+        var pokemonsByDex = db.Pokemons.ToDictionary(pokemon => pokemon.NationalDexNumber);
+        var moveIds = db.Moves.Select(move => move.Id).ToHashSet();
+
+        var existing = db.Evolutions
+            .AsNoTracking()
+            .Select(evolution => new
+            {
+                evolution.FromPokemonId,
+                evolution.ToPokemonId,
+                evolution.Method,
+                evolution.RequiredLevel,
+                evolution.RequiredItem,
+                evolution.RequiredTime,
+                evolution.MinimumFriendship,
+                evolution.MinimumBeauty,
+                evolution.RequiredGender,
+                evolution.RequiredLocation,
+                evolution.RequiredMoveId,
+                evolution.GameVersion
+            })
+            .AsEnumerable()
+            .Select(evolution => new EvolutionKey(
+                evolution.FromPokemonId,
+                evolution.ToPokemonId,
+                evolution.Method,
+                evolution.RequiredLevel,
+                evolution.RequiredItem ?? string.Empty,
+                evolution.RequiredTime,
+                evolution.MinimumFriendship,
+                evolution.MinimumBeauty,
+                evolution.RequiredGender,
+                evolution.RequiredLocation ?? string.Empty,
+                evolution.RequiredMoveId,
+                evolution.GameVersion ?? string.Empty))
+            .ToHashSet();
+
+        foreach (PokemonEvolutionSeed seed in seeds)
+        {
+            if (!Enum.IsDefined(seed.Method))
+                throw new InvalidDataException(
+                    $"Método de evolução inválido entre #{seed.FromNationalDexNumber:000} " +
+                    $"e #{seed.ToNationalDexNumber:000}.");
+
+            if (!pokemonsByDex.TryGetValue(seed.FromNationalDexNumber, out Pokemon? fromPokemon))
+                throw new InvalidDataException(
+                    $"Pokémon de origem #{seed.FromNationalDexNumber:000} não encontrado.");
+
+            if (!pokemonsByDex.TryGetValue(seed.ToNationalDexNumber, out Pokemon? toPokemon))
+                throw new InvalidDataException(
+                    $"Pokémon de destino #{seed.ToNationalDexNumber:000} não encontrado.");
+
+            if (seed.FromNationalDexNumber == seed.ToNationalDexNumber)
+                throw new InvalidDataException("Uma espécie não pode evoluir para si mesma.");
+
+            if (seed.RequiredLevel is < 1 or > 100)
+                throw new InvalidDataException("Nível de evolução deve estar entre 1 e 100.");
+
+            if (seed.MinimumFriendship is < 0 or > 255 || seed.MinimumBeauty is < 0 or > 255)
+                throw new InvalidDataException("Amizade/beleza de evolução deve estar entre 0 e 255.");
+
+            if (seed.RequiredTime.HasValue && !Enum.IsDefined(seed.RequiredTime.Value))
+                throw new InvalidDataException("Horário de evolução inválido.");
+
+            if (seed.RequiredGender.HasValue && !Enum.IsDefined(seed.RequiredGender.Value))
+                throw new InvalidDataException("Gênero de evolução inválido.");
+
+            if (seed.RequiredMoveId.HasValue && !moveIds.Contains(seed.RequiredMoveId.Value))
+                throw new InvalidDataException(
+                    $"A evolução de #{seed.FromNationalDexNumber:000} para " +
+                    $"#{seed.ToNationalDexNumber:000} exige o movimento #{seed.RequiredMoveId}, " +
+                    "mas ele não existe na tabela Moves. Gere/import os movimentos antes das evoluções.");
+
+            var key = new EvolutionKey(
+                fromPokemon.Id,
+                toPokemon.Id,
+                seed.Method,
+                seed.RequiredLevel,
+                seed.RequiredItem ?? string.Empty,
+                seed.RequiredTime,
+                seed.MinimumFriendship,
+                seed.MinimumBeauty,
+                seed.RequiredGender,
+                seed.RequiredLocation ?? string.Empty,
+                seed.RequiredMoveId,
+                seed.GameVersion ?? string.Empty);
+
+            if (!existing.Add(key))
+                continue;
+
+            db.Evolutions.Add(new PokemonEvolution
+            {
+                FromPokemonId = fromPokemon.Id,
+                ToPokemonId = toPokemon.Id,
+                Method = seed.Method,
+                RequiredLevel = seed.RequiredLevel,
+                RequiredItem = seed.RequiredItem,
+                RequiredTime = seed.RequiredTime,
+                MinimumFriendship = seed.MinimumFriendship,
+                MinimumBeauty = seed.MinimumBeauty,
+                RequiredGender = seed.RequiredGender,
+                RequiredLocation = seed.RequiredLocation,
+                RequiredMoveId = seed.RequiredMoveId,
+                GameVersion = seed.GameVersion
+            });
+        }
+    }
+
+    private readonly record struct EvolutionKey(
+        int FromPokemonId,
+        int ToPokemonId,
+        EvolutionMethod Method,
+        int? RequiredLevel,
+        string RequiredItem,
+        EvolutionTime? RequiredTime,
+        int? MinimumFriendship,
+        int? MinimumBeauty,
+        PokemonGender? RequiredGender,
+        string RequiredLocation,
+        int? RequiredMoveId,
+        string GameVersion);
+
+    public sealed class PokemonEvolutionSeed
+    {
+        public int FromNationalDexNumber { get; set; }
+        public int ToNationalDexNumber { get; set; }
+        public EvolutionMethod Method { get; set; }
+        public int? RequiredLevel { get; set; }
+        public string? RequiredItem { get; set; }
+        public EvolutionTime? RequiredTime { get; set; }
+        public int? MinimumFriendship { get; set; }
+        public int? MinimumBeauty { get; set; }
+        public PokemonGender? RequiredGender { get; set; }
+        public string? RequiredLocation { get; set; }
+        public int? RequiredMoveId { get; set; }
+        public string? GameVersion { get; set; }
     }
 
     private readonly record struct LearnsetKey(

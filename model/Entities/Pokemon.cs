@@ -20,21 +20,24 @@ namespace GestaoDePokemon.model
 
         public string Category { get; set; } = string.Empty;
 
-        private List<EggGroup> _eggGroups = new();
+        private readonly List<EggGroup> _eggGroups = new();
 
         public IReadOnlyList<EggGroup> EggGroups => _eggGroups.AsReadOnly();
 
-        private List<Region> _foundInRegions = new();
+        private readonly List<Region> _foundInRegions = new();
 
         public IReadOnlyList<Region> FoundInRegions => _foundInRegions.AsReadOnly();
 
         public List<PokemonForm> Forms { get; set; } = new();
 
-        private List<PokemonEvolution> _evolutions = new();
+        /// <summary>Locais/rotas em que esta espécie pode ser encontrada.</summary>
+        public List<RoutePokemonEncounter> RouteEncounters { get; set; } = new();
+
+        private readonly List<PokemonEvolution> _evolutions = new();
 
         public IReadOnlyList<PokemonEvolution> Evolutions => _evolutions.AsReadOnly();
 
-        private List<PokemonEvolution> _preEvolutions = new();
+        private readonly List<PokemonEvolution> _preEvolutions = new();
 
         public IReadOnlyList<PokemonEvolution> PreEvolutions =>
             _preEvolutions.AsReadOnly();

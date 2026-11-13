@@ -61,6 +61,9 @@
     <None Update="Database/Seed/pokemon-learnsets-seed.json"
           CopyToOutputDirectory="PreserveNewest"
           CopyToPublishDirectory="PreserveNewest" />
+    <None Update="Database/Seed/pokemon-evolutions-seed.json"
+          CopyToOutputDirectory="PreserveNewest"
+          CopyToPublishDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,4895 @@
+{
+  "source": "PokéAPI v2",
+  "scope": "Pokémon #001–#386; habilidades introduzidas na Geração III; slots normais 1 e 2",
+  "hidden_abilities_imported": false,
+  "abilities": {
+    "air-lock": {
+      "name": "Air Lock",
+      "description": "Negates all effects of weather, but does not prevent the weather itself.",
+      "generation": 3
+    },
+    "arena-trap": {
+      "name": "Arena Trap",
+      "description": "Prevents opponents from fleeing or switching out.  Eluded by Flying-types and Pokémon in the air.",
+      "generation": 3
+    },
+    "battle-armor": {
+      "name": "Battle Armor",
+      "description": "Protects against critical hits.",
+      "generation": 3
+    },
+    "blaze": {
+      "name": "Blaze",
+      "description": "Strengthens Fire moves to inflict 1.5× damage at 1/3 max HP or less.",
+      "generation": 3
+    },
+    "chlorophyll": {
+      "name": "Chlorophyll",
+      "description": "Doubles Speed during strong sunlight.",
+      "generation": 3
+    },
+    "clear-body": {
+      "name": "Clear Body",
+      "description": "Prevents stats from being lowered by other Pokémon.",
+      "generation": 3
+    },
+    "cloud-nine": {
+      "name": "Cloud Nine",
+      "description": "Negates all effects of weather, but does not prevent the weather itself.",
+      "generation": 3
+    },
+    "color-change": {
+      "name": "Color Change",
+      "description": "Changes type to match when hit by a damaging move.",
+      "generation": 3
+    },
+    "compound-eyes": {
+      "name": "Compound Eyes",
+      "description": "Increases moves' accuracy to 1.3×.",
+      "generation": 3
+    },
+    "cute-charm": {
+      "name": "Cute Charm",
+      "description": "Has a 30% chance of infatuating attacking Pokémon on contact.",
+      "generation": 3
+    },
+    "damp": {
+      "name": "Damp",
+      "description": "Prevents Self-Destruct, Explosion, and Aftermath from working while the Pokémon is in battle.",
+      "generation": 3
+    },
+    "drizzle": {
+      "name": "Drizzle",
+      "description": "Summons rain that lasts indefinitely upon entering battle.",
+      "generation": 3
+    },
+    "drought": {
+      "name": "Drought",
+      "description": "Summons strong sunlight that lasts indefinitely upon entering battle.",
+      "generation": 3
+    },
+    "early-bird": {
+      "name": "Early Bird",
+      "description": "Makes sleep pass twice as quickly.",
+      "generation": 3
+    },
+    "effect-spore": {
+      "name": "Effect Spore",
+      "description": "Has a 30% chance of inflcting either paralysis, poison, or sleep on attacking Pokémon on contact.",
+      "generation": 3
+    },
+    "flame-body": {
+      "name": "Flame Body",
+      "description": "Has a 30% chance of burning attacking Pokémon on contact.",
+      "generation": 3
+    },
+    "flash-fire": {
+      "name": "Flash Fire",
+      "description": "Protects against Fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle.",
+      "generation": 3
+    },
+    "forecast": {
+      "name": "Forecast",
+      "description": "Changes Castform's type and form to match the weather.",
+      "generation": 3
+    },
+    "guts": {
+      "name": "Guts",
+      "description": "Increases Attack to 1.5× with a major status ailment.",
+      "generation": 3
+    },
+    "huge-power": {
+      "name": "Huge Power",
+      "description": "Doubles Attack in battle.",
+      "generation": 3
+    },
+    "hustle": {
+      "name": "Hustle",
+      "description": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×.",
+      "generation": 3
+    },
+    "hyper-cutter": {
+      "name": "Hyper Cutter",
+      "description": "Prevents Attack from being lowered by other Pokémon.",
+      "generation": 3
+    },
+    "illuminate": {
+      "name": "Illuminate",
+      "description": "Doubles the wild encounter rate.",
+      "generation": 3
+    },
+    "immunity": {
+      "name": "Immunity",
+      "description": "Prevents poison.",
+      "generation": 3
+    },
+    "inner-focus": {
+      "name": "Inner Focus",
+      "description": "Prevents flinching.",
+      "generation": 3
+    },
+    "insomnia": {
+      "name": "Insomnia",
+      "description": "Prevents sleep.",
+      "generation": 3
+    },
+    "intimidate": {
+      "name": "Intimidate",
+      "description": "Lowers opponents' Attack one stage upon entering battle.",
+      "generation": 3
+    },
+    "keen-eye": {
+      "name": "Keen Eye",
+      "description": "Prevents accuracy from being lowered.",
+      "generation": 3
+    },
+    "levitate": {
+      "name": "Levitate",
+      "description": "Evades Ground moves.",
+      "generation": 3
+    },
+    "lightning-rod": {
+      "name": "Lightning Rod",
+      "description": "Redirects single-target Electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage.",
+      "generation": 3
+    },
+    "limber": {
+      "name": "Limber",
+      "description": "Prevents paralysis.",
+      "generation": 3
+    },
+    "liquid-ooze": {
+      "name": "Liquid Ooze",
+      "description": "Damages opponents using leeching moves for as much as they would heal.",
+      "generation": 3
+    },
+    "magma-armor": {
+      "name": "Magma Armor",
+      "description": "Prevents freezing.",
+      "generation": 3
+    },
+    "magnet-pull": {
+      "name": "Magnet Pull",
+      "description": "Prevents Steel opponents from fleeing or switching out.",
+      "generation": 3
+    },
+    "marvel-scale": {
+      "name": "Marvel Scale",
+      "description": "Increases Defense to 1.5× with a major status ailment.",
+      "generation": 3
+    },
+    "minus": {
+      "name": "Minus",
+      "description": "Increases Special Attack to 1.5× when a friendly Pokémon has Plus or Minus.",
+      "generation": 3
+    },
+    "natural-cure": {
+      "name": "Natural Cure",
+      "description": "Cures any major status ailment upon switching out.",
+      "generation": 3
+    },
+    "oblivious": {
+      "name": "Oblivious",
+      "description": "Prevents infatuation and protects against Captivate.",
+      "generation": 3
+    },
+    "overgrow": {
+      "name": "Overgrow",
+      "description": "Strengthens Grass moves to inflict 1.5× damage at 1/3 max HP or less.",
+      "generation": 3
+    },
+    "own-tempo": {
+      "name": "Own Tempo",
+      "description": "Prevents confusion.",
+      "generation": 3
+    },
+    "pickup": {
+      "name": "Pickup",
+      "description": "Picks up other Pokémon's used and Flung held items.  May also pick up an item after battle.",
+      "generation": 3
+    },
+    "plus": {
+      "name": "Plus",
+      "description": "Increases Special Attack to 1.5× when a friendly Pokémon has Plus or Minus.",
+      "generation": 3
+    },
+    "poison-point": {
+      "name": "Poison Point",
+      "description": "Has a 30% chance of poisoning attacking Pokémon on contact.",
+      "generation": 3
+    },
+    "pressure": {
+      "name": "Pressure",
+      "description": "Increases the PP cost of moves targetting the Pokémon by one.",
+      "generation": 3
+    },
+    "pure-power": {
+      "name": "Pure Power",
+      "description": "Doubles Attack in battle.",
+      "generation": 3
+    },
+    "rain-dish": {
+      "name": "Rain Dish",
+      "description": "Heals for 1/16 max HP after each turn during rain.",
+      "generation": 3
+    },
+    "rock-head": {
+      "name": "Rock Head",
+      "description": "Protects against recoil damage.",
+      "generation": 3
+    },
+    "rough-skin": {
+      "name": "Rough Skin",
+      "description": "Damages attacking Pokémon for 1/8 their max HP on contact.",
+      "generation": 3
+    },
+    "run-away": {
+      "name": "Run Away",
+      "description": "Ensures success fleeing from wild battles.",
+      "generation": 3
+    },
+    "sand-stream": {
+      "name": "Sand Stream",
+      "description": "Summons a sandstorm that lasts indefinitely upon entering battle.",
+      "generation": 3
+    },
+    "sand-veil": {
+      "name": "Sand Veil",
+      "description": "Increases evasion to 1.25× during a sandstorm.  Protects against sandstorm damage.",
+      "generation": 3
+    },
+    "serene-grace": {
+      "name": "Serene Grace",
+      "description": "Doubles the chance of moves' extra effects occurring.",
+      "generation": 3
+    },
+    "shadow-tag": {
+      "name": "Shadow Tag",
+      "description": "Prevents opponents from fleeing or switching out.",
+      "generation": 3
+    },
+    "shed-skin": {
+      "name": "Shed Skin",
+      "description": "Has a 33% chance of curing any major status ailment after each turn.",
+      "generation": 3
+    },
+    "shell-armor": {
+      "name": "Shell Armor",
+      "description": "Protects against critical hits.",
+      "generation": 3
+    },
+    "shield-dust": {
+      "name": "Shield Dust",
+      "description": "Protects against incoming moves' extra effects.",
+      "generation": 3
+    },
+    "soundproof": {
+      "name": "Soundproof",
+      "description": "Protects against sound-based moves.",
+      "generation": 3
+    },
+    "speed-boost": {
+      "name": "Speed Boost",
+      "description": "Raises Speed one stage after each turn.",
+      "generation": 3
+    },
+    "static": {
+      "name": "Static",
+      "description": "Has a 30% chance of paralyzing attacking Pokémon on contact.",
+      "generation": 3
+    },
+    "stench": {
+      "name": "Stench",
+      "description": "Has a 10% chance of making target Pokémon flinch with each hit.",
+      "generation": 3
+    },
+    "sticky-hold": {
+      "name": "Sticky Hold",
+      "description": "Prevents a held item from being removed by other Pokémon.",
+      "generation": 3
+    },
+    "sturdy": {
+      "name": "Sturdy",
+      "description": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP.",
+      "generation": 3
+    },
+    "suction-cups": {
+      "name": "Suction Cups",
+      "description": "Prevents being forced out of battle by other Pokémon's moves.",
+      "generation": 3
+    },
+    "swarm": {
+      "name": "Swarm",
+      "description": "Strengthens Bug moves to inflict 1.5× damage at 1/3 max HP or less.",
+      "generation": 3
+    },
+    "swift-swim": {
+      "name": "Swift Swim",
+      "description": "Doubles Speed during rain.",
+      "generation": 3
+    },
+    "synchronize": {
+      "name": "Synchronize",
+      "description": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them.",
+      "generation": 3
+    },
+    "thick-fat": {
+      "name": "Thick Fat",
+      "description": "Halves damage from Fire and Ice moves.",
+      "generation": 3
+    },
+    "torrent": {
+      "name": "Torrent",
+      "description": "Strengthens Water moves to inflict 1.5× damage at 1/3 max HP or less.",
+      "generation": 3
+    },
+    "trace": {
+      "name": "Trace",
+      "description": "Copies an opponent's ability upon entering battle.",
+      "generation": 3
+    },
+    "truant": {
+      "name": "Truant",
+      "description": "Skips every second turn.",
+      "generation": 3
+    },
+    "vital-spirit": {
+      "name": "Vital Spirit",
+      "description": "Prevents sleep.",
+      "generation": 3
+    },
+    "volt-absorb": {
+      "name": "Volt Absorb",
+      "description": "Absorbs Electric moves, healing for 1/4 max HP.",
+      "generation": 3
+    },
+    "water-absorb": {
+      "name": "Water Absorb",
+      "description": "Absorbs Water moves, healing for 1/4 max HP.",
+      "generation": 3
+    },
+    "water-veil": {
+      "name": "Water Veil",
+      "description": "Prevents burns.",
+      "generation": 3
+    },
+    "white-smoke": {
+      "name": "White Smoke",
+      "description": "Prevents stats from being lowered by other Pokémon.",
+      "generation": 3
+    },
+    "wonder-guard": {
+      "name": "Wonder Guard",
+      "description": "Protects against damaging moves that are not super effective.",
+      "generation": 3
+    }
+  },
+  "pokemon": [
+    {
+      "national_dex_number": 1,
+      "abilities": [
+        {
+          "ability": "overgrow",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 2,
+      "abilities": [
+        {
+          "ability": "overgrow",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 3,
+      "abilities": [
+        {
+          "ability": "overgrow",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 4,
+      "abilities": [
+        {
+          "ability": "blaze",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 5,
+      "abilities": [
+        {
+          "ability": "blaze",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 6,
+      "abilities": [
+        {
+          "ability": "blaze",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 7,
+      "abilities": [
+        {
+          "ability": "torrent",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 8,
+      "abilities": [
+        {
+          "ability": "torrent",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 9,
+      "abilities": [
+        {
+          "ability": "torrent",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 10,
+      "abilities": [
+        {
+          "ability": "shield-dust",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 11,
+      "abilities": [
+        {
+          "ability": "shed-skin",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 12,
+      "abilities": [
+        {
+          "ability": "compound-eyes",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 13,
+      "abilities": [
+        {
+          "ability": "shield-dust",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 14,
+      "abilities": [
+        {
+          "ability": "shed-skin",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 15,
+      "abilities": [
+        {
+          "ability": "swarm",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 16,
+      "abilities": [
+        {
+          "ability": "keen-eye",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 17,
+      "abilities": [
+        {
+          "ability": "keen-eye",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 18,
+      "abilities": [
+        {
+          "ability": "keen-eye",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 19,
+      "abilities": [
+        {
+          "ability": "run-away",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "guts",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 20,
+      "abilities": [
+        {
+          "ability": "run-away",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "guts",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 21,
+      "abilities": [
+        {
+          "ability": "keen-eye",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 22,
+      "abilities": [
+        {
+          "ability": "keen-eye",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 23,
+      "abilities": [
+        {
+          "ability": "intimidate",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "shed-skin",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 24,
+      "abilities": [
+        {
+          "ability": "intimidate",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "shed-skin",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 25,
+      "abilities": [
+        {
+          "ability": "static",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 26,
+      "abilities": [
+        {
+          "ability": "static",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 27,
+      "abilities": [
+        {
+          "ability": "sand-veil",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 28,
+      "abilities": [
+        {
+          "ability": "sand-veil",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 29,
+      "abilities": [
+        {
+          "ability": "poison-point",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 30,
+      "abilities": [
+        {
+          "ability": "poison-point",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 31,
+      "abilities": [
+        {
+          "ability": "poison-point",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 32,
+      "abilities": [
+        {
+          "ability": "poison-point",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 33,
+      "abilities": [
+        {
+          "ability": "poison-point",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 34,
+      "abilities": [
+        {
+          "ability": "poison-point",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 35,
+      "abilities": [
+        {
+          "ability": "cute-charm",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 36,
+      "abilities": [
+        {
+          "ability": "cute-charm",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 37,
+      "abilities": [
+        {
+          "ability": "flash-fire",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 38,
+      "abilities": [
+        {
+          "ability": "flash-fire",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 39,
+      "abilities": [
+        {
+          "ability": "cute-charm",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 40,
+      "abilities": [
+        {
+          "ability": "cute-charm",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 41,
+      "abilities": [
+        {
+          "ability": "inner-focus",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 42,
+      "abilities": [
+        {
+          "ability": "inner-focus",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 43,
+      "abilities": [
+        {
+          "ability": "chlorophyll",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 44,
+      "abilities": [
+        {
+          "ability": "chlorophyll",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 45,
+      "abilities": [
+        {
+          "ability": "chlorophyll",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 46,
+      "abilities": [
+        {
+          "ability": "effect-spore",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 47,
+      "abilities": [
+        {
+          "ability": "effect-spore",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 48,
+      "abilities": [
+        {
+          "ability": "compound-eyes",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 49,
+      "abilities": [
+        {
+          "ability": "shield-dust",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 50,
+      "abilities": [
+        {
+          "ability": "sand-veil",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "arena-trap",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 51,
+      "abilities": [
+        {
+          "ability": "sand-veil",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "arena-trap",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 52,
+      "abilities": [
+        {
+          "ability": "pickup",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 53,
+      "abilities": [
+        {
+          "ability": "limber",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 54,
+      "abilities": [
+        {
+          "ability": "damp",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "cloud-nine",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 55,
+      "abilities": [
+        {
+          "ability": "damp",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "cloud-nine",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 56,
+      "abilities": [
+        {
+          "ability": "vital-spirit",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 57,
+      "abilities": [
+        {
+          "ability": "vital-spirit",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 58,
+      "abilities": [
+        {
+          "ability": "intimidate",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "flash-fire",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 59,
+      "abilities": [
+        {
+          "ability": "intimidate",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "flash-fire",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 60,
+      "abilities": [
+        {
+          "ability": "water-absorb",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "damp",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 61,
+      "abilities": [
+        {
+          "ability": "water-absorb",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "damp",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 62,
+      "abilities": [
+        {
+          "ability": "water-absorb",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "damp",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 63,
+      "abilities": [
+        {
+          "ability": "synchronize",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "inner-focus",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 64,
+      "abilities": [
+        {
+          "ability": "synchronize",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "inner-focus",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 65,
+      "abilities": [
+        {
+          "ability": "synchronize",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "inner-focus",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 66,
+      "abilities": [
+        {
+          "ability": "guts",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 67,
+      "abilities": [
+        {
+          "ability": "guts",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 68,
+      "abilities": [
+        {
+          "ability": "guts",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 69,
+      "abilities": [
+        {
+          "ability": "chlorophyll",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 70,
+      "abilities": [
+        {
+          "ability": "chlorophyll",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 71,
+      "abilities": [
+        {
+          "ability": "chlorophyll",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 72,
+      "abilities": [
+        {
+          "ability": "clear-body",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "liquid-ooze",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 73,
+      "abilities": [
+        {
+          "ability": "clear-body",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "liquid-ooze",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 74,
+      "abilities": [
+        {
+          "ability": "rock-head",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sturdy",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 75,
+      "abilities": [
+        {
+          "ability": "rock-head",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sturdy",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 76,
+      "abilities": [
+        {
+          "ability": "rock-head",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sturdy",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 77,
+      "abilities": [
+        {
+          "ability": "run-away",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "flash-fire",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 78,
+      "abilities": [
+        {
+          "ability": "run-away",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "flash-fire",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 79,
+      "abilities": [
+        {
+          "ability": "oblivious",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "own-tempo",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 80,
+      "abilities": [
+        {
+          "ability": "oblivious",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "own-tempo",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 81,
+      "abilities": [
+        {
+          "ability": "magnet-pull",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sturdy",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 82,
+      "abilities": [
+        {
+          "ability": "magnet-pull",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sturdy",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 83,
+      "abilities": [
+        {
+          "ability": "keen-eye",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "inner-focus",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 84,
+      "abilities": [
+        {
+          "ability": "run-away",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "early-bird",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 85,
+      "abilities": [
+        {
+          "ability": "run-away",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "early-bird",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 86,
+      "abilities": [
+        {
+          "ability": "thick-fat",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 87,
+      "abilities": [
+        {
+          "ability": "thick-fat",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 88,
+      "abilities": [
+        {
+          "ability": "stench",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sticky-hold",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 89,
+      "abilities": [
+        {
+          "ability": "stench",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sticky-hold",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 90,
+      "abilities": [
+        {
+          "ability": "shell-armor",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 91,
+      "abilities": [
+        {
+          "ability": "shell-armor",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 92,
+      "abilities": [
+        {
+          "ability": "levitate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 93,
+      "abilities": [
+        {
+          "ability": "levitate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 94,
+      "abilities": [
+        {
+          "ability": "levitate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 95,
+      "abilities": [
+        {
+          "ability": "rock-head",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sturdy",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 96,
+      "abilities": [
+        {
+          "ability": "insomnia",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 97,
+      "abilities": [
+        {
+          "ability": "insomnia",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 98,
+      "abilities": [
+        {
+          "ability": "hyper-cutter",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "shell-armor",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 99,
+      "abilities": [
+        {
+          "ability": "hyper-cutter",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "shell-armor",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 100,
+      "abilities": [
+        {
+          "ability": "soundproof",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "static",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 101,
+      "abilities": [
+        {
+          "ability": "soundproof",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "static",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 102,
+      "abilities": [
+        {
+          "ability": "chlorophyll",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 103,
+      "abilities": [
+        {
+          "ability": "chlorophyll",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 104,
+      "abilities": [
+        {
+          "ability": "rock-head",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "lightning-rod",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 105,
+      "abilities": [
+        {
+          "ability": "rock-head",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "lightning-rod",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 106,
+      "abilities": [
+        {
+          "ability": "limber",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 107,
+      "abilities": [
+        {
+          "ability": "keen-eye",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 108,
+      "abilities": [
+        {
+          "ability": "own-tempo",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "oblivious",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 109,
+      "abilities": [
+        {
+          "ability": "levitate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 110,
+      "abilities": [
+        {
+          "ability": "levitate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 111,
+      "abilities": [
+        {
+          "ability": "lightning-rod",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "rock-head",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 112,
+      "abilities": [
+        {
+          "ability": "lightning-rod",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "rock-head",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 113,
+      "abilities": [
+        {
+          "ability": "natural-cure",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "serene-grace",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 114,
+      "abilities": [
+        {
+          "ability": "chlorophyll",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 115,
+      "abilities": [
+        {
+          "ability": "early-bird",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 116,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 117,
+      "abilities": [
+        {
+          "ability": "poison-point",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 118,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "water-veil",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 119,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "water-veil",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 120,
+      "abilities": [
+        {
+          "ability": "illuminate",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "natural-cure",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 121,
+      "abilities": [
+        {
+          "ability": "illuminate",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "natural-cure",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 122,
+      "abilities": [
+        {
+          "ability": "soundproof",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 123,
+      "abilities": [
+        {
+          "ability": "swarm",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 124,
+      "abilities": [
+        {
+          "ability": "oblivious",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 125,
+      "abilities": [
+        {
+          "ability": "static",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 126,
+      "abilities": [
+        {
+          "ability": "flame-body",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 127,
+      "abilities": [
+        {
+          "ability": "hyper-cutter",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 128,
+      "abilities": [
+        {
+          "ability": "intimidate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 129,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 130,
+      "abilities": [
+        {
+          "ability": "intimidate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 131,
+      "abilities": [
+        {
+          "ability": "water-absorb",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "shell-armor",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 132,
+      "abilities": [
+        {
+          "ability": "limber",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 133,
+      "abilities": [
+        {
+          "ability": "run-away",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 134,
+      "abilities": [
+        {
+          "ability": "water-absorb",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 135,
+      "abilities": [
+        {
+          "ability": "volt-absorb",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 136,
+      "abilities": [
+        {
+          "ability": "flash-fire",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 137,
+      "abilities": [
+        {
+          "ability": "trace",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 138,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "shell-armor",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 139,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "shell-armor",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 140,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "battle-armor",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 141,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "battle-armor",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 142,
+      "abilities": [
+        {
+          "ability": "rock-head",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "pressure",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 143,
+      "abilities": [
+        {
+          "ability": "immunity",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "thick-fat",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 144,
+      "abilities": [
+        {
+          "ability": "pressure",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 145,
+      "abilities": [
+        {
+          "ability": "pressure",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 146,
+      "abilities": [
+        {
+          "ability": "pressure",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 147,
+      "abilities": [
+        {
+          "ability": "shed-skin",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 148,
+      "abilities": [
+        {
+          "ability": "shed-skin",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 149,
+      "abilities": [
+        {
+          "ability": "inner-focus",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 150,
+      "abilities": [
+        {
+          "ability": "pressure",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 151,
+      "abilities": [
+        {
+          "ability": "synchronize",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 152,
+      "abilities": [
+        {
+          "ability": "overgrow",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 153,
+      "abilities": [
+        {
+          "ability": "overgrow",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 154,
+      "abilities": [
+        {
+          "ability": "overgrow",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 155,
+      "abilities": [
+        {
+          "ability": "blaze",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 156,
+      "abilities": [
+        {
+          "ability": "blaze",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 157,
+      "abilities": [
+        {
+          "ability": "blaze",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 158,
+      "abilities": [
+        {
+          "ability": "torrent",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 159,
+      "abilities": [
+        {
+          "ability": "torrent",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 160,
+      "abilities": [
+        {
+          "ability": "torrent",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 161,
+      "abilities": [
+        {
+          "ability": "run-away",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "keen-eye",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 162,
+      "abilities": [
+        {
+          "ability": "run-away",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "keen-eye",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 163,
+      "abilities": [
+        {
+          "ability": "insomnia",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "keen-eye",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 164,
+      "abilities": [
+        {
+          "ability": "insomnia",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "keen-eye",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 165,
+      "abilities": [
+        {
+          "ability": "swarm",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "early-bird",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 166,
+      "abilities": [
+        {
+          "ability": "swarm",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "early-bird",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 167,
+      "abilities": [
+        {
+          "ability": "swarm",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "insomnia",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 168,
+      "abilities": [
+        {
+          "ability": "swarm",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "insomnia",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 169,
+      "abilities": [
+        {
+          "ability": "inner-focus",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 170,
+      "abilities": [
+        {
+          "ability": "volt-absorb",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "illuminate",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 171,
+      "abilities": [
+        {
+          "ability": "volt-absorb",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "illuminate",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 172,
+      "abilities": [
+        {
+          "ability": "static",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 173,
+      "abilities": [
+        {
+          "ability": "cute-charm",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 174,
+      "abilities": [
+        {
+          "ability": "cute-charm",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 175,
+      "abilities": [
+        {
+          "ability": "hustle",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "serene-grace",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 176,
+      "abilities": [
+        {
+          "ability": "hustle",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "serene-grace",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 177,
+      "abilities": [
+        {
+          "ability": "synchronize",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "early-bird",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 178,
+      "abilities": [
+        {
+          "ability": "synchronize",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "early-bird",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 179,
+      "abilities": [
+        {
+          "ability": "static",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 180,
+      "abilities": [
+        {
+          "ability": "static",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 181,
+      "abilities": [
+        {
+          "ability": "static",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 182,
+      "abilities": [
+        {
+          "ability": "chlorophyll",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 183,
+      "abilities": [
+        {
+          "ability": "thick-fat",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "huge-power",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 184,
+      "abilities": [
+        {
+          "ability": "thick-fat",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "huge-power",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 185,
+      "abilities": [
+        {
+          "ability": "sturdy",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "rock-head",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 186,
+      "abilities": [
+        {
+          "ability": "water-absorb",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "damp",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 187,
+      "abilities": [
+        {
+          "ability": "chlorophyll",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 188,
+      "abilities": [
+        {
+          "ability": "chlorophyll",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 189,
+      "abilities": [
+        {
+          "ability": "chlorophyll",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 190,
+      "abilities": [
+        {
+          "ability": "run-away",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "pickup",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 191,
+      "abilities": [
+        {
+          "ability": "chlorophyll",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 192,
+      "abilities": [
+        {
+          "ability": "chlorophyll",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 193,
+      "abilities": [
+        {
+          "ability": "speed-boost",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "compound-eyes",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 194,
+      "abilities": [
+        {
+          "ability": "damp",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "water-absorb",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 195,
+      "abilities": [
+        {
+          "ability": "damp",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "water-absorb",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 196,
+      "abilities": [
+        {
+          "ability": "synchronize",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 197,
+      "abilities": [
+        {
+          "ability": "synchronize",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 198,
+      "abilities": [
+        {
+          "ability": "insomnia",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 199,
+      "abilities": [
+        {
+          "ability": "oblivious",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "own-tempo",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 200,
+      "abilities": [
+        {
+          "ability": "levitate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 201,
+      "abilities": [
+        {
+          "ability": "levitate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 202,
+      "abilities": [
+        {
+          "ability": "shadow-tag",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 203,
+      "abilities": [
+        {
+          "ability": "inner-focus",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "early-bird",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 204,
+      "abilities": [
+        {
+          "ability": "sturdy",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 205,
+      "abilities": [
+        {
+          "ability": "sturdy",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 206,
+      "abilities": [
+        {
+          "ability": "serene-grace",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "run-away",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 207,
+      "abilities": [
+        {
+          "ability": "hyper-cutter",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sand-veil",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 208,
+      "abilities": [
+        {
+          "ability": "rock-head",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sturdy",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 209,
+      "abilities": [
+        {
+          "ability": "intimidate",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "run-away",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 210,
+      "abilities": [
+        {
+          "ability": "intimidate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 211,
+      "abilities": [
+        {
+          "ability": "poison-point",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "swift-swim",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 212,
+      "abilities": [
+        {
+          "ability": "swarm",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 213,
+      "abilities": [
+        {
+          "ability": "sturdy",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 214,
+      "abilities": [
+        {
+          "ability": "swarm",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "guts",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 215,
+      "abilities": [
+        {
+          "ability": "inner-focus",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "keen-eye",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 216,
+      "abilities": [
+        {
+          "ability": "pickup",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 217,
+      "abilities": [
+        {
+          "ability": "guts",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 218,
+      "abilities": [
+        {
+          "ability": "magma-armor",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "flame-body",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 219,
+      "abilities": [
+        {
+          "ability": "magma-armor",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "flame-body",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 220,
+      "abilities": [
+        {
+          "ability": "oblivious",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 221,
+      "abilities": [
+        {
+          "ability": "oblivious",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 222,
+      "abilities": [
+        {
+          "ability": "hustle",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "natural-cure",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 223,
+      "abilities": [
+        {
+          "ability": "hustle",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 224,
+      "abilities": [
+        {
+          "ability": "suction-cups",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 225,
+      "abilities": [
+        {
+          "ability": "vital-spirit",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "hustle",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 226,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "water-absorb",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 227,
+      "abilities": [
+        {
+          "ability": "keen-eye",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sturdy",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 228,
+      "abilities": [
+        {
+          "ability": "early-bird",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "flash-fire",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 229,
+      "abilities": [
+        {
+          "ability": "early-bird",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "flash-fire",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 230,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 231,
+      "abilities": [
+        {
+          "ability": "pickup",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 232,
+      "abilities": [
+        {
+          "ability": "sturdy",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 233,
+      "abilities": [
+        {
+          "ability": "trace",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 234,
+      "abilities": [
+        {
+          "ability": "intimidate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 235,
+      "abilities": [
+        {
+          "ability": "own-tempo",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 236,
+      "abilities": [
+        {
+          "ability": "guts",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 237,
+      "abilities": [
+        {
+          "ability": "intimidate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 238,
+      "abilities": [
+        {
+          "ability": "oblivious",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 239,
+      "abilities": [
+        {
+          "ability": "static",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 240,
+      "abilities": [
+        {
+          "ability": "flame-body",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 241,
+      "abilities": [
+        {
+          "ability": "thick-fat",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 242,
+      "abilities": [
+        {
+          "ability": "natural-cure",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "serene-grace",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 243,
+      "abilities": [
+        {
+          "ability": "pressure",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 244,
+      "abilities": [
+        {
+          "ability": "pressure",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 245,
+      "abilities": [
+        {
+          "ability": "pressure",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 246,
+      "abilities": [
+        {
+          "ability": "guts",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 247,
+      "abilities": [
+        {
+          "ability": "shed-skin",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 248,
+      "abilities": [
+        {
+          "ability": "sand-stream",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 249,
+      "abilities": [
+        {
+          "ability": "pressure",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 250,
+      "abilities": [
+        {
+          "ability": "pressure",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 251,
+      "abilities": [
+        {
+          "ability": "natural-cure",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 252,
+      "abilities": [
+        {
+          "ability": "overgrow",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 253,
+      "abilities": [
+        {
+          "ability": "overgrow",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 254,
+      "abilities": [
+        {
+          "ability": "overgrow",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 255,
+      "abilities": [
+        {
+          "ability": "blaze",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 256,
+      "abilities": [
+        {
+          "ability": "blaze",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 257,
+      "abilities": [
+        {
+          "ability": "blaze",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 258,
+      "abilities": [
+        {
+          "ability": "torrent",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 259,
+      "abilities": [
+        {
+          "ability": "torrent",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 260,
+      "abilities": [
+        {
+          "ability": "torrent",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 261,
+      "abilities": [
+        {
+          "ability": "run-away",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 262,
+      "abilities": [
+        {
+          "ability": "intimidate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 263,
+      "abilities": [
+        {
+          "ability": "pickup",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 264,
+      "abilities": [
+        {
+          "ability": "pickup",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 265,
+      "abilities": [
+        {
+          "ability": "shield-dust",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 266,
+      "abilities": [
+        {
+          "ability": "shed-skin",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 267,
+      "abilities": [
+        {
+          "ability": "swarm",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 268,
+      "abilities": [
+        {
+          "ability": "shed-skin",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 269,
+      "abilities": [
+        {
+          "ability": "shield-dust",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 270,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "rain-dish",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 271,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "rain-dish",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 272,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "rain-dish",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 273,
+      "abilities": [
+        {
+          "ability": "chlorophyll",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "early-bird",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 274,
+      "abilities": [
+        {
+          "ability": "chlorophyll",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "early-bird",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 275,
+      "abilities": [
+        {
+          "ability": "chlorophyll",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 276,
+      "abilities": [
+        {
+          "ability": "guts",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 277,
+      "abilities": [
+        {
+          "ability": "guts",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 278,
+      "abilities": [
+        {
+          "ability": "keen-eye",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 279,
+      "abilities": [
+        {
+          "ability": "keen-eye",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "drizzle",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 280,
+      "abilities": [
+        {
+          "ability": "synchronize",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "trace",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 281,
+      "abilities": [
+        {
+          "ability": "synchronize",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "trace",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 282,
+      "abilities": [
+        {
+          "ability": "synchronize",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "trace",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 283,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 284,
+      "abilities": [
+        {
+          "ability": "intimidate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 285,
+      "abilities": [
+        {
+          "ability": "effect-spore",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 286,
+      "abilities": [
+        {
+          "ability": "effect-spore",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 287,
+      "abilities": [
+        {
+          "ability": "truant",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 288,
+      "abilities": [
+        {
+          "ability": "vital-spirit",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 289,
+      "abilities": [
+        {
+          "ability": "truant",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 290,
+      "abilities": [
+        {
+          "ability": "compound-eyes",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 291,
+      "abilities": [
+        {
+          "ability": "speed-boost",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 292,
+      "abilities": [
+        {
+          "ability": "wonder-guard",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 293,
+      "abilities": [
+        {
+          "ability": "soundproof",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 294,
+      "abilities": [
+        {
+          "ability": "soundproof",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 295,
+      "abilities": [
+        {
+          "ability": "soundproof",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 296,
+      "abilities": [
+        {
+          "ability": "thick-fat",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "guts",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 297,
+      "abilities": [
+        {
+          "ability": "thick-fat",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "guts",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 298,
+      "abilities": [
+        {
+          "ability": "thick-fat",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "huge-power",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 299,
+      "abilities": [
+        {
+          "ability": "sturdy",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "magnet-pull",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 300,
+      "abilities": [
+        {
+          "ability": "cute-charm",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 301,
+      "abilities": [
+        {
+          "ability": "cute-charm",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 302,
+      "abilities": [
+        {
+          "ability": "keen-eye",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 303,
+      "abilities": [
+        {
+          "ability": "hyper-cutter",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "intimidate",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 304,
+      "abilities": [
+        {
+          "ability": "sturdy",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "rock-head",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 305,
+      "abilities": [
+        {
+          "ability": "sturdy",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "rock-head",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 306,
+      "abilities": [
+        {
+          "ability": "sturdy",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "rock-head",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 307,
+      "abilities": [
+        {
+          "ability": "pure-power",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 308,
+      "abilities": [
+        {
+          "ability": "pure-power",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 309,
+      "abilities": [
+        {
+          "ability": "static",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "lightning-rod",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 310,
+      "abilities": [
+        {
+          "ability": "static",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "lightning-rod",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 311,
+      "abilities": [
+        {
+          "ability": "plus",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 312,
+      "abilities": [
+        {
+          "ability": "minus",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 313,
+      "abilities": [
+        {
+          "ability": "illuminate",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "swarm",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 314,
+      "abilities": [
+        {
+          "ability": "oblivious",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 315,
+      "abilities": [
+        {
+          "ability": "natural-cure",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "poison-point",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 316,
+      "abilities": [
+        {
+          "ability": "liquid-ooze",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sticky-hold",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 317,
+      "abilities": [
+        {
+          "ability": "liquid-ooze",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sticky-hold",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 318,
+      "abilities": [
+        {
+          "ability": "rough-skin",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 319,
+      "abilities": [
+        {
+          "ability": "rough-skin",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 320,
+      "abilities": [
+        {
+          "ability": "water-veil",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "oblivious",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 321,
+      "abilities": [
+        {
+          "ability": "water-veil",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "oblivious",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 322,
+      "abilities": [
+        {
+          "ability": "oblivious",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 323,
+      "abilities": [
+        {
+          "ability": "magma-armor",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 324,
+      "abilities": [
+        {
+          "ability": "white-smoke",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "drought",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 325,
+      "abilities": [
+        {
+          "ability": "thick-fat",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "own-tempo",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 326,
+      "abilities": [
+        {
+          "ability": "thick-fat",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "own-tempo",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 327,
+      "abilities": [
+        {
+          "ability": "own-tempo",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 328,
+      "abilities": [
+        {
+          "ability": "hyper-cutter",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "arena-trap",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 329,
+      "abilities": [
+        {
+          "ability": "levitate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 330,
+      "abilities": [
+        {
+          "ability": "levitate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 331,
+      "abilities": [
+        {
+          "ability": "sand-veil",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 332,
+      "abilities": [
+        {
+          "ability": "sand-veil",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 333,
+      "abilities": [
+        {
+          "ability": "natural-cure",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 334,
+      "abilities": [
+        {
+          "ability": "natural-cure",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 335,
+      "abilities": [
+        {
+          "ability": "immunity",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 336,
+      "abilities": [
+        {
+          "ability": "shed-skin",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 337,
+      "abilities": [
+        {
+          "ability": "levitate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 338,
+      "abilities": [
+        {
+          "ability": "levitate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 339,
+      "abilities": [
+        {
+          "ability": "oblivious",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 340,
+      "abilities": [
+        {
+          "ability": "oblivious",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 341,
+      "abilities": [
+        {
+          "ability": "hyper-cutter",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "shell-armor",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 342,
+      "abilities": [
+        {
+          "ability": "hyper-cutter",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "shell-armor",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 343,
+      "abilities": [
+        {
+          "ability": "levitate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 344,
+      "abilities": [
+        {
+          "ability": "levitate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 345,
+      "abilities": [
+        {
+          "ability": "suction-cups",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 346,
+      "abilities": [
+        {
+          "ability": "suction-cups",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 347,
+      "abilities": [
+        {
+          "ability": "battle-armor",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 348,
+      "abilities": [
+        {
+          "ability": "battle-armor",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 349,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "oblivious",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 350,
+      "abilities": [
+        {
+          "ability": "marvel-scale",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 351,
+      "abilities": [
+        {
+          "ability": "forecast",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 352,
+      "abilities": [
+        {
+          "ability": "color-change",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 353,
+      "abilities": [
+        {
+          "ability": "insomnia",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 354,
+      "abilities": [
+        {
+          "ability": "insomnia",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 355,
+      "abilities": [
+        {
+          "ability": "levitate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 356,
+      "abilities": [
+        {
+          "ability": "pressure",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 357,
+      "abilities": [
+        {
+          "ability": "chlorophyll",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 358,
+      "abilities": [
+        {
+          "ability": "levitate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 359,
+      "abilities": [
+        {
+          "ability": "pressure",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 360,
+      "abilities": [
+        {
+          "ability": "shadow-tag",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 361,
+      "abilities": [
+        {
+          "ability": "inner-focus",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 362,
+      "abilities": [
+        {
+          "ability": "inner-focus",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 363,
+      "abilities": [
+        {
+          "ability": "thick-fat",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 364,
+      "abilities": [
+        {
+          "ability": "thick-fat",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 365,
+      "abilities": [
+        {
+          "ability": "thick-fat",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 366,
+      "abilities": [
+        {
+          "ability": "shell-armor",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 367,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 368,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 369,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "rock-head",
+          "slot": 1,
+          "slot_number": 2
+        }
+      ]
+    },
+    {
+      "national_dex_number": 370,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 371,
+      "abilities": [
+        {
+          "ability": "rock-head",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 372,
+      "abilities": [
+        {
+          "ability": "rock-head",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 373,
+      "abilities": [
+        {
+          "ability": "intimidate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 374,
+      "abilities": [
+        {
+          "ability": "clear-body",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 375,
+      "abilities": [
+        {
+          "ability": "clear-body",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 376,
+      "abilities": [
+        {
+          "ability": "clear-body",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 377,
+      "abilities": [
+        {
+          "ability": "clear-body",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 378,
+      "abilities": [
+        {
+          "ability": "clear-body",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 379,
+      "abilities": [
+        {
+          "ability": "clear-body",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 380,
+      "abilities": [
+        {
+          "ability": "levitate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 381,
+      "abilities": [
+        {
+          "ability": "levitate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 382,
+      "abilities": [
+        {
+          "ability": "drizzle",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 383,
+      "abilities": [
+        {
+          "ability": "drought",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 384,
+      "abilities": [
+        {
+          "ability": "air-lock",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 385,
+      "abilities": [
+        {
+          "ability": "serene-grace",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 386,
+      "abilities": [
+        {
+          "ability": "pressure",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "generation_iii_ability_refs": 76,
+    "abilities_used_by_dex_001_386": 76,
+    "pokemon_with_slot1": 386,
+    "pokemon_with_slot2": 127,
+    "hidden_relations_ignored": 313,
+    "non_generation_iii_abilities_ignored": 0,
+    "historical_ability_fallbacks": [
+      94
+    ]
+  }
+}
