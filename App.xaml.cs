@@ -1,4 +1,4 @@
-using GestaoDePokemon.Database;
+using GestaoDePokemon.Data.Persistence.Initialization;
 using System;
 using System.Windows;
 

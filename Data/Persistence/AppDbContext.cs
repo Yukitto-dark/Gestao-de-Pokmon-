@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace GestaoDePokemon.Database;
+namespace GestaoDePokemon.Data.Persistence;
 
 /// <summary>
 /// Contexto único de persistência. Todas as entidades utilizadas aqui vêm de

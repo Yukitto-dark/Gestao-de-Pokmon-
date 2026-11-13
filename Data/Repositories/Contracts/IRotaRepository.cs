@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using GestaoDePokemon.model;
-namespace GestaoDePokemon.Data
+namespace GestaoDePokemon.Data.Repositories.Contracts
 {
     public interface IRotaRepository
     {

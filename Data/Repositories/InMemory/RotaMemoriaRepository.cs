@@ -2,7 +2,8 @@ using System;
 using System.Collections.Generic;
 using GestaoDePokemon.model;
 
-namespace GestaoDePokemon.Data
+using GestaoDePokemon.Data.Repositories.Contracts;
+namespace GestaoDePokemon.Data.Repositories.InMemory
 {
     public class RotaMemoriaRepository : IRotaRepository
     {

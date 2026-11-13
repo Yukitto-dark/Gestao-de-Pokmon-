@@ -6,7 +6,11 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
 using GestaoDePokemon.Controller;
-using GestaoDePokemon.Data;
+using GestaoDePokemon.Data.Configuration;
+using GestaoDePokemon.Data.Filters;
+using GestaoDePokemon.Data.Repositories.Contracts;
+using GestaoDePokemon.Data.Repositories.InMemory;
+using GestaoDePokemon.Data.Repositories.SQLite;
 using GestaoDePokemon.model;
 using System.Windows.Controls.Primitives;
 

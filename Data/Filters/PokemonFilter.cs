@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using GestaoDePokemon.model;
 
-namespace GestaoDePokemon.Data
-{
+namespace GestaoDePokemon.Data.Filters{
     /// <summary>
     /// Critérios combináveis para filtrar a Pokédex.
     /// Uma coleção de regiões nula ou vazia significa que nenhuma restrição

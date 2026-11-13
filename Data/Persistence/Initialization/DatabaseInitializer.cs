@@ -7,7 +7,8 @@ using System.Text.Json.Serialization;
 using GestaoDePokemon.model;
 using Microsoft.EntityFrameworkCore;
 
-namespace GestaoDePokemon.Database;
+using GestaoDePokemon.Data.Persistence;
+namespace GestaoDePokemon.Data.Persistence.Initialization;
 
 /// <summary>
 /// Cria a estrutura inicial do SQLite e carrega o conjunto inicial de espécies.
@@ -166,7 +167,7 @@ public static class DatabaseInitializer
     private static List<PokemonSeed> LoadPokemonSeeds()
     {
         using Stream stream = typeof(DatabaseInitializer).Assembly.GetManifestResourceStream(
-            "GestaoDePokemon.Database.Seed.pokemon-seed.json")
+            "GestaoDePokemon.Data.Persistence.Seed.pokemon-seed.json")
             ?? throw new InvalidOperationException(
                 "O arquivo incorporado Database/Seed/pokemon-seed.json não foi encontrado.");
 
@@ -262,7 +263,7 @@ public static class DatabaseInitializer
     /// </summary>
     private static void SeedMoveCatalogAndLearnsets(AppDbContext db)
     {
-        string seedDirectory = Path.Combine(AppContext.BaseDirectory, "Database", "Seed");
+        string seedDirectory = Path.Combine(AppContext.BaseDirectory, "Data", "Persistence", "Seed");
         string moveCatalogPath = Path.Combine(seedDirectory, "move-catalog-seed.json");
         string learnsetsPath = Path.Combine(seedDirectory, "pokemon-learnsets-seed.json");
 
@@ -400,7 +401,8 @@ public static class DatabaseInitializer
     {
         string seedPath = Path.Combine(
             AppContext.BaseDirectory,
-            "Database",
+            "Data",
+            "Persistence",
             "Seed",
             "pokemon-evolutions-seed.json");
 

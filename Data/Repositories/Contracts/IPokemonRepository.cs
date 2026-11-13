@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using GestaoDePokemon.model;
 
-namespace GestaoDePokemon.Data
-{
+using GestaoDePokemon.Data.Filters;
+namespace GestaoDePokemon.Data.Repositories.Contracts{
     public interface IPokemonRepository
     {
         int Total { get; }

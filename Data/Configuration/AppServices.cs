@@ -1,4 +1,7 @@
-namespace GestaoDePokemon.Data
+using GestaoDePokemon.Data.Repositories.Contracts;
+using GestaoDePokemon.Data.Repositories.SQLite;
+using GestaoDePokemon.Data.Repositories.InMemory;
+namespace GestaoDePokemon.Data.Configuration
 {
     /// <summary>
     /// Ponto central de composição dos repositórios usados pelos Controllers.

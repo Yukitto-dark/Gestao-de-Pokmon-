@@ -1,6 +1,10 @@
 using System;
 using System.Collections.Generic;
-using GestaoDePokemon.Data;
+using GestaoDePokemon.Data.Configuration;
+using GestaoDePokemon.Data.Filters;
+using GestaoDePokemon.Data.Repositories.Contracts;
+using GestaoDePokemon.Data.Repositories.InMemory;
+using GestaoDePokemon.Data.Repositories.SQLite;
 
 namespace GestaoDePokemon.Controller
 {

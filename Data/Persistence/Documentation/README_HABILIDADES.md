@@ -4,7 +4,7 @@ Este pacote cadastra no SQLite as habilidades normais dos Pokémon #001–#386, 
 
 ## Compatibilidade com o modelo existente
 
-O importador respeita as classes e nomes usados em `Database/database.cs`:
+O importador respeita as classes e nomes usados em `Data/Persistence/database.cs`:
 
 - `PokemonAbility`: `Id`, `Name`, `Description` → tabela `Abilities`.
 - `PokemonFormAbility`: `Id`, `PokemonFormId`, `AbilityId`, `Slot` → tabela `FormAbilities`.
@@ -30,7 +30,7 @@ python3 scripts/importar_habilidades.py \
   --database "$HOME/.wine-dotnet-10/drive_c/users/jose/AppData/Local/GestaoDePokemon/gestaopokemon.db"
 ```
 
-A primeira execução exige internet. A API é armazenada em cache em `~/.cache/gestaopokemon/pokeapi-habilidades`. O banco recebe backup automático antes da gravação. O arquivo `Database/Seed/abilities-seed.json` também é gerado para versionamento no Git.
+A primeira execução exige internet. A API é armazenada em cache em `~/.cache/gestaopokemon/pokeapi-habilidades`. O banco recebe backup automático antes da gravação. O arquivo `Data/Persistence/Seed/abilities-seed.json` também é gerado para versionamento no Git.
 
 Teste interno sem rede e sem alterar o banco real:
 

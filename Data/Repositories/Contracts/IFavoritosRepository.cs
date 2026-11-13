@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace GestaoDePokemon.Data
+namespace GestaoDePokemon.Data.Repositories.Contracts
 {
     public interface IFavoritosRepository
     {
