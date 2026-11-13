@@ -33,17 +33,30 @@ public static class DatabaseInitializer
         SeedRegions(db);
         db.SaveChanges();
 
+        List<PokemonSeed> pokemonSeeds = LoadPokemonSeeds();
+
         if (!db.Pokemons.Any())
         {
-            SeedPokemons(db);
+            SeedPokemons(db, pokemonSeeds);
             db.SaveChanges();
         }
+
+        // BaseStats já faz parte de PokemonForm. Esta rotina apenas repara
+        // formas existentes que estejam sem valores válidos, sem sobrescrever
+        // atributos que já foram cadastrados corretamente.
+        EnsureBaseStats(db, pokemonSeeds);
+        db.SaveChanges();
 
         // Corrige dados herdados da versão anterior e remove a região
         // Sinnoh, que não pertence ao recorte atual da Pokédex (1 a 386).
         NormalizeLegacyPokedexData(db);
 
         SeedSprites(db);
+        db.SaveChanges();
+
+        // Os arquivos são gerados uma única vez por scripts/gerar_seed_moves.py.
+        // A importação é incremental e não duplica movimentos nem learnsets.
+        SeedMoveCatalogAndLearnsets(db);
         db.SaveChanges();
 
         transaction.Commit();
@@ -145,17 +158,19 @@ public static class DatabaseInitializer
         db.SaveChanges();
     }
 
-    private static void SeedPokemons(AppDbContext db)
+    private static List<PokemonSeed> LoadPokemonSeeds()
     {
         using Stream stream = typeof(DatabaseInitializer).Assembly.GetManifestResourceStream(
             "GestaoDePokemon.Database.Seed.pokemon-seed.json")
             ?? throw new InvalidOperationException(
                 "O arquivo incorporado Database/Seed/pokemon-seed.json não foi encontrado.");
 
-        List<PokemonSeed> seeds = JsonSerializer.Deserialize<List<PokemonSeed>>(
-            stream, SeedJsonOptions)
+        return JsonSerializer.Deserialize<List<PokemonSeed>>(stream, SeedJsonOptions)
             ?? throw new InvalidOperationException("O arquivo de dados iniciais está vazio ou inválido.");
+    }
 
+    private static void SeedPokemons(AppDbContext db, IReadOnlyList<PokemonSeed> seeds)
+    {
         var pokemons = new List<Pokemon>(seeds.Count);
 
         foreach (PokemonSeed seed in seeds)
@@ -187,6 +202,216 @@ public static class DatabaseInitializer
         }
 
         db.Pokemons.AddRange(pokemons);
+    }
+
+    private static void EnsureBaseStats(AppDbContext db, IReadOnlyList<PokemonSeed> seeds)
+    {
+        var species = db.Pokemons
+            .Include(pokemon => pokemon.Forms)
+            .ToDictionary(pokemon => pokemon.NationalDexNumber);
+
+        foreach (PokemonSeed seed in seeds)
+        {
+            if (!species.TryGetValue(seed.NationalDexNumber, out Pokemon? pokemon))
+                continue;
+
+            PokemonForm? form = pokemon.Forms.FirstOrDefault(existing =>
+                existing.FormName == seed.Form.FormName);
+
+            if (form is null)
+            {
+                form = new PokemonForm
+                {
+                    Pokemon = pokemon,
+                    PokemonId = pokemon.Id,
+                    FormName = seed.Form.FormName,
+                    Stats = seed.Form.Stats
+                };
+
+                foreach (PokemonType type in seed.Form.Types.Distinct())
+                    form.AddType(type);
+
+                pokemon.Forms.Add(form);
+                continue;
+            }
+
+            if (!HasValidBaseStats(form.Stats))
+                form.Stats = seed.Form.Stats;
+
+            if (form.Types.Count == 0)
+            {
+                foreach (PokemonType type in seed.Form.Types.Distinct())
+                    form.AddType(type);
+            }
+        }
+    }
+
+    private static bool HasValidBaseStats(BaseStats stats) =>
+        stats.HP > 0 && stats.Atk > 0 && stats.Def > 0 &&
+        stats.SpAtk > 0 && stats.SpDef > 0 && stats.Speed > 0;
+
+    /// <summary>
+    /// Importa o catálogo de movimentos e os learnsets gerados a partir dos CSVs
+    /// da PokeAPI. Os arquivos são opcionais até o usuário executar o gerador;
+    /// se apenas um deles existir, a inicialização falha com mensagem explícita.
+    /// </summary>
+    private static void SeedMoveCatalogAndLearnsets(AppDbContext db)
+    {
+        string seedDirectory = Path.Combine(AppContext.BaseDirectory, "Database", "Seed");
+        string moveCatalogPath = Path.Combine(seedDirectory, "move-catalog-seed.json");
+        string learnsetsPath = Path.Combine(seedDirectory, "pokemon-learnsets-seed.json");
+
+        bool hasMoveCatalog = File.Exists(moveCatalogPath);
+        bool hasLearnsets = File.Exists(learnsetsPath);
+
+        if (!hasMoveCatalog && !hasLearnsets)
+            return;
+
+        if (!hasMoveCatalog || !hasLearnsets)
+        {
+            throw new InvalidOperationException(
+                "Os seeds de movimentos estão incompletos. Execute " +
+                "python3 scripts/gerar_seed_moves.py para gerar os dois arquivos JSON.");
+        }
+
+        List<PokemonMoveSeed> moveSeeds;
+        using (FileStream stream = File.OpenRead(moveCatalogPath))
+        {
+            moveSeeds = JsonSerializer.Deserialize<List<PokemonMoveSeed>>(stream, SeedJsonOptions)
+                ?? throw new InvalidDataException("O catálogo de movimentos está vazio ou inválido.");
+        }
+
+        List<PokemonLearnsetSeed> learnsetSeeds;
+        using (FileStream stream = File.OpenRead(learnsetsPath))
+        {
+            learnsetSeeds = JsonSerializer.Deserialize<List<PokemonLearnsetSeed>>(stream, SeedJsonOptions)
+                ?? throw new InvalidDataException("O seed de learnsets está vazio ou inválido.");
+        }
+
+        if (moveSeeds.Count == 0 || learnsetSeeds.Count == 0)
+            throw new InvalidDataException("Os arquivos de movimentos não contêm registros.");
+
+        // Upsert do catálogo pelo ID original da PokeAPI.
+        var movesById = db.Moves.ToDictionary(move => move.Id);
+        foreach (PokemonMoveSeed seed in moveSeeds)
+        {
+            if (!Enum.IsDefined(seed.Type) || !Enum.IsDefined(seed.Category))
+                throw new InvalidDataException($"Tipo/categoria inválidos no movimento #{seed.Id}.");
+
+            if (movesById.TryGetValue(seed.Id, out PokemonMove? existing))
+            {
+                existing.Name = seed.Name;
+                existing.Type = seed.Type;
+                existing.Category = seed.Category;
+                existing.Power = seed.Power;
+                existing.Accuracy = seed.Accuracy;
+                existing.PP = seed.PP;
+            }
+            else
+            {
+                var move = new PokemonMove
+                {
+                    Id = seed.Id,
+                    Name = seed.Name,
+                    Type = seed.Type,
+                    Category = seed.Category,
+                    Power = seed.Power,
+                    Accuracy = seed.Accuracy,
+                    PP = seed.PP
+                };
+                db.Moves.Add(move);
+                movesById.Add(move.Id, move);
+            }
+        }
+
+        db.SaveChanges();
+
+        var formsByDex = db.PokemonForms
+            .Include(form => form.Pokemon)
+            .Where(form => form.FormName == "Normal")
+            .ToDictionary(form => form.Pokemon.NationalDexNumber);
+
+        var existingLearnsets = db.LearnableMoves
+            .AsNoTracking()
+            .Select(learnable => new
+            {
+                learnable.PokemonFormId,
+                learnable.MoveId,
+                learnable.Method,
+                learnable.Level,
+                learnable.GameVersion
+            })
+            .AsEnumerable()
+            .Select(learnable => new LearnsetKey(
+                learnable.PokemonFormId,
+                learnable.MoveId,
+                learnable.Method,
+                learnable.Level,
+                learnable.GameVersion ?? string.Empty))
+            .ToHashSet();
+
+        foreach (PokemonLearnsetSeed seed in learnsetSeeds)
+        {
+            if (!formsByDex.TryGetValue(seed.NationalDexNumber, out PokemonForm? form))
+                throw new InvalidDataException(
+                    $"Não existe forma Normal para o Pokémon #{seed.NationalDexNumber:000}.");
+
+            if (!movesById.TryGetValue(seed.MoveId, out PokemonMove? move))
+                throw new InvalidDataException(
+                    $"O learnset referencia o movimento inexistente #{seed.MoveId}.");
+
+            if (!Enum.IsDefined(seed.Method))
+                throw new InvalidDataException(
+                    $"Método de aprendizagem inválido para o movimento #{seed.MoveId}.");
+
+            var key = new LearnsetKey(
+                form.Id,
+                seed.MoveId,
+                seed.Method,
+                seed.Level,
+                seed.GameVersion);
+
+            if (!existingLearnsets.Add(key))
+                continue;
+
+            db.LearnableMoves.Add(new LearnableMove
+            {
+                PokemonFormId = form.Id,
+                PokemonForm = form,
+                MoveId = move.Id,
+                Move = move,
+                Method = seed.Method,
+                Level = seed.Level,
+                GameVersion = seed.GameVersion
+            });
+        }
+    }
+
+    private readonly record struct LearnsetKey(
+        int PokemonFormId,
+        int MoveId,
+        MoveLearnMethod Method,
+        int? Level,
+        string GameVersion);
+
+    public sealed class PokemonMoveSeed
+    {
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public PokemonType Type { get; set; }
+        public MoveCategory Category { get; set; }
+        public int? Power { get; set; }
+        public int? Accuracy { get; set; }
+        public int PP { get; set; }
+    }
+
+    public sealed class PokemonLearnsetSeed
+    {
+        public int NationalDexNumber { get; set; }
+        public int MoveId { get; set; }
+        public MoveLearnMethod Method { get; set; }
+        public int? Level { get; set; }
+        public string GameVersion { get; set; } = string.Empty;
     }
 
     /// <summary>
