@@ -19,3 +19,7 @@
 # Resultados de testes
 TestResults/
 
+
+# Cache do Python (gerador dos seeds)
+__pycache__/
+*.py[cod]

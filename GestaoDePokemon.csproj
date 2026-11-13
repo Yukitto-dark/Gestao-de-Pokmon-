@@ -54,6 +54,13 @@
   <ItemGroup>
     <EmbeddedResource Include="Database/Seed/pokemon-seed.json"
                       LogicalName="GestaoDePokemon.Database.Seed.pokemon-seed.json" />
+    <!-- Estes dois arquivos são gerados por scripts/gerar_seed_moves.py. -->
+    <None Update="Database/Seed/move-catalog-seed.json"
+          CopyToOutputDirectory="PreserveNewest"
+          CopyToPublishDirectory="PreserveNewest" />
+    <None Update="Database/Seed/pokemon-learnsets-seed.json"
+          CopyToOutputDirectory="PreserveNewest"
+          CopyToPublishDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>
