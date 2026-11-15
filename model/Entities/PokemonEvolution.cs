@@ -38,5 +38,24 @@ namespace GestaoDePokemon.model
         public PokemonMove? RequiredMove { get; set; }
 
         public string? GameVersion { get; set; }
+
+        // Identificadores das espécies referenciadas usam Pokemon.Id.
+        public int? RequiredPartySpeciesId { get; set; }
+        public int? RequiredTradeSpeciesId { get; set; }
+
+        // Condições tipadas expostas pela PokéAPI.
+        public string? RequiredHeldItem { get; set; }
+        public PokemonType? RequiredPartyType { get; set; }
+        public PokemonType? RequiredMoveType { get; set; }
+        public RelativePhysicalStats? RelativePhysicalStats { get; set; }
+        public int? MinimumAffection { get; set; }
+        public int? MinimumSteps { get; set; }
+        public int? MinimumMoveCount { get; set; }
+        public bool NeedsOverworldRain { get; set; }
+        public bool TurnUpsideDown { get; set; }
+
+        // Condições especiais documentadas fora do EvolutionDetail da PokéAPI.
+        public bool RequiresEmptyPartySlot { get; set; }
+        public bool RequiresPokeBallInBag { get; set; }
     }
 }

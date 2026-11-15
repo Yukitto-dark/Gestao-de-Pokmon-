@@ -15,6 +15,12 @@ namespace GestaoDePokemon.model
 
         public string FormName { get; set; } = "Normal";
 
+        /// <summary>Altura da forma em metros.</summary>
+        public double? Height { get; set; }
+
+        /// <summary>Peso da forma em quilogramas.</summary>
+        public double? Weight { get; set; }
+
         public IReadOnlyList<PokemonType> Types => _types.AsReadOnly();
 
         public BaseStats Stats { get; set; }

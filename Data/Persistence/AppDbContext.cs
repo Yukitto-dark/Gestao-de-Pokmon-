@@ -124,6 +124,8 @@ public sealed class AppDbContext : DbContext
         form.HasKey(p => p.Id);
         form.Ignore(p => p.Types);
         form.Property(p => p.FormName).HasMaxLength(100).IsRequired();
+        form.Property(p => p.Height).HasColumnType("REAL");
+        form.Property(p => p.Weight).HasColumnType("REAL");
 
         var types = form.Property<List<PokemonType>>("_types")
             .HasColumnName("Types");
@@ -197,6 +199,9 @@ public sealed class AppDbContext : DbContext
         evolution.Property(p => p.RequiredTime).HasConversion<string>();
         evolution.Property(p => p.RequiredGender).HasConversion<string>();
         evolution.Property(p => p.GameVersion).HasMaxLength(80);
+        evolution.Property(p => p.RequiredPartyType).HasConversion<string>();
+        evolution.Property(p => p.RequiredMoveType).HasConversion<string>();
+        evolution.Property(p => p.RelativePhysicalStats).HasConversion<string>();
 
         evolution.HasOne(p => p.RequiredMove)
             .WithMany()

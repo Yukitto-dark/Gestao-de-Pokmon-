@@ -64,3 +64,25 @@ FROM (
     UNION
     SELECT ToPokemonId AS PokemonId FROM Evolutions
 );
+-- Verifica os sprites essenciais.
+-- BoxShiny é opcional e não participa desta validação.
+SELECT
+    p.NationalDexNumber AS Dex,
+    p.Name AS Pokemon,
+    f.FormName AS Forma,
+    s.Gender,
+    s.ExhibitionDefault,
+    s.ExhibitionShiny,
+    s.BoxDefault
+FROM PokemonForms f
+JOIN Pokemons p ON p.Id = f.PokemonId
+LEFT JOIN Sprites s ON s.PokemonFormId = f.Id
+WHERE
+    s.Id IS NULL
+    OR s.ExhibitionDefault IS NULL
+    OR TRIM(s.ExhibitionDefault) = ''
+    OR s.ExhibitionShiny IS NULL
+    OR TRIM(s.ExhibitionShiny) = ''
+    OR s.BoxDefault IS NULL
+    OR TRIM(s.BoxDefault) = ''
+ORDER BY p.NationalDexNumber, f.FormName;

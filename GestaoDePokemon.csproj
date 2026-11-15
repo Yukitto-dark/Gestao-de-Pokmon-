@@ -55,6 +55,9 @@
     <EmbeddedResource Include="Data/Persistence/Seed/pokemon-seed.json"
                       LogicalName="GestaoDePokemon.Data.Persistence.Seed.pokemon-seed.json" />
     <!-- Estes dois arquivos são gerados por scripts/gerar_seed_moves.py. -->
+    <None Update="Data/Persistence/Seed/abilities-seed.json"
+          CopyToOutputDirectory="PreserveNewest"
+          CopyToPublishDirectory="PreserveNewest" />
     <None Update="Data/Persistence/Seed/move-catalog-seed.json"
           CopyToOutputDirectory="PreserveNewest"
           CopyToPublishDirectory="PreserveNewest" />
@@ -66,4 +69,19 @@
           CopyToPublishDirectory="PreserveNewest" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <None Update="Data/Persistence/Seed/kyurem-forms-seed.json"
+          CopyToOutputDirectory="PreserveNewest"
+          CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data/Persistence/Seed/generation-i-v-forms-seed.json"
+          CopyToOutputDirectory="PreserveNewest"
+          CopyToPublishDirectory="PreserveNewest" />
+    <None Update="Data/Persistence/Seed/pokemon-measurements-seed.json"
+          CopyToOutputDirectory="PreserveNewest"
+          CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
 </Project>

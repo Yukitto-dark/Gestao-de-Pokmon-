@@ -1,0 +1,868 @@
+[
+  {
+    "FormName": "Black Kyurem",
+    "Types": [
+      "Dragon",
+      "Ice"
+    ],
+    "Stats": {
+      "HP": 125,
+      "Atk": 170,
+      "Def": 100,
+      "SpAtk": 120,
+      "SpDef": 90,
+      "Speed": 95
+    },
+    "Abilities": [
+      {
+        "Name": "Teravolt",
+        "Description": "Bypasses targets' abilities if they could hinder or prevent moves.",
+        "Slot": "First",
+        "ApiId": 164
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "View/images/pokemon/forms/646/kyurem-black/front.png",
+      "BoxDefault": "View/images/pokemon/forms/646/kyurem-black/box.png",
+      "ExhibitionShiny": "View/images/pokemon/forms/646/kyurem-black/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 82,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 196,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 286,
+        "Method": "LevelUp",
+        "Level": 8,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 246,
+        "Method": "LevelUp",
+        "Level": 15,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 58,
+        "Method": "LevelUp",
+        "Level": 22,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 225,
+        "Method": "LevelUp",
+        "Level": 29,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 163,
+        "Method": "LevelUp",
+        "Level": 36,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 559,
+        "Method": "LevelUp",
+        "Level": 43,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 553,
+        "Method": "LevelUp",
+        "Level": 50,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 406,
+        "Method": "LevelUp",
+        "Level": 57,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 286,
+        "Method": "LevelUp",
+        "Level": 64,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 283,
+        "Method": "LevelUp",
+        "Level": 71,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 59,
+        "Method": "LevelUp",
+        "Level": 78,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 200,
+        "Method": "LevelUp",
+        "Level": 85,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 304,
+        "Method": "LevelUp",
+        "Level": 92,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 15,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 19,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 58,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 59,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 63,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 70,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 92,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 94,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 104,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 113,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 115,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 156,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 157,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 164,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 182,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 207,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 216,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 218,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 219,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 240,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 241,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 247,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 249,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 258,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 263,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 317,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 337,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 371,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 374,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 411,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 416,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 421,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 430,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 444,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 468,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 496,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 497,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 525,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 173,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 196,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 200,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 214,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 283,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 304,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 324,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 355,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 406,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 414,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 428,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 434,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 442,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      }
+    ]
+  },
+  {
+    "FormName": "White Kyurem",
+    "Types": [
+      "Dragon",
+      "Ice"
+    ],
+    "Stats": {
+      "HP": 125,
+      "Atk": 120,
+      "Def": 90,
+      "SpAtk": 170,
+      "SpDef": 100,
+      "Speed": 95
+    },
+    "Abilities": [
+      {
+        "Name": "Turboblaze",
+        "Description": "Bypasses targets' abilities if they could hinder or prevent moves.",
+        "Slot": "First",
+        "ApiId": 163
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "View/images/pokemon/forms/646/kyurem-white/front.png",
+      "BoxDefault": "View/images/pokemon/forms/646/kyurem-white/box.png",
+      "ExhibitionShiny": "View/images/pokemon/forms/646/kyurem-white/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 82,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 196,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 286,
+        "Method": "LevelUp",
+        "Level": 8,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 246,
+        "Method": "LevelUp",
+        "Level": 15,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 58,
+        "Method": "LevelUp",
+        "Level": 22,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 225,
+        "Method": "LevelUp",
+        "Level": 29,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 163,
+        "Method": "LevelUp",
+        "Level": 36,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 558,
+        "Method": "LevelUp",
+        "Level": 43,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 554,
+        "Method": "LevelUp",
+        "Level": 50,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 406,
+        "Method": "LevelUp",
+        "Level": 57,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 286,
+        "Method": "LevelUp",
+        "Level": 64,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 283,
+        "Method": "LevelUp",
+        "Level": 71,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 59,
+        "Method": "LevelUp",
+        "Level": 78,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 200,
+        "Method": "LevelUp",
+        "Level": 85,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 304,
+        "Method": "LevelUp",
+        "Level": 92,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 15,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 19,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 58,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 59,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 63,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 70,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 92,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 94,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 104,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 113,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 115,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 156,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 157,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 164,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 182,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 207,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 216,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 218,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 219,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 240,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 241,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 247,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 249,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 258,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 263,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 317,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 337,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 371,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 374,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 411,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 416,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 421,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 430,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 444,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 468,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 496,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 497,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 525,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 173,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 196,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 200,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 214,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 283,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 304,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 324,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 355,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 406,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 414,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 428,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 434,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 442,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      }
+    ]
+  }
+]
