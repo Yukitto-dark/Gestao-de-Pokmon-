@@ -29,6 +29,8 @@ public static class DatabaseInitializer
         db.Database.EnsureCreated();
         EnsureEvolutionSchema(db);
 
+        EnsureMegaEvolutionSchema(db);
+
         // O seed é incremental: não recria nem apaga Pokémon existentes.
         // Isso permite executar a atualização dos sprites em bancos já criados.
         using var transaction = db.Database.BeginTransaction();
@@ -74,6 +76,11 @@ public static class DatabaseInitializer
 
         // Formas alternativas das gerações I-V: sincroniza PokemonForms, habilidades, sprites e learnsets, sem modificar espécies ou evoluções.
         GenerationVFormsInitializer.Inicializar(db);
+        db.SaveChanges();
+
+        // Formas de Kalos e demais formas até a Geração VI (sem Mega Evoluções).
+        // Só insere o que ainda não existe no banco; formas já cadastradas não são tocadas.
+        GenerationVFormsInitializer.Inicializar(db, "generation-vi-forms-seed.json", 1, 721, onlyInsertMissing: true);
         db.SaveChanges();
 
         // Atualiza altura e peso somente depois de todas as formas já existirem.
@@ -171,6 +178,73 @@ public static class DatabaseInitializer
                 connection.Close();
         }
     }
+    private static void EnsureMegaEvolutionSchema(AppDbContext db)
+{
+    var connection = db.Database.GetDbConnection();
+
+    bool openedHere = connection.State != ConnectionState.Open;
+
+    if (openedHere)
+        connection.Open();
+
+    try
+    {
+        using var command = connection.CreateCommand();
+
+        command.CommandText = """
+                CREATE TABLE IF NOT EXISTS "MegaEvolutions"
+                (
+                 "Id" INTEGER NOT NULL
+                        CONSTRAINT "PK_MegaEvolutions"
+                        PRIMARY KEY AUTOINCREMENT,
+
+                    "BaseFormId" INTEGER NOT NULL,
+
+                    "MegaFormId" INTEGER NOT NULL,
+
+                    "Method" TEXT NOT NULL,
+
+                    "RequiredItem" TEXT NULL,
+
+                    "RequiredMoveId" INTEGER NULL,
+
+                    CONSTRAINT "FK_MegaEvolutions_PokemonForms_BaseFormId"
+                        FOREIGN KEY ("BaseFormId")
+                        REFERENCES "PokemonForms" ("Id")
+                        ON DELETE RESTRICT,
+
+                    CONSTRAINT "FK_MegaEvolutions_PokemonForms_MegaFormId"
+                        FOREIGN KEY ("MegaFormId")
+                        REFERENCES "PokemonForms" ("Id")
+                        ON DELETE RESTRICT,
+
+                    CONSTRAINT "FK_MegaEvolutions_Moves_RequiredMoveId"
+                        FOREIGN KEY ("RequiredMoveId")
+                        REFERENCES "Moves" ("Id")
+                        ON DELETE RESTRICT
+                );
+
+                CREATE UNIQUE INDEX IF NOT EXISTS
+                    "IX_MegaEvolutions_MegaFormId"
+                    ON "MegaEvolutions" ("MegaFormId");
+
+                CREATE INDEX IF NOT EXISTS
+                    "IX_MegaEvolutions_BaseFormId"
+                    ON "MegaEvolutions" ("BaseFormId");
+
+                CREATE INDEX IF NOT EXISTS
+                    "IX_MegaEvolutions_RequiredMoveId"
+                    ON "MegaEvolutions" ("RequiredMoveId");
+                """;
+
+            command.ExecuteNonQuery();
+        }
+        finally
+        {
+            if (openedHere)
+                connection.Close();
+     }
+    }
 
     private static void SeedRegions(AppDbContext db)
     {
@@ -180,7 +254,8 @@ public static class DatabaseInitializer
             new() { Id = 2, Name = "Johto", Generation = 2 },
             new() { Id = 3, Name = "Hoenn", Generation = 3 },
             new() { Id = 4, Name = "Sinnoh", Generation = 4 },
-            new() { Id = 5, Name = "Unova", Generation = 5 }
+            new() { Id = 5, Name = "Unova", Generation = 5 },
+            new() { Id = 6, Name = "Kalos", Generation = 6 }
         };
 
         foreach (Region region in regions)
@@ -495,12 +570,26 @@ public static class DatabaseInitializer
         var pokemonsByDex = db.Pokemons.ToDictionary(pokemon => pokemon.NationalDexNumber);
         var moveIds = db.Moves.Select(move => move.Id).ToHashSet();
 
-        // Evoluções são dados de referência importados do catálogo externo.
-        // Substituir o conjunto evita manter linhas antigas sem as novas condições.
-        db.Evolutions.RemoveRange(db.Evolutions);
-        db.SaveChanges();
+        // Ajusta duas condições identificadas na auditoria de Kalos, sem recriar relações.
+        CorrectKnownEvolutionRecords(db, pokemonsByDex);
 
-        var importedKeys = new HashSet<EvolutionKey>();
+        // A importação é incremental: preserva evoluções já existentes no SQLite.
+        // A chave composta evita duplicar tanto registros antigos quanto entradas repetidas no seed.
+        var importedKeys = db.Evolutions
+            .AsNoTracking()
+            .ToList()
+            .Select(evolution => new EvolutionKey(
+                evolution.FromPokemonId, evolution.ToPokemonId, evolution.Method,
+                evolution.RequiredLevel, evolution.RequiredItem ?? string.Empty, evolution.RequiredTime,
+                evolution.MinimumFriendship, evolution.MinimumBeauty, evolution.RequiredGender,
+                evolution.RequiredLocation ?? string.Empty, evolution.RequiredMoveId,
+                evolution.RequiredHeldItem ?? string.Empty, evolution.RequiredPartySpeciesId,
+                evolution.RequiredTradeSpeciesId, evolution.RequiredPartyType, evolution.RequiredMoveType,
+                evolution.RelativePhysicalStats, evolution.MinimumAffection, evolution.MinimumSteps,
+                evolution.MinimumMoveCount, evolution.NeedsOverworldRain, evolution.TurnUpsideDown,
+                evolution.RequiresEmptyPartySlot, evolution.RequiresPokeBallInBag,
+                evolution.GameVersion ?? string.Empty))
+            .ToHashSet();
         foreach (PokemonEvolutionSeed seed in seeds)
         {
             if (!Enum.IsDefined(seed.Method))
@@ -590,6 +679,70 @@ public static class DatabaseInitializer
                 GameVersion = seed.GameVersion
             });
         }
+    }
+
+    /// <summary>
+    /// Corrige metadados de duas evoluções que já podem existir em bancos criados
+    /// por versões anteriores do seed. Atualiza somente os campos incorretos.
+    /// </summary>
+    private static void CorrectKnownEvolutionRecords(
+        AppDbContext db, IReadOnlyDictionary<int, Pokemon> pokemonsByDex)
+    {
+        if (!pokemonsByDex.TryGetValue(133, out Pokemon? eevee) ||
+            !pokemonsByDex.TryGetValue(700, out Pokemon? sylveon) ||
+            !pokemonsByDex.TryGetValue(682, out Pokemon? spritzee) ||
+            !pokemonsByDex.TryGetValue(683, out Pokemon? aromatisse))
+        {
+            // Em uma instalação ainda sem os dados completos, SeedEvolutions
+            // validará as espécies quando for importar o seed.
+            return;
+        }
+
+        bool changed = false;
+
+        var sylveonRows = db.Evolutions
+            .Where(e => e.FromPokemonId == eevee.Id && e.ToPokemonId == sylveon.Id)
+            .ToList();
+        if (sylveonRows.Count > 1)
+            throw new InvalidDataException("Há mais de uma relação Eevee -> Sylveon; correção automática cancelada.");
+
+        if (sylveonRows.Count == 1)
+        {
+            PokemonEvolution evolution = sylveonRows[0];
+            bool expectedConditions = evolution.RequiredMoveType == PokemonType.Fairy &&
+                                      evolution.MinimumAffection == 2;
+            if (!expectedConditions || evolution.Method is not (EvolutionMethod.KnowMove or EvolutionMethod.LevelUp))
+                throw new InvalidDataException("Condições inesperadas em Eevee -> Sylveon; correção automática cancelada.");
+
+            if (evolution.Method != EvolutionMethod.LevelUp)
+            {
+                evolution.Method = EvolutionMethod.LevelUp;
+                changed = true;
+            }
+        }
+
+        var aromatisseRows = db.Evolutions
+            .Where(e => e.FromPokemonId == spritzee.Id && e.ToPokemonId == aromatisse.Id)
+            .ToList();
+        if (aromatisseRows.Count > 1)
+            throw new InvalidDataException("Há mais de uma relação Spritzee -> Aromatisse; correção automática cancelada.");
+
+        if (aromatisseRows.Count == 1)
+        {
+            PokemonEvolution evolution = aromatisseRows[0];
+            if (evolution.Method != EvolutionMethod.Trade || evolution.RequiredHeldItem != "sachet" ||
+                evolution.GameVersion is not ("black-white" or "x-y"))
+                throw new InvalidDataException("Condição inesperada em Spritzee -> Aromatisse; correção automática cancelada.");
+
+            if (evolution.GameVersion != "x-y")
+            {
+                evolution.GameVersion = "x-y";
+                changed = true;
+            }
+        }
+
+        if (changed)
+            db.SaveChanges();
     }
 
     private readonly record struct EvolutionKey(
@@ -862,6 +1015,7 @@ public static class DatabaseInitializer
         3 => 3, // Hoenn
         4 => 4, // Sinnoh
         5 => 5, // Unova
+        6 => 6, // Kalos
         _ => throw new InvalidDataException(
             $"A geração {generation} não possui uma região cadastrada neste conjunto da Pokédex.")
     };

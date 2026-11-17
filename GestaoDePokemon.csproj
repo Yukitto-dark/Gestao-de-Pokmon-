@@ -77,6 +77,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Data/Persistence/Seed/generation-vi-forms-seed.json"
+          CopyToOutputDirectory="PreserveNewest"
+          CopyToPublishDirectory="PreserveNewest" />
     <None Update="Data/Persistence/Seed/generation-i-v-forms-seed.json"
           CopyToOutputDirectory="PreserveNewest"
           CopyToPublishDirectory="PreserveNewest" />

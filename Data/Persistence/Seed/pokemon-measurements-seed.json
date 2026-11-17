@@ -150,6 +150,42 @@
     "Weight": 60
   },
   {
+    "NationalDexNumber": 25,
+    "FormName": "Pikachu Rock Star",
+    "Height": 4,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 25,
+    "FormName": "Pikachu Belle",
+    "Height": 4,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 25,
+    "FormName": "Pikachu Pop Star",
+    "Height": 4,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 25,
+    "FormName": "Pikachu Ph.D.",
+    "Height": 4,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 25,
+    "FormName": "Pikachu Libre",
+    "Height": 4,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 25,
+    "FormName": "Cosplay Pikachu",
+    "Height": 4,
+    "Weight": 60
+  },
+  {
     "NationalDexNumber": 26,
     "FormName": "Normal",
     "Height": 8,
@@ -2478,10 +2514,22 @@
     "Weight": 3520
   },
   {
+    "NationalDexNumber": 382,
+    "FormName": "Primal Reversion",
+    "Height": 98,
+    "Weight": 4300
+  },
+  {
     "NationalDexNumber": 383,
     "FormName": "Normal",
     "Height": 35,
     "Weight": 9500
+  },
+  {
+    "NationalDexNumber": 383,
+    "FormName": "Primal Reversion",
+    "Height": 50,
+    "Weight": 9997
   },
   {
     "NationalDexNumber": 384,
@@ -2497,12 +2545,6 @@
   },
   {
     "NationalDexNumber": 386,
-    "FormName": "Normal",
-    "Height": 17,
-    "Weight": 608
-  },
-  {
-    "NationalDexNumber": 386,
     "FormName": "Attack Forme",
     "Height": 17,
     "Weight": 608
@@ -2510,6 +2552,12 @@
   {
     "NationalDexNumber": 386,
     "FormName": "Defense Forme",
+    "Height": 17,
+    "Weight": 608
+  },
+  {
+    "NationalDexNumber": 386,
+    "FormName": "Normal",
     "Height": 17,
     "Weight": 608
   },
@@ -2761,25 +2809,25 @@
   },
   {
     "NationalDexNumber": 422,
-    "FormName": "Normal",
+    "FormName": "East Sea",
     "Height": 3,
     "Weight": 63
   },
   {
     "NationalDexNumber": 422,
-    "FormName": "East Sea",
+    "FormName": "Normal",
     "Height": 3,
     "Weight": 63
   },
   {
     "NationalDexNumber": 423,
-    "FormName": "Normal",
+    "FormName": "East Sea",
     "Height": 9,
     "Weight": 299
   },
   {
     "NationalDexNumber": 423,
-    "FormName": "East Sea",
+    "FormName": "Normal",
     "Height": 9,
     "Weight": 299
   },
@@ -3115,12 +3163,6 @@
   },
   {
     "NationalDexNumber": 479,
-    "FormName": "Normal",
-    "Height": 3,
-    "Weight": 3
-  },
-  {
-    "NationalDexNumber": 479,
     "FormName": "Fan Rotom",
     "Height": 3,
     "Weight": 3
@@ -3140,6 +3182,12 @@
   {
     "NationalDexNumber": 479,
     "FormName": "Mow Rotom",
+    "Height": 3,
+    "Weight": 3
+  },
+  {
+    "NationalDexNumber": 479,
+    "FormName": "Normal",
     "Height": 3,
     "Weight": 3
   },
@@ -3241,12 +3289,6 @@
   },
   {
     "NationalDexNumber": 493,
-    "FormName": "Normal",
-    "Height": 32,
-    "Weight": 3200
-  },
-  {
-    "NationalDexNumber": 493,
     "FormName": "Bug Type",
     "Height": 32,
     "Weight": 3200
@@ -3313,6 +3355,12 @@
   },
   {
     "NationalDexNumber": 493,
+    "FormName": "Normal",
+    "Height": 32,
+    "Weight": 3200
+  },
+  {
+    "NationalDexNumber": 493,
     "FormName": "Poison Type",
     "Height": 32,
     "Weight": 3200
@@ -3338,6 +3386,12 @@
   {
     "NationalDexNumber": 493,
     "FormName": "Water Type",
+    "Height": 32,
+    "Weight": 3200
+  },
+  {
+    "NationalDexNumber": 493,
+    "FormName": "Fairy Type",
     "Height": 32,
     "Weight": 3200
   },
@@ -3679,13 +3733,13 @@
   },
   {
     "NationalDexNumber": 550,
-    "FormName": "Normal",
+    "FormName": "Blue-Striped Form",
     "Height": 10,
     "Weight": 180
   },
   {
     "NationalDexNumber": 550,
-    "FormName": "Blue-Striped Form",
+    "FormName": "Normal",
     "Height": 10,
     "Weight": 180
   },
@@ -3901,13 +3955,13 @@
   },
   {
     "NationalDexNumber": 585,
-    "FormName": "Normal",
+    "FormName": "Autumn Form",
     "Height": 6,
     "Weight": 195
   },
   {
     "NationalDexNumber": 585,
-    "FormName": "Autumn Form",
+    "FormName": "Normal",
     "Height": 6,
     "Weight": 195
   },
@@ -3925,13 +3979,13 @@
   },
   {
     "NationalDexNumber": 586,
-    "FormName": "Normal",
+    "FormName": "Autumn Form",
     "Height": 19,
     "Weight": 925
   },
   {
     "NationalDexNumber": 586,
-    "FormName": "Autumn Form",
+    "FormName": "Normal",
     "Height": 19,
     "Weight": 925
   },
@@ -4321,14 +4375,14 @@
   },
   {
     "NationalDexNumber": 646,
-    "FormName": "Normal",
-    "Height": 30,
+    "FormName": "Black Kyurem",
+    "Height": 33,
     "Weight": 3250
   },
   {
     "NationalDexNumber": 646,
-    "FormName": "Black Kyurem",
-    "Height": 33,
+    "FormName": "Normal",
+    "Height": 30,
     "Weight": 3250
   },
   {
@@ -4363,12 +4417,6 @@
   },
   {
     "NationalDexNumber": 649,
-    "FormName": "Normal",
-    "Height": 15,
-    "Weight": 825
-  },
-  {
-    "NationalDexNumber": 649,
     "FormName": "Burn Drive",
     "Height": 15,
     "Weight": 825
@@ -4387,8 +4435,752 @@
   },
   {
     "NationalDexNumber": 649,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 825
+  },
+  {
+    "NationalDexNumber": 649,
     "FormName": "Shock Drive",
     "Height": 15,
     "Weight": 825
+  },
+  {
+    "NationalDexNumber": 650,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 90
+  },
+  {
+    "NationalDexNumber": 651,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 290
+  },
+  {
+    "NationalDexNumber": 652,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 900
+  },
+  {
+    "NationalDexNumber": 653,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 94
+  },
+  {
+    "NationalDexNumber": 654,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 145
+  },
+  {
+    "NationalDexNumber": 655,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 390
+  },
+  {
+    "NationalDexNumber": 656,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 70
+  },
+  {
+    "NationalDexNumber": 657,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 109
+  },
+  {
+    "NationalDexNumber": 658,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 400
+  },
+  {
+    "NationalDexNumber": 659,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 660,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 424
+  },
+  {
+    "NationalDexNumber": 661,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 17
+  },
+  {
+    "NationalDexNumber": 662,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 160
+  },
+  {
+    "NationalDexNumber": 663,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 245
+  },
+  {
+    "NationalDexNumber": 664,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 25
+  },
+  {
+    "NationalDexNumber": 665,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 84
+  },
+  {
+    "NationalDexNumber": 666,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 170
+  },
+  {
+    "NationalDexNumber": 666,
+    "FormName": "Icy Snow Pattern",
+    "Height": 12,
+    "Weight": 170
+  },
+  {
+    "NationalDexNumber": 666,
+    "FormName": "Polar Pattern",
+    "Height": 12,
+    "Weight": 170
+  },
+  {
+    "NationalDexNumber": 666,
+    "FormName": "Tundra Pattern",
+    "Height": 12,
+    "Weight": 170
+  },
+  {
+    "NationalDexNumber": 666,
+    "FormName": "Continental Pattern",
+    "Height": 12,
+    "Weight": 170
+  },
+  {
+    "NationalDexNumber": 666,
+    "FormName": "Garden Pattern",
+    "Height": 12,
+    "Weight": 170
+  },
+  {
+    "NationalDexNumber": 666,
+    "FormName": "Elegant Pattern",
+    "Height": 12,
+    "Weight": 170
+  },
+  {
+    "NationalDexNumber": 666,
+    "FormName": "Modern Pattern",
+    "Height": 12,
+    "Weight": 170
+  },
+  {
+    "NationalDexNumber": 666,
+    "FormName": "Marine Pattern",
+    "Height": 12,
+    "Weight": 170
+  },
+  {
+    "NationalDexNumber": 666,
+    "FormName": "Archipelago Pattern",
+    "Height": 12,
+    "Weight": 170
+  },
+  {
+    "NationalDexNumber": 666,
+    "FormName": "High Plains Pattern",
+    "Height": 12,
+    "Weight": 170
+  },
+  {
+    "NationalDexNumber": 666,
+    "FormName": "Sandstorm Pattern",
+    "Height": 12,
+    "Weight": 170
+  },
+  {
+    "NationalDexNumber": 666,
+    "FormName": "River Pattern",
+    "Height": 12,
+    "Weight": 170
+  },
+  {
+    "NationalDexNumber": 666,
+    "FormName": "Monsoon Pattern",
+    "Height": 12,
+    "Weight": 170
+  },
+  {
+    "NationalDexNumber": 666,
+    "FormName": "Savanna Pattern",
+    "Height": 12,
+    "Weight": 170
+  },
+  {
+    "NationalDexNumber": 666,
+    "FormName": "Sun Pattern",
+    "Height": 12,
+    "Weight": 170
+  },
+  {
+    "NationalDexNumber": 666,
+    "FormName": "Ocean Pattern",
+    "Height": 12,
+    "Weight": 170
+  },
+  {
+    "NationalDexNumber": 666,
+    "FormName": "Jungle Pattern",
+    "Height": 12,
+    "Weight": 170
+  },
+  {
+    "NationalDexNumber": 666,
+    "FormName": "Fancy Pattern",
+    "Height": 12,
+    "Weight": 170
+  },
+  {
+    "NationalDexNumber": 666,
+    "FormName": "Poké Ball Pattern",
+    "Height": 12,
+    "Weight": 170
+  },
+  {
+    "NationalDexNumber": 667,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 135
+  },
+  {
+    "NationalDexNumber": 668,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 815
+  },
+  {
+    "NationalDexNumber": 669,
+    "FormName": "Normal",
+    "Height": 1,
+    "Weight": 1
+  },
+  {
+    "NationalDexNumber": 669,
+    "FormName": "Yellow Flower",
+    "Height": 1,
+    "Weight": 1
+  },
+  {
+    "NationalDexNumber": 669,
+    "FormName": "Orange Flower",
+    "Height": 1,
+    "Weight": 1
+  },
+  {
+    "NationalDexNumber": 669,
+    "FormName": "Blue Flower",
+    "Height": 1,
+    "Weight": 1
+  },
+  {
+    "NationalDexNumber": 669,
+    "FormName": "White Flower",
+    "Height": 1,
+    "Weight": 1
+  },
+  {
+    "NationalDexNumber": 670,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 9
+  },
+  {
+    "NationalDexNumber": 670,
+    "FormName": "Yellow Flower",
+    "Height": 2,
+    "Weight": 9
+  },
+  {
+    "NationalDexNumber": 670,
+    "FormName": "Orange Flower",
+    "Height": 2,
+    "Weight": 9
+  },
+  {
+    "NationalDexNumber": 670,
+    "FormName": "Blue Flower",
+    "Height": 2,
+    "Weight": 9
+  },
+  {
+    "NationalDexNumber": 670,
+    "FormName": "White Flower",
+    "Height": 2,
+    "Weight": 9
+  },
+  {
+    "NationalDexNumber": 670,
+    "FormName": "Eternal Flower",
+    "Height": 2,
+    "Weight": 9
+  },
+  {
+    "NationalDexNumber": 671,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 100
+  },
+  {
+    "NationalDexNumber": 671,
+    "FormName": "Yellow Flower",
+    "Height": 11,
+    "Weight": 100
+  },
+  {
+    "NationalDexNumber": 671,
+    "FormName": "Orange Flower",
+    "Height": 11,
+    "Weight": 100
+  },
+  {
+    "NationalDexNumber": 671,
+    "FormName": "Blue Flower",
+    "Height": 11,
+    "Weight": 100
+  },
+  {
+    "NationalDexNumber": 671,
+    "FormName": "White Flower",
+    "Height": 11,
+    "Weight": 100
+  },
+  {
+    "NationalDexNumber": 672,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 310
+  },
+  {
+    "NationalDexNumber": 673,
+    "FormName": "Normal",
+    "Height": 17,
+    "Weight": 910
+  },
+  {
+    "NationalDexNumber": 674,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 80
+  },
+  {
+    "NationalDexNumber": 675,
+    "FormName": "Normal",
+    "Height": 21,
+    "Weight": 1360
+  },
+  {
+    "NationalDexNumber": 676,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 280
+  },
+  {
+    "NationalDexNumber": 676,
+    "FormName": "Heart Trim",
+    "Height": 12,
+    "Weight": 280
+  },
+  {
+    "NationalDexNumber": 676,
+    "FormName": "Star Trim",
+    "Height": 12,
+    "Weight": 280
+  },
+  {
+    "NationalDexNumber": 676,
+    "FormName": "Diamond Trim",
+    "Height": 12,
+    "Weight": 280
+  },
+  {
+    "NationalDexNumber": 676,
+    "FormName": "Debutante Trim",
+    "Height": 12,
+    "Weight": 280
+  },
+  {
+    "NationalDexNumber": 676,
+    "FormName": "Matron Trim",
+    "Height": 12,
+    "Weight": 280
+  },
+  {
+    "NationalDexNumber": 676,
+    "FormName": "Dandy Trim",
+    "Height": 12,
+    "Weight": 280
+  },
+  {
+    "NationalDexNumber": 676,
+    "FormName": "La Reine Trim",
+    "Height": 12,
+    "Weight": 280
+  },
+  {
+    "NationalDexNumber": 676,
+    "FormName": "Kabuki Trim",
+    "Height": 12,
+    "Weight": 280
+  },
+  {
+    "NationalDexNumber": 676,
+    "FormName": "Pharaoh Trim",
+    "Height": 12,
+    "Weight": 280
+  },
+  {
+    "NationalDexNumber": 677,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 35
+  },
+  {
+    "NationalDexNumber": 678,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 85
+  },
+  {
+    "NationalDexNumber": 678,
+    "FormName": "Female",
+    "Height": 6,
+    "Weight": 85
+  },
+  {
+    "NationalDexNumber": 679,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 20
+  },
+  {
+    "NationalDexNumber": 680,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 45
+  },
+  {
+    "NationalDexNumber": 681,
+    "FormName": "Normal",
+    "Height": 17,
+    "Weight": 530
+  },
+  {
+    "NationalDexNumber": 681,
+    "FormName": "Blade Forme",
+    "Height": 17,
+    "Weight": 530
+  },
+  {
+    "NationalDexNumber": 682,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 683,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 155
+  },
+  {
+    "NationalDexNumber": 684,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 35
+  },
+  {
+    "NationalDexNumber": 685,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 686,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 35
+  },
+  {
+    "NationalDexNumber": 687,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 470
+  },
+  {
+    "NationalDexNumber": 688,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 310
+  },
+  {
+    "NationalDexNumber": 689,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 960
+  },
+  {
+    "NationalDexNumber": 690,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 73
+  },
+  {
+    "NationalDexNumber": 691,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 815
+  },
+  {
+    "NationalDexNumber": 692,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 83
+  },
+  {
+    "NationalDexNumber": 693,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 353
+  },
+  {
+    "NationalDexNumber": 694,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 695,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 210
+  },
+  {
+    "NationalDexNumber": 696,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 260
+  },
+  {
+    "NationalDexNumber": 697,
+    "FormName": "Normal",
+    "Height": 25,
+    "Weight": 2700
+  },
+  {
+    "NationalDexNumber": 698,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 252
+  },
+  {
+    "NationalDexNumber": 699,
+    "FormName": "Normal",
+    "Height": 27,
+    "Weight": 2250
+  },
+  {
+    "NationalDexNumber": 700,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 235
+  },
+  {
+    "NationalDexNumber": 701,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 215
+  },
+  {
+    "NationalDexNumber": 702,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 22
+  },
+  {
+    "NationalDexNumber": 703,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 57
+  },
+  {
+    "NationalDexNumber": 704,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 28
+  },
+  {
+    "NationalDexNumber": 705,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 175
+  },
+  {
+    "NationalDexNumber": 706,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 1505
+  },
+  {
+    "NationalDexNumber": 707,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 30
+  },
+  {
+    "NationalDexNumber": 708,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 70
+  },
+  {
+    "NationalDexNumber": 709,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 710
+  },
+  {
+    "NationalDexNumber": 710,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 710,
+    "FormName": "Small Size",
+    "Height": 3,
+    "Weight": 35
+  },
+  {
+    "NationalDexNumber": 710,
+    "FormName": "Large Size",
+    "Height": 5,
+    "Weight": 75
+  },
+  {
+    "NationalDexNumber": 710,
+    "FormName": "Super Size",
+    "Height": 8,
+    "Weight": 150
+  },
+  {
+    "NationalDexNumber": 711,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 125
+  },
+  {
+    "NationalDexNumber": 711,
+    "FormName": "Small Size",
+    "Height": 7,
+    "Weight": 95
+  },
+  {
+    "NationalDexNumber": 711,
+    "FormName": "Large Size",
+    "Height": 11,
+    "Weight": 140
+  },
+  {
+    "NationalDexNumber": 711,
+    "FormName": "Super Size",
+    "Height": 17,
+    "Weight": 390
+  },
+  {
+    "NationalDexNumber": 712,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 995
+  },
+  {
+    "NationalDexNumber": 713,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 5050
+  },
+  {
+    "NationalDexNumber": 714,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 80
+  },
+  {
+    "NationalDexNumber": 715,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 850
+  },
+  {
+    "NationalDexNumber": 716,
+    "FormName": "Normal",
+    "Height": 30,
+    "Weight": 2150
+  },
+  {
+    "NationalDexNumber": 716,
+    "FormName": "Active Mode",
+    "Height": 30,
+    "Weight": 2150
+  },
+  {
+    "NationalDexNumber": 717,
+    "FormName": "Normal",
+    "Height": 58,
+    "Weight": 2030
+  },
+  {
+    "NationalDexNumber": 718,
+    "FormName": "Normal",
+    "Height": 50,
+    "Weight": 3050
+  },
+  {
+    "NationalDexNumber": 719,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 88
+  },
+  {
+    "NationalDexNumber": 720,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 90
+  },
+  {
+    "NationalDexNumber": 720,
+    "FormName": "Hoopa Unbound",
+    "Height": 65,
+    "Weight": 4900
+  },
+  {
+    "NationalDexNumber": 721,
+    "FormName": "Normal",
+    "Height": 17,
+    "Weight": 1950
   }
 ]

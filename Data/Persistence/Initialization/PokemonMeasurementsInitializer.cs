@@ -17,8 +17,8 @@ namespace GestaoDePokemon.Data.Persistence.Initialization;
 /// </summary>
 public static class PokemonMeasurementsInitializer
 {
-    private const int ExpectedSpeciesCount = 649;
-    private const int ExpectedAlternativeFormsCount = 83;
+    private const int ExpectedSpeciesCount = 721;
+    private const int ExpectedAlternativeFormsCount = 143; // 60 formas deste script + 83 dos seeds anteriores (Gen I-V e Kyurem)
     private const int ExpectedTotalForms = ExpectedSpeciesCount + ExpectedAlternativeFormsCount;
 
     private static readonly JsonSerializerOptions JsonOptions = new()

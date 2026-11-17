@@ -1,0 +1,3328 @@
+{
+  "gerado_em": "2026-11-16T20:21:28",
+  "escopo": "Kalos #650-#721 e formas alternativas de #001-#721 até a Geração VI, sem Mega Evoluções",
+  "versoes_de_jogo": [
+    "red-blue",
+    "yellow",
+    "gold-silver",
+    "crystal",
+    "ruby-sapphire",
+    "emerald",
+    "firered-leafgreen",
+    "diamond-pearl",
+    "platinum",
+    "heartgold-soulsilver",
+    "black-white",
+    "black-2-white-2",
+    "x-y",
+    "omega-ruby-alpha-sapphire"
+  ],
+  "especies": 72,
+  "formas_adicionadas": 60,
+  "formas_de_batalha": 12,
+  "formas_cosmeticas": 48,
+  "habilidades_novas": [],
+  "moves_novos": 0,
+  "linhas_de_learnset_normais": 8491,
+  "linhas_de_learnset_das_formas": 6709,
+  "formas_importadas": [
+    {
+      "dex": 25,
+      "forma": "Pikachu Rock Star",
+      "slug": "pikachu-rock-star",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 25,
+      "forma": "Pikachu Belle",
+      "slug": "pikachu-belle",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 25,
+      "forma": "Pikachu Pop Star",
+      "slug": "pikachu-pop-star",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 25,
+      "forma": "Pikachu Ph.D.",
+      "slug": "pikachu-phd",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 25,
+      "forma": "Pikachu Libre",
+      "slug": "pikachu-libre",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 25,
+      "forma": "Cosplay Pikachu",
+      "slug": "pikachu-cosplay",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 382,
+      "forma": "Primal Reversion",
+      "slug": "kyogre-primal",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 383,
+      "forma": "Primal Reversion",
+      "slug": "groudon-primal",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 493,
+      "forma": "Fairy Type",
+      "slug": "arceus-fairy",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 666,
+      "forma": "Icy Snow Pattern",
+      "slug": "vivillon-icy-snow",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 666,
+      "forma": "Polar Pattern",
+      "slug": "vivillon-polar",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 666,
+      "forma": "Tundra Pattern",
+      "slug": "vivillon-tundra",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 666,
+      "forma": "Continental Pattern",
+      "slug": "vivillon-continental",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 666,
+      "forma": "Garden Pattern",
+      "slug": "vivillon-garden",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 666,
+      "forma": "Elegant Pattern",
+      "slug": "vivillon-elegant",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 666,
+      "forma": "Modern Pattern",
+      "slug": "vivillon-modern",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 666,
+      "forma": "Marine Pattern",
+      "slug": "vivillon-marine",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 666,
+      "forma": "Archipelago Pattern",
+      "slug": "vivillon-archipelago",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 666,
+      "forma": "High Plains Pattern",
+      "slug": "vivillon-high-plains",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 666,
+      "forma": "Sandstorm Pattern",
+      "slug": "vivillon-sandstorm",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 666,
+      "forma": "River Pattern",
+      "slug": "vivillon-river",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 666,
+      "forma": "Monsoon Pattern",
+      "slug": "vivillon-monsoon",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 666,
+      "forma": "Savanna Pattern",
+      "slug": "vivillon-savanna",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 666,
+      "forma": "Sun Pattern",
+      "slug": "vivillon-sun",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 666,
+      "forma": "Ocean Pattern",
+      "slug": "vivillon-ocean",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 666,
+      "forma": "Jungle Pattern",
+      "slug": "vivillon-jungle",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 666,
+      "forma": "Fancy Pattern",
+      "slug": "vivillon-fancy",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 666,
+      "forma": "Poké Ball Pattern",
+      "slug": "vivillon-poke-ball",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 669,
+      "forma": "Yellow Flower",
+      "slug": "flabebe-yellow",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 669,
+      "forma": "Orange Flower",
+      "slug": "flabebe-orange",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 669,
+      "forma": "Blue Flower",
+      "slug": "flabebe-blue",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 669,
+      "forma": "White Flower",
+      "slug": "flabebe-white",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 670,
+      "forma": "Yellow Flower",
+      "slug": "floette-yellow",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 670,
+      "forma": "Orange Flower",
+      "slug": "floette-orange",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 670,
+      "forma": "Blue Flower",
+      "slug": "floette-blue",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 670,
+      "forma": "White Flower",
+      "slug": "floette-white",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 670,
+      "forma": "Eternal Flower",
+      "slug": "floette-eternal",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 671,
+      "forma": "Yellow Flower",
+      "slug": "florges-yellow",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 671,
+      "forma": "Orange Flower",
+      "slug": "florges-orange",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 671,
+      "forma": "Blue Flower",
+      "slug": "florges-blue",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 671,
+      "forma": "White Flower",
+      "slug": "florges-white",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 676,
+      "forma": "Heart Trim",
+      "slug": "furfrou-heart",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 676,
+      "forma": "Star Trim",
+      "slug": "furfrou-star",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 676,
+      "forma": "Diamond Trim",
+      "slug": "furfrou-diamond",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 676,
+      "forma": "Debutante Trim",
+      "slug": "furfrou-debutante",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 676,
+      "forma": "Matron Trim",
+      "slug": "furfrou-matron",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 676,
+      "forma": "Dandy Trim",
+      "slug": "furfrou-dandy",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 676,
+      "forma": "La Reine Trim",
+      "slug": "furfrou-la-reine",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 676,
+      "forma": "Kabuki Trim",
+      "slug": "furfrou-kabuki",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 676,
+      "forma": "Pharaoh Trim",
+      "slug": "furfrou-pharaoh",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 678,
+      "forma": "Female",
+      "slug": "meowstic-female",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 681,
+      "forma": "Blade Forme",
+      "slug": "aegislash-blade",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 710,
+      "forma": "Small Size",
+      "slug": "pumpkaboo-small",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 710,
+      "forma": "Large Size",
+      "slug": "pumpkaboo-large",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 710,
+      "forma": "Super Size",
+      "slug": "pumpkaboo-super",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 711,
+      "forma": "Small Size",
+      "slug": "gourgeist-small",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 711,
+      "forma": "Large Size",
+      "slug": "gourgeist-large",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 711,
+      "forma": "Super Size",
+      "slug": "gourgeist-super",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 716,
+      "forma": "Active Mode",
+      "slug": "xerneas-active",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 720,
+      "forma": "Hoopa Unbound",
+      "slug": "hoopa-unbound",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    }
+  ],
+  "formas_ja_existentes_ignoradas": 83,
+  "formas_ignoradas": [
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-b",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-c",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-d",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-e",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-f",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-g",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-h",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-i",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-j",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-k",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-l",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-m",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-n",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-o",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-p",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-q",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-r",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-s",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-t",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-u",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-v",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-w",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-x",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-y",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-z",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-exclamation",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 201,
+      "pokemon": "unown",
+      "form": "unown-question",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "castform-sunny",
+      "form": "castform-sunny",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "castform-rainy",
+      "form": "castform-rainy",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "castform-snowy",
+      "form": "castform-snowy",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "deoxys-attack",
+      "form": "deoxys-attack",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "deoxys-defense",
+      "form": "deoxys-defense",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "deoxys-speed",
+      "form": "deoxys-speed",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 412,
+      "pokemon": "burmy",
+      "form": "burmy-sandy",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 412,
+      "pokemon": "burmy",
+      "form": "burmy-trash",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "wormadam-sandy",
+      "form": "wormadam-sandy",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "wormadam-trash",
+      "form": "wormadam-trash",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 421,
+      "pokemon": "cherrim",
+      "form": "cherrim-sunshine",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 422,
+      "pokemon": "shellos",
+      "form": "shellos-east",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 423,
+      "pokemon": "gastrodon",
+      "form": "gastrodon-east",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 493,
+      "pokemon": "arceus",
+      "form": "arceus-bug",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 493,
+      "pokemon": "arceus",
+      "form": "arceus-dark",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 493,
+      "pokemon": "arceus",
+      "form": "arceus-dragon",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 493,
+      "pokemon": "arceus",
+      "form": "arceus-electric",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 493,
+      "pokemon": "arceus",
+      "form": "arceus-fighting",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 493,
+      "pokemon": "arceus",
+      "form": "arceus-fire",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 493,
+      "pokemon": "arceus",
+      "form": "arceus-flying",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 493,
+      "pokemon": "arceus",
+      "form": "arceus-ghost",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 493,
+      "pokemon": "arceus",
+      "form": "arceus-grass",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 493,
+      "pokemon": "arceus",
+      "form": "arceus-ground",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 493,
+      "pokemon": "arceus",
+      "form": "arceus-ice",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 493,
+      "pokemon": "arceus",
+      "form": "arceus-poison",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 493,
+      "pokemon": "arceus",
+      "form": "arceus-psychic",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 493,
+      "pokemon": "arceus",
+      "form": "arceus-rock",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 493,
+      "pokemon": "arceus",
+      "form": "arceus-steel",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 493,
+      "pokemon": "arceus",
+      "form": "arceus-water",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 493,
+      "pokemon": "arceus",
+      "form": "arceus-unknown",
+      "reason": "tipo fora do enum PokemonType do projeto (ex.: '???')"
+    },
+    {
+      "dex": null,
+      "pokemon": "rotom-heat",
+      "form": "rotom-heat",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "rotom-wash",
+      "form": "rotom-wash",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "rotom-frost",
+      "form": "rotom-frost",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "rotom-fan",
+      "form": "rotom-fan",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "rotom-mow",
+      "form": "rotom-mow",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "giratina-origin",
+      "form": "giratina-origin",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "shaymin-sky",
+      "form": "shaymin-sky",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 172,
+      "pokemon": "pichu",
+      "form": "pichu-spiky-eared",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "basculin-blue-striped",
+      "form": "basculin-blue-striped",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "darmanitan-zen",
+      "form": "darmanitan-zen",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 585,
+      "pokemon": "deerling",
+      "form": "deerling-summer",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 585,
+      "pokemon": "deerling",
+      "form": "deerling-autumn",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 585,
+      "pokemon": "deerling",
+      "form": "deerling-winter",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 586,
+      "pokemon": "sawsbuck",
+      "form": "sawsbuck-summer",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 586,
+      "pokemon": "sawsbuck",
+      "form": "sawsbuck-autumn",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 586,
+      "pokemon": "sawsbuck",
+      "form": "sawsbuck-winter",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "meloetta-pirouette",
+      "form": "meloetta-pirouette",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 649,
+      "pokemon": "genesect",
+      "form": "genesect-douse",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 649,
+      "pokemon": "genesect",
+      "form": "genesect-shock",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 649,
+      "pokemon": "genesect",
+      "form": "genesect-burn",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 649,
+      "pokemon": "genesect",
+      "form": "genesect-chill",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "tornadus-therian",
+      "form": "tornadus-therian",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "thundurus-therian",
+      "form": "thundurus-therian",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "landorus-therian",
+      "form": "landorus-therian",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "kyurem-black",
+      "form": "kyurem-black",
+      "reason": "já existe no projeto",
+      "origem": "kyurem-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "kyurem-white",
+      "form": "kyurem-white",
+      "reason": "já existe no projeto",
+      "origem": "kyurem-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "keldeo-resolute",
+      "form": "keldeo-resolute",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "venusaur-mega",
+      "form": "venusaur-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "charizard-mega-x",
+      "form": "charizard-mega-x",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "charizard-mega-y",
+      "form": "charizard-mega-y",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "blastoise-mega",
+      "form": "blastoise-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "alakazam-mega",
+      "form": "alakazam-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "gengar-mega",
+      "form": "gengar-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "kangaskhan-mega",
+      "form": "kangaskhan-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "pinsir-mega",
+      "form": "pinsir-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "gyarados-mega",
+      "form": "gyarados-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "aerodactyl-mega",
+      "form": "aerodactyl-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "mewtwo-mega-x",
+      "form": "mewtwo-mega-x",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "mewtwo-mega-y",
+      "form": "mewtwo-mega-y",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "ampharos-mega",
+      "form": "ampharos-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "scizor-mega",
+      "form": "scizor-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "heracross-mega",
+      "form": "heracross-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "houndoom-mega",
+      "form": "houndoom-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "tyranitar-mega",
+      "form": "tyranitar-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "blaziken-mega",
+      "form": "blaziken-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "gardevoir-mega",
+      "form": "gardevoir-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "mawile-mega",
+      "form": "mawile-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "aggron-mega",
+      "form": "aggron-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "medicham-mega",
+      "form": "medicham-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "manectric-mega",
+      "form": "manectric-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "banette-mega",
+      "form": "banette-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "absol-mega",
+      "form": "absol-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "garchomp-mega",
+      "form": "garchomp-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "lucario-mega",
+      "form": "lucario-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "abomasnow-mega",
+      "form": "abomasnow-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "latias-mega",
+      "form": "latias-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "latios-mega",
+      "form": "latios-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "swampert-mega",
+      "form": "swampert-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "sceptile-mega",
+      "form": "sceptile-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "sableye-mega",
+      "form": "sableye-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "altaria-mega",
+      "form": "altaria-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "gallade-mega",
+      "form": "gallade-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "audino-mega",
+      "form": "audino-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "sharpedo-mega",
+      "form": "sharpedo-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "slowbro-mega",
+      "form": "slowbro-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "steelix-mega",
+      "form": "steelix-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "pidgeot-mega",
+      "form": "pidgeot-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "glalie-mega",
+      "form": "glalie-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "diancie-mega",
+      "form": "diancie-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "metagross-mega",
+      "form": "metagross-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "rayquaza-mega",
+      "form": "rayquaza-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "camerupt-mega",
+      "form": "camerupt-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "lopunny-mega",
+      "form": "lopunny-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "salamence-mega",
+      "form": "salamence-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "beedrill-mega",
+      "form": "beedrill-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "rattata-alola",
+      "form": "rattata-alola",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "raticate-alola",
+      "form": "raticate-alola",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "raticate-totem-alola",
+      "form": "raticate-totem-alola",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "pikachu-original-cap",
+      "form": "pikachu-original-cap",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "pikachu-hoenn-cap",
+      "form": "pikachu-hoenn-cap",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "pikachu-sinnoh-cap",
+      "form": "pikachu-sinnoh-cap",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "pikachu-unova-cap",
+      "form": "pikachu-unova-cap",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "pikachu-kalos-cap",
+      "form": "pikachu-kalos-cap",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "pikachu-alola-cap",
+      "form": "pikachu-alola-cap",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "raichu-alola",
+      "form": "raichu-alola",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "sandshrew-alola",
+      "form": "sandshrew-alola",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "sandslash-alola",
+      "form": "sandslash-alola",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "vulpix-alola",
+      "form": "vulpix-alola",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "ninetales-alola",
+      "form": "ninetales-alola",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "diglett-alola",
+      "form": "diglett-alola",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "dugtrio-alola",
+      "form": "dugtrio-alola",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "meowth-alola",
+      "form": "meowth-alola",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "persian-alola",
+      "form": "persian-alola",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "geodude-alola",
+      "form": "geodude-alola",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "graveler-alola",
+      "form": "graveler-alola",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "golem-alola",
+      "form": "golem-alola",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "grimer-alola",
+      "form": "grimer-alola",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "muk-alola",
+      "form": "muk-alola",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "exeggutor-alola",
+      "form": "exeggutor-alola",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "marowak-alola",
+      "form": "marowak-alola",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "greninja-battle-bond",
+      "form": "greninja-battle-bond",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "greninja-ash",
+      "form": "greninja-ash",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "zygarde-10-power-construct",
+      "form": "zygarde-10-power-construct",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "zygarde-50-power-construct",
+      "form": "zygarde-50-power-construct",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "zygarde-complete",
+      "form": "zygarde-complete",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "gumshoos-totem",
+      "form": "gumshoos-totem",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "vikavolt-totem",
+      "form": "vikavolt-totem",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "oricorio-pom-pom",
+      "form": "oricorio-pom-pom",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "oricorio-pau",
+      "form": "oricorio-pau",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "oricorio-sensu",
+      "form": "oricorio-sensu",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "lycanroc-midnight",
+      "form": "lycanroc-midnight",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "wishiwashi-school",
+      "form": "wishiwashi-school",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "lurantis-totem",
+      "form": "lurantis-totem",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "salazzle-totem",
+      "form": "salazzle-totem",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "minior-orange-meteor",
+      "form": "minior-orange-meteor",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "minior-yellow-meteor",
+      "form": "minior-yellow-meteor",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "minior-green-meteor",
+      "form": "minior-green-meteor",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "minior-blue-meteor",
+      "form": "minior-blue-meteor",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "minior-indigo-meteor",
+      "form": "minior-indigo-meteor",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "minior-violet-meteor",
+      "form": "minior-violet-meteor",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "minior-red",
+      "form": "minior-red",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "minior-orange",
+      "form": "minior-orange",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "minior-yellow",
+      "form": "minior-yellow",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "minior-green",
+      "form": "minior-green",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "minior-blue",
+      "form": "minior-blue",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "minior-indigo",
+      "form": "minior-indigo",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "minior-violet",
+      "form": "minior-violet",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "mimikyu-busted",
+      "form": "mimikyu-busted",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "mimikyu-totem-disguised",
+      "form": "mimikyu-totem-disguised",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "mimikyu-totem-busted",
+      "form": "mimikyu-totem-busted",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "kommo-o-totem",
+      "form": "kommo-o-totem",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "magearna-original",
+      "form": "magearna-original",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "pikachu-partner-cap",
+      "form": "pikachu-partner-cap",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "marowak-totem",
+      "form": "marowak-totem",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 414,
+      "pokemon": "mothim",
+      "form": "mothim-sandy",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 414,
+      "pokemon": "mothim",
+      "form": "mothim-trash",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-polar",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-tundra",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-continental",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-garden",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-elegant",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-meadow",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-modern",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-marine",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-archipelago",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-high-plains",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-sandstorm",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-river",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-monsoon",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-savanna",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-sun",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-ocean",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-jungle",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-fancy",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-poke-ball",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-polar",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-tundra",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-continental",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-garden",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-elegant",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-meadow",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-modern",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-marine",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-archipelago",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-high-plains",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-sandstorm",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-river",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-monsoon",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-savanna",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-sun",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-ocean",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-jungle",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-fancy",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-poke-ball",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "ribombee-totem",
+      "form": "ribombee-totem",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "rockruff-own-tempo",
+      "form": "rockruff-own-tempo",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "lycanroc-dusk",
+      "form": "lycanroc-dusk",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "araquanid-totem",
+      "form": "araquanid-totem",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "togedemaru-totem",
+      "form": "togedemaru-totem",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "necrozma-dusk",
+      "form": "necrozma-dusk",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "necrozma-dawn",
+      "form": "necrozma-dawn",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "necrozma-ultra",
+      "form": "necrozma-ultra",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "ultra-sun-ultra-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "pikachu-starter",
+      "form": "pikachu-starter",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "lets-go-pikachu-lets-go-eevee"
+    },
+    {
+      "dex": null,
+      "pokemon": "eevee-starter",
+      "form": "eevee-starter",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "lets-go-pikachu-lets-go-eevee"
+    },
+    {
+      "dex": null,
+      "pokemon": "pikachu-world-cap",
+      "form": "pikachu-world-cap",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "meowth-galar",
+      "form": "meowth-galar",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "ponyta-galar",
+      "form": "ponyta-galar",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "rapidash-galar",
+      "form": "rapidash-galar",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "slowpoke-galar",
+      "form": "slowpoke-galar",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "slowbro-galar",
+      "form": "slowbro-galar",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "farfetchd-galar",
+      "form": "farfetchd-galar",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "weezing-galar",
+      "form": "weezing-galar",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "mr-mime-galar",
+      "form": "mr-mime-galar",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "articuno-galar",
+      "form": "articuno-galar",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "zapdos-galar",
+      "form": "zapdos-galar",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "moltres-galar",
+      "form": "moltres-galar",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "slowking-galar",
+      "form": "slowking-galar",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "corsola-galar",
+      "form": "corsola-galar",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "zigzagoon-galar",
+      "form": "zigzagoon-galar",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "linoone-galar",
+      "form": "linoone-galar",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "darumaka-galar",
+      "form": "darumaka-galar",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "darmanitan-galar-standard",
+      "form": "darmanitan-galar-standard",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "darmanitan-galar-zen",
+      "form": "darmanitan-galar-zen",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "yamask-galar",
+      "form": "yamask-galar",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "stunfisk-galar",
+      "form": "stunfisk-galar",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "zygarde-10",
+      "form": "zygarde-10",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sun-moon"
+    },
+    {
+      "dex": null,
+      "pokemon": "cramorant-gulping",
+      "form": "cramorant-gulping",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "cramorant-gorging",
+      "form": "cramorant-gorging",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "toxtricity-low-key",
+      "form": "toxtricity-low-key",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "eiscue-noice",
+      "form": "eiscue-noice",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "indeedee-female",
+      "form": "indeedee-female",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "morpeko-hangry",
+      "form": "morpeko-hangry",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "zacian-crowned",
+      "form": "zacian-crowned",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "zamazenta-crowned",
+      "form": "zamazenta-crowned",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "eternatus-eternamax",
+      "form": "eternatus-eternamax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "urshifu-rapid-strike",
+      "form": "urshifu-rapid-strike",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "zarude-dada",
+      "form": "zarude-dada",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "calyrex-ice",
+      "form": "calyrex-ice",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "calyrex-shadow",
+      "form": "calyrex-shadow",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "venusaur-gmax",
+      "form": "venusaur-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "charizard-gmax",
+      "form": "charizard-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "blastoise-gmax",
+      "form": "blastoise-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "butterfree-gmax",
+      "form": "butterfree-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "pikachu-gmax",
+      "form": "pikachu-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "meowth-gmax",
+      "form": "meowth-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "machamp-gmax",
+      "form": "machamp-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "gengar-gmax",
+      "form": "gengar-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "kingler-gmax",
+      "form": "kingler-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "lapras-gmax",
+      "form": "lapras-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "eevee-gmax",
+      "form": "eevee-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "snorlax-gmax",
+      "form": "snorlax-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "garbodor-gmax",
+      "form": "garbodor-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "melmetal-gmax",
+      "form": "melmetal-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "rillaboom-gmax",
+      "form": "rillaboom-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "cinderace-gmax",
+      "form": "cinderace-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "inteleon-gmax",
+      "form": "inteleon-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "corviknight-gmax",
+      "form": "corviknight-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "orbeetle-gmax",
+      "form": "orbeetle-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "drednaw-gmax",
+      "form": "drednaw-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "coalossal-gmax",
+      "form": "coalossal-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "flapple-gmax",
+      "form": "flapple-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "appletun-gmax",
+      "form": "appletun-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "sandaconda-gmax",
+      "form": "sandaconda-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "toxtricity-amped-gmax",
+      "form": "toxtricity-amped-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "centiskorch-gmax",
+      "form": "centiskorch-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "hatterene-gmax",
+      "form": "hatterene-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "grimmsnarl-gmax",
+      "form": "grimmsnarl-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "alcremie-gmax",
+      "form": "alcremie-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "copperajah-gmax",
+      "form": "copperajah-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "duraludon-gmax",
+      "form": "duraludon-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "urshifu-single-strike-gmax",
+      "form": "urshifu-single-strike-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "urshifu-rapid-strike-gmax",
+      "form": "urshifu-rapid-strike-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "toxtricity-low-key-gmax",
+      "form": "toxtricity-low-key-gmax",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "sword-shield"
+    },
+    {
+      "dex": null,
+      "pokemon": "growlithe-hisui",
+      "form": "growlithe-hisui",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "legends-arceus"
+    },
+    {
+      "dex": null,
+      "pokemon": "arcanine-hisui",
+      "form": "arcanine-hisui",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "legends-arceus"
+    },
+    {
+      "dex": null,
+      "pokemon": "voltorb-hisui",
+      "form": "voltorb-hisui",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "legends-arceus"
+    },
+    {
+      "dex": null,
+      "pokemon": "electrode-hisui",
+      "form": "electrode-hisui",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "legends-arceus"
+    },
+    {
+      "dex": null,
+      "pokemon": "typhlosion-hisui",
+      "form": "typhlosion-hisui",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "legends-arceus"
+    },
+    {
+      "dex": null,
+      "pokemon": "qwilfish-hisui",
+      "form": "qwilfish-hisui",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "legends-arceus"
+    },
+    {
+      "dex": null,
+      "pokemon": "sneasel-hisui",
+      "form": "sneasel-hisui",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "legends-arceus"
+    },
+    {
+      "dex": null,
+      "pokemon": "samurott-hisui",
+      "form": "samurott-hisui",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "legends-arceus"
+    },
+    {
+      "dex": null,
+      "pokemon": "lilligant-hisui",
+      "form": "lilligant-hisui",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "legends-arceus"
+    },
+    {
+      "dex": null,
+      "pokemon": "zorua-hisui",
+      "form": "zorua-hisui",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "legends-arceus"
+    },
+    {
+      "dex": null,
+      "pokemon": "zoroark-hisui",
+      "form": "zoroark-hisui",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "legends-arceus"
+    },
+    {
+      "dex": null,
+      "pokemon": "braviary-hisui",
+      "form": "braviary-hisui",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "legends-arceus"
+    },
+    {
+      "dex": null,
+      "pokemon": "sliggoo-hisui",
+      "form": "sliggoo-hisui",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "legends-arceus"
+    },
+    {
+      "dex": null,
+      "pokemon": "goodra-hisui",
+      "form": "goodra-hisui",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "legends-arceus"
+    },
+    {
+      "dex": null,
+      "pokemon": "avalugg-hisui",
+      "form": "avalugg-hisui",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "legends-arceus"
+    },
+    {
+      "dex": null,
+      "pokemon": "decidueye-hisui",
+      "form": "decidueye-hisui",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "legends-arceus"
+    },
+    {
+      "dex": null,
+      "pokemon": "dialga-origin",
+      "form": "dialga-origin",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "legends-arceus"
+    },
+    {
+      "dex": null,
+      "pokemon": "palkia-origin",
+      "form": "palkia-origin",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "legends-arceus"
+    },
+    {
+      "dex": null,
+      "pokemon": "basculin-white-striped",
+      "form": "basculin-white-striped",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "legends-arceus"
+    },
+    {
+      "dex": null,
+      "pokemon": "basculegion-female",
+      "form": "basculegion-female",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "legends-arceus"
+    },
+    {
+      "dex": null,
+      "pokemon": "enamorus-therian",
+      "form": "enamorus-therian",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "legends-arceus"
+    },
+    {
+      "dex": null,
+      "pokemon": "tauros-paldea-combat-breed",
+      "form": "tauros-paldea-combat-breed",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "tauros-paldea-blaze-breed",
+      "form": "tauros-paldea-blaze-breed",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "tauros-paldea-aqua-breed",
+      "form": "tauros-paldea-aqua-breed",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "wooper-paldea",
+      "form": "wooper-paldea",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "oinkologne-female",
+      "form": "oinkologne-female",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "dudunsparce-three-segment",
+      "form": "dudunsparce-three-segment",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "palafin-hero",
+      "form": "palafin-hero",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "maushold-family-of-three",
+      "form": "maushold-family-of-three",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "tatsugiri-droopy",
+      "form": "tatsugiri-droopy",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "tatsugiri-stretchy",
+      "form": "tatsugiri-stretchy",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "squawkabilly-blue-plumage",
+      "form": "squawkabilly-blue-plumage",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "squawkabilly-yellow-plumage",
+      "form": "squawkabilly-yellow-plumage",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "squawkabilly-white-plumage",
+      "form": "squawkabilly-white-plumage",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "gimmighoul-roaming",
+      "form": "gimmighoul-roaming",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "koraidon-limited-build",
+      "form": "koraidon-limited-build",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "koraidon-sprinting-build",
+      "form": "koraidon-sprinting-build",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "koraidon-swimming-build",
+      "form": "koraidon-swimming-build",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "koraidon-gliding-build",
+      "form": "koraidon-gliding-build",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "miraidon-low-power-mode",
+      "form": "miraidon-low-power-mode",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "miraidon-drive-mode",
+      "form": "miraidon-drive-mode",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "miraidon-aquatic-mode",
+      "form": "miraidon-aquatic-mode",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "miraidon-glide-mode",
+      "form": "miraidon-glide-mode",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "scarlet-violet"
+    },
+    {
+      "dex": null,
+      "pokemon": "ursaluna-bloodmoon",
+      "form": "ursaluna-bloodmoon",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "the-teal-mask"
+    },
+    {
+      "dex": null,
+      "pokemon": "ogerpon-wellspring-mask",
+      "form": "ogerpon-wellspring-mask",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "the-teal-mask"
+    },
+    {
+      "dex": null,
+      "pokemon": "ogerpon-hearthflame-mask",
+      "form": "ogerpon-hearthflame-mask",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "the-teal-mask"
+    },
+    {
+      "dex": null,
+      "pokemon": "ogerpon-cornerstone-mask",
+      "form": "ogerpon-cornerstone-mask",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "the-teal-mask"
+    },
+    {
+      "dex": null,
+      "pokemon": "terapagos-terastal",
+      "form": "terapagos-terastal",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "the-indigo-disk"
+    },
+    {
+      "dex": null,
+      "pokemon": "terapagos-stellar",
+      "form": "terapagos-stellar",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "the-indigo-disk"
+    },
+    {
+      "dex": null,
+      "pokemon": "clefable-mega",
+      "form": "clefable-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "victreebel-mega",
+      "form": "victreebel-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "starmie-mega",
+      "form": "starmie-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "dragonite-mega",
+      "form": "dragonite-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "meganium-mega",
+      "form": "meganium-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "feraligatr-mega",
+      "form": "feraligatr-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "skarmory-mega",
+      "form": "skarmory-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "froslass-mega",
+      "form": "froslass-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "emboar-mega",
+      "form": "emboar-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "excadrill-mega",
+      "form": "excadrill-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "scolipede-mega",
+      "form": "scolipede-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "scrafty-mega",
+      "form": "scrafty-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "eelektross-mega",
+      "form": "eelektross-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "chandelure-mega",
+      "form": "chandelure-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "chesnaught-mega",
+      "form": "chesnaught-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "delphox-mega",
+      "form": "delphox-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "greninja-mega",
+      "form": "greninja-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "pyroar-mega",
+      "form": "pyroar-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "floette-mega",
+      "form": "floette-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "malamar-mega",
+      "form": "malamar-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "barbaracle-mega",
+      "form": "barbaracle-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "dragalge-mega",
+      "form": "dragalge-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "hawlucha-mega",
+      "form": "hawlucha-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "zygarde-mega",
+      "form": "zygarde-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "drampa-mega",
+      "form": "drampa-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "falinks-mega",
+      "form": "falinks-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "raichu-mega-x",
+      "form": "raichu-mega-x",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "raichu-mega-y",
+      "form": "raichu-mega-y",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "chimecho-mega",
+      "form": "chimecho-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "absol-mega-z",
+      "form": "absol-mega-z",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "staraptor-mega",
+      "form": "staraptor-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "garchomp-mega-z",
+      "form": "garchomp-mega-z",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "lucario-mega-z",
+      "form": "lucario-mega-z",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "heatran-mega",
+      "form": "heatran-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "darkrai-mega",
+      "form": "darkrai-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "golurk-mega",
+      "form": "golurk-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "meowstic-male-mega",
+      "form": "meowstic-male-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "crabominable-mega",
+      "form": "crabominable-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "golisopod-mega",
+      "form": "golisopod-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "magearna-mega",
+      "form": "magearna-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "magearna-original-mega",
+      "form": "magearna-original-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "zeraora-mega",
+      "form": "zeraora-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "scovillain-mega",
+      "form": "scovillain-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "glimmora-mega",
+      "form": "glimmora-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "tatsugiri-curly-mega",
+      "form": "tatsugiri-curly-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "tatsugiri-droopy-mega",
+      "form": "tatsugiri-droopy-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "tatsugiri-stretchy-mega",
+      "form": "tatsugiri-stretchy-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": null,
+      "pokemon": "baxcalibur-mega",
+      "form": "baxcalibur-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    },
+    {
+      "dex": 668,
+      "pokemon": "pyroar-male",
+      "form": "pyroar-female",
+      "reason": "variação apenas de gênero (o projeto modela isso em PokemonSprite.Gender, não como forma)"
+    },
+    {
+      "dex": 592,
+      "pokemon": "frillish-male",
+      "form": "frillish-female",
+      "reason": "variação apenas de gênero (o projeto modela isso em PokemonSprite.Gender, não como forma)"
+    },
+    {
+      "dex": 593,
+      "pokemon": "jellicent-male",
+      "form": "jellicent-female",
+      "reason": "variação apenas de gênero (o projeto modela isso em PokemonSprite.Gender, não como forma)"
+    },
+    {
+      "dex": null,
+      "pokemon": "meowstic-female-mega",
+      "form": "meowstic-female-mega",
+      "reason": "Mega Evolução (adiada para a próxima etapa)"
+    }
+  ],
+  "bancos_consultados": [
+    "/home/jose/.wine-dotnet-10/drive_c/users/jose/AppData/Local/GestaoDePokemon/gestaopokemon.db"
+  ],
+  "entradas_de_learnset_ignoradas": {
+    "método 'stadium-surfing-pikachu'": 2,
+    "método 'form-change'": 5
+  },
+  "sprites": {
+    "planejados": 396,
+    "baixados": 0,
+    "ja_existiam": 396,
+    "falhas": []
+  }
+}

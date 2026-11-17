@@ -22,16 +22,27 @@ public static class GenerationVFormsInitializer
         Converters = { new JsonStringEnumConverter() }
     };
 
-    public static void Inicializar(AppDbContext db)
+    public static void Inicializar(AppDbContext db) =>
+        Inicializar(db, "generation-i-v-forms-seed.json", 1, 649);
+
+    /// <summary>
+    /// Importa as formas alternativas descritas em <paramref name="seedFileName"/>,
+    /// restritas às espécies de <paramref name="minDex"/> a <paramref name="maxDex"/>.
+    /// Com <paramref name="onlyInsertMissing"/>, formas que já existem no banco
+    /// (mesma espécie e mesmo nome normalizado) não são alteradas nem recriadas.
+    /// </summary>
+    public static void Inicializar(
+        AppDbContext db, string seedFileName, int minDex, int maxDex, bool onlyInsertMissing = false)
     {
         ArgumentNullException.ThrowIfNull(db);
+        ArgumentException.ThrowIfNullOrWhiteSpace(seedFileName);
 
         string seedPath = Path.Combine(
             AppContext.BaseDirectory,
             "Data",
             "Persistence",
             "Seed",
-            "generation-i-v-forms-seed.json");
+            seedFileName);
 
         if (!File.Exists(seedPath))
             return;
@@ -48,7 +59,7 @@ public static class GenerationVFormsInitializer
 
         var movesById = db.Moves.ToDictionary(move => move.Id);
         foreach (AlternativeFormSeed seed in seeds)
-            ValidateSeed(seed, movesById);
+            ValidateSeed(seed, movesById, minDex, maxDex);
 
         var seenForms = new HashSet<(int Dex, string Name)>();
         foreach (AlternativeFormSeed seed in seeds)
@@ -78,6 +89,19 @@ public static class GenerationVFormsInitializer
             .ToDictionary(
                 form => (form.PokemonId, NormalizeName(form.FormName)),
                 form => form);
+
+        // Modo "somente inserir": formas que já existem no banco (mesma espécie e
+        // mesmo nome normalizado) não são alteradas nem recriadas.
+        if (onlyInsertMissing)
+        {
+            seeds = seeds
+                .Where(seed => !formsByKey.ContainsKey(
+                    (pokemonsByDex[seed.NationalDexNumber].Id, NormalizeName(seed.FormName))))
+                .ToList();
+
+            if (seeds.Count == 0)
+                return;
+        }
 
         // Primeiro cria/atualiza todas as formas. Um único SaveChanges gera os IDs
         // necessários para as tabelas de habilidades, sprites e movimentos.
@@ -199,9 +223,11 @@ public static class GenerationVFormsInitializer
 
     private static void ValidateSeed(
         AlternativeFormSeed seed,
-        IReadOnlyDictionary<int, PokemonMove> movesById)
+        IReadOnlyDictionary<int, PokemonMove> movesById,
+        int minDex,
+        int maxDex)
     {
-        if (seed.NationalDexNumber is < 1 or > 649)
+        if (seed.NationalDexNumber < minDex || seed.NationalDexNumber > maxDex)
             throw new InvalidDataException($"Número de Pokédex inválido: {seed.NationalDexNumber}.");
 
         if (string.IsNullOrWhiteSpace(seed.FormName) ||

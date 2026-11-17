@@ -25,6 +25,13 @@ namespace GestaoDePokemon.model
 
         public BaseStats Stats { get; set; }
 
+        // Mega Evoluções que esta forma pode originar.
+        public List<PokemonMegaEvolution> MegaEvolutions { get; set; } = new();
+
+        // Relacionamento que identifica a forma base desta Mega Evolução.
+        // Será nulo para formas que não sejam Mega.
+        public PokemonMegaEvolution? MegaEvolutionOrigin { get; set; }
+
         public List<PokemonSprite> Sprites { get; set; } = new();
 
         public List<PokemonFormAbility> Abilities { get; set; } = new();

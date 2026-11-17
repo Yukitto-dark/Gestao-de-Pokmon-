@@ -33,6 +33,8 @@ public sealed class AppDbContext : DbContext
     public DbSet<PokemonTeam> Teams => Set<PokemonTeam>();
     public DbSet<PokemonBuild> Builds => Set<PokemonBuild>();
     public DbSet<PokemonFavorite> Favorites => Set<PokemonFavorite>();
+    public DbSet<PokemonMegaEvolution> MegaEvolutions
+    => Set<PokemonMegaEvolution>();
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -57,6 +59,7 @@ public sealed class AppDbContext : DbContext
         ConfigureRegions(modelBuilder);
         ConfigureTeams(modelBuilder);
         ConfigureFavorites(modelBuilder);
+        ConfigureMegaEvolutions(modelBuilder);
     }
 
     private static void ConfigurePokemon(ModelBuilder modelBuilder)
@@ -295,6 +298,38 @@ public sealed class AppDbContext : DbContext
         favorite.HasIndex(p => p.PokemonId).IsUnique();
     }
 
+    private static void ConfigureMegaEvolutions(ModelBuilder modelBuilder)
+    {
+        var mega = modelBuilder.Entity<PokemonMegaEvolution>();
+
+        mega.HasKey(p => p.Id);
+
+        mega.Property(p => p.Method)
+            .HasConversion<string>();
+
+        mega.Property(p => p.RequiredItem)
+            .HasMaxLength(100);
+
+        mega.HasOne(p => p.BaseForm)
+            .WithMany(form => form.MegaEvolutions)
+            .HasForeignKey(p => p.BaseFormId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        mega.HasOne(p => p.MegaForm)
+            .WithOne(form => form.MegaEvolutionOrigin)
+            .HasForeignKey<PokemonMegaEvolution>(p => p.MegaFormId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        mega.HasOne(p => p.RequiredMove)
+            .WithMany()
+            .HasForeignKey(p => p.RequiredMoveId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        mega.HasIndex(p => p.MegaFormId)
+            .IsUnique();
+
+        mega.HasIndex(p => p.BaseFormId);
+    }
     private static ValueConverter<List<T>, string> CreateJsonListConverter<T>() =>
         new(value => SerializeJson(value), value => DeserializeList<T>(value));
 

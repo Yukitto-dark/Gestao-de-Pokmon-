@@ -5020,5 +5020,455 @@
     "Power": 100,
     "Accuracy": 100,
     "PP": 5
+  },
+  {
+    "Id": 560,
+    "Name": "Flying Press",
+    "Type": "Fighting",
+    "Category": "Physical",
+    "Power": 100,
+    "Accuracy": 95,
+    "PP": 10
+  },
+  {
+    "Id": 561,
+    "Name": "Mat Block",
+    "Type": "Fighting",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "PP": 10
+  },
+  {
+    "Id": 563,
+    "Name": "Rototiller",
+    "Type": "Ground",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "PP": 10
+  },
+  {
+    "Id": 566,
+    "Name": "Phantom Force",
+    "Type": "Ghost",
+    "Category": "Physical",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 10
+  },
+  {
+    "Id": 567,
+    "Name": "Trick-or-Treat",
+    "Type": "Ghost",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 100,
+    "PP": 20
+  },
+  {
+    "Id": 568,
+    "Name": "Noble Roar",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 100,
+    "PP": 30
+  },
+  {
+    "Id": 570,
+    "Name": "Parabolic Charge",
+    "Type": "Electric",
+    "Category": "Special",
+    "Power": 65,
+    "Accuracy": 100,
+    "PP": 20
+  },
+  {
+    "Id": 571,
+    "Name": "Forest’s Curse",
+    "Type": "Grass",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 100,
+    "PP": 20
+  },
+  {
+    "Id": 572,
+    "Name": "Petal Blizzard",
+    "Type": "Grass",
+    "Category": "Physical",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 15
+  },
+  {
+    "Id": 573,
+    "Name": "Freeze-Dry",
+    "Type": "Ice",
+    "Category": "Special",
+    "Power": 70,
+    "Accuracy": 100,
+    "PP": 20
+  },
+  {
+    "Id": 574,
+    "Name": "Disarming Voice",
+    "Type": "Fairy",
+    "Category": "Special",
+    "Power": 40,
+    "Accuracy": null,
+    "PP": 15
+  },
+  {
+    "Id": 575,
+    "Name": "Parting Shot",
+    "Type": "Dark",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 100,
+    "PP": 20
+  },
+  {
+    "Id": 576,
+    "Name": "Topsy-Turvy",
+    "Type": "Dark",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "PP": 20
+  },
+  {
+    "Id": 577,
+    "Name": "Draining Kiss",
+    "Type": "Fairy",
+    "Category": "Special",
+    "Power": 50,
+    "Accuracy": 100,
+    "PP": 10
+  },
+  {
+    "Id": 578,
+    "Name": "Crafty Shield",
+    "Type": "Fairy",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "PP": 10
+  },
+  {
+    "Id": 579,
+    "Name": "Flower Shield",
+    "Type": "Fairy",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "PP": 10
+  },
+  {
+    "Id": 580,
+    "Name": "Grassy Terrain",
+    "Type": "Grass",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "PP": 10
+  },
+  {
+    "Id": 581,
+    "Name": "Misty Terrain",
+    "Type": "Fairy",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "PP": 10
+  },
+  {
+    "Id": 582,
+    "Name": "Electrify",
+    "Type": "Electric",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "PP": 20
+  },
+  {
+    "Id": 583,
+    "Name": "Play Rough",
+    "Type": "Fairy",
+    "Category": "Physical",
+    "Power": 90,
+    "Accuracy": 90,
+    "PP": 10
+  },
+  {
+    "Id": 584,
+    "Name": "Fairy Wind",
+    "Type": "Fairy",
+    "Category": "Special",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 30
+  },
+  {
+    "Id": 585,
+    "Name": "Moonblast",
+    "Type": "Fairy",
+    "Category": "Special",
+    "Power": 95,
+    "Accuracy": 100,
+    "PP": 15
+  },
+  {
+    "Id": 586,
+    "Name": "Boomburst",
+    "Type": "Normal",
+    "Category": "Special",
+    "Power": 140,
+    "Accuracy": 100,
+    "PP": 10
+  },
+  {
+    "Id": 587,
+    "Name": "Fairy Lock",
+    "Type": "Fairy",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "PP": 10
+  },
+  {
+    "Id": 588,
+    "Name": "King’s Shield",
+    "Type": "Steel",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "PP": 10
+  },
+  {
+    "Id": 589,
+    "Name": "Play Nice",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "PP": 20
+  },
+  {
+    "Id": 590,
+    "Name": "Confide",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "PP": 20
+  },
+  {
+    "Id": 591,
+    "Name": "Diamond Storm",
+    "Type": "Rock",
+    "Category": "Physical",
+    "Power": 100,
+    "Accuracy": 95,
+    "PP": 5
+  },
+  {
+    "Id": 592,
+    "Name": "Steam Eruption",
+    "Type": "Water",
+    "Category": "Special",
+    "Power": 110,
+    "Accuracy": 95,
+    "PP": 5
+  },
+  {
+    "Id": 593,
+    "Name": "Hyperspace Hole",
+    "Type": "Psychic",
+    "Category": "Special",
+    "Power": 80,
+    "Accuracy": null,
+    "PP": 5
+  },
+  {
+    "Id": 594,
+    "Name": "Water Shuriken",
+    "Type": "Water",
+    "Category": "Special",
+    "Power": 15,
+    "Accuracy": 100,
+    "PP": 20
+  },
+  {
+    "Id": 595,
+    "Name": "Mystical Fire",
+    "Type": "Fire",
+    "Category": "Special",
+    "Power": 75,
+    "Accuracy": 100,
+    "PP": 10
+  },
+  {
+    "Id": 596,
+    "Name": "Spiky Shield",
+    "Type": "Grass",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "PP": 10
+  },
+  {
+    "Id": 597,
+    "Name": "Aromatic Mist",
+    "Type": "Fairy",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "PP": 20
+  },
+  {
+    "Id": 598,
+    "Name": "Eerie Impulse",
+    "Type": "Electric",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 100,
+    "PP": 15
+  },
+  {
+    "Id": 599,
+    "Name": "Venom Drench",
+    "Type": "Poison",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 100,
+    "PP": 20
+  },
+  {
+    "Id": 600,
+    "Name": "Powder",
+    "Type": "Bug",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 100,
+    "PP": 20
+  },
+  {
+    "Id": 601,
+    "Name": "Geomancy",
+    "Type": "Fairy",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "PP": 10
+  },
+  {
+    "Id": 604,
+    "Name": "Electric Terrain",
+    "Type": "Electric",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "PP": 10
+  },
+  {
+    "Id": 605,
+    "Name": "Dazzling Gleam",
+    "Type": "Fairy",
+    "Category": "Special",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10
+  },
+  {
+    "Id": 608,
+    "Name": "Baby-Doll Eyes",
+    "Type": "Fairy",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 100,
+    "PP": 30
+  },
+  {
+    "Id": 609,
+    "Name": "Nuzzle",
+    "Type": "Electric",
+    "Category": "Physical",
+    "Power": 20,
+    "Accuracy": 100,
+    "PP": 20
+  },
+  {
+    "Id": 611,
+    "Name": "Infestation",
+    "Type": "Bug",
+    "Category": "Special",
+    "Power": 20,
+    "Accuracy": 100,
+    "PP": 20
+  },
+  {
+    "Id": 612,
+    "Name": "Power-Up Punch",
+    "Type": "Fighting",
+    "Category": "Physical",
+    "Power": 40,
+    "Accuracy": 100,
+    "PP": 20
+  },
+  {
+    "Id": 613,
+    "Name": "Oblivion Wing",
+    "Type": "Flying",
+    "Category": "Special",
+    "Power": 80,
+    "Accuracy": 100,
+    "PP": 10
+  },
+  {
+    "Id": 616,
+    "Name": "Land’s Wrath",
+    "Type": "Ground",
+    "Category": "Physical",
+    "Power": 90,
+    "Accuracy": 100,
+    "PP": 10
+  },
+  {
+    "Id": 617,
+    "Name": "Light of Ruin",
+    "Type": "Fairy",
+    "Category": "Special",
+    "Power": 140,
+    "Accuracy": 90,
+    "PP": 5
+  },
+  {
+    "Id": 618,
+    "Name": "Origin Pulse",
+    "Type": "Water",
+    "Category": "Special",
+    "Power": 110,
+    "Accuracy": 85,
+    "PP": 10
+  },
+  {
+    "Id": 619,
+    "Name": "Precipice Blades",
+    "Type": "Ground",
+    "Category": "Physical",
+    "Power": 120,
+    "Accuracy": 85,
+    "PP": 10
+  },
+  {
+    "Id": 621,
+    "Name": "Hyperspace Fury",
+    "Type": "Dark",
+    "Category": "Physical",
+    "Power": 100,
+    "Accuracy": null,
+    "PP": 5
   }
 ]
