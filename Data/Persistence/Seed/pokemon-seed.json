@@ -142,7 +142,7 @@
         "Atk": 84,
         "Def": 78,
         "SpAtk": 109,
-        "SpDef": 115,
+        "SpDef": 85,
         "Speed": 100
       }
     }
@@ -214,7 +214,7 @@
         "Atk": 83,
         "Def": 100,
         "SpAtk": 85,
-        "SpDef": 100,
+        "SpDef": 105,
         "Speed": 78
       }
     }
@@ -357,7 +357,7 @@
         "Def": 40,
         "SpAtk": 45,
         "SpDef": 80,
-        "Speed": 70
+        "Speed": 75
       }
     }
   },
@@ -17129,6 +17129,7250 @@
         "SpAtk": 130,
         "SpDef": 90,
         "Speed": 70
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 722,
+    "Name": "Rowlet",
+    "Generation": 7,
+    "Category": "Grass Quill",
+    "EggGroups": [
+      "Flying"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Flying"
+      ],
+      "Stats": {
+        "HP": 68,
+        "Atk": 55,
+        "Def": 55,
+        "SpAtk": 50,
+        "SpDef": 50,
+        "Speed": 42
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 723,
+    "Name": "Dartrix",
+    "Generation": 7,
+    "Category": "Blade Quill",
+    "EggGroups": [
+      "Flying"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Flying"
+      ],
+      "Stats": {
+        "HP": 78,
+        "Atk": 75,
+        "Def": 75,
+        "SpAtk": 70,
+        "SpDef": 70,
+        "Speed": 52
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 724,
+    "Name": "Decidueye",
+    "Generation": 7,
+    "Category": "Arrow Quill",
+    "EggGroups": [
+      "Flying"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 78,
+        "Atk": 107,
+        "Def": 75,
+        "SpAtk": 100,
+        "SpDef": 100,
+        "Speed": 70
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 725,
+    "Name": "Litten",
+    "Generation": 7,
+    "Category": "Fire Cat",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fire"
+      ],
+      "Stats": {
+        "HP": 45,
+        "Atk": 65,
+        "Def": 40,
+        "SpAtk": 60,
+        "SpDef": 40,
+        "Speed": 70
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 726,
+    "Name": "Torracat",
+    "Generation": 7,
+    "Category": "Fire Cat",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fire"
+      ],
+      "Stats": {
+        "HP": 65,
+        "Atk": 85,
+        "Def": 50,
+        "SpAtk": 80,
+        "SpDef": 50,
+        "Speed": 90
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 727,
+    "Name": "Incineroar",
+    "Generation": 7,
+    "Category": "Heel",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fire",
+        "Dark"
+      ],
+      "Stats": {
+        "HP": 95,
+        "Atk": 115,
+        "Def": 90,
+        "SpAtk": 80,
+        "SpDef": 90,
+        "Speed": 60
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 728,
+    "Name": "Popplio",
+    "Generation": 7,
+    "Category": "Sea Lion",
+    "EggGroups": [
+      "Water1",
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water"
+      ],
+      "Stats": {
+        "HP": 50,
+        "Atk": 54,
+        "Def": 54,
+        "SpAtk": 66,
+        "SpDef": 56,
+        "Speed": 40
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 729,
+    "Name": "Brionne",
+    "Generation": 7,
+    "Category": "Pop Star",
+    "EggGroups": [
+      "Water1",
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water"
+      ],
+      "Stats": {
+        "HP": 60,
+        "Atk": 69,
+        "Def": 69,
+        "SpAtk": 91,
+        "SpDef": 81,
+        "Speed": 50
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 730,
+    "Name": "Primarina",
+    "Generation": 7,
+    "Category": "Soloist",
+    "EggGroups": [
+      "Water1",
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water",
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 80,
+        "Atk": 74,
+        "Def": 74,
+        "SpAtk": 126,
+        "SpDef": 116,
+        "Speed": 60
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 731,
+    "Name": "Pikipek",
+    "Generation": 7,
+    "Category": "Woodpecker",
+    "EggGroups": [
+      "Flying"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal",
+        "Flying"
+      ],
+      "Stats": {
+        "HP": 35,
+        "Atk": 75,
+        "Def": 30,
+        "SpAtk": 30,
+        "SpDef": 30,
+        "Speed": 65
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 732,
+    "Name": "Trumbeak",
+    "Generation": 7,
+    "Category": "Bugle Beak",
+    "EggGroups": [
+      "Flying"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal",
+        "Flying"
+      ],
+      "Stats": {
+        "HP": 55,
+        "Atk": 85,
+        "Def": 50,
+        "SpAtk": 40,
+        "SpDef": 50,
+        "Speed": 75
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 733,
+    "Name": "Toucannon",
+    "Generation": 7,
+    "Category": "Cannon",
+    "EggGroups": [
+      "Flying"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal",
+        "Flying"
+      ],
+      "Stats": {
+        "HP": 80,
+        "Atk": 120,
+        "Def": 75,
+        "SpAtk": 75,
+        "SpDef": 75,
+        "Speed": 60
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 734,
+    "Name": "Yungoos",
+    "Generation": 7,
+    "Category": "Loitering",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 48,
+        "Atk": 70,
+        "Def": 30,
+        "SpAtk": 30,
+        "SpDef": 30,
+        "Speed": 45
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 735,
+    "Name": "Gumshoos",
+    "Generation": 7,
+    "Category": "Stakeout",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 88,
+        "Atk": 110,
+        "Def": 60,
+        "SpAtk": 55,
+        "SpDef": 60,
+        "Speed": 45
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 736,
+    "Name": "Grubbin",
+    "Generation": 7,
+    "Category": "Larva",
+    "EggGroups": [
+      "Bug"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Bug"
+      ],
+      "Stats": {
+        "HP": 47,
+        "Atk": 62,
+        "Def": 45,
+        "SpAtk": 55,
+        "SpDef": 45,
+        "Speed": 46
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 737,
+    "Name": "Charjabug",
+    "Generation": 7,
+    "Category": "Battery",
+    "EggGroups": [
+      "Bug"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Bug",
+        "Electric"
+      ],
+      "Stats": {
+        "HP": 57,
+        "Atk": 82,
+        "Def": 95,
+        "SpAtk": 55,
+        "SpDef": 75,
+        "Speed": 36
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 738,
+    "Name": "Vikavolt",
+    "Generation": 7,
+    "Category": "Stag Beetle",
+    "EggGroups": [
+      "Bug"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Bug",
+        "Electric"
+      ],
+      "Stats": {
+        "HP": 77,
+        "Atk": 70,
+        "Def": 90,
+        "SpAtk": 145,
+        "SpDef": 75,
+        "Speed": 43
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 739,
+    "Name": "Crabrawler",
+    "Generation": 7,
+    "Category": "Boxing",
+    "EggGroups": [
+      "Water3"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 47,
+        "Atk": 82,
+        "Def": 57,
+        "SpAtk": 42,
+        "SpDef": 47,
+        "Speed": 63
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 740,
+    "Name": "Crabominable",
+    "Generation": 7,
+    "Category": "Woolly Crab",
+    "EggGroups": [
+      "Water3"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fighting",
+        "Ice"
+      ],
+      "Stats": {
+        "HP": 97,
+        "Atk": 132,
+        "Def": 77,
+        "SpAtk": 62,
+        "SpDef": 67,
+        "Speed": 43
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 741,
+    "Name": "Oricorio",
+    "Generation": 7,
+    "Category": "Dancing",
+    "EggGroups": [
+      "Flying"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fire",
+        "Flying"
+      ],
+      "Stats": {
+        "HP": 75,
+        "Atk": 70,
+        "Def": 70,
+        "SpAtk": 98,
+        "SpDef": 70,
+        "Speed": 93
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 742,
+    "Name": "Cutiefly",
+    "Generation": 7,
+    "Category": "Bee Fly",
+    "EggGroups": [
+      "Bug",
+      "Fairy"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Bug",
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 40,
+        "Atk": 45,
+        "Def": 40,
+        "SpAtk": 55,
+        "SpDef": 40,
+        "Speed": 84
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 743,
+    "Name": "Ribombee",
+    "Generation": 7,
+    "Category": "Bee Fly",
+    "EggGroups": [
+      "Bug",
+      "Fairy"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Bug",
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 60,
+        "Atk": 55,
+        "Def": 60,
+        "SpAtk": 95,
+        "SpDef": 70,
+        "Speed": 124
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 744,
+    "Name": "Rockruff",
+    "Generation": 7,
+    "Category": "Puppy",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Rock"
+      ],
+      "Stats": {
+        "HP": 45,
+        "Atk": 65,
+        "Def": 40,
+        "SpAtk": 30,
+        "SpDef": 40,
+        "Speed": 60
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 745,
+    "Name": "Lycanroc",
+    "Generation": 7,
+    "Category": "Wolf",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Rock"
+      ],
+      "Stats": {
+        "HP": 75,
+        "Atk": 115,
+        "Def": 65,
+        "SpAtk": 55,
+        "SpDef": 65,
+        "Speed": 112
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 746,
+    "Name": "Wishiwashi",
+    "Generation": 7,
+    "Category": "Small Fry",
+    "EggGroups": [
+      "Water2"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water"
+      ],
+      "Stats": {
+        "HP": 45,
+        "Atk": 20,
+        "Def": 20,
+        "SpAtk": 25,
+        "SpDef": 25,
+        "Speed": 40
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 747,
+    "Name": "Mareanie",
+    "Generation": 7,
+    "Category": "Brutal Star",
+    "EggGroups": [
+      "Water1"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Poison",
+        "Water"
+      ],
+      "Stats": {
+        "HP": 50,
+        "Atk": 53,
+        "Def": 62,
+        "SpAtk": 43,
+        "SpDef": 52,
+        "Speed": 45
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 748,
+    "Name": "Toxapex",
+    "Generation": 7,
+    "Category": "Brutal Star",
+    "EggGroups": [
+      "Water1"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Poison",
+        "Water"
+      ],
+      "Stats": {
+        "HP": 50,
+        "Atk": 63,
+        "Def": 152,
+        "SpAtk": 53,
+        "SpDef": 142,
+        "Speed": 35
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 749,
+    "Name": "Mudbray",
+    "Generation": 7,
+    "Category": "Donkey",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ground"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 100,
+        "Def": 70,
+        "SpAtk": 45,
+        "SpDef": 55,
+        "Speed": 45
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 750,
+    "Name": "Mudsdale",
+    "Generation": 7,
+    "Category": "Draft Horse",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ground"
+      ],
+      "Stats": {
+        "HP": 100,
+        "Atk": 125,
+        "Def": 100,
+        "SpAtk": 55,
+        "SpDef": 85,
+        "Speed": 35
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 751,
+    "Name": "Dewpider",
+    "Generation": 7,
+    "Category": "Water Bubble",
+    "EggGroups": [
+      "Water1",
+      "Bug"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water",
+        "Bug"
+      ],
+      "Stats": {
+        "HP": 38,
+        "Atk": 40,
+        "Def": 52,
+        "SpAtk": 40,
+        "SpDef": 72,
+        "Speed": 27
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 752,
+    "Name": "Araquanid",
+    "Generation": 7,
+    "Category": "Water Bubble",
+    "EggGroups": [
+      "Water1",
+      "Bug"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water",
+        "Bug"
+      ],
+      "Stats": {
+        "HP": 68,
+        "Atk": 70,
+        "Def": 92,
+        "SpAtk": 50,
+        "SpDef": 132,
+        "Speed": 42
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 753,
+    "Name": "Fomantis",
+    "Generation": 7,
+    "Category": "Sickle Grass",
+    "EggGroups": [
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass"
+      ],
+      "Stats": {
+        "HP": 40,
+        "Atk": 55,
+        "Def": 35,
+        "SpAtk": 50,
+        "SpDef": 35,
+        "Speed": 35
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 754,
+    "Name": "Lurantis",
+    "Generation": 7,
+    "Category": "Bloom Sickle",
+    "EggGroups": [
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 105,
+        "Def": 90,
+        "SpAtk": 80,
+        "SpDef": 90,
+        "Speed": 45
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 755,
+    "Name": "Morelull",
+    "Generation": 7,
+    "Category": "Illuminating",
+    "EggGroups": [
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 40,
+        "Atk": 35,
+        "Def": 55,
+        "SpAtk": 65,
+        "SpDef": 75,
+        "Speed": 15
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 756,
+    "Name": "Shiinotic",
+    "Generation": 7,
+    "Category": "Illuminating",
+    "EggGroups": [
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 60,
+        "Atk": 45,
+        "Def": 80,
+        "SpAtk": 90,
+        "SpDef": 100,
+        "Speed": 30
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 757,
+    "Name": "Salandit",
+    "Generation": 7,
+    "Category": "Toxic Lizard",
+    "EggGroups": [
+      "Monster",
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Poison",
+        "Fire"
+      ],
+      "Stats": {
+        "HP": 48,
+        "Atk": 44,
+        "Def": 40,
+        "SpAtk": 71,
+        "SpDef": 40,
+        "Speed": 77
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 758,
+    "Name": "Salazzle",
+    "Generation": 7,
+    "Category": "Toxic Lizard",
+    "EggGroups": [
+      "Monster",
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Poison",
+        "Fire"
+      ],
+      "Stats": {
+        "HP": 68,
+        "Atk": 64,
+        "Def": 60,
+        "SpAtk": 111,
+        "SpDef": 60,
+        "Speed": 117
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 759,
+    "Name": "Stufful",
+    "Generation": 7,
+    "Category": "Flailing",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal",
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 75,
+        "Def": 50,
+        "SpAtk": 45,
+        "SpDef": 50,
+        "Speed": 50
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 760,
+    "Name": "Bewear",
+    "Generation": 7,
+    "Category": "Strong Arm",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal",
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 120,
+        "Atk": 125,
+        "Def": 80,
+        "SpAtk": 55,
+        "SpDef": 60,
+        "Speed": 60
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 761,
+    "Name": "Bounsweet",
+    "Generation": 7,
+    "Category": "Fruit",
+    "EggGroups": [
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass"
+      ],
+      "Stats": {
+        "HP": 42,
+        "Atk": 30,
+        "Def": 38,
+        "SpAtk": 30,
+        "SpDef": 38,
+        "Speed": 32
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 762,
+    "Name": "Steenee",
+    "Generation": 7,
+    "Category": "Fruit",
+    "EggGroups": [
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass"
+      ],
+      "Stats": {
+        "HP": 52,
+        "Atk": 40,
+        "Def": 48,
+        "SpAtk": 40,
+        "SpDef": 48,
+        "Speed": 62
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 763,
+    "Name": "Tsareena",
+    "Generation": 7,
+    "Category": "Fruit",
+    "EggGroups": [
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass"
+      ],
+      "Stats": {
+        "HP": 72,
+        "Atk": 120,
+        "Def": 98,
+        "SpAtk": 50,
+        "SpDef": 98,
+        "Speed": 72
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 764,
+    "Name": "Comfey",
+    "Generation": 7,
+    "Category": "Posy Picker",
+    "EggGroups": [
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 51,
+        "Atk": 52,
+        "Def": 90,
+        "SpAtk": 82,
+        "SpDef": 110,
+        "Speed": 100
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 765,
+    "Name": "Oranguru",
+    "Generation": 7,
+    "Category": "Sage",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal",
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 90,
+        "Atk": 60,
+        "Def": 80,
+        "SpAtk": 90,
+        "SpDef": 110,
+        "Speed": 60
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 766,
+    "Name": "Passimian",
+    "Generation": 7,
+    "Category": "Teamwork",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 100,
+        "Atk": 120,
+        "Def": 90,
+        "SpAtk": 40,
+        "SpDef": 60,
+        "Speed": 80
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 767,
+    "Name": "Wimpod",
+    "Generation": 7,
+    "Category": "Turn Tail",
+    "EggGroups": [
+      "Bug",
+      "Water3"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Bug",
+        "Water"
+      ],
+      "Stats": {
+        "HP": 25,
+        "Atk": 35,
+        "Def": 40,
+        "SpAtk": 20,
+        "SpDef": 30,
+        "Speed": 80
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 768,
+    "Name": "Golisopod",
+    "Generation": 7,
+    "Category": "Hard Scale",
+    "EggGroups": [
+      "Bug",
+      "Water3"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Bug",
+        "Water"
+      ],
+      "Stats": {
+        "HP": 75,
+        "Atk": 125,
+        "Def": 140,
+        "SpAtk": 60,
+        "SpDef": 90,
+        "Speed": 40
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 769,
+    "Name": "Sandygast",
+    "Generation": 7,
+    "Category": "Sand Heap",
+    "EggGroups": [
+      "Amorphous"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ghost",
+        "Ground"
+      ],
+      "Stats": {
+        "HP": 55,
+        "Atk": 55,
+        "Def": 80,
+        "SpAtk": 70,
+        "SpDef": 45,
+        "Speed": 15
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 770,
+    "Name": "Palossand",
+    "Generation": 7,
+    "Category": "Sand Castle",
+    "EggGroups": [
+      "Amorphous"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ghost",
+        "Ground"
+      ],
+      "Stats": {
+        "HP": 85,
+        "Atk": 75,
+        "Def": 110,
+        "SpAtk": 100,
+        "SpDef": 75,
+        "Speed": 35
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 771,
+    "Name": "Pyukumuku",
+    "Generation": 7,
+    "Category": "Sea Cucumber",
+    "EggGroups": [
+      "Water1"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water"
+      ],
+      "Stats": {
+        "HP": 55,
+        "Atk": 60,
+        "Def": 130,
+        "SpAtk": 30,
+        "SpDef": 130,
+        "Speed": 5
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 772,
+    "Name": "Type: Null",
+    "Generation": 7,
+    "Category": "Synthetic",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 95,
+        "Atk": 95,
+        "Def": 95,
+        "SpAtk": 95,
+        "SpDef": 95,
+        "Speed": 59
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 773,
+    "Name": "Silvally",
+    "Generation": 7,
+    "Category": "Synthetic",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 95,
+        "Atk": 95,
+        "Def": 95,
+        "SpAtk": 95,
+        "SpDef": 95,
+        "Speed": 95
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 774,
+    "Name": "Minior",
+    "Generation": 7,
+    "Category": "Meteor",
+    "EggGroups": [
+      "Mineral"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Rock",
+        "Flying"
+      ],
+      "Stats": {
+        "HP": 60,
+        "Atk": 60,
+        "Def": 100,
+        "SpAtk": 60,
+        "SpDef": 100,
+        "Speed": 60
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 775,
+    "Name": "Komala",
+    "Generation": 7,
+    "Category": "Drowsing",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 65,
+        "Atk": 115,
+        "Def": 65,
+        "SpAtk": 75,
+        "SpDef": 95,
+        "Speed": 65
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 776,
+    "Name": "Turtonator",
+    "Generation": 7,
+    "Category": "Blast Turtle",
+    "EggGroups": [
+      "Monster",
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fire",
+        "Dragon"
+      ],
+      "Stats": {
+        "HP": 60,
+        "Atk": 78,
+        "Def": 135,
+        "SpAtk": 91,
+        "SpDef": 85,
+        "Speed": 36
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 777,
+    "Name": "Togedemaru",
+    "Generation": 7,
+    "Category": "Roly-Poly",
+    "EggGroups": [
+      "Field",
+      "Fairy"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric",
+        "Steel"
+      ],
+      "Stats": {
+        "HP": 65,
+        "Atk": 98,
+        "Def": 63,
+        "SpAtk": 40,
+        "SpDef": 73,
+        "Speed": 96
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 778,
+    "Name": "Mimikyu",
+    "Generation": 7,
+    "Category": "Disguise",
+    "EggGroups": [
+      "Amorphous"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ghost",
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 55,
+        "Atk": 90,
+        "Def": 80,
+        "SpAtk": 50,
+        "SpDef": 105,
+        "Speed": 96
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 779,
+    "Name": "Bruxish",
+    "Generation": 7,
+    "Category": "Gnash Teeth",
+    "EggGroups": [
+      "Water2"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water",
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 68,
+        "Atk": 105,
+        "Def": 70,
+        "SpAtk": 70,
+        "SpDef": 70,
+        "Speed": 92
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 780,
+    "Name": "Drampa",
+    "Generation": 7,
+    "Category": "Placid",
+    "EggGroups": [
+      "Monster",
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal",
+        "Dragon"
+      ],
+      "Stats": {
+        "HP": 78,
+        "Atk": 60,
+        "Def": 85,
+        "SpAtk": 135,
+        "SpDef": 91,
+        "Speed": 36
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 781,
+    "Name": "Dhelmise",
+    "Generation": 7,
+    "Category": "Sea Creeper",
+    "EggGroups": [
+      "Mineral"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ghost",
+        "Grass"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 131,
+        "Def": 100,
+        "SpAtk": 86,
+        "SpDef": 90,
+        "Speed": 40
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 782,
+    "Name": "Jangmo-o",
+    "Generation": 7,
+    "Category": "Scaly",
+    "EggGroups": [
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dragon"
+      ],
+      "Stats": {
+        "HP": 45,
+        "Atk": 55,
+        "Def": 65,
+        "SpAtk": 45,
+        "SpDef": 45,
+        "Speed": 45
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 783,
+    "Name": "Hakamo-o",
+    "Generation": 7,
+    "Category": "Scaly",
+    "EggGroups": [
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dragon",
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 55,
+        "Atk": 75,
+        "Def": 90,
+        "SpAtk": 65,
+        "SpDef": 70,
+        "Speed": 65
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 784,
+    "Name": "Kommo-o",
+    "Generation": 7,
+    "Category": "Scaly",
+    "EggGroups": [
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dragon",
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 75,
+        "Atk": 110,
+        "Def": 125,
+        "SpAtk": 100,
+        "SpDef": 105,
+        "Speed": 85
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 785,
+    "Name": "Tapu Koko",
+    "Generation": 7,
+    "Category": "Land Spirit",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric",
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 115,
+        "Def": 85,
+        "SpAtk": 95,
+        "SpDef": 75,
+        "Speed": 130
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 786,
+    "Name": "Tapu Lele",
+    "Generation": 7,
+    "Category": "Land Spirit",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Psychic",
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 85,
+        "Def": 75,
+        "SpAtk": 130,
+        "SpDef": 115,
+        "Speed": 95
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 787,
+    "Name": "Tapu Bulu",
+    "Generation": 7,
+    "Category": "Land Spirit",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 130,
+        "Def": 115,
+        "SpAtk": 85,
+        "SpDef": 95,
+        "Speed": 75
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 788,
+    "Name": "Tapu Fini",
+    "Generation": 7,
+    "Category": "Land Spirit",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water",
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 75,
+        "Def": 115,
+        "SpAtk": 95,
+        "SpDef": 130,
+        "Speed": 85
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 789,
+    "Name": "Cosmog",
+    "Generation": 7,
+    "Category": "Nebula",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 43,
+        "Atk": 29,
+        "Def": 31,
+        "SpAtk": 29,
+        "SpDef": 31,
+        "Speed": 37
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 790,
+    "Name": "Cosmoem",
+    "Generation": 7,
+    "Category": "Protostar",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 43,
+        "Atk": 29,
+        "Def": 131,
+        "SpAtk": 29,
+        "SpDef": 131,
+        "Speed": 37
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 791,
+    "Name": "Solgaleo",
+    "Generation": 7,
+    "Category": "Sunne",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Psychic",
+        "Steel"
+      ],
+      "Stats": {
+        "HP": 137,
+        "Atk": 137,
+        "Def": 107,
+        "SpAtk": 113,
+        "SpDef": 89,
+        "Speed": 97
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 792,
+    "Name": "Lunala",
+    "Generation": 7,
+    "Category": "Moone",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Psychic",
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 137,
+        "Atk": 113,
+        "Def": 89,
+        "SpAtk": 137,
+        "SpDef": 107,
+        "Speed": 97
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 793,
+    "Name": "Nihilego",
+    "Generation": 7,
+    "Category": "Parasite",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Rock",
+        "Poison"
+      ],
+      "Stats": {
+        "HP": 109,
+        "Atk": 53,
+        "Def": 47,
+        "SpAtk": 127,
+        "SpDef": 131,
+        "Speed": 103
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 794,
+    "Name": "Buzzwole",
+    "Generation": 7,
+    "Category": "Swollen",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Bug",
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 107,
+        "Atk": 139,
+        "Def": 139,
+        "SpAtk": 53,
+        "SpDef": 53,
+        "Speed": 79
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 795,
+    "Name": "Pheromosa",
+    "Generation": 7,
+    "Category": "Lissome",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Bug",
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 71,
+        "Atk": 137,
+        "Def": 37,
+        "SpAtk": 137,
+        "SpDef": 37,
+        "Speed": 151
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 796,
+    "Name": "Xurkitree",
+    "Generation": 7,
+    "Category": "Glowing",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric"
+      ],
+      "Stats": {
+        "HP": 83,
+        "Atk": 89,
+        "Def": 71,
+        "SpAtk": 173,
+        "SpDef": 71,
+        "Speed": 83
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 797,
+    "Name": "Celesteela",
+    "Generation": 7,
+    "Category": "Launch",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Steel",
+        "Flying"
+      ],
+      "Stats": {
+        "HP": 97,
+        "Atk": 101,
+        "Def": 103,
+        "SpAtk": 107,
+        "SpDef": 101,
+        "Speed": 61
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 798,
+    "Name": "Kartana",
+    "Generation": 7,
+    "Category": "Drawn Sword",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Steel"
+      ],
+      "Stats": {
+        "HP": 59,
+        "Atk": 181,
+        "Def": 131,
+        "SpAtk": 59,
+        "SpDef": 31,
+        "Speed": 109
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 799,
+    "Name": "Guzzlord",
+    "Generation": 7,
+    "Category": "Junkivore",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dark",
+        "Dragon"
+      ],
+      "Stats": {
+        "HP": 223,
+        "Atk": 101,
+        "Def": 53,
+        "SpAtk": 97,
+        "SpDef": 53,
+        "Speed": 43
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 800,
+    "Name": "Necrozma",
+    "Generation": 7,
+    "Category": "Prism",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 97,
+        "Atk": 107,
+        "Def": 101,
+        "SpAtk": 127,
+        "SpDef": 89,
+        "Speed": 79
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 801,
+    "Name": "Magearna",
+    "Generation": 7,
+    "Category": "Artificial",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Steel",
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 80,
+        "Atk": 95,
+        "Def": 115,
+        "SpAtk": 130,
+        "SpDef": 115,
+        "Speed": 65
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 802,
+    "Name": "Marshadow",
+    "Generation": 7,
+    "Category": "Gloomdweller",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fighting",
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 90,
+        "Atk": 125,
+        "Def": 80,
+        "SpAtk": 90,
+        "SpDef": 90,
+        "Speed": 125
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 803,
+    "Name": "Poipole",
+    "Generation": 7,
+    "Category": "Poison Pin",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Poison"
+      ],
+      "Stats": {
+        "HP": 67,
+        "Atk": 73,
+        "Def": 67,
+        "SpAtk": 73,
+        "SpDef": 67,
+        "Speed": 73
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 804,
+    "Name": "Naganadel",
+    "Generation": 7,
+    "Category": "Poison Pin",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Poison",
+        "Dragon"
+      ],
+      "Stats": {
+        "HP": 73,
+        "Atk": 73,
+        "Def": 73,
+        "SpAtk": 127,
+        "SpDef": 73,
+        "Speed": 121
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 805,
+    "Name": "Stakataka",
+    "Generation": 7,
+    "Category": "Rampart",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Rock",
+        "Steel"
+      ],
+      "Stats": {
+        "HP": 61,
+        "Atk": 131,
+        "Def": 211,
+        "SpAtk": 53,
+        "SpDef": 101,
+        "Speed": 13
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 806,
+    "Name": "Blacephalon",
+    "Generation": 7,
+    "Category": "Fireworks",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fire",
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 53,
+        "Atk": 127,
+        "Def": 53,
+        "SpAtk": 151,
+        "SpDef": 79,
+        "Speed": 107
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 807,
+    "Name": "Zeraora",
+    "Generation": 7,
+    "Category": "Thunderclap",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric"
+      ],
+      "Stats": {
+        "HP": 88,
+        "Atk": 112,
+        "Def": 75,
+        "SpAtk": 102,
+        "SpDef": 80,
+        "Speed": 143
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 808,
+    "Name": "Meltan",
+    "Generation": 7,
+    "Category": "Hex Nut",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Steel"
+      ],
+      "Stats": {
+        "HP": 46,
+        "Atk": 65,
+        "Def": 65,
+        "SpAtk": 55,
+        "SpDef": 35,
+        "Speed": 34
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 809,
+    "Name": "Melmetal",
+    "Generation": 7,
+    "Category": "Hex Nut",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Steel"
+      ],
+      "Stats": {
+        "HP": 135,
+        "Atk": 143,
+        "Def": 143,
+        "SpAtk": 80,
+        "SpDef": 65,
+        "Speed": 34
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 810,
+    "Name": "Grookey",
+    "Generation": 8,
+    "Category": "Chimp",
+    "EggGroups": [
+      "Field",
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass"
+      ],
+      "Stats": {
+        "HP": 50,
+        "Atk": 65,
+        "Def": 50,
+        "SpAtk": 40,
+        "SpDef": 40,
+        "Speed": 65
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 811,
+    "Name": "Thwackey",
+    "Generation": 8,
+    "Category": "Beat",
+    "EggGroups": [
+      "Field",
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 85,
+        "Def": 70,
+        "SpAtk": 55,
+        "SpDef": 60,
+        "Speed": 80
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 812,
+    "Name": "Rillaboom",
+    "Generation": 8,
+    "Category": "Drummer",
+    "EggGroups": [
+      "Field",
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass"
+      ],
+      "Stats": {
+        "HP": 100,
+        "Atk": 125,
+        "Def": 90,
+        "SpAtk": 60,
+        "SpDef": 70,
+        "Speed": 85
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 813,
+    "Name": "Scorbunny",
+    "Generation": 8,
+    "Category": "Rabbit",
+    "EggGroups": [
+      "Field",
+      "HumanLike"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fire"
+      ],
+      "Stats": {
+        "HP": 50,
+        "Atk": 71,
+        "Def": 40,
+        "SpAtk": 40,
+        "SpDef": 40,
+        "Speed": 69
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 814,
+    "Name": "Raboot",
+    "Generation": 8,
+    "Category": "Rabbit",
+    "EggGroups": [
+      "Field",
+      "HumanLike"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fire"
+      ],
+      "Stats": {
+        "HP": 65,
+        "Atk": 86,
+        "Def": 60,
+        "SpAtk": 55,
+        "SpDef": 60,
+        "Speed": 94
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 815,
+    "Name": "Cinderace",
+    "Generation": 8,
+    "Category": "Striker",
+    "EggGroups": [
+      "Field",
+      "HumanLike"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fire"
+      ],
+      "Stats": {
+        "HP": 80,
+        "Atk": 116,
+        "Def": 75,
+        "SpAtk": 65,
+        "SpDef": 75,
+        "Speed": 119
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 816,
+    "Name": "Sobble",
+    "Generation": 8,
+    "Category": "Water Lizard",
+    "EggGroups": [
+      "Water1",
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water"
+      ],
+      "Stats": {
+        "HP": 50,
+        "Atk": 40,
+        "Def": 40,
+        "SpAtk": 70,
+        "SpDef": 40,
+        "Speed": 70
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 817,
+    "Name": "Drizzile",
+    "Generation": 8,
+    "Category": "Water Lizard",
+    "EggGroups": [
+      "Water1",
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water"
+      ],
+      "Stats": {
+        "HP": 65,
+        "Atk": 60,
+        "Def": 55,
+        "SpAtk": 95,
+        "SpDef": 55,
+        "Speed": 90
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 818,
+    "Name": "Inteleon",
+    "Generation": 8,
+    "Category": "Secret Agent",
+    "EggGroups": [
+      "Water1",
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 85,
+        "Def": 65,
+        "SpAtk": 125,
+        "SpDef": 65,
+        "Speed": 120
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 819,
+    "Name": "Skwovet",
+    "Generation": 8,
+    "Category": "Cheeky",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 55,
+        "Def": 55,
+        "SpAtk": 35,
+        "SpDef": 35,
+        "Speed": 25
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 820,
+    "Name": "Greedent",
+    "Generation": 8,
+    "Category": "Greedy",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 120,
+        "Atk": 95,
+        "Def": 95,
+        "SpAtk": 55,
+        "SpDef": 75,
+        "Speed": 20
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 821,
+    "Name": "Rookidee",
+    "Generation": 8,
+    "Category": "Tiny Bird",
+    "EggGroups": [
+      "Flying"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Flying"
+      ],
+      "Stats": {
+        "HP": 38,
+        "Atk": 47,
+        "Def": 35,
+        "SpAtk": 33,
+        "SpDef": 35,
+        "Speed": 57
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 822,
+    "Name": "Corvisquire",
+    "Generation": 8,
+    "Category": "Raven",
+    "EggGroups": [
+      "Flying"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Flying"
+      ],
+      "Stats": {
+        "HP": 68,
+        "Atk": 67,
+        "Def": 55,
+        "SpAtk": 43,
+        "SpDef": 55,
+        "Speed": 77
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 823,
+    "Name": "Corviknight",
+    "Generation": 8,
+    "Category": "Raven",
+    "EggGroups": [
+      "Flying"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Flying",
+        "Steel"
+      ],
+      "Stats": {
+        "HP": 98,
+        "Atk": 87,
+        "Def": 105,
+        "SpAtk": 53,
+        "SpDef": 85,
+        "Speed": 67
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 824,
+    "Name": "Blipbug",
+    "Generation": 8,
+    "Category": "Larva",
+    "EggGroups": [
+      "Bug"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Bug"
+      ],
+      "Stats": {
+        "HP": 25,
+        "Atk": 20,
+        "Def": 20,
+        "SpAtk": 25,
+        "SpDef": 45,
+        "Speed": 45
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 825,
+    "Name": "Dottler",
+    "Generation": 8,
+    "Category": "Radome",
+    "EggGroups": [
+      "Bug"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Bug",
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 50,
+        "Atk": 35,
+        "Def": 80,
+        "SpAtk": 50,
+        "SpDef": 90,
+        "Speed": 30
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 826,
+    "Name": "Orbeetle",
+    "Generation": 8,
+    "Category": "Seven Spot",
+    "EggGroups": [
+      "Bug"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Bug",
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 60,
+        "Atk": 45,
+        "Def": 110,
+        "SpAtk": 80,
+        "SpDef": 120,
+        "Speed": 90
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 827,
+    "Name": "Nickit",
+    "Generation": 8,
+    "Category": "Fox",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dark"
+      ],
+      "Stats": {
+        "HP": 40,
+        "Atk": 28,
+        "Def": 28,
+        "SpAtk": 47,
+        "SpDef": 52,
+        "Speed": 50
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 828,
+    "Name": "Thievul",
+    "Generation": 8,
+    "Category": "Fox",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dark"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 58,
+        "Def": 58,
+        "SpAtk": 87,
+        "SpDef": 92,
+        "Speed": 90
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 829,
+    "Name": "Gossifleur",
+    "Generation": 8,
+    "Category": "Flowering",
+    "EggGroups": [
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass"
+      ],
+      "Stats": {
+        "HP": 40,
+        "Atk": 40,
+        "Def": 60,
+        "SpAtk": 40,
+        "SpDef": 60,
+        "Speed": 10
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 830,
+    "Name": "Eldegoss",
+    "Generation": 8,
+    "Category": "Cotton Bloom",
+    "EggGroups": [
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass"
+      ],
+      "Stats": {
+        "HP": 60,
+        "Atk": 50,
+        "Def": 90,
+        "SpAtk": 80,
+        "SpDef": 120,
+        "Speed": 60
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 831,
+    "Name": "Wooloo",
+    "Generation": 8,
+    "Category": "Sheep",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 42,
+        "Atk": 40,
+        "Def": 55,
+        "SpAtk": 40,
+        "SpDef": 45,
+        "Speed": 48
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 832,
+    "Name": "Dubwool",
+    "Generation": 8,
+    "Category": "Sheep",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 72,
+        "Atk": 80,
+        "Def": 100,
+        "SpAtk": 60,
+        "SpDef": 90,
+        "Speed": 88
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 833,
+    "Name": "Chewtle",
+    "Generation": 8,
+    "Category": "Snapping",
+    "EggGroups": [
+      "Monster",
+      "Water1"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water"
+      ],
+      "Stats": {
+        "HP": 50,
+        "Atk": 64,
+        "Def": 50,
+        "SpAtk": 38,
+        "SpDef": 38,
+        "Speed": 44
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 834,
+    "Name": "Drednaw",
+    "Generation": 8,
+    "Category": "Bite",
+    "EggGroups": [
+      "Monster",
+      "Water1"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water",
+        "Rock"
+      ],
+      "Stats": {
+        "HP": 90,
+        "Atk": 115,
+        "Def": 90,
+        "SpAtk": 48,
+        "SpDef": 68,
+        "Speed": 74
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 835,
+    "Name": "Yamper",
+    "Generation": 8,
+    "Category": "Puppy",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric"
+      ],
+      "Stats": {
+        "HP": 59,
+        "Atk": 45,
+        "Def": 50,
+        "SpAtk": 40,
+        "SpDef": 50,
+        "Speed": 26
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 836,
+    "Name": "Boltund",
+    "Generation": 8,
+    "Category": "Dog",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric"
+      ],
+      "Stats": {
+        "HP": 69,
+        "Atk": 90,
+        "Def": 60,
+        "SpAtk": 90,
+        "SpDef": 60,
+        "Speed": 121
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 837,
+    "Name": "Rolycoly",
+    "Generation": 8,
+    "Category": "Coal",
+    "EggGroups": [
+      "Mineral"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Rock"
+      ],
+      "Stats": {
+        "HP": 30,
+        "Atk": 40,
+        "Def": 50,
+        "SpAtk": 40,
+        "SpDef": 50,
+        "Speed": 30
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 838,
+    "Name": "Carkol",
+    "Generation": 8,
+    "Category": "Coal",
+    "EggGroups": [
+      "Mineral"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Rock",
+        "Fire"
+      ],
+      "Stats": {
+        "HP": 80,
+        "Atk": 60,
+        "Def": 90,
+        "SpAtk": 60,
+        "SpDef": 70,
+        "Speed": 50
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 839,
+    "Name": "Coalossal",
+    "Generation": 8,
+    "Category": "Coal",
+    "EggGroups": [
+      "Mineral"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Rock",
+        "Fire"
+      ],
+      "Stats": {
+        "HP": 110,
+        "Atk": 80,
+        "Def": 120,
+        "SpAtk": 80,
+        "SpDef": 90,
+        "Speed": 30
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 840,
+    "Name": "Applin",
+    "Generation": 8,
+    "Category": "Apple Core",
+    "EggGroups": [
+      "Grass",
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Dragon"
+      ],
+      "Stats": {
+        "HP": 40,
+        "Atk": 40,
+        "Def": 80,
+        "SpAtk": 40,
+        "SpDef": 40,
+        "Speed": 20
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 841,
+    "Name": "Flapple",
+    "Generation": 8,
+    "Category": "Apple Wing",
+    "EggGroups": [
+      "Grass",
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Dragon"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 110,
+        "Def": 80,
+        "SpAtk": 95,
+        "SpDef": 60,
+        "Speed": 70
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 842,
+    "Name": "Appletun",
+    "Generation": 8,
+    "Category": "Apple Nectar",
+    "EggGroups": [
+      "Grass",
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Dragon"
+      ],
+      "Stats": {
+        "HP": 110,
+        "Atk": 85,
+        "Def": 80,
+        "SpAtk": 100,
+        "SpDef": 80,
+        "Speed": 30
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 843,
+    "Name": "Silicobra",
+    "Generation": 8,
+    "Category": "Sand Snake",
+    "EggGroups": [
+      "Field",
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ground"
+      ],
+      "Stats": {
+        "HP": 52,
+        "Atk": 57,
+        "Def": 75,
+        "SpAtk": 35,
+        "SpDef": 50,
+        "Speed": 46
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 844,
+    "Name": "Sandaconda",
+    "Generation": 8,
+    "Category": "Sand Snake",
+    "EggGroups": [
+      "Field",
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ground"
+      ],
+      "Stats": {
+        "HP": 72,
+        "Atk": 107,
+        "Def": 125,
+        "SpAtk": 65,
+        "SpDef": 70,
+        "Speed": 71
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 845,
+    "Name": "Cramorant",
+    "Generation": 8,
+    "Category": "Gulp",
+    "EggGroups": [
+      "Water1",
+      "Flying"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Flying",
+        "Water"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 85,
+        "Def": 55,
+        "SpAtk": 85,
+        "SpDef": 95,
+        "Speed": 85
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 846,
+    "Name": "Arrokuda",
+    "Generation": 8,
+    "Category": "Rush",
+    "EggGroups": [
+      "Water2"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water"
+      ],
+      "Stats": {
+        "HP": 41,
+        "Atk": 63,
+        "Def": 40,
+        "SpAtk": 40,
+        "SpDef": 30,
+        "Speed": 66
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 847,
+    "Name": "Barraskewda",
+    "Generation": 8,
+    "Category": "Skewer",
+    "EggGroups": [
+      "Water2"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water"
+      ],
+      "Stats": {
+        "HP": 61,
+        "Atk": 123,
+        "Def": 60,
+        "SpAtk": 60,
+        "SpDef": 50,
+        "Speed": 136
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 848,
+    "Name": "Toxel",
+    "Generation": 8,
+    "Category": "Baby",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric",
+        "Poison"
+      ],
+      "Stats": {
+        "HP": 40,
+        "Atk": 38,
+        "Def": 35,
+        "SpAtk": 54,
+        "SpDef": 35,
+        "Speed": 40
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 849,
+    "Name": "Toxtricity",
+    "Generation": 8,
+    "Category": "Punk",
+    "EggGroups": [
+      "HumanLike"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric",
+        "Poison"
+      ],
+      "Stats": {
+        "HP": 75,
+        "Atk": 98,
+        "Def": 70,
+        "SpAtk": 114,
+        "SpDef": 70,
+        "Speed": 75
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 850,
+    "Name": "Sizzlipede",
+    "Generation": 8,
+    "Category": "Radiator",
+    "EggGroups": [
+      "Bug"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fire",
+        "Bug"
+      ],
+      "Stats": {
+        "HP": 50,
+        "Atk": 65,
+        "Def": 45,
+        "SpAtk": 50,
+        "SpDef": 50,
+        "Speed": 45
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 851,
+    "Name": "Centiskorch",
+    "Generation": 8,
+    "Category": "Radiator",
+    "EggGroups": [
+      "Bug"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fire",
+        "Bug"
+      ],
+      "Stats": {
+        "HP": 100,
+        "Atk": 115,
+        "Def": 65,
+        "SpAtk": 90,
+        "SpDef": 90,
+        "Speed": 65
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 852,
+    "Name": "Clobbopus",
+    "Generation": 8,
+    "Category": "Tantrum",
+    "EggGroups": [
+      "Water1",
+      "HumanLike"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 50,
+        "Atk": 68,
+        "Def": 60,
+        "SpAtk": 50,
+        "SpDef": 50,
+        "Speed": 32
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 853,
+    "Name": "Grapploct",
+    "Generation": 8,
+    "Category": "Jujitsu",
+    "EggGroups": [
+      "Water1",
+      "HumanLike"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 80,
+        "Atk": 118,
+        "Def": 90,
+        "SpAtk": 70,
+        "SpDef": 80,
+        "Speed": 42
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 854,
+    "Name": "Sinistea",
+    "Generation": 8,
+    "Category": "Black Tea",
+    "EggGroups": [
+      "Mineral",
+      "Amorphous"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 40,
+        "Atk": 45,
+        "Def": 45,
+        "SpAtk": 74,
+        "SpDef": 54,
+        "Speed": 50
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 855,
+    "Name": "Polteageist",
+    "Generation": 8,
+    "Category": "Black Tea",
+    "EggGroups": [
+      "Mineral",
+      "Amorphous"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 60,
+        "Atk": 65,
+        "Def": 65,
+        "SpAtk": 134,
+        "SpDef": 114,
+        "Speed": 70
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 856,
+    "Name": "Hatenna",
+    "Generation": 8,
+    "Category": "Calm",
+    "EggGroups": [
+      "Fairy"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 42,
+        "Atk": 30,
+        "Def": 45,
+        "SpAtk": 56,
+        "SpDef": 53,
+        "Speed": 39
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 857,
+    "Name": "Hattrem",
+    "Generation": 8,
+    "Category": "Serene",
+    "EggGroups": [
+      "Fairy"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 57,
+        "Atk": 40,
+        "Def": 65,
+        "SpAtk": 86,
+        "SpDef": 73,
+        "Speed": 49
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 858,
+    "Name": "Hatterene",
+    "Generation": 8,
+    "Category": "Silent",
+    "EggGroups": [
+      "Fairy"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Psychic",
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 57,
+        "Atk": 90,
+        "Def": 95,
+        "SpAtk": 136,
+        "SpDef": 103,
+        "Speed": 29
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 859,
+    "Name": "Impidimp",
+    "Generation": 8,
+    "Category": "Wily",
+    "EggGroups": [
+      "Fairy",
+      "HumanLike"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dark",
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 45,
+        "Atk": 45,
+        "Def": 30,
+        "SpAtk": 55,
+        "SpDef": 40,
+        "Speed": 50
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 860,
+    "Name": "Morgrem",
+    "Generation": 8,
+    "Category": "Devious",
+    "EggGroups": [
+      "Fairy",
+      "HumanLike"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dark",
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 65,
+        "Atk": 60,
+        "Def": 45,
+        "SpAtk": 75,
+        "SpDef": 55,
+        "Speed": 70
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 861,
+    "Name": "Grimmsnarl",
+    "Generation": 8,
+    "Category": "Bulk Up",
+    "EggGroups": [
+      "Fairy",
+      "HumanLike"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dark",
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 95,
+        "Atk": 120,
+        "Def": 65,
+        "SpAtk": 95,
+        "SpDef": 75,
+        "Speed": 60
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 862,
+    "Name": "Obstagoon",
+    "Generation": 8,
+    "Category": "Blocking",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dark",
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 93,
+        "Atk": 90,
+        "Def": 101,
+        "SpAtk": 60,
+        "SpDef": 81,
+        "Speed": 95
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 863,
+    "Name": "Perrserker",
+    "Generation": 8,
+    "Category": "Viking",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Steel"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 110,
+        "Def": 100,
+        "SpAtk": 50,
+        "SpDef": 60,
+        "Speed": 50
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 864,
+    "Name": "Cursola",
+    "Generation": 8,
+    "Category": "Coral",
+    "EggGroups": [
+      "Water1",
+      "Water3"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 60,
+        "Atk": 95,
+        "Def": 50,
+        "SpAtk": 145,
+        "SpDef": 130,
+        "Speed": 30
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 865,
+    "Name": "Sirfetch’d",
+    "Generation": 8,
+    "Category": "Wild Duck",
+    "EggGroups": [
+      "Flying",
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 62,
+        "Atk": 135,
+        "Def": 95,
+        "SpAtk": 68,
+        "SpDef": 82,
+        "Speed": 65
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 866,
+    "Name": "Mr. Rime",
+    "Generation": 8,
+    "Category": "Comedian",
+    "EggGroups": [
+      "HumanLike"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ice",
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 80,
+        "Atk": 85,
+        "Def": 75,
+        "SpAtk": 110,
+        "SpDef": 100,
+        "Speed": 70
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 867,
+    "Name": "Runerigus",
+    "Generation": 8,
+    "Category": "Grudge",
+    "EggGroups": [
+      "Mineral",
+      "Amorphous"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ground",
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 58,
+        "Atk": 95,
+        "Def": 145,
+        "SpAtk": 50,
+        "SpDef": 105,
+        "Speed": 30
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 868,
+    "Name": "Milcery",
+    "Generation": 8,
+    "Category": "Cream",
+    "EggGroups": [
+      "Fairy",
+      "Amorphous"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 45,
+        "Atk": 40,
+        "Def": 40,
+        "SpAtk": 50,
+        "SpDef": 61,
+        "Speed": 34
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 869,
+    "Name": "Alcremie",
+    "Generation": 8,
+    "Category": "Cream",
+    "EggGroups": [
+      "Fairy",
+      "Amorphous"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 65,
+        "Atk": 60,
+        "Def": 75,
+        "SpAtk": 110,
+        "SpDef": 121,
+        "Speed": 64
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 870,
+    "Name": "Falinks",
+    "Generation": 8,
+    "Category": "Formation",
+    "EggGroups": [
+      "Fairy",
+      "Mineral"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 65,
+        "Atk": 100,
+        "Def": 100,
+        "SpAtk": 70,
+        "SpDef": 60,
+        "Speed": 75
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 871,
+    "Name": "Pincurchin",
+    "Generation": 8,
+    "Category": "Sea Urchin",
+    "EggGroups": [
+      "Water1",
+      "Amorphous"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric"
+      ],
+      "Stats": {
+        "HP": 48,
+        "Atk": 101,
+        "Def": 95,
+        "SpAtk": 91,
+        "SpDef": 85,
+        "Speed": 15
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 872,
+    "Name": "Snom",
+    "Generation": 8,
+    "Category": "Worm",
+    "EggGroups": [
+      "Bug"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ice",
+        "Bug"
+      ],
+      "Stats": {
+        "HP": 30,
+        "Atk": 25,
+        "Def": 35,
+        "SpAtk": 45,
+        "SpDef": 30,
+        "Speed": 20
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 873,
+    "Name": "Frosmoth",
+    "Generation": 8,
+    "Category": "Frost Moth",
+    "EggGroups": [
+      "Bug"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ice",
+        "Bug"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 65,
+        "Def": 60,
+        "SpAtk": 125,
+        "SpDef": 90,
+        "Speed": 65
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 874,
+    "Name": "Stonjourner",
+    "Generation": 8,
+    "Category": "Big Rock",
+    "EggGroups": [
+      "Mineral"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Rock"
+      ],
+      "Stats": {
+        "HP": 100,
+        "Atk": 125,
+        "Def": 135,
+        "SpAtk": 20,
+        "SpDef": 20,
+        "Speed": 70
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 875,
+    "Name": "Eiscue",
+    "Generation": 8,
+    "Category": "Penguin",
+    "EggGroups": [
+      "Water1",
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ice"
+      ],
+      "Stats": {
+        "HP": 75,
+        "Atk": 80,
+        "Def": 110,
+        "SpAtk": 65,
+        "SpDef": 90,
+        "Speed": 50
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 876,
+    "Name": "Indeedee",
+    "Generation": 8,
+    "Category": "Emotion",
+    "EggGroups": [
+      "Fairy"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Psychic",
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 60,
+        "Atk": 65,
+        "Def": 55,
+        "SpAtk": 105,
+        "SpDef": 95,
+        "Speed": 95
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 877,
+    "Name": "Morpeko",
+    "Generation": 8,
+    "Category": "Two-Sided",
+    "EggGroups": [
+      "Field",
+      "Fairy"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric",
+        "Dark"
+      ],
+      "Stats": {
+        "HP": 58,
+        "Atk": 95,
+        "Def": 58,
+        "SpAtk": 70,
+        "SpDef": 58,
+        "Speed": 97
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 878,
+    "Name": "Cufant",
+    "Generation": 8,
+    "Category": "Copperderm",
+    "EggGroups": [
+      "Field",
+      "Mineral"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Steel"
+      ],
+      "Stats": {
+        "HP": 72,
+        "Atk": 80,
+        "Def": 49,
+        "SpAtk": 40,
+        "SpDef": 49,
+        "Speed": 40
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 879,
+    "Name": "Copperajah",
+    "Generation": 8,
+    "Category": "Copperderm",
+    "EggGroups": [
+      "Field",
+      "Mineral"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Steel"
+      ],
+      "Stats": {
+        "HP": 122,
+        "Atk": 130,
+        "Def": 69,
+        "SpAtk": 80,
+        "SpDef": 69,
+        "Speed": 30
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 880,
+    "Name": "Dracozolt",
+    "Generation": 8,
+    "Category": "Fossil",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric",
+        "Dragon"
+      ],
+      "Stats": {
+        "HP": 90,
+        "Atk": 100,
+        "Def": 90,
+        "SpAtk": 80,
+        "SpDef": 70,
+        "Speed": 75
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 881,
+    "Name": "Arctozolt",
+    "Generation": 8,
+    "Category": "Fossil",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric",
+        "Ice"
+      ],
+      "Stats": {
+        "HP": 90,
+        "Atk": 100,
+        "Def": 90,
+        "SpAtk": 90,
+        "SpDef": 80,
+        "Speed": 55
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 882,
+    "Name": "Dracovish",
+    "Generation": 8,
+    "Category": "Fossil",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water",
+        "Dragon"
+      ],
+      "Stats": {
+        "HP": 90,
+        "Atk": 90,
+        "Def": 100,
+        "SpAtk": 70,
+        "SpDef": 80,
+        "Speed": 75
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 883,
+    "Name": "Arctovish",
+    "Generation": 8,
+    "Category": "Fossil",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water",
+        "Ice"
+      ],
+      "Stats": {
+        "HP": 90,
+        "Atk": 90,
+        "Def": 100,
+        "SpAtk": 80,
+        "SpDef": 90,
+        "Speed": 55
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 884,
+    "Name": "Duraludon",
+    "Generation": 8,
+    "Category": "Alloy",
+    "EggGroups": [
+      "Mineral",
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Steel",
+        "Dragon"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 95,
+        "Def": 115,
+        "SpAtk": 120,
+        "SpDef": 50,
+        "Speed": 85
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 885,
+    "Name": "Dreepy",
+    "Generation": 8,
+    "Category": "Lingering",
+    "EggGroups": [
+      "Amorphous",
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dragon",
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 28,
+        "Atk": 60,
+        "Def": 30,
+        "SpAtk": 40,
+        "SpDef": 30,
+        "Speed": 82
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 886,
+    "Name": "Drakloak",
+    "Generation": 8,
+    "Category": "Caretaker",
+    "EggGroups": [
+      "Amorphous",
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dragon",
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 68,
+        "Atk": 80,
+        "Def": 50,
+        "SpAtk": 60,
+        "SpDef": 50,
+        "Speed": 102
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 887,
+    "Name": "Dragapult",
+    "Generation": 8,
+    "Category": "Stealth",
+    "EggGroups": [
+      "Amorphous",
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dragon",
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 88,
+        "Atk": 120,
+        "Def": 75,
+        "SpAtk": 100,
+        "SpDef": 75,
+        "Speed": 142
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 888,
+    "Name": "Zacian",
+    "Generation": 8,
+    "Category": "Warrior",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 92,
+        "Atk": 120,
+        "Def": 115,
+        "SpAtk": 80,
+        "SpDef": 115,
+        "Speed": 138
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 889,
+    "Name": "Zamazenta",
+    "Generation": 8,
+    "Category": "Warrior",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 92,
+        "Atk": 120,
+        "Def": 115,
+        "SpAtk": 80,
+        "SpDef": 115,
+        "Speed": 138
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 890,
+    "Name": "Eternatus",
+    "Generation": 8,
+    "Category": "Gigantic",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Poison",
+        "Dragon"
+      ],
+      "Stats": {
+        "HP": 140,
+        "Atk": 85,
+        "Def": 95,
+        "SpAtk": 145,
+        "SpDef": 95,
+        "Speed": 130
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 891,
+    "Name": "Kubfu",
+    "Generation": 8,
+    "Category": "Wushu",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 60,
+        "Atk": 90,
+        "Def": 60,
+        "SpAtk": 53,
+        "SpDef": 50,
+        "Speed": 72
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 892,
+    "Name": "Urshifu",
+    "Generation": 8,
+    "Category": "Wushu",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fighting",
+        "Dark"
+      ],
+      "Stats": {
+        "HP": 100,
+        "Atk": 130,
+        "Def": 100,
+        "SpAtk": 63,
+        "SpDef": 60,
+        "Speed": 97
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 893,
+    "Name": "Zarude",
+    "Generation": 8,
+    "Category": "Rogue Monkey",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dark",
+        "Grass"
+      ],
+      "Stats": {
+        "HP": 105,
+        "Atk": 120,
+        "Def": 105,
+        "SpAtk": 70,
+        "SpDef": 95,
+        "Speed": 105
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 894,
+    "Name": "Regieleki",
+    "Generation": 8,
+    "Category": "Electron",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric"
+      ],
+      "Stats": {
+        "HP": 80,
+        "Atk": 100,
+        "Def": 50,
+        "SpAtk": 100,
+        "SpDef": 50,
+        "Speed": 200
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 895,
+    "Name": "Regidrago",
+    "Generation": 8,
+    "Category": "Dragon Orb",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dragon"
+      ],
+      "Stats": {
+        "HP": 200,
+        "Atk": 100,
+        "Def": 50,
+        "SpAtk": 100,
+        "SpDef": 50,
+        "Speed": 80
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 896,
+    "Name": "Glastrier",
+    "Generation": 8,
+    "Category": "Wild Horse",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ice"
+      ],
+      "Stats": {
+        "HP": 100,
+        "Atk": 145,
+        "Def": 130,
+        "SpAtk": 65,
+        "SpDef": 110,
+        "Speed": 30
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 897,
+    "Name": "Spectrier",
+    "Generation": 8,
+    "Category": "Swift Horse",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 100,
+        "Atk": 65,
+        "Def": 60,
+        "SpAtk": 145,
+        "SpDef": 80,
+        "Speed": 130
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 898,
+    "Name": "Calyrex",
+    "Generation": 8,
+    "Category": "King",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Psychic",
+        "Grass"
+      ],
+      "Stats": {
+        "HP": 100,
+        "Atk": 80,
+        "Def": 80,
+        "SpAtk": 80,
+        "SpDef": 80,
+        "Speed": 80
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 899,
+    "Name": "Wyrdeer",
+    "Generation": 8,
+    "Category": "Big Horn",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal",
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 103,
+        "Atk": 105,
+        "Def": 72,
+        "SpAtk": 105,
+        "SpDef": 75,
+        "Speed": 65
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 900,
+    "Name": "Kleavor",
+    "Generation": 8,
+    "Category": "Axe",
+    "EggGroups": [
+      "Bug"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Bug",
+        "Rock"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 135,
+        "Def": 95,
+        "SpAtk": 45,
+        "SpDef": 70,
+        "Speed": 85
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 901,
+    "Name": "Ursaluna",
+    "Generation": 8,
+    "Category": "Peat",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ground",
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 130,
+        "Atk": 140,
+        "Def": 105,
+        "SpAtk": 45,
+        "SpDef": 80,
+        "Speed": 50
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 902,
+    "Name": "Basculegion",
+    "Generation": 8,
+    "Category": "Big Fish",
+    "EggGroups": [
+      "Water2"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water",
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 120,
+        "Atk": 112,
+        "Def": 65,
+        "SpAtk": 80,
+        "SpDef": 75,
+        "Speed": 78
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 903,
+    "Name": "Sneasler",
+    "Generation": 8,
+    "Category": "Free Climb",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fighting",
+        "Poison"
+      ],
+      "Stats": {
+        "HP": 80,
+        "Atk": 130,
+        "Def": 60,
+        "SpAtk": 40,
+        "SpDef": 80,
+        "Speed": 120
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 904,
+    "Name": "Overqwil",
+    "Generation": 8,
+    "Category": "Pin Cluster",
+    "EggGroups": [
+      "Water2"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dark",
+        "Poison"
+      ],
+      "Stats": {
+        "HP": 85,
+        "Atk": 115,
+        "Def": 95,
+        "SpAtk": 65,
+        "SpDef": 65,
+        "Speed": 85
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 905,
+    "Name": "Enamorus",
+    "Generation": 8,
+    "Category": "Love-Hate",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fairy",
+        "Flying"
+      ],
+      "Stats": {
+        "HP": 74,
+        "Atk": 115,
+        "Def": 70,
+        "SpAtk": 135,
+        "SpDef": 80,
+        "Speed": 106
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 906,
+    "Name": "Sprigatito",
+    "Generation": 9,
+    "Category": "Grass Cat",
+    "EggGroups": [
+      "Field",
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass"
+      ],
+      "Stats": {
+        "HP": 40,
+        "Atk": 61,
+        "Def": 54,
+        "SpAtk": 45,
+        "SpDef": 45,
+        "Speed": 65
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 907,
+    "Name": "Floragato",
+    "Generation": 9,
+    "Category": "Grass Cat",
+    "EggGroups": [
+      "Field",
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass"
+      ],
+      "Stats": {
+        "HP": 61,
+        "Atk": 80,
+        "Def": 63,
+        "SpAtk": 60,
+        "SpDef": 63,
+        "Speed": 83
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 908,
+    "Name": "Meowscarada",
+    "Generation": 9,
+    "Category": "Magician",
+    "EggGroups": [
+      "Field",
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Dark"
+      ],
+      "Stats": {
+        "HP": 76,
+        "Atk": 110,
+        "Def": 70,
+        "SpAtk": 81,
+        "SpDef": 70,
+        "Speed": 123
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 909,
+    "Name": "Fuecoco",
+    "Generation": 9,
+    "Category": "Fire Croc",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fire"
+      ],
+      "Stats": {
+        "HP": 67,
+        "Atk": 45,
+        "Def": 59,
+        "SpAtk": 63,
+        "SpDef": 40,
+        "Speed": 36
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 910,
+    "Name": "Crocalor",
+    "Generation": 9,
+    "Category": "Fire Croc",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fire"
+      ],
+      "Stats": {
+        "HP": 81,
+        "Atk": 55,
+        "Def": 78,
+        "SpAtk": 90,
+        "SpDef": 58,
+        "Speed": 49
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 911,
+    "Name": "Skeledirge",
+    "Generation": 9,
+    "Category": "Singer",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fire",
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 104,
+        "Atk": 75,
+        "Def": 100,
+        "SpAtk": 110,
+        "SpDef": 75,
+        "Speed": 66
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 912,
+    "Name": "Quaxly",
+    "Generation": 9,
+    "Category": "Duckling",
+    "EggGroups": [
+      "Water1",
+      "Flying"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water"
+      ],
+      "Stats": {
+        "HP": 55,
+        "Atk": 65,
+        "Def": 45,
+        "SpAtk": 50,
+        "SpDef": 45,
+        "Speed": 50
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 913,
+    "Name": "Quaxwell",
+    "Generation": 9,
+    "Category": "Practicing",
+    "EggGroups": [
+      "Water1",
+      "Flying"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 85,
+        "Def": 65,
+        "SpAtk": 65,
+        "SpDef": 60,
+        "Speed": 65
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 914,
+    "Name": "Quaquaval",
+    "Generation": 9,
+    "Category": "Dancer",
+    "EggGroups": [
+      "Water1",
+      "Flying"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water",
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 85,
+        "Atk": 120,
+        "Def": 80,
+        "SpAtk": 85,
+        "SpDef": 75,
+        "Speed": 85
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 915,
+    "Name": "Lechonk",
+    "Generation": 9,
+    "Category": "Hog",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 54,
+        "Atk": 45,
+        "Def": 40,
+        "SpAtk": 35,
+        "SpDef": 45,
+        "Speed": 35
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 916,
+    "Name": "Oinkologne",
+    "Generation": 9,
+    "Category": "Hog",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 110,
+        "Atk": 100,
+        "Def": 75,
+        "SpAtk": 59,
+        "SpDef": 80,
+        "Speed": 65
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 917,
+    "Name": "Tarountula",
+    "Generation": 9,
+    "Category": "String Ball",
+    "EggGroups": [
+      "Bug"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Bug"
+      ],
+      "Stats": {
+        "HP": 35,
+        "Atk": 41,
+        "Def": 45,
+        "SpAtk": 29,
+        "SpDef": 40,
+        "Speed": 20
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 918,
+    "Name": "Spidops",
+    "Generation": 9,
+    "Category": "Trap",
+    "EggGroups": [
+      "Bug"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Bug"
+      ],
+      "Stats": {
+        "HP": 60,
+        "Atk": 79,
+        "Def": 92,
+        "SpAtk": 52,
+        "SpDef": 86,
+        "Speed": 35
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 919,
+    "Name": "Nymble",
+    "Generation": 9,
+    "Category": "Grasshopper",
+    "EggGroups": [
+      "Bug"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Bug"
+      ],
+      "Stats": {
+        "HP": 33,
+        "Atk": 46,
+        "Def": 40,
+        "SpAtk": 21,
+        "SpDef": 25,
+        "Speed": 45
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 920,
+    "Name": "Lokix",
+    "Generation": 9,
+    "Category": "Grasshopper",
+    "EggGroups": [
+      "Bug"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Bug",
+        "Dark"
+      ],
+      "Stats": {
+        "HP": 71,
+        "Atk": 102,
+        "Def": 78,
+        "SpAtk": 52,
+        "SpDef": 55,
+        "Speed": 92
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 921,
+    "Name": "Pawmi",
+    "Generation": 9,
+    "Category": "Mouse",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric"
+      ],
+      "Stats": {
+        "HP": 45,
+        "Atk": 50,
+        "Def": 20,
+        "SpAtk": 40,
+        "SpDef": 25,
+        "Speed": 60
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 922,
+    "Name": "Pawmo",
+    "Generation": 9,
+    "Category": "Mouse",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric",
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 60,
+        "Atk": 75,
+        "Def": 40,
+        "SpAtk": 50,
+        "SpDef": 40,
+        "Speed": 85
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 923,
+    "Name": "Pawmot",
+    "Generation": 9,
+    "Category": "Hands-On",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric",
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 115,
+        "Def": 70,
+        "SpAtk": 70,
+        "SpDef": 60,
+        "Speed": 105
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 924,
+    "Name": "Tandemaus",
+    "Generation": 9,
+    "Category": "Couple",
+    "EggGroups": [
+      "Field",
+      "Fairy"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 50,
+        "Atk": 50,
+        "Def": 45,
+        "SpAtk": 40,
+        "SpDef": 45,
+        "Speed": 75
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 925,
+    "Name": "Maushold",
+    "Generation": 9,
+    "Category": "Family",
+    "EggGroups": [
+      "Field",
+      "Fairy"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 74,
+        "Atk": 75,
+        "Def": 70,
+        "SpAtk": 65,
+        "SpDef": 75,
+        "Speed": 111
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 926,
+    "Name": "Fidough",
+    "Generation": 9,
+    "Category": "Puppy",
+    "EggGroups": [
+      "Field",
+      "Mineral"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 37,
+        "Atk": 55,
+        "Def": 70,
+        "SpAtk": 30,
+        "SpDef": 55,
+        "Speed": 65
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 927,
+    "Name": "Dachsbun",
+    "Generation": 9,
+    "Category": "Dog",
+    "EggGroups": [
+      "Field",
+      "Mineral"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 57,
+        "Atk": 80,
+        "Def": 115,
+        "SpAtk": 50,
+        "SpDef": 80,
+        "Speed": 95
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 928,
+    "Name": "Smoliv",
+    "Generation": 9,
+    "Category": "Olive",
+    "EggGroups": [
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 41,
+        "Atk": 35,
+        "Def": 45,
+        "SpAtk": 58,
+        "SpDef": 51,
+        "Speed": 30
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 929,
+    "Name": "Dolliv",
+    "Generation": 9,
+    "Category": "Olive",
+    "EggGroups": [
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 52,
+        "Atk": 53,
+        "Def": 60,
+        "SpAtk": 78,
+        "SpDef": 78,
+        "Speed": 33
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 930,
+    "Name": "Arboliva",
+    "Generation": 9,
+    "Category": "Olive",
+    "EggGroups": [
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 78,
+        "Atk": 69,
+        "Def": 90,
+        "SpAtk": 125,
+        "SpDef": 109,
+        "Speed": 39
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 931,
+    "Name": "Squawkabilly",
+    "Generation": 9,
+    "Category": "Parrot",
+    "EggGroups": [
+      "Flying"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal",
+        "Flying"
+      ],
+      "Stats": {
+        "HP": 82,
+        "Atk": 96,
+        "Def": 51,
+        "SpAtk": 45,
+        "SpDef": 51,
+        "Speed": 92
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 932,
+    "Name": "Nacli",
+    "Generation": 9,
+    "Category": "Rock Salt",
+    "EggGroups": [
+      "Mineral"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Rock"
+      ],
+      "Stats": {
+        "HP": 55,
+        "Atk": 55,
+        "Def": 75,
+        "SpAtk": 35,
+        "SpDef": 35,
+        "Speed": 25
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 933,
+    "Name": "Naclstack",
+    "Generation": 9,
+    "Category": "Rock Salt",
+    "EggGroups": [
+      "Mineral"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Rock"
+      ],
+      "Stats": {
+        "HP": 60,
+        "Atk": 60,
+        "Def": 100,
+        "SpAtk": 35,
+        "SpDef": 65,
+        "Speed": 35
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 934,
+    "Name": "Garganacl",
+    "Generation": 9,
+    "Category": "Rock Salt",
+    "EggGroups": [
+      "Mineral"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Rock"
+      ],
+      "Stats": {
+        "HP": 100,
+        "Atk": 100,
+        "Def": 130,
+        "SpAtk": 45,
+        "SpDef": 90,
+        "Speed": 35
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 935,
+    "Name": "Charcadet",
+    "Generation": 9,
+    "Category": "Fire Child",
+    "EggGroups": [
+      "HumanLike"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fire"
+      ],
+      "Stats": {
+        "HP": 40,
+        "Atk": 50,
+        "Def": 40,
+        "SpAtk": 50,
+        "SpDef": 40,
+        "Speed": 35
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 936,
+    "Name": "Armarouge",
+    "Generation": 9,
+    "Category": "Fire Warrior",
+    "EggGroups": [
+      "HumanLike"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fire",
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 85,
+        "Atk": 60,
+        "Def": 100,
+        "SpAtk": 125,
+        "SpDef": 80,
+        "Speed": 75
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 937,
+    "Name": "Ceruledge",
+    "Generation": 9,
+    "Category": "Fire Blades",
+    "EggGroups": [
+      "HumanLike"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fire",
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 75,
+        "Atk": 125,
+        "Def": 80,
+        "SpAtk": 60,
+        "SpDef": 100,
+        "Speed": 85
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 938,
+    "Name": "Tadbulb",
+    "Generation": 9,
+    "Category": "EleTadpole",
+    "EggGroups": [
+      "Water1"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric"
+      ],
+      "Stats": {
+        "HP": 61,
+        "Atk": 31,
+        "Def": 41,
+        "SpAtk": 59,
+        "SpDef": 35,
+        "Speed": 45
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 939,
+    "Name": "Bellibolt",
+    "Generation": 9,
+    "Category": "EleFrog",
+    "EggGroups": [
+      "Water1"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric"
+      ],
+      "Stats": {
+        "HP": 109,
+        "Atk": 64,
+        "Def": 91,
+        "SpAtk": 103,
+        "SpDef": 83,
+        "Speed": 45
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 940,
+    "Name": "Wattrel",
+    "Generation": 9,
+    "Category": "Storm Petrel",
+    "EggGroups": [
+      "Water1",
+      "Flying"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric",
+        "Flying"
+      ],
+      "Stats": {
+        "HP": 40,
+        "Atk": 40,
+        "Def": 35,
+        "SpAtk": 55,
+        "SpDef": 40,
+        "Speed": 70
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 941,
+    "Name": "Kilowattrel",
+    "Generation": 9,
+    "Category": "Frigatebird",
+    "EggGroups": [
+      "Water1",
+      "Flying"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric",
+        "Flying"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 70,
+        "Def": 60,
+        "SpAtk": 105,
+        "SpDef": 60,
+        "Speed": 125
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 942,
+    "Name": "Maschiff",
+    "Generation": 9,
+    "Category": "Rascal",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dark"
+      ],
+      "Stats": {
+        "HP": 60,
+        "Atk": 78,
+        "Def": 60,
+        "SpAtk": 40,
+        "SpDef": 51,
+        "Speed": 51
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 943,
+    "Name": "Mabosstiff",
+    "Generation": 9,
+    "Category": "Boss",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dark"
+      ],
+      "Stats": {
+        "HP": 80,
+        "Atk": 120,
+        "Def": 90,
+        "SpAtk": 60,
+        "SpDef": 70,
+        "Speed": 85
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 944,
+    "Name": "Shroodle",
+    "Generation": 9,
+    "Category": "Toxic Mouse",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Poison",
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 40,
+        "Atk": 65,
+        "Def": 35,
+        "SpAtk": 40,
+        "SpDef": 35,
+        "Speed": 75
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 945,
+    "Name": "Grafaiai",
+    "Generation": 9,
+    "Category": "Toxic Monkey",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Poison",
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 63,
+        "Atk": 95,
+        "Def": 65,
+        "SpAtk": 80,
+        "SpDef": 72,
+        "Speed": 110
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 946,
+    "Name": "Bramblin",
+    "Generation": 9,
+    "Category": "Tumbleweed",
+    "EggGroups": [
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 40,
+        "Atk": 65,
+        "Def": 30,
+        "SpAtk": 45,
+        "SpDef": 35,
+        "Speed": 60
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 947,
+    "Name": "Brambleghast",
+    "Generation": 9,
+    "Category": "Tumbleweed",
+    "EggGroups": [
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 55,
+        "Atk": 115,
+        "Def": 70,
+        "SpAtk": 80,
+        "SpDef": 70,
+        "Speed": 90
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 948,
+    "Name": "Toedscool",
+    "Generation": 9,
+    "Category": "Woodear",
+    "EggGroups": [
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ground",
+        "Grass"
+      ],
+      "Stats": {
+        "HP": 40,
+        "Atk": 40,
+        "Def": 35,
+        "SpAtk": 50,
+        "SpDef": 100,
+        "Speed": 70
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 949,
+    "Name": "Toedscruel",
+    "Generation": 9,
+    "Category": "Woodear",
+    "EggGroups": [
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ground",
+        "Grass"
+      ],
+      "Stats": {
+        "HP": 80,
+        "Atk": 70,
+        "Def": 65,
+        "SpAtk": 80,
+        "SpDef": 120,
+        "Speed": 100
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 950,
+    "Name": "Klawf",
+    "Generation": 9,
+    "Category": "Ambush",
+    "EggGroups": [
+      "Water3"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Rock"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 100,
+        "Def": 115,
+        "SpAtk": 35,
+        "SpDef": 55,
+        "Speed": 75
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 951,
+    "Name": "Capsakid",
+    "Generation": 9,
+    "Category": "Spicy Pepper",
+    "EggGroups": [
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass"
+      ],
+      "Stats": {
+        "HP": 50,
+        "Atk": 62,
+        "Def": 40,
+        "SpAtk": 62,
+        "SpDef": 40,
+        "Speed": 50
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 952,
+    "Name": "Scovillain",
+    "Generation": 9,
+    "Category": "Spicy Pepper",
+    "EggGroups": [
+      "Grass"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Fire"
+      ],
+      "Stats": {
+        "HP": 65,
+        "Atk": 108,
+        "Def": 65,
+        "SpAtk": 108,
+        "SpDef": 65,
+        "Speed": 75
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 953,
+    "Name": "Rellor",
+    "Generation": 9,
+    "Category": "Rolling",
+    "EggGroups": [
+      "Bug"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Bug"
+      ],
+      "Stats": {
+        "HP": 41,
+        "Atk": 50,
+        "Def": 60,
+        "SpAtk": 31,
+        "SpDef": 58,
+        "Speed": 30
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 954,
+    "Name": "Rabsca",
+    "Generation": 9,
+    "Category": "Rolling",
+    "EggGroups": [
+      "Bug"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Bug",
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 75,
+        "Atk": 50,
+        "Def": 85,
+        "SpAtk": 115,
+        "SpDef": 100,
+        "Speed": 45
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 955,
+    "Name": "Flittle",
+    "Generation": 9,
+    "Category": "Frill",
+    "EggGroups": [
+      "Flying"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 30,
+        "Atk": 35,
+        "Def": 30,
+        "SpAtk": 55,
+        "SpDef": 30,
+        "Speed": 75
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 956,
+    "Name": "Espathra",
+    "Generation": 9,
+    "Category": "Ostrich",
+    "EggGroups": [
+      "Flying"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 95,
+        "Atk": 60,
+        "Def": 60,
+        "SpAtk": 101,
+        "SpDef": 60,
+        "Speed": 105
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 957,
+    "Name": "Tinkatink",
+    "Generation": 9,
+    "Category": "Metalsmith",
+    "EggGroups": [
+      "Fairy"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fairy",
+        "Steel"
+      ],
+      "Stats": {
+        "HP": 50,
+        "Atk": 45,
+        "Def": 45,
+        "SpAtk": 35,
+        "SpDef": 64,
+        "Speed": 58
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 958,
+    "Name": "Tinkatuff",
+    "Generation": 9,
+    "Category": "Hammer",
+    "EggGroups": [
+      "Fairy"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fairy",
+        "Steel"
+      ],
+      "Stats": {
+        "HP": 65,
+        "Atk": 55,
+        "Def": 55,
+        "SpAtk": 45,
+        "SpDef": 82,
+        "Speed": 78
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 959,
+    "Name": "Tinkaton",
+    "Generation": 9,
+    "Category": "Hammer",
+    "EggGroups": [
+      "Fairy"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fairy",
+        "Steel"
+      ],
+      "Stats": {
+        "HP": 85,
+        "Atk": 75,
+        "Def": 77,
+        "SpAtk": 70,
+        "SpDef": 105,
+        "Speed": 94
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 960,
+    "Name": "Wiglett",
+    "Generation": 9,
+    "Category": "Garden Eel",
+    "EggGroups": [
+      "Water3"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water"
+      ],
+      "Stats": {
+        "HP": 10,
+        "Atk": 55,
+        "Def": 25,
+        "SpAtk": 35,
+        "SpDef": 25,
+        "Speed": 95
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 961,
+    "Name": "Wugtrio",
+    "Generation": 9,
+    "Category": "Garden Eel",
+    "EggGroups": [
+      "Water3"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water"
+      ],
+      "Stats": {
+        "HP": 35,
+        "Atk": 100,
+        "Def": 50,
+        "SpAtk": 50,
+        "SpDef": 70,
+        "Speed": 120
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 962,
+    "Name": "Bombirdier",
+    "Generation": 9,
+    "Category": "Item Drop",
+    "EggGroups": [
+      "Flying"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Flying",
+        "Dark"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 103,
+        "Def": 85,
+        "SpAtk": 60,
+        "SpDef": 85,
+        "Speed": 82
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 963,
+    "Name": "Finizen",
+    "Generation": 9,
+    "Category": "Dolphin",
+    "EggGroups": [
+      "Field",
+      "Water2"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 45,
+        "Def": 40,
+        "SpAtk": 45,
+        "SpDef": 40,
+        "Speed": 75
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 964,
+    "Name": "Palafin",
+    "Generation": 9,
+    "Category": "Dolphin",
+    "EggGroups": [
+      "Field",
+      "Water2"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water"
+      ],
+      "Stats": {
+        "HP": 100,
+        "Atk": 70,
+        "Def": 72,
+        "SpAtk": 53,
+        "SpDef": 62,
+        "Speed": 100
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 965,
+    "Name": "Varoom",
+    "Generation": 9,
+    "Category": "Single-Cyl",
+    "EggGroups": [
+      "Mineral"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Steel",
+        "Poison"
+      ],
+      "Stats": {
+        "HP": 45,
+        "Atk": 70,
+        "Def": 63,
+        "SpAtk": 30,
+        "SpDef": 45,
+        "Speed": 47
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 966,
+    "Name": "Revavroom",
+    "Generation": 9,
+    "Category": "Multi-Cyl",
+    "EggGroups": [
+      "Mineral"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Steel",
+        "Poison"
+      ],
+      "Stats": {
+        "HP": 80,
+        "Atk": 119,
+        "Def": 90,
+        "SpAtk": 54,
+        "SpDef": 67,
+        "Speed": 90
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 967,
+    "Name": "Cyclizar",
+    "Generation": 9,
+    "Category": "Mount",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dragon",
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 95,
+        "Def": 65,
+        "SpAtk": 85,
+        "SpDef": 65,
+        "Speed": 121
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 968,
+    "Name": "Orthworm",
+    "Generation": 9,
+    "Category": "Earthworm",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Steel"
+      ],
+      "Stats": {
+        "HP": 70,
+        "Atk": 85,
+        "Def": 145,
+        "SpAtk": 60,
+        "SpDef": 55,
+        "Speed": 65
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 969,
+    "Name": "Glimmet",
+    "Generation": 9,
+    "Category": "Ore",
+    "EggGroups": [
+      "Mineral"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Rock",
+        "Poison"
+      ],
+      "Stats": {
+        "HP": 48,
+        "Atk": 35,
+        "Def": 42,
+        "SpAtk": 105,
+        "SpDef": 60,
+        "Speed": 60
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 970,
+    "Name": "Glimmora",
+    "Generation": 9,
+    "Category": "Ore",
+    "EggGroups": [
+      "Mineral"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Rock",
+        "Poison"
+      ],
+      "Stats": {
+        "HP": 83,
+        "Atk": 55,
+        "Def": 90,
+        "SpAtk": 130,
+        "SpDef": 81,
+        "Speed": 86
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 971,
+    "Name": "Greavard",
+    "Generation": 9,
+    "Category": "Ghost Dog",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 50,
+        "Atk": 61,
+        "Def": 60,
+        "SpAtk": 30,
+        "SpDef": 55,
+        "Speed": 34
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 972,
+    "Name": "Houndstone",
+    "Generation": 9,
+    "Category": "Ghost Dog",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 72,
+        "Atk": 101,
+        "Def": 100,
+        "SpAtk": 50,
+        "SpDef": 97,
+        "Speed": 68
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 973,
+    "Name": "Flamigo",
+    "Generation": 9,
+    "Category": "Synchronize",
+    "EggGroups": [
+      "Flying"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Flying",
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 82,
+        "Atk": 115,
+        "Def": 74,
+        "SpAtk": 75,
+        "SpDef": 64,
+        "Speed": 90
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 974,
+    "Name": "Cetoddle",
+    "Generation": 9,
+    "Category": "Terra Whale",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ice"
+      ],
+      "Stats": {
+        "HP": 108,
+        "Atk": 68,
+        "Def": 45,
+        "SpAtk": 30,
+        "SpDef": 40,
+        "Speed": 43
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 975,
+    "Name": "Cetitan",
+    "Generation": 9,
+    "Category": "Terra Whale",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ice"
+      ],
+      "Stats": {
+        "HP": 170,
+        "Atk": 113,
+        "Def": 65,
+        "SpAtk": 45,
+        "SpDef": 55,
+        "Speed": 73
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 976,
+    "Name": "Veluza",
+    "Generation": 9,
+    "Category": "Jettison",
+    "EggGroups": [
+      "Water2"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water",
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 90,
+        "Atk": 102,
+        "Def": 73,
+        "SpAtk": 78,
+        "SpDef": 65,
+        "Speed": 70
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 977,
+    "Name": "Dondozo",
+    "Generation": 9,
+    "Category": "Big Catfish",
+    "EggGroups": [
+      "Water2"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water"
+      ],
+      "Stats": {
+        "HP": 150,
+        "Atk": 100,
+        "Def": 115,
+        "SpAtk": 65,
+        "SpDef": 65,
+        "Speed": 35
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 978,
+    "Name": "Tatsugiri",
+    "Generation": 9,
+    "Category": "Mimicry",
+    "EggGroups": [
+      "Water2"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dragon",
+        "Water"
+      ],
+      "Stats": {
+        "HP": 68,
+        "Atk": 50,
+        "Def": 60,
+        "SpAtk": 120,
+        "SpDef": 95,
+        "Speed": 82
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 979,
+    "Name": "Annihilape",
+    "Generation": 9,
+    "Category": "Rage Monkey",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fighting",
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 110,
+        "Atk": 115,
+        "Def": 80,
+        "SpAtk": 50,
+        "SpDef": 90,
+        "Speed": 90
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 980,
+    "Name": "Clodsire",
+    "Generation": 9,
+    "Category": "Spiny Fish",
+    "EggGroups": [
+      "Water1",
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Poison",
+        "Ground"
+      ],
+      "Stats": {
+        "HP": 130,
+        "Atk": 75,
+        "Def": 60,
+        "SpAtk": 45,
+        "SpDef": 100,
+        "Speed": 20
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 981,
+    "Name": "Farigiraf",
+    "Generation": 9,
+    "Category": "Long Neck",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal",
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 120,
+        "Atk": 90,
+        "Def": 70,
+        "SpAtk": 110,
+        "SpDef": 70,
+        "Speed": 60
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 982,
+    "Name": "Dudunsparce",
+    "Generation": 9,
+    "Category": "Land Snake",
+    "EggGroups": [
+      "Field"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 125,
+        "Atk": 100,
+        "Def": 80,
+        "SpAtk": 85,
+        "SpDef": 75,
+        "Speed": 55
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 983,
+    "Name": "Kingambit",
+    "Generation": 9,
+    "Category": "Big Blade",
+    "EggGroups": [
+      "HumanLike"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dark",
+        "Steel"
+      ],
+      "Stats": {
+        "HP": 100,
+        "Atk": 135,
+        "Def": 120,
+        "SpAtk": 60,
+        "SpDef": 85,
+        "Speed": 50
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 984,
+    "Name": "Great Tusk",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ground",
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 115,
+        "Atk": 131,
+        "Def": 131,
+        "SpAtk": 53,
+        "SpDef": 53,
+        "Speed": 87
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 985,
+    "Name": "Scream Tail",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fairy",
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 115,
+        "Atk": 65,
+        "Def": 99,
+        "SpAtk": 65,
+        "SpDef": 115,
+        "Speed": 111
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 986,
+    "Name": "Brute Bonnet",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Dark"
+      ],
+      "Stats": {
+        "HP": 111,
+        "Atk": 127,
+        "Def": 99,
+        "SpAtk": 79,
+        "SpDef": 99,
+        "Speed": 55
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 987,
+    "Name": "Flutter Mane",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ghost",
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 55,
+        "Atk": 55,
+        "Def": 55,
+        "SpAtk": 135,
+        "SpDef": 135,
+        "Speed": 135
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 988,
+    "Name": "Slither Wing",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Bug",
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 85,
+        "Atk": 135,
+        "Def": 79,
+        "SpAtk": 85,
+        "SpDef": 105,
+        "Speed": 81
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 989,
+    "Name": "Sandy Shocks",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric",
+        "Ground"
+      ],
+      "Stats": {
+        "HP": 85,
+        "Atk": 81,
+        "Def": 97,
+        "SpAtk": 121,
+        "SpDef": 85,
+        "Speed": 101
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 990,
+    "Name": "Iron Treads",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ground",
+        "Steel"
+      ],
+      "Stats": {
+        "HP": 90,
+        "Atk": 112,
+        "Def": 120,
+        "SpAtk": 72,
+        "SpDef": 70,
+        "Speed": 106
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 991,
+    "Name": "Iron Bundle",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ice",
+        "Water"
+      ],
+      "Stats": {
+        "HP": 56,
+        "Atk": 80,
+        "Def": 114,
+        "SpAtk": 124,
+        "SpDef": 60,
+        "Speed": 136
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 992,
+    "Name": "Iron Hands",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fighting",
+        "Electric"
+      ],
+      "Stats": {
+        "HP": 154,
+        "Atk": 140,
+        "Def": 108,
+        "SpAtk": 50,
+        "SpDef": 68,
+        "Speed": 50
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 993,
+    "Name": "Iron Jugulis",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dark",
+        "Flying"
+      ],
+      "Stats": {
+        "HP": 94,
+        "Atk": 80,
+        "Def": 86,
+        "SpAtk": 122,
+        "SpDef": 80,
+        "Speed": 108
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 994,
+    "Name": "Iron Moth",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fire",
+        "Poison"
+      ],
+      "Stats": {
+        "HP": 80,
+        "Atk": 70,
+        "Def": 60,
+        "SpAtk": 140,
+        "SpDef": 110,
+        "Speed": 110
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 995,
+    "Name": "Iron Thorns",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Rock",
+        "Electric"
+      ],
+      "Stats": {
+        "HP": 100,
+        "Atk": 134,
+        "Def": 110,
+        "SpAtk": 70,
+        "SpDef": 84,
+        "Speed": 72
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 996,
+    "Name": "Frigibax",
+    "Generation": 9,
+    "Category": "Ice Fin",
+    "EggGroups": [
+      "Mineral",
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dragon",
+        "Ice"
+      ],
+      "Stats": {
+        "HP": 65,
+        "Atk": 75,
+        "Def": 45,
+        "SpAtk": 35,
+        "SpDef": 45,
+        "Speed": 55
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 997,
+    "Name": "Arctibax",
+    "Generation": 9,
+    "Category": "Ice Fin",
+    "EggGroups": [
+      "Mineral",
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dragon",
+        "Ice"
+      ],
+      "Stats": {
+        "HP": 90,
+        "Atk": 95,
+        "Def": 66,
+        "SpAtk": 45,
+        "SpDef": 65,
+        "Speed": 62
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 998,
+    "Name": "Baxcalibur",
+    "Generation": 9,
+    "Category": "Ice Dragon",
+    "EggGroups": [
+      "Mineral",
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dragon",
+        "Ice"
+      ],
+      "Stats": {
+        "HP": 115,
+        "Atk": 145,
+        "Def": 92,
+        "SpAtk": 75,
+        "SpDef": 86,
+        "Speed": 87
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 999,
+    "Name": "Gimmighoul",
+    "Generation": 9,
+    "Category": "Coin Chest",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 45,
+        "Atk": 30,
+        "Def": 70,
+        "SpAtk": 75,
+        "SpDef": 70,
+        "Speed": 10
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1000,
+    "Name": "Gholdengo",
+    "Generation": 9,
+    "Category": "Coin Entity",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Steel",
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 87,
+        "Atk": 60,
+        "Def": 95,
+        "SpAtk": 133,
+        "SpDef": 91,
+        "Speed": 84
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1001,
+    "Name": "Wo-Chien",
+    "Generation": 9,
+    "Category": "Ruinous",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dark",
+        "Grass"
+      ],
+      "Stats": {
+        "HP": 85,
+        "Atk": 85,
+        "Def": 100,
+        "SpAtk": 95,
+        "SpDef": 135,
+        "Speed": 70
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1002,
+    "Name": "Chien-Pao",
+    "Generation": 9,
+    "Category": "Ruinous",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dark",
+        "Ice"
+      ],
+      "Stats": {
+        "HP": 80,
+        "Atk": 120,
+        "Def": 80,
+        "SpAtk": 90,
+        "SpDef": 65,
+        "Speed": 135
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1003,
+    "Name": "Ting-Lu",
+    "Generation": 9,
+    "Category": "Ruinous",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dark",
+        "Ground"
+      ],
+      "Stats": {
+        "HP": 155,
+        "Atk": 110,
+        "Def": 125,
+        "SpAtk": 55,
+        "SpDef": 80,
+        "Speed": 45
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1004,
+    "Name": "Chi-Yu",
+    "Generation": 9,
+    "Category": "Ruinous",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dark",
+        "Fire"
+      ],
+      "Stats": {
+        "HP": 55,
+        "Atk": 80,
+        "Def": 80,
+        "SpAtk": 135,
+        "SpDef": 120,
+        "Speed": 100
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1005,
+    "Name": "Roaring Moon",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Dragon",
+        "Dark"
+      ],
+      "Stats": {
+        "HP": 105,
+        "Atk": 139,
+        "Def": 71,
+        "SpAtk": 55,
+        "SpDef": 101,
+        "Speed": 119
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1006,
+    "Name": "Iron Valiant",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fairy",
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 74,
+        "Atk": 130,
+        "Def": 90,
+        "SpAtk": 120,
+        "SpDef": 60,
+        "Speed": 116
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1007,
+    "Name": "Koraidon",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fighting",
+        "Dragon"
+      ],
+      "Stats": {
+        "HP": 100,
+        "Atk": 135,
+        "Def": 115,
+        "SpAtk": 85,
+        "SpDef": 100,
+        "Speed": 135
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1008,
+    "Name": "Miraidon",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric",
+        "Dragon"
+      ],
+      "Stats": {
+        "HP": 100,
+        "Atk": 85,
+        "Def": 100,
+        "SpAtk": 135,
+        "SpDef": 115,
+        "Speed": 135
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1009,
+    "Name": "Walking Wake",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Water",
+        "Dragon"
+      ],
+      "Stats": {
+        "HP": 99,
+        "Atk": 83,
+        "Def": 91,
+        "SpAtk": 125,
+        "SpDef": 83,
+        "Speed": 109
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1010,
+    "Name": "Iron Leaves",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 90,
+        "Atk": 130,
+        "Def": 88,
+        "SpAtk": 70,
+        "SpDef": 108,
+        "Speed": 104
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1011,
+    "Name": "Dipplin",
+    "Generation": 9,
+    "Category": "Candy Apple",
+    "EggGroups": [
+      "Grass",
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Dragon"
+      ],
+      "Stats": {
+        "HP": 80,
+        "Atk": 80,
+        "Def": 110,
+        "SpAtk": 95,
+        "SpDef": 80,
+        "Speed": 40
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1012,
+    "Name": "Poltchageist",
+    "Generation": 9,
+    "Category": "Matcha",
+    "EggGroups": [
+      "Mineral",
+      "Amorphous"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 40,
+        "Atk": 45,
+        "Def": 45,
+        "SpAtk": 74,
+        "SpDef": 54,
+        "Speed": 50
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1013,
+    "Name": "Sinistcha",
+    "Generation": 9,
+    "Category": "Matcha",
+    "EggGroups": [
+      "Mineral",
+      "Amorphous"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 71,
+        "Atk": 60,
+        "Def": 106,
+        "SpAtk": 121,
+        "SpDef": 80,
+        "Speed": 70
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1014,
+    "Name": "Okidogi",
+    "Generation": 9,
+    "Category": "Retainer",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Poison",
+        "Fighting"
+      ],
+      "Stats": {
+        "HP": 88,
+        "Atk": 128,
+        "Def": 115,
+        "SpAtk": 58,
+        "SpDef": 86,
+        "Speed": 80
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1015,
+    "Name": "Munkidori",
+    "Generation": 9,
+    "Category": "Retainer",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Poison",
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 88,
+        "Atk": 75,
+        "Def": 66,
+        "SpAtk": 130,
+        "SpDef": 90,
+        "Speed": 106
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1016,
+    "Name": "Fezandipiti",
+    "Generation": 9,
+    "Category": "Retainer",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Poison",
+        "Fairy"
+      ],
+      "Stats": {
+        "HP": 88,
+        "Atk": 91,
+        "Def": 82,
+        "SpAtk": 70,
+        "SpDef": 125,
+        "Speed": 99
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1017,
+    "Name": "Ogerpon",
+    "Generation": 9,
+    "Category": "Mask",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass"
+      ],
+      "Stats": {
+        "HP": 80,
+        "Atk": 120,
+        "Def": 84,
+        "SpAtk": 60,
+        "SpDef": 96,
+        "Speed": 110
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1018,
+    "Name": "Archaludon",
+    "Generation": 9,
+    "Category": "Alloy",
+    "EggGroups": [
+      "Mineral",
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Steel",
+        "Dragon"
+      ],
+      "Stats": {
+        "HP": 90,
+        "Atk": 105,
+        "Def": 130,
+        "SpAtk": 125,
+        "SpDef": 65,
+        "Speed": 85
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1019,
+    "Name": "Hydrapple",
+    "Generation": 9,
+    "Category": "Apple Hydra",
+    "EggGroups": [
+      "Grass",
+      "Dragon"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Grass",
+        "Dragon"
+      ],
+      "Stats": {
+        "HP": 106,
+        "Atk": 80,
+        "Def": 110,
+        "SpAtk": 120,
+        "SpDef": 80,
+        "Speed": 44
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1020,
+    "Name": "Gouging Fire",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Fire",
+        "Dragon"
+      ],
+      "Stats": {
+        "HP": 105,
+        "Atk": 115,
+        "Def": 121,
+        "SpAtk": 65,
+        "SpDef": 93,
+        "Speed": 91
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1021,
+    "Name": "Raging Bolt",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Electric",
+        "Dragon"
+      ],
+      "Stats": {
+        "HP": 125,
+        "Atk": 73,
+        "Def": 91,
+        "SpAtk": 137,
+        "SpDef": 89,
+        "Speed": 75
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1022,
+    "Name": "Iron Boulder",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Rock",
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 90,
+        "Atk": 120,
+        "Def": 80,
+        "SpAtk": 68,
+        "SpDef": 108,
+        "Speed": 124
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1023,
+    "Name": "Iron Crown",
+    "Generation": 9,
+    "Category": "Paradox",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Steel",
+        "Psychic"
+      ],
+      "Stats": {
+        "HP": 90,
+        "Atk": 72,
+        "Def": 100,
+        "SpAtk": 122,
+        "SpDef": 108,
+        "Speed": 98
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1024,
+    "Name": "Terapagos",
+    "Generation": 9,
+    "Category": "Tera",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Normal"
+      ],
+      "Stats": {
+        "HP": 90,
+        "Atk": 65,
+        "Def": 85,
+        "SpAtk": 65,
+        "SpDef": 85,
+        "Speed": 60
+      }
+    }
+  },
+  {
+    "NationalDexNumber": 1025,
+    "Name": "Pecharunt",
+    "Generation": 9,
+    "Category": "Subjugation",
+    "EggGroups": [
+      "Undiscovered"
+    ],
+    "Form": {
+      "FormName": "Normal",
+      "Types": [
+        "Poison",
+        "Ghost"
+      ],
+      "Stats": {
+        "HP": 88,
+        "Atk": 88,
+        "Def": 160,
+        "SpAtk": 88,
+        "SpDef": 88,
+        "Speed": 88
       }
     }
   }

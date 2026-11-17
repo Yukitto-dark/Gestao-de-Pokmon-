@@ -1,0 +1,7139 @@
+{
+  "gerado_em": "2026-11-17T20:16:24",
+  "escopo": "Alola, Galar, Hisui e Paldea (#722-#1025), formas alternativas ausentes, Mega Evoluções de Legends: Z-A, evoluções e golpes dos jogos da Geração VII+",
+  "jogos_geracao_vii_em_diante": [
+    "sun-moon",
+    "ultra-sun-ultra-moon",
+    "lets-go-pikachu-lets-go-eevee",
+    "sword-shield",
+    "the-isle-of-armor",
+    "the-crown-tundra",
+    "brilliant-diamond-shining-pearl",
+    "legends-arceus",
+    "scarlet-violet",
+    "the-teal-mask",
+    "the-indigo-disk",
+    "legends-za",
+    "mega-dimension",
+    "champions"
+  ],
+  "regioes": [
+    {
+      "id": 1,
+      "nome": "Kanto",
+      "geracao": 1,
+      "jogos": [
+        "Red",
+        "Blue",
+        "Yellow",
+        "FireRed",
+        "LeafGreen",
+        "Let's Go, Pikachu!",
+        "Let's Go, Eevee!"
+      ],
+      "version_groups": [
+        "red-blue",
+        "yellow",
+        "firered-leafgreen",
+        "lets-go-pikachu-lets-go-eevee"
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Johto",
+      "geracao": 2,
+      "jogos": [
+        "Gold",
+        "Silver",
+        "Crystal",
+        "HeartGold",
+        "SoulSilver"
+      ],
+      "version_groups": [
+        "gold-silver",
+        "crystal",
+        "heartgold-soulsilver"
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Hoenn",
+      "geracao": 3,
+      "jogos": [
+        "Ruby",
+        "Sapphire",
+        "Emerald",
+        "Omega Ruby",
+        "Alpha Sapphire"
+      ],
+      "version_groups": [
+        "ruby-sapphire",
+        "emerald",
+        "omega-ruby-alpha-sapphire"
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Sinnoh",
+      "geracao": 4,
+      "jogos": [
+        "Diamond",
+        "Pearl",
+        "Platinum",
+        "Brilliant Diamond",
+        "Shining Pearl"
+      ],
+      "version_groups": [
+        "diamond-pearl",
+        "platinum",
+        "brilliant-diamond-shining-pearl"
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Unova",
+      "geracao": 5,
+      "jogos": [
+        "Black",
+        "White",
+        "Black 2",
+        "White 2"
+      ],
+      "version_groups": [
+        "black-white",
+        "black-2-white-2"
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Kalos",
+      "geracao": 6,
+      "jogos": [
+        "X",
+        "Y",
+        "Legends: Z-A",
+        "Mega Dimension"
+      ],
+      "version_groups": [
+        "x-y",
+        "legends-za",
+        "mega-dimension"
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "Alola",
+      "geracao": 7,
+      "jogos": [
+        "Sun",
+        "Moon",
+        "Ultra Sun",
+        "Ultra Moon"
+      ],
+      "version_groups": [
+        "sun-moon",
+        "ultra-sun-ultra-moon"
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Galar",
+      "geracao": 8,
+      "jogos": [
+        "Sword",
+        "Shield",
+        "The Isle of Armor",
+        "The Crown Tundra"
+      ],
+      "version_groups": [
+        "sword-shield",
+        "the-isle-of-armor",
+        "the-crown-tundra"
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Paldea",
+      "geracao": 9,
+      "jogos": [
+        "Scarlet",
+        "Violet",
+        "The Teal Mask",
+        "The Indigo Disk"
+      ],
+      "version_groups": [
+        "scarlet-violet",
+        "the-teal-mask",
+        "the-indigo-disk"
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "Hisui",
+      "geracao": 8,
+      "jogos": [
+        "Legends: Arceus"
+      ],
+      "version_groups": [
+        "legends-arceus"
+      ]
+    }
+  ],
+  "especies": 304,
+  "formas_adicionadas": 261,
+  "megas_za_adicionadas": 48,
+  "formas_de_batalha": 120,
+  "formas_cosmeticas": 141,
+  "habilidades_novas": [],
+  "habilidades_renomeadas_por_nome_repetido": {},
+  "moves_novos": 0,
+  "golpes_por_jogo": {
+    "entradas": 5171,
+    "linhas": 276536,
+    "formas_ja_existentes_com_golpes": 191,
+    "formas_ja_existentes_sem_correspondencia": []
+  },
+  "formas_importadas": [
+    {
+      "dex": 3,
+      "forma": "Gigantamax Form",
+      "slug": "venusaur-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 6,
+      "forma": "Gigantamax Form",
+      "slug": "charizard-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 9,
+      "forma": "Gigantamax Form",
+      "slug": "blastoise-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 12,
+      "forma": "Gigantamax Form",
+      "slug": "butterfree-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 19,
+      "forma": "Alolan Form",
+      "slug": "rattata-alola",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 20,
+      "forma": "Alolan Form",
+      "slug": "raticate-alola",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 20,
+      "forma": "Totem Alolan Raticate",
+      "slug": "raticate-totem-alola",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 25,
+      "forma": "Original Cap",
+      "slug": "pikachu-original-cap",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 25,
+      "forma": "Hoenn Cap",
+      "slug": "pikachu-hoenn-cap",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 25,
+      "forma": "Sinnoh Cap",
+      "slug": "pikachu-sinnoh-cap",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 25,
+      "forma": "Unova Cap",
+      "slug": "pikachu-unova-cap",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 25,
+      "forma": "Kalos Cap",
+      "slug": "pikachu-kalos-cap",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 25,
+      "forma": "Alola Cap",
+      "slug": "pikachu-alola-cap",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 25,
+      "forma": "Partner Cap",
+      "slug": "pikachu-partner-cap",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 25,
+      "forma": "Partner Pikachu",
+      "slug": "pikachu-starter",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 25,
+      "forma": "World Cap",
+      "slug": "pikachu-world-cap",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 25,
+      "forma": "Gigantamax Form",
+      "slug": "pikachu-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 26,
+      "forma": "Alolan Form",
+      "slug": "raichu-alola",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 27,
+      "forma": "Alolan Form",
+      "slug": "sandshrew-alola",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 28,
+      "forma": "Alolan Form",
+      "slug": "sandslash-alola",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 37,
+      "forma": "Alolan Form",
+      "slug": "vulpix-alola",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 38,
+      "forma": "Alolan Form",
+      "slug": "ninetales-alola",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 50,
+      "forma": "Alolan Form",
+      "slug": "diglett-alola",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 51,
+      "forma": "Alolan Form",
+      "slug": "dugtrio-alola",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 52,
+      "forma": "Alolan Form",
+      "slug": "meowth-alola",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 52,
+      "forma": "Galarian Form",
+      "slug": "meowth-galar",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 52,
+      "forma": "Gigantamax Form",
+      "slug": "meowth-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 53,
+      "forma": "Alolan Form",
+      "slug": "persian-alola",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 58,
+      "forma": "Hisuian Form",
+      "slug": "growlithe-hisui",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 59,
+      "forma": "Hisuian Form",
+      "slug": "arcanine-hisui",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 68,
+      "forma": "Gigantamax Form",
+      "slug": "machamp-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 74,
+      "forma": "Alolan Form",
+      "slug": "geodude-alola",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 75,
+      "forma": "Alolan Form",
+      "slug": "graveler-alola",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 76,
+      "forma": "Alolan Form",
+      "slug": "golem-alola",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 77,
+      "forma": "Galarian Form",
+      "slug": "ponyta-galar",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 78,
+      "forma": "Galarian Form",
+      "slug": "rapidash-galar",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 79,
+      "forma": "Galarian Form",
+      "slug": "slowpoke-galar",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 80,
+      "forma": "Galarian Form",
+      "slug": "slowbro-galar",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 83,
+      "forma": "Galarian Form",
+      "slug": "farfetchd-galar",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 88,
+      "forma": "Alolan Form",
+      "slug": "grimer-alola",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 89,
+      "forma": "Alolan Form",
+      "slug": "muk-alola",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 94,
+      "forma": "Gigantamax Form",
+      "slug": "gengar-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 99,
+      "forma": "Gigantamax Form",
+      "slug": "kingler-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 100,
+      "forma": "Hisuian Form",
+      "slug": "voltorb-hisui",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 101,
+      "forma": "Hisuian Form",
+      "slug": "electrode-hisui",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 103,
+      "forma": "Alolan Form",
+      "slug": "exeggutor-alola",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 105,
+      "forma": "Alolan Form",
+      "slug": "marowak-alola",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 105,
+      "forma": "Totem Alolan Marowak",
+      "slug": "marowak-totem",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 110,
+      "forma": "Galarian Form",
+      "slug": "weezing-galar",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 122,
+      "forma": "Galarian Form",
+      "slug": "mr-mime-galar",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 128,
+      "forma": "Paldean Form (Combat Breed)",
+      "slug": "tauros-paldea-combat-breed",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 128,
+      "forma": "Paldean Form (Blaze Breed)",
+      "slug": "tauros-paldea-blaze-breed",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 128,
+      "forma": "Paldean Form (Aqua Breed)",
+      "slug": "tauros-paldea-aqua-breed",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 131,
+      "forma": "Gigantamax Form",
+      "slug": "lapras-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 133,
+      "forma": "Partner Eevee",
+      "slug": "eevee-starter",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 133,
+      "forma": "Gigantamax Form",
+      "slug": "eevee-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 143,
+      "forma": "Gigantamax Form",
+      "slug": "snorlax-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 144,
+      "forma": "Galarian Form",
+      "slug": "articuno-galar",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 145,
+      "forma": "Galarian Form",
+      "slug": "zapdos-galar",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 146,
+      "forma": "Galarian Form",
+      "slug": "moltres-galar",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 157,
+      "forma": "Hisuian Form",
+      "slug": "typhlosion-hisui",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 194,
+      "forma": "Paldean Form",
+      "slug": "wooper-paldea",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 199,
+      "forma": "Galarian Form",
+      "slug": "slowking-galar",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 211,
+      "forma": "Hisuian Form",
+      "slug": "qwilfish-hisui",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 215,
+      "forma": "Hisuian Form",
+      "slug": "sneasel-hisui",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 222,
+      "forma": "Galarian Form",
+      "slug": "corsola-galar",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 263,
+      "forma": "Galarian Form",
+      "slug": "zigzagoon-galar",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 264,
+      "forma": "Galarian Form",
+      "slug": "linoone-galar",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 483,
+      "forma": "Origin Forme",
+      "slug": "dialga-origin",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 484,
+      "forma": "Origin Forme",
+      "slug": "palkia-origin",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 503,
+      "forma": "Hisuian Form",
+      "slug": "samurott-hisui",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 549,
+      "forma": "Hisuian Form",
+      "slug": "lilligant-hisui",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 550,
+      "forma": "White-Striped Form",
+      "slug": "basculin-white-striped",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 554,
+      "forma": "Galarian Form",
+      "slug": "darumaka-galar",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 555,
+      "forma": "Galarian Form",
+      "slug": "darmanitan-galar-standard",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 562,
+      "forma": "Galarian Form",
+      "slug": "yamask-galar",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 569,
+      "forma": "Gigantamax Form",
+      "slug": "garbodor-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 570,
+      "forma": "Hisuian Form",
+      "slug": "zorua-hisui",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 571,
+      "forma": "Hisuian Form",
+      "slug": "zoroark-hisui",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 618,
+      "forma": "Galarian Form",
+      "slug": "stunfisk-galar",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 628,
+      "forma": "Hisuian Form",
+      "slug": "braviary-hisui",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 658,
+      "forma": "Battle Bond Greninja",
+      "slug": "greninja-battle-bond",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 658,
+      "forma": "Ash-Greninja",
+      "slug": "greninja-ash",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 705,
+      "forma": "Hisuian Form",
+      "slug": "sliggoo-hisui",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 706,
+      "forma": "Hisuian Form",
+      "slug": "goodra-hisui",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 713,
+      "forma": "Hisuian Form",
+      "slug": "avalugg-hisui",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 718,
+      "forma": "10% Forme (Power Construct)",
+      "slug": "zygarde-10-power-construct",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 718,
+      "forma": "50% Forme (Power Construct)",
+      "slug": "zygarde-50-power-construct",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 718,
+      "forma": "Complete Forme",
+      "slug": "zygarde-complete",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 718,
+      "forma": "10% Forme",
+      "slug": "zygarde-10",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 724,
+      "forma": "Hisuian Form",
+      "slug": "decidueye-hisui",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 735,
+      "forma": "Totem Gumshoos",
+      "slug": "gumshoos-totem",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 738,
+      "forma": "Totem Vikavolt",
+      "slug": "vikavolt-totem",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 741,
+      "forma": "Pom-Pom Style",
+      "slug": "oricorio-pom-pom",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 741,
+      "forma": "Pa’u Style",
+      "slug": "oricorio-pau",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 741,
+      "forma": "Sensu Style",
+      "slug": "oricorio-sensu",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 743,
+      "forma": "Totem Ribombee",
+      "slug": "ribombee-totem",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 744,
+      "forma": "Own Tempo Rockruff",
+      "slug": "rockruff-own-tempo",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 745,
+      "forma": "Midnight Form",
+      "slug": "lycanroc-midnight",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 745,
+      "forma": "Dusk Form",
+      "slug": "lycanroc-dusk",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 746,
+      "forma": "School Form",
+      "slug": "wishiwashi-school",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 752,
+      "forma": "Totem Araquanid",
+      "slug": "araquanid-totem",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 754,
+      "forma": "Totem Lurantis",
+      "slug": "lurantis-totem",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 758,
+      "forma": "Totem Salazzle",
+      "slug": "salazzle-totem",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 773,
+      "forma": "Type: Fighting",
+      "slug": "silvally-fighting",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 773,
+      "forma": "Type: Flying",
+      "slug": "silvally-flying",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 773,
+      "forma": "Type: Poison",
+      "slug": "silvally-poison",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 773,
+      "forma": "Type: Ground",
+      "slug": "silvally-ground",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 773,
+      "forma": "Type: Rock",
+      "slug": "silvally-rock",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 773,
+      "forma": "Type: Bug",
+      "slug": "silvally-bug",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 773,
+      "forma": "Type: Ghost",
+      "slug": "silvally-ghost",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 773,
+      "forma": "Type: Steel",
+      "slug": "silvally-steel",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 773,
+      "forma": "Type: Fire",
+      "slug": "silvally-fire",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 773,
+      "forma": "Type: Water",
+      "slug": "silvally-water",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 773,
+      "forma": "Type: Grass",
+      "slug": "silvally-grass",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 773,
+      "forma": "Type: Electric",
+      "slug": "silvally-electric",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 773,
+      "forma": "Type: Psychic",
+      "slug": "silvally-psychic",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 773,
+      "forma": "Type: Ice",
+      "slug": "silvally-ice",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 773,
+      "forma": "Type: Dragon",
+      "slug": "silvally-dragon",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 773,
+      "forma": "Type: Dark",
+      "slug": "silvally-dark",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 773,
+      "forma": "Type: Fairy",
+      "slug": "silvally-fairy",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 774,
+      "forma": "Orange Meteor Form",
+      "slug": "minior-orange-meteor",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 774,
+      "forma": "Yellow Meteor Form",
+      "slug": "minior-yellow-meteor",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 774,
+      "forma": "Green Meteor Form",
+      "slug": "minior-green-meteor",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 774,
+      "forma": "Blue Meteor Form",
+      "slug": "minior-blue-meteor",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 774,
+      "forma": "Indigo Meteor Form",
+      "slug": "minior-indigo-meteor",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 774,
+      "forma": "Violet Meteor Form",
+      "slug": "minior-violet-meteor",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 774,
+      "forma": "Red Core",
+      "slug": "minior-red",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 774,
+      "forma": "Orange Core",
+      "slug": "minior-orange",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 774,
+      "forma": "Yellow Core",
+      "slug": "minior-yellow",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 774,
+      "forma": "Green Core",
+      "slug": "minior-green",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 774,
+      "forma": "Blue Core",
+      "slug": "minior-blue",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 774,
+      "forma": "Indigo Core",
+      "slug": "minior-indigo",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 774,
+      "forma": "Violet Core",
+      "slug": "minior-violet",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 777,
+      "forma": "Totem Togedemaru",
+      "slug": "togedemaru-totem",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 778,
+      "forma": "Busted Form",
+      "slug": "mimikyu-busted",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 778,
+      "forma": "Totem Disguised Mimikyu",
+      "slug": "mimikyu-totem-disguised",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 778,
+      "forma": "Totem Busted Mimikyu",
+      "slug": "mimikyu-totem-busted",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 784,
+      "forma": "Totem Kommo-o",
+      "slug": "kommo-o-totem",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 800,
+      "forma": "Dusk Mane",
+      "slug": "necrozma-dusk",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 800,
+      "forma": "Dawn Wings",
+      "slug": "necrozma-dawn",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 800,
+      "forma": "Ultra Necrozma",
+      "slug": "necrozma-ultra",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 801,
+      "forma": "Original Color",
+      "slug": "magearna-original",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 809,
+      "forma": "Gigantamax Form",
+      "slug": "melmetal-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 812,
+      "forma": "Gigantamax Form",
+      "slug": "rillaboom-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 815,
+      "forma": "Gigantamax Form",
+      "slug": "cinderace-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 818,
+      "forma": "Gigantamax Form",
+      "slug": "inteleon-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 823,
+      "forma": "Gigantamax Form",
+      "slug": "corviknight-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 826,
+      "forma": "Gigantamax Form",
+      "slug": "orbeetle-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 834,
+      "forma": "Gigantamax Form",
+      "slug": "drednaw-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 839,
+      "forma": "Gigantamax Form",
+      "slug": "coalossal-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 841,
+      "forma": "Gigantamax Form",
+      "slug": "flapple-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 842,
+      "forma": "Gigantamax Form",
+      "slug": "appletun-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 844,
+      "forma": "Gigantamax Form",
+      "slug": "sandaconda-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 845,
+      "forma": "Gulping Form",
+      "slug": "cramorant-gulping",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 845,
+      "forma": "Gorging Form",
+      "slug": "cramorant-gorging",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 849,
+      "forma": "Low Key Form",
+      "slug": "toxtricity-low-key",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 849,
+      "forma": "Gigantamax Form (Amped)",
+      "slug": "toxtricity-amped-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 849,
+      "forma": "Gigantamax Form (Low Key)",
+      "slug": "toxtricity-low-key-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 851,
+      "forma": "Gigantamax Form",
+      "slug": "centiskorch-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 854,
+      "forma": "Antique Form",
+      "slug": "sinistea-antique",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 855,
+      "forma": "Antique Form",
+      "slug": "polteageist-antique",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 858,
+      "forma": "Gigantamax Form",
+      "slug": "hatterene-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 861,
+      "forma": "Gigantamax Form",
+      "slug": "grimmsnarl-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 869,
+      "forma": "Ruby Cream Strawberry Sweet",
+      "slug": "alcremie-ruby-cream-strawberry-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Matcha Cream Strawberry Sweet",
+      "slug": "alcremie-matcha-cream-strawberry-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Mint Cream Strawberry Sweet",
+      "slug": "alcremie-mint-cream-strawberry-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Lemon Cream Strawberry Sweet",
+      "slug": "alcremie-lemon-cream-strawberry-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Salted Cream Strawberry Sweet",
+      "slug": "alcremie-salted-cream-strawberry-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Ruby Swirl Strawberry Sweet",
+      "slug": "alcremie-ruby-swirl-strawberry-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Caramel Swirl Strawberry Sweet",
+      "slug": "alcremie-caramel-swirl-strawberry-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Rainbow Swirl Strawberry Sweet",
+      "slug": "alcremie-rainbow-swirl-strawberry-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Gigantamax Form",
+      "slug": "alcremie-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 869,
+      "forma": "Vanilla Cream Berry Sweet",
+      "slug": "alcremie-vanilla-cream-berry-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Ruby Cream Berry Sweet",
+      "slug": "alcremie-ruby-cream-berry-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Matcha Cream Berry Sweet",
+      "slug": "alcremie-matcha-cream-berry-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Mint Cream Berry Sweet",
+      "slug": "alcremie-mint-cream-berry-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Lemon Cream Berry Sweet",
+      "slug": "alcremie-lemon-cream-berry-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Salted Cream Berry Sweet",
+      "slug": "alcremie-salted-cream-berry-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Ruby Swirl Berry Sweet",
+      "slug": "alcremie-ruby-swirl-berry-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Caramel Swirl Berry Sweet",
+      "slug": "alcremie-caramel-swirl-berry-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Rainbow Swirl Berry Sweet",
+      "slug": "alcremie-rainbow-swirl-berry-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Vanilla Cream Love Sweet",
+      "slug": "alcremie-vanilla-cream-love-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Ruby Cream Love Sweet",
+      "slug": "alcremie-ruby-cream-love-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Matcha Cream Love Sweet",
+      "slug": "alcremie-matcha-cream-love-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Mint Cream Love Sweet",
+      "slug": "alcremie-mint-cream-love-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Lemon Cream Love Sweet",
+      "slug": "alcremie-lemon-cream-love-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Salted Cream Love Sweet",
+      "slug": "alcremie-salted-cream-love-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Ruby Swirl Love Sweet",
+      "slug": "alcremie-ruby-swirl-love-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Caramel Swirl Love Sweet",
+      "slug": "alcremie-caramel-swirl-love-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Rainbow Swirl Love Sweet",
+      "slug": "alcremie-rainbow-swirl-love-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Vanilla Cream Star Sweet",
+      "slug": "alcremie-vanilla-cream-star-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Ruby Cream Star Sweet",
+      "slug": "alcremie-ruby-cream-star-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Matcha Cream Star Sweet",
+      "slug": "alcremie-matcha-cream-star-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Mint Cream Star Sweet",
+      "slug": "alcremie-mint-cream-star-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Lemon Cream Star Sweet",
+      "slug": "alcremie-lemon-cream-star-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Salted Cream Star Sweet",
+      "slug": "alcremie-salted-cream-star-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Ruby Swirl Star Sweet",
+      "slug": "alcremie-ruby-swirl-star-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Caramel Swirl Star Sweet",
+      "slug": "alcremie-caramel-swirl-star-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Rainbow Swirl Star Sweet",
+      "slug": "alcremie-rainbow-swirl-star-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Vanilla Cream Clover Sweet",
+      "slug": "alcremie-vanilla-cream-clover-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Ruby Cream Clover Sweet",
+      "slug": "alcremie-ruby-cream-clover-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Matcha Cream Clover Sweet",
+      "slug": "alcremie-matcha-cream-clover-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Mint Cream Clover Sweet",
+      "slug": "alcremie-mint-cream-clover-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Lemon Cream Clover Sweet",
+      "slug": "alcremie-lemon-cream-clover-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Salted Cream Clover Sweet",
+      "slug": "alcremie-salted-cream-clover-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Ruby Swirl Clover Sweet",
+      "slug": "alcremie-ruby-swirl-clover-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Caramel Swirl Clover Sweet",
+      "slug": "alcremie-caramel-swirl-clover-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Rainbow Swirl Clover Sweet",
+      "slug": "alcremie-rainbow-swirl-clover-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Vanilla Cream Flower Sweet",
+      "slug": "alcremie-vanilla-cream-flower-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Ruby Cream Flower Sweet",
+      "slug": "alcremie-ruby-cream-flower-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Matcha Cream Flower Sweet",
+      "slug": "alcremie-matcha-cream-flower-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Mint Cream Flower Sweet",
+      "slug": "alcremie-mint-cream-flower-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Lemon Cream Flower Sweet",
+      "slug": "alcremie-lemon-cream-flower-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Salted Cream Flower Sweet",
+      "slug": "alcremie-salted-cream-flower-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Ruby Swirl Flower Sweet",
+      "slug": "alcremie-ruby-swirl-flower-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Caramel Swirl Flower Sweet",
+      "slug": "alcremie-caramel-swirl-flower-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Rainbow Swirl Flower Sweet",
+      "slug": "alcremie-rainbow-swirl-flower-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Vanilla Cream Ribbon Sweet",
+      "slug": "alcremie-vanilla-cream-ribbon-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Ruby Cream Ribbon Sweet",
+      "slug": "alcremie-ruby-cream-ribbon-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Matcha Cream Ribbon Sweet",
+      "slug": "alcremie-matcha-cream-ribbon-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Mint Cream Ribbon Sweet",
+      "slug": "alcremie-mint-cream-ribbon-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Lemon Cream Ribbon Sweet",
+      "slug": "alcremie-lemon-cream-ribbon-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Salted Cream Ribbon Sweet",
+      "slug": "alcremie-salted-cream-ribbon-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Ruby Swirl Ribbon Sweet",
+      "slug": "alcremie-ruby-swirl-ribbon-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Caramel Swirl Ribbon Sweet",
+      "slug": "alcremie-caramel-swirl-ribbon-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 869,
+      "forma": "Rainbow Swirl Ribbon Sweet",
+      "slug": "alcremie-rainbow-swirl-ribbon-sweet",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 875,
+      "forma": "Noice Face",
+      "slug": "eiscue-noice",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 876,
+      "forma": "Female",
+      "slug": "indeedee-female",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 877,
+      "forma": "Hangry Mode",
+      "slug": "morpeko-hangry",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 879,
+      "forma": "Gigantamax Form",
+      "slug": "copperajah-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 884,
+      "forma": "Gigantamax Form",
+      "slug": "duraludon-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 888,
+      "forma": "Crowned Sword",
+      "slug": "zacian-crowned",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 889,
+      "forma": "Crowned Shield",
+      "slug": "zamazenta-crowned",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 890,
+      "forma": "Eternamax",
+      "slug": "eternatus-eternamax",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria",
+      "medidas_da_forma_normal": [
+        "peso"
+      ]
+    },
+    {
+      "dex": 892,
+      "forma": "Rapid Strike Style",
+      "slug": "urshifu-rapid-strike",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 892,
+      "forma": "Gigantamax Form (Single Strike)",
+      "slug": "urshifu-single-strike-gmax",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 892,
+      "forma": "Gigantamax Form (Rapid Strike)",
+      "slug": "urshifu-rapid-strike-gmax",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "da forma Normal (jogos em que a forma existe)"
+    },
+    {
+      "dex": 893,
+      "forma": "Dada",
+      "slug": "zarude-dada",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 898,
+      "forma": "Ice Rider",
+      "slug": "calyrex-ice",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 898,
+      "forma": "Shadow Rider",
+      "slug": "calyrex-shadow",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos",
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 901,
+      "forma": "Bloodmoon",
+      "slug": "ursaluna-bloodmoon",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 902,
+      "forma": "Female",
+      "slug": "basculegion-female",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 905,
+      "forma": "Therian Forme",
+      "slug": "enamorus-therian",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 916,
+      "forma": "Female",
+      "slug": "oinkologne-female",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 925,
+      "forma": "Family of Three",
+      "slug": "maushold-family-of-three",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 931,
+      "forma": "Blue Plumage",
+      "slug": "squawkabilly-blue-plumage",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 931,
+      "forma": "Yellow Plumage",
+      "slug": "squawkabilly-yellow-plumage",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 931,
+      "forma": "White Plumage",
+      "slug": "squawkabilly-white-plumage",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 964,
+      "forma": "Hero Form",
+      "slug": "palafin-hero",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 978,
+      "forma": "Droopy Form",
+      "slug": "tatsugiri-droopy",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 978,
+      "forma": "Stretchy Form",
+      "slug": "tatsugiri-stretchy",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 982,
+      "forma": "Three-Segment Form",
+      "slug": "dudunsparce-three-segment",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "própria"
+    },
+    {
+      "dex": 999,
+      "forma": "Roaming Form",
+      "slug": "gimmighoul-roaming",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 1012,
+      "forma": "Artisan Form",
+      "slug": "poltchageist-artisan",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 1013,
+      "forma": "Masterpiece Form",
+      "slug": "sinistcha-masterpiece",
+      "tipo": "cosmética",
+      "difere_da_normal": [],
+      "learnset": "da forma Normal"
+    },
+    {
+      "dex": 1017,
+      "forma": "Wellspring Mask",
+      "slug": "ogerpon-wellspring-mask",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 1017,
+      "forma": "Hearthflame Mask",
+      "slug": "ogerpon-hearthflame-mask",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 1017,
+      "forma": "Cornerstone Mask",
+      "slug": "ogerpon-cornerstone-mask",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "tipos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 1024,
+      "forma": "Terastal Form",
+      "slug": "terapagos-terastal",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 1024,
+      "forma": "Stellar Form",
+      "slug": "terapagos-stellar",
+      "tipo": "batalha",
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    }
+  ],
+  "megas_za": [
+    {
+      "dex": 26,
+      "forma": "Mega Raichu X",
+      "slug": "raichu-mega-x",
+      "base": "Normal",
+      "pedra": "Raichunite X",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 26,
+      "forma": "Mega Raichu Y",
+      "slug": "raichu-mega-y",
+      "base": "Normal",
+      "pedra": "Raichunite Y",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 36,
+      "forma": "Mega Clefable",
+      "slug": "clefable-mega",
+      "base": "Normal",
+      "pedra": "Clefablite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 71,
+      "forma": "Mega Victreebel",
+      "slug": "victreebel-mega",
+      "base": "Normal",
+      "pedra": "Victreebelite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 121,
+      "forma": "Mega Starmie",
+      "slug": "starmie-mega",
+      "base": "Normal",
+      "pedra": "Starminite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 149,
+      "forma": "Mega Dragonite",
+      "slug": "dragonite-mega",
+      "base": "Normal",
+      "pedra": "Dragoninite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 154,
+      "forma": "Mega Meganium",
+      "slug": "meganium-mega",
+      "base": "Normal",
+      "pedra": "Meganiumite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 160,
+      "forma": "Mega Feraligatr",
+      "slug": "feraligatr-mega",
+      "base": "Normal",
+      "pedra": "Feraligite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 227,
+      "forma": "Mega Skarmory",
+      "slug": "skarmory-mega",
+      "base": "Normal",
+      "pedra": "Skarmorite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 358,
+      "forma": "Mega Chimecho",
+      "slug": "chimecho-mega",
+      "base": "Normal",
+      "pedra": "Chimechite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 359,
+      "forma": "Mega Absol Z",
+      "slug": "absol-mega-z",
+      "base": "Normal",
+      "pedra": "Absolite Z",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 398,
+      "forma": "Mega Staraptor",
+      "slug": "staraptor-mega",
+      "base": "Normal",
+      "pedra": "Staraptite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 445,
+      "forma": "Mega Garchomp Z",
+      "slug": "garchomp-mega-z",
+      "base": "Normal",
+      "pedra": "Garchompite Z",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 448,
+      "forma": "Mega Lucario Z",
+      "slug": "lucario-mega-z",
+      "base": "Normal",
+      "pedra": "Lucarionite Z",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 478,
+      "forma": "Mega Froslass",
+      "slug": "froslass-mega",
+      "base": "Normal",
+      "pedra": "Froslassite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 485,
+      "forma": "Mega Heatran",
+      "slug": "heatran-mega",
+      "base": "Normal",
+      "pedra": "Heatranite",
+      "learnset": "própria",
+      "habilidades": "herdadas da forma base (a PokéAPI ainda não informa)"
+    },
+    {
+      "dex": 491,
+      "forma": "Mega Darkrai",
+      "slug": "darkrai-mega",
+      "base": "Normal",
+      "pedra": "Darkranite",
+      "learnset": "própria",
+      "habilidades": "herdadas da forma base (a PokéAPI ainda não informa)"
+    },
+    {
+      "dex": 500,
+      "forma": "Mega Emboar",
+      "slug": "emboar-mega",
+      "base": "Normal",
+      "pedra": "Emboarite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 530,
+      "forma": "Mega Excadrill",
+      "slug": "excadrill-mega",
+      "base": "Normal",
+      "pedra": "Excadrite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 545,
+      "forma": "Mega Scolipede",
+      "slug": "scolipede-mega",
+      "base": "Normal",
+      "pedra": "Scolipite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 560,
+      "forma": "Mega Scrafty",
+      "slug": "scrafty-mega",
+      "base": "Normal",
+      "pedra": "Scraftinite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 604,
+      "forma": "Mega Eelektross",
+      "slug": "eelektross-mega",
+      "base": "Normal",
+      "pedra": "Eelektrossite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 609,
+      "forma": "Mega Chandelure",
+      "slug": "chandelure-mega",
+      "base": "Normal",
+      "pedra": "Chandelurite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 623,
+      "forma": "Mega Golurk",
+      "slug": "golurk-mega",
+      "base": "Normal",
+      "pedra": "Golurkite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 652,
+      "forma": "Mega Chesnaught",
+      "slug": "chesnaught-mega",
+      "base": "Normal",
+      "pedra": "Chesnaughtite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 655,
+      "forma": "Mega Delphox",
+      "slug": "delphox-mega",
+      "base": "Normal",
+      "pedra": "Delphoxite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 658,
+      "forma": "Mega Greninja",
+      "slug": "greninja-mega",
+      "base": "Normal",
+      "pedra": "Greninjite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 668,
+      "forma": "Mega Pyroar",
+      "slug": "pyroar-mega",
+      "base": "Normal",
+      "pedra": "Pyroarite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 670,
+      "forma": "Mega Floette",
+      "slug": "floette-mega",
+      "base": "Eternal Flower",
+      "pedra": "Floettite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 678,
+      "forma": "Mega Meowstic (Male)",
+      "slug": "meowstic-male-mega",
+      "base": "Normal",
+      "pedra": "Meowsticite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 678,
+      "forma": "Mega Meowstic (Female)",
+      "slug": "meowstic-female-mega",
+      "base": "Female",
+      "pedra": "Meowsticite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 687,
+      "forma": "Mega Malamar",
+      "slug": "malamar-mega",
+      "base": "Normal",
+      "pedra": "Malamarite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 689,
+      "forma": "Mega Barbaracle",
+      "slug": "barbaracle-mega",
+      "base": "Normal",
+      "pedra": "Barbaracite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 691,
+      "forma": "Mega Dragalge",
+      "slug": "dragalge-mega",
+      "base": "Normal",
+      "pedra": "Dragalgite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 701,
+      "forma": "Mega Hawlucha",
+      "slug": "hawlucha-mega",
+      "base": "Normal",
+      "pedra": "Hawluchanite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 740,
+      "forma": "Mega Crabominable",
+      "slug": "crabominable-mega",
+      "base": "Normal",
+      "pedra": "Crabominite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 768,
+      "forma": "Mega Golisopod",
+      "slug": "golisopod-mega",
+      "base": "Normal",
+      "pedra": "Golisopite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 780,
+      "forma": "Mega Drampa",
+      "slug": "drampa-mega",
+      "base": "Normal",
+      "pedra": "Drampanite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 801,
+      "forma": "Mega Magearna",
+      "slug": "magearna-mega",
+      "base": "Normal",
+      "pedra": "Magearnite",
+      "learnset": "própria",
+      "habilidades": "herdadas da forma base (a PokéAPI ainda não informa)"
+    },
+    {
+      "dex": 801,
+      "forma": "Mega Original Magearna",
+      "slug": "magearna-original-mega",
+      "base": "Original Color",
+      "pedra": "Magearnite",
+      "learnset": "própria",
+      "habilidades": "herdadas da forma base (a PokéAPI ainda não informa)"
+    },
+    {
+      "dex": 807,
+      "forma": "Mega Zeraora",
+      "slug": "zeraora-mega",
+      "base": "Normal",
+      "pedra": "Zeraorite",
+      "learnset": "própria",
+      "habilidades": "herdadas da forma base (a PokéAPI ainda não informa)"
+    },
+    {
+      "dex": 870,
+      "forma": "Mega Falinks",
+      "slug": "falinks-mega",
+      "base": "Normal",
+      "pedra": "Falinksite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 952,
+      "forma": "Mega Scovillain",
+      "slug": "scovillain-mega",
+      "base": "Normal",
+      "pedra": "Scovillainite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 970,
+      "forma": "Mega Glimmora",
+      "slug": "glimmora-mega",
+      "base": "Normal",
+      "pedra": "Glimmoranite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    },
+    {
+      "dex": 978,
+      "forma": "Mega Curly Tatsugiri",
+      "slug": "tatsugiri-curly-mega",
+      "base": "Normal",
+      "pedra": "Tatsugirinite",
+      "learnset": "própria",
+      "habilidades": "herdadas da forma base (a PokéAPI ainda não informa)"
+    },
+    {
+      "dex": 978,
+      "forma": "Mega Droopy Tatsugiri",
+      "slug": "tatsugiri-droopy-mega",
+      "base": "Droopy Form",
+      "pedra": "Tatsugirinite",
+      "learnset": "própria",
+      "habilidades": "herdadas da forma base (a PokéAPI ainda não informa)"
+    },
+    {
+      "dex": 978,
+      "forma": "Mega Stretchy Tatsugiri",
+      "slug": "tatsugiri-stretchy-mega",
+      "base": "Stretchy Form",
+      "pedra": "Tatsugirinite",
+      "learnset": "própria",
+      "habilidades": "herdadas da forma base (a PokéAPI ainda não informa)"
+    },
+    {
+      "dex": 998,
+      "forma": "Mega Baxcalibur",
+      "slug": "baxcalibur-mega",
+      "base": "Normal",
+      "pedra": "Baxcalibrite",
+      "learnset": "própria",
+      "habilidades": "próprias"
+    }
+  ],
+  "formas_ja_existentes_ignoradas": 143,
+  "formas_ignoradas": [
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-b",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-c",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-d",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-e",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-f",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-g",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-h",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-i",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-j",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-k",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-l",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-m",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-n",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-o",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-p",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-q",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-r",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-s",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-t",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-u",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-v",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-w",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-x",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-y",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-z",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-exclamation",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "unown",
+      "form": "unown-question",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "castform-sunny",
+      "form": "castform-sunny",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "castform-rainy",
+      "form": "castform-rainy",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "castform-snowy",
+      "form": "castform-snowy",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "deoxys-attack",
+      "form": "deoxys-attack",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "deoxys-defense",
+      "form": "deoxys-defense",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "deoxys-speed",
+      "form": "deoxys-speed",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "burmy",
+      "form": "burmy-sandy",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "burmy",
+      "form": "burmy-trash",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "wormadam-sandy",
+      "form": "wormadam-sandy",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "wormadam-trash",
+      "form": "wormadam-trash",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "cherrim",
+      "form": "cherrim-sunshine",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "shellos",
+      "form": "shellos-east",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "gastrodon",
+      "form": "gastrodon-east",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "arceus",
+      "form": "arceus-bug",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "arceus",
+      "form": "arceus-dark",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "arceus",
+      "form": "arceus-dragon",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "arceus",
+      "form": "arceus-electric",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "arceus",
+      "form": "arceus-fighting",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "arceus",
+      "form": "arceus-fire",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "arceus",
+      "form": "arceus-flying",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "arceus",
+      "form": "arceus-ghost",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "arceus",
+      "form": "arceus-grass",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "arceus",
+      "form": "arceus-ground",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "arceus",
+      "form": "arceus-ice",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "arceus",
+      "form": "arceus-poison",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "arceus",
+      "form": "arceus-psychic",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "arceus",
+      "form": "arceus-rock",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "arceus",
+      "form": "arceus-steel",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "arceus",
+      "form": "arceus-water",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": 493,
+      "pokemon": "arceus",
+      "form": "arceus-unknown",
+      "reason": "tipo fora do enum PokemonType do projeto (ex.: '???')"
+    },
+    {
+      "dex": null,
+      "pokemon": "rotom-heat",
+      "form": "rotom-heat",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "rotom-wash",
+      "form": "rotom-wash",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "rotom-frost",
+      "form": "rotom-frost",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "rotom-fan",
+      "form": "rotom-fan",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "rotom-mow",
+      "form": "rotom-mow",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "giratina-origin",
+      "form": "giratina-origin",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "shaymin-sky",
+      "form": "shaymin-sky",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "pichu",
+      "form": "pichu-spiky-eared",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "basculin-blue-striped",
+      "form": "basculin-blue-striped",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "darmanitan-zen",
+      "form": "darmanitan-zen",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "deerling",
+      "form": "deerling-summer",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "deerling",
+      "form": "deerling-autumn",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "deerling",
+      "form": "deerling-winter",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "sawsbuck",
+      "form": "sawsbuck-summer",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "sawsbuck",
+      "form": "sawsbuck-autumn",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "sawsbuck",
+      "form": "sawsbuck-winter",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "meloetta-pirouette",
+      "form": "meloetta-pirouette",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "genesect",
+      "form": "genesect-douse",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "genesect",
+      "form": "genesect-shock",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "genesect",
+      "form": "genesect-burn",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "genesect",
+      "form": "genesect-chill",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "tornadus-therian",
+      "form": "tornadus-therian",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "thundurus-therian",
+      "form": "thundurus-therian",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "landorus-therian",
+      "form": "landorus-therian",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "kyurem-black",
+      "form": "kyurem-black",
+      "reason": "já existe no projeto",
+      "origem": "kyurem-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "kyurem-white",
+      "form": "kyurem-white",
+      "reason": "já existe no projeto",
+      "origem": "kyurem-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "keldeo-resolute",
+      "form": "keldeo-resolute",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "arceus",
+      "form": "arceus-fairy",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "vivillon",
+      "form": "vivillon-icy-snow",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "vivillon",
+      "form": "vivillon-polar",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "vivillon",
+      "form": "vivillon-tundra",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "vivillon",
+      "form": "vivillon-continental",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "vivillon",
+      "form": "vivillon-garden",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "vivillon",
+      "form": "vivillon-elegant",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "vivillon",
+      "form": "vivillon-modern",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "vivillon",
+      "form": "vivillon-marine",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "vivillon",
+      "form": "vivillon-archipelago",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "vivillon",
+      "form": "vivillon-high-plains",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "vivillon",
+      "form": "vivillon-sandstorm",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "vivillon",
+      "form": "vivillon-river",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "vivillon",
+      "form": "vivillon-monsoon",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "vivillon",
+      "form": "vivillon-savanna",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "vivillon",
+      "form": "vivillon-sun",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "vivillon",
+      "form": "vivillon-ocean",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "vivillon",
+      "form": "vivillon-jungle",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "flabebe",
+      "form": "flabebe-yellow",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "flabebe",
+      "form": "flabebe-orange",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "flabebe",
+      "form": "flabebe-blue",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "flabebe",
+      "form": "flabebe-white",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "floette",
+      "form": "floette-yellow",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "floette",
+      "form": "floette-orange",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "floette",
+      "form": "floette-blue",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "floette",
+      "form": "floette-white",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "florges",
+      "form": "florges-yellow",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "florges",
+      "form": "florges-orange",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "florges",
+      "form": "florges-blue",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "florges",
+      "form": "florges-white",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "furfrou",
+      "form": "furfrou-heart",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "furfrou",
+      "form": "furfrou-star",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "furfrou",
+      "form": "furfrou-diamond",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "furfrou",
+      "form": "furfrou-debutante",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "furfrou",
+      "form": "furfrou-matron",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "furfrou",
+      "form": "furfrou-dandy",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "furfrou",
+      "form": "furfrou-la-reine",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "furfrou",
+      "form": "furfrou-kabuki",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "furfrou",
+      "form": "furfrou-pharaoh",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "meowstic-female",
+      "form": "meowstic-female",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "aegislash-blade",
+      "form": "aegislash-blade",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "pumpkaboo-small",
+      "form": "pumpkaboo-small",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "pumpkaboo-large",
+      "form": "pumpkaboo-large",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "pumpkaboo-super",
+      "form": "pumpkaboo-super",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "gourgeist-small",
+      "form": "gourgeist-small",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "gourgeist-large",
+      "form": "gourgeist-large",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "gourgeist-super",
+      "form": "gourgeist-super",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "venusaur-mega",
+      "form": "venusaur-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "charizard-mega-x",
+      "form": "charizard-mega-x",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "charizard-mega-y",
+      "form": "charizard-mega-y",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "blastoise-mega",
+      "form": "blastoise-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "alakazam-mega",
+      "form": "alakazam-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "gengar-mega",
+      "form": "gengar-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "kangaskhan-mega",
+      "form": "kangaskhan-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "pinsir-mega",
+      "form": "pinsir-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "gyarados-mega",
+      "form": "gyarados-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "aerodactyl-mega",
+      "form": "aerodactyl-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "mewtwo-mega-x",
+      "form": "mewtwo-mega-x",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "mewtwo-mega-y",
+      "form": "mewtwo-mega-y",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "ampharos-mega",
+      "form": "ampharos-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "scizor-mega",
+      "form": "scizor-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "heracross-mega",
+      "form": "heracross-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "houndoom-mega",
+      "form": "houndoom-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "tyranitar-mega",
+      "form": "tyranitar-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "blaziken-mega",
+      "form": "blaziken-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "gardevoir-mega",
+      "form": "gardevoir-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "mawile-mega",
+      "form": "mawile-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "aggron-mega",
+      "form": "aggron-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "medicham-mega",
+      "form": "medicham-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "manectric-mega",
+      "form": "manectric-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "banette-mega",
+      "form": "banette-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "absol-mega",
+      "form": "absol-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "garchomp-mega",
+      "form": "garchomp-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "lucario-mega",
+      "form": "lucario-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "abomasnow-mega",
+      "form": "abomasnow-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "vivillon",
+      "form": "vivillon-fancy",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "vivillon",
+      "form": "vivillon-poke-ball",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "floette-eternal",
+      "form": "floette-eternal",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "latias-mega",
+      "form": "latias-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "latios-mega",
+      "form": "latios-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "swampert-mega",
+      "form": "swampert-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "sceptile-mega",
+      "form": "sceptile-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "sableye-mega",
+      "form": "sableye-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "altaria-mega",
+      "form": "altaria-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "gallade-mega",
+      "form": "gallade-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "audino-mega",
+      "form": "audino-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "sharpedo-mega",
+      "form": "sharpedo-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "slowbro-mega",
+      "form": "slowbro-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "steelix-mega",
+      "form": "steelix-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "pidgeot-mega",
+      "form": "pidgeot-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "glalie-mega",
+      "form": "glalie-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "diancie-mega",
+      "form": "diancie-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "metagross-mega",
+      "form": "metagross-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "kyogre-primal",
+      "form": "kyogre-primal",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "groudon-primal",
+      "form": "groudon-primal",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "rayquaza-mega",
+      "form": "rayquaza-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "pikachu-rock-star",
+      "form": "pikachu-rock-star",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "pikachu-belle",
+      "form": "pikachu-belle",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "pikachu-pop-star",
+      "form": "pikachu-pop-star",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "pikachu-phd",
+      "form": "pikachu-phd",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "pikachu-libre",
+      "form": "pikachu-libre",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "pikachu-cosplay",
+      "form": "pikachu-cosplay",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "hoopa-unbound",
+      "form": "hoopa-unbound",
+      "reason": "já existe no projeto",
+      "origem": "generation-vi-forms-seed.json"
+    },
+    {
+      "dex": null,
+      "pokemon": "camerupt-mega",
+      "form": "camerupt-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "lopunny-mega",
+      "form": "lopunny-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "salamence-mega",
+      "form": "salamence-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": null,
+      "pokemon": "beedrill-mega",
+      "form": "beedrill-mega",
+      "reason": "Mega Evolução da Geração VI (já importada por importar_megas.py)"
+    },
+    {
+      "dex": 414,
+      "pokemon": "mothim",
+      "form": "mothim-sandy",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 414,
+      "pokemon": "mothim",
+      "form": "mothim-trash",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-polar",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-tundra",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-continental",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-garden",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-elegant",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-meadow",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-modern",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-marine",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-archipelago",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-high-plains",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-sandstorm",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-river",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-monsoon",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-savanna",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-sun",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-ocean",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-jungle",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-fancy",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 664,
+      "pokemon": "scatterbug",
+      "form": "scatterbug-poke-ball",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-polar",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-tundra",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-continental",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-garden",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-elegant",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-meadow",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-modern",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-marine",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-archipelago",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-high-plains",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-sandstorm",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-river",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-monsoon",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-savanna",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-sun",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-ocean",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-jungle",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-fancy",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 665,
+      "pokemon": "spewpa",
+      "form": "spewpa-poke-ball",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 555,
+      "pokemon": "darmanitan-galar-zen",
+      "form": "darmanitan-galar-zen",
+      "reason": "já existe no projeto",
+      "origem": "generation-i-v-forms-seed.json",
+      "criterio": "nome"
+    },
+    {
+      "dex": 1007,
+      "pokemon": "koraidon-limited-build",
+      "form": "koraidon-limited-build",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 1007,
+      "pokemon": "koraidon-sprinting-build",
+      "form": "koraidon-sprinting-build",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 1007,
+      "pokemon": "koraidon-swimming-build",
+      "form": "koraidon-swimming-build",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 1007,
+      "pokemon": "koraidon-gliding-build",
+      "form": "koraidon-gliding-build",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 1008,
+      "pokemon": "miraidon-low-power-mode",
+      "form": "miraidon-low-power-mode",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 1008,
+      "pokemon": "miraidon-drive-mode",
+      "form": "miraidon-drive-mode",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 1008,
+      "pokemon": "miraidon-aquatic-mode",
+      "form": "miraidon-aquatic-mode",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 1008,
+      "pokemon": "miraidon-glide-mode",
+      "form": "miraidon-glide-mode",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    },
+    {
+      "dex": 668,
+      "pokemon": "pyroar-male",
+      "form": "pyroar-female",
+      "reason": "variação apenas de gênero (o projeto modela isso em PokemonSprite.Gender, não como forma)"
+    },
+    {
+      "dex": 592,
+      "pokemon": "frillish-male",
+      "form": "frillish-female",
+      "reason": "variação apenas de gênero (o projeto modela isso em PokemonSprite.Gender, não como forma)"
+    },
+    {
+      "dex": 593,
+      "pokemon": "jellicent-male",
+      "form": "jellicent-female",
+      "reason": "variação apenas de gênero (o projeto modela isso em PokemonSprite.Gender, não como forma)"
+    },
+    {
+      "dex": null,
+      "pokemon": "zygarde-mega",
+      "form": "zygarde-mega",
+      "reason": "a PokéAPI não tem sprite próprio para esta forma"
+    }
+  ],
+  "bancos_consultados": [
+    "/home/jose/.wine-dotnet-10/drive_c/users/jose/AppData/Local/GestaoDePokemon/gestaopokemon.db"
+  ],
+  "entradas_de_learnset_ignoradas": {
+    "método 'stadium-surfing-pikachu'": 2,
+    "método 'light-ball-egg'": 8,
+    "método 'form-change'": 46
+  },
+  "evolucoes": {
+    "linhas_novas": 137,
+    "linhas_por_forma": 42,
+    "linhas_por_forma_em_relacoes_antigas": 28,
+    "linhas_por_forma_em_especies_novas": 14,
+    "linhas_por_forma_com_forma_de_origem": 30,
+    "linhas_por_forma_com_forma_de_destino": 29,
+    "formas_regionais_nao_resolvidas": [],
+    "linhas_por_forma_iguais_a_linhas_por_especie": [],
+    "detalhes_convertidos": 239,
+    "linhas_duplicadas_descartadas": 60,
+    "relacoes_antigas_que_faltavam": [],
+    "detalhes_sem_forma_de_relacoes_antigas_ignorados": [
+      {
+        "de": 64,
+        "para": 65,
+        "jogo": "legends-arceus",
+        "forma": null
+      },
+      {
+        "de": 67,
+        "para": 68,
+        "jogo": "legends-arceus",
+        "forma": null
+      },
+      {
+        "de": 75,
+        "para": 76,
+        "jogo": "legends-arceus",
+        "forma": null
+      },
+      {
+        "de": 82,
+        "para": 462,
+        "jogo": "sun-moon",
+        "forma": null
+      },
+      {
+        "de": 82,
+        "para": 462,
+        "jogo": "sun-moon",
+        "forma": null
+      },
+      {
+        "de": 82,
+        "para": 462,
+        "jogo": "sword-shield",
+        "forma": null
+      },
+      {
+        "de": 82,
+        "para": 462,
+        "jogo": "brilliant-diamond-shining-pearl",
+        "forma": null
+      },
+      {
+        "de": 82,
+        "para": 462,
+        "jogo": "brilliant-diamond-shining-pearl",
+        "forma": null
+      },
+      {
+        "de": 93,
+        "para": 94,
+        "jogo": "legends-arceus",
+        "forma": null
+      },
+      {
+        "de": 95,
+        "para": 208,
+        "jogo": "legends-arceus",
+        "forma": null
+      },
+      {
+        "de": 112,
+        "para": 464,
+        "jogo": "legends-arceus",
+        "forma": null
+      },
+      {
+        "de": 440,
+        "para": 113,
+        "jogo": "legends-arceus",
+        "forma": null
+      },
+      {
+        "de": 123,
+        "para": 212,
+        "jogo": "legends-arceus",
+        "forma": null
+      },
+      {
+        "de": 125,
+        "para": 466,
+        "jogo": "legends-arceus",
+        "forma": null
+      },
+      {
+        "de": 126,
+        "para": 467,
+        "jogo": "legends-arceus",
+        "forma": null
+      },
+      {
+        "de": 133,
+        "para": 470,
+        "jogo": "sword-shield",
+        "forma": "eevee"
+      },
+      {
+        "de": 133,
+        "para": 470,
+        "jogo": "sun-moon",
+        "forma": "eevee"
+      },
+      {
+        "de": 133,
+        "para": 470,
+        "jogo": "brilliant-diamond-shining-pearl",
+        "forma": "eevee"
+      },
+      {
+        "de": 133,
+        "para": 470,
+        "jogo": "brilliant-diamond-shining-pearl",
+        "forma": "eevee"
+      },
+      {
+        "de": 133,
+        "para": 471,
+        "jogo": "sword-shield",
+        "forma": "eevee"
+      },
+      {
+        "de": 133,
+        "para": 471,
+        "jogo": "sun-moon",
+        "forma": "eevee"
+      },
+      {
+        "de": 133,
+        "para": 471,
+        "jogo": "brilliant-diamond-shining-pearl",
+        "forma": "eevee"
+      },
+      {
+        "de": 133,
+        "para": 471,
+        "jogo": "brilliant-diamond-shining-pearl",
+        "forma": "eevee"
+      },
+      {
+        "de": 133,
+        "para": 700,
+        "jogo": "sword-shield",
+        "forma": "eevee"
+      },
+      {
+        "de": 137,
+        "para": 233,
+        "jogo": "legends-arceus",
+        "forma": null
+      },
+      {
+        "de": 233,
+        "para": 474,
+        "jogo": "legends-arceus",
+        "forma": null
+      },
+      {
+        "de": 155,
+        "para": 156,
+        "jogo": "legends-arceus",
+        "forma": null
+      },
+      {
+        "de": 207,
+        "para": 472,
+        "jogo": "legends-arceus",
+        "forma": null
+      },
+      {
+        "de": 215,
+        "para": 461,
+        "jogo": "legends-arceus",
+        "forma": "sneasel"
+      },
+      {
+        "de": 299,
+        "para": 476,
+        "jogo": "sun-moon",
+        "forma": null
+      },
+      {
+        "de": 299,
+        "para": 476,
+        "jogo": "sun-moon",
+        "forma": null
+      },
+      {
+        "de": 299,
+        "para": 476,
+        "jogo": "scarlet-violet",
+        "forma": null
+      },
+      {
+        "de": 299,
+        "para": 476,
+        "jogo": "brilliant-diamond-shining-pearl",
+        "forma": null
+      },
+      {
+        "de": 349,
+        "para": 350,
+        "jogo": "brilliant-diamond-shining-pearl",
+        "forma": null
+      },
+      {
+        "de": 349,
+        "para": 350,
+        "jogo": "brilliant-diamond-shining-pearl",
+        "forma": null
+      },
+      {
+        "de": 356,
+        "para": 477,
+        "jogo": "legends-arceus",
+        "forma": null
+      }
+    ],
+    "condicoes_perdidas": [
+      {
+        "de": 57,
+        "para": 979,
+        "jogo": "scarlet-violet",
+        "condicoes": [
+          "gatilho=use-move"
+        ]
+      },
+      {
+        "de": 83,
+        "para": 865,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "gatilho=three-critical-hits"
+        ]
+      },
+      {
+        "de": 206,
+        "para": 982,
+        "jogo": "scarlet-violet",
+        "condicoes": [
+          "condition_expression"
+        ]
+      },
+      {
+        "de": 206,
+        "para": 982,
+        "jogo": "scarlet-violet",
+        "condicoes": [
+          "condition_expression"
+        ]
+      },
+      {
+        "de": 211,
+        "para": 904,
+        "jogo": "legends-arceus",
+        "condicoes": [
+          "gatilho=strong-style-move"
+        ]
+      },
+      {
+        "de": 211,
+        "para": 904,
+        "jogo": "legends-za",
+        "condicoes": [
+          "gatilho=use-move"
+        ]
+      },
+      {
+        "de": 217,
+        "para": 901,
+        "jogo": "legends-arceus",
+        "condicoes": [
+          "time_of_day=full-moon"
+        ]
+      },
+      {
+        "de": 234,
+        "para": 899,
+        "jogo": "legends-arceus",
+        "condicoes": [
+          "gatilho=agile-style-move"
+        ]
+      },
+      {
+        "de": 550,
+        "para": 902,
+        "jogo": "legends-arceus",
+        "condicoes": [
+          "min_damage_taken",
+          "gatilho=recoil-damage"
+        ]
+      },
+      {
+        "de": 550,
+        "para": 902,
+        "jogo": "legends-arceus",
+        "condicoes": [
+          "min_damage_taken",
+          "gatilho=recoil-damage"
+        ]
+      },
+      {
+        "de": 562,
+        "para": 867,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "min_damage_taken",
+          "gatilho=take-damage"
+        ]
+      },
+      {
+        "de": 562,
+        "para": 867,
+        "jogo": "legends-za",
+        "condicoes": [
+          "min_damage_taken",
+          "gatilho=take-damage"
+        ]
+      },
+      {
+        "de": 625,
+        "para": 983,
+        "jogo": "scarlet-violet",
+        "condicoes": [
+          "gatilho=three-defeated-bisharp"
+        ]
+      },
+      {
+        "de": 808,
+        "para": 809,
+        "jogo": "lets-go-pikachu-lets-go-eevee",
+        "condicoes": [
+          "gatilho=meltan-candies"
+        ]
+      },
+      {
+        "de": 848,
+        "para": 849,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "allowed_natures"
+        ]
+      },
+      {
+        "de": 848,
+        "para": 849,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "allowed_natures"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "condicoes": [
+          "condition_expression",
+          "gatilho=spin"
+        ]
+      },
+      {
+        "de": 891,
+        "para": 892,
+        "jogo": "the-isle-of-armor",
+        "condicoes": [
+          "gatilho=tower-of-darkness"
+        ]
+      },
+      {
+        "de": 891,
+        "para": 892,
+        "jogo": "the-isle-of-armor",
+        "condicoes": [
+          "gatilho=tower-of-waters"
+        ]
+      },
+      {
+        "de": 924,
+        "para": 925,
+        "jogo": "scarlet-violet",
+        "condicoes": [
+          "condition_expression"
+        ]
+      },
+      {
+        "de": 924,
+        "para": 925,
+        "jogo": "scarlet-violet",
+        "condicoes": [
+          "condition_expression"
+        ]
+      },
+      {
+        "de": 963,
+        "para": 964,
+        "jogo": "scarlet-violet",
+        "condicoes": [
+          "needs_multiplayer"
+        ]
+      },
+      {
+        "de": 999,
+        "para": 1000,
+        "jogo": "scarlet-violet",
+        "condicoes": [
+          "gatilho=gimmighoul-coins"
+        ]
+      }
+    ],
+    "linhas_other": [
+      {
+        "de": 57,
+        "para": 979,
+        "jogo": "scarlet-violet",
+        "linha": {
+          "RequiredMoveId": 889,
+          "MinimumMoveCount": 20,
+          "GameVersion": "scarlet-violet"
+        }
+      },
+      {
+        "de": 83,
+        "para": 865,
+        "jogo": "sword-shield",
+        "linha": {
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 211,
+        "para": 904,
+        "jogo": "legends-arceus",
+        "linha": {
+          "RequiredMoveId": 839,
+          "MinimumMoveCount": 20,
+          "GameVersion": "legends-arceus"
+        }
+      },
+      {
+        "de": 211,
+        "para": 904,
+        "jogo": "legends-za",
+        "linha": {
+          "RequiredMoveId": 839,
+          "MinimumMoveCount": 20,
+          "GameVersion": "legends-za"
+        }
+      },
+      {
+        "de": 234,
+        "para": 899,
+        "jogo": "legends-arceus",
+        "linha": {
+          "RequiredMoveId": 828,
+          "MinimumMoveCount": 20,
+          "GameVersion": "legends-arceus"
+        }
+      },
+      {
+        "de": 550,
+        "para": 902,
+        "jogo": "legends-arceus",
+        "linha": {
+          "RequiredGender": "Male",
+          "GameVersion": "legends-arceus"
+        }
+      },
+      {
+        "de": 550,
+        "para": 902,
+        "jogo": "legends-arceus",
+        "linha": {
+          "RequiredGender": "Female",
+          "GameVersion": "legends-arceus"
+        }
+      },
+      {
+        "de": 562,
+        "para": 867,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredLocation": "dusty-bowl",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 562,
+        "para": 867,
+        "jogo": "legends-za",
+        "linha": {
+          "RequiredLocation": "lumiose-city",
+          "GameVersion": "legends-za"
+        }
+      },
+      {
+        "de": 625,
+        "para": 983,
+        "jogo": "scarlet-violet",
+        "linha": {
+          "GameVersion": "scarlet-violet"
+        }
+      },
+      {
+        "de": 808,
+        "para": 809,
+        "jogo": "lets-go-pikachu-lets-go-eevee",
+        "linha": {
+          "GameVersion": "lets-go-pikachu-lets-go-eevee"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "strawberry-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "strawberry-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "strawberry-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "strawberry-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "strawberry-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "strawberry-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "strawberry-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "strawberry-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "strawberry-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "berry-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "berry-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "berry-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "berry-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "berry-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "berry-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "berry-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "berry-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "berry-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "love-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "love-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "love-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "love-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "love-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "love-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "love-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "love-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "love-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "star-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "star-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "star-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "star-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "star-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "star-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "star-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "star-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "star-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "clover-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "clover-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "clover-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "clover-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "clover-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "clover-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "clover-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "clover-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "clover-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "flower-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "flower-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "flower-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "flower-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "flower-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "flower-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "flower-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "flower-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "flower-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "ribbon-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "ribbon-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "ribbon-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "ribbon-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "ribbon-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "ribbon-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "ribbon-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "ribbon-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "linha": {
+          "RequiredHeldItem": "ribbon-sweet",
+          "GameVersion": "sword-shield"
+        }
+      },
+      {
+        "de": 891,
+        "para": 892,
+        "jogo": "the-isle-of-armor",
+        "linha": {
+          "GameVersion": "the-isle-of-armor"
+        }
+      },
+      {
+        "de": 891,
+        "para": 892,
+        "jogo": "the-isle-of-armor",
+        "linha": {
+          "GameVersion": "the-isle-of-armor"
+        }
+      },
+      {
+        "de": 999,
+        "para": 1000,
+        "jogo": "scarlet-violet",
+        "linha": {
+          "GameVersion": "scarlet-violet"
+        }
+      }
+    ],
+    "observacoes_de_forma": [
+      {
+        "de": 206,
+        "para": 982,
+        "jogo": "scarlet-violet",
+        "observacoes": [
+          "evolved_pokemon_form=dudunsparce-two-segment"
+        ]
+      },
+      {
+        "de": 206,
+        "para": 982,
+        "jogo": "scarlet-violet",
+        "observacoes": [
+          "evolved_pokemon_form=dudunsparce-three-segment"
+        ]
+      },
+      {
+        "de": 550,
+        "para": 902,
+        "jogo": "legends-arceus",
+        "observacoes": [
+          "required_pokemon_form=basculin-white-striped",
+          "evolved_pokemon_form=basculegion-male"
+        ]
+      },
+      {
+        "de": 550,
+        "para": 902,
+        "jogo": "legends-arceus",
+        "observacoes": [
+          "required_pokemon_form=basculin-white-striped",
+          "evolved_pokemon_form=basculegion-female"
+        ]
+      },
+      {
+        "de": 744,
+        "para": 745,
+        "jogo": "sun-moon",
+        "observacoes": [
+          "required_pokemon_form=rockruff",
+          "evolved_pokemon_form=lycanroc-midday"
+        ]
+      },
+      {
+        "de": 744,
+        "para": 745,
+        "jogo": "sun-moon",
+        "observacoes": [
+          "required_pokemon_form=rockruff",
+          "evolved_pokemon_form=lycanroc-midnight"
+        ]
+      },
+      {
+        "de": 744,
+        "para": 745,
+        "jogo": "sun-moon",
+        "observacoes": [
+          "required_pokemon_form=rockruff-own-tempo",
+          "evolved_pokemon_form=lycanroc-dusk"
+        ]
+      },
+      {
+        "de": 848,
+        "para": 849,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=toxtricity-amped"
+        ]
+      },
+      {
+        "de": 848,
+        "para": 849,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=toxtricity-low-key"
+        ]
+      },
+      {
+        "de": 854,
+        "para": 855,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "required_pokemon_form=sinistea-phony",
+          "evolved_pokemon_form=polteageist-phony"
+        ]
+      },
+      {
+        "de": 854,
+        "para": 855,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "required_pokemon_form=sinistea-antique",
+          "evolved_pokemon_form=polteageist-antique"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-vanilla-cream-strawberry-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-ruby-cream-strawberry-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-matcha-cream-strawberry-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-mint-cream-strawberry-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-lemon-cream-strawberry-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-salted-cream-strawberry-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-ruby-swirl-strawberry-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-caramel-swirl-strawberry-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-rainbow-swirl-strawberry-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-vanilla-cream-berry-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-ruby-cream-berry-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-matcha-cream-berry-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-mint-cream-berry-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-lemon-cream-berry-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-salted-cream-berry-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-ruby-swirl-berry-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-caramel-swirl-berry-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-rainbow-swirl-berry-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-vanilla-cream-love-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-ruby-cream-love-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-matcha-cream-love-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-mint-cream-love-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-lemon-cream-love-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-salted-cream-love-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-ruby-swirl-love-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-caramel-swirl-love-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-rainbow-swirl-love-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-vanilla-cream-star-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-ruby-cream-star-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-matcha-cream-star-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-mint-cream-star-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-lemon-cream-star-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-salted-cream-star-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-ruby-swirl-star-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-caramel-swirl-star-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-rainbow-swirl-star-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-vanilla-cream-clover-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-ruby-cream-clover-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-matcha-cream-clover-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-mint-cream-clover-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-lemon-cream-clover-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-salted-cream-clover-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-ruby-swirl-clover-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-caramel-swirl-clover-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-rainbow-swirl-clover-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-vanilla-cream-flower-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-ruby-cream-flower-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-matcha-cream-flower-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-mint-cream-flower-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-lemon-cream-flower-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-salted-cream-flower-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-ruby-swirl-flower-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-caramel-swirl-flower-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-rainbow-swirl-flower-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-vanilla-cream-ribbon-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-ruby-cream-ribbon-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-matcha-cream-ribbon-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-mint-cream-ribbon-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-lemon-cream-ribbon-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-salted-cream-ribbon-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-ruby-swirl-ribbon-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-caramel-swirl-ribbon-sweet"
+        ]
+      },
+      {
+        "de": 868,
+        "para": 869,
+        "jogo": "sword-shield",
+        "observacoes": [
+          "evolved_pokemon_form=alcremie-rainbow-swirl-ribbon-sweet"
+        ]
+      },
+      {
+        "de": 891,
+        "para": 892,
+        "jogo": "the-isle-of-armor",
+        "observacoes": [
+          "evolved_pokemon_form=urshifu-single-strike"
+        ]
+      },
+      {
+        "de": 891,
+        "para": 892,
+        "jogo": "the-isle-of-armor",
+        "observacoes": [
+          "evolved_pokemon_form=urshifu-rapid-strike"
+        ]
+      },
+      {
+        "de": 891,
+        "para": 892,
+        "jogo": "scarlet-violet",
+        "observacoes": [
+          "evolved_pokemon_form=urshifu-single-strike"
+        ]
+      },
+      {
+        "de": 891,
+        "para": 892,
+        "jogo": "scarlet-violet",
+        "observacoes": [
+          "evolved_pokemon_form=urshifu-rapid-strike"
+        ]
+      },
+      {
+        "de": 915,
+        "para": 916,
+        "jogo": "scarlet-violet",
+        "observacoes": [
+          "evolved_pokemon_form=oinkologne-male"
+        ]
+      },
+      {
+        "de": 915,
+        "para": 916,
+        "jogo": "scarlet-violet",
+        "observacoes": [
+          "evolved_pokemon_form=oinkologne-female"
+        ]
+      },
+      {
+        "de": 924,
+        "para": 925,
+        "jogo": "scarlet-violet",
+        "observacoes": [
+          "evolved_pokemon_form=maushold-family-of-four"
+        ]
+      },
+      {
+        "de": 924,
+        "para": 925,
+        "jogo": "scarlet-violet",
+        "observacoes": [
+          "evolved_pokemon_form=maushold-family-of-three"
+        ]
+      },
+      {
+        "de": 1012,
+        "para": 1013,
+        "jogo": "the-teal-mask",
+        "observacoes": [
+          "required_pokemon_form=poltchageist-counterfeit",
+          "evolved_pokemon_form=sinistcha-unremarkable"
+        ]
+      },
+      {
+        "de": 1012,
+        "para": 1013,
+        "jogo": "the-teal-mask",
+        "observacoes": [
+          "required_pokemon_form=poltchageist-artisan",
+          "evolved_pokemon_form=sinistcha-masterpiece"
+        ]
+      }
+    ],
+    "detalhes_com_forma_regional": 42,
+    "linhas_com_forma_duplicadas_descartadas": 0
+  },
+  "sprites": {
+    "planejados": 2353,
+    "baixados": 0,
+    "trocados": 0,
+    "ja_existiam": 2328,
+    "falhas": [],
+    "fontes_dos_baixados": {}
+  },
+  "box_normal_de_galar_em_diante": {
+    "planejados": 438,
+    "em_pixel_do_pokesprite": 244,
+    "em_pixel_do_smogon": 194,
+    "so_da_pokeapi": 0,
+    "origem_nao_confirmada": 0,
+    "trocados_nesta_execucao": 0,
+    "so_da_pokeapi_lista": [],
+    "formas_que_usam_o_icone_da_especie": [
+      "#773 Type: Fighting",
+      "#773 Type: Flying",
+      "#773 Type: Poison",
+      "#773 Type: Ground",
+      "#773 Type: Rock",
+      "#773 Type: Bug",
+      "#773 Type: Ghost",
+      "#773 Type: Steel",
+      "#773 Type: Fire",
+      "#773 Type: Water",
+      "#773 Type: Grass",
+      "#773 Type: Electric",
+      "#773 Type: Psychic",
+      "#773 Type: Ice",
+      "#773 Type: Dragon",
+      "#773 Type: Dark",
+      "#773 Type: Fairy"
+    ]
+  },
+  "box_shiny": {
+    "especies_com_icone": 231,
+    "especies_sem_icone": 73,
+    "formas_com_icone": 275,
+    "formas_sem_icone": 34,
+    "sem_icone": {
+      "especies": [
+        "#906 Sprigatito",
+        "#907 Floragato",
+        "#909 Fuecoco",
+        "#910 Crocalor",
+        "#912 Quaxly",
+        "#913 Quaxwell",
+        "#915 Lechonk",
+        "#916 Oinkologne",
+        "#917 Tarountula",
+        "#918 Spidops",
+        "#919 Nymble",
+        "#920 Lokix",
+        "#921 Pawmi",
+        "#922 Pawmo",
+        "#924 Tandemaus",
+        "#928 Smoliv",
+        "#929 Dolliv",
+        "#938 Tadbulb",
+        "#940 Wattrel",
+        "#941 Kilowattrel",
+        "#946 Bramblin",
+        "#947 Brambleghast",
+        "#948 Toedscool",
+        "#949 Toedscruel",
+        "#950 Klawf",
+        "#953 Rellor",
+        "#954 Rabsca",
+        "#955 Flittle",
+        "#960 Wiglett",
+        "#961 Wugtrio",
+        "#962 Bombirdier",
+        "#963 Finizen",
+        "#965 Varoom",
+        "#966 Revavroom",
+        "#974 Cetoddle",
+        "#975 Cetitan",
+        "#976 Veluza",
+        "#980 Clodsire",
+        "#982 Dudunsparce",
+        "#984 Great Tusk",
+        "#985 Scream Tail",
+        "#986 Brute Bonnet",
+        "#987 Flutter Mane",
+        "#988 Slither Wing",
+        "#989 Sandy Shocks",
+        "#990 Iron Treads",
+        "#991 Iron Bundle",
+        "#992 Iron Hands",
+        "#993 Iron Jugulis",
+        "#994 Iron Moth",
+        "#995 Iron Thorns",
+        "#1001 Wo-Chien",
+        "#1002 Chien-Pao",
+        "#1003 Ting-Lu",
+        "#1004 Chi-Yu",
+        "#1005 Roaring Moon",
+        "#1006 Iron Valiant",
+        "#1007 Koraidon",
+        "#1008 Miraidon",
+        "#1009 Walking Wake",
+        "#1010 Iron Leaves",
+        "#1011 Dipplin",
+        "#1012 Poltchageist",
+        "#1014 Okidogi",
+        "#1015 Munkidori",
+        "#1016 Fezandipiti",
+        "#1017 Ogerpon",
+        "#1020 Gouging Fire",
+        "#1021 Raging Bolt",
+        "#1022 Iron Boulder",
+        "#1023 Iron Crown",
+        "#1024 Terapagos",
+        "#1025 Pecharunt"
+      ],
+      "formas": [
+        "#20 Totem Alolan Raticate",
+        "#105 Totem Alolan Marowak",
+        "#194 Paldean Form",
+        "#735 Totem Gumshoos",
+        "#738 Totem Vikavolt",
+        "#743 Totem Ribombee",
+        "#744 Own Tempo Rockruff",
+        "#752 Totem Araquanid",
+        "#754 Totem Lurantis",
+        "#758 Totem Salazzle",
+        "#774 Orange Meteor Form",
+        "#774 Yellow Meteor Form",
+        "#774 Green Meteor Form",
+        "#774 Blue Meteor Form",
+        "#774 Indigo Meteor Form",
+        "#774 Violet Meteor Form",
+        "#777 Totem Togedemaru",
+        "#778 Totem Disguised Mimikyu",
+        "#778 Totem Busted Mimikyu",
+        "#784 Totem Kommo-o",
+        "#842 Gigantamax Form",
+        "#854 Antique Form",
+        "#855 Antique Form",
+        "#892 Rapid Strike Style",
+        "#901 Bloodmoon",
+        "#916 Female",
+        "#982 Three-Segment Form",
+        "#1012 Artisan Form",
+        "#1013 Masterpiece Form",
+        "#1017 Wellspring Mask",
+        "#1017 Hearthflame Mask",
+        "#1017 Cornerstone Mask",
+        "#1024 Terastal Form",
+        "#1024 Stellar Form"
+      ]
+    }
+  }
+}

@@ -16,6 +16,18 @@ namespace GestaoDePokemon.model
 
         public Pokemon ToPokemon { get; set; } = null!;
 
+        // Formas de origem e de destino (opcionais). A relação acima é por espécie; estes campos restringem a
+        // linha a uma forma: só o Meowth de Galar evolui para Perrserker, e o Rattata de Alola para o Raticate
+        // de Alola. Para uma forma F, use as linhas com FromFormId == F.Id; se não houver nenhuma, use as
+        // linhas com FromFormId nulo (valem para a forma padrão e para formas sem linha própria).
+        public int? FromFormId { get; set; }
+
+        public PokemonForm? FromForm { get; set; }
+
+        public int? ToFormId { get; set; }
+
+        public PokemonForm? ToForm { get; set; }
+
         // Método de evolução
         public EvolutionMethod Method { get; set; }
 

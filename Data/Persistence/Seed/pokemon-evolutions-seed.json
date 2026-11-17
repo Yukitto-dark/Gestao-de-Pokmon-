@@ -9814,5 +9814,972 @@
     "Method": "LevelUp",
     "RequiredLevel": 48,
     "GameVersion": "x-y"
+  },
+  {
+    "FromNationalDexNumber": 57,
+    "ToNationalDexNumber": 979,
+    "Method": "Other",
+    "RequiredMoveId": 889,
+    "MinimumMoveCount": 20,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 123,
+    "ToNationalDexNumber": 900,
+    "Method": "UseItem",
+    "RequiredItem": "black-augurite",
+    "GameVersion": "legends-arceus"
+  },
+  {
+    "FromNationalDexNumber": 203,
+    "ToNationalDexNumber": 981,
+    "Method": "KnowMove",
+    "RequiredMoveId": 888,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 206,
+    "ToNationalDexNumber": 982,
+    "Method": "KnowMove",
+    "RequiredMoveId": 887,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 217,
+    "ToNationalDexNumber": 901,
+    "Method": "UseItem",
+    "RequiredItem": "peat-block",
+    "GameVersion": "legends-arceus"
+  },
+  {
+    "FromNationalDexNumber": 234,
+    "ToNationalDexNumber": 899,
+    "Method": "Other",
+    "RequiredMoveId": 828,
+    "MinimumMoveCount": 20,
+    "GameVersion": "legends-arceus"
+  },
+  {
+    "FromNationalDexNumber": 550,
+    "ToNationalDexNumber": 902,
+    "Method": "Other",
+    "RequiredGender": "Female",
+    "GameVersion": "legends-arceus"
+  },
+  {
+    "FromNationalDexNumber": 550,
+    "ToNationalDexNumber": 902,
+    "Method": "Other",
+    "RequiredGender": "Male",
+    "GameVersion": "legends-arceus"
+  },
+  {
+    "FromNationalDexNumber": 625,
+    "ToNationalDexNumber": 983,
+    "Method": "Other",
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 722,
+    "ToNationalDexNumber": 723,
+    "Method": "LevelUp",
+    "RequiredLevel": 17,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 723,
+    "ToNationalDexNumber": 724,
+    "Method": "LevelUp",
+    "RequiredLevel": 34,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 725,
+    "ToNationalDexNumber": 726,
+    "Method": "LevelUp",
+    "RequiredLevel": 17,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 726,
+    "ToNationalDexNumber": 727,
+    "Method": "LevelUp",
+    "RequiredLevel": 34,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 728,
+    "ToNationalDexNumber": 729,
+    "Method": "LevelUp",
+    "RequiredLevel": 17,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 729,
+    "ToNationalDexNumber": 730,
+    "Method": "LevelUp",
+    "RequiredLevel": 34,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 731,
+    "ToNationalDexNumber": 732,
+    "Method": "LevelUp",
+    "RequiredLevel": 14,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 732,
+    "ToNationalDexNumber": 733,
+    "Method": "LevelUp",
+    "RequiredLevel": 28,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 734,
+    "ToNationalDexNumber": 735,
+    "Method": "LevelUp",
+    "RequiredLevel": 20,
+    "RequiredTime": "Day",
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 736,
+    "ToNationalDexNumber": 737,
+    "Method": "LevelUp",
+    "RequiredLevel": 20,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 737,
+    "ToNationalDexNumber": 738,
+    "Method": "AtLocation",
+    "RequiredLocation": "blush-mountain",
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 737,
+    "ToNationalDexNumber": 738,
+    "Method": "AtLocation",
+    "RequiredLocation": "vast-poni-canyon",
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 737,
+    "ToNationalDexNumber": 738,
+    "Method": "UseItem",
+    "RequiredItem": "thunder-stone",
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 739,
+    "ToNationalDexNumber": 740,
+    "Method": "UseItem",
+    "RequiredItem": "ice-stone",
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 739,
+    "ToNationalDexNumber": 740,
+    "Method": "AtLocation",
+    "RequiredLocation": "mount-lanakila",
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 742,
+    "ToNationalDexNumber": 743,
+    "Method": "LevelUp",
+    "RequiredLevel": 25,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 744,
+    "ToNationalDexNumber": 745,
+    "Method": "LevelUp",
+    "RequiredLevel": 25,
+    "RequiredTime": "Day",
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 744,
+    "ToNationalDexNumber": 745,
+    "Method": "LevelUp",
+    "RequiredLevel": 25,
+    "RequiredTime": "Dusk",
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 744,
+    "ToNationalDexNumber": 745,
+    "Method": "LevelUp",
+    "RequiredLevel": 25,
+    "RequiredTime": "Night",
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 747,
+    "ToNationalDexNumber": 748,
+    "Method": "LevelUp",
+    "RequiredLevel": 38,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 749,
+    "ToNationalDexNumber": 750,
+    "Method": "LevelUp",
+    "RequiredLevel": 30,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 751,
+    "ToNationalDexNumber": 752,
+    "Method": "LevelUp",
+    "RequiredLevel": 22,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 753,
+    "ToNationalDexNumber": 754,
+    "Method": "LevelUp",
+    "RequiredLevel": 34,
+    "RequiredTime": "Day",
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 755,
+    "ToNationalDexNumber": 756,
+    "Method": "LevelUp",
+    "RequiredLevel": 24,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 757,
+    "ToNationalDexNumber": 758,
+    "Method": "LevelUp",
+    "RequiredLevel": 33,
+    "RequiredGender": "Female",
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 759,
+    "ToNationalDexNumber": 760,
+    "Method": "LevelUp",
+    "RequiredLevel": 27,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 761,
+    "ToNationalDexNumber": 762,
+    "Method": "LevelUp",
+    "RequiredLevel": 18,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 762,
+    "ToNationalDexNumber": 763,
+    "Method": "KnowMove",
+    "RequiredMoveId": 23,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 767,
+    "ToNationalDexNumber": 768,
+    "Method": "LevelUp",
+    "RequiredLevel": 30,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 769,
+    "ToNationalDexNumber": 770,
+    "Method": "LevelUp",
+    "RequiredLevel": 42,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 772,
+    "ToNationalDexNumber": 773,
+    "Method": "Friendship",
+    "MinimumFriendship": 160,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 782,
+    "ToNationalDexNumber": 783,
+    "Method": "LevelUp",
+    "RequiredLevel": 35,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 783,
+    "ToNationalDexNumber": 784,
+    "Method": "LevelUp",
+    "RequiredLevel": 45,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 789,
+    "ToNationalDexNumber": 790,
+    "Method": "LevelUp",
+    "RequiredLevel": 43,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 790,
+    "ToNationalDexNumber": 791,
+    "Method": "LevelUp",
+    "RequiredLevel": 53,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 790,
+    "ToNationalDexNumber": 792,
+    "Method": "LevelUp",
+    "RequiredLevel": 53,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 803,
+    "ToNationalDexNumber": 804,
+    "Method": "KnowMove",
+    "RequiredMoveId": 406,
+    "GameVersion": "ultra-sun-ultra-moon"
+  },
+  {
+    "FromNationalDexNumber": 808,
+    "ToNationalDexNumber": 809,
+    "Method": "Other",
+    "GameVersion": "lets-go-pikachu-lets-go-eevee"
+  },
+  {
+    "FromNationalDexNumber": 810,
+    "ToNationalDexNumber": 811,
+    "Method": "LevelUp",
+    "RequiredLevel": 16,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 811,
+    "ToNationalDexNumber": 812,
+    "Method": "LevelUp",
+    "RequiredLevel": 35,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 813,
+    "ToNationalDexNumber": 814,
+    "Method": "LevelUp",
+    "RequiredLevel": 16,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 814,
+    "ToNationalDexNumber": 815,
+    "Method": "LevelUp",
+    "RequiredLevel": 35,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 816,
+    "ToNationalDexNumber": 817,
+    "Method": "LevelUp",
+    "RequiredLevel": 16,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 817,
+    "ToNationalDexNumber": 818,
+    "Method": "LevelUp",
+    "RequiredLevel": 35,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 819,
+    "ToNationalDexNumber": 820,
+    "Method": "LevelUp",
+    "RequiredLevel": 24,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 821,
+    "ToNationalDexNumber": 822,
+    "Method": "LevelUp",
+    "RequiredLevel": 18,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 822,
+    "ToNationalDexNumber": 823,
+    "Method": "LevelUp",
+    "RequiredLevel": 38,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 824,
+    "ToNationalDexNumber": 825,
+    "Method": "LevelUp",
+    "RequiredLevel": 10,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 825,
+    "ToNationalDexNumber": 826,
+    "Method": "LevelUp",
+    "RequiredLevel": 30,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 827,
+    "ToNationalDexNumber": 828,
+    "Method": "LevelUp",
+    "RequiredLevel": 18,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 829,
+    "ToNationalDexNumber": 830,
+    "Method": "LevelUp",
+    "RequiredLevel": 20,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 831,
+    "ToNationalDexNumber": 832,
+    "Method": "LevelUp",
+    "RequiredLevel": 24,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 833,
+    "ToNationalDexNumber": 834,
+    "Method": "LevelUp",
+    "RequiredLevel": 22,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 835,
+    "ToNationalDexNumber": 836,
+    "Method": "LevelUp",
+    "RequiredLevel": 25,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 837,
+    "ToNationalDexNumber": 838,
+    "Method": "LevelUp",
+    "RequiredLevel": 18,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 838,
+    "ToNationalDexNumber": 839,
+    "Method": "LevelUp",
+    "RequiredLevel": 34,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 840,
+    "ToNationalDexNumber": 841,
+    "Method": "UseItem",
+    "RequiredItem": "tart-apple",
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 840,
+    "ToNationalDexNumber": 842,
+    "Method": "UseItem",
+    "RequiredItem": "sweet-apple",
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 840,
+    "ToNationalDexNumber": 1011,
+    "Method": "UseItem",
+    "RequiredItem": "syrupy-apple",
+    "GameVersion": "the-teal-mask"
+  },
+  {
+    "FromNationalDexNumber": 843,
+    "ToNationalDexNumber": 844,
+    "Method": "LevelUp",
+    "RequiredLevel": 36,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 846,
+    "ToNationalDexNumber": 847,
+    "Method": "LevelUp",
+    "RequiredLevel": 26,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 848,
+    "ToNationalDexNumber": 849,
+    "Method": "LevelUp",
+    "RequiredLevel": 30,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 850,
+    "ToNationalDexNumber": 851,
+    "Method": "LevelUp",
+    "RequiredLevel": 28,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 852,
+    "ToNationalDexNumber": 853,
+    "Method": "KnowMove",
+    "RequiredMoveId": 269,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 854,
+    "ToNationalDexNumber": 855,
+    "Method": "UseItem",
+    "RequiredItem": "chipped-pot",
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 854,
+    "ToNationalDexNumber": 855,
+    "Method": "UseItem",
+    "RequiredItem": "cracked-pot",
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 856,
+    "ToNationalDexNumber": 857,
+    "Method": "LevelUp",
+    "RequiredLevel": 32,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 857,
+    "ToNationalDexNumber": 858,
+    "Method": "LevelUp",
+    "RequiredLevel": 42,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 859,
+    "ToNationalDexNumber": 860,
+    "Method": "LevelUp",
+    "RequiredLevel": 32,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 860,
+    "ToNationalDexNumber": 861,
+    "Method": "LevelUp",
+    "RequiredLevel": 42,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 868,
+    "ToNationalDexNumber": 869,
+    "Method": "Other",
+    "RequiredHeldItem": "berry-sweet",
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 868,
+    "ToNationalDexNumber": 869,
+    "Method": "Other",
+    "RequiredHeldItem": "clover-sweet",
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 868,
+    "ToNationalDexNumber": 869,
+    "Method": "Other",
+    "RequiredHeldItem": "flower-sweet",
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 868,
+    "ToNationalDexNumber": 869,
+    "Method": "Other",
+    "RequiredHeldItem": "love-sweet",
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 868,
+    "ToNationalDexNumber": 869,
+    "Method": "Other",
+    "RequiredHeldItem": "ribbon-sweet",
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 868,
+    "ToNationalDexNumber": 869,
+    "Method": "Other",
+    "RequiredHeldItem": "star-sweet",
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 868,
+    "ToNationalDexNumber": 869,
+    "Method": "Other",
+    "RequiredHeldItem": "strawberry-sweet",
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 872,
+    "ToNationalDexNumber": 873,
+    "Method": "Friendship",
+    "RequiredTime": "Night",
+    "MinimumFriendship": 160,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 878,
+    "ToNationalDexNumber": 879,
+    "Method": "LevelUp",
+    "RequiredLevel": 34,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 884,
+    "ToNationalDexNumber": 1018,
+    "Method": "UseItem",
+    "RequiredItem": "metal-alloy",
+    "GameVersion": "the-indigo-disk"
+  },
+  {
+    "FromNationalDexNumber": 885,
+    "ToNationalDexNumber": 886,
+    "Method": "LevelUp",
+    "RequiredLevel": 50,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 886,
+    "ToNationalDexNumber": 887,
+    "Method": "LevelUp",
+    "RequiredLevel": 60,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 891,
+    "ToNationalDexNumber": 892,
+    "Method": "UseItem",
+    "RequiredItem": "scroll-of-darkness",
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 891,
+    "ToNationalDexNumber": 892,
+    "Method": "UseItem",
+    "RequiredItem": "scroll-of-waters",
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 891,
+    "ToNationalDexNumber": 892,
+    "Method": "Other",
+    "GameVersion": "the-isle-of-armor"
+  },
+  {
+    "FromNationalDexNumber": 906,
+    "ToNationalDexNumber": 907,
+    "Method": "LevelUp",
+    "RequiredLevel": 16,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 907,
+    "ToNationalDexNumber": 908,
+    "Method": "LevelUp",
+    "RequiredLevel": 36,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 909,
+    "ToNationalDexNumber": 910,
+    "Method": "LevelUp",
+    "RequiredLevel": 16,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 910,
+    "ToNationalDexNumber": 911,
+    "Method": "LevelUp",
+    "RequiredLevel": 36,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 912,
+    "ToNationalDexNumber": 913,
+    "Method": "LevelUp",
+    "RequiredLevel": 16,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 913,
+    "ToNationalDexNumber": 914,
+    "Method": "LevelUp",
+    "RequiredLevel": 36,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 915,
+    "ToNationalDexNumber": 916,
+    "Method": "LevelUp",
+    "RequiredLevel": 18,
+    "RequiredGender": "Female",
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 915,
+    "ToNationalDexNumber": 916,
+    "Method": "LevelUp",
+    "RequiredLevel": 18,
+    "RequiredGender": "Male",
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 917,
+    "ToNationalDexNumber": 918,
+    "Method": "LevelUp",
+    "RequiredLevel": 15,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 919,
+    "ToNationalDexNumber": 920,
+    "Method": "LevelUp",
+    "RequiredLevel": 24,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 921,
+    "ToNationalDexNumber": 922,
+    "Method": "LevelUp",
+    "RequiredLevel": 18,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 922,
+    "ToNationalDexNumber": 923,
+    "Method": "LevelUp",
+    "MinimumSteps": 1000,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 924,
+    "ToNationalDexNumber": 925,
+    "Method": "LevelUp",
+    "RequiredLevel": 25,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 926,
+    "ToNationalDexNumber": 927,
+    "Method": "LevelUp",
+    "RequiredLevel": 26,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 928,
+    "ToNationalDexNumber": 929,
+    "Method": "LevelUp",
+    "RequiredLevel": 25,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 929,
+    "ToNationalDexNumber": 930,
+    "Method": "LevelUp",
+    "RequiredLevel": 35,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 932,
+    "ToNationalDexNumber": 933,
+    "Method": "LevelUp",
+    "RequiredLevel": 24,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 933,
+    "ToNationalDexNumber": 934,
+    "Method": "LevelUp",
+    "RequiredLevel": 38,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 935,
+    "ToNationalDexNumber": 936,
+    "Method": "UseItem",
+    "RequiredItem": "auspicious-armor",
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 935,
+    "ToNationalDexNumber": 937,
+    "Method": "UseItem",
+    "RequiredItem": "malicious-armor",
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 938,
+    "ToNationalDexNumber": 939,
+    "Method": "UseItem",
+    "RequiredItem": "thunder-stone",
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 940,
+    "ToNationalDexNumber": 941,
+    "Method": "LevelUp",
+    "RequiredLevel": 25,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 942,
+    "ToNationalDexNumber": 943,
+    "Method": "LevelUp",
+    "RequiredLevel": 30,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 944,
+    "ToNationalDexNumber": 945,
+    "Method": "LevelUp",
+    "RequiredLevel": 28,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 946,
+    "ToNationalDexNumber": 947,
+    "Method": "LevelUp",
+    "MinimumSteps": 1000,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 948,
+    "ToNationalDexNumber": 949,
+    "Method": "LevelUp",
+    "RequiredLevel": 30,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 951,
+    "ToNationalDexNumber": 952,
+    "Method": "UseItem",
+    "RequiredItem": "fire-stone",
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 953,
+    "ToNationalDexNumber": 954,
+    "Method": "LevelUp",
+    "MinimumSteps": 1000,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 955,
+    "ToNationalDexNumber": 956,
+    "Method": "LevelUp",
+    "RequiredLevel": 35,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 957,
+    "ToNationalDexNumber": 958,
+    "Method": "LevelUp",
+    "RequiredLevel": 24,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 958,
+    "ToNationalDexNumber": 959,
+    "Method": "LevelUp",
+    "RequiredLevel": 38,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 960,
+    "ToNationalDexNumber": 961,
+    "Method": "LevelUp",
+    "RequiredLevel": 26,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 963,
+    "ToNationalDexNumber": 964,
+    "Method": "LevelUp",
+    "RequiredLevel": 38,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 965,
+    "ToNationalDexNumber": 966,
+    "Method": "LevelUp",
+    "RequiredLevel": 40,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 969,
+    "ToNationalDexNumber": 970,
+    "Method": "LevelUp",
+    "RequiredLevel": 35,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 971,
+    "ToNationalDexNumber": 972,
+    "Method": "LevelUp",
+    "RequiredLevel": 30,
+    "RequiredTime": "Night",
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 974,
+    "ToNationalDexNumber": 975,
+    "Method": "UseItem",
+    "RequiredItem": "ice-stone",
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 996,
+    "ToNationalDexNumber": 997,
+    "Method": "LevelUp",
+    "RequiredLevel": 35,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 997,
+    "ToNationalDexNumber": 998,
+    "Method": "LevelUp",
+    "RequiredLevel": 54,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 999,
+    "ToNationalDexNumber": 1000,
+    "Method": "Other",
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 1011,
+    "ToNationalDexNumber": 1019,
+    "Method": "KnowMove",
+    "RequiredMoveId": 913,
+    "GameVersion": "the-indigo-disk"
+  },
+  {
+    "FromNationalDexNumber": 1012,
+    "ToNationalDexNumber": 1013,
+    "Method": "UseItem",
+    "RequiredItem": "masterpiece-teacup",
+    "GameVersion": "the-teal-mask"
+  },
+  {
+    "FromNationalDexNumber": 1012,
+    "ToNationalDexNumber": 1013,
+    "Method": "UseItem",
+    "RequiredItem": "unremarkable-teacup",
+    "GameVersion": "the-teal-mask"
   }
 ]

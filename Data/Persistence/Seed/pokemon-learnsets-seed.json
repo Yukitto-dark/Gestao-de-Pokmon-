@@ -1302952,6 +1302952,13 @@
     "GameVersion": "black-white"
   },
   {
+    "NationalDexNumber": 384,
+    "MoveId": 620,
+    "Method": "Tutor",
+    "Level": null,
+    "GameVersion": "omega-ruby-alpha-sapphire"
+  },
+  {
     "NationalDexNumber": 385,
     "MoveId": 7,
     "Method": "Tutor",

@@ -1,0 +1,361 @@
+[
+  {
+    "FromNationalDexNumber": 19,
+    "FromFormName": "Alolan Form",
+    "ToNationalDexNumber": 20,
+    "ToFormName": "Alolan Form",
+    "Method": "LevelUp",
+    "RequiredLevel": 20,
+    "RequiredTime": "Night",
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 25,
+    "ToNationalDexNumber": 26,
+    "ToFormName": "Alolan Form",
+    "Method": "UseItem",
+    "RequiredItem": "thunder-stone",
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 27,
+    "FromFormName": "Alolan Form",
+    "ToNationalDexNumber": 28,
+    "ToFormName": "Alolan Form",
+    "Method": "UseItem",
+    "RequiredItem": "ice-stone",
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 37,
+    "FromFormName": "Alolan Form",
+    "ToNationalDexNumber": 38,
+    "ToFormName": "Alolan Form",
+    "Method": "UseItem",
+    "RequiredItem": "ice-stone",
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 50,
+    "FromFormName": "Alolan Form",
+    "ToNationalDexNumber": 51,
+    "ToFormName": "Alolan Form",
+    "Method": "LevelUp",
+    "RequiredLevel": 26,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 52,
+    "FromFormName": "Alolan Form",
+    "ToNationalDexNumber": 53,
+    "ToFormName": "Alolan Form",
+    "Method": "Friendship",
+    "MinimumFriendship": 160,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 52,
+    "FromFormName": "Galarian Form",
+    "ToNationalDexNumber": 863,
+    "Method": "LevelUp",
+    "RequiredLevel": 28,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 58,
+    "FromFormName": "Hisuian Form",
+    "ToNationalDexNumber": 59,
+    "ToFormName": "Hisuian Form",
+    "Method": "UseItem",
+    "RequiredItem": "fire-stone",
+    "GameVersion": "legends-arceus"
+  },
+  {
+    "FromNationalDexNumber": 74,
+    "FromFormName": "Alolan Form",
+    "ToNationalDexNumber": 75,
+    "ToFormName": "Alolan Form",
+    "Method": "LevelUp",
+    "RequiredLevel": 25,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 75,
+    "FromFormName": "Alolan Form",
+    "ToNationalDexNumber": 76,
+    "ToFormName": "Alolan Form",
+    "Method": "Trade",
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 77,
+    "FromFormName": "Galarian Form",
+    "ToNationalDexNumber": 78,
+    "ToFormName": "Galarian Form",
+    "Method": "LevelUp",
+    "RequiredLevel": 40,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 79,
+    "FromFormName": "Galarian Form",
+    "ToNationalDexNumber": 80,
+    "ToFormName": "Galarian Form",
+    "Method": "UseItem",
+    "RequiredItem": "galarica-cuff",
+    "GameVersion": "the-isle-of-armor"
+  },
+  {
+    "FromNationalDexNumber": 79,
+    "FromFormName": "Galarian Form",
+    "ToNationalDexNumber": 199,
+    "ToFormName": "Galarian Form",
+    "Method": "UseItem",
+    "RequiredItem": "galarica-wreath",
+    "GameVersion": "the-isle-of-armor"
+  },
+  {
+    "FromNationalDexNumber": 83,
+    "FromFormName": "Galarian Form",
+    "ToNationalDexNumber": 865,
+    "Method": "Other",
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 88,
+    "FromFormName": "Alolan Form",
+    "ToNationalDexNumber": 89,
+    "ToFormName": "Alolan Form",
+    "Method": "LevelUp",
+    "RequiredLevel": 38,
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 100,
+    "FromFormName": "Hisuian Form",
+    "ToNationalDexNumber": 101,
+    "ToFormName": "Hisuian Form",
+    "Method": "UseItem",
+    "RequiredItem": "leaf-stone",
+    "GameVersion": "legends-arceus"
+  },
+  {
+    "FromNationalDexNumber": 102,
+    "ToNationalDexNumber": 103,
+    "ToFormName": "Alolan Form",
+    "Method": "UseItem",
+    "RequiredItem": "leaf-stone",
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 104,
+    "ToNationalDexNumber": 105,
+    "ToFormName": "Alolan Form",
+    "Method": "LevelUp",
+    "RequiredLevel": 28,
+    "RequiredTime": "Night",
+    "GameVersion": "sun-moon"
+  },
+  {
+    "FromNationalDexNumber": 109,
+    "ToNationalDexNumber": 110,
+    "ToFormName": "Galarian Form",
+    "Method": "LevelUp",
+    "RequiredLevel": 35,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 122,
+    "FromFormName": "Galarian Form",
+    "ToNationalDexNumber": 866,
+    "Method": "LevelUp",
+    "RequiredLevel": 42,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 156,
+    "ToNationalDexNumber": 157,
+    "ToFormName": "Hisuian Form",
+    "Method": "LevelUp",
+    "RequiredLevel": 36,
+    "GameVersion": "legends-arceus"
+  },
+  {
+    "FromNationalDexNumber": 194,
+    "FromFormName": "Paldean Form",
+    "ToNationalDexNumber": 980,
+    "Method": "LevelUp",
+    "RequiredLevel": 20,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 211,
+    "FromFormName": "Hisuian Form",
+    "ToNationalDexNumber": 904,
+    "Method": "Other",
+    "RequiredMoveId": 839,
+    "MinimumMoveCount": 20,
+    "GameVersion": "legends-arceus"
+  },
+  {
+    "FromNationalDexNumber": 211,
+    "FromFormName": "Hisuian Form",
+    "ToNationalDexNumber": 904,
+    "Method": "Other",
+    "RequiredMoveId": 839,
+    "MinimumMoveCount": 20,
+    "GameVersion": "legends-za"
+  },
+  {
+    "FromNationalDexNumber": 211,
+    "FromFormName": "Hisuian Form",
+    "ToNationalDexNumber": 904,
+    "Method": "KnowMove",
+    "RequiredMoveId": 839,
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 215,
+    "FromFormName": "Hisuian Form",
+    "ToNationalDexNumber": 903,
+    "Method": "UseItem",
+    "RequiredItem": "razor-claw",
+    "RequiredTime": "Day",
+    "GameVersion": "legends-arceus"
+  },
+  {
+    "FromNationalDexNumber": 215,
+    "FromFormName": "Hisuian Form",
+    "ToNationalDexNumber": 903,
+    "Method": "LevelUp",
+    "RequiredHeldItem": "razor-claw",
+    "RequiredTime": "Day",
+    "GameVersion": "scarlet-violet"
+  },
+  {
+    "FromNationalDexNumber": 222,
+    "FromFormName": "Galarian Form",
+    "ToNationalDexNumber": 864,
+    "Method": "LevelUp",
+    "RequiredLevel": 38,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 263,
+    "FromFormName": "Galarian Form",
+    "ToNationalDexNumber": 264,
+    "ToFormName": "Galarian Form",
+    "Method": "LevelUp",
+    "RequiredLevel": 20,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 264,
+    "FromFormName": "Galarian Form",
+    "ToNationalDexNumber": 862,
+    "Method": "LevelUp",
+    "RequiredLevel": 35,
+    "RequiredTime": "Night",
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 439,
+    "ToNationalDexNumber": 122,
+    "ToFormName": "Galarian Form",
+    "Method": "KnowMove",
+    "RequiredMoveId": 102,
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 502,
+    "ToNationalDexNumber": 503,
+    "ToFormName": "Hisuian Form",
+    "Method": "LevelUp",
+    "RequiredLevel": 36,
+    "GameVersion": "legends-arceus"
+  },
+  {
+    "FromNationalDexNumber": 548,
+    "ToNationalDexNumber": 549,
+    "ToFormName": "Hisuian Form",
+    "Method": "UseItem",
+    "RequiredItem": "sun-stone",
+    "GameVersion": "legends-arceus"
+  },
+  {
+    "FromNationalDexNumber": 554,
+    "FromFormName": "Galarian Form",
+    "ToNationalDexNumber": 555,
+    "ToFormName": "Galarian Form",
+    "Method": "UseItem",
+    "RequiredItem": "ice-stone",
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 562,
+    "FromFormName": "Galarian Form",
+    "ToNationalDexNumber": 867,
+    "Method": "Other",
+    "RequiredLocation": "lumiose-city",
+    "GameVersion": "legends-za"
+  },
+  {
+    "FromNationalDexNumber": 562,
+    "FromFormName": "Galarian Form",
+    "ToNationalDexNumber": 867,
+    "Method": "Other",
+    "RequiredLocation": "dusty-bowl",
+    "GameVersion": "sword-shield"
+  },
+  {
+    "FromNationalDexNumber": 570,
+    "FromFormName": "Hisuian Form",
+    "ToNationalDexNumber": 571,
+    "ToFormName": "Hisuian Form",
+    "Method": "LevelUp",
+    "RequiredLevel": 30,
+    "GameVersion": "legends-arceus"
+  },
+  {
+    "FromNationalDexNumber": 627,
+    "ToNationalDexNumber": 628,
+    "ToFormName": "Hisuian Form",
+    "Method": "LevelUp",
+    "RequiredLevel": 54,
+    "GameVersion": "legends-arceus"
+  },
+  {
+    "FromNationalDexNumber": 704,
+    "ToNationalDexNumber": 705,
+    "ToFormName": "Hisuian Form",
+    "Method": "LevelUp",
+    "RequiredLevel": 40,
+    "GameVersion": "legends-arceus"
+  },
+  {
+    "FromNationalDexNumber": 705,
+    "FromFormName": "Hisuian Form",
+    "ToNationalDexNumber": 706,
+    "ToFormName": "Hisuian Form",
+    "Method": "LevelUp",
+    "RequiredLevel": 50,
+    "NeedsOverworldRain": true,
+    "GameVersion": "legends-arceus"
+  },
+  {
+    "FromNationalDexNumber": 712,
+    "ToNationalDexNumber": 713,
+    "ToFormName": "Hisuian Form",
+    "Method": "LevelUp",
+    "RequiredLevel": 37,
+    "GameVersion": "legends-arceus"
+  },
+  {
+    "FromNationalDexNumber": 723,
+    "ToNationalDexNumber": 724,
+    "ToFormName": "Hisuian Form",
+    "Method": "LevelUp",
+    "RequiredLevel": 36,
+    "GameVersion": "legends-arceus"
+  }
+]

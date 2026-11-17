@@ -1,0 +1,770 @@
+[
+  {
+    "NationalDexNumber": 3,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Venusaur",
+    "Method": "MegaStone",
+    "RequiredItem": "Venusaurite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 6,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Charizard X",
+    "Method": "MegaStone",
+    "RequiredItem": "Charizardite X",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 6,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Charizard Y",
+    "Method": "MegaStone",
+    "RequiredItem": "Charizardite Y",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 9,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Blastoise",
+    "Method": "MegaStone",
+    "RequiredItem": "Blastoisinite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 15,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Beedrill",
+    "Method": "MegaStone",
+    "RequiredItem": "Beedrillite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 18,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Pidgeot",
+    "Method": "MegaStone",
+    "RequiredItem": "Pidgeotite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 65,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Alakazam",
+    "Method": "MegaStone",
+    "RequiredItem": "Alakazite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 80,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Slowbro",
+    "Method": "MegaStone",
+    "RequiredItem": "Slowbronite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 94,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Gengar",
+    "Method": "MegaStone",
+    "RequiredItem": "Gengarite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 115,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Kangaskhan",
+    "Method": "MegaStone",
+    "RequiredItem": "Kangaskhanite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 127,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Pinsir",
+    "Method": "MegaStone",
+    "RequiredItem": "Pinsirite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 130,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Gyarados",
+    "Method": "MegaStone",
+    "RequiredItem": "Gyaradosite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 142,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Aerodactyl",
+    "Method": "MegaStone",
+    "RequiredItem": "Aerodactylite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 150,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Mewtwo X",
+    "Method": "MegaStone",
+    "RequiredItem": "Mewtwonite X",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 150,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Mewtwo Y",
+    "Method": "MegaStone",
+    "RequiredItem": "Mewtwonite Y",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 181,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Ampharos",
+    "Method": "MegaStone",
+    "RequiredItem": "Ampharosite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 208,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Steelix",
+    "Method": "MegaStone",
+    "RequiredItem": "Steelixite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 212,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Scizor",
+    "Method": "MegaStone",
+    "RequiredItem": "Scizorite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 214,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Heracross",
+    "Method": "MegaStone",
+    "RequiredItem": "Heracronite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 229,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Houndoom",
+    "Method": "MegaStone",
+    "RequiredItem": "Houndoominite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 248,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Tyranitar",
+    "Method": "MegaStone",
+    "RequiredItem": "Tyranitarite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 254,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Sceptile",
+    "Method": "MegaStone",
+    "RequiredItem": "Sceptilite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 257,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Blaziken",
+    "Method": "MegaStone",
+    "RequiredItem": "Blazikenite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 260,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Swampert",
+    "Method": "MegaStone",
+    "RequiredItem": "Swampertite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 282,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Gardevoir",
+    "Method": "MegaStone",
+    "RequiredItem": "Gardevoirite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 302,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Sableye",
+    "Method": "MegaStone",
+    "RequiredItem": "Sablenite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 303,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Mawile",
+    "Method": "MegaStone",
+    "RequiredItem": "Mawilite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 306,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Aggron",
+    "Method": "MegaStone",
+    "RequiredItem": "Aggronite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 308,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Medicham",
+    "Method": "MegaStone",
+    "RequiredItem": "Medichamite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 310,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Manectric",
+    "Method": "MegaStone",
+    "RequiredItem": "Manectite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 319,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Sharpedo",
+    "Method": "MegaStone",
+    "RequiredItem": "Sharpedonite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 323,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Camerupt",
+    "Method": "MegaStone",
+    "RequiredItem": "Cameruptite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 334,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Altaria",
+    "Method": "MegaStone",
+    "RequiredItem": "Altarianite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 354,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Banette",
+    "Method": "MegaStone",
+    "RequiredItem": "Banettite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 359,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Absol",
+    "Method": "MegaStone",
+    "RequiredItem": "Absolite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 362,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Glalie",
+    "Method": "MegaStone",
+    "RequiredItem": "Glalitite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 373,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Salamence",
+    "Method": "MegaStone",
+    "RequiredItem": "Salamencite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 376,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Metagross",
+    "Method": "MegaStone",
+    "RequiredItem": "Metagrossite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 380,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Latias",
+    "Method": "MegaStone",
+    "RequiredItem": "Latiasite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 381,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Latios",
+    "Method": "MegaStone",
+    "RequiredItem": "Latiosite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 384,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Rayquaza",
+    "Method": "KnownMove",
+    "RequiredItem": null,
+    "RequiredMoveId": 620
+  },
+  {
+    "NationalDexNumber": 428,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Lopunny",
+    "Method": "MegaStone",
+    "RequiredItem": "Lopunnite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 445,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Garchomp",
+    "Method": "MegaStone",
+    "RequiredItem": "Garchompite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 448,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Lucario",
+    "Method": "MegaStone",
+    "RequiredItem": "Lucarionite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 460,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Abomasnow",
+    "Method": "MegaStone",
+    "RequiredItem": "Abomasite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 475,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Gallade",
+    "Method": "MegaStone",
+    "RequiredItem": "Galladite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 531,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Audino",
+    "Method": "MegaStone",
+    "RequiredItem": "Audinite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 719,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Diancie",
+    "Method": "MegaStone",
+    "RequiredItem": "Diancite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 26,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Raichu X",
+    "Method": "MegaStone",
+    "RequiredItem": "Raichunite X",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 26,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Raichu Y",
+    "Method": "MegaStone",
+    "RequiredItem": "Raichunite Y",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 36,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Clefable",
+    "Method": "MegaStone",
+    "RequiredItem": "Clefablite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 71,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Victreebel",
+    "Method": "MegaStone",
+    "RequiredItem": "Victreebelite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 121,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Starmie",
+    "Method": "MegaStone",
+    "RequiredItem": "Starminite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 149,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Dragonite",
+    "Method": "MegaStone",
+    "RequiredItem": "Dragoninite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 154,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Meganium",
+    "Method": "MegaStone",
+    "RequiredItem": "Meganiumite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 160,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Feraligatr",
+    "Method": "MegaStone",
+    "RequiredItem": "Feraligite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 227,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Skarmory",
+    "Method": "MegaStone",
+    "RequiredItem": "Skarmorite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 358,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Chimecho",
+    "Method": "MegaStone",
+    "RequiredItem": "Chimechite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 359,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Absol Z",
+    "Method": "MegaStone",
+    "RequiredItem": "Absolite Z",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 398,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Staraptor",
+    "Method": "MegaStone",
+    "RequiredItem": "Staraptite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 445,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Garchomp Z",
+    "Method": "MegaStone",
+    "RequiredItem": "Garchompite Z",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 448,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Lucario Z",
+    "Method": "MegaStone",
+    "RequiredItem": "Lucarionite Z",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 478,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Froslass",
+    "Method": "MegaStone",
+    "RequiredItem": "Froslassite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 485,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Heatran",
+    "Method": "MegaStone",
+    "RequiredItem": "Heatranite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 491,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Darkrai",
+    "Method": "MegaStone",
+    "RequiredItem": "Darkranite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 500,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Emboar",
+    "Method": "MegaStone",
+    "RequiredItem": "Emboarite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 530,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Excadrill",
+    "Method": "MegaStone",
+    "RequiredItem": "Excadrite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 545,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Scolipede",
+    "Method": "MegaStone",
+    "RequiredItem": "Scolipite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 560,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Scrafty",
+    "Method": "MegaStone",
+    "RequiredItem": "Scraftinite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 604,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Eelektross",
+    "Method": "MegaStone",
+    "RequiredItem": "Eelektrossite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 609,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Chandelure",
+    "Method": "MegaStone",
+    "RequiredItem": "Chandelurite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 623,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Golurk",
+    "Method": "MegaStone",
+    "RequiredItem": "Golurkite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 652,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Chesnaught",
+    "Method": "MegaStone",
+    "RequiredItem": "Chesnaughtite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 655,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Delphox",
+    "Method": "MegaStone",
+    "RequiredItem": "Delphoxite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 658,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Greninja",
+    "Method": "MegaStone",
+    "RequiredItem": "Greninjite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 668,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Pyroar",
+    "Method": "MegaStone",
+    "RequiredItem": "Pyroarite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 670,
+    "BaseFormName": "Eternal Flower",
+    "MegaFormName": "Mega Floette",
+    "Method": "MegaStone",
+    "RequiredItem": "Floettite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 678,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Meowstic (Male)",
+    "Method": "MegaStone",
+    "RequiredItem": "Meowsticite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 678,
+    "BaseFormName": "Female",
+    "MegaFormName": "Mega Meowstic (Female)",
+    "Method": "MegaStone",
+    "RequiredItem": "Meowsticite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 687,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Malamar",
+    "Method": "MegaStone",
+    "RequiredItem": "Malamarite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 689,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Barbaracle",
+    "Method": "MegaStone",
+    "RequiredItem": "Barbaracite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 691,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Dragalge",
+    "Method": "MegaStone",
+    "RequiredItem": "Dragalgite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 701,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Hawlucha",
+    "Method": "MegaStone",
+    "RequiredItem": "Hawluchanite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 740,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Crabominable",
+    "Method": "MegaStone",
+    "RequiredItem": "Crabominite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 768,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Golisopod",
+    "Method": "MegaStone",
+    "RequiredItem": "Golisopite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 780,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Drampa",
+    "Method": "MegaStone",
+    "RequiredItem": "Drampanite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 801,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Magearna",
+    "Method": "MegaStone",
+    "RequiredItem": "Magearnite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 801,
+    "BaseFormName": "Original Color",
+    "MegaFormName": "Mega Original Magearna",
+    "Method": "MegaStone",
+    "RequiredItem": "Magearnite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 807,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Zeraora",
+    "Method": "MegaStone",
+    "RequiredItem": "Zeraorite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 870,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Falinks",
+    "Method": "MegaStone",
+    "RequiredItem": "Falinksite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 952,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Scovillain",
+    "Method": "MegaStone",
+    "RequiredItem": "Scovillainite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 970,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Glimmora",
+    "Method": "MegaStone",
+    "RequiredItem": "Glimmoranite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 978,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Curly Tatsugiri",
+    "Method": "MegaStone",
+    "RequiredItem": "Tatsugirinite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 978,
+    "BaseFormName": "Droopy Form",
+    "MegaFormName": "Mega Droopy Tatsugiri",
+    "Method": "MegaStone",
+    "RequiredItem": "Tatsugirinite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 978,
+    "BaseFormName": "Stretchy Form",
+    "MegaFormName": "Mega Stretchy Tatsugiri",
+    "Method": "MegaStone",
+    "RequiredItem": "Tatsugirinite",
+    "RequiredMoveId": null
+  },
+  {
+    "NationalDexNumber": 998,
+    "BaseFormName": "Normal",
+    "MegaFormName": "Mega Baxcalibur",
+    "Method": "MegaStone",
+    "RequiredItem": "Baxcalibrite",
+    "RequiredMoveId": null
+  }
+]

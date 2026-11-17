@@ -18,6 +18,18 @@
     "Weight": 1000
   },
   {
+    "NationalDexNumber": 3,
+    "FormName": "Mega Venusaur",
+    "Height": 24,
+    "Weight": 1555
+  },
+  {
+    "NationalDexNumber": 3,
+    "FormName": "Gigantamax Form",
+    "Height": 240,
+    "Weight": 10000
+  },
+  {
     "NationalDexNumber": 4,
     "FormName": "Normal",
     "Height": 6,
@@ -34,6 +46,24 @@
     "FormName": "Normal",
     "Height": 17,
     "Weight": 905
+  },
+  {
+    "NationalDexNumber": 6,
+    "FormName": "Mega Charizard X",
+    "Height": 17,
+    "Weight": 1105
+  },
+  {
+    "NationalDexNumber": 6,
+    "FormName": "Mega Charizard Y",
+    "Height": 17,
+    "Weight": 1005
+  },
+  {
+    "NationalDexNumber": 6,
+    "FormName": "Gigantamax Form",
+    "Height": 280,
+    "Weight": 10000
   },
   {
     "NationalDexNumber": 7,
@@ -54,6 +84,18 @@
     "Weight": 855
   },
   {
+    "NationalDexNumber": 9,
+    "FormName": "Mega Blastoise",
+    "Height": 16,
+    "Weight": 1011
+  },
+  {
+    "NationalDexNumber": 9,
+    "FormName": "Gigantamax Form",
+    "Height": 250,
+    "Weight": 10000
+  },
+  {
     "NationalDexNumber": 10,
     "FormName": "Normal",
     "Height": 3,
@@ -70,6 +112,12 @@
     "FormName": "Normal",
     "Height": 11,
     "Weight": 320
+  },
+  {
+    "NationalDexNumber": 12,
+    "FormName": "Gigantamax Form",
+    "Height": 170,
+    "Weight": 10000
   },
   {
     "NationalDexNumber": 13,
@@ -90,6 +138,12 @@
     "Weight": 295
   },
   {
+    "NationalDexNumber": 15,
+    "FormName": "Mega Beedrill",
+    "Height": 14,
+    "Weight": 405
+  },
+  {
     "NationalDexNumber": 16,
     "FormName": "Normal",
     "Height": 3,
@@ -108,16 +162,40 @@
     "Weight": 395
   },
   {
+    "NationalDexNumber": 18,
+    "FormName": "Mega Pidgeot",
+    "Height": 22,
+    "Weight": 505
+  },
+  {
     "NationalDexNumber": 19,
     "FormName": "Normal",
     "Height": 3,
     "Weight": 35
   },
   {
+    "NationalDexNumber": 19,
+    "FormName": "Alolan Form",
+    "Height": 3,
+    "Weight": 38
+  },
+  {
     "NationalDexNumber": 20,
     "FormName": "Normal",
     "Height": 7,
     "Weight": 185
+  },
+  {
+    "NationalDexNumber": 20,
+    "FormName": "Alolan Form",
+    "Height": 7,
+    "Weight": 255
+  },
+  {
+    "NationalDexNumber": 20,
+    "FormName": "Totem Alolan Raticate",
+    "Height": 14,
+    "Weight": 1050
   },
   {
     "NationalDexNumber": 21,
@@ -186,10 +264,88 @@
     "Weight": 60
   },
   {
+    "NationalDexNumber": 25,
+    "FormName": "Original Cap",
+    "Height": 4,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 25,
+    "FormName": "Hoenn Cap",
+    "Height": 4,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 25,
+    "FormName": "Sinnoh Cap",
+    "Height": 4,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 25,
+    "FormName": "Unova Cap",
+    "Height": 4,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 25,
+    "FormName": "Kalos Cap",
+    "Height": 4,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 25,
+    "FormName": "Alola Cap",
+    "Height": 4,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 25,
+    "FormName": "Partner Cap",
+    "Height": 4,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 25,
+    "FormName": "Partner Pikachu",
+    "Height": 4,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 25,
+    "FormName": "World Cap",
+    "Height": 4,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 25,
+    "FormName": "Gigantamax Form",
+    "Height": 210,
+    "Weight": 10000
+  },
+  {
     "NationalDexNumber": 26,
     "FormName": "Normal",
     "Height": 8,
     "Weight": 300
+  },
+  {
+    "NationalDexNumber": 26,
+    "FormName": "Alolan Form",
+    "Height": 7,
+    "Weight": 210
+  },
+  {
+    "NationalDexNumber": 26,
+    "FormName": "Mega Raichu X",
+    "Height": 12,
+    "Weight": 380
+  },
+  {
+    "NationalDexNumber": 26,
+    "FormName": "Mega Raichu Y",
+    "Height": 10,
+    "Weight": 260
   },
   {
     "NationalDexNumber": 27,
@@ -198,10 +354,22 @@
     "Weight": 120
   },
   {
+    "NationalDexNumber": 27,
+    "FormName": "Alolan Form",
+    "Height": 7,
+    "Weight": 400
+  },
+  {
     "NationalDexNumber": 28,
     "FormName": "Normal",
     "Height": 10,
     "Weight": 295
+  },
+  {
+    "NationalDexNumber": 28,
+    "FormName": "Alolan Form",
+    "Height": 12,
+    "Weight": 550
   },
   {
     "NationalDexNumber": 29,
@@ -252,14 +420,32 @@
     "Weight": 400
   },
   {
+    "NationalDexNumber": 36,
+    "FormName": "Mega Clefable",
+    "Height": 17,
+    "Weight": 423
+  },
+  {
     "NationalDexNumber": 37,
     "FormName": "Normal",
     "Height": 6,
     "Weight": 99
   },
   {
+    "NationalDexNumber": 37,
+    "FormName": "Alolan Form",
+    "Height": 6,
+    "Weight": 99
+  },
+  {
     "NationalDexNumber": 38,
     "FormName": "Normal",
+    "Height": 11,
+    "Weight": 199
+  },
+  {
+    "NationalDexNumber": 38,
+    "FormName": "Alolan Form",
     "Height": 11,
     "Weight": 199
   },
@@ -336,10 +522,22 @@
     "Weight": 8
   },
   {
+    "NationalDexNumber": 50,
+    "FormName": "Alolan Form",
+    "Height": 2,
+    "Weight": 10
+  },
+  {
     "NationalDexNumber": 51,
     "FormName": "Normal",
     "Height": 7,
     "Weight": 333
+  },
+  {
+    "NationalDexNumber": 51,
+    "FormName": "Alolan Form",
+    "Height": 7,
+    "Weight": 666
   },
   {
     "NationalDexNumber": 52,
@@ -348,10 +546,34 @@
     "Weight": 42
   },
   {
+    "NationalDexNumber": 52,
+    "FormName": "Alolan Form",
+    "Height": 4,
+    "Weight": 42
+  },
+  {
+    "NationalDexNumber": 52,
+    "FormName": "Galarian Form",
+    "Height": 4,
+    "Weight": 75
+  },
+  {
+    "NationalDexNumber": 52,
+    "FormName": "Gigantamax Form",
+    "Height": 330,
+    "Weight": 10000
+  },
+  {
     "NationalDexNumber": 53,
     "FormName": "Normal",
     "Height": 10,
     "Weight": 320
+  },
+  {
+    "NationalDexNumber": 53,
+    "FormName": "Alolan Form",
+    "Height": 11,
+    "Weight": 330
   },
   {
     "NationalDexNumber": 54,
@@ -384,10 +606,22 @@
     "Weight": 190
   },
   {
+    "NationalDexNumber": 58,
+    "FormName": "Hisuian Form",
+    "Height": 8,
+    "Weight": 227
+  },
+  {
     "NationalDexNumber": 59,
     "FormName": "Normal",
     "Height": 19,
     "Weight": 1550
+  },
+  {
+    "NationalDexNumber": 59,
+    "FormName": "Hisuian Form",
+    "Height": 20,
+    "Weight": 1680
   },
   {
     "NationalDexNumber": 60,
@@ -426,6 +660,12 @@
     "Weight": 480
   },
   {
+    "NationalDexNumber": 65,
+    "FormName": "Mega Alakazam",
+    "Height": 12,
+    "Weight": 480
+  },
+  {
     "NationalDexNumber": 66,
     "FormName": "Normal",
     "Height": 8,
@@ -442,6 +682,12 @@
     "FormName": "Normal",
     "Height": 16,
     "Weight": 1300
+  },
+  {
+    "NationalDexNumber": 68,
+    "FormName": "Gigantamax Form",
+    "Height": 250,
+    "Weight": 10000
   },
   {
     "NationalDexNumber": 69,
@@ -462,6 +708,12 @@
     "Weight": 155
   },
   {
+    "NationalDexNumber": 71,
+    "FormName": "Mega Victreebel",
+    "Height": 45,
+    "Weight": 1255
+  },
+  {
     "NationalDexNumber": 72,
     "FormName": "Normal",
     "Height": 9,
@@ -480,10 +732,22 @@
     "Weight": 200
   },
   {
+    "NationalDexNumber": 74,
+    "FormName": "Alolan Form",
+    "Height": 4,
+    "Weight": 203
+  },
+  {
     "NationalDexNumber": 75,
     "FormName": "Normal",
     "Height": 10,
     "Weight": 1050
+  },
+  {
+    "NationalDexNumber": 75,
+    "FormName": "Alolan Form",
+    "Height": 10,
+    "Weight": 1100
   },
   {
     "NationalDexNumber": 76,
@@ -492,10 +756,22 @@
     "Weight": 3000
   },
   {
+    "NationalDexNumber": 76,
+    "FormName": "Alolan Form",
+    "Height": 17,
+    "Weight": 3160
+  },
+  {
     "NationalDexNumber": 77,
     "FormName": "Normal",
     "Height": 10,
     "Weight": 300
+  },
+  {
+    "NationalDexNumber": 77,
+    "FormName": "Galarian Form",
+    "Height": 8,
+    "Weight": 240
   },
   {
     "NationalDexNumber": 78,
@@ -504,8 +780,20 @@
     "Weight": 950
   },
   {
+    "NationalDexNumber": 78,
+    "FormName": "Galarian Form",
+    "Height": 17,
+    "Weight": 800
+  },
+  {
     "NationalDexNumber": 79,
     "FormName": "Normal",
+    "Height": 12,
+    "Weight": 360
+  },
+  {
+    "NationalDexNumber": 79,
+    "FormName": "Galarian Form",
     "Height": 12,
     "Weight": 360
   },
@@ -514,6 +802,18 @@
     "FormName": "Normal",
     "Height": 16,
     "Weight": 785
+  },
+  {
+    "NationalDexNumber": 80,
+    "FormName": "Mega Slowbro",
+    "Height": 20,
+    "Weight": 1200
+  },
+  {
+    "NationalDexNumber": 80,
+    "FormName": "Galarian Form",
+    "Height": 16,
+    "Weight": 705
   },
   {
     "NationalDexNumber": 81,
@@ -532,6 +832,12 @@
     "FormName": "Normal",
     "Height": 8,
     "Weight": 150
+  },
+  {
+    "NationalDexNumber": 83,
+    "FormName": "Galarian Form",
+    "Height": 8,
+    "Weight": 420
   },
   {
     "NationalDexNumber": 84,
@@ -564,10 +870,22 @@
     "Weight": 300
   },
   {
+    "NationalDexNumber": 88,
+    "FormName": "Alolan Form",
+    "Height": 7,
+    "Weight": 420
+  },
+  {
     "NationalDexNumber": 89,
     "FormName": "Normal",
     "Height": 12,
     "Weight": 300
+  },
+  {
+    "NationalDexNumber": 89,
+    "FormName": "Alolan Form",
+    "Height": 10,
+    "Weight": 520
   },
   {
     "NationalDexNumber": 90,
@@ -600,6 +918,18 @@
     "Weight": 405
   },
   {
+    "NationalDexNumber": 94,
+    "FormName": "Mega Gengar",
+    "Height": 14,
+    "Weight": 405
+  },
+  {
+    "NationalDexNumber": 94,
+    "FormName": "Gigantamax Form",
+    "Height": 200,
+    "Weight": 10000
+  },
+  {
     "NationalDexNumber": 95,
     "FormName": "Normal",
     "Height": 88,
@@ -630,16 +960,34 @@
     "Weight": 600
   },
   {
+    "NationalDexNumber": 99,
+    "FormName": "Gigantamax Form",
+    "Height": 190,
+    "Weight": 10000
+  },
+  {
     "NationalDexNumber": 100,
     "FormName": "Normal",
     "Height": 5,
     "Weight": 104
   },
   {
+    "NationalDexNumber": 100,
+    "FormName": "Hisuian Form",
+    "Height": 5,
+    "Weight": 130
+  },
+  {
     "NationalDexNumber": 101,
     "FormName": "Normal",
     "Height": 12,
     "Weight": 666
+  },
+  {
+    "NationalDexNumber": 101,
+    "FormName": "Hisuian Form",
+    "Height": 12,
+    "Weight": 710
   },
   {
     "NationalDexNumber": 102,
@@ -654,6 +1002,12 @@
     "Weight": 1200
   },
   {
+    "NationalDexNumber": 103,
+    "FormName": "Alolan Form",
+    "Height": 109,
+    "Weight": 4156
+  },
+  {
     "NationalDexNumber": 104,
     "FormName": "Normal",
     "Height": 4,
@@ -664,6 +1018,18 @@
     "FormName": "Normal",
     "Height": 10,
     "Weight": 450
+  },
+  {
+    "NationalDexNumber": 105,
+    "FormName": "Alolan Form",
+    "Height": 10,
+    "Weight": 340
+  },
+  {
+    "NationalDexNumber": 105,
+    "FormName": "Totem Alolan Marowak",
+    "Height": 17,
+    "Weight": 980
   },
   {
     "NationalDexNumber": 106,
@@ -696,6 +1062,12 @@
     "Weight": 95
   },
   {
+    "NationalDexNumber": 110,
+    "FormName": "Galarian Form",
+    "Height": 30,
+    "Weight": 160
+  },
+  {
     "NationalDexNumber": 111,
     "FormName": "Normal",
     "Height": 10,
@@ -724,6 +1096,12 @@
     "FormName": "Normal",
     "Height": 22,
     "Weight": 800
+  },
+  {
+    "NationalDexNumber": 115,
+    "FormName": "Mega Kangaskhan",
+    "Height": 22,
+    "Weight": 1000
   },
   {
     "NationalDexNumber": 116,
@@ -762,10 +1140,22 @@
     "Weight": 800
   },
   {
+    "NationalDexNumber": 121,
+    "FormName": "Mega Starmie",
+    "Height": 23,
+    "Weight": 800
+  },
+  {
     "NationalDexNumber": 122,
     "FormName": "Normal",
     "Height": 13,
     "Weight": 545
+  },
+  {
+    "NationalDexNumber": 122,
+    "FormName": "Galarian Form",
+    "Height": 14,
+    "Weight": 568
   },
   {
     "NationalDexNumber": 123,
@@ -798,10 +1188,34 @@
     "Weight": 550
   },
   {
+    "NationalDexNumber": 127,
+    "FormName": "Mega Pinsir",
+    "Height": 17,
+    "Weight": 590
+  },
+  {
     "NationalDexNumber": 128,
     "FormName": "Normal",
     "Height": 14,
     "Weight": 884
+  },
+  {
+    "NationalDexNumber": 128,
+    "FormName": "Paldean Form (Combat Breed)",
+    "Height": 14,
+    "Weight": 1150
+  },
+  {
+    "NationalDexNumber": 128,
+    "FormName": "Paldean Form (Blaze Breed)",
+    "Height": 14,
+    "Weight": 850
+  },
+  {
+    "NationalDexNumber": 128,
+    "FormName": "Paldean Form (Aqua Breed)",
+    "Height": 14,
+    "Weight": 1100
   },
   {
     "NationalDexNumber": 129,
@@ -816,10 +1230,22 @@
     "Weight": 2350
   },
   {
+    "NationalDexNumber": 130,
+    "FormName": "Mega Gyarados",
+    "Height": 65,
+    "Weight": 3050
+  },
+  {
     "NationalDexNumber": 131,
     "FormName": "Normal",
     "Height": 25,
     "Weight": 2200
+  },
+  {
+    "NationalDexNumber": 131,
+    "FormName": "Gigantamax Form",
+    "Height": 240,
+    "Weight": 10000
   },
   {
     "NationalDexNumber": 132,
@@ -832,6 +1258,18 @@
     "FormName": "Normal",
     "Height": 3,
     "Weight": 65
+  },
+  {
+    "NationalDexNumber": 133,
+    "FormName": "Partner Eevee",
+    "Height": 3,
+    "Weight": 65
+  },
+  {
+    "NationalDexNumber": 133,
+    "FormName": "Gigantamax Form",
+    "Height": 180,
+    "Weight": 10000
   },
   {
     "NationalDexNumber": 134,
@@ -888,10 +1326,22 @@
     "Weight": 590
   },
   {
+    "NationalDexNumber": 142,
+    "FormName": "Mega Aerodactyl",
+    "Height": 21,
+    "Weight": 790
+  },
+  {
     "NationalDexNumber": 143,
     "FormName": "Normal",
     "Height": 21,
     "Weight": 4600
+  },
+  {
+    "NationalDexNumber": 143,
+    "FormName": "Gigantamax Form",
+    "Height": 350,
+    "Weight": 10000
   },
   {
     "NationalDexNumber": 144,
@@ -900,16 +1350,34 @@
     "Weight": 554
   },
   {
+    "NationalDexNumber": 144,
+    "FormName": "Galarian Form",
+    "Height": 17,
+    "Weight": 509
+  },
+  {
     "NationalDexNumber": 145,
     "FormName": "Normal",
     "Height": 16,
     "Weight": 526
   },
   {
+    "NationalDexNumber": 145,
+    "FormName": "Galarian Form",
+    "Height": 16,
+    "Weight": 582
+  },
+  {
     "NationalDexNumber": 146,
     "FormName": "Normal",
     "Height": 20,
     "Weight": 600
+  },
+  {
+    "NationalDexNumber": 146,
+    "FormName": "Galarian Form",
+    "Height": 20,
+    "Weight": 660
   },
   {
     "NationalDexNumber": 147,
@@ -930,10 +1398,28 @@
     "Weight": 2100
   },
   {
+    "NationalDexNumber": 149,
+    "FormName": "Mega Dragonite",
+    "Height": 22,
+    "Weight": 2900
+  },
+  {
     "NationalDexNumber": 150,
     "FormName": "Normal",
     "Height": 20,
     "Weight": 1220
+  },
+  {
+    "NationalDexNumber": 150,
+    "FormName": "Mega Mewtwo X",
+    "Height": 23,
+    "Weight": 1270
+  },
+  {
+    "NationalDexNumber": 150,
+    "FormName": "Mega Mewtwo Y",
+    "Height": 15,
+    "Weight": 330
   },
   {
     "NationalDexNumber": 151,
@@ -960,6 +1446,12 @@
     "Weight": 1005
   },
   {
+    "NationalDexNumber": 154,
+    "FormName": "Mega Meganium",
+    "Height": 24,
+    "Weight": 2010
+  },
+  {
     "NationalDexNumber": 155,
     "FormName": "Normal",
     "Height": 5,
@@ -978,6 +1470,12 @@
     "Weight": 795
   },
   {
+    "NationalDexNumber": 157,
+    "FormName": "Hisuian Form",
+    "Height": 16,
+    "Weight": 698
+  },
+  {
     "NationalDexNumber": 158,
     "FormName": "Normal",
     "Height": 6,
@@ -994,6 +1492,12 @@
     "FormName": "Normal",
     "Height": 23,
     "Weight": 888
+  },
+  {
+    "NationalDexNumber": 160,
+    "FormName": "Mega Feraligatr",
+    "Height": 23,
+    "Weight": 1088
   },
   {
     "NationalDexNumber": 161,
@@ -1128,6 +1632,12 @@
     "Weight": 615
   },
   {
+    "NationalDexNumber": 181,
+    "FormName": "Mega Ampharos",
+    "Height": 14,
+    "Weight": 615
+  },
+  {
     "NationalDexNumber": 182,
     "FormName": "Normal",
     "Height": 4,
@@ -1206,6 +1716,12 @@
     "Weight": 85
   },
   {
+    "NationalDexNumber": 194,
+    "FormName": "Paldean Form",
+    "Height": 4,
+    "Weight": 110
+  },
+  {
     "NationalDexNumber": 195,
     "FormName": "Normal",
     "Height": 14,
@@ -1233,6 +1749,12 @@
     "NationalDexNumber": 199,
     "FormName": "Normal",
     "Height": 20,
+    "Weight": 795
+  },
+  {
+    "NationalDexNumber": 199,
+    "FormName": "Galarian Form",
+    "Height": 18,
     "Weight": 795
   },
   {
@@ -1452,6 +1974,12 @@
     "Weight": 4000
   },
   {
+    "NationalDexNumber": 208,
+    "FormName": "Mega Steelix",
+    "Height": 105,
+    "Weight": 7400
+  },
+  {
     "NationalDexNumber": 209,
     "FormName": "Normal",
     "Height": 6,
@@ -1470,10 +1998,22 @@
     "Weight": 39
   },
   {
+    "NationalDexNumber": 211,
+    "FormName": "Hisuian Form",
+    "Height": 5,
+    "Weight": 39
+  },
+  {
     "NationalDexNumber": 212,
     "FormName": "Normal",
     "Height": 18,
     "Weight": 1180
+  },
+  {
+    "NationalDexNumber": 212,
+    "FormName": "Mega Scizor",
+    "Height": 20,
+    "Weight": 1250
   },
   {
     "NationalDexNumber": 213,
@@ -1488,10 +2028,22 @@
     "Weight": 540
   },
   {
+    "NationalDexNumber": 214,
+    "FormName": "Mega Heracross",
+    "Height": 17,
+    "Weight": 625
+  },
+  {
     "NationalDexNumber": 215,
     "FormName": "Normal",
     "Height": 9,
     "Weight": 280
+  },
+  {
+    "NationalDexNumber": 215,
+    "FormName": "Hisuian Form",
+    "Height": 9,
+    "Weight": 270
   },
   {
     "NationalDexNumber": 216,
@@ -1536,6 +2088,12 @@
     "Weight": 50
   },
   {
+    "NationalDexNumber": 222,
+    "FormName": "Galarian Form",
+    "Height": 6,
+    "Weight": 5
+  },
+  {
     "NationalDexNumber": 223,
     "FormName": "Normal",
     "Height": 6,
@@ -1566,6 +2124,12 @@
     "Weight": 505
   },
   {
+    "NationalDexNumber": 227,
+    "FormName": "Mega Skarmory",
+    "Height": 17,
+    "Weight": 404
+  },
+  {
     "NationalDexNumber": 228,
     "FormName": "Normal",
     "Height": 6,
@@ -1576,6 +2140,12 @@
     "FormName": "Normal",
     "Height": 14,
     "Weight": 350
+  },
+  {
+    "NationalDexNumber": 229,
+    "FormName": "Mega Houndoom",
+    "Height": 19,
+    "Weight": 495
   },
   {
     "NationalDexNumber": 230,
@@ -1692,6 +2262,12 @@
     "Weight": 2020
   },
   {
+    "NationalDexNumber": 248,
+    "FormName": "Mega Tyranitar",
+    "Height": 25,
+    "Weight": 2550
+  },
+  {
     "NationalDexNumber": 249,
     "FormName": "Normal",
     "Height": 52,
@@ -1728,6 +2304,12 @@
     "Weight": 522
   },
   {
+    "NationalDexNumber": 254,
+    "FormName": "Mega Sceptile",
+    "Height": 19,
+    "Weight": 552
+  },
+  {
     "NationalDexNumber": 255,
     "FormName": "Normal",
     "Height": 4,
@@ -1742,6 +2324,12 @@
   {
     "NationalDexNumber": 257,
     "FormName": "Normal",
+    "Height": 19,
+    "Weight": 520
+  },
+  {
+    "NationalDexNumber": 257,
+    "FormName": "Mega Blaziken",
     "Height": 19,
     "Weight": 520
   },
@@ -1764,6 +2352,12 @@
     "Weight": 819
   },
   {
+    "NationalDexNumber": 260,
+    "FormName": "Mega Swampert",
+    "Height": 19,
+    "Weight": 1020
+  },
+  {
     "NationalDexNumber": 261,
     "FormName": "Normal",
     "Height": 5,
@@ -1782,8 +2376,20 @@
     "Weight": 175
   },
   {
+    "NationalDexNumber": 263,
+    "FormName": "Galarian Form",
+    "Height": 4,
+    "Weight": 175
+  },
+  {
     "NationalDexNumber": 264,
     "FormName": "Normal",
+    "Height": 5,
+    "Weight": 325
+  },
+  {
+    "NationalDexNumber": 264,
+    "FormName": "Galarian Form",
     "Height": 5,
     "Weight": 325
   },
@@ -1892,6 +2498,12 @@
   {
     "NationalDexNumber": 282,
     "FormName": "Normal",
+    "Height": 16,
+    "Weight": 484
+  },
+  {
+    "NationalDexNumber": 282,
+    "FormName": "Mega Gardevoir",
     "Height": 16,
     "Weight": 484
   },
@@ -2016,10 +2628,22 @@
     "Weight": 110
   },
   {
+    "NationalDexNumber": 302,
+    "FormName": "Mega Sableye",
+    "Height": 5,
+    "Weight": 1610
+  },
+  {
     "NationalDexNumber": 303,
     "FormName": "Normal",
     "Height": 6,
     "Weight": 115
+  },
+  {
+    "NationalDexNumber": 303,
+    "FormName": "Mega Mawile",
+    "Height": 10,
+    "Weight": 235
   },
   {
     "NationalDexNumber": 304,
@@ -2040,6 +2664,12 @@
     "Weight": 3600
   },
   {
+    "NationalDexNumber": 306,
+    "FormName": "Mega Aggron",
+    "Height": 22,
+    "Weight": 3950
+  },
+  {
     "NationalDexNumber": 307,
     "FormName": "Normal",
     "Height": 6,
@@ -2048,6 +2678,12 @@
   {
     "NationalDexNumber": 308,
     "FormName": "Normal",
+    "Height": 13,
+    "Weight": 315
+  },
+  {
+    "NationalDexNumber": 308,
+    "FormName": "Mega Medicham",
     "Height": 13,
     "Weight": 315
   },
@@ -2062,6 +2698,12 @@
     "FormName": "Normal",
     "Height": 15,
     "Weight": 402
+  },
+  {
+    "NationalDexNumber": 310,
+    "FormName": "Mega Manectric",
+    "Height": 18,
+    "Weight": 440
   },
   {
     "NationalDexNumber": 311,
@@ -2118,6 +2760,12 @@
     "Weight": 888
   },
   {
+    "NationalDexNumber": 319,
+    "FormName": "Mega Sharpedo",
+    "Height": 25,
+    "Weight": 1303
+  },
+  {
     "NationalDexNumber": 320,
     "FormName": "Normal",
     "Height": 20,
@@ -2140,6 +2788,12 @@
     "FormName": "Normal",
     "Height": 19,
     "Weight": 2200
+  },
+  {
+    "NationalDexNumber": 323,
+    "FormName": "Mega Camerupt",
+    "Height": 25,
+    "Weight": 3205
   },
   {
     "NationalDexNumber": 324,
@@ -2205,6 +2859,12 @@
     "NationalDexNumber": 334,
     "FormName": "Normal",
     "Height": 11,
+    "Weight": 206
+  },
+  {
+    "NationalDexNumber": 334,
+    "FormName": "Mega Altaria",
+    "Height": 15,
     "Weight": 206
   },
   {
@@ -2346,6 +3006,12 @@
     "Weight": 125
   },
   {
+    "NationalDexNumber": 354,
+    "FormName": "Mega Banette",
+    "Height": 12,
+    "Weight": 130
+  },
+  {
     "NationalDexNumber": 355,
     "FormName": "Normal",
     "Height": 8,
@@ -2370,10 +3036,28 @@
     "Weight": 10
   },
   {
+    "NationalDexNumber": 358,
+    "FormName": "Mega Chimecho",
+    "Height": 12,
+    "Weight": 80
+  },
+  {
     "NationalDexNumber": 359,
     "FormName": "Normal",
     "Height": 12,
     "Weight": 470
+  },
+  {
+    "NationalDexNumber": 359,
+    "FormName": "Mega Absol",
+    "Height": 12,
+    "Weight": 490
+  },
+  {
+    "NationalDexNumber": 359,
+    "FormName": "Mega Absol Z",
+    "Height": 12,
+    "Weight": 490
   },
   {
     "NationalDexNumber": 360,
@@ -2392,6 +3076,12 @@
     "FormName": "Normal",
     "Height": 15,
     "Weight": 2565
+  },
+  {
+    "NationalDexNumber": 362,
+    "FormName": "Mega Glalie",
+    "Height": 21,
+    "Weight": 3502
   },
   {
     "NationalDexNumber": 363,
@@ -2460,6 +3150,12 @@
     "Weight": 1026
   },
   {
+    "NationalDexNumber": 373,
+    "FormName": "Mega Salamence",
+    "Height": 18,
+    "Weight": 1126
+  },
+  {
     "NationalDexNumber": 374,
     "FormName": "Normal",
     "Height": 6,
@@ -2476,6 +3172,12 @@
     "FormName": "Normal",
     "Height": 16,
     "Weight": 5500
+  },
+  {
+    "NationalDexNumber": 376,
+    "FormName": "Mega Metagross",
+    "Height": 25,
+    "Weight": 9429
   },
   {
     "NationalDexNumber": 377,
@@ -2502,10 +3204,22 @@
     "Weight": 400
   },
   {
+    "NationalDexNumber": 380,
+    "FormName": "Mega Latias",
+    "Height": 18,
+    "Weight": 520
+  },
+  {
     "NationalDexNumber": 381,
     "FormName": "Normal",
     "Height": 20,
     "Weight": 600
+  },
+  {
+    "NationalDexNumber": 381,
+    "FormName": "Mega Latios",
+    "Height": 23,
+    "Weight": 700
   },
   {
     "NationalDexNumber": 382,
@@ -2536,6 +3250,12 @@
     "FormName": "Normal",
     "Height": 70,
     "Weight": 2065
+  },
+  {
+    "NationalDexNumber": 384,
+    "FormName": "Mega Rayquaza",
+    "Height": 108,
+    "Weight": 3920
   },
   {
     "NationalDexNumber": 385,
@@ -2638,6 +3358,12 @@
     "FormName": "Normal",
     "Height": 12,
     "Weight": 249
+  },
+  {
+    "NationalDexNumber": 398,
+    "FormName": "Mega Staraptor",
+    "Height": 19,
+    "Weight": 500
   },
   {
     "NationalDexNumber": 399,
@@ -2862,6 +3588,12 @@
     "Weight": 333
   },
   {
+    "NationalDexNumber": 428,
+    "FormName": "Mega Lopunny",
+    "Height": 13,
+    "Weight": 283
+  },
+  {
     "NationalDexNumber": 429,
     "FormName": "Normal",
     "Height": 9,
@@ -2964,6 +3696,18 @@
     "Weight": 950
   },
   {
+    "NationalDexNumber": 445,
+    "FormName": "Mega Garchomp",
+    "Height": 19,
+    "Weight": 950
+  },
+  {
+    "NationalDexNumber": 445,
+    "FormName": "Mega Garchomp Z",
+    "Height": 19,
+    "Weight": 990
+  },
+  {
     "NationalDexNumber": 446,
     "FormName": "Normal",
     "Height": 6,
@@ -2980,6 +3724,18 @@
     "FormName": "Normal",
     "Height": 12,
     "Weight": 540
+  },
+  {
+    "NationalDexNumber": 448,
+    "FormName": "Mega Lucario",
+    "Height": 13,
+    "Weight": 575
+  },
+  {
+    "NationalDexNumber": 448,
+    "FormName": "Mega Lucario Z",
+    "Height": 13,
+    "Weight": 494
   },
   {
     "NationalDexNumber": 449,
@@ -3052,6 +3808,12 @@
     "FormName": "Normal",
     "Height": 22,
     "Weight": 1355
+  },
+  {
+    "NationalDexNumber": 460,
+    "FormName": "Mega Abomasnow",
+    "Height": 27,
+    "Weight": 1850
   },
   {
     "NationalDexNumber": 461,
@@ -3144,6 +3906,12 @@
     "Weight": 520
   },
   {
+    "NationalDexNumber": 475,
+    "FormName": "Mega Gallade",
+    "Height": 16,
+    "Weight": 564
+  },
+  {
     "NationalDexNumber": 476,
     "FormName": "Normal",
     "Height": 14,
@@ -3160,6 +3928,12 @@
     "FormName": "Normal",
     "Height": 13,
     "Weight": 266
+  },
+  {
+    "NationalDexNumber": 478,
+    "FormName": "Mega Froslass",
+    "Height": 26,
+    "Weight": 296
   },
   {
     "NationalDexNumber": 479,
@@ -3222,16 +3996,34 @@
     "Weight": 6830
   },
   {
+    "NationalDexNumber": 483,
+    "FormName": "Origin Forme",
+    "Height": 70,
+    "Weight": 8487
+  },
+  {
     "NationalDexNumber": 484,
     "FormName": "Normal",
     "Height": 42,
     "Weight": 3360
   },
   {
+    "NationalDexNumber": 484,
+    "FormName": "Origin Forme",
+    "Height": 63,
+    "Weight": 6590
+  },
+  {
     "NationalDexNumber": 485,
     "FormName": "Normal",
     "Height": 17,
     "Weight": 4300
+  },
+  {
+    "NationalDexNumber": 485,
+    "FormName": "Mega Heatran",
+    "Height": 28,
+    "Weight": 5700
   },
   {
     "NationalDexNumber": 486,
@@ -3274,6 +4066,12 @@
     "FormName": "Normal",
     "Height": 15,
     "Weight": 505
+  },
+  {
+    "NationalDexNumber": 491,
+    "FormName": "Mega Darkrai",
+    "Height": 30,
+    "Weight": 2400
   },
   {
     "NationalDexNumber": 492,
@@ -3438,6 +4236,12 @@
     "Weight": 1500
   },
   {
+    "NationalDexNumber": 500,
+    "FormName": "Mega Emboar",
+    "Height": 18,
+    "Weight": 1803
+  },
+  {
     "NationalDexNumber": 501,
     "FormName": "Normal",
     "Height": 5,
@@ -3454,6 +4258,12 @@
     "FormName": "Normal",
     "Height": 15,
     "Weight": 946
+  },
+  {
+    "NationalDexNumber": 503,
+    "FormName": "Hisuian Form",
+    "Height": 15,
+    "Weight": 582
   },
   {
     "NationalDexNumber": 504,
@@ -3618,10 +4428,22 @@
     "Weight": 404
   },
   {
+    "NationalDexNumber": 530,
+    "FormName": "Mega Excadrill",
+    "Height": 9,
+    "Weight": 600
+  },
+  {
     "NationalDexNumber": 531,
     "FormName": "Normal",
     "Height": 11,
     "Weight": 310
+  },
+  {
+    "NationalDexNumber": 531,
+    "FormName": "Mega Audino",
+    "Height": 15,
+    "Weight": 320
   },
   {
     "NationalDexNumber": 532,
@@ -3708,6 +4530,12 @@
     "Weight": 2005
   },
   {
+    "NationalDexNumber": 545,
+    "FormName": "Mega Scolipede",
+    "Height": 32,
+    "Weight": 2305
+  },
+  {
     "NationalDexNumber": 546,
     "FormName": "Normal",
     "Height": 3,
@@ -3732,6 +4560,12 @@
     "Weight": 163
   },
   {
+    "NationalDexNumber": 549,
+    "FormName": "Hisuian Form",
+    "Height": 12,
+    "Weight": 192
+  },
+  {
     "NationalDexNumber": 550,
     "FormName": "Blue-Striped Form",
     "Height": 10,
@@ -3740,6 +4574,12 @@
   {
     "NationalDexNumber": 550,
     "FormName": "Normal",
+    "Height": 10,
+    "Weight": 180
+  },
+  {
+    "NationalDexNumber": 550,
+    "FormName": "White-Striped Form",
     "Height": 10,
     "Weight": 180
   },
@@ -3768,6 +4608,12 @@
     "Weight": 375
   },
   {
+    "NationalDexNumber": 554,
+    "FormName": "Galarian Form",
+    "Height": 7,
+    "Weight": 400
+  },
+  {
     "NationalDexNumber": 555,
     "FormName": "Normal",
     "Height": 13,
@@ -3778,6 +4624,12 @@
     "FormName": "Zen Mode",
     "Height": 13,
     "Weight": 929
+  },
+  {
+    "NationalDexNumber": 555,
+    "FormName": "Galarian Form",
+    "Height": 17,
+    "Weight": 1200
   },
   {
     "NationalDexNumber": 556,
@@ -3810,6 +4662,12 @@
     "Weight": 300
   },
   {
+    "NationalDexNumber": 560,
+    "FormName": "Mega Scrafty",
+    "Height": 11,
+    "Weight": 310
+  },
+  {
     "NationalDexNumber": 561,
     "FormName": "Normal",
     "Height": 14,
@@ -3818,6 +4676,12 @@
   {
     "NationalDexNumber": 562,
     "FormName": "Normal",
+    "Height": 5,
+    "Weight": 15
+  },
+  {
+    "NationalDexNumber": 562,
+    "FormName": "Galarian Form",
     "Height": 5,
     "Weight": 15
   },
@@ -3864,8 +4728,20 @@
     "Weight": 1073
   },
   {
+    "NationalDexNumber": 569,
+    "FormName": "Gigantamax Form",
+    "Height": 210,
+    "Weight": 10000
+  },
+  {
     "NationalDexNumber": 570,
     "FormName": "Normal",
+    "Height": 7,
+    "Weight": 125
+  },
+  {
+    "NationalDexNumber": 570,
+    "FormName": "Hisuian Form",
     "Height": 7,
     "Weight": 125
   },
@@ -3874,6 +4750,12 @@
     "FormName": "Normal",
     "Height": 16,
     "Weight": 811
+  },
+  {
+    "NationalDexNumber": 571,
+    "FormName": "Hisuian Form",
+    "Height": 16,
+    "Weight": 730
   },
   {
     "NationalDexNumber": 572,
@@ -4110,6 +4992,12 @@
     "Weight": 805
   },
   {
+    "NationalDexNumber": 604,
+    "FormName": "Mega Eelektross",
+    "Height": 30,
+    "Weight": 1800
+  },
+  {
     "NationalDexNumber": 605,
     "FormName": "Normal",
     "Height": 5,
@@ -4138,6 +5026,12 @@
     "FormName": "Normal",
     "Height": 10,
     "Weight": 343
+  },
+  {
+    "NationalDexNumber": 609,
+    "FormName": "Mega Chandelure",
+    "Height": 25,
+    "Weight": 696
   },
   {
     "NationalDexNumber": 610,
@@ -4194,6 +5088,12 @@
     "Weight": 110
   },
   {
+    "NationalDexNumber": 618,
+    "FormName": "Galarian Form",
+    "Height": 7,
+    "Weight": 205
+  },
+  {
     "NationalDexNumber": 619,
     "FormName": "Normal",
     "Height": 9,
@@ -4221,6 +5121,12 @@
     "NationalDexNumber": 623,
     "FormName": "Normal",
     "Height": 28,
+    "Weight": 3300
+  },
+  {
+    "NationalDexNumber": 623,
+    "FormName": "Mega Golurk",
+    "Height": 40,
     "Weight": 3300
   },
   {
@@ -4252,6 +5158,12 @@
     "FormName": "Normal",
     "Height": 15,
     "Weight": 410
+  },
+  {
+    "NationalDexNumber": 628,
+    "FormName": "Hisuian Form",
+    "Height": 17,
+    "Weight": 434
   },
   {
     "NationalDexNumber": 629,
@@ -4464,6 +5376,12 @@
     "Weight": 900
   },
   {
+    "NationalDexNumber": 652,
+    "FormName": "Mega Chesnaught",
+    "Height": 16,
+    "Weight": 900
+  },
+  {
     "NationalDexNumber": 653,
     "FormName": "Normal",
     "Height": 4,
@@ -4482,6 +5400,12 @@
     "Weight": 390
   },
   {
+    "NationalDexNumber": 655,
+    "FormName": "Mega Delphox",
+    "Height": 15,
+    "Weight": 390
+  },
+  {
     "NationalDexNumber": 656,
     "FormName": "Normal",
     "Height": 3,
@@ -4496,6 +5420,24 @@
   {
     "NationalDexNumber": 658,
     "FormName": "Normal",
+    "Height": 15,
+    "Weight": 400
+  },
+  {
+    "NationalDexNumber": 658,
+    "FormName": "Battle Bond Greninja",
+    "Height": 15,
+    "Weight": 400
+  },
+  {
+    "NationalDexNumber": 658,
+    "FormName": "Ash-Greninja",
+    "Height": 15,
+    "Weight": 400
+  },
+  {
+    "NationalDexNumber": 658,
+    "FormName": "Mega Greninja",
     "Height": 15,
     "Weight": 400
   },
@@ -4674,6 +5616,12 @@
     "Weight": 815
   },
   {
+    "NationalDexNumber": 668,
+    "FormName": "Mega Pyroar",
+    "Height": 15,
+    "Weight": 933
+  },
+  {
     "NationalDexNumber": 669,
     "FormName": "Normal",
     "Height": 1,
@@ -4738,6 +5686,12 @@
     "FormName": "Eternal Flower",
     "Height": 2,
     "Weight": 9
+  },
+  {
+    "NationalDexNumber": 670,
+    "FormName": "Mega Floette",
+    "Height": 2,
+    "Weight": 1008
   },
   {
     "NationalDexNumber": 671,
@@ -4872,6 +5826,18 @@
     "Weight": 85
   },
   {
+    "NationalDexNumber": 678,
+    "FormName": "Mega Meowstic (Male)",
+    "Height": 8,
+    "Weight": 101
+  },
+  {
+    "NationalDexNumber": 678,
+    "FormName": "Mega Meowstic (Female)",
+    "Height": 8,
+    "Weight": 101
+  },
+  {
     "NationalDexNumber": 679,
     "FormName": "Normal",
     "Height": 8,
@@ -4932,6 +5898,12 @@
     "Weight": 470
   },
   {
+    "NationalDexNumber": 687,
+    "FormName": "Mega Malamar",
+    "Height": 29,
+    "Weight": 698
+  },
+  {
     "NationalDexNumber": 688,
     "FormName": "Normal",
     "Height": 5,
@@ -4944,6 +5916,12 @@
     "Weight": 960
   },
   {
+    "NationalDexNumber": 689,
+    "FormName": "Mega Barbaracle",
+    "Height": 22,
+    "Weight": 1000
+  },
+  {
     "NationalDexNumber": 690,
     "FormName": "Normal",
     "Height": 5,
@@ -4954,6 +5932,12 @@
     "FormName": "Normal",
     "Height": 18,
     "Weight": 815
+  },
+  {
+    "NationalDexNumber": 691,
+    "FormName": "Mega Dragalge",
+    "Height": 21,
+    "Weight": 1003
   },
   {
     "NationalDexNumber": 692,
@@ -5016,6 +6000,12 @@
     "Weight": 215
   },
   {
+    "NationalDexNumber": 701,
+    "FormName": "Mega Hawlucha",
+    "Height": 10,
+    "Weight": 250
+  },
+  {
     "NationalDexNumber": 702,
     "FormName": "Normal",
     "Height": 2,
@@ -5040,10 +6030,22 @@
     "Weight": 175
   },
   {
+    "NationalDexNumber": 705,
+    "FormName": "Hisuian Form",
+    "Height": 7,
+    "Weight": 685
+  },
+  {
     "NationalDexNumber": 706,
     "FormName": "Normal",
     "Height": 20,
     "Weight": 1505
+  },
+  {
+    "NationalDexNumber": 706,
+    "FormName": "Hisuian Form",
+    "Height": 17,
+    "Weight": 3341
   },
   {
     "NationalDexNumber": 707,
@@ -5124,6 +6126,12 @@
     "Weight": 5050
   },
   {
+    "NationalDexNumber": 713,
+    "FormName": "Hisuian Form",
+    "Height": 14,
+    "Weight": 2624
+  },
+  {
     "NationalDexNumber": 714,
     "FormName": "Normal",
     "Height": 5,
@@ -5160,10 +6168,40 @@
     "Weight": 3050
   },
   {
+    "NationalDexNumber": 718,
+    "FormName": "10% Forme (Power Construct)",
+    "Height": 12,
+    "Weight": 335
+  },
+  {
+    "NationalDexNumber": 718,
+    "FormName": "50% Forme (Power Construct)",
+    "Height": 50,
+    "Weight": 3050
+  },
+  {
+    "NationalDexNumber": 718,
+    "FormName": "Complete Forme",
+    "Height": 45,
+    "Weight": 6100
+  },
+  {
+    "NationalDexNumber": 718,
+    "FormName": "10% Forme",
+    "Height": 12,
+    "Weight": 335
+  },
+  {
     "NationalDexNumber": 719,
     "FormName": "Normal",
     "Height": 7,
     "Weight": 88
+  },
+  {
+    "NationalDexNumber": 719,
+    "FormName": "Mega Diancie",
+    "Height": 11,
+    "Weight": 278
   },
   {
     "NationalDexNumber": 720,
@@ -5182,5 +6220,2933 @@
     "FormName": "Normal",
     "Height": 17,
     "Weight": 1950
+  },
+  {
+    "NationalDexNumber": 722,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 15
+  },
+  {
+    "NationalDexNumber": 723,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 160
+  },
+  {
+    "NationalDexNumber": 724,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 366
+  },
+  {
+    "NationalDexNumber": 724,
+    "FormName": "Hisuian Form",
+    "Height": 16,
+    "Weight": 370
+  },
+  {
+    "NationalDexNumber": 725,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 43
+  },
+  {
+    "NationalDexNumber": 726,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 250
+  },
+  {
+    "NationalDexNumber": 727,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 830
+  },
+  {
+    "NationalDexNumber": 728,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 75
+  },
+  {
+    "NationalDexNumber": 729,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 175
+  },
+  {
+    "NationalDexNumber": 730,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 440
+  },
+  {
+    "NationalDexNumber": 731,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 12
+  },
+  {
+    "NationalDexNumber": 732,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 148
+  },
+  {
+    "NationalDexNumber": 733,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 260
+  },
+  {
+    "NationalDexNumber": 734,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 735,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 142
+  },
+  {
+    "NationalDexNumber": 735,
+    "FormName": "Totem Gumshoos",
+    "Height": 14,
+    "Weight": 600
+  },
+  {
+    "NationalDexNumber": 736,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 44
+  },
+  {
+    "NationalDexNumber": 737,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 105
+  },
+  {
+    "NationalDexNumber": 738,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 450
+  },
+  {
+    "NationalDexNumber": 738,
+    "FormName": "Totem Vikavolt",
+    "Height": 26,
+    "Weight": 1475
+  },
+  {
+    "NationalDexNumber": 739,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 70
+  },
+  {
+    "NationalDexNumber": 740,
+    "FormName": "Normal",
+    "Height": 17,
+    "Weight": 1800
+  },
+  {
+    "NationalDexNumber": 740,
+    "FormName": "Mega Crabominable",
+    "Height": 26,
+    "Weight": 2528
+  },
+  {
+    "NationalDexNumber": 741,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 34
+  },
+  {
+    "NationalDexNumber": 741,
+    "FormName": "Pom-Pom Style",
+    "Height": 6,
+    "Weight": 34
+  },
+  {
+    "NationalDexNumber": 741,
+    "FormName": "Pa’u Style",
+    "Height": 6,
+    "Weight": 34
+  },
+  {
+    "NationalDexNumber": 741,
+    "FormName": "Sensu Style",
+    "Height": 6,
+    "Weight": 34
+  },
+  {
+    "NationalDexNumber": 742,
+    "FormName": "Normal",
+    "Height": 1,
+    "Weight": 2
+  },
+  {
+    "NationalDexNumber": 743,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 743,
+    "FormName": "Totem Ribombee",
+    "Height": 4,
+    "Weight": 20
+  },
+  {
+    "NationalDexNumber": 744,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 92
+  },
+  {
+    "NationalDexNumber": 744,
+    "FormName": "Own Tempo Rockruff",
+    "Height": 5,
+    "Weight": 92
+  },
+  {
+    "NationalDexNumber": 745,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 250
+  },
+  {
+    "NationalDexNumber": 745,
+    "FormName": "Midnight Form",
+    "Height": 11,
+    "Weight": 250
+  },
+  {
+    "NationalDexNumber": 745,
+    "FormName": "Dusk Form",
+    "Height": 8,
+    "Weight": 250
+  },
+  {
+    "NationalDexNumber": 746,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 3
+  },
+  {
+    "NationalDexNumber": 746,
+    "FormName": "School Form",
+    "Height": 82,
+    "Weight": 786
+  },
+  {
+    "NationalDexNumber": 747,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 80
+  },
+  {
+    "NationalDexNumber": 748,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 145
+  },
+  {
+    "NationalDexNumber": 749,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 1100
+  },
+  {
+    "NationalDexNumber": 750,
+    "FormName": "Normal",
+    "Height": 25,
+    "Weight": 9200
+  },
+  {
+    "NationalDexNumber": 751,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 40
+  },
+  {
+    "NationalDexNumber": 752,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 820
+  },
+  {
+    "NationalDexNumber": 752,
+    "FormName": "Totem Araquanid",
+    "Height": 31,
+    "Weight": 2175
+  },
+  {
+    "NationalDexNumber": 753,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 15
+  },
+  {
+    "NationalDexNumber": 754,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 185
+  },
+  {
+    "NationalDexNumber": 754,
+    "FormName": "Totem Lurantis",
+    "Height": 15,
+    "Weight": 580
+  },
+  {
+    "NationalDexNumber": 755,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 15
+  },
+  {
+    "NationalDexNumber": 756,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 115
+  },
+  {
+    "NationalDexNumber": 757,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 48
+  },
+  {
+    "NationalDexNumber": 758,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 222
+  },
+  {
+    "NationalDexNumber": 758,
+    "FormName": "Totem Salazzle",
+    "Height": 21,
+    "Weight": 810
+  },
+  {
+    "NationalDexNumber": 759,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 68
+  },
+  {
+    "NationalDexNumber": 760,
+    "FormName": "Normal",
+    "Height": 21,
+    "Weight": 1350
+  },
+  {
+    "NationalDexNumber": 761,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 32
+  },
+  {
+    "NationalDexNumber": 762,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 82
+  },
+  {
+    "NationalDexNumber": 763,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 214
+  },
+  {
+    "NationalDexNumber": 764,
+    "FormName": "Normal",
+    "Height": 1,
+    "Weight": 3
+  },
+  {
+    "NationalDexNumber": 765,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 760
+  },
+  {
+    "NationalDexNumber": 766,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 828
+  },
+  {
+    "NationalDexNumber": 767,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 120
+  },
+  {
+    "NationalDexNumber": 768,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 1080
+  },
+  {
+    "NationalDexNumber": 768,
+    "FormName": "Mega Golisopod",
+    "Height": 23,
+    "Weight": 1480
+  },
+  {
+    "NationalDexNumber": 769,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 700
+  },
+  {
+    "NationalDexNumber": 770,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 2500
+  },
+  {
+    "NationalDexNumber": 771,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 12
+  },
+  {
+    "NationalDexNumber": 772,
+    "FormName": "Normal",
+    "Height": 19,
+    "Weight": 1205
+  },
+  {
+    "NationalDexNumber": 773,
+    "FormName": "Normal",
+    "Height": 23,
+    "Weight": 1005
+  },
+  {
+    "NationalDexNumber": 773,
+    "FormName": "Type: Fighting",
+    "Height": 23,
+    "Weight": 1005
+  },
+  {
+    "NationalDexNumber": 773,
+    "FormName": "Type: Flying",
+    "Height": 23,
+    "Weight": 1005
+  },
+  {
+    "NationalDexNumber": 773,
+    "FormName": "Type: Poison",
+    "Height": 23,
+    "Weight": 1005
+  },
+  {
+    "NationalDexNumber": 773,
+    "FormName": "Type: Ground",
+    "Height": 23,
+    "Weight": 1005
+  },
+  {
+    "NationalDexNumber": 773,
+    "FormName": "Type: Rock",
+    "Height": 23,
+    "Weight": 1005
+  },
+  {
+    "NationalDexNumber": 773,
+    "FormName": "Type: Bug",
+    "Height": 23,
+    "Weight": 1005
+  },
+  {
+    "NationalDexNumber": 773,
+    "FormName": "Type: Ghost",
+    "Height": 23,
+    "Weight": 1005
+  },
+  {
+    "NationalDexNumber": 773,
+    "FormName": "Type: Steel",
+    "Height": 23,
+    "Weight": 1005
+  },
+  {
+    "NationalDexNumber": 773,
+    "FormName": "Type: Fire",
+    "Height": 23,
+    "Weight": 1005
+  },
+  {
+    "NationalDexNumber": 773,
+    "FormName": "Type: Water",
+    "Height": 23,
+    "Weight": 1005
+  },
+  {
+    "NationalDexNumber": 773,
+    "FormName": "Type: Grass",
+    "Height": 23,
+    "Weight": 1005
+  },
+  {
+    "NationalDexNumber": 773,
+    "FormName": "Type: Electric",
+    "Height": 23,
+    "Weight": 1005
+  },
+  {
+    "NationalDexNumber": 773,
+    "FormName": "Type: Psychic",
+    "Height": 23,
+    "Weight": 1005
+  },
+  {
+    "NationalDexNumber": 773,
+    "FormName": "Type: Ice",
+    "Height": 23,
+    "Weight": 1005
+  },
+  {
+    "NationalDexNumber": 773,
+    "FormName": "Type: Dragon",
+    "Height": 23,
+    "Weight": 1005
+  },
+  {
+    "NationalDexNumber": 773,
+    "FormName": "Type: Dark",
+    "Height": 23,
+    "Weight": 1005
+  },
+  {
+    "NationalDexNumber": 773,
+    "FormName": "Type: Fairy",
+    "Height": 23,
+    "Weight": 1005
+  },
+  {
+    "NationalDexNumber": 774,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 400
+  },
+  {
+    "NationalDexNumber": 774,
+    "FormName": "Orange Meteor Form",
+    "Height": 3,
+    "Weight": 400
+  },
+  {
+    "NationalDexNumber": 774,
+    "FormName": "Yellow Meteor Form",
+    "Height": 3,
+    "Weight": 400
+  },
+  {
+    "NationalDexNumber": 774,
+    "FormName": "Green Meteor Form",
+    "Height": 3,
+    "Weight": 400
+  },
+  {
+    "NationalDexNumber": 774,
+    "FormName": "Blue Meteor Form",
+    "Height": 3,
+    "Weight": 400
+  },
+  {
+    "NationalDexNumber": 774,
+    "FormName": "Indigo Meteor Form",
+    "Height": 3,
+    "Weight": 400
+  },
+  {
+    "NationalDexNumber": 774,
+    "FormName": "Violet Meteor Form",
+    "Height": 3,
+    "Weight": 400
+  },
+  {
+    "NationalDexNumber": 774,
+    "FormName": "Red Core",
+    "Height": 3,
+    "Weight": 3
+  },
+  {
+    "NationalDexNumber": 774,
+    "FormName": "Orange Core",
+    "Height": 3,
+    "Weight": 3
+  },
+  {
+    "NationalDexNumber": 774,
+    "FormName": "Yellow Core",
+    "Height": 3,
+    "Weight": 3
+  },
+  {
+    "NationalDexNumber": 774,
+    "FormName": "Green Core",
+    "Height": 3,
+    "Weight": 3
+  },
+  {
+    "NationalDexNumber": 774,
+    "FormName": "Blue Core",
+    "Height": 3,
+    "Weight": 3
+  },
+  {
+    "NationalDexNumber": 774,
+    "FormName": "Indigo Core",
+    "Height": 3,
+    "Weight": 3
+  },
+  {
+    "NationalDexNumber": 774,
+    "FormName": "Violet Core",
+    "Height": 3,
+    "Weight": 3
+  },
+  {
+    "NationalDexNumber": 775,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 199
+  },
+  {
+    "NationalDexNumber": 776,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 2120
+  },
+  {
+    "NationalDexNumber": 777,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 33
+  },
+  {
+    "NationalDexNumber": 777,
+    "FormName": "Totem Togedemaru",
+    "Height": 6,
+    "Weight": 130
+  },
+  {
+    "NationalDexNumber": 778,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 7
+  },
+  {
+    "NationalDexNumber": 778,
+    "FormName": "Busted Form",
+    "Height": 2,
+    "Weight": 7
+  },
+  {
+    "NationalDexNumber": 778,
+    "FormName": "Totem Disguised Mimikyu",
+    "Height": 4,
+    "Weight": 28
+  },
+  {
+    "NationalDexNumber": 778,
+    "FormName": "Totem Busted Mimikyu",
+    "Height": 4,
+    "Weight": 28
+  },
+  {
+    "NationalDexNumber": 779,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 190
+  },
+  {
+    "NationalDexNumber": 780,
+    "FormName": "Normal",
+    "Height": 30,
+    "Weight": 1850
+  },
+  {
+    "NationalDexNumber": 780,
+    "FormName": "Mega Drampa",
+    "Height": 30,
+    "Weight": 2405
+  },
+  {
+    "NationalDexNumber": 781,
+    "FormName": "Normal",
+    "Height": 39,
+    "Weight": 2100
+  },
+  {
+    "NationalDexNumber": 782,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 297
+  },
+  {
+    "NationalDexNumber": 783,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 470
+  },
+  {
+    "NationalDexNumber": 784,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 782
+  },
+  {
+    "NationalDexNumber": 784,
+    "FormName": "Totem Kommo-o",
+    "Height": 24,
+    "Weight": 2075
+  },
+  {
+    "NationalDexNumber": 785,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 205
+  },
+  {
+    "NationalDexNumber": 786,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 186
+  },
+  {
+    "NationalDexNumber": 787,
+    "FormName": "Normal",
+    "Height": 19,
+    "Weight": 455
+  },
+  {
+    "NationalDexNumber": 788,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 212
+  },
+  {
+    "NationalDexNumber": 789,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 1
+  },
+  {
+    "NationalDexNumber": 790,
+    "FormName": "Normal",
+    "Height": 1,
+    "Weight": 9999
+  },
+  {
+    "NationalDexNumber": 791,
+    "FormName": "Normal",
+    "Height": 34,
+    "Weight": 2300
+  },
+  {
+    "NationalDexNumber": 792,
+    "FormName": "Normal",
+    "Height": 40,
+    "Weight": 1200
+  },
+  {
+    "NationalDexNumber": 793,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 555
+  },
+  {
+    "NationalDexNumber": 794,
+    "FormName": "Normal",
+    "Height": 24,
+    "Weight": 3336
+  },
+  {
+    "NationalDexNumber": 795,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 250
+  },
+  {
+    "NationalDexNumber": 796,
+    "FormName": "Normal",
+    "Height": 38,
+    "Weight": 1000
+  },
+  {
+    "NationalDexNumber": 797,
+    "FormName": "Normal",
+    "Height": 92,
+    "Weight": 9999
+  },
+  {
+    "NationalDexNumber": 798,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 1
+  },
+  {
+    "NationalDexNumber": 799,
+    "FormName": "Normal",
+    "Height": 55,
+    "Weight": 8880
+  },
+  {
+    "NationalDexNumber": 800,
+    "FormName": "Normal",
+    "Height": 24,
+    "Weight": 2300
+  },
+  {
+    "NationalDexNumber": 800,
+    "FormName": "Dusk Mane",
+    "Height": 38,
+    "Weight": 4600
+  },
+  {
+    "NationalDexNumber": 800,
+    "FormName": "Dawn Wings",
+    "Height": 42,
+    "Weight": 3500
+  },
+  {
+    "NationalDexNumber": 800,
+    "FormName": "Ultra Necrozma",
+    "Height": 75,
+    "Weight": 2300
+  },
+  {
+    "NationalDexNumber": 801,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 805
+  },
+  {
+    "NationalDexNumber": 801,
+    "FormName": "Original Color",
+    "Height": 10,
+    "Weight": 805
+  },
+  {
+    "NationalDexNumber": 801,
+    "FormName": "Mega Magearna",
+    "Height": 13,
+    "Weight": 2481
+  },
+  {
+    "NationalDexNumber": 801,
+    "FormName": "Mega Original Magearna",
+    "Height": 13,
+    "Weight": 2481
+  },
+  {
+    "NationalDexNumber": 802,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 222
+  },
+  {
+    "NationalDexNumber": 803,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 18
+  },
+  {
+    "NationalDexNumber": 804,
+    "FormName": "Normal",
+    "Height": 36,
+    "Weight": 1500
+  },
+  {
+    "NationalDexNumber": 805,
+    "FormName": "Normal",
+    "Height": 55,
+    "Weight": 8200
+  },
+  {
+    "NationalDexNumber": 806,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 130
+  },
+  {
+    "NationalDexNumber": 807,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 445
+  },
+  {
+    "NationalDexNumber": 807,
+    "FormName": "Mega Zeraora",
+    "Height": 15,
+    "Weight": 445
+  },
+  {
+    "NationalDexNumber": 808,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 80
+  },
+  {
+    "NationalDexNumber": 809,
+    "FormName": "Normal",
+    "Height": 25,
+    "Weight": 8000
+  },
+  {
+    "NationalDexNumber": 809,
+    "FormName": "Gigantamax Form",
+    "Height": 250,
+    "Weight": 10000
+  },
+  {
+    "NationalDexNumber": 810,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 811,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 140
+  },
+  {
+    "NationalDexNumber": 812,
+    "FormName": "Normal",
+    "Height": 21,
+    "Weight": 900
+  },
+  {
+    "NationalDexNumber": 812,
+    "FormName": "Gigantamax Form",
+    "Height": 280,
+    "Weight": 10000
+  },
+  {
+    "NationalDexNumber": 813,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 45
+  },
+  {
+    "NationalDexNumber": 814,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 90
+  },
+  {
+    "NationalDexNumber": 815,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 330
+  },
+  {
+    "NationalDexNumber": 815,
+    "FormName": "Gigantamax Form",
+    "Height": 270,
+    "Weight": 10000
+  },
+  {
+    "NationalDexNumber": 816,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 40
+  },
+  {
+    "NationalDexNumber": 817,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 115
+  },
+  {
+    "NationalDexNumber": 818,
+    "FormName": "Normal",
+    "Height": 19,
+    "Weight": 452
+  },
+  {
+    "NationalDexNumber": 818,
+    "FormName": "Gigantamax Form",
+    "Height": 400,
+    "Weight": 10000
+  },
+  {
+    "NationalDexNumber": 819,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 25
+  },
+  {
+    "NationalDexNumber": 820,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 821,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 18
+  },
+  {
+    "NationalDexNumber": 822,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 160
+  },
+  {
+    "NationalDexNumber": 823,
+    "FormName": "Normal",
+    "Height": 22,
+    "Weight": 750
+  },
+  {
+    "NationalDexNumber": 823,
+    "FormName": "Gigantamax Form",
+    "Height": 140,
+    "Weight": 10000
+  },
+  {
+    "NationalDexNumber": 824,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 80
+  },
+  {
+    "NationalDexNumber": 825,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 195
+  },
+  {
+    "NationalDexNumber": 826,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 408
+  },
+  {
+    "NationalDexNumber": 826,
+    "FormName": "Gigantamax Form",
+    "Height": 140,
+    "Weight": 10000
+  },
+  {
+    "NationalDexNumber": 827,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 89
+  },
+  {
+    "NationalDexNumber": 828,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 199
+  },
+  {
+    "NationalDexNumber": 829,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 22
+  },
+  {
+    "NationalDexNumber": 830,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 25
+  },
+  {
+    "NationalDexNumber": 831,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 832,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 430
+  },
+  {
+    "NationalDexNumber": 833,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 85
+  },
+  {
+    "NationalDexNumber": 834,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 1155
+  },
+  {
+    "NationalDexNumber": 834,
+    "FormName": "Gigantamax Form",
+    "Height": 240,
+    "Weight": 10000
+  },
+  {
+    "NationalDexNumber": 835,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 135
+  },
+  {
+    "NationalDexNumber": 836,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 340
+  },
+  {
+    "NationalDexNumber": 837,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 120
+  },
+  {
+    "NationalDexNumber": 838,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 780
+  },
+  {
+    "NationalDexNumber": 839,
+    "FormName": "Normal",
+    "Height": 28,
+    "Weight": 3105
+  },
+  {
+    "NationalDexNumber": 839,
+    "FormName": "Gigantamax Form",
+    "Height": 420,
+    "Weight": 10000
+  },
+  {
+    "NationalDexNumber": 840,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 841,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 10
+  },
+  {
+    "NationalDexNumber": 841,
+    "FormName": "Gigantamax Form",
+    "Height": 240,
+    "Weight": 10000
+  },
+  {
+    "NationalDexNumber": 842,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 130
+  },
+  {
+    "NationalDexNumber": 842,
+    "FormName": "Gigantamax Form",
+    "Height": 240,
+    "Weight": 10000
+  },
+  {
+    "NationalDexNumber": 843,
+    "FormName": "Normal",
+    "Height": 22,
+    "Weight": 76
+  },
+  {
+    "NationalDexNumber": 844,
+    "FormName": "Normal",
+    "Height": 38,
+    "Weight": 655
+  },
+  {
+    "NationalDexNumber": 844,
+    "FormName": "Gigantamax Form",
+    "Height": 220,
+    "Weight": 10000
+  },
+  {
+    "NationalDexNumber": 845,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 180
+  },
+  {
+    "NationalDexNumber": 845,
+    "FormName": "Gulping Form",
+    "Height": 8,
+    "Weight": 180
+  },
+  {
+    "NationalDexNumber": 845,
+    "FormName": "Gorging Form",
+    "Height": 8,
+    "Weight": 180
+  },
+  {
+    "NationalDexNumber": 846,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 10
+  },
+  {
+    "NationalDexNumber": 847,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 300
+  },
+  {
+    "NationalDexNumber": 848,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 110
+  },
+  {
+    "NationalDexNumber": 849,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 400
+  },
+  {
+    "NationalDexNumber": 849,
+    "FormName": "Low Key Form",
+    "Height": 16,
+    "Weight": 400
+  },
+  {
+    "NationalDexNumber": 849,
+    "FormName": "Gigantamax Form (Amped)",
+    "Height": 240,
+    "Weight": 10000
+  },
+  {
+    "NationalDexNumber": 849,
+    "FormName": "Gigantamax Form (Low Key)",
+    "Height": 240,
+    "Weight": 10000
+  },
+  {
+    "NationalDexNumber": 850,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 10
+  },
+  {
+    "NationalDexNumber": 851,
+    "FormName": "Normal",
+    "Height": 30,
+    "Weight": 1200
+  },
+  {
+    "NationalDexNumber": 851,
+    "FormName": "Gigantamax Form",
+    "Height": 750,
+    "Weight": 10000
+  },
+  {
+    "NationalDexNumber": 852,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 40
+  },
+  {
+    "NationalDexNumber": 853,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 390
+  },
+  {
+    "NationalDexNumber": 854,
+    "FormName": "Normal",
+    "Height": 1,
+    "Weight": 2
+  },
+  {
+    "NationalDexNumber": 854,
+    "FormName": "Antique Form",
+    "Height": 1,
+    "Weight": 2
+  },
+  {
+    "NationalDexNumber": 855,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 4
+  },
+  {
+    "NationalDexNumber": 855,
+    "FormName": "Antique Form",
+    "Height": 2,
+    "Weight": 4
+  },
+  {
+    "NationalDexNumber": 856,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 34
+  },
+  {
+    "NationalDexNumber": 857,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 48
+  },
+  {
+    "NationalDexNumber": 858,
+    "FormName": "Normal",
+    "Height": 21,
+    "Weight": 51
+  },
+  {
+    "NationalDexNumber": 858,
+    "FormName": "Gigantamax Form",
+    "Height": 260,
+    "Weight": 10000
+  },
+  {
+    "NationalDexNumber": 859,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 55
+  },
+  {
+    "NationalDexNumber": 860,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 125
+  },
+  {
+    "NationalDexNumber": 861,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 610
+  },
+  {
+    "NationalDexNumber": 861,
+    "FormName": "Gigantamax Form",
+    "Height": 320,
+    "Weight": 10000
+  },
+  {
+    "NationalDexNumber": 862,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 460
+  },
+  {
+    "NationalDexNumber": 863,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 280
+  },
+  {
+    "NationalDexNumber": 864,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 4
+  },
+  {
+    "NationalDexNumber": 865,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 1170
+  },
+  {
+    "NationalDexNumber": 866,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 582
+  },
+  {
+    "NationalDexNumber": 867,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 666
+  },
+  {
+    "NationalDexNumber": 868,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 3
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Ruby Cream Strawberry Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Matcha Cream Strawberry Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Mint Cream Strawberry Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Lemon Cream Strawberry Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Salted Cream Strawberry Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Ruby Swirl Strawberry Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Caramel Swirl Strawberry Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Rainbow Swirl Strawberry Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Gigantamax Form",
+    "Height": 300,
+    "Weight": 10000
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Vanilla Cream Berry Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Ruby Cream Berry Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Matcha Cream Berry Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Mint Cream Berry Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Lemon Cream Berry Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Salted Cream Berry Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Ruby Swirl Berry Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Caramel Swirl Berry Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Rainbow Swirl Berry Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Vanilla Cream Love Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Ruby Cream Love Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Matcha Cream Love Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Mint Cream Love Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Lemon Cream Love Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Salted Cream Love Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Ruby Swirl Love Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Caramel Swirl Love Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Rainbow Swirl Love Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Vanilla Cream Star Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Ruby Cream Star Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Matcha Cream Star Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Mint Cream Star Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Lemon Cream Star Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Salted Cream Star Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Ruby Swirl Star Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Caramel Swirl Star Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Rainbow Swirl Star Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Vanilla Cream Clover Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Ruby Cream Clover Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Matcha Cream Clover Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Mint Cream Clover Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Lemon Cream Clover Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Salted Cream Clover Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Ruby Swirl Clover Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Caramel Swirl Clover Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Rainbow Swirl Clover Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Vanilla Cream Flower Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Ruby Cream Flower Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Matcha Cream Flower Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Mint Cream Flower Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Lemon Cream Flower Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Salted Cream Flower Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Ruby Swirl Flower Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Caramel Swirl Flower Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Rainbow Swirl Flower Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Vanilla Cream Ribbon Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Ruby Cream Ribbon Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Matcha Cream Ribbon Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Mint Cream Ribbon Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Lemon Cream Ribbon Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Salted Cream Ribbon Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Ruby Swirl Ribbon Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Caramel Swirl Ribbon Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 869,
+    "FormName": "Rainbow Swirl Ribbon Sweet",
+    "Height": 3,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 870,
+    "FormName": "Normal",
+    "Height": 30,
+    "Weight": 620
+  },
+  {
+    "NationalDexNumber": 870,
+    "FormName": "Mega Falinks",
+    "Height": 16,
+    "Weight": 990
+  },
+  {
+    "NationalDexNumber": 871,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 10
+  },
+  {
+    "NationalDexNumber": 872,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 38
+  },
+  {
+    "NationalDexNumber": 873,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 420
+  },
+  {
+    "NationalDexNumber": 874,
+    "FormName": "Normal",
+    "Height": 25,
+    "Weight": 5200
+  },
+  {
+    "NationalDexNumber": 875,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 890
+  },
+  {
+    "NationalDexNumber": 875,
+    "FormName": "Noice Face",
+    "Height": 14,
+    "Weight": 890
+  },
+  {
+    "NationalDexNumber": 876,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 280
+  },
+  {
+    "NationalDexNumber": 876,
+    "FormName": "Female",
+    "Height": 9,
+    "Weight": 280
+  },
+  {
+    "NationalDexNumber": 877,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 30
+  },
+  {
+    "NationalDexNumber": 877,
+    "FormName": "Hangry Mode",
+    "Height": 3,
+    "Weight": 30
+  },
+  {
+    "NationalDexNumber": 878,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 1000
+  },
+  {
+    "NationalDexNumber": 879,
+    "FormName": "Normal",
+    "Height": 30,
+    "Weight": 6500
+  },
+  {
+    "NationalDexNumber": 879,
+    "FormName": "Gigantamax Form",
+    "Height": 230,
+    "Weight": 10000
+  },
+  {
+    "NationalDexNumber": 880,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 1900
+  },
+  {
+    "NationalDexNumber": 881,
+    "FormName": "Normal",
+    "Height": 23,
+    "Weight": 1500
+  },
+  {
+    "NationalDexNumber": 882,
+    "FormName": "Normal",
+    "Height": 23,
+    "Weight": 2150
+  },
+  {
+    "NationalDexNumber": 883,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 1750
+  },
+  {
+    "NationalDexNumber": 884,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 400
+  },
+  {
+    "NationalDexNumber": 884,
+    "FormName": "Gigantamax Form",
+    "Height": 430,
+    "Weight": 10000
+  },
+  {
+    "NationalDexNumber": 885,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 20
+  },
+  {
+    "NationalDexNumber": 886,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 110
+  },
+  {
+    "NationalDexNumber": 887,
+    "FormName": "Normal",
+    "Height": 30,
+    "Weight": 500
+  },
+  {
+    "NationalDexNumber": 888,
+    "FormName": "Normal",
+    "Height": 28,
+    "Weight": 1100
+  },
+  {
+    "NationalDexNumber": 888,
+    "FormName": "Crowned Sword",
+    "Height": 28,
+    "Weight": 3550
+  },
+  {
+    "NationalDexNumber": 889,
+    "FormName": "Normal",
+    "Height": 29,
+    "Weight": 2100
+  },
+  {
+    "NationalDexNumber": 889,
+    "FormName": "Crowned Shield",
+    "Height": 29,
+    "Weight": 7850
+  },
+  {
+    "NationalDexNumber": 890,
+    "FormName": "Normal",
+    "Height": 200,
+    "Weight": 9500
+  },
+  {
+    "NationalDexNumber": 890,
+    "FormName": "Eternamax",
+    "Height": 1000,
+    "Weight": 9500
+  },
+  {
+    "NationalDexNumber": 891,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 120
+  },
+  {
+    "NationalDexNumber": 892,
+    "FormName": "Normal",
+    "Height": 19,
+    "Weight": 1050
+  },
+  {
+    "NationalDexNumber": 892,
+    "FormName": "Rapid Strike Style",
+    "Height": 19,
+    "Weight": 1050
+  },
+  {
+    "NationalDexNumber": 892,
+    "FormName": "Gigantamax Form (Single Strike)",
+    "Height": 290,
+    "Weight": 10000
+  },
+  {
+    "NationalDexNumber": 892,
+    "FormName": "Gigantamax Form (Rapid Strike)",
+    "Height": 260,
+    "Weight": 10000
+  },
+  {
+    "NationalDexNumber": 893,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 700
+  },
+  {
+    "NationalDexNumber": 893,
+    "FormName": "Dada",
+    "Height": 18,
+    "Weight": 700
+  },
+  {
+    "NationalDexNumber": 894,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 1450
+  },
+  {
+    "NationalDexNumber": 895,
+    "FormName": "Normal",
+    "Height": 21,
+    "Weight": 2000
+  },
+  {
+    "NationalDexNumber": 896,
+    "FormName": "Normal",
+    "Height": 22,
+    "Weight": 8000
+  },
+  {
+    "NationalDexNumber": 897,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 445
+  },
+  {
+    "NationalDexNumber": 898,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 77
+  },
+  {
+    "NationalDexNumber": 898,
+    "FormName": "Ice Rider",
+    "Height": 24,
+    "Weight": 8091
+  },
+  {
+    "NationalDexNumber": 898,
+    "FormName": "Shadow Rider",
+    "Height": 24,
+    "Weight": 536
+  },
+  {
+    "NationalDexNumber": 899,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 951
+  },
+  {
+    "NationalDexNumber": 900,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 890
+  },
+  {
+    "NationalDexNumber": 901,
+    "FormName": "Normal",
+    "Height": 24,
+    "Weight": 2900
+  },
+  {
+    "NationalDexNumber": 901,
+    "FormName": "Bloodmoon",
+    "Height": 24,
+    "Weight": 2900
+  },
+  {
+    "NationalDexNumber": 902,
+    "FormName": "Normal",
+    "Height": 30,
+    "Weight": 1100
+  },
+  {
+    "NationalDexNumber": 902,
+    "FormName": "Female",
+    "Height": 30,
+    "Weight": 1100
+  },
+  {
+    "NationalDexNumber": 903,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 430
+  },
+  {
+    "NationalDexNumber": 904,
+    "FormName": "Normal",
+    "Height": 25,
+    "Weight": 605
+  },
+  {
+    "NationalDexNumber": 905,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 480
+  },
+  {
+    "NationalDexNumber": 905,
+    "FormName": "Therian Forme",
+    "Height": 16,
+    "Weight": 480
+  },
+  {
+    "NationalDexNumber": 906,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 41
+  },
+  {
+    "NationalDexNumber": 907,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 122
+  },
+  {
+    "NationalDexNumber": 908,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 312
+  },
+  {
+    "NationalDexNumber": 909,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 98
+  },
+  {
+    "NationalDexNumber": 910,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 307
+  },
+  {
+    "NationalDexNumber": 911,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 3265
+  },
+  {
+    "NationalDexNumber": 912,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 61
+  },
+  {
+    "NationalDexNumber": 913,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 215
+  },
+  {
+    "NationalDexNumber": 914,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 619
+  },
+  {
+    "NationalDexNumber": 915,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 102
+  },
+  {
+    "NationalDexNumber": 916,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 1200
+  },
+  {
+    "NationalDexNumber": 916,
+    "FormName": "Female",
+    "Height": 10,
+    "Weight": 1200
+  },
+  {
+    "NationalDexNumber": 917,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 40
+  },
+  {
+    "NationalDexNumber": 918,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 165
+  },
+  {
+    "NationalDexNumber": 919,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 10
+  },
+  {
+    "NationalDexNumber": 920,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 175
+  },
+  {
+    "NationalDexNumber": 921,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 25
+  },
+  {
+    "NationalDexNumber": 922,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 65
+  },
+  {
+    "NationalDexNumber": 923,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 410
+  },
+  {
+    "NationalDexNumber": 924,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 18
+  },
+  {
+    "NationalDexNumber": 925,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 28
+  },
+  {
+    "NationalDexNumber": 925,
+    "FormName": "Family of Three",
+    "Height": 3,
+    "Weight": 23
+  },
+  {
+    "NationalDexNumber": 926,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 109
+  },
+  {
+    "NationalDexNumber": 927,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 149
+  },
+  {
+    "NationalDexNumber": 928,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 65
+  },
+  {
+    "NationalDexNumber": 929,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 119
+  },
+  {
+    "NationalDexNumber": 930,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 482
+  },
+  {
+    "NationalDexNumber": 931,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 24
+  },
+  {
+    "NationalDexNumber": 931,
+    "FormName": "Blue Plumage",
+    "Height": 6,
+    "Weight": 24
+  },
+  {
+    "NationalDexNumber": 931,
+    "FormName": "Yellow Plumage",
+    "Height": 6,
+    "Weight": 24
+  },
+  {
+    "NationalDexNumber": 931,
+    "FormName": "White Plumage",
+    "Height": 6,
+    "Weight": 24
+  },
+  {
+    "NationalDexNumber": 932,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 160
+  },
+  {
+    "NationalDexNumber": 933,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 1050
+  },
+  {
+    "NationalDexNumber": 934,
+    "FormName": "Normal",
+    "Height": 23,
+    "Weight": 2400
+  },
+  {
+    "NationalDexNumber": 935,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 105
+  },
+  {
+    "NationalDexNumber": 936,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 850
+  },
+  {
+    "NationalDexNumber": 937,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 620
+  },
+  {
+    "NationalDexNumber": 938,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 4
+  },
+  {
+    "NationalDexNumber": 939,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 1130
+  },
+  {
+    "NationalDexNumber": 940,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 36
+  },
+  {
+    "NationalDexNumber": 941,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 386
+  },
+  {
+    "NationalDexNumber": 942,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 160
+  },
+  {
+    "NationalDexNumber": 943,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 610
+  },
+  {
+    "NationalDexNumber": 944,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 7
+  },
+  {
+    "NationalDexNumber": 945,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 272
+  },
+  {
+    "NationalDexNumber": 946,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 6
+  },
+  {
+    "NationalDexNumber": 947,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 948,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 330
+  },
+  {
+    "NationalDexNumber": 949,
+    "FormName": "Normal",
+    "Height": 19,
+    "Weight": 580
+  },
+  {
+    "NationalDexNumber": 950,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 790
+  },
+  {
+    "NationalDexNumber": 951,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 30
+  },
+  {
+    "NationalDexNumber": 952,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 150
+  },
+  {
+    "NationalDexNumber": 952,
+    "FormName": "Mega Scovillain",
+    "Height": 12,
+    "Weight": 220
+  },
+  {
+    "NationalDexNumber": 953,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 10
+  },
+  {
+    "NationalDexNumber": 954,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 35
+  },
+  {
+    "NationalDexNumber": 955,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 15
+  },
+  {
+    "NationalDexNumber": 956,
+    "FormName": "Normal",
+    "Height": 19,
+    "Weight": 900
+  },
+  {
+    "NationalDexNumber": 957,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 89
+  },
+  {
+    "NationalDexNumber": 958,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 591
+  },
+  {
+    "NationalDexNumber": 959,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 1128
+  },
+  {
+    "NationalDexNumber": 960,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 18
+  },
+  {
+    "NationalDexNumber": 961,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 54
+  },
+  {
+    "NationalDexNumber": 962,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 429
+  },
+  {
+    "NationalDexNumber": 963,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 602
+  },
+  {
+    "NationalDexNumber": 964,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 602
+  },
+  {
+    "NationalDexNumber": 964,
+    "FormName": "Hero Form",
+    "Height": 18,
+    "Weight": 974
+  },
+  {
+    "NationalDexNumber": 965,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 350
+  },
+  {
+    "NationalDexNumber": 966,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 1200
+  },
+  {
+    "NationalDexNumber": 967,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 630
+  },
+  {
+    "NationalDexNumber": 968,
+    "FormName": "Normal",
+    "Height": 25,
+    "Weight": 3100
+  },
+  {
+    "NationalDexNumber": 969,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 80
+  },
+  {
+    "NationalDexNumber": 970,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 450
+  },
+  {
+    "NationalDexNumber": 970,
+    "FormName": "Mega Glimmora",
+    "Height": 28,
+    "Weight": 770
+  },
+  {
+    "NationalDexNumber": 971,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 350
+  },
+  {
+    "NationalDexNumber": 972,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 150
+  },
+  {
+    "NationalDexNumber": 973,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 370
+  },
+  {
+    "NationalDexNumber": 974,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 450
+  },
+  {
+    "NationalDexNumber": 975,
+    "FormName": "Normal",
+    "Height": 45,
+    "Weight": 7000
+  },
+  {
+    "NationalDexNumber": 976,
+    "FormName": "Normal",
+    "Height": 25,
+    "Weight": 900
+  },
+  {
+    "NationalDexNumber": 977,
+    "FormName": "Normal",
+    "Height": 120,
+    "Weight": 2200
+  },
+  {
+    "NationalDexNumber": 978,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 80
+  },
+  {
+    "NationalDexNumber": 978,
+    "FormName": "Droopy Form",
+    "Height": 3,
+    "Weight": 80
+  },
+  {
+    "NationalDexNumber": 978,
+    "FormName": "Stretchy Form",
+    "Height": 3,
+    "Weight": 80
+  },
+  {
+    "NationalDexNumber": 978,
+    "FormName": "Mega Curly Tatsugiri",
+    "Height": 6,
+    "Weight": 240
+  },
+  {
+    "NationalDexNumber": 978,
+    "FormName": "Mega Droopy Tatsugiri",
+    "Height": 6,
+    "Weight": 240
+  },
+  {
+    "NationalDexNumber": 978,
+    "FormName": "Mega Stretchy Tatsugiri",
+    "Height": 6,
+    "Weight": 240
+  },
+  {
+    "NationalDexNumber": 979,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 560
+  },
+  {
+    "NationalDexNumber": 980,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 2230
+  },
+  {
+    "NationalDexNumber": 981,
+    "FormName": "Normal",
+    "Height": 32,
+    "Weight": 1600
+  },
+  {
+    "NationalDexNumber": 982,
+    "FormName": "Normal",
+    "Height": 36,
+    "Weight": 392
+  },
+  {
+    "NationalDexNumber": 982,
+    "FormName": "Three-Segment Form",
+    "Height": 45,
+    "Weight": 474
+  },
+  {
+    "NationalDexNumber": 983,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 1200
+  },
+  {
+    "NationalDexNumber": 984,
+    "FormName": "Normal",
+    "Height": 22,
+    "Weight": 3200
+  },
+  {
+    "NationalDexNumber": 985,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 80
+  },
+  {
+    "NationalDexNumber": 986,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 210
+  },
+  {
+    "NationalDexNumber": 987,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 40
+  },
+  {
+    "NationalDexNumber": 988,
+    "FormName": "Normal",
+    "Height": 32,
+    "Weight": 920
+  },
+  {
+    "NationalDexNumber": 989,
+    "FormName": "Normal",
+    "Height": 23,
+    "Weight": 600
+  },
+  {
+    "NationalDexNumber": 990,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 2400
+  },
+  {
+    "NationalDexNumber": 991,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 110
+  },
+  {
+    "NationalDexNumber": 992,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 3807
+  },
+  {
+    "NationalDexNumber": 993,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 1110
+  },
+  {
+    "NationalDexNumber": 994,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 360
+  },
+  {
+    "NationalDexNumber": 995,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 3030
+  },
+  {
+    "NationalDexNumber": 996,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 170
+  },
+  {
+    "NationalDexNumber": 997,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 300
+  },
+  {
+    "NationalDexNumber": 998,
+    "FormName": "Normal",
+    "Height": 21,
+    "Weight": 2100
+  },
+  {
+    "NationalDexNumber": 998,
+    "FormName": "Mega Baxcalibur",
+    "Height": 21,
+    "Weight": 3150
+  },
+  {
+    "NationalDexNumber": 999,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 999,
+    "FormName": "Roaming Form",
+    "Height": 1,
+    "Weight": 10
+  },
+  {
+    "NationalDexNumber": 1000,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 300
+  },
+  {
+    "NationalDexNumber": 1001,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 742
+  },
+  {
+    "NationalDexNumber": 1002,
+    "FormName": "Normal",
+    "Height": 19,
+    "Weight": 1522
+  },
+  {
+    "NationalDexNumber": 1003,
+    "FormName": "Normal",
+    "Height": 27,
+    "Weight": 6997
+  },
+  {
+    "NationalDexNumber": 1004,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 49
+  },
+  {
+    "NationalDexNumber": 1005,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 3800
+  },
+  {
+    "NationalDexNumber": 1006,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 350
+  },
+  {
+    "NationalDexNumber": 1007,
+    "FormName": "Normal",
+    "Height": 25,
+    "Weight": 3030
+  },
+  {
+    "NationalDexNumber": 1008,
+    "FormName": "Normal",
+    "Height": 35,
+    "Weight": 2400
+  },
+  {
+    "NationalDexNumber": 1009,
+    "FormName": "Normal",
+    "Height": 35,
+    "Weight": 2800
+  },
+  {
+    "NationalDexNumber": 1010,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 1250
+  },
+  {
+    "NationalDexNumber": 1011,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 44
+  },
+  {
+    "NationalDexNumber": 1012,
+    "FormName": "Normal",
+    "Height": 1,
+    "Weight": 11
+  },
+  {
+    "NationalDexNumber": 1012,
+    "FormName": "Artisan Form",
+    "Height": 1,
+    "Weight": 11
+  },
+  {
+    "NationalDexNumber": 1013,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 22
+  },
+  {
+    "NationalDexNumber": 1013,
+    "FormName": "Masterpiece Form",
+    "Height": 2,
+    "Weight": 22
+  },
+  {
+    "NationalDexNumber": 1014,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 922
+  },
+  {
+    "NationalDexNumber": 1015,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 122
+  },
+  {
+    "NationalDexNumber": 1016,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 301
+  },
+  {
+    "NationalDexNumber": 1017,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 398
+  },
+  {
+    "NationalDexNumber": 1017,
+    "FormName": "Wellspring Mask",
+    "Height": 12,
+    "Weight": 398
+  },
+  {
+    "NationalDexNumber": 1017,
+    "FormName": "Hearthflame Mask",
+    "Height": 12,
+    "Weight": 398
+  },
+  {
+    "NationalDexNumber": 1017,
+    "FormName": "Cornerstone Mask",
+    "Height": 12,
+    "Weight": 398
+  },
+  {
+    "NationalDexNumber": 1018,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 600
+  },
+  {
+    "NationalDexNumber": 1019,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 930
+  },
+  {
+    "NationalDexNumber": 1020,
+    "FormName": "Normal",
+    "Height": 35,
+    "Weight": 5900
+  },
+  {
+    "NationalDexNumber": 1021,
+    "FormName": "Normal",
+    "Height": 52,
+    "Weight": 4800
+  },
+  {
+    "NationalDexNumber": 1022,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 1625
+  },
+  {
+    "NationalDexNumber": 1023,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 1560
+  },
+  {
+    "NationalDexNumber": 1024,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 65
+  },
+  {
+    "NationalDexNumber": 1024,
+    "FormName": "Terastal Form",
+    "Height": 3,
+    "Weight": 160
+  },
+  {
+    "NationalDexNumber": 1024,
+    "FormName": "Stellar Form",
+    "Height": 17,
+    "Weight": 770
+  },
+  {
+    "NationalDexNumber": 1025,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 3
   }
 ]

@@ -1,0 +1,1061 @@
+{
+  "gerado_em": "2026-11-17T14:28:17",
+  "escopo": "Mega Evoluções da Geração VI (X/Y e Omega Ruby/Alpha Sapphire)",
+  "versoes_de_jogo": [
+    "x-y",
+    "omega-ruby-alpha-sapphire"
+  ],
+  "megas_da_geracao_vi": 48,
+  "formas_adicionadas": 48,
+  "formas_ja_existentes": 0,
+  "relacoes": 48,
+  "habilidades_novas": [
+    "aerilate",
+    "delta-stream",
+    "parental-bond"
+  ],
+  "moves_novos": [
+    "Fell Stinger",
+    "Ion Deluge",
+    "Magnetic Flux",
+    "Dragon Ascent"
+  ],
+  "linhas_de_learnset_das_formas": 5819,
+  "megas": [
+    {
+      "dex": 3,
+      "forma": "Mega Venusaur",
+      "slug": "venusaur-mega",
+      "metodo": "MegaStone",
+      "pedra": "Venusaurite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 6,
+      "forma": "Mega Charizard X",
+      "slug": "charizard-mega-x",
+      "metodo": "MegaStone",
+      "pedra": "Charizardite X",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "tipos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 6,
+      "forma": "Mega Charizard Y",
+      "slug": "charizard-mega-y",
+      "metodo": "MegaStone",
+      "pedra": "Charizardite Y",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 9,
+      "forma": "Mega Blastoise",
+      "slug": "blastoise-mega",
+      "metodo": "MegaStone",
+      "pedra": "Blastoisinite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 15,
+      "forma": "Mega Beedrill",
+      "slug": "beedrill-mega",
+      "metodo": "MegaStone",
+      "pedra": "Beedrillite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 18,
+      "forma": "Mega Pidgeot",
+      "slug": "pidgeot-mega",
+      "metodo": "MegaStone",
+      "pedra": "Pidgeotite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 65,
+      "forma": "Mega Alakazam",
+      "slug": "alakazam-mega",
+      "metodo": "MegaStone",
+      "pedra": "Alakazite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 80,
+      "forma": "Mega Slowbro",
+      "slug": "slowbro-mega",
+      "metodo": "MegaStone",
+      "pedra": "Slowbronite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 94,
+      "forma": "Mega Gengar",
+      "slug": "gengar-mega",
+      "metodo": "MegaStone",
+      "pedra": "Gengarite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 115,
+      "forma": "Mega Kangaskhan",
+      "slug": "kangaskhan-mega",
+      "metodo": "MegaStone",
+      "pedra": "Kangaskhanite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 127,
+      "forma": "Mega Pinsir",
+      "slug": "pinsir-mega",
+      "metodo": "MegaStone",
+      "pedra": "Pinsirite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "tipos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 130,
+      "forma": "Mega Gyarados",
+      "slug": "gyarados-mega",
+      "metodo": "MegaStone",
+      "pedra": "Gyaradosite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "tipos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 142,
+      "forma": "Mega Aerodactyl",
+      "slug": "aerodactyl-mega",
+      "metodo": "MegaStone",
+      "pedra": "Aerodactylite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 150,
+      "forma": "Mega Mewtwo X",
+      "slug": "mewtwo-mega-x",
+      "metodo": "MegaStone",
+      "pedra": "Mewtwonite X",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "tipos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 150,
+      "forma": "Mega Mewtwo Y",
+      "slug": "mewtwo-mega-y",
+      "metodo": "MegaStone",
+      "pedra": "Mewtwonite Y",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 181,
+      "forma": "Mega Ampharos",
+      "slug": "ampharos-mega",
+      "metodo": "MegaStone",
+      "pedra": "Ampharosite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "tipos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 208,
+      "forma": "Mega Steelix",
+      "slug": "steelix-mega",
+      "metodo": "MegaStone",
+      "pedra": "Steelixite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 212,
+      "forma": "Mega Scizor",
+      "slug": "scizor-mega",
+      "metodo": "MegaStone",
+      "pedra": "Scizorite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 214,
+      "forma": "Mega Heracross",
+      "slug": "heracross-mega",
+      "metodo": "MegaStone",
+      "pedra": "Heracronite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 229,
+      "forma": "Mega Houndoom",
+      "slug": "houndoom-mega",
+      "metodo": "MegaStone",
+      "pedra": "Houndoominite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 248,
+      "forma": "Mega Tyranitar",
+      "slug": "tyranitar-mega",
+      "metodo": "MegaStone",
+      "pedra": "Tyranitarite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 254,
+      "forma": "Mega Sceptile",
+      "slug": "sceptile-mega",
+      "metodo": "MegaStone",
+      "pedra": "Sceptilite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "tipos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 257,
+      "forma": "Mega Blaziken",
+      "slug": "blaziken-mega",
+      "metodo": "MegaStone",
+      "pedra": "Blazikenite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 260,
+      "forma": "Mega Swampert",
+      "slug": "swampert-mega",
+      "metodo": "MegaStone",
+      "pedra": "Swampertite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 282,
+      "forma": "Mega Gardevoir",
+      "slug": "gardevoir-mega",
+      "metodo": "MegaStone",
+      "pedra": "Gardevoirite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 302,
+      "forma": "Mega Sableye",
+      "slug": "sableye-mega",
+      "metodo": "MegaStone",
+      "pedra": "Sablenite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 303,
+      "forma": "Mega Mawile",
+      "slug": "mawile-mega",
+      "metodo": "MegaStone",
+      "pedra": "Mawilite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 306,
+      "forma": "Mega Aggron",
+      "slug": "aggron-mega",
+      "metodo": "MegaStone",
+      "pedra": "Aggronite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "tipos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 308,
+      "forma": "Mega Medicham",
+      "slug": "medicham-mega",
+      "metodo": "MegaStone",
+      "pedra": "Medichamite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 310,
+      "forma": "Mega Manectric",
+      "slug": "manectric-mega",
+      "metodo": "MegaStone",
+      "pedra": "Manectite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 319,
+      "forma": "Mega Sharpedo",
+      "slug": "sharpedo-mega",
+      "metodo": "MegaStone",
+      "pedra": "Sharpedonite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 323,
+      "forma": "Mega Camerupt",
+      "slug": "camerupt-mega",
+      "metodo": "MegaStone",
+      "pedra": "Cameruptite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 334,
+      "forma": "Mega Altaria",
+      "slug": "altaria-mega",
+      "metodo": "MegaStone",
+      "pedra": "Altarianite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "tipos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 354,
+      "forma": "Mega Banette",
+      "slug": "banette-mega",
+      "metodo": "MegaStone",
+      "pedra": "Banettite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 359,
+      "forma": "Mega Absol",
+      "slug": "absol-mega",
+      "metodo": "MegaStone",
+      "pedra": "Absolite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 362,
+      "forma": "Mega Glalie",
+      "slug": "glalie-mega",
+      "metodo": "MegaStone",
+      "pedra": "Glalitite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 373,
+      "forma": "Mega Salamence",
+      "slug": "salamence-mega",
+      "metodo": "MegaStone",
+      "pedra": "Salamencite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 376,
+      "forma": "Mega Metagross",
+      "slug": "metagross-mega",
+      "metodo": "MegaStone",
+      "pedra": "Metagrossite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 380,
+      "forma": "Mega Latias",
+      "slug": "latias-mega",
+      "metodo": "MegaStone",
+      "pedra": "Latiasite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 381,
+      "forma": "Mega Latios",
+      "slug": "latios-mega",
+      "metodo": "MegaStone",
+      "pedra": "Latiosite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 384,
+      "forma": "Mega Rayquaza",
+      "slug": "rayquaza-mega",
+      "metodo": "KnownMove",
+      "pedra": null,
+      "golpe_id": 620,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 428,
+      "forma": "Mega Lopunny",
+      "slug": "lopunny-mega",
+      "metodo": "MegaStone",
+      "pedra": "Lopunnite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "tipos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 445,
+      "forma": "Mega Garchomp",
+      "slug": "garchomp-mega",
+      "metodo": "MegaStone",
+      "pedra": "Garchompite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 448,
+      "forma": "Mega Lucario",
+      "slug": "lucario-mega",
+      "metodo": "MegaStone",
+      "pedra": "Lucarionite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 460,
+      "forma": "Mega Abomasnow",
+      "slug": "abomasnow-mega",
+      "metodo": "MegaStone",
+      "pedra": "Abomasite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 475,
+      "forma": "Mega Gallade",
+      "slug": "gallade-mega",
+      "metodo": "MegaStone",
+      "pedra": "Galladite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 531,
+      "forma": "Mega Audino",
+      "slug": "audino-mega",
+      "metodo": "MegaStone",
+      "pedra": "Audinite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "tipos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    },
+    {
+      "dex": 719,
+      "forma": "Mega Diancie",
+      "slug": "diancie-mega",
+      "metodo": "MegaStone",
+      "pedra": "Diancite",
+      "golpe_id": null,
+      "ja_existia": false,
+      "difere_da_normal": [
+        "atributos",
+        "habilidades"
+      ],
+      "learnset": "própria"
+    }
+  ],
+  "formas_ignoradas": [
+    {
+      "dex": null,
+      "pokemon": "clefable-mega",
+      "form": "clefable-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "victreebel-mega",
+      "form": "victreebel-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "starmie-mega",
+      "form": "starmie-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "dragonite-mega",
+      "form": "dragonite-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "meganium-mega",
+      "form": "meganium-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "feraligatr-mega",
+      "form": "feraligatr-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "skarmory-mega",
+      "form": "skarmory-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "froslass-mega",
+      "form": "froslass-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "emboar-mega",
+      "form": "emboar-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "excadrill-mega",
+      "form": "excadrill-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "scolipede-mega",
+      "form": "scolipede-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "scrafty-mega",
+      "form": "scrafty-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "eelektross-mega",
+      "form": "eelektross-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "chandelure-mega",
+      "form": "chandelure-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "chesnaught-mega",
+      "form": "chesnaught-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "delphox-mega",
+      "form": "delphox-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "greninja-mega",
+      "form": "greninja-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "pyroar-mega",
+      "form": "pyroar-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "floette-mega",
+      "form": "floette-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "malamar-mega",
+      "form": "malamar-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "barbaracle-mega",
+      "form": "barbaracle-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "dragalge-mega",
+      "form": "dragalge-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "hawlucha-mega",
+      "form": "hawlucha-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "zygarde-mega",
+      "form": "zygarde-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "drampa-mega",
+      "form": "drampa-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "falinks-mega",
+      "form": "falinks-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "raichu-mega-x",
+      "form": "raichu-mega-x",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "raichu-mega-y",
+      "form": "raichu-mega-y",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "chimecho-mega",
+      "form": "chimecho-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "absol-mega-z",
+      "form": "absol-mega-z",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "staraptor-mega",
+      "form": "staraptor-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "garchomp-mega-z",
+      "form": "garchomp-mega-z",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "lucario-mega-z",
+      "form": "lucario-mega-z",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "heatran-mega",
+      "form": "heatran-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "darkrai-mega",
+      "form": "darkrai-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "golurk-mega",
+      "form": "golurk-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "meowstic-male-mega",
+      "form": "meowstic-male-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "crabominable-mega",
+      "form": "crabominable-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "golisopod-mega",
+      "form": "golisopod-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "magearna-mega",
+      "form": "magearna-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "magearna-original-mega",
+      "form": "magearna-original-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "zeraora-mega",
+      "form": "zeraora-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "scovillain-mega",
+      "form": "scovillain-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "glimmora-mega",
+      "form": "glimmora-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "tatsugiri-curly-mega",
+      "form": "tatsugiri-curly-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "tatsugiri-droopy-mega",
+      "form": "tatsugiri-droopy-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "tatsugiri-stretchy-mega",
+      "form": "tatsugiri-stretchy-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "baxcalibur-mega",
+      "form": "baxcalibur-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    },
+    {
+      "dex": null,
+      "pokemon": "meowstic-female-mega",
+      "form": "meowstic-female-mega",
+      "reason": "forma registrada pela PokéAPI depois da Geração VI",
+      "versao": "mega-dimension"
+    }
+  ],
+  "bancos_consultados": [
+    "/home/jose/.wine-dotnet-10/drive_c/users/jose/AppData/Local/GestaoDePokemon/gestaopokemon.db"
+  ],
+  "entradas_de_learnset_ignoradas": {},
+  "sprites": {
+    "planejados": 144,
+    "baixados": 144,
+    "ja_existiam": 0,
+    "falhas": []
+  }
+}

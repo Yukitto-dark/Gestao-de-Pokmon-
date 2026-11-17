@@ -211,6 +211,16 @@ public sealed class AppDbContext : DbContext
             .HasForeignKey(p => p.RequiredMoveId)
             .OnDelete(DeleteBehavior.Restrict);
 
+        evolution.HasOne(p => p.FromForm)
+            .WithMany()
+            .HasForeignKey(p => p.FromFormId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        evolution.HasOne(p => p.ToForm)
+            .WithMany()
+            .HasForeignKey(p => p.ToFormId)
+            .OnDelete(DeleteBehavior.Restrict);
+
         evolution.HasIndex(p => new { p.FromPokemonId, p.ToPokemonId, p.Method });
     }
 

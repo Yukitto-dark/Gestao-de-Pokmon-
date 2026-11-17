@@ -52,6 +52,7 @@ public static class DatabaseInitializer
 
         // Corrige dados legados sem remover Sinnoh, necessária à Geração IV.
         NormalizeLegacyPokedexData(db);
+        CorrectKnownBaseStats(db);
 
         // Importa o catálogo completo de habilidades e seus slots (1, 2 e oculto).
         SeedAbilities(db);
@@ -81,6 +82,38 @@ public static class DatabaseInitializer
         // Formas de Kalos e demais formas até a Geração VI (sem Mega Evoluções).
         // Só insere o que ainda não existe no banco; formas já cadastradas não são tocadas.
         GenerationVFormsInitializer.Inicializar(db, "generation-vi-forms-seed.json", 1, 721, onlyInsertMissing: true);
+        db.SaveChanges();
+
+        // Mega Evoluções da Geração VI: as formas Mega (só insere o que falta) e, em seguida,
+        // a relação forma base -> forma Mega (Mega Pedra ou golpe).
+        GenerationVFormsInitializer.Inicializar(db, "generation-vi-megas-seed.json", 1, 721, onlyInsertMissing: true);
+        db.SaveChanges();
+
+        // Formas de Alola, Galar, Hisui e Paldea (inclusive de espécies antigas): só insere o que falta.
+        GenerationVFormsInitializer.Inicializar(db, "generation-vii-ix-forms-seed.json", 1, 1025, onlyInsertMissing: true);
+        db.SaveChanges();
+
+        // Mega Evoluções de Pokémon Legends: Z-A.
+        GenerationVFormsInitializer.Inicializar(db, "generation-ix-megas-seed.json", 1, 1025, onlyInsertMissing: true);
+        db.SaveChanges();
+
+        // Evoluções que só valem para uma forma (Meowth de Galar -> Perrserker, Rattata de Alola -> Raticate
+        // de Alola...): precisam das formas acima e não alteram as relações por espécie já gravadas.
+        EvolutionFormsInitializer.Inicializar(db);
+        db.SaveChanges();
+
+        MegaEvolutionsInitializer.Inicializar(db);
+        db.SaveChanges();
+
+        // Golpes dos jogos da Geração VII em diante e jogos principais de cada região.
+        GameLearnsetsInitializer.Inicializar(db);
+        db.SaveChanges();
+
+        RegionGamesInitializer.Inicializar(db);
+        db.SaveChanges();
+
+        // Formas que ganharam ícone próprio da Box passam a usá-lo no lugar do ícone da espécie.
+        BoxIconsInitializer.Inicializar(db);
         db.SaveChanges();
 
         // Ícones shiny da Box (espécies e formas), depois que todos os sprites já existem.
@@ -130,7 +163,9 @@ public static class DatabaseInitializer
                 ("NeedsOverworldRain", "INTEGER NOT NULL DEFAULT 0"),
                 ("TurnUpsideDown", "INTEGER NOT NULL DEFAULT 0"),
                 ("RequiresEmptyPartySlot", "INTEGER NOT NULL DEFAULT 0"),
-                ("RequiresPokeBallInBag", "INTEGER NOT NULL DEFAULT 0")
+                ("RequiresPokeBallInBag", "INTEGER NOT NULL DEFAULT 0"),
+                ("FromFormId", "INTEGER NULL REFERENCES \"PokemonForms\" (\"Id\")"),
+                ("ToFormId", "INTEGER NULL REFERENCES \"PokemonForms\" (\"Id\")")
             };
 
             foreach (var column in columns)
@@ -152,6 +187,16 @@ public static class DatabaseInitializer
             {
                 tradeIndex.CommandText = "CREATE INDEX IF NOT EXISTS IX_Evolutions_RequiredTradeSpeciesId ON Evolutions (RequiredTradeSpeciesId);";
                 tradeIndex.ExecuteNonQuery();
+            }
+            using (var fromFormIndex = connection.CreateCommand())
+            {
+                fromFormIndex.CommandText = "CREATE INDEX IF NOT EXISTS IX_Evolutions_FromFormId ON Evolutions (FromFormId);";
+                fromFormIndex.ExecuteNonQuery();
+            }
+            using (var toFormIndex = connection.CreateCommand())
+            {
+                toFormIndex.CommandText = "CREATE INDEX IF NOT EXISTS IX_Evolutions_ToFormId ON Evolutions (ToFormId);";
+                toFormIndex.ExecuteNonQuery();
             }
 
             // IDs de espécies são validados pelo banco sem reconstruir a tabela antiga.
@@ -259,7 +304,11 @@ public static class DatabaseInitializer
             new() { Id = 3, Name = "Hoenn", Generation = 3 },
             new() { Id = 4, Name = "Sinnoh", Generation = 4 },
             new() { Id = 5, Name = "Unova", Generation = 5 },
-            new() { Id = 6, Name = "Kalos", Generation = 6 }
+            new() { Id = 6, Name = "Kalos", Generation = 6 },
+            new() { Id = 7, Name = "Alola", Generation = 7 },
+            new() { Id = 8, Name = "Galar", Generation = 8 },
+            new() { Id = 9, Name = "Paldea", Generation = 9 },
+            new() { Id = 10, Name = "Hisui", Generation = 8 }
         };
 
         foreach (Region region in regions)
@@ -310,6 +359,34 @@ public static class DatabaseInitializer
         }
     }
 
+    /// <summary>
+    /// Corrige atributos-base de espécies antigas que bancos criados com versões anteriores
+    /// do seed ainda guardam errados (valores conferidos na PokéAPI). O pokemon-seed.json já
+    /// traz os valores certos para bancos novos; aqui o banco existente é atualizado, como
+    /// NormalizeLegacyPokedexData faz com o Chimecho. Roda a cada inicialização e é idempotente.
+    /// Gerado por scripts/corrigir_dados_base.py.
+    /// </summary>
+    private static void CorrectKnownBaseStats(AppDbContext db)
+    {
+        var corrections = new Dictionary<int, BaseStats>
+        {
+            [6] = new BaseStats(78, 84, 78, 109, 85, 100), // Charizard: SpDef 85
+            [9] = new BaseStats(79, 83, 100, 85, 105, 78), // Blastoise: SpDef 105
+            [15] = new BaseStats(65, 90, 40, 45, 80, 75) // Beedrill: Speed 75
+        };
+
+        int[] dexNumbers = corrections.Keys.ToArray();
+
+        List<PokemonForm> forms = db.PokemonForms
+            .Include(form => form.Pokemon)
+            .Where(form => form.FormName == "Normal" &&
+                           dexNumbers.Contains(form.Pokemon.NationalDexNumber))
+            .ToList();
+
+        foreach (PokemonForm form in forms)
+            form.Stats = corrections[form.Pokemon.NationalDexNumber];
+    }
+
     private static List<PokemonSeed> LoadPokemonSeeds()
     {
         using Stream stream = typeof(DatabaseInitializer).Assembly.GetManifestResourceStream(
@@ -340,7 +417,7 @@ public static class DatabaseInitializer
                 NationalDexNumber = seed.NationalDexNumber,
                 Name = seed.Name,
                 Generation = seed.Generation,
-                OriginRegionId = GetOriginRegionId(seed.Generation),
+                OriginRegionId = GetOriginRegionId(seed.Generation, seed.NationalDexNumber),
                 Category = seed.Category
             };
 
@@ -788,6 +865,10 @@ public static class DatabaseInitializer
         public bool TurnUpsideDown { get; set; }
         public bool RequiresEmptyPartySlot { get; set; }
         public bool RequiresPokeBallInBag { get; set; }
+
+        // Nomes das formas (PokemonForms.FormName); só o EvolutionFormsInitializer os usa.
+        public string? FromFormName { get; set; }
+        public string? ToFormName { get; set; }
     }
 
     private readonly record struct LearnsetKey(
@@ -1055,9 +1136,17 @@ public static class DatabaseInitializer
         4 => 4, // Sinnoh
         5 => 5, // Unova
         6 => 6, // Kalos
+        7 => 7, // Alola
+        8 => 8, // Galar
+        9 => 9, // Paldea
         _ => throw new InvalidDataException(
             $"A geração {generation} não possui uma região cadastrada neste conjunto da Pokédex.")
     };
+
+    // Os Pokémon de Legends: Arceus (#899-#905) pertencem a Hisui (região 10), não a Galar.
+    private static int GetOriginRegionId(int generation, int nationalDexNumber) =>
+        nationalDexNumber is >= 899 and <= 905 ? 10 : GetOriginRegionId(generation);
+
 
     public sealed class PokemonSeed
     {

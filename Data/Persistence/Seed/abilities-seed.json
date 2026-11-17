@@ -1,6 +1,6 @@
 {
   "source": "PokéAPI v2",
-  "scope": "Pokémon #001–#721; slots normais e ocultos disponíveis na PokéAPI",
+  "scope": "Pokémon #001–#1025; slots normais e ocultos disponíveis na PokéAPI",
   "hidden_abilities_imported": true,
   "abilities": {
     "adaptability": {
@@ -8,6 +8,12 @@
       "name": "Adaptability",
       "description": "Increases the same-type attack bonus from 1.5× to 2×.",
       "generation": 4
+    },
+    "aerilate": {
+      "id": 184,
+      "name": "Aerilate",
+      "description": "Turns the bearer's Normal moves into Flying moves and strengthens them to 1.3× their power.",
+      "generation": 6
     },
     "aftermath": {
       "id": 106,
@@ -33,6 +39,12 @@
       "description": "Raises Attack to the maximum of six stages upon receiving a critical hit.",
       "generation": 4
     },
+    "anger-shell": {
+      "id": 271,
+      "name": "Anger Shell",
+      "description": "When the Pokémon's HP drops below half, Anger Shell lowers its Defense and Special Defense but its Attack, Special Attack and Speed are raised.",
+      "generation": 9
+    },
     "anticipation": {
       "id": 107,
       "name": "Anticipation",
@@ -45,11 +57,29 @@
       "description": "Prevents opponents from fleeing or switching out.  Eluded by Flying-types and Pokémon in the air.",
       "generation": 3
     },
+    "armor-tail": {
+      "id": 296,
+      "name": "Armor Tail",
+      "description": "Prevents the opponent from using any moves that have priority, such as Quick Attack.",
+      "generation": 9
+    },
     "aroma-veil": {
       "id": 165,
       "name": "Aroma Veil",
       "description": "Protects allies against moves that affect their mental state.",
       "generation": 6
+    },
+    "as-one-glastrier": {
+      "id": 266,
+      "name": "As One (Glastrier)",
+      "description": "Combines the effects of Unnerve and Chilling Neigh.",
+      "generation": 8
+    },
+    "as-one-spectrier": {
+      "id": 267,
+      "name": "As One (Spectrier)",
+      "description": "Combines the effects of Unnerve and Grim Neigh.",
+      "generation": 8
     },
     "aura-break": {
       "id": 188,
@@ -57,17 +87,59 @@
       "description": "Makes Dark Aura and Fairy Aura weaken moves of their respective types.",
       "generation": 6
     },
+    "aura-guard": {
+      "id": 314,
+      "name": "Aura Guard",
+      "description": "A Pokémon with Aura Guard takes half damage from moves that make contact.",
+      "generation": 9
+    },
     "bad-dreams": {
       "id": 123,
       "name": "Bad Dreams",
       "description": "Damages sleeping opponents for 1/8 their max HP after each turn.",
       "generation": 4
     },
+    "ball-fetch": {
+      "id": 237,
+      "name": "Ball Fetch",
+      "description": "If the Pokémon is not holding an item, it will fetch the Poké Ball from the first failed throw of the battle.",
+      "generation": 8
+    },
+    "battery": {
+      "id": 217,
+      "name": "Battery",
+      "description": "Ally Pokémon's moves have their power increased to 1.3×.",
+      "generation": 7
+    },
     "battle-armor": {
       "id": 4,
       "name": "Battle Armor",
       "description": "Protects against critical hits.",
       "generation": 3
+    },
+    "battle-bond": {
+      "id": 210,
+      "name": "Battle Bond",
+      "description": "Transforms this Pokémon into Ash-Greninja after fainting an opponent.  Water Shuriken's power is 20 and always hits three times.",
+      "generation": 7
+    },
+    "beads-of-ruin": {
+      "id": 287,
+      "name": "Beads of Ruin",
+      "description": "Lowers Special Defense of all Pokémon except itself.",
+      "generation": 9
+    },
+    "beast-boost": {
+      "id": 224,
+      "name": "Beast Boost",
+      "description": "Raises this Pokémon's highest stat by one stage when it faints another Pokémon.",
+      "generation": 7
+    },
+    "berserk": {
+      "id": 201,
+      "name": "Berserk",
+      "description": "Raises this Pokémon's Special Attack by one stage every time its HP drops below half.",
+      "generation": 7
     },
     "big-pecks": {
       "id": 145,
@@ -93,6 +165,12 @@
       "description": "Restores HP upon eating a Berry, in addition to the Berry's effect.",
       "generation": 6
     },
+    "chilling-neigh": {
+      "id": 264,
+      "name": "Chilling Neigh",
+      "description": "Boosts Attack after knocking out a Pokémon.",
+      "generation": 8
+    },
     "chlorophyll": {
       "id": 34,
       "name": "Chlorophyll",
@@ -117,6 +195,18 @@
       "description": "Changes type to match when hit by a damaging move.",
       "generation": 3
     },
+    "comatose": {
+      "id": 213,
+      "name": "Comatose",
+      "description": "This Pokémon always  acts as though it were Asleep.",
+      "generation": 7
+    },
+    "commander": {
+      "id": 279,
+      "name": "Commander",
+      "description": "Goes inside the mouth of an ally Dondozo if one is on the field.",
+      "generation": 9
+    },
     "competitive": {
       "id": 172,
       "name": "Competitive",
@@ -134,6 +224,36 @@
       "name": "Contrary",
       "description": "Inverts stat changes.",
       "generation": 5
+    },
+    "corrosion": {
+      "id": 212,
+      "name": "Corrosion",
+      "description": "This Pokémon can inflict poison on Poison and Steel Pokémon.",
+      "generation": 7
+    },
+    "costar": {
+      "id": 294,
+      "name": "Costar",
+      "description": "Copies ally's stat changes on entering battle.",
+      "generation": 9
+    },
+    "cotton-down": {
+      "id": 238,
+      "name": "Cotton Down",
+      "description": "When Ignores moves and abilities that draw in moves.",
+      "generation": 8
+    },
+    "cud-chew": {
+      "id": 291,
+      "name": "Cud Chew",
+      "description": "Causes the Pokémon to reuse an already consumed Berry at the end of the next turn.",
+      "generation": 9
+    },
+    "curious-medicine": {
+      "id": 261,
+      "name": "Curious Medicine",
+      "description": "Resets all stat changes upon entering battlefield.",
+      "generation": 8
     },
     "cursed-body": {
       "id": 130,
@@ -153,11 +273,29 @@
       "description": "Prevents Self-Destruct, Explosion, and Aftermath from working while the Pokémon is in battle.",
       "generation": 3
     },
+    "dancer": {
+      "id": 216,
+      "name": "Dancer",
+      "description": "Whenever another Pokémon uses a dance move, this Pokémon will use the same move immediately afterwards.",
+      "generation": 7
+    },
     "dark-aura": {
       "id": 186,
       "name": "Dark Aura",
       "description": "Strengthens Dark moves to 1.33× their power for all friendly and opposing Pokémon.",
       "generation": 6
+    },
+    "dauntless-shield": {
+      "id": 235,
+      "name": "Dauntless Shield",
+      "description": "Boosts Defense in battle.",
+      "generation": 8
+    },
+    "dazzling": {
+      "id": 219,
+      "name": "Dazzling",
+      "description": "Opposing Pokémon cannot use priority attacks.",
+      "generation": 7
     },
     "defeatist": {
       "id": 129,
@@ -171,17 +309,41 @@
       "description": "Raises Attack two stages upon having any stat lowered.",
       "generation": 5
     },
+    "delta-stream": {
+      "id": 191,
+      "name": "Delta Stream",
+      "description": "Creates a mysterious air current, which cannot be replaced and causes moves to never be super effective against Flying Pokémon.",
+      "generation": 6
+    },
     "desolate-land": {
       "id": 190,
       "name": "Desolate Land",
       "description": "Creates extremely harsh sunlight, which has all the properties of Sunny Day, cannot be replaced, and causes damaging Water moves to fail.",
       "generation": 6
     },
+    "disguise": {
+      "id": 209,
+      "name": "Disguise",
+      "description": "Prevents the first instance of battle damage.",
+      "generation": 7
+    },
     "download": {
       "id": 88,
       "name": "Download",
       "description": "Raises the attack stat corresponding to the opponents' weaker defense one stage upon entering battle.",
       "generation": 4
+    },
+    "dragonize": {
+      "id": 309,
+      "name": "Dragonize",
+      "description": "The Pokémon's Normal-type moves become Dragon-type moves and their power is boosted by 20%.",
+      "generation": 9
+    },
+    "dragons-maw": {
+      "id": 263,
+      "name": "Dragon’s Maw",
+      "description": "Powers up Dragon-type moves.",
+      "generation": 8
     },
     "drizzle": {
       "id": 2,
@@ -207,11 +369,41 @@
       "description": "Makes sleep pass twice as quickly.",
       "generation": 3
     },
+    "earth-eater": {
+      "id": 297,
+      "name": "Earth Eater",
+      "description": "Restores HP when hit by a Ground-type move.",
+      "generation": 9
+    },
+    "eelevate": {
+      "id": 312,
+      "name": "Eelevate",
+      "description": "The Pokémon floats off the ground, making it immune to Ground-type moves, as well as the Spikes, Toxic Spikes, and Sticky Web statuses. When the Pokémon knocks out a target with an attack, its highest stat is boosted by 1 stage.",
+      "generation": 9
+    },
     "effect-spore": {
       "id": 27,
       "name": "Effect Spore",
       "description": "Has a 30% chance of inflcting either paralysis, poison, or sleep on attacking Pokémon on contact.",
       "generation": 3
+    },
+    "electric-surge": {
+      "id": 226,
+      "name": "Electric Surge",
+      "description": "When this Pokémon enters battle, it changes the terrain to Electric Terrain.",
+      "generation": 7
+    },
+    "electromorphosis": {
+      "id": 280,
+      "name": "Electromorphosis",
+      "description": "When hit by an attack, the power of the next Electric-type move it uses is doubled.",
+      "generation": 9
+    },
+    "emergency-exit": {
+      "id": 194,
+      "name": "Emergency Exit",
+      "description": "This Pokémon automatically switches out when its HP drops below half.",
+      "generation": 7
     },
     "fairy-aura": {
       "id": 187,
@@ -224,6 +416,12 @@
       "name": "Filter",
       "description": "Decreases damage taken from super-effective moves by 1/4.",
       "generation": 4
+    },
+    "fire-mane": {
+      "id": 313,
+      "name": "Fire Mane",
+      "description": "Boosts the power of the Pokémon's Fire-type moves by 50%.",
+      "generation": 9
     },
     "flame-body": {
       "id": 49,
@@ -255,6 +453,12 @@
       "description": "Protects friendly Grass Pokémon from having their stats lowered by other Pokémon.",
       "generation": 6
     },
+    "fluffy": {
+      "id": 218,
+      "name": "Fluffy",
+      "description": "Damage from contact moves is halved.  Damage from Fire moves is doubled.",
+      "generation": 7
+    },
     "forecast": {
       "id": 59,
       "name": "Forecast",
@@ -279,6 +483,12 @@
       "description": "Reveals an opponent's held item upon entering battle.",
       "generation": 4
     },
+    "full-metal-body": {
+      "id": 230,
+      "name": "Full Metal Body",
+      "description": "Other Pokémon cannot lower this Pokémon's stats.",
+      "generation": 7
+    },
     "fur-coat": {
       "id": 169,
       "name": "Fur Coat",
@@ -291,11 +501,23 @@
       "description": "Raises Flying moves' priority by one stage.",
       "generation": 6
     },
+    "galvanize": {
+      "id": 206,
+      "name": "Galvanize",
+      "description": "This Pokémon's Normal moves are Electric and have their power increased to 1.2×.",
+      "generation": 7
+    },
     "gluttony": {
       "id": 82,
       "name": "Gluttony",
       "description": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP.",
       "generation": 4
+    },
+    "good-as-gold": {
+      "id": 283,
+      "name": "Good as Gold",
+      "description": "Gives immunity to status moves.",
+      "generation": 9
     },
     "gooey": {
       "id": 183,
@@ -303,17 +525,53 @@
       "description": "Lowers attacking Pokémon's Speed by one stage on contact.",
       "generation": 6
     },
+    "gorilla-tactics": {
+      "id": 255,
+      "name": "Gorilla Tactics",
+      "description": "Boosts the Pokémon's Attack stat but only allows the use of the first selected move.",
+      "generation": 8
+    },
     "grass-pelt": {
       "id": 179,
       "name": "Grass Pelt",
       "description": "Boosts Defense while Grassy Terrain is in effect.",
       "generation": 6
     },
+    "grassy-surge": {
+      "id": 229,
+      "name": "Grassy Surge",
+      "description": "When this Pokémon enters battle, it changes the terrain to Grassy Terrain.",
+      "generation": 7
+    },
+    "grim-neigh": {
+      "id": 265,
+      "name": "Grim Neigh",
+      "description": "Boosts Special Attack after knocking out a Pokémon.",
+      "generation": 8
+    },
+    "guard-dog": {
+      "id": 275,
+      "name": "Guard Dog",
+      "description": "Boosts Attack if intimidated, and prevents being forced to switch out.",
+      "generation": 9
+    },
+    "gulp-missile": {
+      "id": 241,
+      "name": "Gulp Missile",
+      "description": "If a Cramorant with Gulp Missile uses Surf or Dive, it catches prey and changes its form depending on its remaining HP.",
+      "generation": 8
+    },
     "guts": {
       "id": 62,
       "name": "Guts",
       "description": "Increases Attack to 1.5× with a major status ailment.",
       "generation": 3
+    },
+    "hadron-engine": {
+      "id": 289,
+      "name": "Hadron Engine",
+      "description": "Creates an Electric Terrain when entering battle, and boosts Special Attack while active.",
+      "generation": 9
     },
     "harvest": {
       "id": 139,
@@ -345,11 +603,23 @@
       "description": "The Pokémon may pick up Honey after battle.",
       "generation": 4
     },
+    "hospitality": {
+      "id": 301,
+      "name": "Hospitality",
+      "description": "When a Pokémon with Hospitality enters a battle, it restores HP for an ally by 25%.",
+      "generation": 9
+    },
     "huge-power": {
       "id": 37,
       "name": "Huge Power",
       "description": "Doubles Attack in battle.",
       "generation": 3
+    },
+    "hunger-switch": {
+      "id": 258,
+      "name": "Hunger Switch",
+      "description": "Causes Morpeko to change its form each turn, alternating between Full Belly Mode and Hangry Mode",
+      "generation": 8
     },
     "hustle": {
       "id": 55,
@@ -374,6 +644,18 @@
       "name": "Ice Body",
       "description": "Heals for 1/16 max HP after each turn during hail.  Protects against hail damage.",
       "generation": 4
+    },
+    "ice-face": {
+      "id": 248,
+      "name": "Ice Face",
+      "description": "The Pokémon’s ice head can take a physical attack as a substitute, but the attack also changes the Pokémon’s appearance. The ice will be restored when it snows.",
+      "generation": 8
+    },
+    "ice-scales": {
+      "id": 246,
+      "name": "Ice Scales",
+      "description": "Halves damage from Special moves.",
+      "generation": 8
     },
     "illuminate": {
       "id": 35,
@@ -405,6 +687,12 @@
       "description": "Bypasses Light Screen, Reflect, and Safeguard.",
       "generation": 5
     },
+    "innards-out": {
+      "id": 215,
+      "name": "Innards Out",
+      "description": "When this Pokémon faints from an opponent's move, that opponent takes damage equal to the HP this Pokémon had remaining.",
+      "generation": 7
+    },
     "inner-focus": {
       "id": 39,
       "name": "Inner Focus",
@@ -422,6 +710,12 @@
       "name": "Intimidate",
       "description": "Lowers opponents' Attack one stage upon entering battle.",
       "generation": 3
+    },
+    "intrepid-sword": {
+      "id": 234,
+      "name": "Intrepid Sword",
+      "description": "Boosts Attack in battle.",
+      "generation": 8
     },
     "iron-barbs": {
       "id": 160,
@@ -465,6 +759,12 @@
       "description": "Evades Ground moves.",
       "generation": 3
     },
+    "libero": {
+      "id": 236,
+      "name": "Libero",
+      "description": "Libero changes the Pokémon's type to that of its previously used attack.",
+      "generation": 8
+    },
     "light-metal": {
       "id": 135,
       "name": "Light Metal",
@@ -483,11 +783,29 @@
       "description": "Prevents paralysis.",
       "generation": 3
     },
+    "lingering-aroma": {
+      "id": 268,
+      "name": "Lingering Aroma",
+      "description": "Contact changes the attacker's Ability to Lingering Aroma.",
+      "generation": 9
+    },
     "liquid-ooze": {
       "id": 64,
       "name": "Liquid Ooze",
       "description": "Damages opponents using leeching moves for as much as they would heal.",
       "generation": 3
+    },
+    "liquid-voice": {
+      "id": 204,
+      "name": "Liquid Voice",
+      "description": "Sound-based moves become Water-type.",
+      "generation": 7
+    },
+    "long-reach": {
+      "id": 203,
+      "name": "Long Reach",
+      "description": "This Pokémon's moves do not make contact.",
+      "generation": 7
     },
     "magic-bounce": {
       "id": 156,
@@ -531,11 +849,47 @@
       "description": "Strengthens aura and pulse moves to 1.5× their power.",
       "generation": 6
     },
+    "mega-sol": {
+      "id": 310,
+      "name": "Mega Sol",
+      "description": "The Pokémon can use its moves as if the weather were harsh sunlight.",
+      "generation": 9
+    },
+    "merciless": {
+      "id": 196,
+      "name": "Merciless",
+      "description": "This Pokémon's moves critical hit against poisoned targets.",
+      "generation": 7
+    },
+    "mimicry": {
+      "id": 250,
+      "name": "Mimicry",
+      "description": "Changes type depending on the terrain.",
+      "generation": 8
+    },
+    "minds-eye": {
+      "id": 299,
+      "name": "Mind’s Eye",
+      "description": "The Pokémon ignores changes to opponents' evasiveness, its accuracy can't be lowered, and it can hit Ghost types with Normal- and Fighting-type moves.",
+      "generation": 9
+    },
     "minus": {
       "id": 58,
       "name": "Minus",
       "description": "Increases Special Attack to 1.5× when a friendly Pokémon has Plus or Minus.",
       "generation": 3
+    },
+    "mirror-armor": {
+      "id": 240,
+      "name": "Mirror Armor",
+      "description": "Reflects any stat-lowering effects.",
+      "generation": 8
+    },
+    "misty-surge": {
+      "id": 228,
+      "name": "Misty Surge",
+      "description": "When this Pokémon enters battle, it changes the terrain to Misty Terrain.",
+      "generation": 7
     },
     "mold-breaker": {
       "id": 104,
@@ -579,11 +933,23 @@
       "description": "Changes attacking Pokémon's abilities to Mummy on contact.",
       "generation": 5
     },
+    "mycelium-might": {
+      "id": 298,
+      "name": "Mycelium Might",
+      "description": "Status moves go last, but are not affected by the opponent's ability.",
+      "generation": 9
+    },
     "natural-cure": {
       "id": 30,
       "name": "Natural Cure",
       "description": "Cures any major status ailment upon switching out.",
       "generation": 3
+    },
+    "neuroforce": {
+      "id": 233,
+      "name": "Neuroforce",
+      "description": "Increases super-effective damage dealt to 1.25×.",
+      "generation": 7
     },
     "neutralizing-gas": {
       "id": 256,
@@ -609,6 +975,18 @@
       "description": "Prevents infatuation and protects against Captivate.",
       "generation": 3
     },
+    "opportunist": {
+      "id": 290,
+      "name": "Opportunist",
+      "description": "Copies stat boosts by the opponent.",
+      "generation": 9
+    },
+    "orichalcum-pulse": {
+      "id": 288,
+      "name": "Orichalcum Pulse",
+      "description": "Turns the sunlight harsh when entering battle, and boosts Attack while active.",
+      "generation": 9
+    },
     "overcoat": {
       "id": 142,
       "name": "Overcoat",
@@ -627,6 +1005,24 @@
       "description": "Prevents confusion.",
       "generation": 3
     },
+    "parental-bond": {
+      "id": 185,
+      "name": "Parental Bond",
+      "description": "Lets the bearer hit twice with damaging moves.  The second hit has half power.",
+      "generation": 6
+    },
+    "pastel-veil": {
+      "id": 257,
+      "name": "Pastel Veil",
+      "description": "Prevents the Pokémon and its allies from being poisoned.",
+      "generation": 8
+    },
+    "perish-body": {
+      "id": 253,
+      "name": "Perish Body",
+      "description": "When hit by a move that makes direct contact, the Pokémon and the attacker will faint after three turns unless they switch out of battle.",
+      "generation": 8
+    },
     "pickpocket": {
       "id": 124,
       "name": "Pickpocket",
@@ -638,6 +1034,12 @@
       "name": "Pickup",
       "description": "Picks up other Pokémon's used and Flung held items.  May also pick up an item after battle.",
       "generation": 3
+    },
+    "piercing-drill": {
+      "id": 308,
+      "name": "Piercing Drill",
+      "description": "When the Pokémon uses contact moves, it can hit even targets that are protecting themselves.",
+      "generation": 9
     },
     "pixilate": {
       "id": 182,
@@ -663,11 +1065,35 @@
       "description": "Has a 30% chance of poisoning attacking Pokémon on contact.",
       "generation": 3
     },
+    "poison-puppeteer": {
+      "id": 307,
+      "name": "Poison Puppeteer",
+      "description": "Pokémon poisoned by Pecharunt's moves will also become confused.",
+      "generation": 9
+    },
     "poison-touch": {
       "id": 143,
       "name": "Poison Touch",
       "description": "Has a 30% chance of poisoning target Pokémon upon contact.",
       "generation": 5
+    },
+    "power-construct": {
+      "id": 211,
+      "name": "Power Construct",
+      "description": "Transforms 10% or 50% Zygarde into Complete Forme when its HP is below 50%.",
+      "generation": 7
+    },
+    "power-of-alchemy": {
+      "id": 223,
+      "name": "Power of Alchemy",
+      "description": "When an ally faints, this Pokémon gains its Ability.",
+      "generation": 7
+    },
+    "power-spot": {
+      "id": 249,
+      "name": "Power Spot",
+      "description": "Just being next to the Pokémon powers up moves.",
+      "generation": 8
     },
     "prankster": {
       "id": 158,
@@ -687,17 +1113,71 @@
       "description": "Creates heavy rain, which has all the properties of Rain Dance, cannot be replaced, and causes damaging Fire moves to fail.",
       "generation": 6
     },
+    "prism-armor": {
+      "id": 232,
+      "name": "Prism Armor",
+      "description": "Reduces super-effective damage to 0.75×.",
+      "generation": 7
+    },
+    "propeller-tail": {
+      "id": 239,
+      "name": "Propeller Tail",
+      "description": "Ignores moves and abilities that draw in moves.",
+      "generation": 8
+    },
     "protean": {
       "id": 168,
       "name": "Protean",
       "description": "Changes the bearer's type to match each move it uses.",
       "generation": 0
     },
+    "protosynthesis": {
+      "id": 281,
+      "name": "Protosynthesis",
+      "description": "Raises highest stat in harsh sunlight, or if holding Booster Energy.",
+      "generation": 9
+    },
+    "psychic-surge": {
+      "id": 227,
+      "name": "Psychic Surge",
+      "description": "When this Pokémon enters battle, it changes the terrain to Psychic Terrain.",
+      "generation": 7
+    },
+    "punk-rock": {
+      "id": 244,
+      "name": "Punk Rock",
+      "description": "Boosts sound-based moves and halves damage from the same moves.",
+      "generation": 8
+    },
     "pure-power": {
       "id": 74,
       "name": "Pure Power",
       "description": "Doubles Attack in battle.",
       "generation": 3
+    },
+    "purifying-salt": {
+      "id": 272,
+      "name": "Purifying Salt",
+      "description": "Protects from status conditions and halves damage from Ghost-type moves.",
+      "generation": 9
+    },
+    "quark-drive": {
+      "id": 282,
+      "name": "Quark Drive",
+      "description": "Raises highest stat on Electric Terrain, or if holding Booster Energy.",
+      "generation": 9
+    },
+    "queenly-majesty": {
+      "id": 214,
+      "name": "Queenly Majesty",
+      "description": "Opposing Pokémon cannot use priority attacks.",
+      "generation": 7
+    },
+    "quick-draw": {
+      "id": 259,
+      "name": "Quick Draw",
+      "description": "Enables the Pokémon to move first occasionally.",
+      "generation": 8
     },
     "quick-feet": {
       "id": 95,
@@ -717,6 +1197,12 @@
       "description": "Raises Speed one stage upon being hit by a Dark, Ghost, or Bug move.",
       "generation": 5
     },
+    "receiver": {
+      "id": 222,
+      "name": "Receiver",
+      "description": "When an ally faints, this Pokémon gains its Ability.",
+      "generation": 7
+    },
     "reckless": {
       "id": 120,
       "name": "Reckless",
@@ -735,17 +1221,35 @@
       "description": "Heals for 1/3 max HP upon switching out.",
       "generation": 5
     },
+    "ripen": {
+      "id": 247,
+      "name": "Ripen",
+      "description": "Doubles the effect of berries.",
+      "generation": 8
+    },
     "rivalry": {
       "id": 79,
       "name": "Rivalry",
       "description": "Increases damage inflicted to 1.25× against Pokémon of the same gender, but decreases damage to 0.75× against the opposite gender.",
       "generation": 4
     },
+    "rks-system": {
+      "id": 225,
+      "name": "RKS System",
+      "description": "Changes this Pokémon's type to match its held Memory.",
+      "generation": 7
+    },
     "rock-head": {
       "id": 69,
       "name": "Rock Head",
       "description": "Protects against recoil damage.",
       "generation": 3
+    },
+    "rocky-payload": {
+      "id": 276,
+      "name": "Rocky Payload",
+      "description": "Powers up Rock-type moves.",
+      "generation": 9
     },
     "rough-skin": {
       "id": 24,
@@ -771,6 +1275,12 @@
       "description": "Doubles Speed during a sandstorm.  Protects against sandstorm damage.",
       "generation": 5
     },
+    "sand-spit": {
+      "id": 245,
+      "name": "Sand Spit",
+      "description": "Creates a sandstorm when hit by an attack.",
+      "generation": 8
+    },
     "sand-stream": {
       "id": 45,
       "name": "Sand Stream",
@@ -789,17 +1299,41 @@
       "description": "Absorbs Grass moves, raising Attack one stage.",
       "generation": 5
     },
+    "schooling": {
+      "id": 208,
+      "name": "Schooling",
+      "description": "Wishiwashi becomes Schooling Form when its HP is 25% or higher.",
+      "generation": 7
+    },
     "scrappy": {
       "id": 113,
       "name": "Scrappy",
       "description": "Lets the Pokémon's Normal and Fighting moves hit Ghost Pokémon.",
       "generation": 4
     },
+    "screen-cleaner": {
+      "id": 251,
+      "name": "Screen Cleaner",
+      "description": "Nullifies effects of Light Screen, Reflect, and Aurora Veil.",
+      "generation": 8
+    },
+    "seed-sower": {
+      "id": 269,
+      "name": "Seed Sower",
+      "description": "Turns the ground into Grassy Terrain when the Pokémon is hit by an attack.",
+      "generation": 9
+    },
     "serene-grace": {
       "id": 32,
       "name": "Serene Grace",
       "description": "Doubles the chance of moves' extra effects occurring.",
       "generation": 3
+    },
+    "shadow-shield": {
+      "id": 231,
+      "name": "Shadow Shield",
+      "description": "When this Pokémon has full HP, regular damage from moves is halved.",
+      "generation": 7
     },
     "shadow-tag": {
       "id": 23,
@@ -836,6 +1370,12 @@
       "name": "Shield Dust",
       "description": "Protects against incoming moves' extra effects.",
       "generation": 3
+    },
+    "shields-down": {
+      "id": 197,
+      "name": "Shields Down",
+      "description": "Transforms this Minior between Core Form and Meteor Form.  Prevents major status ailments and drowsiness while in Meteor Form.",
+      "generation": 7
     },
     "simple": {
       "id": 86,
@@ -891,6 +1431,12 @@
       "description": "Decreases damage taken from super-effective moves by 1/4.",
       "generation": 4
     },
+    "soul-heart": {
+      "id": 220,
+      "name": "Soul-Heart",
+      "description": "This Pokémon's Special Attack rises by one stage every time any Pokémon faints.",
+      "generation": 7
+    },
     "soundproof": {
       "id": 43,
       "name": "Soundproof",
@@ -903,11 +1449,35 @@
       "description": "Raises Speed one stage after each turn.",
       "generation": 3
     },
+    "spicy-spray": {
+      "id": 311,
+      "name": "Spicy Spray",
+      "description": "When the Pokémon takes damage from a move, it burns the attacker.",
+      "generation": 9
+    },
+    "stakeout": {
+      "id": 198,
+      "name": "Stakeout",
+      "description": "This Pokémon's moves have double power against Pokémon that switched in this turn.",
+      "generation": 7
+    },
     "stall": {
       "id": 100,
       "name": "Stall",
       "description": "Makes the Pokémon move last within its move's priority bracket.",
       "generation": 4
+    },
+    "stalwart": {
+      "id": 242,
+      "name": "Stalwart",
+      "description": "Ignores moves and abilities that draw in moves.",
+      "generation": 8
+    },
+    "stamina": {
+      "id": 192,
+      "name": "Stamina",
+      "description": "Raises this Pokémon's Defense by one stage when it takes damage from a move.",
+      "generation": 7
     },
     "stance-change": {
       "id": 176,
@@ -926,6 +1496,24 @@
       "name": "Steadfast",
       "description": "Raises Speed one stage upon flinching.",
       "generation": 4
+    },
+    "steam-engine": {
+      "id": 243,
+      "name": "Steam Engine",
+      "description": "Boosts the Speed stat drastically when the Pokémon is hit by a Fire- or Water-type move.",
+      "generation": 8
+    },
+    "steelworker": {
+      "id": 200,
+      "name": "Steelworker",
+      "description": "This Pokémon's Steel moves have 1.5× power.",
+      "generation": 7
+    },
+    "steely-spirit": {
+      "id": 252,
+      "name": "Steely Spirit",
+      "description": "Powers up ally Pokémon's Steel-type moves.",
+      "generation": 8
     },
     "stench": {
       "id": 1,
@@ -969,6 +1557,24 @@
       "description": "Raises moves' critical hit rates one stage.",
       "generation": 4
     },
+    "supersweet-syrup": {
+      "id": 300,
+      "name": "Supersweet Syrup",
+      "description": "Once per battle, when a Pokémon with Supersweet Syrup enters the battle, it lowers the evasion stat of all adjacent opponents by one stage.",
+      "generation": 9
+    },
+    "supreme-overlord": {
+      "id": 293,
+      "name": "Supreme Overlord",
+      "description": "Attack and Special Attack are boosted for each party Pokémon that has been defeated.",
+      "generation": 9
+    },
+    "surge-surfer": {
+      "id": 207,
+      "name": "Surge Surfer",
+      "description": "Doubles this Pokémon's Speed on Electric Terrain.",
+      "generation": 7
+    },
     "swarm": {
       "id": 68,
       "name": "Swarm",
@@ -987,6 +1593,12 @@
       "description": "Doubles Speed during rain.",
       "generation": 3
     },
+    "sword-of-ruin": {
+      "id": 285,
+      "name": "Sword of Ruin",
+      "description": "Lowers Defense of all Pokémon except itself.",
+      "generation": 9
+    },
     "symbiosis": {
       "id": 180,
       "name": "Symbiosis",
@@ -999,11 +1611,23 @@
       "description": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them.",
       "generation": 3
     },
+    "tablets-of-ruin": {
+      "id": 286,
+      "name": "Tablets of Ruin",
+      "description": "Lowers Attack of all Pokémon except itself.",
+      "generation": 9
+    },
     "tangled-feet": {
       "id": 77,
       "name": "Tangled Feet",
       "description": "Doubles evasion when confused.",
       "generation": 4
+    },
+    "tangling-hair": {
+      "id": 221,
+      "name": "Tangling Hair",
+      "description": "When this Pokémon takes regular damage from a contact move, the attacking Pokémon's Speed lowers by one stage.",
+      "generation": 7
     },
     "technician": {
       "id": 101,
@@ -1017,11 +1641,35 @@
       "description": "Protects against friendly Pokémon's damaging moves.",
       "generation": 5
     },
+    "tera-shell": {
+      "id": 305,
+      "name": "Tera Shell",
+      "description": "All damage-dealing moves that hit the Pokémon when its HP is full will not be very effective.",
+      "generation": 9
+    },
+    "tera-shift": {
+      "id": 304,
+      "name": "Tera Shift",
+      "description": "When Terapagos enters the battle, it turns into its Terastal Form until the end of the battle.",
+      "generation": 9
+    },
+    "teraform-zero": {
+      "id": 306,
+      "name": "Teraform Zero",
+      "description": "As soon as Terapagos assumes its Stellar Form, it will immediately neutralize weather and terrain effects.",
+      "generation": 9
+    },
     "teravolt": {
       "id": 164,
       "name": "Teravolt",
       "description": "Bypasses targets' abilities if they could hinder or prevent moves.",
       "generation": 5
+    },
+    "thermal-exchange": {
+      "id": 270,
+      "name": "Thermal Exchange",
+      "description": "Raises Attack when hit by a Fire-type move. Cannot be burned.",
+      "generation": 9
     },
     "thick-fat": {
       "id": 47,
@@ -1053,11 +1701,35 @@
       "description": "Increases Attack to 1.5× when poisoned.",
       "generation": 5
     },
+    "toxic-chain": {
+      "id": 302,
+      "name": "Toxic Chain",
+      "description": "May cause bad poisoning when the Pokémon hits an opponent with a move.",
+      "generation": 9
+    },
+    "toxic-debris": {
+      "id": 295,
+      "name": "Toxic Debris",
+      "description": "Scatters poison spikes at the feet of the opposing team when the Pokémon takes damage from physical moves.",
+      "generation": 9
+    },
     "trace": {
       "id": 36,
       "name": "Trace",
       "description": "Copies an opponent's ability upon entering battle.",
       "generation": 3
+    },
+    "transistor": {
+      "id": 262,
+      "name": "Transistor",
+      "description": "Powers up Electric-type moves.",
+      "generation": 8
+    },
+    "triage": {
+      "id": 205,
+      "name": "Triage",
+      "description": "This Pokémon's healing moves have their priority increased by 3.",
+      "generation": 7
     },
     "truant": {
       "id": 54,
@@ -1089,6 +1761,18 @@
       "description": "Prevents opposing Pokémon from eating held Berries.",
       "generation": 5
     },
+    "unseen-fist": {
+      "id": 260,
+      "name": "Unseen Fist",
+      "description": "Contact moves can strike through Protect/Detect.",
+      "generation": 8
+    },
+    "vessel-of-ruin": {
+      "id": 284,
+      "name": "Vessel of Ruin",
+      "description": "Lowers Special Attack of all Pokémon except itself.",
+      "generation": 9
+    },
     "victory-star": {
       "id": 162,
       "name": "Victory Star",
@@ -1107,11 +1791,29 @@
       "description": "Absorbs Electric moves, healing for 1/4 max HP.",
       "generation": 3
     },
+    "wandering-spirit": {
+      "id": 254,
+      "name": "Wandering Spirit",
+      "description": "Swaps abilities with opponents on contact.",
+      "generation": 8
+    },
     "water-absorb": {
       "id": 11,
       "name": "Water Absorb",
       "description": "Absorbs Water moves, healing for 1/4 max HP.",
       "generation": 3
+    },
+    "water-bubble": {
+      "id": 199,
+      "name": "Water Bubble",
+      "description": "Halves damage from Fire moves, doubles damage of Water moves, and prevents burns.",
+      "generation": 7
+    },
+    "water-compaction": {
+      "id": 195,
+      "name": "Water Compaction",
+      "description": "Raises this Pokémon's Defense by two stages when it's hit by a Water move.",
+      "generation": 7
     },
     "water-veil": {
       "id": 41,
@@ -1125,11 +1827,29 @@
       "description": "Raises Speed and lowers Defense by one stage each upon being hit by a physical move.",
       "generation": 5
     },
+    "well-baked-body": {
+      "id": 273,
+      "name": "Well-Baked Body",
+      "description": "Immune to Fire-type moves, and Defense is sharply boosted.",
+      "generation": 9
+    },
     "white-smoke": {
       "id": 73,
       "name": "White Smoke",
       "description": "Prevents stats from being lowered by other Pokémon.",
       "generation": 3
+    },
+    "wimp-out": {
+      "id": 193,
+      "name": "Wimp Out",
+      "description": "This Pokémon automatically switches out when its HP drops below half.",
+      "generation": 7
+    },
+    "wind-power": {
+      "id": 277,
+      "name": "Wind Power",
+      "description": "When hit by a wind move, the power of the next Electric-type move it uses is doubled.",
+      "generation": 9
     },
     "wind-rider": {
       "id": 274,
@@ -1154,6 +1874,12 @@
       "name": "Zen Mode",
       "description": "Changes Darmanitan's form after each turn depending on its HP: Zen Mode below 50% max HP, and Standard Mode otherwise.",
       "generation": 5
+    },
+    "zero-to-hero": {
+      "id": 278,
+      "name": "Zero to Hero",
+      "description": "Transforms into its Hero Form when switching out.",
+      "generation": 9
     }
   },
   "pokemon": [
@@ -13592,6 +14318,4746 @@
       "abilities": [
         {
           "ability": "water-absorb",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 722,
+      "abilities": [
+        {
+          "ability": "overgrow",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "long-reach",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 723,
+      "abilities": [
+        {
+          "ability": "overgrow",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "long-reach",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 724,
+      "abilities": [
+        {
+          "ability": "overgrow",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "long-reach",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 725,
+      "abilities": [
+        {
+          "ability": "blaze",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "intimidate",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 726,
+      "abilities": [
+        {
+          "ability": "blaze",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "intimidate",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 727,
+      "abilities": [
+        {
+          "ability": "blaze",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "intimidate",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 728,
+      "abilities": [
+        {
+          "ability": "torrent",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "liquid-voice",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 729,
+      "abilities": [
+        {
+          "ability": "torrent",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "liquid-voice",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 730,
+      "abilities": [
+        {
+          "ability": "torrent",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "liquid-voice",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 731,
+      "abilities": [
+        {
+          "ability": "keen-eye",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "skill-link",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "pickup",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 732,
+      "abilities": [
+        {
+          "ability": "keen-eye",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "skill-link",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "pickup",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 733,
+      "abilities": [
+        {
+          "ability": "keen-eye",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "skill-link",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "sheer-force",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 734,
+      "abilities": [
+        {
+          "ability": "stakeout",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "strong-jaw",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "adaptability",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 735,
+      "abilities": [
+        {
+          "ability": "stakeout",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "strong-jaw",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "adaptability",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 736,
+      "abilities": [
+        {
+          "ability": "swarm",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 737,
+      "abilities": [
+        {
+          "ability": "battery",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 738,
+      "abilities": [
+        {
+          "ability": "levitate",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 739,
+      "abilities": [
+        {
+          "ability": "hyper-cutter",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "iron-fist",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "anger-point",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 740,
+      "abilities": [
+        {
+          "ability": "hyper-cutter",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "iron-fist",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "anger-point",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 741,
+      "abilities": [
+        {
+          "ability": "dancer",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 742,
+      "abilities": [
+        {
+          "ability": "honey-gather",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "shield-dust",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "sweet-veil",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 743,
+      "abilities": [
+        {
+          "ability": "honey-gather",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "shield-dust",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "sweet-veil",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 744,
+      "abilities": [
+        {
+          "ability": "keen-eye",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "vital-spirit",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "steadfast",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 745,
+      "abilities": [
+        {
+          "ability": "keen-eye",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sand-rush",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "steadfast",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 746,
+      "abilities": [
+        {
+          "ability": "schooling",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 747,
+      "abilities": [
+        {
+          "ability": "merciless",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "limber",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "regenerator",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 748,
+      "abilities": [
+        {
+          "ability": "merciless",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "limber",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "regenerator",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 749,
+      "abilities": [
+        {
+          "ability": "own-tempo",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "stamina",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "inner-focus",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 750,
+      "abilities": [
+        {
+          "ability": "own-tempo",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "stamina",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "inner-focus",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 751,
+      "abilities": [
+        {
+          "ability": "water-bubble",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "water-absorb",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 752,
+      "abilities": [
+        {
+          "ability": "water-bubble",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "water-absorb",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 753,
+      "abilities": [
+        {
+          "ability": "leaf-guard",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "contrary",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 754,
+      "abilities": [
+        {
+          "ability": "leaf-guard",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "contrary",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 755,
+      "abilities": [
+        {
+          "ability": "illuminate",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "effect-spore",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "rain-dish",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 756,
+      "abilities": [
+        {
+          "ability": "illuminate",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "effect-spore",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "rain-dish",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 757,
+      "abilities": [
+        {
+          "ability": "corrosion",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "oblivious",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 758,
+      "abilities": [
+        {
+          "ability": "corrosion",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "oblivious",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 759,
+      "abilities": [
+        {
+          "ability": "fluffy",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "klutz",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "cute-charm",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 760,
+      "abilities": [
+        {
+          "ability": "fluffy",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "klutz",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "unnerve",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 761,
+      "abilities": [
+        {
+          "ability": "leaf-guard",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "oblivious",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "sweet-veil",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 762,
+      "abilities": [
+        {
+          "ability": "leaf-guard",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "oblivious",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "sweet-veil",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 763,
+      "abilities": [
+        {
+          "ability": "leaf-guard",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "queenly-majesty",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "sweet-veil",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 764,
+      "abilities": [
+        {
+          "ability": "flower-veil",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "triage",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "natural-cure",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 765,
+      "abilities": [
+        {
+          "ability": "inner-focus",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "telepathy",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "symbiosis",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 766,
+      "abilities": [
+        {
+          "ability": "receiver",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "defiant",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 767,
+      "abilities": [
+        {
+          "ability": "wimp-out",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 768,
+      "abilities": [
+        {
+          "ability": "emergency-exit",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 769,
+      "abilities": [
+        {
+          "ability": "water-compaction",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sand-veil",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 770,
+      "abilities": [
+        {
+          "ability": "water-compaction",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sand-veil",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 771,
+      "abilities": [
+        {
+          "ability": "innards-out",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "unaware",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 772,
+      "abilities": [
+        {
+          "ability": "battle-armor",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 773,
+      "abilities": [
+        {
+          "ability": "rks-system",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 774,
+      "abilities": [
+        {
+          "ability": "shields-down",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 775,
+      "abilities": [
+        {
+          "ability": "comatose",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 776,
+      "abilities": [
+        {
+          "ability": "shell-armor",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 777,
+      "abilities": [
+        {
+          "ability": "iron-barbs",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "lightning-rod",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "sturdy",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 778,
+      "abilities": [
+        {
+          "ability": "disguise",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 779,
+      "abilities": [
+        {
+          "ability": "dazzling",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "strong-jaw",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "wonder-skin",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 780,
+      "abilities": [
+        {
+          "ability": "berserk",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sap-sipper",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "cloud-nine",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 781,
+      "abilities": [
+        {
+          "ability": "steelworker",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 782,
+      "abilities": [
+        {
+          "ability": "bulletproof",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "soundproof",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "overcoat",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 783,
+      "abilities": [
+        {
+          "ability": "bulletproof",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "soundproof",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "overcoat",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 784,
+      "abilities": [
+        {
+          "ability": "bulletproof",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "soundproof",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "overcoat",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 785,
+      "abilities": [
+        {
+          "ability": "electric-surge",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "telepathy",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 786,
+      "abilities": [
+        {
+          "ability": "psychic-surge",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "telepathy",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 787,
+      "abilities": [
+        {
+          "ability": "grassy-surge",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "telepathy",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 788,
+      "abilities": [
+        {
+          "ability": "misty-surge",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "telepathy",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 789,
+      "abilities": [
+        {
+          "ability": "unaware",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 790,
+      "abilities": [
+        {
+          "ability": "sturdy",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 791,
+      "abilities": [
+        {
+          "ability": "full-metal-body",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 792,
+      "abilities": [
+        {
+          "ability": "shadow-shield",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 793,
+      "abilities": [
+        {
+          "ability": "beast-boost",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 794,
+      "abilities": [
+        {
+          "ability": "beast-boost",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 795,
+      "abilities": [
+        {
+          "ability": "beast-boost",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 796,
+      "abilities": [
+        {
+          "ability": "beast-boost",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 797,
+      "abilities": [
+        {
+          "ability": "beast-boost",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 798,
+      "abilities": [
+        {
+          "ability": "beast-boost",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 799,
+      "abilities": [
+        {
+          "ability": "beast-boost",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 800,
+      "abilities": [
+        {
+          "ability": "prism-armor",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 801,
+      "abilities": [
+        {
+          "ability": "soul-heart",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 802,
+      "abilities": [
+        {
+          "ability": "technician",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 803,
+      "abilities": [
+        {
+          "ability": "beast-boost",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 804,
+      "abilities": [
+        {
+          "ability": "beast-boost",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 805,
+      "abilities": [
+        {
+          "ability": "beast-boost",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 806,
+      "abilities": [
+        {
+          "ability": "beast-boost",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 807,
+      "abilities": [
+        {
+          "ability": "volt-absorb",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 808,
+      "abilities": [
+        {
+          "ability": "magnet-pull",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 809,
+      "abilities": [
+        {
+          "ability": "iron-fist",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 810,
+      "abilities": [
+        {
+          "ability": "overgrow",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "grassy-surge",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 811,
+      "abilities": [
+        {
+          "ability": "overgrow",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "grassy-surge",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 812,
+      "abilities": [
+        {
+          "ability": "overgrow",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "grassy-surge",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 813,
+      "abilities": [
+        {
+          "ability": "blaze",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "libero",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 814,
+      "abilities": [
+        {
+          "ability": "blaze",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "libero",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 815,
+      "abilities": [
+        {
+          "ability": "blaze",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "libero",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 816,
+      "abilities": [
+        {
+          "ability": "torrent",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sniper",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 817,
+      "abilities": [
+        {
+          "ability": "torrent",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sniper",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 818,
+      "abilities": [
+        {
+          "ability": "torrent",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sniper",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 819,
+      "abilities": [
+        {
+          "ability": "cheek-pouch",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "gluttony",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 820,
+      "abilities": [
+        {
+          "ability": "cheek-pouch",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "gluttony",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 821,
+      "abilities": [
+        {
+          "ability": "keen-eye",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "unnerve",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "big-pecks",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 822,
+      "abilities": [
+        {
+          "ability": "keen-eye",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "unnerve",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "big-pecks",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 823,
+      "abilities": [
+        {
+          "ability": "pressure",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "unnerve",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "mirror-armor",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 824,
+      "abilities": [
+        {
+          "ability": "swarm",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "compound-eyes",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "telepathy",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 825,
+      "abilities": [
+        {
+          "ability": "swarm",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "compound-eyes",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "telepathy",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 826,
+      "abilities": [
+        {
+          "ability": "swarm",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "frisk",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "telepathy",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 827,
+      "abilities": [
+        {
+          "ability": "run-away",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "unburden",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "stakeout",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 828,
+      "abilities": [
+        {
+          "ability": "run-away",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "unburden",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "stakeout",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 829,
+      "abilities": [
+        {
+          "ability": "cotton-down",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "regenerator",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "effect-spore",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 830,
+      "abilities": [
+        {
+          "ability": "cotton-down",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "regenerator",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "effect-spore",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 831,
+      "abilities": [
+        {
+          "ability": "fluffy",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "run-away",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "bulletproof",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 832,
+      "abilities": [
+        {
+          "ability": "fluffy",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "steadfast",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "bulletproof",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 833,
+      "abilities": [
+        {
+          "ability": "strong-jaw",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "shell-armor",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "swift-swim",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 834,
+      "abilities": [
+        {
+          "ability": "strong-jaw",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "shell-armor",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "swift-swim",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 835,
+      "abilities": [
+        {
+          "ability": "ball-fetch",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "rattled",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 836,
+      "abilities": [
+        {
+          "ability": "strong-jaw",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "competitive",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 837,
+      "abilities": [
+        {
+          "ability": "steam-engine",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "heatproof",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "flash-fire",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 838,
+      "abilities": [
+        {
+          "ability": "steam-engine",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "flame-body",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "flash-fire",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 839,
+      "abilities": [
+        {
+          "ability": "steam-engine",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "flame-body",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "flash-fire",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 840,
+      "abilities": [
+        {
+          "ability": "ripen",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "gluttony",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "bulletproof",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 841,
+      "abilities": [
+        {
+          "ability": "ripen",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "gluttony",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "hustle",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 842,
+      "abilities": [
+        {
+          "ability": "ripen",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "gluttony",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "thick-fat",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 843,
+      "abilities": [
+        {
+          "ability": "sand-spit",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "shed-skin",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "sand-veil",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 844,
+      "abilities": [
+        {
+          "ability": "sand-spit",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "shed-skin",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "sand-veil",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 845,
+      "abilities": [
+        {
+          "ability": "gulp-missile",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 846,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "propeller-tail",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 847,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "propeller-tail",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 848,
+      "abilities": [
+        {
+          "ability": "rattled",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "static",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "klutz",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 849,
+      "abilities": [
+        {
+          "ability": "punk-rock",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "plus",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "technician",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 850,
+      "abilities": [
+        {
+          "ability": "flash-fire",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "white-smoke",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "flame-body",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 851,
+      "abilities": [
+        {
+          "ability": "flash-fire",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "white-smoke",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "flame-body",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 852,
+      "abilities": [
+        {
+          "ability": "limber",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "technician",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 853,
+      "abilities": [
+        {
+          "ability": "limber",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "technician",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 854,
+      "abilities": [
+        {
+          "ability": "weak-armor",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "cursed-body",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 855,
+      "abilities": [
+        {
+          "ability": "weak-armor",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "cursed-body",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 856,
+      "abilities": [
+        {
+          "ability": "healer",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "anticipation",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "magic-bounce",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 857,
+      "abilities": [
+        {
+          "ability": "healer",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "anticipation",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "magic-bounce",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 858,
+      "abilities": [
+        {
+          "ability": "healer",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "anticipation",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "magic-bounce",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 859,
+      "abilities": [
+        {
+          "ability": "prankster",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "frisk",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "pickpocket",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 860,
+      "abilities": [
+        {
+          "ability": "prankster",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "frisk",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "pickpocket",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 861,
+      "abilities": [
+        {
+          "ability": "prankster",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "frisk",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "pickpocket",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 862,
+      "abilities": [
+        {
+          "ability": "reckless",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "guts",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "defiant",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 863,
+      "abilities": [
+        {
+          "ability": "battle-armor",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "tough-claws",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "steely-spirit",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 864,
+      "abilities": [
+        {
+          "ability": "weak-armor",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "perish-body",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 865,
+      "abilities": [
+        {
+          "ability": "steadfast",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "scrappy",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 866,
+      "abilities": [
+        {
+          "ability": "tangled-feet",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "screen-cleaner",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "ice-body",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 867,
+      "abilities": [
+        {
+          "ability": "wandering-spirit",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 868,
+      "abilities": [
+        {
+          "ability": "sweet-veil",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "aroma-veil",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 869,
+      "abilities": [
+        {
+          "ability": "sweet-veil",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "aroma-veil",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 870,
+      "abilities": [
+        {
+          "ability": "battle-armor",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "defiant",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 871,
+      "abilities": [
+        {
+          "ability": "lightning-rod",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "electric-surge",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 872,
+      "abilities": [
+        {
+          "ability": "shield-dust",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "ice-scales",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 873,
+      "abilities": [
+        {
+          "ability": "shield-dust",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "ice-scales",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 874,
+      "abilities": [
+        {
+          "ability": "power-spot",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 875,
+      "abilities": [
+        {
+          "ability": "ice-face",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 876,
+      "abilities": [
+        {
+          "ability": "inner-focus",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "synchronize",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "psychic-surge",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 877,
+      "abilities": [
+        {
+          "ability": "hunger-switch",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 878,
+      "abilities": [
+        {
+          "ability": "sheer-force",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "heavy-metal",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 879,
+      "abilities": [
+        {
+          "ability": "sheer-force",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "heavy-metal",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 880,
+      "abilities": [
+        {
+          "ability": "volt-absorb",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "hustle",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "sand-rush",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 881,
+      "abilities": [
+        {
+          "ability": "volt-absorb",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "static",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "slush-rush",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 882,
+      "abilities": [
+        {
+          "ability": "water-absorb",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "strong-jaw",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "sand-rush",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 883,
+      "abilities": [
+        {
+          "ability": "water-absorb",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "ice-body",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "slush-rush",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 884,
+      "abilities": [
+        {
+          "ability": "light-metal",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "heavy-metal",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "stalwart",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 885,
+      "abilities": [
+        {
+          "ability": "clear-body",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "infiltrator",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "cursed-body",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 886,
+      "abilities": [
+        {
+          "ability": "clear-body",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "infiltrator",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "cursed-body",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 887,
+      "abilities": [
+        {
+          "ability": "clear-body",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "infiltrator",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "cursed-body",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 888,
+      "abilities": [
+        {
+          "ability": "intrepid-sword",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 889,
+      "abilities": [
+        {
+          "ability": "dauntless-shield",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 890,
+      "abilities": [
+        {
+          "ability": "pressure",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 891,
+      "abilities": [
+        {
+          "ability": "inner-focus",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 892,
+      "abilities": [
+        {
+          "ability": "unseen-fist",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 893,
+      "abilities": [
+        {
+          "ability": "leaf-guard",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 894,
+      "abilities": [
+        {
+          "ability": "transistor",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 895,
+      "abilities": [
+        {
+          "ability": "dragons-maw",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 896,
+      "abilities": [
+        {
+          "ability": "chilling-neigh",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 897,
+      "abilities": [
+        {
+          "ability": "grim-neigh",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 898,
+      "abilities": [
+        {
+          "ability": "unnerve",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 899,
+      "abilities": [
+        {
+          "ability": "intimidate",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "frisk",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "sap-sipper",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 900,
+      "abilities": [
+        {
+          "ability": "swarm",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sheer-force",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "sharpness",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 901,
+      "abilities": [
+        {
+          "ability": "guts",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "bulletproof",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "unnerve",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 902,
+      "abilities": [
+        {
+          "ability": "swift-swim",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "adaptability",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "mold-breaker",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 903,
+      "abilities": [
+        {
+          "ability": "pressure",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "unburden",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "poison-touch",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 904,
+      "abilities": [
+        {
+          "ability": "poison-point",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "swift-swim",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "intimidate",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 905,
+      "abilities": [
+        {
+          "ability": "cute-charm",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "contrary",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 906,
+      "abilities": [
+        {
+          "ability": "overgrow",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "protean",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 907,
+      "abilities": [
+        {
+          "ability": "overgrow",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "protean",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 908,
+      "abilities": [
+        {
+          "ability": "overgrow",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "protean",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 909,
+      "abilities": [
+        {
+          "ability": "blaze",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "unaware",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 910,
+      "abilities": [
+        {
+          "ability": "blaze",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "unaware",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 911,
+      "abilities": [
+        {
+          "ability": "blaze",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "unaware",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 912,
+      "abilities": [
+        {
+          "ability": "torrent",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "moxie",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 913,
+      "abilities": [
+        {
+          "ability": "torrent",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "moxie",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 914,
+      "abilities": [
+        {
+          "ability": "torrent",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "moxie",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 915,
+      "abilities": [
+        {
+          "ability": "aroma-veil",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "gluttony",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "thick-fat",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 916,
+      "abilities": [
+        {
+          "ability": "lingering-aroma",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "gluttony",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "thick-fat",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 917,
+      "abilities": [
+        {
+          "ability": "insomnia",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "stakeout",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 918,
+      "abilities": [
+        {
+          "ability": "insomnia",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "stakeout",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 919,
+      "abilities": [
+        {
+          "ability": "swarm",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "tinted-lens",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 920,
+      "abilities": [
+        {
+          "ability": "swarm",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "tinted-lens",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 921,
+      "abilities": [
+        {
+          "ability": "static",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "natural-cure",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "iron-fist",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 922,
+      "abilities": [
+        {
+          "ability": "volt-absorb",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "natural-cure",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "iron-fist",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 923,
+      "abilities": [
+        {
+          "ability": "volt-absorb",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "natural-cure",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "iron-fist",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 924,
+      "abilities": [
+        {
+          "ability": "run-away",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "pickup",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "own-tempo",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 925,
+      "abilities": [
+        {
+          "ability": "friend-guard",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "cheek-pouch",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "technician",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 926,
+      "abilities": [
+        {
+          "ability": "own-tempo",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "klutz",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 927,
+      "abilities": [
+        {
+          "ability": "well-baked-body",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "aroma-veil",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 928,
+      "abilities": [
+        {
+          "ability": "early-bird",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "harvest",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 929,
+      "abilities": [
+        {
+          "ability": "early-bird",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "harvest",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 930,
+      "abilities": [
+        {
+          "ability": "seed-sower",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "harvest",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 931,
+      "abilities": [
+        {
+          "ability": "intimidate",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "hustle",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "guts",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 932,
+      "abilities": [
+        {
+          "ability": "purifying-salt",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sturdy",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "clear-body",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 933,
+      "abilities": [
+        {
+          "ability": "purifying-salt",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sturdy",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "clear-body",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 934,
+      "abilities": [
+        {
+          "ability": "purifying-salt",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sturdy",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "clear-body",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 935,
+      "abilities": [
+        {
+          "ability": "flash-fire",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "flame-body",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 936,
+      "abilities": [
+        {
+          "ability": "flash-fire",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "weak-armor",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 937,
+      "abilities": [
+        {
+          "ability": "flash-fire",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "weak-armor",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 938,
+      "abilities": [
+        {
+          "ability": "own-tempo",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "static",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "damp",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 939,
+      "abilities": [
+        {
+          "ability": "electromorphosis",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "static",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "damp",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 940,
+      "abilities": [
+        {
+          "ability": "wind-power",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "volt-absorb",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "competitive",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 941,
+      "abilities": [
+        {
+          "ability": "wind-power",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "volt-absorb",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "competitive",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 942,
+      "abilities": [
+        {
+          "ability": "intimidate",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "run-away",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "stakeout",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 943,
+      "abilities": [
+        {
+          "ability": "intimidate",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "guard-dog",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "stakeout",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 944,
+      "abilities": [
+        {
+          "ability": "unburden",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "pickpocket",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "prankster",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 945,
+      "abilities": [
+        {
+          "ability": "unburden",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "poison-touch",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "prankster",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 946,
+      "abilities": [
+        {
+          "ability": "wind-rider",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "infiltrator",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 947,
+      "abilities": [
+        {
+          "ability": "wind-rider",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "infiltrator",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 948,
+      "abilities": [
+        {
+          "ability": "mycelium-might",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 949,
+      "abilities": [
+        {
+          "ability": "mycelium-might",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 950,
+      "abilities": [
+        {
+          "ability": "anger-shell",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "shell-armor",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "regenerator",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 951,
+      "abilities": [
+        {
+          "ability": "chlorophyll",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "insomnia",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "klutz",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 952,
+      "abilities": [
+        {
+          "ability": "chlorophyll",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "insomnia",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "moody",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 953,
+      "abilities": [
+        {
+          "ability": "compound-eyes",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "shed-skin",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 954,
+      "abilities": [
+        {
+          "ability": "synchronize",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "telepathy",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 955,
+      "abilities": [
+        {
+          "ability": "anticipation",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "frisk",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "speed-boost",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 956,
+      "abilities": [
+        {
+          "ability": "opportunist",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "frisk",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "speed-boost",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 957,
+      "abilities": [
+        {
+          "ability": "mold-breaker",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "own-tempo",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "pickpocket",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 958,
+      "abilities": [
+        {
+          "ability": "mold-breaker",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "own-tempo",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "pickpocket",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 959,
+      "abilities": [
+        {
+          "ability": "mold-breaker",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "own-tempo",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "pickpocket",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 960,
+      "abilities": [
+        {
+          "ability": "gooey",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "rattled",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "sand-veil",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 961,
+      "abilities": [
+        {
+          "ability": "gooey",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "rattled",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "sand-veil",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 962,
+      "abilities": [
+        {
+          "ability": "big-pecks",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "keen-eye",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "rocky-payload",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 963,
+      "abilities": [
+        {
+          "ability": "water-veil",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 964,
+      "abilities": [
+        {
+          "ability": "zero-to-hero",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 965,
+      "abilities": [
+        {
+          "ability": "overcoat",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "slow-start",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 966,
+      "abilities": [
+        {
+          "ability": "overcoat",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "filter",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 967,
+      "abilities": [
+        {
+          "ability": "shed-skin",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "regenerator",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 968,
+      "abilities": [
+        {
+          "ability": "earth-eater",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sand-veil",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 969,
+      "abilities": [
+        {
+          "ability": "toxic-debris",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "corrosion",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 970,
+      "abilities": [
+        {
+          "ability": "toxic-debris",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "corrosion",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 971,
+      "abilities": [
+        {
+          "ability": "pickup",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "fluffy",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 972,
+      "abilities": [
+        {
+          "ability": "sand-rush",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "fluffy",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 973,
+      "abilities": [
+        {
+          "ability": "scrappy",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "tangled-feet",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "costar",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 974,
+      "abilities": [
+        {
+          "ability": "thick-fat",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "snow-cloak",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "sheer-force",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 975,
+      "abilities": [
+        {
+          "ability": "thick-fat",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "slush-rush",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "sheer-force",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 976,
+      "abilities": [
+        {
+          "ability": "mold-breaker",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sharpness",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 977,
+      "abilities": [
+        {
+          "ability": "unaware",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "oblivious",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "water-veil",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 978,
+      "abilities": [
+        {
+          "ability": "commander",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "storm-drain",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 979,
+      "abilities": [
+        {
+          "ability": "vital-spirit",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "inner-focus",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "defiant",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 980,
+      "abilities": [
+        {
+          "ability": "poison-point",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "water-absorb",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "unaware",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 981,
+      "abilities": [
+        {
+          "ability": "cud-chew",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "armor-tail",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "sap-sipper",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 982,
+      "abilities": [
+        {
+          "ability": "serene-grace",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "run-away",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "rattled",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 983,
+      "abilities": [
+        {
+          "ability": "defiant",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "supreme-overlord",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "pressure",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 984,
+      "abilities": [
+        {
+          "ability": "protosynthesis",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 985,
+      "abilities": [
+        {
+          "ability": "protosynthesis",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 986,
+      "abilities": [
+        {
+          "ability": "protosynthesis",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 987,
+      "abilities": [
+        {
+          "ability": "protosynthesis",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 988,
+      "abilities": [
+        {
+          "ability": "protosynthesis",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 989,
+      "abilities": [
+        {
+          "ability": "protosynthesis",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 990,
+      "abilities": [
+        {
+          "ability": "quark-drive",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 991,
+      "abilities": [
+        {
+          "ability": "quark-drive",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 992,
+      "abilities": [
+        {
+          "ability": "quark-drive",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 993,
+      "abilities": [
+        {
+          "ability": "quark-drive",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 994,
+      "abilities": [
+        {
+          "ability": "quark-drive",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 995,
+      "abilities": [
+        {
+          "ability": "quark-drive",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 996,
+      "abilities": [
+        {
+          "ability": "thermal-exchange",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "ice-body",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 997,
+      "abilities": [
+        {
+          "ability": "thermal-exchange",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "ice-body",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 998,
+      "abilities": [
+        {
+          "ability": "thermal-exchange",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "ice-body",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 999,
+      "abilities": [
+        {
+          "ability": "rattled",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1000,
+      "abilities": [
+        {
+          "ability": "good-as-gold",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1001,
+      "abilities": [
+        {
+          "ability": "tablets-of-ruin",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1002,
+      "abilities": [
+        {
+          "ability": "sword-of-ruin",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1003,
+      "abilities": [
+        {
+          "ability": "vessel-of-ruin",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1004,
+      "abilities": [
+        {
+          "ability": "beads-of-ruin",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1005,
+      "abilities": [
+        {
+          "ability": "protosynthesis",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1006,
+      "abilities": [
+        {
+          "ability": "quark-drive",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1007,
+      "abilities": [
+        {
+          "ability": "orichalcum-pulse",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1008,
+      "abilities": [
+        {
+          "ability": "hadron-engine",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1009,
+      "abilities": [
+        {
+          "ability": "protosynthesis",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1010,
+      "abilities": [
+        {
+          "ability": "quark-drive",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1011,
+      "abilities": [
+        {
+          "ability": "supersweet-syrup",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "gluttony",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "sticky-hold",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1012,
+      "abilities": [
+        {
+          "ability": "hospitality",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "heatproof",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1013,
+      "abilities": [
+        {
+          "ability": "hospitality",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "heatproof",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1014,
+      "abilities": [
+        {
+          "ability": "toxic-chain",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "guard-dog",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1015,
+      "abilities": [
+        {
+          "ability": "toxic-chain",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "frisk",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1016,
+      "abilities": [
+        {
+          "ability": "toxic-chain",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "technician",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1017,
+      "abilities": [
+        {
+          "ability": "defiant",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1018,
+      "abilities": [
+        {
+          "ability": "stamina",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "sturdy",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "stalwart",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1019,
+      "abilities": [
+        {
+          "ability": "supersweet-syrup",
+          "slot": 0,
+          "slot_number": 1
+        },
+        {
+          "ability": "regenerator",
+          "slot": 1,
+          "slot_number": 2
+        },
+        {
+          "ability": "sticky-hold",
+          "slot": 2,
+          "slot_number": 3
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1020,
+      "abilities": [
+        {
+          "ability": "protosynthesis",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1021,
+      "abilities": [
+        {
+          "ability": "protosynthesis",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1022,
+      "abilities": [
+        {
+          "ability": "quark-drive",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1023,
+      "abilities": [
+        {
+          "ability": "quark-drive",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1024,
+      "abilities": [
+        {
+          "ability": "tera-shift",
+          "slot": 0,
+          "slot_number": 1
+        }
+      ]
+    },
+    {
+      "national_dex_number": 1025,
+      "abilities": [
+        {
+          "ability": "poison-puppeteer",
           "slot": 0,
           "slot_number": 1
         }
