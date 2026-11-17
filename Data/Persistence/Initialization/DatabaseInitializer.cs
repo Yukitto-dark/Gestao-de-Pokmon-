@@ -83,6 +83,10 @@ public static class DatabaseInitializer
         GenerationVFormsInitializer.Inicializar(db, "generation-vi-forms-seed.json", 1, 721, onlyInsertMissing: true);
         db.SaveChanges();
 
+        // Ícones shiny da Box (espécies e formas), depois que todos os sprites já existem.
+        SeedBoxShinySprites(db);
+        db.SaveChanges();
+
         // Atualiza altura e peso somente depois de todas as formas já existirem.
         PokemonMeasurementsInitializer.Inicializar(db);
 
@@ -996,6 +1000,41 @@ public static class DatabaseInitializer
             // A pasta frontShiny contém a arte frontal shiny, não um ícone mini.
             if (hasFrontShiny)
                 sprite.ExhibitionShiny = frontShiny;
+        }
+    }
+
+    /// <summary>
+    /// Preenche PokemonSprite.BoxShiny (ícone shiny da Box) por convenção de pasta, somente
+    /// quando o arquivo existe: espécies em miniShiny/{dex}.png e formas em
+    /// forms/{dex}/{forma}/box-shiny.png, ao lado da arte frontal da forma.
+    /// Não sobrescreve valores já preenchidos e roda depois de todos os inicializadores de
+    /// formas, então também atualiza bancos já criados e formas que o seed não recria.
+    /// </summary>
+    private static void SeedBoxShinySprites(AppDbContext db)
+    {
+        var sprites = db.Sprites
+            .Include(sprite => sprite.PokemonForm)
+                .ThenInclude(form => form.Pokemon)
+            .Where(sprite => sprite.BoxShiny == null)
+            .ToList();
+
+        foreach (PokemonSprite sprite in sprites)
+        {
+            string? candidate = null;
+
+            if (string.Equals(sprite.PokemonForm.FormName, "Normal", StringComparison.OrdinalIgnoreCase))
+            {
+                candidate = $"View/images/pokemon/miniShiny/{sprite.PokemonForm.Pokemon.NationalDexNumber}.png";
+            }
+            else if (!string.IsNullOrWhiteSpace(sprite.ExhibitionDefault))
+            {
+                int slash = sprite.ExhibitionDefault.LastIndexOf('/');
+                if (slash > 0)
+                    candidate = sprite.ExhibitionDefault[..slash] + "/box-shiny.png";
+            }
+
+            if (candidate is not null && AssetExists(candidate))
+                sprite.BoxShiny = candidate;
         }
     }
 
