@@ -35,43 +35,51 @@ namespace GestaoDePokemon.Controller
 
         public int PaginaAtual => _paginaAtual;
 
-        public int TotalResultados => _pokemons.Contar(_filtroAtual);
+        // Cada resultado é uma forma (a Normal e todas as alternativas) de uma espécie, em ordem de Pokédex.
+        public int TotalResultados => _pokemons.ContarEntradas(_filtroAtual);
 
         public int TotalPaginas =>
             Math.Max(1, (TotalResultados + ItensPorPagina - 1) / ItensPorPagina);
 
-        public int? IdSelecionado { get; private set; }
+        // Célula selecionada da Box (uma forma de uma espécie).
+        public PokemonBoxEntry? EntradaSelecionada { get; private set; }
+
+        // Número da Pokédex da espécie selecionada: os favoritos são por espécie.
+        public int? IdSelecionado => EntradaSelecionada?.NationalDexNumber;
 
         public IReadOnlyList<int> ObterIdsDaPagina() =>
             _pokemons.ObterIds(_filtroAtual, _paginaAtual, ItensPorPagina);
+
+        public IReadOnlyList<PokemonBoxEntry> ObterEntradasDaPagina() =>
+            _pokemons.ObterEntradas(_filtroAtual, _paginaAtual, ItensPorPagina);
 
         public void AplicarFiltros(PokemonFilter filtro)
         {
             ArgumentNullException.ThrowIfNull(filtro);
             _filtroAtual = filtro;
             _paginaAtual = 1;
-            IdSelecionado = null;
+            EntradaSelecionada = null;
         }
 
         public void LimparFiltros() => AplicarFiltros(new PokemonFilter());
 
-        public int? Selecionar(int coluna, int linha)
+        public PokemonBoxEntry? Selecionar(int coluna, int linha)
         {
             if (coluna < 0 || coluna > 5 || linha < 0 || linha > 4)
                 return null;
 
             int indice = linha * 6 + coluna;
-            IReadOnlyList<int> ids = _pokemons.ObterIds(
+            IReadOnlyList<PokemonBoxEntry> entradas = _pokemons.ObterEntradas(
                 _filtroAtual, _paginaAtual, ItensPorPagina);
 
-            if (indice >= ids.Count)
+            if (indice >= entradas.Count)
             {
-                IdSelecionado = null;
+                EntradaSelecionada = null;
                 return null;
             }
 
-            IdSelecionado = ids[indice];
-            return IdSelecionado;
+            EntradaSelecionada = entradas[indice];
+            return EntradaSelecionada;
         }
 
         public void IrParaPagina(int direcao)
@@ -84,20 +92,25 @@ namespace GestaoDePokemon.Controller
                 pagina = TotalPaginas;
 
             _paginaAtual = pagina;
-            IdSelecionado = null;
+            EntradaSelecionada = null;
         }
 
         public void LimparSelecao()
         {
-            IdSelecionado = null;
+            EntradaSelecionada = null;
         }
 
         public bool EhFavorito(int id) => _favoritos.EhFavorito(id);
 
         public string? ObterSpriteUrl(int id) => _pokemons.ObterSpriteUrl(id);
 
+        public string? ObterSpriteUrl(PokemonBoxEntry entrada) => _pokemons.ObterSpriteUrl(entrada);
+
         public string? ObterSpriteDetalheUrl(int id, bool shiny) =>
             _pokemons.ObterSpriteDetalheUrl(id, shiny);
+
+        public string? ObterSpriteDetalheUrl(PokemonBoxEntry entrada, bool shiny) =>
+            _pokemons.ObterSpriteDetalheUrl(entrada, shiny);
 
         public ResultadoFavorito AlternarFavorito(out bool limiteAtingido)
         {

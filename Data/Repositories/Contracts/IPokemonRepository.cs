@@ -18,6 +18,33 @@ namespace GestaoDePokemon.Data.Repositories.Contracts{
         IReadOnlyList<int> ObterIds(PokemonFilter filtro, int pagina, int tamanho) =>
             ObterIds(pagina, tamanho);
 
+        /// <summary>
+        /// Conta as células da Box que correspondem aos critérios: uma por forma (a Normal e todas as
+        /// alternativas). A implementação padrão conta só as espécies.
+        /// </summary>
+        int ContarEntradas(PokemonFilter filtro) => Contar(filtro);
+
+        /// <summary>
+        /// Retorna uma página da Box em ordem de Pokédex: cada espécie, a forma Normal primeiro e depois todas as
+        /// suas outras formas. A implementação padrão devolve só a forma Normal de cada espécie.
+        /// </summary>
+        IReadOnlyList<PokemonBoxEntry> ObterEntradas(PokemonFilter filtro, int pagina, int tamanho)
+        {
+            var entradas = new List<PokemonBoxEntry>();
+
+            foreach (int id in ObterIds(filtro, pagina, tamanho))
+                entradas.Add(new PokemonBoxEntry(id, id, $"#{id}", "Normal"));
+
+            return entradas;
+        }
+
+        // Sprite pequeno de uma célula da Box (a forma dela). Sem sprite próprio, usa o da espécie.
+        string? ObterSpriteUrl(PokemonBoxEntry entrada) => ObterSpriteUrl(entrada.NationalDexNumber);
+
+        // Sprite frontal de uma célula da Box (a forma dela) no painel de detalhes.
+        string? ObterSpriteDetalheUrl(PokemonBoxEntry entrada, bool shiny) =>
+            ObterSpriteDetalheUrl(entrada.NationalDexNumber, shiny);
+
         // Sprite pequeno usado nas células da Box (mini).
         string? ObterSpriteUrl(int id);
 

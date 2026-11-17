@@ -184,16 +184,18 @@ namespace GestaoDePokemon.View.Telas
                 : $"{_controller.PaginaAtual} - {_controller.TotalPaginas}";
             Numeração_Box.ToolTip = totalResultados == 0
                 ? "Nenhum Pokémon encontrado com os filtros selecionados."
-                : $"{totalResultados} Pokémon encontrados.";
+                : $"{totalResultados} Pokémon e formas encontrados.";
 
-            IReadOnlyList<int> ids = _controller.ObterIdsDaPagina();
+            // Cada célula é uma forma: a espécie na ordem da Pokédex, a forma Normal e depois todas as outras.
+            IReadOnlyList<PokemonBoxEntry> entradas = _controller.ObterEntradasDaPagina();
 
             for (int i = 0; i < _slots.Length; i++)
             {
-                if (i < ids.Count)
+                if (i < entradas.Count)
                 {
-                    _slots[i].Tag = ids[i];
-                    string? url = _controller.ObterSpriteUrl(ids[i]);
+                    _slots[i].Tag = entradas[i];
+                    _slots[i].ToolTip = entradas[i].Descricao;
+                    string? url = _controller.ObterSpriteUrl(entradas[i]);
                     _slots[i].Source = url is null
                         ? null
                         : new BitmapImage(new Uri(url, UriKind.RelativeOrAbsolute));
@@ -201,6 +203,7 @@ namespace GestaoDePokemon.View.Telas
                 else
                 {
                     _slots[i].Tag = null;
+                    _slots[i].ToolTip = null;
                     _slots[i].Source = null;
                 }
             }
@@ -208,6 +211,7 @@ namespace GestaoDePokemon.View.Telas
             _controller.LimparSelecao();
             _mostrarShiny = false;
             Imagem_Pokemon.Source = null;
+            Imagem_Pokemon.ToolTip = null;
             Shine.IsEnabled = false;
             Shine.ToolTip = "Selecione um Pokémon";
             Botao_Favorito.IsEnabled = false;
@@ -224,12 +228,13 @@ namespace GestaoDePokemon.View.Telas
 
             int coluna = Math.Clamp((int)((ponto.X - 247) / 63), 0, 5);
             int linha = Math.Clamp((int)((ponto.Y - 121) / 59), 0, 4);
-            int? id = _controller.Selecionar(coluna, linha);
+            PokemonBoxEntry? entrada = _controller.Selecionar(coluna, linha);
 
-            if (id is null)
+            if (entrada is null)
             {
                 _mostrarShiny = false;
                 Imagem_Pokemon.Source = null;
+                Imagem_Pokemon.ToolTip = null;
                 Shine.IsEnabled = false;
                 Shine.ToolTip = "Selecione um Pokémon";
                 Botao_Favorito.IsEnabled = false;
@@ -262,13 +267,15 @@ namespace GestaoDePokemon.View.Telas
 
         private void AtualizarImagemDetalhe()
         {
-            if (_controller.IdSelecionado is not int id)
+            if (_controller.EntradaSelecionada is not PokemonBoxEntry entrada)
             {
                 Imagem_Pokemon.Source = null;
+                Imagem_Pokemon.ToolTip = null;
                 return;
             }
 
-            string? url = _controller.ObterSpriteDetalheUrl(id, _mostrarShiny);
+            Imagem_Pokemon.ToolTip = entrada.Descricao;
+            string? url = _controller.ObterSpriteDetalheUrl(entrada, _mostrarShiny);
             Imagem_Pokemon.Source = url is null
                 ? null
                 : new BitmapImage(new Uri(url, UriKind.Absolute));
