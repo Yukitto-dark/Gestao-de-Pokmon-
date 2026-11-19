@@ -117,7 +117,7 @@ O banco é criado no diretório de dados locais do usuário:
 
 O inicializador é executado durante a inicialização do aplicativo. Os seeds são importados de forma incremental para evitar duplicar registros existentes. Como o projeto utiliza `EnsureCreated()`, alterações posteriores no modelo precisam de atualização explícita do esquema: `EnsureCreated()` não funciona como um sistema de migrations para bancos já existentes.
 
-## Como executar
+## Como executar no Windows
 
 ### Requisitos
 
@@ -157,6 +157,163 @@ Na primeira inicialização, o aplicativo cria o banco local e importa os dados 
 ```bash
 dotnet publish GestaoDePokemon.csproj -c Release -o ./publish
 ```
+
+## Como executar no Linux
+
+O projeto utiliza WPF, uma tecnologia de interface gráfica destinada ao Windows. Portanto, **não é possível executar o aplicativo nativamente no Linux**.
+
+Entretanto, é possível compilar o projeto utilizando o SDK do .NET instalado no Linux e executar o aplicativo por meio do **Wine**, que fornece uma camada de compatibilidade para aplicações Windows.
+
+O procedimento abaixo contempla Linux Mint, Ubuntu, Arch Linux e CachyOS.
+
+### 1. Instalar as dependências
+
+#### Linux Mint e Ubuntu
+
+Instale o Git e o SDK do .NET 10:
+
+```bash
+sudo apt update
+sudo apt install -y git dotnet-sdk-10.0
+```
+
+Para instalar o Wine Staging pelo repositório oficial do WineHQ em distribuições baseadas no Ubuntu 24.04, como o Linux Mint 22.x, utilize:
+
+```bash
+sudo dpkg --add-architecture i386
+sudo apt update
+
+sudo mkdir -pm755 /etc/apt/keyrings
+
+sudo wget -O /etc/apt/keyrings/winehq-archive.key \
+    https://dl.winehq.org/wine-builds/winehq.key
+
+. /etc/os-release
+UBUNTU_BASE_CODENAME="${UBUNTU_CODENAME:-$VERSION_CODENAME}"
+
+sudo wget -NP /etc/apt/sources.list.d/ \
+    "https://dl.winehq.org/wine-builds/ubuntu/dists/${UBUNTU_BASE_CODENAME}/winehq-${UBUNTU_BASE_CODENAME}.sources"
+
+sudo apt update
+
+sudo apt install --install-recommends winehq-staging winetricks
+```
+
+O comando utiliza o codinome da distribuição Ubuntu de origem. Em distribuições derivadas do Ubuntu, o valor pode ser diferente do codinome próprio do Linux Mint.
+
+Para outras versões do Ubuntu, consulte as instruções correspondentes no [WineHQ](https://wiki.winehq.org/Ubuntu).
+
+#### Arch Linux e CachyOS
+
+Instale as dependências utilizando o Pacman:
+
+```bash
+sudo pacman -Syu
+sudo pacman -S --needed dotnet-sdk-10.0 wine winetricks git
+```
+
+Caso prefira a versão Staging do Wine, utilize o pacote `wine-staging` no lugar de `wine`.
+
+### 2. Criar um prefixo exclusivo para o aplicativo
+
+É recomendável utilizar um prefixo próprio para manter o ambiente Windows do projeto separado dos demais aplicativos executados pelo Wine.
+
+Crie o prefixo:
+
+```bash
+export WINEPREFIX="$HOME/.wine-gestaopokemon"
+export WINEARCH=win64
+
+wineboot -u
+winecfg
+```
+
+O comando `winecfg` abre a configuração do Wine. Aguarde a inicialização do ambiente e feche a janela após a configuração.
+
+### 3. Instalar o .NET Desktop Runtime no Wine
+
+A instalação do SDK do .NET no Linux permite compilar o projeto, mas não fornece o runtime Windows necessário para executar a aplicação WPF.
+
+É necessário instalar o **.NET 10 Desktop Runtime para Windows x64** dentro do prefixo criado anteriormente.
+
+1. Acesse a [página oficial de downloads do .NET 10](https://dotnet.microsoft.com/download/dotnet/10.0).
+2. Localize a seção **.NET Desktop Runtime**.
+3. Baixe o instalador **Windows x64**.
+4. Execute o instalador pelo Wine, mantendo o prefixo configurado:
+
+```bash
+export WINEPREFIX="$HOME/.wine-gestaopokemon"
+
+wine "$HOME/Downloads/windowsdesktop-runtime-10.0.X-win-x64.exe"
+```
+
+Substitua `X` pela versão do instalador baixado.
+
+Após a instalação, é possível verificar os runtimes disponíveis no prefixo:
+
+```bash
+wine "$WINEPREFIX/drive_c/Program Files/dotnet/dotnet.exe" --list-runtimes
+```
+
+A lista deverá conter o runtime `Microsoft.WindowsDesktop.App` na versão 10.0.x.
+
+### 4. Clonar o projeto
+
+Com as dependências instaladas, clone o repositório:
+
+```bash
+git clone https://github.com/Yukitto-dark/Gestao-de-Pokmon-.git
+cd Gestao-de-Pokmon-
+```
+
+### 5. Restaurar e compilar
+
+O projeto já possui a propriedade `EnableWindowsTargeting` habilitada no arquivo `.csproj`, permitindo a compilação de aplicações direcionadas ao Windows em outros sistemas operacionais.
+
+Execute:
+
+```bash
+dotnet restore GestaoDePokemon.csproj -p:EnableWindowsTargeting=true
+```
+
+Compile em Release:
+
+```bash
+dotnet build GestaoDePokemon.csproj \
+    -c Release \
+    -p:EnableWindowsTargeting=true
+```
+
+### 6. Executar pelo Wine
+
+Após a compilação, execute o executável gerado:
+
+```bash
+export WINEPREFIX="$HOME/.wine-gestaopokemon"
+
+wine ./bin/Release/net10.0-windows/GestaoDePokemon.exe
+```
+
+O aplicativo será iniciado utilizando o ambiente Windows criado no prefixo do Wine.
+
+### 7. Localização do banco de dados no Linux
+
+Como o banco utiliza `Environment.SpecialFolder.LocalApplicationData`, sua localização depende do prefixo do Wine.
+
+No prefixo criado neste procedimento, o banco será armazenado em:
+
+```text
+~/.wine-gestaopokemon/drive_c/users/<usuario>/AppData/Local/GestaoDePokemon/gestaopokemon.db
+```
+
+**Importante:** mantenha o prefixo do Wine para preservar o banco de dados e os dados locais do aplicativo. Excluir o prefixo também remove o banco armazenado dentro dele.
+
+### Observações sobre o Linux
+
+- A compilação é realizada pelo SDK nativo do .NET 10 instalado na distribuição Linux.
+- A execução utiliza o Wine e o .NET Desktop Runtime para Windows instalado no prefixo.
+- O Wine Staging pode apresentar diferenças de compatibilidade entre versões.
+- O projeto não oferece suporte nativo ao WPF no Linux. O funcionamento depende da camada de compatibilidade utilizada.
 
 ## Compatibilidade
 
