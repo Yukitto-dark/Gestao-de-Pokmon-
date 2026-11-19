@@ -168,7 +168,7 @@ O procedimento abaixo contempla Linux Mint, Ubuntu, Arch Linux e CachyOS.
 
 ### 1. Instalar as dependências
 
-#### Linux Mint e Ubuntu
+#### Debian e Ubuntu
 
 Instale o Git e o SDK do .NET 10:
 
