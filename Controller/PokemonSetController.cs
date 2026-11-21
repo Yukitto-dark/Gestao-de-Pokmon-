@@ -25,6 +25,14 @@ namespace GestaoDePokemon.Controller
             public string Descricao => $"{Move.Name} ({Origem})";
         }
 
+        /// <summary>Uma habilidade que a forma pode ter e o slot dela (primeira, segunda ou oculta).</summary>
+        public sealed record HabilidadeDisponivel(PokemonAbility Ability, AbilitySlot Slot)
+        {
+            public string Descricao => Slot == AbilitySlot.Hidden
+                ? $"{Ability.Name} (Oculta)"
+                : Ability.Name;
+        }
+
         // Jogos usados como referência para os níveis, do mais recente ao mais antigo. Os jogos com
         // progressão própria (Let's Go, Legends e Champions) só são usados quando não há outro.
         private static readonly string[] JogosReferencia =
@@ -50,10 +58,10 @@ namespace GestaoDePokemon.Controller
             PokemonNature Nature,
             IndividualValues IVs,
             EffortValues EVs,
-            int? AbilityId,
             IReadOnlyList<int> MoveIds,
             bool MovesPadrao,
-            IReadOnlyList<PokemonAbility> Abilities,
+            IReadOnlyList<HabilidadeDisponivel> Habilidades,
+            HabilidadeDisponivel? Habilidade,
             IReadOnlyList<GolpeDisponivel> GolpesDisponiveis);
 
         private readonly IPokemonRepository _pokemons;
@@ -81,15 +89,12 @@ namespace GestaoDePokemon.Controller
 
             PokemonForm? form = ObterForma(membro.Pokemon, membro.PokemonFormId);
 
-            var habilidades = form is null
-                ? new List<PokemonAbility>()
-                : form.Abilities
-                    .OrderBy(entry => entry.Slot)
-                    .Where(entry => entry.Ability is not null)
-                    .Select(entry => entry.Ability!)
-                    .GroupBy(ability => ability.Id)
-                    .Select(group => group.First())
-                    .ToList();
+            List<HabilidadeDisponivel> habilidades = ObterHabilidades(form);
+
+            // Habilidade gravada no membro; sem escolha (ou com uma que a forma não tem), vale a primeira.
+            HabilidadeDisponivel? habilidade =
+                habilidades.FirstOrDefault(opcao => opcao.Ability.Id == membro.AbilityId)
+                ?? habilidades.FirstOrDefault();
 
             IReadOnlyList<GolpeDisponivel> golpes = ObterGolpesDisponiveis(db, membro.Pokemon, form);
 
@@ -121,11 +126,53 @@ namespace GestaoDePokemon.Controller
                 membro.Nature,
                 membro.IVs,
                 evs,
-                membro.AbilityId,
                 moveIds,
                 padrao,
                 habilidades,
+                habilidade,
                 golpes);
+        }
+
+        // Habilidades da forma em ordem de slot; a mesma habilidade em dois slots aparece uma vez.
+        private static List<HabilidadeDisponivel> ObterHabilidades(PokemonForm? form) =>
+            form is null
+                ? new List<HabilidadeDisponivel>()
+                : form.Abilities
+                    .Where(entry => entry.Ability is not null)
+                    .OrderBy(entry => entry.Slot)
+                    .GroupBy(entry => entry.AbilityId)
+                    .Select(group => new HabilidadeDisponivel(group.First().Ability, group.First().Slot))
+                    .ToList();
+
+        /// <summary>Grava a habilidade do membro do time; só aceita as habilidades da forma dele.</summary>
+        public void AtualizarHabilidade(int membroId, int abilityId)
+        {
+            using var db = new AppDbContext();
+
+            PokemonPartyMember membro = db.Party
+                .Include(member => member.Pokemon)
+                    .ThenInclude(pokemon => pokemon.Forms)
+                        .ThenInclude(form => form.Abilities)
+                            .ThenInclude(entry => entry.Ability)
+                .AsSplitQuery()
+                .FirstOrDefault(member => member.Id == membroId)
+                ?? throw new ArgumentException("Pokémon não encontrado no time.", nameof(membroId));
+
+            PokemonForm? form = ObterForma(membro.Pokemon, membro.PokemonFormId);
+
+            if (!ObterHabilidades(form).Any(opcao => opcao.Ability.Id == abilityId))
+            {
+                string nome = db.Abilities.AsNoTracking()
+                    .Where(ability => ability.Id == abilityId)
+                    .Select(ability => ability.Name)
+                    .FirstOrDefault() ?? $"#{abilityId}";
+
+                throw new ArgumentException(
+                    $"{membro.Pokemon.Name} não pode ter a habilidade {nome}.", nameof(abilityId));
+            }
+
+            membro.AbilityId = abilityId;
+            db.SaveChanges();
         }
 
         /// <summary>

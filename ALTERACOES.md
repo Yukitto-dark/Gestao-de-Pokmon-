@@ -272,3 +272,13 @@ evoluções (194), medidas (419), formas alternativas (33) e nenhuma mega.
   com IV e natureza; HP sem natureza) — `GuiDados.StatNoNivel`.
 - `DatabaseInitializer.MigrarEVsPadrao`: membros do time com exatamente 10 EVs nos seis atributos (o mínimo
   automático antigo, nunca editado) voltam a 0. Roda uma única vez por banco (`PRAGMA user_version = 1`).
+
+## Escolha da habilidade na build
+
+- Página Resumo: clicar no nome da habilidade abre uma lista com as habilidades da forma do membro do time,
+  na ordem dos slots e com a oculta marcada ("Rough Skin (Oculta)"). A escolha é gravada em
+  `PokemonPartyMember.AbilityId` e a descrição é atualizada; a dica do nome mostra as opções.
+- `PokemonSetController`: `SetInfo.Habilidades` (habilidade + slot) e `SetInfo.Habilidade` (a escolhida ou,
+  sem escolha válida, a primeira); `AtualizarHabilidade` recusa habilidades que a forma não tem (ex.: Vulpix de
+  Alola não pode ter Flash Fire).
+- O ComboBox segue a regra da natureza: fecha e grava depois que o evento de seleção termina.

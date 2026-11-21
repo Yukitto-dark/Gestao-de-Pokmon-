@@ -130,6 +130,18 @@
             <Label x:Name="Nivel_valor" Grid.Column="3" Content="Nv 100" FontSize="30" Margin="4,0,0,0"/>
         </Grid>
         <Label x:Name="Ability" Content="Label" HorizontalAlignment="Left" Height="40" Margin="546,449,0,0" VerticalAlignment="Top" Width="141" FontSize="36"/>
+        <!-- Escolha da habilidade: clicar no nome abre a lista com as habilidades da forma (inclusive a oculta). -->
+        <ComboBox x:Name="Ability_select" Visibility="Collapsed" HorizontalAlignment="Left" Height="40" Margin="522,449,0,0" VerticalAlignment="Top" Width="190"
+                  DisplayMemberPath="Descricao" FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="22" Foreground="White" Background="#FF303030" BorderBrush="White">
+            <ComboBox.ItemContainerStyle>
+                <Style TargetType="ComboBoxItem">
+                    <Setter Property="FontFamily" Value="/View/fonts/#Pokemon Fire Red"/>
+                    <Setter Property="FontSize" Value="22"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Background" Value="#FF303030"/>
+                </Style>
+            </ComboBox.ItemContainerStyle>
+        </ComboBox>
         <TextBlock x:Name="Info_ability" Text="Label" HorizontalAlignment="Left" Height="77" Margin="340,510,0,0" VerticalAlignment="Top" Width="445"
                    FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="30" Foreground="White"
                    TextWrapping="Wrap" TextAlignment="Left" MaxWidth="445">

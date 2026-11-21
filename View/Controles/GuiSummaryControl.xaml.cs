@@ -22,6 +22,9 @@ namespace GestaoDePokemon.View.Controles
         private PokemonSetController.SetInfo? _info;
         private int _membroId;
         private bool _carregando;
+        private int? _habilidadeInicial;
+        private bool _editandoHabilidade;
+        private bool _carregandoHabilidade;
 
         public GuiSummaryControl()
         {
@@ -33,6 +36,17 @@ namespace GestaoDePokemon.View.Controles
             Ir_Move.MouseLeftButtonUp += (_, _) => IrMoves?.Invoke();
 
             EdicaoInline.Nivel(lvl_pokemon, SalvarNivel);
+
+            // Habilidade: o ComboBox é fechado e a escolha é gravada depois que o evento dele termina
+            // (mesma regra da natureza na página Status, para não derrubar o aplicativo).
+            Ability.Cursor = Cursors.Hand;
+            Ability.MouseLeftButtonUp += (_, _) => AbrirHabilidade();
+            Ability_select.DropDownClosed += (_, _) => Adiar(FecharHabilidade);
+            Ability_select.SelectionChanged += (_, _) =>
+            {
+                if (_editandoHabilidade && !_carregandoHabilidade)
+                    Adiar(FecharHabilidade);
+            };
 
             Nivel_menos.Click += (_, _) => Nivel_slider.Value = Math.Max(Nivel_slider.Minimum, Nivel_slider.Value - 1);
             Nivel_mais.Click += (_, _) => Nivel_slider.Value = Math.Min(Nivel_slider.Maximum, Nivel_slider.Value + 1);
@@ -81,14 +95,65 @@ namespace GestaoDePokemon.View.Controles
 
             Experiencia.Content = "—";
 
-            PokemonAbility? habilidade = info.Abilities
-                .FirstOrDefault(ability => ability.Id == info.AbilityId)
-                ?? info.Abilities.FirstOrDefault();
+            PokemonAbility? habilidade = info.Habilidade?.Ability;
             Ability.Content = habilidade?.Name ?? "—";
+            Ability.ToolTip = info.Habilidades.Count > 1
+                ? $"{info.Habilidade?.Descricao}\nClique para escolher outra habilidade " +
+                  $"({string.Join(", ", info.Habilidades.Select(opcao => opcao.Descricao))})."
+                : info.Habilidade?.Descricao;
             Info_ability.Text = GuiDados.QuebrarLinhas(habilidade?.Description ?? "—", 55);
+
+            _carregandoHabilidade = true;
+            Ability_select.ItemsSource = info.Habilidades;
+            _carregandoHabilidade = false;
 
             GuiDados.Sprite(Imagem_pokemon, info.SpriteUrl);
             GuiDados.Tipos(Type_pokemon, Type_pokemon2, info.Types, 56, 180);
+        }
+
+        private void Adiar(Action acao) =>
+            Dispatcher.BeginInvoke(acao, DispatcherPriority.Background);
+
+        private void AbrirHabilidade()
+        {
+            if (_info is null || _info.Habilidades.Count == 0)
+                return;
+
+            _habilidadeInicial = _info.Habilidade?.Ability.Id;
+            _editandoHabilidade = true;
+            _carregandoHabilidade = true;
+            Ability_select.SelectedItem = _info.Habilidade;
+            _carregandoHabilidade = false;
+            Ability.Visibility = Visibility.Collapsed;
+            Ability_select.Visibility = Visibility.Visible;
+            Ability_select.Focus();
+            Ability_select.IsDropDownOpen = true;
+        }
+
+        private void FecharHabilidade()
+        {
+            if (!_editandoHabilidade)
+                return;
+
+            _editandoHabilidade = false;
+            Ability_select.IsDropDownOpen = false;
+            Ability_select.Visibility = Visibility.Collapsed;
+            Ability.Visibility = Visibility.Visible;
+
+            if (Ability_select.SelectedItem is not PokemonSetController.HabilidadeDisponivel escolhida ||
+                escolhida.Ability.Id == _habilidadeInicial)
+                return;
+
+            try
+            {
+                new PokemonSetController().AtualizarHabilidade(_membroId, escolhida.Ability.Id);
+                SetAlterado?.Invoke();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Não foi possível salvar a habilidade: {ex.Message}", "Time",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         /// <summary>Grava na hora um nível ainda esperando a barra parar (ao fechar ou trocar de Pokémon).</summary>
