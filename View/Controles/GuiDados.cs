@@ -21,7 +21,7 @@ namespace GestaoDePokemon.View.Controles
             return $"+{NomeCurto(aumentado)} / -{NomeCurto(modificadores.DecreasedStat!.Value)}";
         }
 
-        private static string NomeCurto(PokemonStat stat) => stat switch
+        public static string NomeCurto(PokemonStat stat) => stat switch
         {
             PokemonStat.HP => "HP",
             PokemonStat.Attack => "Ataque",
@@ -76,6 +76,53 @@ namespace GestaoDePokemon.View.Controles
 
         public static int HpMaximo(int baseHp, int iv, int ev, int level) =>
             ((2 * baseHp + iv + ev / 4) * level / 100) + level + 10;
+
+        public static int BaseStat(BaseStats stats, PokemonStat stat) => stat switch
+        {
+            PokemonStat.HP => stats.HP,
+            PokemonStat.Attack => stats.Atk,
+            PokemonStat.Defense => stats.Def,
+            PokemonStat.SpecialAttack => stats.SpAtk,
+            PokemonStat.SpecialDefense => stats.SpDef,
+            PokemonStat.Speed => stats.Speed,
+            _ => 0
+        };
+
+        public static int Iv(IndividualValues ivs, PokemonStat stat) => stat switch
+        {
+            PokemonStat.HP => ivs.HP,
+            PokemonStat.Attack => ivs.Attack,
+            PokemonStat.Defense => ivs.Defense,
+            PokemonStat.SpecialAttack => ivs.SpecialAttack,
+            PokemonStat.SpecialDefense => ivs.SpecialDefense,
+            PokemonStat.Speed => ivs.Speed,
+            _ => 0
+        };
+
+        /// <summary>
+        /// Valor real do atributo no nível atual (fórmula da Geração III em diante): base stat, IV, EVs,
+        /// nível e natureza (+10% / -10%, que nunca afeta o HP).
+        /// </summary>
+        public static int StatNoNivel(PokemonSetController.SetInfo info, PokemonStat stat)
+        {
+            int baseStat = BaseStat(info.Stats, stat);
+            int iv = Iv(info.IVs, stat);
+            int ev = info.EVs.GetValue(stat);
+
+            if (stat == PokemonStat.HP)
+                return HpMaximo(baseStat, iv, ev, info.Level);
+
+            int valor = (2 * baseStat + iv + ev / 4) * info.Level / 100 + 5;
+            NatureModifiers natureza = PokemonNatureRules.GetModifiers(info.Nature);
+
+            if (natureza.IncreasedStat == stat)
+                return valor * 110 / 100;
+
+            if (natureza.DecreasedStat == stat)
+                return valor * 90 / 100;
+
+            return valor;
+        }
 
         public static string QuebrarLinhas(string texto, int maximoPorLinha)
         {

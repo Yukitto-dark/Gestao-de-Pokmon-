@@ -15,6 +15,9 @@ namespace GestaoDePokemon.View.Controles
         private static readonly double[] LinhasRotulo = { 25, 90, 140, 194, 254, 308 };
 
         private readonly TextBox _editor;
+        private readonly Label[] _bases;
+        private readonly Label[] _stats;
+        private readonly Label[] _evs;
         private Label? _labelEditando;
         private PokemonStat _statEditando;
         private PokemonSetController.SetInfo? _info;
@@ -54,14 +57,21 @@ namespace GestaoDePokemon.View.Controles
             _editor.LostFocus += (_, _) => ConfirmarEdicao();
             Raiz.Children.Add(_editor);
 
-            Label[] labels = { EV_hp, EV_attack, EV_defense, EV_special_attack, EV_special_defense, EV_speed };
-            for (int i = 0; i < labels.Length; i++)
+            // Cada linha: base stat da espécie, atributo com os EVs aplicados e os EVs investidos.
+            // Clicar em qualquer um deles (ou no nome do atributo) edita os EVs.
+            _bases = new[] { Base_hp, Base_attack, Base_defense, Base_special_attack, Base_special_defense, Base_speed };
+            _stats = new[] { Stat_hp, Stat_attack, Stat_defense, Stat_special_attack, Stat_special_defense, Stat_speed };
+            _evs = new[] { EV_hp, EV_attack, EV_defense, EV_special_attack, EV_special_defense, EV_speed };
+            for (int i = 0; i < _evs.Length; i++)
             {
-                Label label = labels[i];
+                Label label = _evs[i];
                 PokemonStat stat = EffortValues.Estatisticas[i];
 
-                label.Cursor = Cursors.Hand;
-                label.MouseLeftButtonUp += (_, _) => AbrirEdicao(label, stat);
+                foreach (Label clicavel in new[] { _bases[i], _stats[i], _evs[i] })
+                {
+                    clicavel.Cursor = Cursors.Hand;
+                    clicavel.MouseLeftButtonUp += (_, _) => AbrirEdicao(label, stat);
+                }
 
                 Button hotspot = new()
                 {
@@ -72,7 +82,7 @@ namespace GestaoDePokemon.View.Controles
                     Height = 30,
                     Width = 180,
                     Margin = new Thickness(268, LinhasRotulo[i], 0, 0),
-                    ToolTip = $"Editar EV de {stat}"
+                    ToolTip = $"Editar os EVs de {GuiDados.NomeCurto(stat)}"
                 };
                 hotspot.Click += (_, _) => AbrirEdicao(label, stat);
                 Camada.Children.Add(hotspot);
@@ -117,12 +127,26 @@ namespace GestaoDePokemon.View.Controles
             Nome_pokemon.ToolTip = GuiDados.NomeCompleto(info);
             lvl_pokemon.Content = info.Level.ToString();
 
-            EV_hp.Content = info.EVs.HP;
-            EV_attack.Content = info.EVs.Attack;
-            EV_defense.Content = info.EVs.Defense;
-            EV_special_attack.Content = info.EVs.SpecialAttack;
-            EV_special_defense.Content = info.EVs.SpecialDefense;
-            EV_speed.Content = info.EVs.Speed;
+            for (int i = 0; i < _evs.Length; i++)
+            {
+                PokemonStat stat = EffortValues.Estatisticas[i];
+                int baseStat = GuiDados.BaseStat(info.Stats, stat);
+                int ev = info.EVs.GetValue(stat);
+                int valor = GuiDados.StatNoNivel(info, stat);
+
+                _bases[i].Content = baseStat;
+                _stats[i].Content = valor;
+                _evs[i].Content = $"+{ev}";
+
+                string dica =
+                    $"{GuiDados.NomeCurto(stat)}: base {baseStat}, {ev} EVs, IV {GuiDados.Iv(info.IVs, stat)}, " +
+                    $"natureza {info.Nature}\n" +
+                    $"Valor no nível {info.Level}: {valor}\n" +
+                    $"Clique para mudar os EVs (0 a {EffortValues.MaxPerStat}).";
+                _bases[i].ToolTip = $"Base stat de {GuiDados.NomeCurto(stat)}\n{dica}";
+                _stats[i].ToolTip = $"{GuiDados.NomeCurto(stat)} com os EVs aplicados\n{dica}";
+                _evs[i].ToolTip = $"EVs investidos em {GuiDados.NomeCurto(stat)}\n{dica}";
+            }
             AtualizarDisponivel(info.EVs);
 
             Nature_pokemon.Content = info.Nature.ToString();
@@ -149,8 +173,10 @@ namespace GestaoDePokemon.View.Controles
 
             _labelEditando = label;
             _statEditando = stat;
+            // O editor abre sobre o número de EVs da linha.
             _editor.Text = _info.EVs.GetValue(stat).ToString(CultureInfo.InvariantCulture);
             _editor.FontFamily = label.FontFamily;
+            _editor.FontSize = label.FontSize + 4;
             _editor.HorizontalAlignment = label.HorizontalAlignment;
             _editor.VerticalAlignment = label.VerticalAlignment;
             _editor.Margin = label.Margin;
@@ -203,38 +229,37 @@ namespace GestaoDePokemon.View.Controles
             if (_info is null)
                 return;
 
-            if (!int.TryParse(texto, NumberStyles.Integer, CultureInfo.InvariantCulture, out int valor)
-                || valor < 0
-                || valor > EffortValues.MaxPerStat)
+            // O valor digitado são os EVs do atributo (0 a 252), com o limite de 510 no total.
+            string nome = GuiDados.NomeCurto(stat);
+
+            if (!int.TryParse(texto, NumberStyles.Integer, CultureInfo.InvariantCulture, out int ev)
+                || ev < 0
+                || ev > EffortValues.MaxPerStat)
             {
-                MessageBox.Show($"Cada atributo deve possuir entre {EffortValues.MinPerStat} e {EffortValues.MaxPerStat} EVs.", "Time",
-                    MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show(
+                    $"Os EVs de {nome} devem ficar entre 0 e {EffortValues.MaxPerStat}.",
+                    "Time", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            if (valor < EffortValues.MinPerStat)
-            {
-                MessageBox.Show($"O mínimo por estatística é {EffortValues.MinPerStat} EV.", "Time",
-                    MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-
-            if (valor == _info.EVs.GetValue(stat))
+            if (ev == _info.EVs.GetValue(stat))
                 return;
 
             int disponivel = EffortValues.MaxTotal - _info.EVs.Total;
-            if (valor - _info.EVs.GetValue(stat) > disponivel)
+            if (ev - _info.EVs.GetValue(stat) > disponivel)
             {
-                MessageBox.Show($"O total de EVs não pode ultrapassar {EffortValues.MaxTotal}.", "Time",
-                    MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show(
+                    $"O total de EVs não pode ultrapassar {EffortValues.MaxTotal}. " +
+                    $"Ainda há {disponivel} EVs disponíveis: {nome} pode ter até {_info.EVs.GetValue(stat) + disponivel} EVs.",
+                    "Time", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
             try
             {
                 EffortValues evs = new PokemonSetController()
-                    .AtualizarEV(_info.MembroId, stat, valor);
-                label.Content = valor;
+                    .AtualizarEV(_info.MembroId, stat, ev);
+                label.Content = $"+{ev}";
                 AtualizarDisponivel(evs);
                 SetAlterado?.Invoke();
             }

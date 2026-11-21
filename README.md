@@ -33,7 +33,7 @@ O painel lateral mostra os dados da forma selecionada: tipos, habilidades, atrib
 A tela de Time mostra os seis membros com o ícone da forma escolhida (normal ou shiny). Clicar em um membro abre a build do Pokémon em três páginas:
 
 - **Resumo:** número, nível, HP calculado, habilidade e um seletor de nível (botões `-`/`+` e barra de 1 a 100).
-- **Status:** EVs editáveis (mínimo 10 por atributo, máximo 252 e 510 no total), natureza com o efeito no atributo, altura e peso.
+- **Status:** cada atributo mostra o base stat da espécie, ao lado o valor com os EVs aplicados (calculado com nível, IV e natureza, como nos jogos) e os EVs investidos. Clicar na linha edita os EVs (até 252 por atributo e 510 no total). Também mostra a natureza com o efeito no atributo, altura e peso.
 - **Moves:** quatro golpes escolhidos entre os que a forma aprende (por nível, TM, tutor, ovo ou evolução); o catálogo inteiro não é oferecido. Sem golpes salvos, o Pokémon usa os quatro últimos golpes aprendidos por nível até o nível atual.
 
 O nível também pode ser digitado clicando no número do nível em qualquer página.
@@ -332,3 +332,12 @@ Pokémon e suas marcas, personagens e recursos visuais pertencem aos respectivos
 ---
 
 **Repositório:** [Yukitto-dark/Gestao-de-Pokmon-](https://github.com/Yukitto-dark/Gestao-de-Pokmon-)
+
+## Status: base stat ao lado do valor com EVs
+
+- Cada linha da página Status tem três números: o base stat (azul), o atributo com os EVs aplicados (branco,
+  fórmula dos jogos com nível, IV e natureza) e os EVs investidos (verde, "+252"). Ex.: Garchomp Adamant
+  Nv 100 com 252 EVs em Ataque: 130 | 394 | +252.
+- A edição passou a ser direta nos EVs (0 a 252, total de 510): clicar no base, no valor, nos EVs ou no nome do
+  atributo abre o campo sobre o número de EVs. Antes o campo recebia base + EVs, que não é o valor dos jogos.
+- O valor com EVs é recalculado quando o nível ou a natureza mudam.

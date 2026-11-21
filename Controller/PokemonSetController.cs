@@ -394,10 +394,6 @@ namespace GestaoDePokemon.Controller
 
             PokemonPartyMember membro = ObterMembro(db, membroId);
 
-            if (valor < EffortValues.MinPerStat)
-                throw new ArgumentOutOfRangeException(
-                    nameof(valor), $"O mínimo por estatística é {EffortValues.MinPerStat} EV.");
-
             membro.EVs.Set(stat, valor);
             db.SaveChanges();
             return membro.EVs;

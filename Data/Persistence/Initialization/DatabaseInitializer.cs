@@ -75,6 +75,7 @@ public static class DatabaseInitializer
         EnsureShinyColumns(db);
         EnsureSetColumns(db);
         EnsurePartyFormSchema(db);
+        MigrarEVsPadrao(db);
         EnsureFormMeasurementsSchema(db);
         MigrateLegacySpritePaths(db);
         EnsureEvolutionSchema(db);
@@ -566,6 +567,43 @@ public static class DatabaseInitializer
                 CREATE UNIQUE INDEX IF NOT EXISTS "IX_Party_PokemonFormId" ON "Party" ("PokemonFormId");
                 """;
             create.ExecuteNonQuery();
+        }
+        finally
+        {
+            if (openedHere)
+                connection.Close();
+        }
+    }
+
+    /// <summary>
+    /// Versões anteriores forçavam no mínimo 10 EVs em cada atributo. Um membro do time com exatamente 10
+    /// nos seis atributos nunca teve os EVs editados: volta a 0, e a build passa a mostrar o base stat da
+    /// espécie. Roda uma única vez por banco (PRAGMA user_version), para não desfazer EVs escolhidos depois.
+    /// </summary>
+    private static void MigrarEVsPadrao(AppDbContext db)
+    {
+        var connection = db.Database.GetDbConnection();
+        bool openedHere = connection.State != ConnectionState.Open;
+        if (openedHere)
+            connection.Open();
+
+        try
+        {
+            using var versao = connection.CreateCommand();
+            versao.CommandText = "PRAGMA user_version;";
+            if (Convert.ToInt64(versao.ExecuteScalar()) >= 1)
+                return;
+
+            using var update = connection.CreateCommand();
+            update.CommandText = """
+                UPDATE "Party"
+                SET "EV_HP" = 0, "EV_Attack" = 0, "EV_Defense" = 0,
+                    "EV_SpecialAttack" = 0, "EV_SpecialDefense" = 0, "EV_Speed" = 0
+                WHERE "EV_HP" = 10 AND "EV_Attack" = 10 AND "EV_Defense" = 10
+                  AND "EV_SpecialAttack" = 10 AND "EV_SpecialDefense" = 10 AND "EV_Speed" = 10;
+                PRAGMA user_version = 1;
+                """;
+            update.ExecuteNonQuery();
         }
         finally
         {

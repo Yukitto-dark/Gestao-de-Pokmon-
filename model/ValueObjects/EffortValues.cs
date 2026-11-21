@@ -6,7 +6,9 @@ namespace GestaoDePokemon.model
 {
     public class EffortValues
     {
-        public const int MinPerStat = 10;
+        // Sem mínimo artificial: na build o valor exibido é o base stat da espécie mais os EVs investidos,
+        // então o próprio base stat é o piso (EV 0). Antes era 10 para todas as espécies.
+        public const int MinPerStat = 0;
         public const int MaxPerStat = 252;
         public const int MaxTotal = 510;
 

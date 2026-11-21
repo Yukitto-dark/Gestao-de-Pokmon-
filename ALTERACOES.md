@@ -258,3 +258,17 @@ evoluções (194), medidas (419), formas alternativas (33) e nenhuma mega.
   `%LOCALAPPDATA%\GestaoDePokemon\erro-app.txt`, mostra a mensagem e mantém o aplicativo aberto.
 - Não foi possível reproduzir o fechamento aqui (o Wine não roda no ambiente de testes); se ainda ocorrer
   algum erro, ele aparece na tela e fica registrado em `erro-app.txt`.
+
+## Status da build a partir dos base stats
+
+- Antes, os seis campos da página Status mostravam só os EVs, com mínimo fixo de 10 para todas as espécies
+  (10/10/10/10/10/10 para qualquer Pokémon).
+- Agora cada campo mostra o base stat da espécie (da forma do membro do time) mais os EVs investidos:
+  Garchomp começa em 108/130/95/80/85/102. Editar o campo define o valor do atributo, entre o base stat e
+  base + 252; o que é gravado são os EVs acima do base stat. O total continua limitado a 510 EVs e
+  "EVs disponíveis" mostra o saldo.
+- `EffortValues.MinPerStat` passou de 10 para 0 (o piso agora é o próprio base stat).
+- A dica de cada campo mostra base + EVs e o valor real no nível atual (fórmula da Geração III em diante,
+  com IV e natureza; HP sem natureza) — `GuiDados.StatNoNivel`.
+- `DatabaseInitializer.MigrarEVsPadrao`: membros do time com exatamente 10 EVs nos seis atributos (o mínimo
+  automático antigo, nunca editado) voltam a 0. Roda uma única vez por banco (`PRAGMA user_version = 1`).

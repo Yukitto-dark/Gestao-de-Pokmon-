@@ -34,12 +34,25 @@
         <Label x:Name="lvl_pokemon" Content="Label" HorizontalAlignment="Left" Height="33" Margin="185,20,0,0" VerticalAlignment="Top" Width="52" FontSize="30"/>
         <Label x:Name="Nome_pokemon" Content="Label" HorizontalAlignment="Left" Height="34" Margin="37,298,0,0" VerticalAlignment="Top" Width="172" FontSize="30"/>
 
-        <Label x:Name="EV_hp" Content="Label" HorizontalAlignment="Left" Height="46" Margin="625,24,0,0" VerticalAlignment="Top" Width="53" FontSize="30"/>
-        <Label x:Name="EV_attack" Content="Label" HorizontalAlignment="Left" Height="46" Margin="625,80,0,0" VerticalAlignment="Top" Width="53" FontSize="30"/>
-        <Label x:Name="EV_defense" Content="Label" HorizontalAlignment="Left" Height="46" Margin="625,132,0,0" VerticalAlignment="Top" Width="53" FontSize="30"/>
-        <Label x:Name="EV_special_attack" Content="Label" HorizontalAlignment="Left" Height="46" Margin="625,190,0,0" VerticalAlignment="Top" Width="53" FontSize="30"/>
-        <Label x:Name="EV_special_defense" Content="Label" HorizontalAlignment="Left" Height="46" Margin="625,243,0,0" VerticalAlignment="Top" Width="53" FontSize="30"/>
-        <Label x:Name="EV_speed" Content="Label" HorizontalAlignment="Left" Height="46" Margin="625,302,0,0" VerticalAlignment="Top" Width="53" FontSize="30"/>
+        <!-- Cada linha: base stat da espécie | atributo com os EVs aplicados (nível, IV e natureza) | EVs investidos. -->
+        <Label x:Name="Base_hp" Content="0" HorizontalAlignment="Left" Height="46" Margin="452,24,0,0" VerticalAlignment="Top" Width="62" FontSize="30" Foreground="#FFCCDAFF"/>
+        <Label x:Name="Stat_hp" Content="0" HorizontalAlignment="Left" Height="46" Margin="532,24,0,0" VerticalAlignment="Top" Width="72" FontSize="30"/>
+        <Label x:Name="EV_hp" Content="+0" HorizontalAlignment="Left" Height="46" Margin="616,24,0,0" VerticalAlignment="Top" Width="68" FontSize="26" Foreground="#FF8CFFA8"/>
+        <Label x:Name="Base_attack" Content="0" HorizontalAlignment="Left" Height="46" Margin="452,80,0,0" VerticalAlignment="Top" Width="62" FontSize="30" Foreground="#FFCCDAFF"/>
+        <Label x:Name="Stat_attack" Content="0" HorizontalAlignment="Left" Height="46" Margin="532,80,0,0" VerticalAlignment="Top" Width="72" FontSize="30"/>
+        <Label x:Name="EV_attack" Content="+0" HorizontalAlignment="Left" Height="46" Margin="616,80,0,0" VerticalAlignment="Top" Width="68" FontSize="26" Foreground="#FF8CFFA8"/>
+        <Label x:Name="Base_defense" Content="0" HorizontalAlignment="Left" Height="46" Margin="452,132,0,0" VerticalAlignment="Top" Width="62" FontSize="30" Foreground="#FFCCDAFF"/>
+        <Label x:Name="Stat_defense" Content="0" HorizontalAlignment="Left" Height="46" Margin="532,132,0,0" VerticalAlignment="Top" Width="72" FontSize="30"/>
+        <Label x:Name="EV_defense" Content="+0" HorizontalAlignment="Left" Height="46" Margin="616,132,0,0" VerticalAlignment="Top" Width="68" FontSize="26" Foreground="#FF8CFFA8"/>
+        <Label x:Name="Base_special_attack" Content="0" HorizontalAlignment="Left" Height="46" Margin="452,190,0,0" VerticalAlignment="Top" Width="62" FontSize="30" Foreground="#FFCCDAFF"/>
+        <Label x:Name="Stat_special_attack" Content="0" HorizontalAlignment="Left" Height="46" Margin="532,190,0,0" VerticalAlignment="Top" Width="72" FontSize="30"/>
+        <Label x:Name="EV_special_attack" Content="+0" HorizontalAlignment="Left" Height="46" Margin="616,190,0,0" VerticalAlignment="Top" Width="68" FontSize="26" Foreground="#FF8CFFA8"/>
+        <Label x:Name="Base_special_defense" Content="0" HorizontalAlignment="Left" Height="46" Margin="452,243,0,0" VerticalAlignment="Top" Width="62" FontSize="30" Foreground="#FFCCDAFF"/>
+        <Label x:Name="Stat_special_defense" Content="0" HorizontalAlignment="Left" Height="46" Margin="532,243,0,0" VerticalAlignment="Top" Width="72" FontSize="30"/>
+        <Label x:Name="EV_special_defense" Content="+0" HorizontalAlignment="Left" Height="46" Margin="616,243,0,0" VerticalAlignment="Top" Width="68" FontSize="26" Foreground="#FF8CFFA8"/>
+        <Label x:Name="Base_speed" Content="0" HorizontalAlignment="Left" Height="46" Margin="452,302,0,0" VerticalAlignment="Top" Width="62" FontSize="30" Foreground="#FFCCDAFF"/>
+        <Label x:Name="Stat_speed" Content="0" HorizontalAlignment="Left" Height="46" Margin="532,302,0,0" VerticalAlignment="Top" Width="72" FontSize="30"/>
+        <Label x:Name="EV_speed" Content="+0" HorizontalAlignment="Left" Height="46" Margin="616,302,0,0" VerticalAlignment="Top" Width="68" FontSize="26" Foreground="#FF8CFFA8"/>
         <Label x:Name="EVs_disponiveis" Content="EVs disponíveis: 510" HorizontalAlignment="Left" Height="28" Margin="537,5,0,0" VerticalAlignment="Top" Width="180" FontSize="20"/>
 
         <Label x:Name="Nature_pokemon" Content="Label" HorizontalAlignment="Left" Height="42" Margin="527,422,0,0" VerticalAlignment="Top" Width="125" FontSize="35"/>
