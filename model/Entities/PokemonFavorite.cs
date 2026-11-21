@@ -8,6 +8,8 @@ namespace GestaoDePokemon.model
 
         public int PokemonId { get; set; }
 
+        public bool IsShiny { get; set; }
+
         public Pokemon Pokemon { get; set; } = null!;
 
         public DateTime AddedAt { get; set; } = DateTime.UtcNow;

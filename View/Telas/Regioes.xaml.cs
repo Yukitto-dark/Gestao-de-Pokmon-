@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -26,17 +28,40 @@ namespace GestaoDePokemon.View.Telas
 
             _inicializado = true;
 
-            RadioButton aba = NavegacaoController.RegiaoSelecionada.ToLowerInvariant() switch
-            {
-                "hoenn" => Tab_Hoenn,
-                "johto" => Tab_Johto,
-                _ => Tab_Kanto
-            };
+            IReadOnlyList<string> regioes = _controller.ObterRegioes();
 
-            if (aba.IsChecked == true)
-                PopularRotas(aba.Tag as string ?? "");
-            else
-                aba.IsChecked = true;
+            // Até quatro regiões cabem em uma linha com as abas largas; com todas as regiões
+            // (Kanto a Paldea e Hisui) as abas ficam menores e quebram em duas linhas.
+            bool compacto = regioes.Count > 4;
+
+            foreach (string regiao in regioes)
+            {
+                var aba = new RadioButton
+                {
+                    Content = regiao,
+                    Tag = regiao,
+                    Style = (Style)FindResource("TabRegiao"),
+                    Width = compacto ? 108 : 150,
+                    Height = compacto ? 24 : 38,
+                    FontSize = compacto ? 13 : 16,
+                    Margin = compacto ? new Thickness(3, 2, 3, 2) : new Thickness(8, 0, 8, 0),
+                    GroupName = "Regiao"
+                };
+                aba.Checked += Regiao_Checked;
+                Abas_Regioes.Children.Add(aba);
+            }
+
+            if (Abas_Regioes.Children.Count == 0)
+                return;
+
+            string selecionada = NavegacaoController.RegiaoSelecionada;
+            RadioButton ativa = Abas_Regioes.Children
+                .OfType<RadioButton>()
+                .FirstOrDefault(aba => string.Equals(
+                    aba.Tag as string, selecionada, StringComparison.OrdinalIgnoreCase))
+                ?? (RadioButton)Abas_Regioes.Children[0];
+
+            ativa.IsChecked = true;
         }
 
         private void Regiao_Checked(object sender, RoutedEventArgs e)
@@ -50,8 +75,23 @@ namespace GestaoDePokemon.View.Telas
             Lista_Rotas.Children.Clear();
 
             Style estilo = (Style)FindResource("BotaoRota");
+            IReadOnlyList<int> rotas = _controller.ObterRotas(regiao);
 
-            foreach (int numero in _controller.ObterRotas(regiao))
+            if (rotas.Count == 0)
+            {
+                // Paldea e Hisui não têm rotas numeradas com encontros na PokéAPI.
+                Lista_Rotas.Children.Add(new TextBlock
+                {
+                    Text = "Nenhuma rota numerada cadastrada para esta região.",
+                    TextWrapping = TextWrapping.Wrap,
+                    FontFamily = Titulo_Rota.FontFamily,
+                    FontSize = 14,
+                    Foreground = new SolidColorBrush(Color.FromRgb(0xAE, 0xBE, 0xE8)),
+                    Margin = new Thickness(2, 4, 2, 0)
+                });
+            }
+
+            foreach (int numero in rotas)
             {
                 var botao = new Button
                 {
@@ -94,10 +134,6 @@ namespace GestaoDePokemon.View.Telas
             }
 
             Informacoes_Rota.Text = rota?.Informacoes ?? string.Empty;
-            Mapa_Rota.Source = rota?.MapaImagem is string caminho
-                ? new BitmapImage(new Uri(caminho, UriKind.RelativeOrAbsolute))
-                : null;
-
             Info_Scroll.ScrollToTop();
         }
 
@@ -106,7 +142,6 @@ namespace GestaoDePokemon.View.Telas
             Titulo_Rota.Text = "Informações da rota";
             Pokemons_Rota.Children.Clear();
             Informacoes_Rota.Text = string.Empty;
-            Mapa_Rota.Source = null;
         }
 
         private void Navegar_Click(object sender, RoutedEventArgs e)

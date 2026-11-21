@@ -18,22 +18,29 @@ Na seleção de uma entrada, a aplicação exibe o sprite de detalhe corresponde
 
 A Box também permite:
 
-- Filtrar por tipo — os 18 tipos Pokémon.
-- Filtrar pela região de origem entre Kanto, Johto e Hoenn.
-- Exibir somente Pokémon marcados como favoritos.
+- Filtrar por tipo — os 18 tipos Pokémon (o filtro vale para cada forma: Ninetales de Alola aparece em Ice/Fairy).
+- Filtrar pela região de origem entre Kanto, Johto, Hoenn, Sinnoh, Unova, Kalos, Alola, Galar, Hisui e Paldea.
+- Filtrar por habilidade, por espécies com formas alternativas, por favoritos e pelos Pokémon do time.
 - Pesquisar pelo número da Pokédex Nacional.
 - Pesquisar pelo nome da espécie.
-- Marcar ou desmarcar uma espécie como favorita.
+- Marcar ou desmarcar uma espécie como favorita (os favoritos são por espécie).
+- Colocar a forma selecionada no time (até seis Pokémon; formas diferentes da mesma espécie podem estar juntas).
 
-### Favoritos
+O painel lateral mostra os dados da forma selecionada: tipos, habilidades, atributos, altura, peso, linha evolutiva, formas e golpes.
 
-A tela de Favoritos apresenta os Pokémon selecionados na Box. Os favoritos são persistidos no SQLite e há um limite de **seis espécies**.
+### Time e build do Pokémon
+
+A tela de Time mostra os seis membros com o ícone da forma escolhida (normal ou shiny). Clicar em um membro abre a build do Pokémon em três páginas:
+
+- **Resumo:** número, nível, HP calculado, habilidade e um seletor de nível (botões `-`/`+` e barra de 1 a 100).
+- **Status:** EVs editáveis (mínimo 10 por atributo, máximo 252 e 510 no total), natureza com o efeito no atributo, altura e peso.
+- **Moves:** quatro golpes escolhidos entre os que a forma aprende (por nível, TM, tutor, ovo ou evolução); o catálogo inteiro não é oferecido. Sem golpes salvos, o Pokémon usa os quatro últimos golpes aprendidos por nível até o nível atual.
+
+O nível também pode ser digitado clicando no número do nível em qualquer página.
 
 ### Mapas e regiões
 
-O menu disponibiliza telas para Kanto, Johto e Hoenn, com uma interface para navegar pelas rotas numeradas dessas regiões.
-
-> **Estado atual:** a tela de rotas ainda utiliza um repositório em memória. A listagem numérica está implementada, mas os dados completos de encontros, mapas e informações das rotas ainda não estão conectados à interface por meio do SQLite.
+A tela de Mapas leva às regiões (quadros para Kanto, Johto e Hoenn; mesas e o mapa da parede para as demais). A tela de Regiões lista as rotas numeradas de cada região com os Pokémon encontrados, jogos e áreas, lidos do SQLite (`rotas-seed.json`). Paldea e Hisui não têm rotas numeradas com encontros na PokéAPI.
 
 ## Dados catalogados
 
@@ -46,12 +53,6 @@ O modelo de dados e os arquivos de seed abrangem:
 - **Learnsets:** relações entre formas e movimentos, incluindo método de aprendizado, nível e grupo de versões do jogo.
 - **Evoluções:** relações entre espécies, com condições e requisitos registrados. O sistema mantém essas informações como dados de consulta; não simula nem decide evoluções automaticamente.
 - **Mega Evoluções:** formas Mega cadastradas em conjunto com o relacionamento entre a forma base e a forma Mega, incluindo Mega Pedra ou movimento exigido.
-
-### Modelagem de times
-
-A camada de domínio e persistência também possui entidades para times e configurações de Pokémon. O modelo prevê times de até seis integrantes e configurações com nível, gênero, natureza, IVs, EVs, habilidade, forma e até quatro movimentos, com validações relacionadas aos dados de aprendizado.
-
-**Observação:** na versão atual do menu, ainda não há uma tela de gerenciamento de times. Essa parte está representada no modelo e no contexto de persistência.
 
 ## Tecnologias
 
@@ -79,13 +80,13 @@ GestaoDePokmon-/
 ├── Data/
 │   ├── Configuration/          # Composição dos serviços e repositórios
 │   ├── Filters/                 # Critérios de filtragem da Pokédex
+│   ├── images/pokemon/          # Sprites (frontNormal, frontShiny, mini, miniShiny e forms)
 │   ├── Persistence/
 │   │   ├── Initialization/     # Inicialização do banco e importação dos seeds
 │   │   ├── Seed/                # Dados JSON versionados
 │   │   └── AppDbContext.cs      # Contexto do Entity Framework Core
 │   └── Repositories/
 │       ├── Contracts/           # Interfaces e contratos
-│       ├── InMemory/             # Repositórios em memória
 │       └── SQLite/               # Repositórios persistidos
 ├── model/
 │   ├── Entities/                # Entidades do domínio
@@ -94,8 +95,9 @@ GestaoDePokmon-/
 │   ├── ValueObjects/            # Objetos de valor
 │   └── metadata/                # Catálogos e metadados
 ├── View/
-│   ├── Telas/                   # Páginas XAML
-│   ├── images/                  # Imagens e sprites
+│   ├── Telas/                   # Páginas XAML (Home, Box, Time, Mapas, Regiões)
+│   ├── Controles/               # Popup da build do Pokémon (Resumo, Status e Moves)
+│   ├── images/                  # Ícones de tipos e da interface
 │   ├── fonts/                   # Fontes utilizadas na interface
 │   └── cursors/                 # Cursores personalizados
 ├── App.xaml
@@ -108,7 +110,7 @@ GestaoDePokmon-/
 
 O contexto principal é `AppDbContext`, que configura as entidades e seus relacionamentos com o Entity Framework Core.
 
-Os repositórios são selecionados por `AppServices`. Na configuração atual, os dados da Pokédex e dos favoritos utilizam SQLite; as rotas utilizam o repositório em memória.
+Os repositórios são selecionados por `AppServices`. Pokédex, favoritos, time e rotas utilizam SQLite. Bancos criados por versões anteriores são atualizados na abertura sem perder favoritos nem o time (colunas novas, forma do membro do time e caminhos dos sprites).
 
 O banco é criado no diretório de dados locais do usuário:
 

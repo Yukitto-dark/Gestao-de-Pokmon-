@@ -19,8 +19,8 @@ namespace GestaoDePokemon.Controller
                 destino = "/View/Telas/Home.xaml";
             else if (nome.Contains("box"))
                 destino = "/View/Telas/Box.xaml";
-            else if (nome.Contains("favoritos"))
-                destino = "/View/Telas/Favoritos.xaml";
+            else if (nome.Contains("time") || nome.Contains("party"))
+                destino = "/View/Telas/Time.xaml";
             else if (nome.Contains("mapas"))
                 destino = "/View/Telas/Mapas.xaml";
 
@@ -28,12 +28,20 @@ namespace GestaoDePokemon.Controller
                 page.NavigationService?.Navigate(new Uri(destino, UriKind.Relative));
         }
 
-        public static void NavegarParaRegiao(Page page, string regiao)
+        public static void DefinirRegiao(string regiao)
         {
             if (string.IsNullOrWhiteSpace(regiao))
                 return;
 
             RegiaoSelecionada = regiao;
+        }
+
+        public static void NavegarParaRegiao(Page page, string regiao)
+        {
+            if (string.IsNullOrWhiteSpace(regiao))
+                return;
+
+            DefinirRegiao(regiao);
             page.NavigationService?.Navigate(
                 new Uri("/View/Telas/Regioes.xaml", UriKind.Relative));
         }

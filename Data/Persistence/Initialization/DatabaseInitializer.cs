@@ -27,6 +27,13 @@ public static class DatabaseInitializer
     {
         using var db = new AppDbContext();
         db.Database.EnsureCreated();
+        EnsureRouteSchema(db);
+        EnsurePartySchema(db);
+        EnsureShinyColumns(db);
+        EnsureSetColumns(db);
+        EnsurePartyFormSchema(db);
+        EnsureFormMeasurementsSchema(db);
+        MigrateLegacySpritePaths(db);
         EnsureEvolutionSchema(db);
 
         EnsureMegaEvolutionSchema(db);
@@ -61,7 +68,6 @@ public static class DatabaseInitializer
         SeedSprites(db);
         db.SaveChanges();
 
-        // Os arquivos são gerados uma única vez por scripts/gerar_seed_moves.py.
         // A importação é incremental e não duplica movimentos nem learnsets.
         SeedMoveCatalogAndLearnsets(db);
         db.SaveChanges();
@@ -109,6 +115,10 @@ public static class DatabaseInitializer
         GameLearnsetsInitializer.Inicializar(db);
         db.SaveChanges();
 
+        // Rotas de todas as regiões com encontros na PokéAPI. Incremental: só entram as rotas que faltam.
+        SeedRotas(db);
+        db.SaveChanges();
+
         RegionGamesInitializer.Inicializar(db);
         db.SaveChanges();
 
@@ -122,6 +132,9 @@ public static class DatabaseInitializer
 
         // Atualiza altura e peso somente depois de todas as formas já existirem.
         PokemonMeasurementsInitializer.Inicializar(db);
+
+        // Membros do time gravados antes da coluna PokemonFormId passam a apontar para a forma Normal.
+        PreencherFormasDoTime(db);
 
         transaction.Commit();
     }
@@ -293,6 +306,415 @@ public static class DatabaseInitializer
             if (openedHere)
                 connection.Close();
      }
+    }
+
+    private static void EnsureFormMeasurementsSchema(AppDbContext db)
+    {
+        var connection = db.Database.GetDbConnection();
+        bool openedHere = connection.State != ConnectionState.Open;
+        if (openedHere)
+            connection.Open();
+
+        try
+        {
+            var existingColumns = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+            using (var inspect = connection.CreateCommand())
+            {
+                inspect.CommandText = "PRAGMA table_info('PokemonForms');";
+                using var reader = inspect.ExecuteReader();
+                while (reader.Read())
+                    existingColumns.Add(reader.GetString(1));
+            }
+
+            foreach (string column in new[] { "Height", "Weight" })
+            {
+                if (existingColumns.Contains(column))
+                    continue;
+
+                using var alter = connection.CreateCommand();
+                alter.CommandText = $"ALTER TABLE \"PokemonForms\" ADD COLUMN \"{column}\" REAL NULL;";
+                alter.ExecuteNonQuery();
+            }
+        }
+        finally
+        {
+            if (openedHere)
+                connection.Close();
+        }
+    }
+
+    private static void EnsureRouteSchema(AppDbContext db)
+    {
+        db.Database.ExecuteSqlRaw("""
+            CREATE TABLE IF NOT EXISTS "Routes" (
+                "Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+                "RegionId" INTEGER NOT NULL,
+                "Number" INTEGER NOT NULL,
+                "Name" TEXT NOT NULL,
+                "PokeApiName" TEXT NOT NULL,
+                "PokeApiLocationId" INTEGER NULL,
+                "GameVersions" TEXT NOT NULL,
+                CONSTRAINT "FK_Routes_Regions_RegionId"
+                    FOREIGN KEY ("RegionId") REFERENCES "Regions" ("Id") ON DELETE CASCADE
+            );
+            """);
+
+        db.Database.ExecuteSqlRaw("""
+            CREATE UNIQUE INDEX IF NOT EXISTS "IX_Routes_RegionId_Number"
+            ON "Routes" ("RegionId", "Number");
+            """);
+
+        db.Database.ExecuteSqlRaw("""
+            CREATE TABLE IF NOT EXISTS "RouteAreas" (
+                "Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+                "RouteId" INTEGER NOT NULL,
+                "Name" TEXT NOT NULL,
+                "PokeApiName" TEXT NOT NULL,
+                "PokeApiAreaId" INTEGER NULL,
+                CONSTRAINT "FK_RouteAreas_Routes_RouteId"
+                    FOREIGN KEY ("RouteId") REFERENCES "Routes" ("Id") ON DELETE CASCADE
+            );
+            """);
+
+        db.Database.ExecuteSqlRaw("""
+            CREATE UNIQUE INDEX IF NOT EXISTS "IX_RouteAreas_RouteId_PokeApiName"
+            ON "RouteAreas" ("RouteId", "PokeApiName");
+            """);
+
+        db.Database.ExecuteSqlRaw("""
+            CREATE TABLE IF NOT EXISTS "RoutePokemonEncounters" (
+                "Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+                "RouteAreaId" INTEGER NOT NULL,
+                "PokemonId" INTEGER NOT NULL,
+                "EncounterMethod" TEXT NOT NULL,
+                "MinimumLevel" INTEGER NOT NULL,
+                "MaximumLevel" INTEGER NOT NULL,
+                "ChancePercent" INTEGER NOT NULL,
+                "GameVersion" TEXT NOT NULL,
+                "ConditionsJson" TEXT NOT NULL,
+                CONSTRAINT "FK_RoutePokemonEncounters_RouteAreas_RouteAreaId"
+                    FOREIGN KEY ("RouteAreaId") REFERENCES "RouteAreas" ("Id") ON DELETE CASCADE,
+                CONSTRAINT "FK_RoutePokemonEncounters_Pokemons_PokemonId"
+                    FOREIGN KEY ("PokemonId") REFERENCES "Pokemons" ("Id") ON DELETE RESTRICT
+            );
+            """);
+
+        db.Database.ExecuteSqlRaw("""
+            CREATE INDEX IF NOT EXISTS "IX_RoutePokemonEncounters_RouteAreaId"
+            ON "RoutePokemonEncounters" ("RouteAreaId");
+            """);
+
+        db.Database.ExecuteSqlRaw("""
+            CREATE INDEX IF NOT EXISTS "IX_RoutePokemonEncounters_PokemonId"
+            ON "RoutePokemonEncounters" ("PokemonId");
+            """);
+    }
+
+    private static void EnsurePartySchema(AppDbContext db)
+    {
+        db.Database.ExecuteSqlRaw("""
+            CREATE TABLE IF NOT EXISTS "Party" (
+                "Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+                "PokemonId" INTEGER NOT NULL,
+                "AddedAt" TEXT NOT NULL,
+                CONSTRAINT "FK_Party_Pokemons_PokemonId"
+                    FOREIGN KEY ("PokemonId") REFERENCES "Pokemons" ("Id") ON DELETE CASCADE
+            );
+            """);
+
+        db.Database.ExecuteSqlRaw("""
+            CREATE INDEX IF NOT EXISTS "IX_Party_PokemonId"
+            ON "Party" ("PokemonId");
+            """);
+    }
+
+    /// <summary>
+    /// O time passou a guardar a forma (Normal, Alola, Galar, Mega...) de cada membro.
+    /// Acrescenta a coluna PokemonFormId a bancos antigos e troca o índice único por espécie,
+    /// que impedia ter duas formas da mesma espécie no time, por um índice único por forma.
+    /// </summary>
+    private static void EnsurePartyFormSchema(AppDbContext db)
+    {
+        var connection = db.Database.GetDbConnection();
+        bool openedHere = connection.State != ConnectionState.Open;
+        if (openedHere)
+            connection.Open();
+
+        try
+        {
+            var existingColumns = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+            using (var inspect = connection.CreateCommand())
+            {
+                inspect.CommandText = "PRAGMA table_info('Party');";
+                using var reader = inspect.ExecuteReader();
+                while (reader.Read())
+                    existingColumns.Add(reader.GetString(1));
+            }
+
+            if (!existingColumns.Contains("PokemonFormId"))
+            {
+                using var alter = connection.CreateCommand();
+                alter.CommandText =
+                    "ALTER TABLE \"Party\" ADD COLUMN \"PokemonFormId\" INTEGER NULL " +
+                    "REFERENCES \"PokemonForms\" (\"Id\") ON DELETE CASCADE;";
+                alter.ExecuteNonQuery();
+            }
+
+            bool indiceEspecieUnico = false;
+            using (var indices = connection.CreateCommand())
+            {
+                indices.CommandText = "PRAGMA index_list('Party');";
+                using var reader = indices.ExecuteReader();
+                while (reader.Read())
+                {
+                    if (string.Equals(reader.GetString(1), "IX_Party_PokemonId", StringComparison.OrdinalIgnoreCase)
+                        && reader.GetInt64(2) == 1)
+                    {
+                        indiceEspecieUnico = true;
+                    }
+                }
+            }
+
+            if (indiceEspecieUnico)
+            {
+                using var drop = connection.CreateCommand();
+                drop.CommandText = "DROP INDEX IF EXISTS \"IX_Party_PokemonId\";";
+                drop.ExecuteNonQuery();
+            }
+
+            using var create = connection.CreateCommand();
+            create.CommandText = """
+                CREATE INDEX IF NOT EXISTS "IX_Party_PokemonId" ON "Party" ("PokemonId");
+                CREATE UNIQUE INDEX IF NOT EXISTS "IX_Party_PokemonFormId" ON "Party" ("PokemonFormId");
+                """;
+            create.ExecuteNonQuery();
+        }
+        finally
+        {
+            if (openedHere)
+                connection.Close();
+        }
+    }
+
+    /// <summary>
+    /// Bancos criados pela versão anterior guardavam os sprites em View/images/pokemon; os arquivos
+    /// agora ficam em Data/images/pokemon. Só o prefixo do caminho é trocado.
+    /// </summary>
+    private static void MigrateLegacySpritePaths(AppDbContext db)
+    {
+        foreach (string coluna in new[] { "ExhibitionDefault", "ExhibitionShiny", "BoxDefault", "BoxShiny" })
+        {
+            string sql = $"""
+                UPDATE "Sprites"
+                SET "{coluna}" = 'Data/images/pokemon/' || substr("{coluna}", length('View/images/pokemon/') + 1)
+                WHERE "{coluna}" LIKE 'View/images/pokemon/%';
+                """;
+            db.Database.ExecuteSqlRaw(sql);
+        }
+    }
+
+    private static void PreencherFormasDoTime(AppDbContext db)
+    {
+        db.Database.ExecuteSqlRaw("""
+            UPDATE "Party"
+            SET "PokemonFormId" = (
+                SELECT f."Id" FROM "PokemonForms" f
+                WHERE f."PokemonId" = "Party"."PokemonId"
+                ORDER BY CASE WHEN f."FormName" = 'Normal' THEN 0 ELSE 1 END, f."Id"
+                LIMIT 1)
+            WHERE "PokemonFormId" IS NULL;
+            """);
+    }
+
+    private static void EnsureShinyColumns(AppDbContext db)
+    {
+        var connection = db.Database.GetDbConnection();
+        bool openedHere = connection.State != ConnectionState.Open;
+        if (openedHere)
+            connection.Open();
+
+        try
+        {
+            foreach (string tabela in new[] { "Favorites", "Party" })
+            {
+                var existingColumns = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+                using (var inspect = connection.CreateCommand())
+                {
+                    inspect.CommandText = $"PRAGMA table_info('{tabela}');";
+                    using var reader = inspect.ExecuteReader();
+                    while (reader.Read())
+                        existingColumns.Add(reader.GetString(1));
+                }
+
+                if (existingColumns.Contains("IsShiny"))
+                    continue;
+
+                using var alter = connection.CreateCommand();
+                alter.CommandText =
+                    $"ALTER TABLE \"{tabela}\" ADD COLUMN \"IsShiny\" INTEGER NOT NULL DEFAULT 0;";
+                alter.ExecuteNonQuery();
+            }
+        }
+        finally
+        {
+            if (openedHere)
+                connection.Close();
+        }
+    }
+
+    private static void EnsureSetColumns(AppDbContext db)
+    {
+        var connection = db.Database.GetDbConnection();
+        bool openedHere = connection.State != ConnectionState.Open;
+        if (openedHere)
+            connection.Open();
+
+        try
+        {
+            var existingColumns = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+            using (var inspect = connection.CreateCommand())
+            {
+                inspect.CommandText = "PRAGMA table_info('Party');";
+                using var reader = inspect.ExecuteReader();
+                while (reader.Read())
+                    existingColumns.Add(reader.GetString(1));
+            }
+
+            var colunas = new (string Nome, string Sql)[]
+            {
+                ("Level", "INTEGER NOT NULL DEFAULT 100"),
+                ("Nature", "TEXT NOT NULL DEFAULT 'Hardy'"),
+                ("AbilityId", "INTEGER NULL"),
+                ("IVs", "TEXT NULL"),
+                ("EV_HP", "INTEGER NOT NULL DEFAULT 0"),
+                ("EV_Attack", "INTEGER NOT NULL DEFAULT 0"),
+                ("EV_Defense", "INTEGER NOT NULL DEFAULT 0"),
+                ("EV_SpecialAttack", "INTEGER NOT NULL DEFAULT 0"),
+                ("EV_SpecialDefense", "INTEGER NOT NULL DEFAULT 0"),
+                ("EV_Speed", "INTEGER NOT NULL DEFAULT 0"),
+                ("MoveIdsJson", "TEXT NOT NULL DEFAULT '[]'")
+            };
+
+            foreach ((string nome, string sql) in colunas)
+            {
+                if (existingColumns.Contains(nome))
+                    continue;
+
+                using var alter = connection.CreateCommand();
+                alter.CommandText = $"ALTER TABLE \"Party\" ADD COLUMN \"{nome}\" {sql};";
+                alter.ExecuteNonQuery();
+            }
+
+            using var update = connection.CreateCommand();
+            update.CommandText = """
+                UPDATE "Party" SET "IVs" = '{"HP":31,"Attack":31,"Defense":31,"SpecialAttack":31,"SpecialDefense":31,"Speed":31}'
+                WHERE "IVs" IS NULL;
+                """;
+            update.ExecuteNonQuery();
+        }
+        finally
+        {
+            if (openedHere)
+                connection.Close();
+        }
+    }
+
+    private static void SeedRotas(AppDbContext db)
+    {
+        string seedPath = Path.Combine(
+            AppContext.BaseDirectory,
+            "Data",
+            "Persistence",
+            "Seed",
+            "rotas-seed.json");
+
+        if (!File.Exists(seedPath))
+            return;
+
+        List<RouteSeed> seeds;
+        using (FileStream stream = File.OpenRead(seedPath))
+        {
+            seeds = JsonSerializer.Deserialize<List<RouteSeed>>(stream, SeedJsonOptions)
+                ?? throw new InvalidDataException("O seed de rotas está vazio ou inválido.");
+        }
+
+        if (seeds.Count == 0)
+            throw new InvalidDataException("O seed de rotas não contém registros.");
+
+        // Evita que o rastreamento dos seeds anteriores (learnsets e evoluções)
+        // seja verificado novamente ao salvar apenas as rotas.
+        db.ChangeTracker.Clear();
+
+        Dictionary<int, Region> regions = db.Regions
+            .AsNoTracking()
+            .ToDictionary(region => region.Id);
+        Dictionary<int, Pokemon> pokemons = db.Pokemons
+            .AsNoTracking()
+            .ToDictionary(pokemon => pokemon.NationalDexNumber);
+
+        // Importação incremental: rotas já gravadas (mesma região e número) não são tocadas,
+        // o que permite acrescentar as regiões novas a bancos que já tinham Kanto, Johto e Hoenn.
+        HashSet<(int RegionId, int Number)> existentes = db.Routes
+            .AsNoTracking()
+            .Select(route => new { route.RegionId, route.Number })
+            .AsEnumerable()
+            .Select(route => (route.RegionId, route.Number))
+            .ToHashSet();
+
+        foreach (RouteSeed seed in seeds)
+        {
+            if (!regions.TryGetValue(seed.RegionId, out Region? region))
+                throw new InvalidDataException(
+                    $"Região {seed.RegionId} não encontrada para a rota {seed.Number}.");
+
+            if (!existentes.Add((seed.RegionId, seed.Number)))
+                continue;
+
+            var route = new Route
+            {
+                RegionId = region.Id,
+                Number = seed.Number,
+                Name = seed.Name,
+                PokeApiName = seed.PokeApiName,
+                PokeApiLocationId = seed.PokeApiLocationId,
+                GameVersions = JsonSerializer.Serialize(seed.GameVersions, SeedJsonOptions)
+            };
+
+            foreach (RouteAreaSeed areaSeed in seed.Areas)
+            {
+                var area = new RouteArea
+                {
+                    Name = areaSeed.Name,
+                    PokeApiName = areaSeed.PokeApiName,
+                    PokeApiAreaId = areaSeed.PokeApiAreaId
+                };
+
+                foreach (RouteEncounterSeed encounterSeed in areaSeed.Encounters)
+                {
+                    if (!pokemons.TryGetValue(
+                            encounterSeed.NationalDexNumber,
+                            out Pokemon? pokemon))
+                    {
+                        continue;
+                    }
+
+                    area.Encounters.Add(new RoutePokemonEncounter
+                    {
+                        PokemonId = pokemon.Id,
+                        EncounterMethod = encounterSeed.EncounterMethod,
+                        MinimumLevel = encounterSeed.MinimumLevel,
+                        MaximumLevel = encounterSeed.MaximumLevel,
+                        ChancePercent = encounterSeed.ChancePercent,
+                        GameVersion = encounterSeed.GameVersion,
+                        ConditionsJson = encounterSeed.ConditionsJson
+                    });
+                }
+
+                route.Areas.Add(area);
+            }
+
+            db.Routes.Add(route);
+        }
     }
 
     private static void SeedRegions(AppDbContext db)
@@ -507,8 +929,8 @@ public static class DatabaseInitializer
         if (!hasMoveCatalog || !hasLearnsets)
         {
             throw new InvalidOperationException(
-                "Os seeds de movimentos estão incompletos. Execute " +
-                "python3 scripts/gerar_seed_moves.py para gerar os dois arquivos JSON.");
+                "Os seeds de movimentos estão incompletos: move-catalog-seed.json e " +
+                "pokemon-learnsets-seed.json devem estar presentes em Data/Persistence/Seed.");
         }
 
         List<PokemonMoveSeed> moveSeeds;
@@ -1028,7 +1450,7 @@ public static class DatabaseInitializer
 
     /// <summary>
     /// Registra os sprites locais já existentes no projeto.
-    /// A estrutura esperada é View/images/pokemon/{frontNormal,frontShiny,mini}/{numero}.png.
+    /// A estrutura esperada é Data/images/pokemon/{frontNormal,frontShiny,mini}/{numero}.png.
     /// Os caminhos relativos são armazenados no SQLite para funcionar tanto no build
     /// quanto no publish, independentemente do diretório de trabalho do processo.
     /// </summary>
@@ -1044,9 +1466,9 @@ public static class DatabaseInitializer
         {
             string dexNumber = form.Pokemon.NationalDexNumber.ToString();
 
-            string frontNormal = $"View/images/pokemon/frontNormal/{dexNumber}.png";
-            string frontShiny = $"View/images/pokemon/frontShiny/{dexNumber}.png";
-            string mini = $"View/images/pokemon/mini/{dexNumber}.png";
+            string frontNormal = $"Data/images/pokemon/frontNormal/{dexNumber}.png";
+            string frontShiny = $"Data/images/pokemon/frontShiny/{dexNumber}.png";
+            string mini = $"Data/images/pokemon/mini/{dexNumber}.png";
 
             bool hasFrontNormal = AssetExists(frontNormal);
             bool hasFrontShiny = AssetExists(frontShiny);
@@ -1105,7 +1527,7 @@ public static class DatabaseInitializer
 
             if (string.Equals(sprite.PokemonForm.FormName, "Normal", StringComparison.OrdinalIgnoreCase))
             {
-                candidate = $"View/images/pokemon/miniShiny/{sprite.PokemonForm.Pokemon.NationalDexNumber}.png";
+                candidate = $"Data/images/pokemon/miniShiny/{sprite.PokemonForm.Pokemon.NationalDexNumber}.png";
             }
             else if (!string.IsNullOrWhiteSpace(sprite.ExhibitionDefault))
             {
@@ -1165,5 +1587,35 @@ public static class DatabaseInitializer
         public string FormName { get; set; } = "Normal";
         public List<PokemonType> Types { get; set; } = new();
         public BaseStats Stats { get; set; }
+    }
+
+    public sealed class RouteSeed
+    {
+        public int RegionId { get; set; }
+        public int Number { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string PokeApiName { get; set; } = string.Empty;
+        public int? PokeApiLocationId { get; set; }
+        public List<string> GameVersions { get; set; } = new();
+        public List<RouteAreaSeed> Areas { get; set; } = new();
+    }
+
+    public sealed class RouteAreaSeed
+    {
+        public string Name { get; set; } = string.Empty;
+        public string PokeApiName { get; set; } = string.Empty;
+        public int? PokeApiAreaId { get; set; }
+        public List<RouteEncounterSeed> Encounters { get; set; } = new();
+    }
+
+    public sealed class RouteEncounterSeed
+    {
+        public int NationalDexNumber { get; set; }
+        public string EncounterMethod { get; set; } = string.Empty;
+        public int MinimumLevel { get; set; }
+        public int MaximumLevel { get; set; }
+        public int ChancePercent { get; set; }
+        public string GameVersion { get; set; } = string.Empty;
+        public string ConditionsJson { get; set; } = "[]";
     }
 }

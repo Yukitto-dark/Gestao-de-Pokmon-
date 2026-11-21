@@ -4,6 +4,8 @@ namespace GestaoDePokemon.Data.Repositories.Contracts
 {
     public interface IRotaRepository
     {
+        IReadOnlyList<string> ObterRegioes();
+
         IReadOnlyList<int> ObterRotas(string regiao);
 
         RotaInfo? ObterRota(string regiao, int numero);

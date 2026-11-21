@@ -4,9 +4,6 @@ using GestaoDePokemon.Controller;
 
 namespace GestaoDePokemon.View.Telas
 {
-    /// <summary>
-    /// Interação lógica para Home.xam
-    /// </summary>
     public partial class Home : Page
     {
         public Home()

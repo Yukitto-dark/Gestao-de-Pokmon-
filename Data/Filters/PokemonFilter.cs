@@ -17,8 +17,14 @@ namespace GestaoDePokemon.Data.Filters{
 
         public bool OnlyFavorites { get; init; }
 
+        public bool OnlyParty { get; init; }
+
         public int? NationalDexNumber { get; init; }
 
         public string? NameContains { get; init; }
+
+        public string? AbilityName { get; init; }
+
+        public bool? HasAlternateForms { get; init; }
     }
 }

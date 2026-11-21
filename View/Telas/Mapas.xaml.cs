@@ -4,13 +4,8 @@ using GestaoDePokemon.Controller;
 
 namespace GestaoDePokemon.View.Telas
 {
-    /// <summary>
-    /// Interação lógica para Mapas.xam
-    /// </summary>
     public partial class Mapas : Page
     {
-        private readonly MapasController _controller = new();
-
         public Mapas()
         {
             InitializeComponent();
@@ -24,7 +19,7 @@ namespace GestaoDePokemon.View.Telas
         private void Regiao_Click(object sender, RoutedEventArgs e)
         {
             if (sender is Button botao && botao.Tag is string regiao)
-                _controller.AbrirRegiao(this, regiao);
+                NavegacaoController.NavegarParaRegiao(this, regiao);
         }
     }
 }

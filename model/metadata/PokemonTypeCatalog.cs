@@ -25,7 +25,7 @@ namespace GestaoDePokemon.model
             { PokemonType.Ghost, new("Ghost", "View/images/types/Type-Ghost.png") },
             { PokemonType.Dark, new("Dark", "View/images/types/Type-Dark.png") },
             { PokemonType.Steel, new("Steel", "View/images/types/Type-Steel.png") },
-            { PokemonType.Fairy, new("Fairy", "View/images/types/Type-Fairy.png") }
+            { PokemonType.Fairy, new("Fairy", "View/images/types/Type-Fairy.jpg") }
         };
 
         public static PokemonTypeInfo GetInfo(PokemonType type)

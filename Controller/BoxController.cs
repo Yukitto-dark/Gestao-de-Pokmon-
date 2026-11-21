@@ -1,14 +1,21 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using GestaoDePokemon.Data.Configuration;
 using GestaoDePokemon.Data.Filters;
 using GestaoDePokemon.Data.Repositories.Contracts;
-using GestaoDePokemon.Data.Repositories.InMemory;
-using GestaoDePokemon.Data.Repositories.SQLite;
+using GestaoDePokemon.model;
 
 namespace GestaoDePokemon.Controller
 {
     public enum ResultadoFavorito
+    {
+        SemSelecao,
+        Adicionado,
+        Removido
+    }
+
+    public enum ResultadoParty
     {
         SemSelecao,
         Adicionado,
@@ -21,22 +28,29 @@ namespace GestaoDePokemon.Controller
         public const int ItensPorPagina = 30;
 
         private readonly IFavoritosRepository _favoritos;
+        private readonly IPartyRepository _party;
         private readonly IPokemonRepository _pokemons;
         private PokemonFilter _filtroAtual = new();
         private int _paginaAtual = 1;
 
+        // Todas as células que passam no filtro atual, já na ordem da Box. A lista é pequena
+        // (uma entrada por forma) e só é refeita quando o filtro ou o resultado dele muda.
+        private IReadOnlyList<PokemonBoxEntry>? _entradas;
+
         public BoxController(
             IPokemonRepository? pokemons = null,
-            IFavoritosRepository? favoritos = null)
+            IFavoritosRepository? favoritos = null,
+            IPartyRepository? party = null)
         {
             _pokemons = pokemons ?? AppServices.Pokemons;
             _favoritos = favoritos ?? AppServices.Favoritos;
+            _party = party ?? AppServices.Party;
         }
 
         public int PaginaAtual => _paginaAtual;
 
         // Cada resultado é uma forma (a Normal e todas as alternativas) de uma espécie, em ordem de Pokédex.
-        public int TotalResultados => _pokemons.ContarEntradas(_filtroAtual);
+        public int TotalResultados => Entradas.Count;
 
         public int TotalPaginas =>
             Math.Max(1, (TotalResultados + ItensPorPagina - 1) / ItensPorPagina);
@@ -47,17 +61,27 @@ namespace GestaoDePokemon.Controller
         // Número da Pokédex da espécie selecionada: os favoritos são por espécie.
         public int? IdSelecionado => EntradaSelecionada?.NationalDexNumber;
 
-        public IReadOnlyList<int> ObterIdsDaPagina() =>
-            _pokemons.ObterIds(_filtroAtual, _paginaAtual, ItensPorPagina);
+        private IReadOnlyList<PokemonBoxEntry> Entradas =>
+            _entradas ??= _pokemons.ObterEntradas(_filtroAtual);
 
-        public IReadOnlyList<PokemonBoxEntry> ObterEntradasDaPagina() =>
-            _pokemons.ObterEntradas(_filtroAtual, _paginaAtual, ItensPorPagina);
+        public IReadOnlyList<PokemonBoxEntry> ObterEntradasDaPagina()
+        {
+            // Remover o último favorito/membro de uma página com o filtro ativo pode encurtar a lista.
+            if (_paginaAtual > TotalPaginas)
+                _paginaAtual = TotalPaginas;
+
+            return Entradas
+                .Skip((_paginaAtual - 1) * ItensPorPagina)
+                .Take(ItensPorPagina)
+                .ToList();
+        }
 
         public void AplicarFiltros(PokemonFilter filtro)
         {
             ArgumentNullException.ThrowIfNull(filtro);
             _filtroAtual = filtro;
             _paginaAtual = 1;
+            _entradas = null;
             EntradaSelecionada = null;
         }
 
@@ -69,8 +93,7 @@ namespace GestaoDePokemon.Controller
                 return null;
 
             int indice = linha * 6 + coluna;
-            IReadOnlyList<PokemonBoxEntry> entradas = _pokemons.ObterEntradas(
-                _filtroAtual, _paginaAtual, ItensPorPagina);
+            IReadOnlyList<PokemonBoxEntry> entradas = ObterEntradasDaPagina();
 
             if (indice >= entradas.Count)
             {
@@ -102,31 +125,62 @@ namespace GestaoDePokemon.Controller
 
         public bool EhFavorito(int id) => _favoritos.EhFavorito(id);
 
-        public string? ObterSpriteUrl(int id) => _pokemons.ObterSpriteUrl(id);
+        public bool EhNoTime(PokemonBoxEntry entrada) => _party.EhNoTime(entrada.FormId);
 
-        public string? ObterSpriteUrl(PokemonBoxEntry entrada) => _pokemons.ObterSpriteUrl(entrada);
+        // Sprite salvo como shiny: no time vale a forma; nos favoritos, a espécie.
+        public bool EhShiny(PokemonBoxEntry entrada) =>
+            _party.EhShiny(entrada.FormId) || _favoritos.EhShiny(entrada.NationalDexNumber);
 
-        public string? ObterSpriteDetalheUrl(int id, bool shiny) =>
-            _pokemons.ObterSpriteDetalheUrl(id, shiny);
+        public Pokemon? ObterPokemon(int id) => _pokemons.Obter(id);
+
+        public IReadOnlyList<Pokemon> ObterLinhaEvolutiva(int id) =>
+            _pokemons.ObterLinhaEvolutiva(id);
+
+        public string? ObterSpriteUrl(PokemonBoxEntry entrada) =>
+            _pokemons.ObterSpriteFormaUrl(entrada.FormId);
 
         public string? ObterSpriteDetalheUrl(PokemonBoxEntry entrada, bool shiny) =>
-            _pokemons.ObterSpriteDetalheUrl(entrada, shiny);
+            _pokemons.ObterSpriteDetalheFormaUrl(entrada.FormId, shiny);
 
-        public ResultadoFavorito AlternarFavorito(out bool limiteAtingido)
+        public string? ObterSpriteFormaUrl(int formId) =>
+            _pokemons.ObterSpriteFormaUrl(formId);
+
+        public IReadOnlyList<string> ObterHabilidades() =>
+            _pokemons.ObterHabilidades();
+
+        public ResultadoFavorito AlternarFavorito(bool shiny)
         {
-            limiteAtingido = false;
-
             if (IdSelecionado is not int id)
                 return ResultadoFavorito.SemSelecao;
 
-            bool adicionado = _favoritos.Alternar(id, out limiteAtingido);
+            bool adicionado = _favoritos.Alternar(id, shiny);
 
-            if (limiteAtingido)
-                return ResultadoFavorito.LimiteAtingido;
+            if (_filtroAtual.OnlyFavorites)
+                _entradas = null;
 
             return adicionado
                 ? ResultadoFavorito.Adicionado
                 : ResultadoFavorito.Removido;
+        }
+
+        public ResultadoParty AlternarParty(bool shiny, out bool limiteAtingido)
+        {
+            limiteAtingido = false;
+
+            if (EntradaSelecionada is not PokemonBoxEntry entrada)
+                return ResultadoParty.SemSelecao;
+
+            bool adicionado = _party.Alternar(entrada.FormId, shiny, out limiteAtingido);
+
+            if (_filtroAtual.OnlyParty)
+                _entradas = null;
+
+            if (limiteAtingido)
+                return ResultadoParty.LimiteAtingido;
+
+            return adicionado
+                ? ResultadoParty.Adicionado
+                : ResultadoParty.Removido;
         }
     }
 }

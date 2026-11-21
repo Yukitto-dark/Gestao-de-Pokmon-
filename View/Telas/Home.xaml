@@ -13,7 +13,7 @@
         <Grid Width="800" Height="450">
             <Image Source="/View/Telas - background/Home.png" Stretch="Uniform"/>
             <Button Content="Button" HorizontalAlignment="Left" Margin="355,377,0,0" VerticalAlignment="Top" Width="81" Height="40" Opacity="0"/>
-        <Button x:Name="Ir__Favoritos" Click="Navegar_Click" Content="Button" HorizontalAlignment="Left" Margin="120,27,0,0" VerticalAlignment="Top" Width="83" Height="71" Opacity="0"/>
+        <Button x:Name="Ir__Time" Click="Navegar_Click" Content="Button" HorizontalAlignment="Left" Margin="120,27,0,0" VerticalAlignment="Top" Width="83" Height="71" Opacity="0"/>
         <Button x:Name="Ir__Box" Click="Navegar_Click" Content="Button" HorizontalAlignment="Left" Margin="375,27,0,0" VerticalAlignment="Top" Width="52" Height="96" Opacity="0"/>
         <Button x:Name="Ir__Mapas" Click="Navegar_Click" Content="Button" HorizontalAlignment="Left" Margin="529,35,0,0" VerticalAlignment="Top" Width="74" Height="44" Opacity="0"/>
         </Grid>

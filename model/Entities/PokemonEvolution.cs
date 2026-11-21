@@ -1,5 +1,3 @@
-using System;
-using System.Linq;
 namespace GestaoDePokemon.model
 {
     public class PokemonEvolution

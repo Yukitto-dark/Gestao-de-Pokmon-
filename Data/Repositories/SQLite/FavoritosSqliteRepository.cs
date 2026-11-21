@@ -10,10 +10,6 @@ namespace GestaoDePokemon.Data.Repositories.SQLite
 {
     public sealed class FavoritosSqliteRepository : IFavoritosRepository
     {
-        private const int MaximoFavoritos = 6;
-
-        public int Limite => MaximoFavoritos;
-
         public IReadOnlyList<int> Ids
         {
             get
@@ -29,8 +25,6 @@ namespace GestaoDePokemon.Data.Repositories.SQLite
             }
         }
 
-        public event Action? Alterado;
-
         public bool EhFavorito(int id)
         {
             using var db = new AppDbContext();
@@ -40,11 +34,20 @@ namespace GestaoDePokemon.Data.Repositories.SQLite
                 .Any(favorite => favorite.PokemonId == id);
         }
 
-        public bool Adicionar(int id, out bool limiteAtingido)
+        public bool EhShiny(int id)
         {
             using var db = new AppDbContext();
 
-            return TentarAdicionar(db, id, out limiteAtingido);
+            return db.Favorites
+                .AsNoTracking()
+                .Any(favorite => favorite.PokemonId == id && favorite.IsShiny);
+        }
+
+        public bool Adicionar(int id, bool shiny)
+        {
+            using var db = new AppDbContext();
+
+            return TentarAdicionar(db, id, shiny);
         }
 
         public bool Remover(int id)
@@ -60,15 +63,11 @@ namespace GestaoDePokemon.Data.Repositories.SQLite
             db.Favorites.Remove(existente);
             db.SaveChanges();
 
-            Alterado?.Invoke();
-
             return true;
         }
 
-        public bool Alternar(int id, out bool limiteAtingido)
+        public bool Alternar(int id, bool shiny)
         {
-            limiteAtingido = false;
-
             using var db = new AppDbContext();
 
             PokemonFavorite? existente = db.Favorites
@@ -79,21 +78,14 @@ namespace GestaoDePokemon.Data.Repositories.SQLite
                 db.Favorites.Remove(existente);
                 db.SaveChanges();
 
-                Alterado?.Invoke();
-
-                return false;
+                    return false;
             }
 
-            return TentarAdicionar(db, id, out limiteAtingido);
+            return TentarAdicionar(db, id, shiny);
         }
 
-        private bool TentarAdicionar(
-            AppDbContext db,
-            int id,
-            out bool limiteAtingido)
+        private bool TentarAdicionar(AppDbContext db, int id, bool shiny)
         {
-            limiteAtingido = false;
-
             if (id <= 0)
                 return false;
 
@@ -106,21 +98,14 @@ namespace GestaoDePokemon.Data.Repositories.SQLite
             if (!pokemonExiste)
                 return false;
 
-            if (db.Favorites.Count() >= Limite)
-            {
-                limiteAtingido = true;
-                return false;
-            }
-
             db.Favorites.Add(new PokemonFavorite
             {
                 PokemonId = id,
+                IsShiny = shiny,
                 AddedAt = DateTime.UtcNow
             });
 
             db.SaveChanges();
-
-            Alterado?.Invoke();
 
             return true;
         }

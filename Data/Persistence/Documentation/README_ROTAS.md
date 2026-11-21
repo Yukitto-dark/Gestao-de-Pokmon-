@@ -1,7 +1,7 @@
 # Regiões, rotas e encontros — SistemaDeGestaoDePokemon
 
-Este pacote adiciona ao SQLite os dados de Kanto, Johto e Hoenn e apenas as
-rotas numeradas. Cada rota é dividida em suas áreas da PokéAPI; cada encontro
+Este pacote adiciona ao SQLite as rotas numeradas de Kanto, Johto, Hoenn,
+Sinnoh, Unova, Kalos, Alola e Galar. Cada rota é dividida em suas áreas da PokéAPI; cada encontro
 armazena espécie, método, níveis mínimo/máximo, chance, versão do jogo e
 condições do encontro.
 
@@ -10,8 +10,19 @@ condições do encontro.
 - Kanto: rotas 1–28.
 - Johto: rotas 29–46.
 - Hoenn: rotas 101–134.
-- Versões consultadas: Red, Blue, Yellow, Gold, Silver, Crystal, FireRed,
-  LeafGreen, Ruby, Sapphire e Emerald (filtradas pela região).
+- Versões consultadas para Kanto, Johto e Hoenn: Red, Blue, Yellow, Gold,
+  Silver, Crystal, FireRed, LeafGreen, Ruby, Sapphire e Emerald.
+- Sinnoh: rotas 201–230 (Diamond, Pearl e Platinum).
+- Unova: rotas 1–23 (Black, White, Black 2 e White 2).
+- Kalos: rotas 1–22 (X e Y).
+- Alola: rotas 1–17 (Sun, Moon, Ultra Sun e Ultra Moon).
+- Galar: rotas 1–10 (Sword e Shield).
+- Paldea e Hisui não possuem rotas numeradas com encontros na PokéAPI.
+- As rotas de Sinnoh a Galar foram geradas dos CSVs da PokéAPI
+  (`data/v2/csv`: `locations`, `location_areas`, `encounters`,
+  `encounter_slots` e tabelas relacionadas), no mesmo formato do seed original.
+- A importação é incremental: rotas já gravadas (mesma região e número) não
+  são alteradas, e as que faltam são acrescentadas na abertura do aplicativo.
 - Somente espécies existentes na tabela `Pokemons` do banco local são
   relacionadas aos encontros.
 
@@ -91,10 +102,10 @@ ORDER BY rg.Generation, rt.Number, p.NationalDexNumber, e.GameVersion;
 PRAGMA foreign_key_check;
 ```
 
-## Observação sobre a tela de regiões
+## Tela de regiões
 
-No código que acompanha o projeto, `RegioesController` ainda recebe os dados
-por `RotaMemoriaRepository`. Portanto, executar o importador preenche o banco,
-mas a tela atual não passa automaticamente a ler essas novas tabelas. A
-substituição desse repositório por um repositório SQLite é uma etapa separada
-para conectar a interface aos dados persistidos.
+`RegioesController` usa `RotaSqliteRepository` e lê diretamente as tabelas
+`Routes`, `RouteAreas` e `RoutePokemonEncounters`. O seed local
+`Data/Persistence/Seed/rotas-seed.json` é importado automaticamente quando a
+tabela `Routes` está vazia. O importador Python continua sendo a forma de
+atualizar os encontros a partir da PokéAPI.

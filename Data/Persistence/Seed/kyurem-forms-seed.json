@@ -22,9 +22,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/646/kyurem-black/front.png",
-      "BoxDefault": "View/images/pokemon/forms/646/kyurem-black/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/646/kyurem-black/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/646/kyurem-black/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/646/kyurem-black/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/646/kyurem-black/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -455,9 +455,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/646/kyurem-white/front.png",
-      "BoxDefault": "View/images/pokemon/forms/646/kyurem-white/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/646/kyurem-white/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/646/kyurem-white/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/646/kyurem-white/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/646/kyurem-white/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [

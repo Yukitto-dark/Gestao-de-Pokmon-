@@ -32,6 +32,49 @@
                 </Label.Effect>
             </Label>
 
+            <!-- Demais regiões: mesas da sala e o mapa na parede (Hisui). -->
+            <Button x:Name="Ir__Sinnoh" Tag="Sinnoh" Click="Regiao_Click" Content="Button" HorizontalAlignment="Left" Height="56" Margin="112,185,0,0" VerticalAlignment="Top" Width="96" Opacity="0" ToolTip="Sinnoh"/>
+            <Button x:Name="Ir__Unova" Tag="Unova" Click="Regiao_Click" Content="Button" HorizontalAlignment="Left" Height="56" Margin="352,235,0,0" VerticalAlignment="Top" Width="96" Opacity="0" ToolTip="Unova"/>
+            <Button x:Name="Ir__Kalos" Tag="Kalos" Click="Regiao_Click" Content="Button" HorizontalAlignment="Left" Height="56" Margin="592,185,0,0" VerticalAlignment="Top" Width="96" Opacity="0" ToolTip="Kalos"/>
+            <Button x:Name="Ir__Alola" Tag="Alola" Click="Regiao_Click" Content="Button" HorizontalAlignment="Left" Height="52" Margin="112,383,0,0" VerticalAlignment="Top" Width="96" Opacity="0" ToolTip="Alola"/>
+            <Button x:Name="Ir__Galar" Tag="Galar" Click="Regiao_Click" Content="Button" HorizontalAlignment="Left" Height="52" Margin="592,383,0,0" VerticalAlignment="Top" Width="96" Opacity="0" ToolTip="Galar"/>
+            <Button x:Name="Ir__Paldea" Tag="Paldea" Click="Regiao_Click" Content="Button" HorizontalAlignment="Left" Height="56" Margin="736,210,0,0" VerticalAlignment="Top" Width="48" Opacity="0" ToolTip="Paldea"/>
+            <Button x:Name="Ir__Hisui" Tag="Hisui" Click="Regiao_Click" Content="Button" HorizontalAlignment="Left" Height="40" Margin="718,48,0,0" VerticalAlignment="Top" Width="66" Opacity="0" ToolTip="Hisui"/>
+            <Label Content="Sinnoh" HorizontalAlignment="Left" Height="28" Margin="115,159,0,0" VerticalAlignment="Top" Width="90" FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="18" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" IsHitTestVisible="False">
+                <Label.Effect>
+                    <DropShadowEffect Color="Black" ShadowDepth="2" Direction="315" BlurRadius="0" Opacity="1"/>
+                </Label.Effect>
+            </Label>
+            <Label Content="Unova" HorizontalAlignment="Left" Height="28" Margin="355,209,0,0" VerticalAlignment="Top" Width="90" FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="18" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" IsHitTestVisible="False">
+                <Label.Effect>
+                    <DropShadowEffect Color="Black" ShadowDepth="2" Direction="315" BlurRadius="0" Opacity="1"/>
+                </Label.Effect>
+            </Label>
+            <Label Content="Kalos" HorizontalAlignment="Left" Height="28" Margin="595,159,0,0" VerticalAlignment="Top" Width="90" FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="18" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" IsHitTestVisible="False">
+                <Label.Effect>
+                    <DropShadowEffect Color="Black" ShadowDepth="2" Direction="315" BlurRadius="0" Opacity="1"/>
+                </Label.Effect>
+            </Label>
+            <Label Content="Alola" HorizontalAlignment="Left" Height="28" Margin="115,357,0,0" VerticalAlignment="Top" Width="90" FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="18" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" IsHitTestVisible="False">
+                <Label.Effect>
+                    <DropShadowEffect Color="Black" ShadowDepth="2" Direction="315" BlurRadius="0" Opacity="1"/>
+                </Label.Effect>
+            </Label>
+            <Label Content="Galar" HorizontalAlignment="Left" Height="28" Margin="595,357,0,0" VerticalAlignment="Top" Width="90" FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="18" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" IsHitTestVisible="False">
+                <Label.Effect>
+                    <DropShadowEffect Color="Black" ShadowDepth="2" Direction="315" BlurRadius="0" Opacity="1"/>
+                </Label.Effect>
+            </Label>
+            <Label Content="Paldea" HorizontalAlignment="Left" Height="28" Margin="710,184,0,0" VerticalAlignment="Top" Width="90" FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="18" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" IsHitTestVisible="False">
+                <Label.Effect>
+                    <DropShadowEffect Color="Black" ShadowDepth="2" Direction="315" BlurRadius="0" Opacity="1"/>
+                </Label.Effect>
+            </Label>
+            <Label Content="Hisui" HorizontalAlignment="Left" Height="28" Margin="710,18,0,0" VerticalAlignment="Top" Width="90" FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="18" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" IsHitTestVisible="False">
+                <Label.Effect>
+                    <DropShadowEffect Color="Black" ShadowDepth="2" Direction="315" BlurRadius="0" Opacity="1"/>
+                </Label.Effect>
+            </Label>
         </Grid>
     </Viewbox>
 </Page>

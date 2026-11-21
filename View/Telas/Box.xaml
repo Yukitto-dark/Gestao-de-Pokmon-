@@ -10,23 +10,22 @@
 
     <Page.Resources>
         <Style x:Key="HotspotTipo" TargetType="ToggleButton">
-            <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="Cursor" Value="Hand"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="ToggleButton">
-                        <Border Background="{TemplateBinding Background}">
+                        <Grid>
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
+                            <Border x:Name="Overlay" Background="Transparent" IsHitTestVisible="False"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="Overlay" Property="Background" Value="#66000000"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
-            <Style.Triggers>
-                <Trigger Property="IsChecked" Value="True">
-                    <Setter Property="Background" Value="#66000000"/>
-                </Trigger>
-            </Style.Triggers>
         </Style>
 
 
@@ -156,6 +155,25 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
+
+        <Style x:Key="TextoInformacao" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="/View/fonts/#Pokemon Fire Red"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Foreground" Value="#FFD6E0FF"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+
+        <Style x:Key="TextoDetalhe" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="/View/fonts/#Pokemon Fire Red"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Foreground" Value="#FFD6E0FF"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+
+        <Style x:Key="TituloDetalhe" TargetType="TextBlock" BasedOn="{StaticResource TextoDetalhe}">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Foreground" Value="#FFAEBEE8"/>
+        </Style>
     </Page.Resources>
 
     <Viewbox Stretch="Uniform">
@@ -163,8 +181,10 @@
             <Image Margin="0,0,0,10" Source="/View/Telas - background/Box - reforge --.png" Stretch="Fill"/>
             <Button Content="Button" HorizontalAlignment="Left" Height="10" Margin="455,0,0,0" VerticalAlignment="Top" Width="1" Opacity="0"/>
             <Button x:Name="Voltar__Home" Click="Navegar_Click" Content="Button" HorizontalAlignment="Left" Height="43" Margin="455,0,0,0" VerticalAlignment="Top" Width="198" Opacity="0"/>
-            <Button x:Name="Ir_favoritos" Click="Navegar_Click" Content="Button" HorizontalAlignment="Left" Height="43" Margin="227,5,0,0" VerticalAlignment="Top" Width="198" Opacity="0"/>
-            <TextBox x:Name="Informação_Pokemon" HorizontalAlignment="Left" Margin="10,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197" Height="148" Background="Transparent"/>
+            <Button x:Name="Ir_Time" Click="Navegar_Click" Content="Button" HorizontalAlignment="Left" Height="43" Margin="227,5,0,0" VerticalAlignment="Top" Width="198" Opacity="0"/>
+            <ScrollViewer x:Name="Informação_Pokemon" HorizontalAlignment="Left" Margin="10,246,0,0" VerticalAlignment="Top" Width="225" Height="148" Background="Transparent" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Focusable="False">
+                <StackPanel x:Name="Informação_Conteudo"/>
+            </ScrollViewer>
             <Image x:Name="Imagem_Pokemon" HorizontalAlignment="Left" Height="131" Margin="43,73,0,0" VerticalAlignment="Top" Width="143"/>
             <Button x:Name="Ant_Box" Content="Button" HorizontalAlignment="Left" Height="34" Margin="233,68,0,0" VerticalAlignment="Top" Width="23" Opacity="0" Click="Ant_Box_Click"/>
             <Button x:Name="Prox_Box" Content="Button" HorizontalAlignment="Left" Height="34" Margin="615,68,0,0" VerticalAlignment="Top" Width="23" Opacity="0" Click="Prox_Box_Click"/>
@@ -237,7 +257,9 @@
                                             <ToggleButton x:Name="Tipo_Psychc" Style="{StaticResource HotspotTipo}" Canvas.Left="392" Canvas.Top="270" Width="148" Height="57" ToolTip="Psychic"/>
                                             <ToggleButton x:Name="Tipo_Ice" Style="{StaticResource HotspotTipo}" Canvas.Left="562" Canvas.Top="270" Width="148" Height="57" ToolTip="Ice"/>
                                             <ToggleButton x:Name="Tipo_Dragon" Style="{StaticResource HotspotTipo}" Canvas.Left="50" Canvas.Top="344" Width="148" Height="57" ToolTip="Dragon"/>
-                                            <ToggleButton x:Name="Tipo_Fairy" Style="{StaticResource HotspotTipo}" Canvas.Left="220" Canvas.Top="344" Width="148" Height="57" ToolTip="Fairy" Content="FAIRY" Foreground="White" FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="20"/>
+                                            <ToggleButton x:Name="Tipo_Fairy" Style="{StaticResource HotspotTipo}" Canvas.Left="220" Canvas.Top="344" Width="148" Height="57" ToolTip="Fairy">
+                                                <Image Source="/View/images/types/Type-Fairy.jpg" Width="148" Height="57" Stretch="Fill"/>
+                                            </ToggleButton>
                                         </Canvas>
                                     </Grid>
                                 </Viewbox>
@@ -249,6 +271,13 @@
                                     <CheckBox x:Name="Regiao_Kanto" Content="Kanto (Gen 1)" Style="{StaticResource FiltroRegiaoCheckBox}" Margin="0,3" IsChecked="False"/>
                                     <CheckBox x:Name="Regiao_Johto" Content="Johto (Gen 2)" Style="{StaticResource FiltroRegiaoCheckBox}" Margin="0,3" IsChecked="False"/>
                                     <CheckBox x:Name="Regiao_Hoenn" Content="Hoenn (Gen 3)" Style="{StaticResource FiltroRegiaoCheckBox}" Margin="0,3" IsChecked="False"/>
+                                    <CheckBox x:Name="Regiao_Sinnoh" Content="Sinnoh (Gen 4)" Style="{StaticResource FiltroRegiaoCheckBox}" Margin="0,3" IsChecked="False"/>
+                                    <CheckBox x:Name="Regiao_Unova" Content="Unova (Gen 5)" Style="{StaticResource FiltroRegiaoCheckBox}" Margin="0,3" IsChecked="False"/>
+                                    <CheckBox x:Name="Regiao_Kalos" Content="Kalos (Gen 6)" Style="{StaticResource FiltroRegiaoCheckBox}" Margin="0,3" IsChecked="False"/>
+                                    <CheckBox x:Name="Regiao_Alola" Content="Alola (Gen 7)" Style="{StaticResource FiltroRegiaoCheckBox}" Margin="0,3" IsChecked="False"/>
+                                    <CheckBox x:Name="Regiao_Galar" Content="Galar (Gen 8)" Style="{StaticResource FiltroRegiaoCheckBox}" Margin="0,3" IsChecked="False"/>
+                                    <CheckBox x:Name="Regiao_Hisui" Content="Hisui (Gen 8)" Style="{StaticResource FiltroRegiaoCheckBox}" Margin="0,3" IsChecked="False"/>
+                                    <CheckBox x:Name="Regiao_Paldea" Content="Paldea (Gen 9)" Style="{StaticResource FiltroRegiaoCheckBox}" Margin="0,3" IsChecked="False"/>
                                 </StackPanel>
                             </Border>
 
@@ -260,14 +289,35 @@
                                 </Grid>
                             </Border>
 
+                            <Button x:Name="Por_Party" Content="Time" Style="{StaticResource BotaoPokemon}" Height="30" Margin="0,0,0,4" Click="Por_Party_Click"/>
+                            <Border x:Name="Painel_Party" Background="#FF000000" Margin="0,0,0,6" Padding="6,4" Visibility="Collapsed">
+                                <Grid>
+                                    <TextBlock Text="Apenas Time" Foreground="White" FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="14" VerticalAlignment="Center"/>
+                                    <ToggleButton x:Name="Filtro_Party" Style="{StaticResource Interruptor}" HorizontalAlignment="Right" VerticalAlignment="Center" ToolTip="Filtrar por time"/>
+                                </Grid>
+                            </Border>
+
+                            <Button x:Name="Por_Habilidade" Content="Habilidade" Style="{StaticResource BotaoPokemon}" Height="30" Margin="0,0,0,4" Click="Por_Habilidade_Click"/>
+                            <Border x:Name="Painel_Habilidade" Background="#FF000000" Margin="0,0,0,6" Padding="6,4" Visibility="Collapsed">
+                                <ComboBox x:Name="Filtro_Habilidade" Height="26" FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="12"/>
+                            </Border>
+
+                            <Button x:Name="Por_Formas" Content="Formas" Style="{StaticResource BotaoPokemon}" Height="30" Margin="0,0,0,4" Click="Por_Formas_Click"/>
+                            <Border x:Name="Painel_Formas" Background="#FF000000" Margin="0,0,0,6" Padding="6,4" Visibility="Collapsed">
+                                <Grid>
+                                    <TextBlock Text="Com formas" Foreground="White" FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="14" VerticalAlignment="Center"/>
+                                    <ToggleButton x:Name="Filtro_Formas" Style="{StaticResource Interruptor}" HorizontalAlignment="Right" VerticalAlignment="Center" ToolTip="Filtrar por Pokémon com formas alternativas"/>
+                                </Grid>
+                            </Border>
+
                             <Grid Margin="0,0,0,4">
                                 <Button x:Name="Por_Id" Content="Id" Style="{StaticResource BotaoPokemon}" Height="30" Click="Por_Id_Click"/>
-                                <TextBox x:Name="Id_TextBox" Height="30" Visibility="Collapsed" VerticalContentAlignment="Center"/>
+                                <TextBox x:Name="Id_TextBox" Height="30" Visibility="Collapsed" VerticalContentAlignment="Center" FontFamily="/View/fonts/#Pokemon Fire Red"/>
                             </Grid>
 
                             <Grid Margin="0,0,0,4">
                                 <Button x:Name="Por_Nome" Content="Nome" Style="{StaticResource BotaoPokemon}" Height="30" Click="Por_Nome_Click"/>
-                                <TextBox x:Name="Nome_TextBox" Height="30" Visibility="Collapsed" VerticalContentAlignment="Center"/>
+                                <TextBox x:Name="Nome_TextBox" Height="30" Visibility="Collapsed" VerticalContentAlignment="Center" FontFamily="/View/fonts/#Pokemon Fire Red"/>
                             </Grid>
                         </StackPanel>
                     </ScrollViewer>
@@ -282,6 +332,7 @@
             <ToggleButton x:Name="Botao_Favorito" Style="{StaticResource BotaoCoracao}" Width="22" Height="22" HorizontalAlignment="Left" Margin="28,50,0,0" VerticalAlignment="Top" Click="Favorito_Click" IsEnabled="False" ToolTip="Selecione um Pokémon">
                 <Image x:Name="Icone_Favorito" Source="/View/images/hert-full-vazio.png" Stretch="Uniform"/>
             </ToggleButton>
+            <Button x:Name="Equipar_Party" Content="Por na party" Style="{StaticResource BotaoPokemon}" HorizontalAlignment="Left" Height="30" Margin="42,394,0,0" VerticalAlignment="Top" Width="128" Click="Equipar_Party_Click" IsEnabled="False" ToolTip="Selecione um Pokémon"/>
         </Grid>
     </Viewbox>
 </Page>

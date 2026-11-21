@@ -10,18 +10,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controller\" />
-    <Folder Include="Data\" />
-    <Folder Include="View\images\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Remove="View\Telas - background\*.png" />
     <Resource Include="View\Telas - background\*.png" />
-    <None Remove="View\images\Tipagem\*.png" />
-    <Resource Include="View\images\Tipagem\*.png" />
     <None Remove="View\images\types\*.png" />
     <Resource Include="View\images\types\*.png" />
+    <None Remove="View\images\types\*.jpg" />
+    <Resource Include="View\images\types\*.jpg" />
+    <None Remove="View\images\buttons\*.png" />
+    <Resource Include="View\images\buttons\*.png" />
+    <None Remove="View\images\Pixelmon\*.png" />
+    <Resource Include="View\images\Pixelmon\*.png" />
     <None Remove="View\images\hert-full.png" />
     <Resource Include="View\images\hert-full.png" />
     <None Remove="View\images\hert-full-vazio.png" />
@@ -42,67 +40,36 @@
 
   <ItemGroup>
     <!-- Mantém a árvore frontNormal/frontShiny/mini no diretório de saída. -->
-    <None Remove="View/images/pokemon/**/*.png" />
-    <Resource Remove="View/images/pokemon/**/*.png" />
-    <Content Include="View/images/pokemon/**/*.png"
-             CopyToOutputDirectory="PreserveNewest"
-             CopyToPublishDirectory="PreserveNewest">
-      <TargetPath>View/images/pokemon/%(RecursiveDir)%(Filename)%(Extension)</TargetPath>
+    <None Remove="Data/images/pokemon/**/*.png" />
+    <Resource Remove="Data/images/pokemon/**/*.png" />
+    <Content Include="Data/images/pokemon/**/*.png" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest">
+      <TargetPath>Data/images/pokemon/%(RecursiveDir)%(Filename)%(Extension)</TargetPath>
     </Content>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Data/Persistence/Seed/pokemon-seed.json"
-                      LogicalName="GestaoDePokemon.Data.Persistence.Seed.pokemon-seed.json" />
-    <!-- Estes dois arquivos são gerados por scripts/gerar_seed_moves.py. -->
-    <None Update="Data/Persistence/Seed/abilities-seed.json"
-          CopyToOutputDirectory="PreserveNewest"
-          CopyToPublishDirectory="PreserveNewest" />
-    <None Update="Data/Persistence/Seed/move-catalog-seed.json"
-          CopyToOutputDirectory="PreserveNewest"
-          CopyToPublishDirectory="PreserveNewest" />
-    <None Update="Data/Persistence/Seed/pokemon-learnsets-seed.json"
-          CopyToOutputDirectory="PreserveNewest"
-          CopyToPublishDirectory="PreserveNewest" />
-    <None Update="Data/Persistence/Seed/pokemon-evolutions-seed.json"
-          CopyToOutputDirectory="PreserveNewest"
-          CopyToPublishDirectory="PreserveNewest" />
-  </ItemGroup>
-
-
-  <ItemGroup>
-    <None Update="Data/Persistence/Seed/kyurem-forms-seed.json"
-          CopyToOutputDirectory="PreserveNewest"
-          CopyToPublishDirectory="PreserveNewest" />
+    <EmbeddedResource Include="Data/Persistence/Seed/pokemon-seed.json" LogicalName="GestaoDePokemon.Data.Persistence.Seed.pokemon-seed.json" />
+    <None Update="Data/Persistence/Seed/abilities-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Update="Data/Persistence/Seed/move-catalog-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Update="Data/Persistence/Seed/pokemon-learnsets-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Update="Data/Persistence/Seed/pokemon-evolutions-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Update="Data/Persistence/Seed/rotas-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Data/Persistence/Seed/generation-vi-forms-seed.json"
-          CopyToOutputDirectory="PreserveNewest"
-          CopyToPublishDirectory="PreserveNewest" />
-    <None Update="Data/Persistence/Seed/generation-vi-megas-seed.json"
-          CopyToOutputDirectory="PreserveNewest"
-          CopyToPublishDirectory="PreserveNewest" />
-    <None Update="Data/Persistence/Seed/pokemon-mega-evolutions-seed.json"
-          CopyToOutputDirectory="PreserveNewest"
-          CopyToPublishDirectory="PreserveNewest" />
-    <None Update="Data/Persistence/Seed/generation-vii-ix-forms-seed.json"
-          CopyToOutputDirectory="PreserveNewest"
-          CopyToPublishDirectory="PreserveNewest" />
-    <None Update="Data/Persistence/Seed/generation-ix-megas-seed.json"
-          CopyToOutputDirectory="PreserveNewest"
-          CopyToPublishDirectory="PreserveNewest" />
-    <None Update="Data/Persistence/Seed/generation-vii-ix-learnsets-seed.json"
-          CopyToOutputDirectory="PreserveNewest"
-          CopyToPublishDirectory="PreserveNewest" />
-    <None Update="Data/Persistence/Seed/pokemon-evolution-forms-seed.json"
-          CopyToOutputDirectory="PreserveNewest"
-          CopyToPublishDirectory="PreserveNewest" />
-    <None Update="Data/Persistence/Seed/generation-i-v-forms-seed.json"
-          CopyToOutputDirectory="PreserveNewest"
-          CopyToPublishDirectory="PreserveNewest" />
-    <None Update="Data/Persistence/Seed/pokemon-measurements-seed.json"
-          CopyToOutputDirectory="PreserveNewest"
-          CopyToPublishDirectory="PreserveNewest" />
+    <None Update="Data/Persistence/Seed/generation-i-v-forms-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Update="Data/Persistence/Seed/pokemon-measurements-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Formas, Mega Evoluções e golpes das gerações IV a IX (todas as regiões). -->
+    <None Update="Data/Persistence/Seed/kyurem-forms-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Update="Data/Persistence/Seed/generation-vi-forms-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Update="Data/Persistence/Seed/generation-vi-megas-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Update="Data/Persistence/Seed/pokemon-mega-evolutions-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Update="Data/Persistence/Seed/generation-vii-ix-forms-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Update="Data/Persistence/Seed/generation-ix-megas-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Update="Data/Persistence/Seed/generation-vii-ix-learnsets-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Update="Data/Persistence/Seed/pokemon-evolution-forms-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
   </ItemGroup>
 </Project>

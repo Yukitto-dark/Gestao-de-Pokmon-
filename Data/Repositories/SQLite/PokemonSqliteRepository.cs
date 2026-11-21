@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Linq.Expressions;
 using GestaoDePokemon.Data.Filters;
 using GestaoDePokemon.Data.Persistence;
 using GestaoDePokemon.Data.Repositories.Contracts;
@@ -12,149 +13,112 @@ namespace GestaoDePokemon.Data.Repositories.SQLite;
 
 public sealed class PokemonSqliteRepository : IPokemonRepository
 {
-    public int Total
-    {
-        get
-        {
-            using var db = new AppDbContext();
-            return db.Pokemons.AsNoTracking().Count();
-        }
-    }
-
     public Pokemon? Obter(int id)
     {
         using var db = new AppDbContext();
 
+        // Consulta dividida: várias coleções incluídas em uma única consulta multiplicariam as linhas
+        // (formas x sprites x golpes x habilidades), e os learnsets de todos os jogos são grandes.
         return db.Pokemons
             .AsNoTracking()
+            .AsSplitQuery()
+            .Include(pokemon => pokemon.OriginRegion)
             .Include(pokemon => pokemon.Forms)
                 .ThenInclude(form => form.Sprites)
+            .Include(pokemon => pokemon.Forms)
+                .ThenInclude(form => form.Learnset)
+                    .ThenInclude(learnable => learnable.Move)
+            .Include(pokemon => pokemon.Forms)
+                .ThenInclude(form => form.Abilities)
+                    .ThenInclude(habilidade => habilidade.Ability)
+            .Include(pokemon => pokemon.Forms)
+                .ThenInclude(form => form.MegaEvolutions)
+                    .ThenInclude(mega => mega.MegaForm)
+                        .ThenInclude(form => form.Sprites)
+            .Include(pokemon => pokemon.Evolutions)
+                .ThenInclude(evolucao => evolucao.ToPokemon)
+                    .ThenInclude(pokemon => pokemon.Forms)
+                        .ThenInclude(form => form.Sprites)
+            .Include(pokemon => pokemon.PreEvolutions)
+                .ThenInclude(evolucao => evolucao.FromPokemon)
+                    .ThenInclude(pokemon => pokemon.Forms)
+                        .ThenInclude(form => form.Sprites)
             .SingleOrDefault(pokemon => pokemon.NationalDexNumber == id);
     }
 
-    public IReadOnlyList<int> ObterIds(int pagina, int tamanho) =>
-        ObterIds(new PokemonFilter(), pagina, tamanho);
-
-    public int Contar(PokemonFilter filtro)
+    public IReadOnlyList<Pokemon> ObterLinhaEvolutiva(int id)
     {
-        ArgumentNullException.ThrowIfNull(filtro);
-
         using var db = new AppDbContext();
 
-        IQueryable<Pokemon> consulta =
-            AplicarFiltrosEscalaveis(db, filtro);
+        if (!db.Pokemons.AsNoTracking().Any(pokemon => pokemon.NationalDexNumber == id))
+            return Array.Empty<Pokemon>();
 
-        PokemonType[] tipos = filtro.Types.Distinct().ToArray();
+        // Percorre só os pares (origem, destino); as espécies são carregadas no fim, com as formas.
+        var relacoes = db.Evolutions
+            .AsNoTracking()
+            .Select(evolucao => new
+            {
+                De = evolucao.FromPokemon.NationalDexNumber,
+                Para = evolucao.ToPokemon.NationalDexNumber
+            })
+            .ToList();
 
-        if (tipos.Length == 0)
-            return consulta.Count();
+        var visitados = new HashSet<int> { id };
+        var fila = new Queue<int>();
+        fila.Enqueue(id);
 
-        return FiltrarPorTipos(consulta, tipos).Count;
-    }
-
-    public IReadOnlyList<int> ObterIds(
-        PokemonFilter filtro,
-        int pagina,
-        int tamanho)
-    {
-        ArgumentNullException.ThrowIfNull(filtro);
-
-        if (pagina < 1 || tamanho < 1)
-            return Array.Empty<int>();
-
-        int deslocamento;
-
-        try
+        while (fila.Count > 0)
         {
-            deslocamento = checked((pagina - 1) * tamanho);
-        }
-        catch (OverflowException)
-        {
-            return Array.Empty<int>();
-        }
+            int atual = fila.Dequeue();
 
-        using var db = new AppDbContext();
+            foreach (var relacao in relacoes)
+            {
+                if (relacao.De == atual && visitados.Add(relacao.Para))
+                    fila.Enqueue(relacao.Para);
 
-        IQueryable<Pokemon> consulta =
-            AplicarFiltrosEscalaveis(db, filtro);
-
-        PokemonType[] tipos = filtro.Types.Distinct().ToArray();
-
-        if (tipos.Length == 0)
-        {
-            return consulta
-                .OrderBy(pokemon => pokemon.NationalDexNumber)
-                .Skip(deslocamento)
-                .Take(tamanho)
-                .Select(pokemon => pokemon.NationalDexNumber)
-                .ToList();
+                if (relacao.Para == atual && visitados.Add(relacao.De))
+                    fila.Enqueue(relacao.De);
+            }
         }
 
-        return FiltrarPorTipos(consulta, tipos)
+        int[] numeros = visitados.ToArray();
+
+        return db.Pokemons
+            .AsNoTracking()
+            .AsSplitQuery()
+            .Include(pokemon => pokemon.Forms)
+                .ThenInclude(form => form.Sprites)
+            .Where(pokemon => numeros.Contains(pokemon.NationalDexNumber))
             .OrderBy(pokemon => pokemon.NationalDexNumber)
-            .Skip(deslocamento)
-            .Take(tamanho)
-            .Select(pokemon => pokemon.NationalDexNumber)
             .ToList();
     }
 
-    /// <summary>
-    /// Conta as células da Box: uma por forma. Os filtros de número, nome, região e favoritos valem para a
-    /// espécie (todas as formas dela entram ou saem juntas); o filtro de tipos vale para cada forma.
-    /// </summary>
-    public int ContarEntradas(PokemonFilter filtro)
+    public IReadOnlyList<PokemonBoxEntry> ObterEntradas(PokemonFilter filtro)
     {
         ArgumentNullException.ThrowIfNull(filtro);
 
         using var db = new AppDbContext();
 
-        IQueryable<PokemonForm> formas = FormasDasEspecies(db, filtro);
-        PokemonType[] tipos = filtro.Types.Distinct().ToArray();
+        // Filtros por espécie (número, nome, região e favoritos) rodam no SQL; todas as formas
+        // da espécie entram ou saem juntas.
+        IQueryable<PokemonForm> formas = AplicarFiltrosEscalaveis(db, filtro)
+            .SelectMany(pokemon => pokemon.Forms);
 
-        if (tipos.Length == 0)
-            return formas.Count();
-
-        return FiltrarEntradasPorTipos(formas, tipos).Count;
-    }
-
-    /// <summary>
-    /// Página da Box em ordem de Pokédex: cada espécie, a forma "Normal" primeiro e depois todas as outras
-    /// formas dela (ordem de cadastro), sem exceção.
-    /// </summary>
-    public IReadOnlyList<PokemonBoxEntry> ObterEntradas(
-        PokemonFilter filtro,
-        int pagina,
-        int tamanho)
-    {
-        ArgumentNullException.ThrowIfNull(filtro);
-
-        if (pagina < 1 || tamanho < 1)
-            return Array.Empty<PokemonBoxEntry>();
-
-        int deslocamento;
-
-        try
+        // O filtro de time vale para a forma: só aparecem as formas que estão no time.
+        if (filtro.OnlyParty)
         {
-            deslocamento = checked((pagina - 1) * tamanho);
-        }
-        catch (OverflowException)
-        {
-            return Array.Empty<PokemonBoxEntry>();
+            formas = formas.Where(
+                form => db.Party.Any(member => member.PokemonFormId == form.Id));
         }
 
-        using var db = new AppDbContext();
+        IOrderedQueryable<PokemonForm> ordenadas = formas
+            .OrderBy(form => form.Pokemon.NationalDexNumber)
+            .ThenBy(form => form.FormName == "Normal" ? 0 : 1)
+            .ThenBy(form => form.Id);
 
-        IQueryable<PokemonForm> formas = FormasDasEspecies(db, filtro);
-        PokemonType[] tipos = filtro.Types.Distinct().ToArray();
-
-        if (tipos.Length == 0)
+        if (!RequerDetalhes(filtro))
         {
-            return formas
-                .OrderBy(form => form.Pokemon.NationalDexNumber)
-                .ThenBy(form => form.FormName == "Normal" ? 0 : 1)
-                .ThenBy(form => form.Id)
-                .Skip(deslocamento)
-                .Take(tamanho)
+            return ordenadas
                 .Select(form => new PokemonBoxEntry(
                     form.Id,
                     form.Pokemon.NationalDexNumber,
@@ -163,49 +127,81 @@ public sealed class PokemonSqliteRepository : IPokemonRepository
                 .ToList();
         }
 
-        return FiltrarEntradasPorTipos(formas, tipos)
-            .Skip(deslocamento)
-            .Take(tamanho)
+        // Tipos (campo JSON), habilidades e formas alternativas são avaliados em memória.
+        List<PokemonForm> candidatas = ordenadas
+            .Include(form => form.Pokemon)
+            .Include(form => form.Abilities)
+                .ThenInclude(formAbility => formAbility.Ability)
+            .AsSplitQuery()
             .ToList();
-    }
 
-    // Todas as formas das espécies que passam nos filtros de espécie (os mesmos usados na lista por espécie).
-    private static IQueryable<PokemonForm> FormasDasEspecies(
-        AppDbContext db,
-        PokemonFilter filtro)
-    {
-        return AplicarFiltrosEscalaveis(db, filtro)
-            .SelectMany(pokemon => pokemon.Forms);
-    }
+        HashSet<int> especiesComFormas = filtro.HasAlternateForms.HasValue
+            ? EspeciesComFormasAlternativas(db, candidatas.Select(form => form.PokemonId).Distinct().ToArray())
+            : new HashSet<int>();
 
-    // Os tipos ficam em um campo JSON da forma e não são traduzidos para SQL: o filtro roda em memória
-    // (são no máximo algumas centenas de formas), já na ordem final da Box.
-    private static List<PokemonBoxEntry> FiltrarEntradasPorTipos(
-        IQueryable<PokemonForm> formas,
-        IReadOnlyCollection<PokemonType> tipos)
-    {
-        PokemonType[] tiposSelecionados = tipos.ToArray();
-
-        return formas
-            .OrderBy(form => form.Pokemon.NationalDexNumber)
-            .ThenBy(form => form.FormName == "Normal" ? 0 : 1)
-            .ThenBy(form => form.Id)
-            .Select(form => new
-            {
-                Forma = form,
+        return candidatas
+            .Where(form => Corresponde(form, filtro, especiesComFormas))
+            .Select(form => new PokemonBoxEntry(
+                form.Id,
                 form.Pokemon.NationalDexNumber,
-                form.Pokemon.Name
-            })
-            .ToList()
-            .Where(item => tiposSelecionados.All(
-                tipo => item.Forma.Types.Contains(tipo)))
-            .Select(item => new PokemonBoxEntry(
-                item.Forma.Id,
-                item.NationalDexNumber,
-                item.Name,
-                item.Forma.FormName))
+                form.Pokemon.Name,
+                form.FormName))
             .ToList();
     }
+
+    public IReadOnlyList<string> ObterHabilidades()
+    {
+        using var db = new AppDbContext();
+
+        return db.Abilities
+            .AsNoTracking()
+            .OrderBy(ability => ability.Name)
+            .Select(ability => ability.Name)
+            .ToList();
+    }
+
+    private static bool RequerDetalhes(PokemonFilter filtro) =>
+        filtro.Types.Count > 0 ||
+        filtro.AbilityName is not null ||
+        filtro.HasAlternateForms.HasValue;
+
+    // Os filtros de tipo e habilidade valem para cada forma (uma forma de Alola pode ter outro tipo).
+    private static bool Corresponde(
+        PokemonForm form,
+        PokemonFilter filtro,
+        HashSet<int> especiesComFormas)
+    {
+        PokemonType[] tipos = filtro.Types.Distinct().ToArray();
+
+        if (tipos.Length > 0 && !tipos.All(tipo => form.Types.Contains(tipo)))
+            return false;
+
+        if (filtro.AbilityName is string nome &&
+            !form.Abilities.Any(formAbility =>
+                string.Equals(
+                    formAbility.Ability.Name,
+                    nome,
+                    StringComparison.OrdinalIgnoreCase)))
+            return false;
+
+        if (filtro.HasAlternateForms is bool comFormas &&
+            especiesComFormas.Contains(form.PokemonId) != comFormas)
+            return false;
+
+        return true;
+    }
+
+    // Espécies que possuem alguma forma alternativa que não seja Mega Evolução.
+    private static HashSet<int> EspeciesComFormasAlternativas(AppDbContext db, int[] especies) =>
+        db.PokemonForms
+            .AsNoTracking()
+            .Where(form => especies.Contains(form.PokemonId)
+                           && form.FormName != "Normal"
+                           && !db.MegaEvolutions.Any(mega => mega.MegaFormId == form.Id))
+            .Select(form => form.PokemonId)
+            .Distinct()
+            .AsEnumerable()
+            .ToHashSet();
 
     private static IQueryable<Pokemon> AplicarFiltrosEscalaveis(
         AppDbContext db,
@@ -249,95 +245,71 @@ public sealed class PokemonSqliteRepository : IPokemonRepository
         return consulta;
     }
 
-    private static List<Pokemon> FiltrarPorTipos(
-        IQueryable<Pokemon> consulta,
-        IReadOnlyCollection<PokemonType> tipos)
-    {
-        PokemonType[] tiposSelecionados = tipos.ToArray();
+    public string? ObterSpriteUrl(int id, bool shiny = false) => ObterSpriteUri(
+        sprite => sprite.PokemonForm.Pokemon.NationalDexNumber == id,
+        sprite => shiny
+            ? (sprite.BoxShiny ?? sprite.BoxDefault ??
+               sprite.ExhibitionShiny ?? sprite.ExhibitionDefault)
+            : (sprite.BoxDefault ?? sprite.ExhibitionDefault));
 
-        return consulta
-            .Include(pokemon => pokemon.Forms)
-            .OrderBy(pokemon => pokemon.NationalDexNumber)
-            .ToList()
-            .Where(pokemon => pokemon.Forms.Any(form =>
-                tiposSelecionados.All(
-                    tipo => form.Types.Contains(tipo))))
-            .ToList();
+    public string? ObterSpriteDetalheUrl(int id, bool shiny) => ObterSpriteUri(
+        sprite => sprite.PokemonForm.Pokemon.NationalDexNumber == id,
+        sprite => shiny
+            ? (sprite.ExhibitionShiny ?? sprite.ExhibitionDefault)
+            : (sprite.ExhibitionDefault ?? sprite.BoxDefault));
+
+    public string? ObterSpriteFormaUrl(int formId, bool shiny = false)
+    {
+        string? url = ObterSpriteUri(
+            sprite => sprite.PokemonFormId == formId,
+            sprite => shiny
+                ? (sprite.BoxShiny ?? sprite.BoxDefault ??
+                   sprite.ExhibitionShiny ?? sprite.ExhibitionDefault)
+                : (sprite.BoxDefault ?? sprite.ExhibitionDefault));
+
+        // Forma sem arquivo de sprite próprio: usa o ícone da espécie.
+        return url ?? ObterSpriteDaEspecieDaForma(formId, id => ObterSpriteUrl(id, shiny));
     }
 
-    public string? ObterSpriteUrl(int id)
+    public string? ObterSpriteDetalheFormaUrl(int formId, bool shiny)
+    {
+        string? url = ObterSpriteUri(
+            sprite => sprite.PokemonFormId == formId,
+            sprite => shiny
+                ? (sprite.ExhibitionShiny ?? sprite.ExhibitionDefault)
+                : (sprite.ExhibitionDefault ?? sprite.BoxDefault));
+
+        return url ?? ObterSpriteDaEspecieDaForma(formId, id => ObterSpriteDetalheUrl(id, shiny));
+    }
+
+    private static string? ObterSpriteDaEspecieDaForma(int formId, Func<int, string?> obter)
+    {
+        using var db = new AppDbContext();
+
+        int? numero = db.PokemonForms
+            .AsNoTracking()
+            .Where(form => form.Id == formId)
+            .Select(form => (int?)form.Pokemon.NationalDexNumber)
+            .FirstOrDefault();
+
+        return numero is int id ? obter(id) : null;
+    }
+
+    private static string? ObterSpriteUri(
+        Expression<Func<PokemonSprite, bool>> filtro,
+        Expression<Func<PokemonSprite, string?>> selecao)
     {
         using var db = new AppDbContext();
 
         string? relativePath = db.Sprites
             .AsNoTracking()
-            .Where(sprite =>
-                sprite.PokemonForm.Pokemon.NationalDexNumber == id)
+            .Where(filtro)
             .OrderBy(sprite => sprite.Gender == null ? 0 : 1)
             .ThenBy(sprite => sprite.Id)
-            .Select(sprite =>
-                sprite.BoxDefault ?? sprite.ExhibitionDefault)
+            .Select(selecao)
             .FirstOrDefault();
 
         return ResolveAssetUri(relativePath);
-    }
-
-    public string? ObterSpriteDetalheUrl(int id, bool shiny)
-    {
-        using var db = new AppDbContext();
-
-        string? relativePath = db.Sprites
-            .AsNoTracking()
-            .Where(sprite =>
-                sprite.PokemonForm.Pokemon.NationalDexNumber == id)
-            .OrderBy(sprite => sprite.Gender == null ? 0 : 1)
-            .ThenBy(sprite => sprite.Id)
-            .Select(sprite => shiny
-                ? (sprite.ExhibitionShiny ?? sprite.ExhibitionDefault)
-                : (sprite.ExhibitionDefault ?? sprite.BoxDefault))
-            .FirstOrDefault();
-
-        return ResolveAssetUri(relativePath);
-    }
-
-    public string? ObterSpriteUrl(PokemonBoxEntry entrada)
-    {
-        ArgumentNullException.ThrowIfNull(entrada);
-
-        using var db = new AppDbContext();
-
-        string? relativePath = db.Sprites
-            .AsNoTracking()
-            .Where(sprite => sprite.PokemonFormId == entrada.FormId)
-            .OrderBy(sprite => sprite.Gender == null ? 0 : 1)
-            .ThenBy(sprite => sprite.Id)
-            .Select(sprite =>
-                sprite.BoxDefault ?? sprite.ExhibitionDefault)
-            .FirstOrDefault();
-
-        // Forma sem arquivo de sprite próprio: a célula continua aparecendo, com o sprite da espécie.
-        return ResolveAssetUri(relativePath)
-            ?? ObterSpriteUrl(entrada.NationalDexNumber);
-    }
-
-    public string? ObterSpriteDetalheUrl(PokemonBoxEntry entrada, bool shiny)
-    {
-        ArgumentNullException.ThrowIfNull(entrada);
-
-        using var db = new AppDbContext();
-
-        string? relativePath = db.Sprites
-            .AsNoTracking()
-            .Where(sprite => sprite.PokemonFormId == entrada.FormId)
-            .OrderBy(sprite => sprite.Gender == null ? 0 : 1)
-            .ThenBy(sprite => sprite.Id)
-            .Select(sprite => shiny
-                ? (sprite.ExhibitionShiny ?? sprite.ExhibitionDefault)
-                : (sprite.ExhibitionDefault ?? sprite.BoxDefault))
-            .FirstOrDefault();
-
-        return ResolveAssetUri(relativePath)
-            ?? ObterSpriteDetalheUrl(entrada.NationalDexNumber, shiny);
     }
 
     private static string? ResolveAssetUri(string? relativePath)

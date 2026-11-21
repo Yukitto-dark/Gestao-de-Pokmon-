@@ -18,6 +18,7 @@ public sealed class AppDbContext : DbContext
 {
     private static readonly JsonSerializerOptions JsonOptions = new()
     {
+        PropertyNameCaseInsensitive = true,
         Converters = { new JsonStringEnumConverter() }
     };
 
@@ -30,9 +31,12 @@ public sealed class AppDbContext : DbContext
     public DbSet<PokemonSprite> Sprites => Set<PokemonSprite>();
     public DbSet<PokemonEvolution> Evolutions => Set<PokemonEvolution>();
     public DbSet<Region> Regions => Set<Region>();
-    public DbSet<PokemonTeam> Teams => Set<PokemonTeam>();
-    public DbSet<PokemonBuild> Builds => Set<PokemonBuild>();
+    public DbSet<Route> Routes => Set<Route>();
+    public DbSet<RouteArea> RouteAreas => Set<RouteArea>();
+    public DbSet<RoutePokemonEncounter> RoutePokemonEncounters =>
+        Set<RoutePokemonEncounter>();
     public DbSet<PokemonFavorite> Favorites => Set<PokemonFavorite>();
+    public DbSet<PokemonPartyMember> Party => Set<PokemonPartyMember>();
     public DbSet<PokemonMegaEvolution> MegaEvolutions
     => Set<PokemonMegaEvolution>();
 
@@ -57,8 +61,9 @@ public sealed class AppDbContext : DbContext
         ConfigureAbilities(modelBuilder);
         ConfigureEvolutions(modelBuilder);
         ConfigureRegions(modelBuilder);
-        ConfigureTeams(modelBuilder);
+        ConfigureRoutes(modelBuilder);
         ConfigureFavorites(modelBuilder);
+        ConfigureParty(modelBuilder);
         ConfigureMegaEvolutions(modelBuilder);
     }
 
@@ -80,6 +85,11 @@ public sealed class AppDbContext : DbContext
             .WithOne(form => form.Pokemon)
             .HasForeignKey(form => form.PokemonId)
             .OnDelete(DeleteBehavior.Cascade);
+
+        pokemon.HasMany(p => p.RouteEncounters)
+            .WithOne(encounter => encounter.Pokemon)
+            .HasForeignKey(encounter => encounter.PokemonId)
+            .OnDelete(DeleteBehavior.Restrict);
 
         pokemon.HasMany(p => p.Evolutions)
             .WithOne(evolution => evolution.FromPokemon)
@@ -232,42 +242,70 @@ public sealed class AppDbContext : DbContext
         region.HasIndex(p => p.Name).IsUnique();
     }
 
-    private static void ConfigureTeams(ModelBuilder modelBuilder)
+    private static void ConfigureRoutes(ModelBuilder modelBuilder)
     {
-        var team = modelBuilder.Entity<PokemonTeam>();
-        team.HasKey(p => p.Id);
-        team.Property(p => p.Name).HasMaxLength(80).IsRequired();
-        team.HasMany(p => p.Members)
-            .WithOne(build => build.Team)
-            .HasForeignKey(build => build.PokemonTeamId)
+        var route = modelBuilder.Entity<Route>();
+        route.ToTable("Routes");
+        route.HasKey(p => p.Id);
+        route.Property(p => p.Name).HasMaxLength(100).IsRequired();
+        route.Property(p => p.PokeApiName).HasMaxLength(100).IsRequired();
+        route.Property(p => p.GameVersions).IsRequired();
+        route.HasIndex(p => new { p.RegionId, p.Number }).IsUnique();
+        route.HasOne(p => p.Region)
+            .WithMany(region => region.Routes)
+            .HasForeignKey(p => p.RegionId)
             .OnDelete(DeleteBehavior.Cascade);
-        team.Navigation(p => p.Members)
-            .HasField("_members")
-            .UsePropertyAccessMode(PropertyAccessMode.Field);
+        route.HasMany(p => p.Areas)
+            .WithOne(area => area.Route)
+            .HasForeignKey(area => area.RouteId)
+            .OnDelete(DeleteBehavior.Cascade);
 
-        var build = modelBuilder.Entity<PokemonBuild>();
-        build.HasKey(p => p.Id);
-        build.Property(p => p.Gender).HasConversion<string>();
-        build.Property(p => p.Nature).HasConversion<string>();
-        build.Property(p => p.AbilitySlot).HasConversion<string>();
-        build.Property(p => p.GameVersion).HasMaxLength(80);
-        build.HasOne(p => p.Species)
-            .WithMany()
-            .HasForeignKey(p => p.SpeciesId)
-            .OnDelete(DeleteBehavior.Restrict);
-        build.HasOne(p => p.Form)
-            .WithMany()
-            .HasForeignKey(p => p.PokemonFormId)
-            .OnDelete(DeleteBehavior.Restrict);
-        build.HasOne(p => p.Ability)
-            .WithMany()
-            .HasForeignKey(p => p.AbilityId)
-            .OnDelete(DeleteBehavior.Restrict);
+        var area = modelBuilder.Entity<RouteArea>();
+        area.ToTable("RouteAreas");
+        area.HasKey(p => p.Id);
+        area.Property(p => p.Name).HasMaxLength(100).IsRequired();
+        area.Property(p => p.PokeApiName).HasMaxLength(100).IsRequired();
+        area.HasIndex(p => new { p.RouteId, p.PokeApiName }).IsUnique();
+        area.HasMany(p => p.Encounters)
+            .WithOne(encounter => encounter.RouteArea)
+            .HasForeignKey(encounter => encounter.RouteAreaId)
+            .OnDelete(DeleteBehavior.Cascade);
 
-        build.Property(p => p.IVs)
+        var encounter = modelBuilder.Entity<RoutePokemonEncounter>();
+        encounter.ToTable("RoutePokemonEncounters");
+        encounter.HasKey(p => p.Id);
+        encounter.Property(p => p.EncounterMethod).HasMaxLength(80).IsRequired();
+        encounter.Property(p => p.GameVersion).HasMaxLength(80).IsRequired();
+        encounter.Property(p => p.ConditionsJson).IsRequired();
+        encounter.HasIndex(p => p.RouteAreaId);
+        encounter.HasIndex(p => p.PokemonId);
+    }
+
+    private static void ConfigureFavorites(ModelBuilder modelBuilder)
+    {
+        var favorite = modelBuilder.Entity<PokemonFavorite>();
+        favorite.HasKey(p => p.Id);
+        favorite.Property(p => p.AddedAt).IsRequired();
+        favorite.Property(p => p.IsShiny).HasDefaultValue(false);
+        favorite.HasOne(p => p.Pokemon)
+            .WithMany()
+            .HasForeignKey(p => p.PokemonId)
+            .OnDelete(DeleteBehavior.Cascade);
+        favorite.HasIndex(p => p.PokemonId).IsUnique();
+    }
+
+    private static void ConfigureParty(ModelBuilder modelBuilder)
+    {
+        var party = modelBuilder.Entity<PokemonPartyMember>();
+        party.ToTable("Party");
+        party.HasKey(p => p.Id);
+        party.Property(p => p.AddedAt).IsRequired();
+        party.Property(p => p.IsShiny).HasDefaultValue(false);
+        party.Property(p => p.Nature).HasConversion<string>();
+        party.Property(p => p.IVs)
             .HasConversion(CreateJsonConverter<IndividualValues>());
-
-        build.OwnsOne(p => p.EVs, owned =>
+        party.Property(p => p.MoveIdsJson).HasMaxLength(500).IsRequired();
+        party.OwnsOne(p => p.EVs, owned =>
         {
             owned.Property(p => p.HP).HasColumnName("EV_HP");
             owned.Property(p => p.Attack).HasColumnName("EV_Attack");
@@ -276,36 +314,21 @@ public sealed class AppDbContext : DbContext
             owned.Property(p => p.SpecialDefense).HasColumnName("EV_SpecialDefense");
             owned.Property(p => p.Speed).HasColumnName("EV_Speed");
         });
-
-        build.HasMany(p => p.Moves)
-            .WithMany()
-            .UsingEntity<Dictionary<string, object>>(
-                "PokemonBuildMove",
-                right => right.HasOne<PokemonMove>()
-                    .WithMany()
-                    .HasForeignKey("MoveId")
-                    .OnDelete(DeleteBehavior.Restrict),
-                left => left.HasOne<PokemonBuild>()
-                    .WithMany()
-                    .HasForeignKey("BuildId")
-                    .OnDelete(DeleteBehavior.Cascade),
-                join => join.HasKey("BuildId", "MoveId"));
-
-        build.Navigation(p => p.Moves)
-            .HasField("_moves")
-            .UsePropertyAccessMode(PropertyAccessMode.Field);
-    }
-
-    private static void ConfigureFavorites(ModelBuilder modelBuilder)
-    {
-        var favorite = modelBuilder.Entity<PokemonFavorite>();
-        favorite.HasKey(p => p.Id);
-        favorite.Property(p => p.AddedAt).IsRequired();
-        favorite.HasOne(p => p.Pokemon)
+        party.HasOne(p => p.Pokemon)
             .WithMany()
             .HasForeignKey(p => p.PokemonId)
             .OnDelete(DeleteBehavior.Cascade);
-        favorite.HasIndex(p => p.PokemonId).IsUnique();
+        party.HasOne(p => p.Form)
+            .WithMany()
+            .HasForeignKey(p => p.PokemonFormId)
+            .OnDelete(DeleteBehavior.Cascade);
+        party.HasOne(p => p.Ability)
+            .WithMany()
+            .HasForeignKey(p => p.AbilityId)
+            .OnDelete(DeleteBehavior.Restrict);
+        // Cada forma entra no time uma vez; formas diferentes da mesma espécie podem coexistir.
+        party.HasIndex(p => p.PokemonId);
+        party.HasIndex(p => p.PokemonFormId).IsUnique();
     }
 
     private static void ConfigureMegaEvolutions(ModelBuilder modelBuilder)

@@ -110,6 +110,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
+
     </Page.Resources>
 
     <Viewbox Stretch="Uniform">
@@ -130,17 +131,13 @@
 
                     <Border Grid.Row="0" Background="#FF141A2B" BorderBrush="#FF51608A" BorderThickness="0,0,0,2" CornerRadius="7,7,0,0">
                         <Grid>
-                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0">
-                                <RadioButton x:Name="Tab_Kanto" Content="Kanto" Tag="Kanto" Style="{StaticResource TabRegiao}"
-                                             Width="150" Height="38" Margin="8,0" GroupName="Regiao" Checked="Regiao_Checked"/>
-                                <RadioButton x:Name="Tab_Johto" Content="Johto" Tag="Johto" Style="{StaticResource TabRegiao}"
-                                             Width="150" Height="38" Margin="8,0" GroupName="Regiao" Checked="Regiao_Checked"/>
-                                <RadioButton x:Name="Tab_Hoenn" Content="Hoenn" Tag="Hoenn" Style="{StaticResource TabRegiao}"
-                                             Width="150" Height="38" Margin="8,0" GroupName="Regiao" Checked="Regiao_Checked"/>
-                            </StackPanel>
+                            <!-- Com mais de quatro regiões as abas ficam compactas, em até duas linhas. -->
+                            <WrapPanel x:Name="Abas_Regioes" Orientation="Horizontal" HorizontalAlignment="Left"
+                                       VerticalAlignment="Center" Margin="8,0,0,0" Width="590"/>
                             <Button x:Name="Voltar__Mapas" Content="Voltar" Style="{StaticResource BotaoRota}"
-                                    Width="100" Height="32" Margin="0,0,12,0" HorizontalAlignment="Right" VerticalAlignment="Center"
-                                    HorizontalContentAlignment="Center" Click="Navegar_Click"/>
+                                    Width="100" Height="32" Margin="0,0,12,0" HorizontalAlignment="Right"
+                                    VerticalAlignment="Center" HorizontalContentAlignment="Center"
+                                    Click="Navegar_Click"/>
                         </Grid>
                     </Border>
 
@@ -174,12 +171,8 @@
 
                                     <TextBlock Text="Informações gerais" FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="17"
                                                Foreground="#FFAEBEE8" Margin="0,0,0,10"/>
-                                    <TextBlock x:Name="Informacoes_Rota" TextWrapping="Wrap" FontSize="15" LineHeight="24"
-                                               Foreground="#FFD6E0FF" Margin="0,0,0,24"/>
-
-                                    <TextBlock Text="Mapa" FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="17"
-                                               Foreground="#FFAEBEE8" Margin="0,0,0,10"/>
-                                    <Image x:Name="Mapa_Rota" Stretch="Uniform" HorizontalAlignment="Stretch"/>
+                                    <TextBlock x:Name="Informacoes_Rota" TextWrapping="Wrap" FontFamily="/View/fonts/#Pokemon Fire Red"
+                                               FontSize="15" LineHeight="24" Foreground="#FFD6E0FF" Margin="0,0,0,24"/>
                                 </StackPanel>
                             </ScrollViewer>
                         </Border>

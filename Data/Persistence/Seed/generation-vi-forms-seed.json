@@ -28,9 +28,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/25/pikachu-rock-star/front.png",
-      "BoxDefault": "View/images/pokemon/forms/25/pikachu-rock-star/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/25/pikachu-rock-star/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/25/pikachu-rock-star/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/25/pikachu-rock-star/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/25/pikachu-rock-star/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -425,9 +425,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/25/pikachu-belle/front.png",
-      "BoxDefault": "View/images/pokemon/forms/25/pikachu-belle/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/25/pikachu-belle/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/25/pikachu-belle/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/25/pikachu-belle/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/25/pikachu-belle/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -822,9 +822,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/25/pikachu-pop-star/front.png",
-      "BoxDefault": "View/images/pokemon/forms/25/pikachu-pop-star/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/25/pikachu-pop-star/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/25/pikachu-pop-star/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/25/pikachu-pop-star/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/25/pikachu-pop-star/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -1219,9 +1219,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/25/pikachu-phd/front.png",
-      "BoxDefault": "View/images/pokemon/forms/25/pikachu-phd/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/25/pikachu-phd/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/25/pikachu-phd/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/25/pikachu-phd/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/25/pikachu-phd/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -1616,9 +1616,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/25/pikachu-libre/front.png",
-      "BoxDefault": "View/images/pokemon/forms/25/pikachu-libre/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/25/pikachu-libre/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/25/pikachu-libre/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/25/pikachu-libre/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/25/pikachu-libre/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -2013,9 +2013,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/25/pikachu-cosplay/front.png",
-      "BoxDefault": "View/images/pokemon/forms/25/pikachu-cosplay/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/25/pikachu-cosplay/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/25/pikachu-cosplay/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/25/pikachu-cosplay/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/25/pikachu-cosplay/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -2404,9 +2404,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/382/kyogre-primal/front.png",
-      "BoxDefault": "View/images/pokemon/forms/382/kyogre-primal/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/382/kyogre-primal/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/382/kyogre-primal/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/382/kyogre-primal/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/382/kyogre-primal/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -2802,9 +2802,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/383/groudon-primal/front.png",
-      "BoxDefault": "View/images/pokemon/forms/383/groudon-primal/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/383/groudon-primal/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/383/groudon-primal/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/383/groudon-primal/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/383/groudon-primal/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -3289,9 +3289,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/493/arceus-fairy/front.png",
-      "BoxDefault": "View/images/pokemon/forms/493/arceus-fairy/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/493/arceus-fairy/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/493/arceus-fairy/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/493/arceus-fairy/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/493/arceus-fairy/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -7665,9 +7665,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/666/vivillon-icy-snow/front.png",
-      "BoxDefault": "View/images/pokemon/forms/666/vivillon-icy-snow/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/666/vivillon-icy-snow/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/666/vivillon-icy-snow/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/666/vivillon-icy-snow/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/666/vivillon-icy-snow/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -8357,9 +8357,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/666/vivillon-polar/front.png",
-      "BoxDefault": "View/images/pokemon/forms/666/vivillon-polar/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/666/vivillon-polar/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/666/vivillon-polar/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/666/vivillon-polar/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/666/vivillon-polar/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -9049,9 +9049,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/666/vivillon-tundra/front.png",
-      "BoxDefault": "View/images/pokemon/forms/666/vivillon-tundra/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/666/vivillon-tundra/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/666/vivillon-tundra/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/666/vivillon-tundra/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/666/vivillon-tundra/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -9741,9 +9741,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/666/vivillon-continental/front.png",
-      "BoxDefault": "View/images/pokemon/forms/666/vivillon-continental/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/666/vivillon-continental/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/666/vivillon-continental/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/666/vivillon-continental/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/666/vivillon-continental/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -10433,9 +10433,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/666/vivillon-garden/front.png",
-      "BoxDefault": "View/images/pokemon/forms/666/vivillon-garden/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/666/vivillon-garden/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/666/vivillon-garden/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/666/vivillon-garden/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/666/vivillon-garden/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -11125,9 +11125,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/666/vivillon-elegant/front.png",
-      "BoxDefault": "View/images/pokemon/forms/666/vivillon-elegant/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/666/vivillon-elegant/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/666/vivillon-elegant/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/666/vivillon-elegant/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/666/vivillon-elegant/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -11817,9 +11817,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/666/vivillon-modern/front.png",
-      "BoxDefault": "View/images/pokemon/forms/666/vivillon-modern/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/666/vivillon-modern/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/666/vivillon-modern/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/666/vivillon-modern/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/666/vivillon-modern/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -12509,9 +12509,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/666/vivillon-marine/front.png",
-      "BoxDefault": "View/images/pokemon/forms/666/vivillon-marine/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/666/vivillon-marine/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/666/vivillon-marine/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/666/vivillon-marine/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/666/vivillon-marine/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -13201,9 +13201,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/666/vivillon-archipelago/front.png",
-      "BoxDefault": "View/images/pokemon/forms/666/vivillon-archipelago/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/666/vivillon-archipelago/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/666/vivillon-archipelago/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/666/vivillon-archipelago/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/666/vivillon-archipelago/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -13893,9 +13893,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/666/vivillon-high-plains/front.png",
-      "BoxDefault": "View/images/pokemon/forms/666/vivillon-high-plains/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/666/vivillon-high-plains/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/666/vivillon-high-plains/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/666/vivillon-high-plains/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/666/vivillon-high-plains/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -14585,9 +14585,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/666/vivillon-sandstorm/front.png",
-      "BoxDefault": "View/images/pokemon/forms/666/vivillon-sandstorm/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/666/vivillon-sandstorm/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/666/vivillon-sandstorm/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/666/vivillon-sandstorm/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/666/vivillon-sandstorm/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -15277,9 +15277,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/666/vivillon-river/front.png",
-      "BoxDefault": "View/images/pokemon/forms/666/vivillon-river/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/666/vivillon-river/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/666/vivillon-river/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/666/vivillon-river/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/666/vivillon-river/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -15969,9 +15969,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/666/vivillon-monsoon/front.png",
-      "BoxDefault": "View/images/pokemon/forms/666/vivillon-monsoon/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/666/vivillon-monsoon/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/666/vivillon-monsoon/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/666/vivillon-monsoon/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/666/vivillon-monsoon/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -16661,9 +16661,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/666/vivillon-savanna/front.png",
-      "BoxDefault": "View/images/pokemon/forms/666/vivillon-savanna/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/666/vivillon-savanna/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/666/vivillon-savanna/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/666/vivillon-savanna/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/666/vivillon-savanna/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -17353,9 +17353,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/666/vivillon-sun/front.png",
-      "BoxDefault": "View/images/pokemon/forms/666/vivillon-sun/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/666/vivillon-sun/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/666/vivillon-sun/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/666/vivillon-sun/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/666/vivillon-sun/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -18045,9 +18045,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/666/vivillon-ocean/front.png",
-      "BoxDefault": "View/images/pokemon/forms/666/vivillon-ocean/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/666/vivillon-ocean/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/666/vivillon-ocean/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/666/vivillon-ocean/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/666/vivillon-ocean/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -18737,9 +18737,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/666/vivillon-jungle/front.png",
-      "BoxDefault": "View/images/pokemon/forms/666/vivillon-jungle/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/666/vivillon-jungle/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/666/vivillon-jungle/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/666/vivillon-jungle/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/666/vivillon-jungle/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -19429,9 +19429,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/666/vivillon-fancy/front.png",
-      "BoxDefault": "View/images/pokemon/forms/666/vivillon-fancy/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/666/vivillon-fancy/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/666/vivillon-fancy/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/666/vivillon-fancy/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/666/vivillon-fancy/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -20121,9 +20121,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/666/vivillon-poke-ball/front.png",
-      "BoxDefault": "View/images/pokemon/forms/666/vivillon-poke-ball/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/666/vivillon-poke-ball/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/666/vivillon-poke-ball/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/666/vivillon-poke-ball/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/666/vivillon-poke-ball/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -20806,9 +20806,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/669/flabebe-yellow/front.png",
-      "BoxDefault": "View/images/pokemon/forms/669/flabebe-yellow/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/669/flabebe-yellow/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/669/flabebe-yellow/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/669/flabebe-yellow/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/669/flabebe-yellow/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -21431,9 +21431,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/669/flabebe-orange/front.png",
-      "BoxDefault": "View/images/pokemon/forms/669/flabebe-orange/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/669/flabebe-orange/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/669/flabebe-orange/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/669/flabebe-orange/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/669/flabebe-orange/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -22056,9 +22056,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/669/flabebe-blue/front.png",
-      "BoxDefault": "View/images/pokemon/forms/669/flabebe-blue/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/669/flabebe-blue/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/669/flabebe-blue/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/669/flabebe-blue/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/669/flabebe-blue/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -22681,9 +22681,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/669/flabebe-white/front.png",
-      "BoxDefault": "View/images/pokemon/forms/669/flabebe-white/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/669/flabebe-white/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/669/flabebe-white/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/669/flabebe-white/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/669/flabebe-white/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -23306,9 +23306,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/670/floette-yellow/front.png",
-      "BoxDefault": "View/images/pokemon/forms/670/floette-yellow/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/670/floette-yellow/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/670/floette-yellow/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/670/floette-yellow/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/670/floette-yellow/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -23895,9 +23895,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/670/floette-orange/front.png",
-      "BoxDefault": "View/images/pokemon/forms/670/floette-orange/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/670/floette-orange/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/670/floette-orange/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/670/floette-orange/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/670/floette-orange/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -24484,9 +24484,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/670/floette-blue/front.png",
-      "BoxDefault": "View/images/pokemon/forms/670/floette-blue/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/670/floette-blue/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/670/floette-blue/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/670/floette-blue/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/670/floette-blue/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -25073,9 +25073,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/670/floette-white/front.png",
-      "BoxDefault": "View/images/pokemon/forms/670/floette-white/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/670/floette-white/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/670/floette-white/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/670/floette-white/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/670/floette-white/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -25662,9 +25662,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/670/floette-eternal/front.png",
-      "BoxDefault": "View/images/pokemon/forms/670/floette-eternal/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/670/floette-eternal/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/670/floette-eternal/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/670/floette-eternal/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/670/floette-eternal/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -26263,9 +26263,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/671/florges-yellow/front.png",
-      "BoxDefault": "View/images/pokemon/forms/671/florges-yellow/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/671/florges-yellow/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/671/florges-yellow/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/671/florges-yellow/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/671/florges-yellow/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -26864,9 +26864,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/671/florges-orange/front.png",
-      "BoxDefault": "View/images/pokemon/forms/671/florges-orange/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/671/florges-orange/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/671/florges-orange/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/671/florges-orange/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/671/florges-orange/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -27465,9 +27465,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/671/florges-blue/front.png",
-      "BoxDefault": "View/images/pokemon/forms/671/florges-blue/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/671/florges-blue/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/671/florges-blue/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/671/florges-blue/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/671/florges-blue/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -28066,9 +28066,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/671/florges-white/front.png",
-      "BoxDefault": "View/images/pokemon/forms/671/florges-white/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/671/florges-white/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/671/florges-white/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/671/florges-white/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/671/florges-white/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -28661,9 +28661,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/676/furfrou-heart/front.png",
-      "BoxDefault": "View/images/pokemon/forms/676/furfrou-heart/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/676/furfrou-heart/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/676/furfrou-heart/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/676/furfrou-heart/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/676/furfrou-heart/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -29340,9 +29340,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/676/furfrou-star/front.png",
-      "BoxDefault": "View/images/pokemon/forms/676/furfrou-star/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/676/furfrou-star/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/676/furfrou-star/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/676/furfrou-star/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/676/furfrou-star/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -30019,9 +30019,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/676/furfrou-diamond/front.png",
-      "BoxDefault": "View/images/pokemon/forms/676/furfrou-diamond/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/676/furfrou-diamond/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/676/furfrou-diamond/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/676/furfrou-diamond/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/676/furfrou-diamond/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -30698,9 +30698,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/676/furfrou-debutante/front.png",
-      "BoxDefault": "View/images/pokemon/forms/676/furfrou-debutante/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/676/furfrou-debutante/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/676/furfrou-debutante/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/676/furfrou-debutante/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/676/furfrou-debutante/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -31377,9 +31377,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/676/furfrou-matron/front.png",
-      "BoxDefault": "View/images/pokemon/forms/676/furfrou-matron/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/676/furfrou-matron/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/676/furfrou-matron/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/676/furfrou-matron/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/676/furfrou-matron/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -32056,9 +32056,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/676/furfrou-dandy/front.png",
-      "BoxDefault": "View/images/pokemon/forms/676/furfrou-dandy/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/676/furfrou-dandy/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/676/furfrou-dandy/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/676/furfrou-dandy/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/676/furfrou-dandy/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -32735,9 +32735,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/676/furfrou-la-reine/front.png",
-      "BoxDefault": "View/images/pokemon/forms/676/furfrou-la-reine/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/676/furfrou-la-reine/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/676/furfrou-la-reine/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/676/furfrou-la-reine/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/676/furfrou-la-reine/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -33414,9 +33414,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/676/furfrou-kabuki/front.png",
-      "BoxDefault": "View/images/pokemon/forms/676/furfrou-kabuki/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/676/furfrou-kabuki/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/676/furfrou-kabuki/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/676/furfrou-kabuki/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/676/furfrou-kabuki/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -34093,9 +34093,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/676/furfrou-pharaoh/front.png",
-      "BoxDefault": "View/images/pokemon/forms/676/furfrou-pharaoh/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/676/furfrou-pharaoh/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/676/furfrou-pharaoh/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/676/furfrou-pharaoh/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/676/furfrou-pharaoh/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -34784,9 +34784,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/678/meowstic-female/front.png",
-      "BoxDefault": "View/images/pokemon/forms/678/meowstic-female/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/678/meowstic-female/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/678/meowstic-female/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/678/meowstic-female/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/678/meowstic-female/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -35644,9 +35644,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/681/aegislash-blade/front.png",
-      "BoxDefault": "View/images/pokemon/forms/681/aegislash-blade/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/681/aegislash-blade/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/681/aegislash-blade/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/681/aegislash-blade/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/681/aegislash-blade/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -36282,9 +36282,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/710/pumpkaboo-small/front.png",
-      "BoxDefault": "View/images/pokemon/forms/710/pumpkaboo-small/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/710/pumpkaboo-small/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/710/pumpkaboo-small/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/710/pumpkaboo-small/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/710/pumpkaboo-small/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -37082,9 +37082,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/710/pumpkaboo-large/front.png",
-      "BoxDefault": "View/images/pokemon/forms/710/pumpkaboo-large/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/710/pumpkaboo-large/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/710/pumpkaboo-large/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/710/pumpkaboo-large/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/710/pumpkaboo-large/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -37882,9 +37882,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/710/pumpkaboo-super/front.png",
-      "BoxDefault": "View/images/pokemon/forms/710/pumpkaboo-super/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/710/pumpkaboo-super/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/710/pumpkaboo-super/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/710/pumpkaboo-super/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/710/pumpkaboo-super/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -38682,9 +38682,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/711/gourgeist-small/front.png",
-      "BoxDefault": "View/images/pokemon/forms/711/gourgeist-small/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/711/gourgeist-small/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/711/gourgeist-small/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/711/gourgeist-small/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/711/gourgeist-small/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -39554,9 +39554,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/711/gourgeist-large/front.png",
-      "BoxDefault": "View/images/pokemon/forms/711/gourgeist-large/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/711/gourgeist-large/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/711/gourgeist-large/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/711/gourgeist-large/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/711/gourgeist-large/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -40426,9 +40426,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/711/gourgeist-super/front.png",
-      "BoxDefault": "View/images/pokemon/forms/711/gourgeist-super/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/711/gourgeist-super/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/711/gourgeist-super/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/711/gourgeist-super/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/711/gourgeist-super/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -41285,9 +41285,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/716/xerneas-active/front.png",
-      "BoxDefault": "View/images/pokemon/forms/716/xerneas-active/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/716/xerneas-active/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/716/xerneas-active/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/716/xerneas-active/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/716/xerneas-active/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [
@@ -42031,9 +42031,9 @@
       }
     ],
     "Sprites": {
-      "ExhibitionDefault": "View/images/pokemon/forms/720/hoopa-unbound/front.png",
-      "BoxDefault": "View/images/pokemon/forms/720/hoopa-unbound/box.png",
-      "ExhibitionShiny": "View/images/pokemon/forms/720/hoopa-unbound/front-shiny.png",
+      "ExhibitionDefault": "Data/images/pokemon/forms/720/hoopa-unbound/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/720/hoopa-unbound/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/720/hoopa-unbound/front-shiny.png",
       "BoxShiny": null
     },
     "Learnset": [

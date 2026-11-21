@@ -1,3 +1,5 @@
+using System.Text.Json.Serialization;
+
 namespace GestaoDePokemon.model
 {
     public readonly record struct IndividualValues
@@ -9,6 +11,7 @@ namespace GestaoDePokemon.model
         public int SpecialDefense { get; }
         public int Speed { get; }
 
+        [JsonConstructor]
         public IndividualValues(
             int hp,
             int attack,
@@ -39,18 +42,6 @@ namespace GestaoDePokemon.model
                     name,
                     "O IV deve estar entre 0 e 31."
                 );
-        }
-
-        public static IndividualValues GenerateRandom()
-        {
-            return new IndividualValues(
-                Random.Shared.Next(32),
-                Random.Shared.Next(32),
-                Random.Shared.Next(32),
-                Random.Shared.Next(32),
-                Random.Shared.Next(32),
-                Random.Shared.Next(32)
-            );
         }
     }
 }

@@ -1,11 +1,20 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace GestaoDePokemon.model
 {
     public class EffortValues
     {
+        public const int MinPerStat = 10;
         public const int MaxPerStat = 252;
         public const int MaxTotal = 510;
+
+        public static readonly IReadOnlyList<PokemonStat> Estatisticas = new[]
+        {
+            PokemonStat.HP, PokemonStat.Attack, PokemonStat.Defense,
+            PokemonStat.SpecialAttack, PokemonStat.SpecialDefense, PokemonStat.Speed
+        };
 
         public int HP { get; private set; }
         public int Attack { get; private set; }
@@ -17,20 +26,38 @@ namespace GestaoDePokemon.model
         public int Total =>
             HP + Attack + Defense + SpecialAttack + SpecialDefense + Speed;
 
-        // Adiciona EVs à distribuição atual.
-        public void Add(PokemonStat stat, int amount)
+        public bool GarantirMinimo()
         {
-            if (amount <= 0)
-                throw new ArgumentOutOfRangeException(nameof(amount), "A quantidade deve ser positiva.");
+            int[] valores = Estatisticas
+                .Select(stat => Math.Max(GetValue(stat), MinPerStat))
+                .ToArray();
 
-            ValidateStat(stat);
+            int excesso = valores.Sum() - MaxTotal;
+            while (excesso > 0)
+            {
+                int indice = -1;
+                for (int i = 0; i < valores.Length; i++)
+                {
+                    if (valores[i] > MinPerStat &&
+                        (indice < 0 || valores[i] > valores[indice]))
+                        indice = i;
+                }
 
-            int current = GetValue(stat);
-            if (amount > MaxPerStat - current)
-                throw new InvalidOperationException(
-                    $"Um atributo não pode ultrapassar {MaxPerStat} EVs.");
+                if (indice < 0)
+                    break;
 
-            Set(stat, current + amount);
+                valores[indice]--;
+                excesso--;
+            }
+
+            if (valores.SequenceEqual(Estatisticas.Select(GetValue)))
+                return false;
+
+            Reset();
+            for (int i = 0; i < Estatisticas.Count; i++)
+                Set(Estatisticas[i], valores[i]);
+
+            return true;
         }
 
         // Define o valor exato de um atributo, permitindo também reduzi-lo ou zerá-lo.

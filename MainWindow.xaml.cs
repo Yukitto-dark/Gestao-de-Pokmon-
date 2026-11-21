@@ -12,7 +12,6 @@ namespace GestaoDePokemon
         private bool _isFullScreen;
         private bool _f11Pressed;
         private bool _layoutRefreshPending;
-        private bool _changingFullScreen;
 
         private Rect _windowedBounds;
         private WindowState _windowedState;
@@ -61,62 +60,46 @@ namespace GestaoDePokemon
 
         private void EntrarNaTelaCheia()
         {
-            _changingFullScreen = true;
-            try
-            {
-                _windowedState = WindowState == WindowState.Maximized
-                    ? WindowState.Maximized
-                    : WindowState.Normal;
+            _windowedState = WindowState == WindowState.Maximized
+                ? WindowState.Maximized
+                : WindowState.Normal;
 
-                _windowedBounds = WindowState == WindowState.Maximized
-                    ? RestoreBounds
-                    : new Rect(Left, Top, ActualWidth, ActualHeight);
+            _windowedBounds = WindowState == WindowState.Maximized
+                ? RestoreBounds
+                : new Rect(Left, Top, ActualWidth, ActualHeight);
 
-                if (_windowedBounds.Width <= 0 || _windowedBounds.Height <= 0)
-                    _windowedBounds = new Rect(Left, Top, Width, Height);
+            if (_windowedBounds.Width <= 0 || _windowedBounds.Height <= 0)
+                _windowedBounds = new Rect(Left, Top, Width, Height);
 
-                _windowedStyle = WindowStyle;
-                _windowedResizeMode = ResizeMode;
+            _windowedStyle = WindowStyle;
+            _windowedResizeMode = ResizeMode;
 
-                WindowState = WindowState.Normal;
-                ResizeMode = ResizeMode.NoResize;
-                TitleBar.Visibility = Visibility.Collapsed;
-                WindowState = WindowState.Maximized;
-                _isFullScreen = true;
-            }
-            finally
-            {
-                _changingFullScreen = false;
-            }
+            WindowState = WindowState.Normal;
+            ResizeMode = ResizeMode.NoResize;
+            TitleBar.Visibility = Visibility.Collapsed;
+            WindowState = WindowState.Maximized;
+            _isFullScreen = true;
 
             AgendarAtualizacaoLayout();
         }
 
         private void SairDaTelaCheia()
         {
-            _changingFullScreen = true;
-            try
-            {
-                WindowState = WindowState.Normal;
-                WindowStyle = _windowedStyle;
-                ResizeMode = _windowedResizeMode;
+            WindowState = WindowState.Normal;
+            WindowStyle = _windowedStyle;
+            ResizeMode = _windowedResizeMode;
 
-                Left = _windowedBounds.Left;
-                Top = _windowedBounds.Top;
-                Width = _windowedBounds.Width;
-                Height = _windowedBounds.Height;
+            Left = _windowedBounds.Left;
+            Top = _windowedBounds.Top;
+            Width = _windowedBounds.Width;
+            Height = _windowedBounds.Height;
 
-                TitleBar.Visibility = Visibility.Visible;
+            TitleBar.Visibility = Visibility.Visible;
 
-                if (_windowedState == WindowState.Maximized)
-                    WindowState = WindowState.Maximized;
+            if (_windowedState == WindowState.Maximized)
+                WindowState = WindowState.Maximized;
 
-                _isFullScreen = false;
-            }
-            finally
-            {
-                _changingFullScreen = false;
-            }
+            _isFullScreen = false;
 
             AtualizarBotaoMaximizarRestaurar();
             AgendarAtualizacaoLayout();
@@ -133,17 +116,9 @@ namespace GestaoDePokemon
             if (_isFullScreen)
                 return;
 
-            _changingFullScreen = true;
-            try
-            {
-                WindowState = WindowState == WindowState.Maximized
-                    ? WindowState.Normal
-                    : WindowState.Maximized;
-            }
-            finally
-            {
-                _changingFullScreen = false;
-            }
+            WindowState = WindowState == WindowState.Maximized
+                ? WindowState.Normal
+                : WindowState.Maximized;
 
             AtualizarBotaoMaximizarRestaurar();
             AgendarAtualizacaoLayout();

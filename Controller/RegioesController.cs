@@ -1,9 +1,6 @@
 using System.Collections.Generic;
 using GestaoDePokemon.Data.Configuration;
-using GestaoDePokemon.Data.Filters;
 using GestaoDePokemon.Data.Repositories.Contracts;
-using GestaoDePokemon.Data.Repositories.InMemory;
-using GestaoDePokemon.Data.Repositories.SQLite;
 using GestaoDePokemon.model;
 
 namespace GestaoDePokemon.Controller
@@ -28,6 +25,8 @@ namespace GestaoDePokemon.Controller
             if (!string.IsNullOrWhiteSpace(regiao))
                 RegiaoAtual = regiao;
         }
+
+        public IReadOnlyList<string> ObterRegioes() => _rotas.ObterRegioes();
 
         public IReadOnlyList<int> ObterRotas(string regiao)
         {
