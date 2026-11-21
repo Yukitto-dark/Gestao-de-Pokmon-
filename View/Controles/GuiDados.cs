@@ -88,16 +88,7 @@ namespace GestaoDePokemon.View.Controles
             _ => 0
         };
 
-        public static int Iv(IndividualValues ivs, PokemonStat stat) => stat switch
-        {
-            PokemonStat.HP => ivs.HP,
-            PokemonStat.Attack => ivs.Attack,
-            PokemonStat.Defense => ivs.Defense,
-            PokemonStat.SpecialAttack => ivs.SpecialAttack,
-            PokemonStat.SpecialDefense => ivs.SpecialDefense,
-            PokemonStat.Speed => ivs.Speed,
-            _ => 0
-        };
+        public static int Iv(IndividualValues ivs, PokemonStat stat) => ivs.GetValue(stat);
 
         /// <summary>
         /// Valor real do atributo no nível atual (fórmula da Geração III em diante): base stat, IV, EVs,

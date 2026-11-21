@@ -282,3 +282,18 @@ evoluções (194), medidas (419), formas alternativas (33) e nenhuma mega.
   sem escolha válida, a primeira); `AtualizarHabilidade` recusa habilidades que a forma não tem (ex.: Vulpix de
   Alola não pode ter Flash Fire).
 - O ComboBox segue a regra da natureza: fecha e grava depois que o evento de seleção termina.
+
+## Escolha dos IVs na build
+
+- Página Status: nova coluna dourada com o IV de cada atributo, entre o base stat e o valor final
+  (Base | IV | valor | EVs). Clicar no IV abre o campo para digitar de 0 a 31; o valor final é recalculado.
+  Clicar no base, no valor, nos EVs ou no nome do atributo continua editando os EVs.
+- `IndividualValues`: constantes `Min`/`Max`, `GetValue(stat)` e `Com(stat, valor)`, que devolve uma cópia
+  com um IV trocado (o tipo é imutável).
+- `PokemonSetController.AtualizarIV`: valida 0 a 31 e grava só a coluna de IVs (EVs, nível e golpes não mudam).
+
+## Cabeçalho das colunas na página Status
+
+- Acima dos atributos há uma linha com o nome de cada coluna, na cor dela: Base (azul), IV (dourado),
+  Valor (branco) e EVs (verde). Passar o mouse no título mostra o que a coluna significa.
+- "EVs disponíveis" foi para o lado esquerdo da mesma faixa, acima de "HP:", para abrir espaço aos títulos.

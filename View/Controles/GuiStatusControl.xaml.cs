@@ -16,10 +16,12 @@ namespace GestaoDePokemon.View.Controles
 
         private readonly TextBox _editor;
         private readonly Label[] _bases;
+        private readonly Label[] _ivs;
         private readonly Label[] _stats;
         private readonly Label[] _evs;
         private Label? _labelEditando;
         private PokemonStat _statEditando;
+        private bool _editandoIv;
         private PokemonSetController.SetInfo? _info;
         private int _membroId;
         private PokemonNature _naturezaInicial;
@@ -57,9 +59,10 @@ namespace GestaoDePokemon.View.Controles
             _editor.LostFocus += (_, _) => ConfirmarEdicao();
             Raiz.Children.Add(_editor);
 
-            // Cada linha: base stat da espécie, atributo com os EVs aplicados e os EVs investidos.
-            // Clicar em qualquer um deles (ou no nome do atributo) edita os EVs.
+            // Cada linha: base stat da espécie, IV, atributo com IV/EVs/nível/natureza e os EVs investidos.
+            // Clicar no IV edita o IV; clicar nos outros números (ou no nome do atributo) edita os EVs.
             _bases = new[] { Base_hp, Base_attack, Base_defense, Base_special_attack, Base_special_defense, Base_speed };
+            _ivs = new[] { IV_hp, IV_attack, IV_defense, IV_special_attack, IV_special_defense, IV_speed };
             _stats = new[] { Stat_hp, Stat_attack, Stat_defense, Stat_special_attack, Stat_special_defense, Stat_speed };
             _evs = new[] { EV_hp, EV_attack, EV_defense, EV_special_attack, EV_special_defense, EV_speed };
             for (int i = 0; i < _evs.Length; i++)
@@ -70,8 +73,12 @@ namespace GestaoDePokemon.View.Controles
                 foreach (Label clicavel in new[] { _bases[i], _stats[i], _evs[i] })
                 {
                     clicavel.Cursor = Cursors.Hand;
-                    clicavel.MouseLeftButtonUp += (_, _) => AbrirEdicao(label, stat);
+                    clicavel.MouseLeftButtonUp += (_, _) => AbrirEdicao(label, stat, iv: false);
                 }
+
+                Label ivLabel = _ivs[i];
+                ivLabel.Cursor = Cursors.Hand;
+                ivLabel.MouseLeftButtonUp += (_, _) => AbrirEdicao(ivLabel, stat, iv: true);
 
                 Button hotspot = new()
                 {
@@ -84,7 +91,7 @@ namespace GestaoDePokemon.View.Controles
                     Margin = new Thickness(268, LinhasRotulo[i], 0, 0),
                     ToolTip = $"Editar os EVs de {GuiDados.NomeCurto(stat)}"
                 };
-                hotspot.Click += (_, _) => AbrirEdicao(label, stat);
+                hotspot.Click += (_, _) => AbrirEdicao(label, stat, iv: false);
                 Camada.Children.Add(hotspot);
             }
 
@@ -132,20 +139,23 @@ namespace GestaoDePokemon.View.Controles
                 PokemonStat stat = EffortValues.Estatisticas[i];
                 int baseStat = GuiDados.BaseStat(info.Stats, stat);
                 int ev = info.EVs.GetValue(stat);
+                int iv = GuiDados.Iv(info.IVs, stat);
                 int valor = GuiDados.StatNoNivel(info, stat);
 
                 _bases[i].Content = baseStat;
+                _ivs[i].Content = iv;
                 _stats[i].Content = valor;
                 _evs[i].Content = $"+{ev}";
 
                 string dica =
-                    $"{GuiDados.NomeCurto(stat)}: base {baseStat}, {ev} EVs, IV {GuiDados.Iv(info.IVs, stat)}, " +
-                    $"natureza {info.Nature}\n" +
-                    $"Valor no nível {info.Level}: {valor}\n" +
-                    $"Clique para mudar os EVs (0 a {EffortValues.MaxPerStat}).";
-                _bases[i].ToolTip = $"Base stat de {GuiDados.NomeCurto(stat)}\n{dica}";
-                _stats[i].ToolTip = $"{GuiDados.NomeCurto(stat)} com os EVs aplicados\n{dica}";
-                _evs[i].ToolTip = $"EVs investidos em {GuiDados.NomeCurto(stat)}\n{dica}";
+                    $"{GuiDados.NomeCurto(stat)}: base {baseStat}, IV {iv}, {ev} EVs, natureza {info.Nature}\n" +
+                    $"Valor no nível {info.Level}: {valor}";
+                string editarEv = $"Clique para mudar os EVs (0 a {EffortValues.MaxPerStat}).";
+                _bases[i].ToolTip = $"Base stat de {GuiDados.NomeCurto(stat)}\n{dica}\n{editarEv}";
+                _ivs[i].ToolTip = $"IV de {GuiDados.NomeCurto(stat)}\n{dica}\n" +
+                                  $"Clique para mudar o IV ({IndividualValues.Min} a {IndividualValues.Max}).";
+                _stats[i].ToolTip = $"{GuiDados.NomeCurto(stat)} com IV e EVs aplicados\n{dica}\n{editarEv}";
+                _evs[i].ToolTip = $"EVs investidos em {GuiDados.NomeCurto(stat)}\n{dica}\n{editarEv}";
             }
             AtualizarDisponivel(info.EVs);
 
@@ -164,7 +174,7 @@ namespace GestaoDePokemon.View.Controles
             GuiDados.Sprite(Imagem_pokemon, info.SpriteUrl);
         }
 
-        private void AbrirEdicao(Label label, PokemonStat stat)
+        private void AbrirEdicao(Label label, PokemonStat stat, bool iv)
         {
             if (_info is null)
                 return;
@@ -173,8 +183,10 @@ namespace GestaoDePokemon.View.Controles
 
             _labelEditando = label;
             _statEditando = stat;
-            // O editor abre sobre o número de EVs da linha.
-            _editor.Text = _info.EVs.GetValue(stat).ToString(CultureInfo.InvariantCulture);
+            _editandoIv = iv;
+            // O editor abre sobre o número editado: o IV ou os EVs da linha.
+            _editor.Text = (iv ? GuiDados.Iv(_info.IVs, stat) : _info.EVs.GetValue(stat))
+                .ToString(CultureInfo.InvariantCulture);
             _editor.FontFamily = label.FontFamily;
             _editor.FontSize = label.FontSize + 4;
             _editor.HorizontalAlignment = label.HorizontalAlignment;
@@ -213,6 +225,7 @@ namespace GestaoDePokemon.View.Controles
 
             Label label = _labelEditando;
             PokemonStat stat = _statEditando;
+            bool iv = _editandoIv;
             string texto = _editor.Text.Trim();
 
             _labelEditando = null;
@@ -221,7 +234,41 @@ namespace GestaoDePokemon.View.Controles
 
             // Validação, gravação e recarga das páginas ficam para depois do evento de tecla/foco:
             // abrir uma mensagem ou recarregar as páginas no meio dele derrubava o aplicativo.
-            Adiar(() => AplicarEV(label, stat, texto));
+            if (iv)
+                Adiar(() => AplicarIV(label, stat, texto));
+            else
+                Adiar(() => AplicarEV(label, stat, texto));
+        }
+
+        private void AplicarIV(Label label, PokemonStat stat, string texto)
+        {
+            if (_info is null)
+                return;
+
+            if (!int.TryParse(texto, NumberStyles.Integer, CultureInfo.InvariantCulture, out int iv)
+                || iv < IndividualValues.Min
+                || iv > IndividualValues.Max)
+            {
+                MessageBox.Show(
+                    $"O IV de {GuiDados.NomeCurto(stat)} deve ficar entre {IndividualValues.Min} e {IndividualValues.Max}.",
+                    "Time", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            if (iv == GuiDados.Iv(_info.IVs, stat))
+                return;
+
+            try
+            {
+                new PokemonSetController().AtualizarIV(_info.MembroId, stat, iv);
+                label.Content = iv;
+                SetAlterado?.Invoke();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Não foi possível salvar o IV: {ex.Message}", "Time",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private void AplicarEV(Label label, PokemonStat stat, string texto)

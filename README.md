@@ -33,7 +33,7 @@ O painel lateral mostra os dados da forma selecionada: tipos, habilidades, atrib
 A tela de Time mostra os seis membros com o ícone da forma escolhida (normal ou shiny). Clicar em um membro abre a build do Pokémon em três páginas:
 
 - **Resumo:** número, nível, HP calculado, habilidade (clique no nome para escolher entre as habilidades da forma, inclusive a oculta) e um seletor de nível (botões `-`/`+` e barra de 1 a 100).
-- **Status:** cada atributo mostra o base stat da espécie, ao lado o valor com os EVs aplicados (calculado com nível, IV e natureza, como nos jogos) e os EVs investidos. Clicar na linha edita os EVs (até 252 por atributo e 510 no total). Também mostra a natureza com o efeito no atributo, altura e peso.
+- **Status:** cada atributo mostra o base stat da espécie, o IV, o valor com IV e EVs aplicados (calculado com nível e natureza, como nos jogos) e os EVs investidos. Clicar no IV edita o IV (0 a 31); clicar nos outros números edita os EVs (até 252 por atributo e 510 no total). Um cabeçalho (Base, IV, Valor, EVs) identifica cada coluna, com uma dica explicando o que ela é. Também mostra a natureza com o efeito no atributo, altura e peso.
 - **Moves:** quatro golpes escolhidos entre os que a forma aprende (por nível, TM, tutor, ovo ou evolução); o catálogo inteiro não é oferecido. Sem golpes salvos, o Pokémon usa os quatro últimos golpes aprendidos por nível até o nível atual.
 
 O nível também pode ser digitado clicando no número do nível em qualquer página.

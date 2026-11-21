@@ -34,26 +34,43 @@
         <Label x:Name="lvl_pokemon" Content="Label" HorizontalAlignment="Left" Height="33" Margin="185,20,0,0" VerticalAlignment="Top" Width="52" FontSize="30"/>
         <Label x:Name="Nome_pokemon" Content="Label" HorizontalAlignment="Left" Height="34" Margin="37,298,0,0" VerticalAlignment="Top" Width="172" FontSize="30"/>
 
-        <!-- Cada linha: base stat da espécie | atributo com os EVs aplicados (nível, IV e natureza) | EVs investidos. -->
-        <Label x:Name="Base_hp" Content="0" HorizontalAlignment="Left" Height="46" Margin="452,24,0,0" VerticalAlignment="Top" Width="62" FontSize="30" Foreground="#FFCCDAFF"/>
-        <Label x:Name="Stat_hp" Content="0" HorizontalAlignment="Left" Height="46" Margin="532,24,0,0" VerticalAlignment="Top" Width="72" FontSize="30"/>
-        <Label x:Name="EV_hp" Content="+0" HorizontalAlignment="Left" Height="46" Margin="616,24,0,0" VerticalAlignment="Top" Width="68" FontSize="26" Foreground="#FF8CFFA8"/>
-        <Label x:Name="Base_attack" Content="0" HorizontalAlignment="Left" Height="46" Margin="452,80,0,0" VerticalAlignment="Top" Width="62" FontSize="30" Foreground="#FFCCDAFF"/>
-        <Label x:Name="Stat_attack" Content="0" HorizontalAlignment="Left" Height="46" Margin="532,80,0,0" VerticalAlignment="Top" Width="72" FontSize="30"/>
-        <Label x:Name="EV_attack" Content="+0" HorizontalAlignment="Left" Height="46" Margin="616,80,0,0" VerticalAlignment="Top" Width="68" FontSize="26" Foreground="#FF8CFFA8"/>
-        <Label x:Name="Base_defense" Content="0" HorizontalAlignment="Left" Height="46" Margin="452,132,0,0" VerticalAlignment="Top" Width="62" FontSize="30" Foreground="#FFCCDAFF"/>
-        <Label x:Name="Stat_defense" Content="0" HorizontalAlignment="Left" Height="46" Margin="532,132,0,0" VerticalAlignment="Top" Width="72" FontSize="30"/>
-        <Label x:Name="EV_defense" Content="+0" HorizontalAlignment="Left" Height="46" Margin="616,132,0,0" VerticalAlignment="Top" Width="68" FontSize="26" Foreground="#FF8CFFA8"/>
-        <Label x:Name="Base_special_attack" Content="0" HorizontalAlignment="Left" Height="46" Margin="452,190,0,0" VerticalAlignment="Top" Width="62" FontSize="30" Foreground="#FFCCDAFF"/>
-        <Label x:Name="Stat_special_attack" Content="0" HorizontalAlignment="Left" Height="46" Margin="532,190,0,0" VerticalAlignment="Top" Width="72" FontSize="30"/>
-        <Label x:Name="EV_special_attack" Content="+0" HorizontalAlignment="Left" Height="46" Margin="616,190,0,0" VerticalAlignment="Top" Width="68" FontSize="26" Foreground="#FF8CFFA8"/>
-        <Label x:Name="Base_special_defense" Content="0" HorizontalAlignment="Left" Height="46" Margin="452,243,0,0" VerticalAlignment="Top" Width="62" FontSize="30" Foreground="#FFCCDAFF"/>
-        <Label x:Name="Stat_special_defense" Content="0" HorizontalAlignment="Left" Height="46" Margin="532,243,0,0" VerticalAlignment="Top" Width="72" FontSize="30"/>
-        <Label x:Name="EV_special_defense" Content="+0" HorizontalAlignment="Left" Height="46" Margin="616,243,0,0" VerticalAlignment="Top" Width="68" FontSize="26" Foreground="#FF8CFFA8"/>
-        <Label x:Name="Base_speed" Content="0" HorizontalAlignment="Left" Height="46" Margin="452,302,0,0" VerticalAlignment="Top" Width="62" FontSize="30" Foreground="#FFCCDAFF"/>
-        <Label x:Name="Stat_speed" Content="0" HorizontalAlignment="Left" Height="46" Margin="532,302,0,0" VerticalAlignment="Top" Width="72" FontSize="30"/>
-        <Label x:Name="EV_speed" Content="+0" HorizontalAlignment="Left" Height="46" Margin="616,302,0,0" VerticalAlignment="Top" Width="68" FontSize="26" Foreground="#FF8CFFA8"/>
-        <Label x:Name="EVs_disponiveis" Content="EVs disponíveis: 510" HorizontalAlignment="Left" Height="28" Margin="537,5,0,0" VerticalAlignment="Top" Width="180" FontSize="20"/>
+        <!-- Cada linha: base stat da espécie | IV (0 a 31) | atributo com IV, EVs, nível e natureza | EVs investidos. -->
+        <Label x:Name="Base_hp" Content="0" HorizontalAlignment="Left" Height="46" Margin="446,24,0,0" VerticalAlignment="Top" Width="50" FontSize="30" Foreground="#FFCCDAFF"/>
+        <Label x:Name="IV_hp" Content="31" HorizontalAlignment="Left" Height="46" Margin="498,24,0,0" VerticalAlignment="Top" Width="48" FontSize="26" Foreground="#FFFFD86E"/>
+        <Label x:Name="Stat_hp" Content="0" HorizontalAlignment="Left" Height="46" Margin="548,24,0,0" VerticalAlignment="Top" Width="68" FontSize="30"/>
+        <Label x:Name="EV_hp" Content="+0" HorizontalAlignment="Left" Height="46" Margin="618,24,0,0" VerticalAlignment="Top" Width="68" FontSize="26" Foreground="#FF8CFFA8"/>
+        <Label x:Name="Base_attack" Content="0" HorizontalAlignment="Left" Height="46" Margin="446,80,0,0" VerticalAlignment="Top" Width="50" FontSize="30" Foreground="#FFCCDAFF"/>
+        <Label x:Name="IV_attack" Content="31" HorizontalAlignment="Left" Height="46" Margin="498,80,0,0" VerticalAlignment="Top" Width="48" FontSize="26" Foreground="#FFFFD86E"/>
+        <Label x:Name="Stat_attack" Content="0" HorizontalAlignment="Left" Height="46" Margin="548,80,0,0" VerticalAlignment="Top" Width="68" FontSize="30"/>
+        <Label x:Name="EV_attack" Content="+0" HorizontalAlignment="Left" Height="46" Margin="618,80,0,0" VerticalAlignment="Top" Width="68" FontSize="26" Foreground="#FF8CFFA8"/>
+        <Label x:Name="Base_defense" Content="0" HorizontalAlignment="Left" Height="46" Margin="446,132,0,0" VerticalAlignment="Top" Width="50" FontSize="30" Foreground="#FFCCDAFF"/>
+        <Label x:Name="IV_defense" Content="31" HorizontalAlignment="Left" Height="46" Margin="498,132,0,0" VerticalAlignment="Top" Width="48" FontSize="26" Foreground="#FFFFD86E"/>
+        <Label x:Name="Stat_defense" Content="0" HorizontalAlignment="Left" Height="46" Margin="548,132,0,0" VerticalAlignment="Top" Width="68" FontSize="30"/>
+        <Label x:Name="EV_defense" Content="+0" HorizontalAlignment="Left" Height="46" Margin="618,132,0,0" VerticalAlignment="Top" Width="68" FontSize="26" Foreground="#FF8CFFA8"/>
+        <Label x:Name="Base_special_attack" Content="0" HorizontalAlignment="Left" Height="46" Margin="446,190,0,0" VerticalAlignment="Top" Width="50" FontSize="30" Foreground="#FFCCDAFF"/>
+        <Label x:Name="IV_special_attack" Content="31" HorizontalAlignment="Left" Height="46" Margin="498,190,0,0" VerticalAlignment="Top" Width="48" FontSize="26" Foreground="#FFFFD86E"/>
+        <Label x:Name="Stat_special_attack" Content="0" HorizontalAlignment="Left" Height="46" Margin="548,190,0,0" VerticalAlignment="Top" Width="68" FontSize="30"/>
+        <Label x:Name="EV_special_attack" Content="+0" HorizontalAlignment="Left" Height="46" Margin="618,190,0,0" VerticalAlignment="Top" Width="68" FontSize="26" Foreground="#FF8CFFA8"/>
+        <Label x:Name="Base_special_defense" Content="0" HorizontalAlignment="Left" Height="46" Margin="446,243,0,0" VerticalAlignment="Top" Width="50" FontSize="30" Foreground="#FFCCDAFF"/>
+        <Label x:Name="IV_special_defense" Content="31" HorizontalAlignment="Left" Height="46" Margin="498,243,0,0" VerticalAlignment="Top" Width="48" FontSize="26" Foreground="#FFFFD86E"/>
+        <Label x:Name="Stat_special_defense" Content="0" HorizontalAlignment="Left" Height="46" Margin="548,243,0,0" VerticalAlignment="Top" Width="68" FontSize="30"/>
+        <Label x:Name="EV_special_defense" Content="+0" HorizontalAlignment="Left" Height="46" Margin="618,243,0,0" VerticalAlignment="Top" Width="68" FontSize="26" Foreground="#FF8CFFA8"/>
+        <Label x:Name="Base_speed" Content="0" HorizontalAlignment="Left" Height="46" Margin="446,302,0,0" VerticalAlignment="Top" Width="50" FontSize="30" Foreground="#FFCCDAFF"/>
+        <Label x:Name="IV_speed" Content="31" HorizontalAlignment="Left" Height="46" Margin="498,302,0,0" VerticalAlignment="Top" Width="48" FontSize="26" Foreground="#FFFFD86E"/>
+        <Label x:Name="Stat_speed" Content="0" HorizontalAlignment="Left" Height="46" Margin="548,302,0,0" VerticalAlignment="Top" Width="68" FontSize="30"/>
+        <Label x:Name="EV_speed" Content="+0" HorizontalAlignment="Left" Height="46" Margin="618,302,0,0" VerticalAlignment="Top" Width="68" FontSize="26" Foreground="#FF8CFFA8"/>
+        <!-- Faixa acima dos atributos: saldo de EVs à esquerda e o nome de cada coluna, na cor dela. -->
+        <Label x:Name="EVs_disponiveis" Content="EVs disponíveis: 510" HorizontalAlignment="Left" Height="26" Margin="262,3,0,0" VerticalAlignment="Top" Width="180" FontSize="20"
+               Padding="5,0" HorizontalContentAlignment="Left"
+               ToolTip="EVs que ainda podem ser distribuídos (510 no total, até 252 por atributo)."/>
+        <Label x:Name="Titulo_base" Content="Base" HorizontalAlignment="Left" Height="26" Margin="446,3,0,0" VerticalAlignment="Top" Width="50" FontSize="20" Padding="0" Foreground="#FFCCDAFF"
+               ToolTip="Base stat: valor fixo da espécie (ou da forma, como as regionais e as Megas)."/>
+        <Label x:Name="Titulo_iv" Content="IV" HorizontalAlignment="Left" Height="26" Margin="498,3,0,0" VerticalAlignment="Top" Width="48" FontSize="20" Padding="0" Foreground="#FFFFD86E"
+               ToolTip="IV: potencial individual do Pokémon em cada atributo, de 0 a 31. Clique no número para mudar."/>
+        <Label x:Name="Titulo_valor" Content="Valor" HorizontalAlignment="Left" Height="26" Margin="548,3,0,0" VerticalAlignment="Top" Width="68" FontSize="20" Padding="0"
+               ToolTip="Valor do atributo no nível atual, calculado com base stat, IV, EVs e natureza, como nos jogos."/>
+        <Label x:Name="Titulo_evs" Content="EVs" HorizontalAlignment="Left" Height="26" Margin="618,3,0,0" VerticalAlignment="Top" Width="68" FontSize="20" Padding="0" Foreground="#FF8CFFA8"
+               ToolTip="EVs: pontos de treino investidos no atributo (0 a 252, 510 no total). Clique no número para mudar."/>
 
         <Label x:Name="Nature_pokemon" Content="Label" HorizontalAlignment="Left" Height="42" Margin="527,422,0,0" VerticalAlignment="Top" Width="125" FontSize="35"/>
         <ComboBox x:Name="Nature_select" Visibility="Collapsed" HorizontalAlignment="Left" Height="42" Margin="527,431,0,0" VerticalAlignment="Top" Width="125"

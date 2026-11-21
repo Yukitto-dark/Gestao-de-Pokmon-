@@ -446,6 +446,23 @@ namespace GestaoDePokemon.Controller
             return membro.EVs;
         }
 
+        public IndividualValues AtualizarIV(int membroId, PokemonStat stat, int valor)
+        {
+            if (!Enum.IsDefined(stat))
+                throw new ArgumentException("Atributo inválido.", nameof(stat));
+
+            if (valor < IndividualValues.Min || valor > IndividualValues.Max)
+                throw new ArgumentOutOfRangeException(
+                    nameof(valor), $"O IV deve estar entre {IndividualValues.Min} e {IndividualValues.Max}.");
+
+            using var db = new AppDbContext();
+
+            PokemonPartyMember membro = ObterMembro(db, membroId);
+            membro.IVs = membro.IVs.Com(stat, valor);
+            db.SaveChanges();
+            return membro.IVs;
+        }
+
         private static PokemonPartyMember ObterMembro(AppDbContext db, int membroId) =>
             db.Party.FirstOrDefault(member => member.Id == membroId)
             ?? throw new ArgumentException("Pokémon não encontrado no time.", nameof(membroId));
