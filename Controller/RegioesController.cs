@@ -28,7 +28,7 @@ namespace GestaoDePokemon.Controller
 
         public IReadOnlyList<string> ObterRegioes() => _rotas.ObterRegioes();
 
-        public IReadOnlyList<int> ObterRotas(string regiao)
+        public IReadOnlyList<RotaResumo> ObterRotas(string regiao)
         {
             SelecionarRegiao(regiao);
             return _rotas.ObterRotas(RegiaoAtual);

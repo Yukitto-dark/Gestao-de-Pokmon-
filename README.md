@@ -40,7 +40,7 @@ O nível também pode ser digitado clicando no número do nível em qualquer pá
 
 ### Mapas e regiões
 
-A tela de Mapas leva às regiões (quadros para Kanto, Johto e Hoenn; mesas e o mapa da parede para as demais). A tela de Regiões lista as rotas numeradas de cada região com os Pokémon encontrados, jogos e áreas, lidos do SQLite (`rotas-seed.json`). Paldea e Hisui não têm rotas numeradas com encontros na PokéAPI.
+A tela de Mapas leva às regiões (quadros para Kanto, Johto e Hoenn; mesas e o mapa da parede para as demais). A tela de Regiões lista as rotas de cada região com os Pokémon encontrados, jogos e áreas, lidos do SQLite (`rotas-seed.json`). De Kanto a Galar são as rotas numeradas; em Paldea são os locais de Scarlet/Violet (províncias, lagos, mares, cavernas, cidades e a Área Zero) e em Hisui as cinco grandes áreas de Legends: Arceus, com os sublocais de cada uma.
 
 ## Dados catalogados
 
@@ -325,7 +325,7 @@ A propriedade `EnableWindowsTargeting` permite que o projeto seja compilado em a
 
 ## Fontes de dados e créditos
 
-Os dados estruturados de Pokémon, movimentos, habilidades, evoluções e sprites são organizados em arquivos de seed versionados no repositório. A documentação de persistência do projeto identifica a [PokéAPI](https://pokeapi.co/) e o repositório de [sprites da PokéAPI](https://github.com/PokeAPI/sprites) como fontes utilizadas na preparação desses dados.
+Os dados estruturados de Pokémon, movimentos, habilidades, evoluções e sprites são organizados em arquivos de seed versionados no repositório. A documentação de persistência do projeto identifica a [PokéAPI](https://pokeapi.co/) e o repositório de [sprites da PokéAPI](https://github.com/PokeAPI/sprites) como fontes utilizadas na preparação desses dados. Os encontros de Paldea (Scarlet/Violet) e Hisui (Legends: Arceus), que a PokéAPI não possui, vieram das tabelas de encontros selvagens e dos nomes de locais do [PKHeX](https://github.com/kwsch/PKHeX).
 
 Pokémon e suas marcas, personagens e recursos visuais pertencem aos respectivos titulares. Este projeto é um trabalho independente, sem associação oficial com a The Pokémon Company, Nintendo, Game Freak ou Creatures.
 

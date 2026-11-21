@@ -6,6 +6,7 @@ using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using GestaoDePokemon.Controller;
+using GestaoDePokemon.Data.Repositories.Contracts;
 using GestaoDePokemon.model;
 
 namespace GestaoDePokemon.View.Telas
@@ -75,14 +76,13 @@ namespace GestaoDePokemon.View.Telas
             Lista_Rotas.Children.Clear();
 
             Style estilo = (Style)FindResource("BotaoRota");
-            IReadOnlyList<int> rotas = _controller.ObterRotas(regiao);
+            IReadOnlyList<RotaResumo> rotas = _controller.ObterRotas(regiao);
 
             if (rotas.Count == 0)
             {
-                // Paldea e Hisui não têm rotas numeradas com encontros na PokéAPI.
                 Lista_Rotas.Children.Add(new TextBlock
                 {
-                    Text = "Nenhuma rota numerada cadastrada para esta região.",
+                    Text = "Nenhuma rota cadastrada para esta região.",
                     TextWrapping = TextWrapping.Wrap,
                     FontFamily = Titulo_Rota.FontFamily,
                     FontSize = 14,
@@ -91,13 +91,19 @@ namespace GestaoDePokemon.View.Telas
                 });
             }
 
-            foreach (int numero in rotas)
+            foreach (RotaResumo rota in rotas)
             {
+                // Rotas numeradas mostram "Rota N"; os locais de Paldea e Hisui mostram o nome, que pode
+                // ocupar duas linhas ("South Province (Area One)").
                 var botao = new Button
                 {
-                    Content = $"Rota {numero}",
+                    Content = new TextBlock { Text = rota.Rotulo, TextWrapping = TextWrapping.Wrap },
                     Style = estilo,
-                    Tag = numero
+                    Tag = rota,
+                    Height = double.NaN,
+                    MinHeight = 30,
+                    Padding = new Thickness(0, 4, 0, 4),
+                    ToolTip = rota.Nome
                 };
                 botao.Click += Rota_Click;
                 Lista_Rotas.Children.Add(botao);
@@ -110,12 +116,12 @@ namespace GestaoDePokemon.View.Telas
 
         private void Rota_Click(object sender, RoutedEventArgs e)
         {
-            if (sender is not Button botao || botao.Tag is not int numero)
+            if (sender is not Button botao || botao.Tag is not RotaResumo resumo)
                 return;
 
-            RotaInfo? rota = _controller.ObterRota(numero);
+            RotaInfo? rota = _controller.ObterRota(resumo.Numero);
 
-            Titulo_Rota.Text = $"Rota {numero}";
+            Titulo_Rota.Text = resumo.Rotulo;
             Pokemons_Rota.Children.Clear();
 
             if (rota != null)

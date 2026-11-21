@@ -51,7 +51,8 @@ namespace GestaoDePokemon.Data.Repositories.SQLite
             ("shining-pearl", "Shining Pearl"),
             ("legends-arceus", "Legends: Arceus"),
             ("scarlet", "Scarlet"),
-            ("violet", "Violet")
+            ("violet", "Violet"),
+            ("scarlet-violet", "Scarlet/Violet")
         };
 
         public IReadOnlyList<string> ObterRegioes()
@@ -65,10 +66,10 @@ namespace GestaoDePokemon.Data.Repositories.SQLite
                 .ToList();
         }
 
-        public IReadOnlyList<int> ObterRotas(string regiao)
+        public IReadOnlyList<RotaResumo> ObterRotas(string regiao)
         {
             if (string.IsNullOrWhiteSpace(regiao))
-                return Array.Empty<int>();
+                return Array.Empty<RotaResumo>();
 
             using var db = new AppDbContext();
 
@@ -76,7 +77,9 @@ namespace GestaoDePokemon.Data.Repositories.SQLite
                 .AsNoTracking()
                 .Where(route => route.Region.Name == regiao)
                 .OrderBy(route => route.Number)
-                .Select(route => route.Number)
+                .Select(route => new { route.Number, route.Name })
+                .AsEnumerable()
+                .Select(route => new RotaResumo(route.Number, route.Name))
                 .ToList();
         }
 
@@ -135,7 +138,7 @@ namespace GestaoDePokemon.Data.Repositories.SQLite
                 .ToList();
 
             var texto = new StringBuilder();
-            texto.AppendLine($"Rota {route.Number} - {route.Region.Name}");
+            texto.AppendLine($"{new RotaResumo(route.Number, route.Name).Rotulo} - {route.Region.Name}");
 
             if (versoes.Count > 0)
                 texto.AppendLine($"Jogos: {string.Join(", ", versoes)}");

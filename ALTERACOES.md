@@ -297,3 +297,15 @@ evoluções (194), medidas (419), formas alternativas (33) e nenhuma mega.
 - Acima dos atributos há uma linha com o nome de cada coluna, na cor dela: Base (azul), IV (dourado),
   Valor (branco) e EVs (verde). Passar o mouse no título mostra o que a coluna significa.
 - "EVs disponíveis" foi para o lado esquerdo da mesma faixa, acima de "HP:", para abrir espaço aos títulos.
+
+## Rotas de Paldea e Hisui
+
+- `rotas-seed.json` ganhou 32 rotas de Paldea (Scarlet/Violet) e 5 de Hisui (Legends: Arceus, com 102 sublocais
+  como áreas), geradas das tabelas de encontros selvagens e dos nomes de locais do PKHeX, porque a PokéAPI não
+  tem encontros desses jogos. Detalhes de escopo em `Documentation/README_ROTAS.md`. As rotas anteriores não
+  mudaram e a importação é incremental: bancos existentes recebem só as rotas novas.
+- Paldea e Hisui não têm rotas numeradas: `IRotaRepository.ObterRotas` devolve `RotaResumo` (número e nome) e a
+  tela de Regiões mostra "Rota N" para as rotas numeradas e o nome do local nas demais (com quebra de linha
+  nos nomes longos). O título e as informações da rota usam o mesmo rótulo.
+- `RotaSqliteRepository`: versão `scarlet-violet` exibida como "Scarlet/Violet".
+- Testado com banco existente (181 → 218 rotas) e banco novo (218 rotas, 30.475 encontros).

@@ -17,7 +17,21 @@ condições do encontro.
 - Kalos: rotas 1–22 (X e Y).
 - Alola: rotas 1–17 (Sun, Moon, Ultra Sun e Ultra Moon).
 - Galar: rotas 1–10 (Sword e Shield).
-- Paldea e Hisui não possuem rotas numeradas com encontros na PokéAPI.
+- Paldea: 32 locais do jogo base de Scarlet/Violet (províncias, lagos, mares, cavernas,
+  cidades e Área Zero), numerados de 1 a 32 só para a ordem e exibidos pelo nome. Cada local tem
+  uma área. Fonte: `encounter_wild_paldea.pkl` e `text_sv_00000_en.txt` do PKHeX (a PokéAPI não
+  tem encontros de Scarlet/Violet). Ficam de fora Kitakami e Blueberry Academy (DLCs, fora de
+  Paldea) e as áreas "cruzadas", que repetem Pokémon do local vizinho que passam da divisa. Os
+  identificadores e ids de local seguem a PokéAPI quando o local existe lá.
+- Hisui: as cinco grandes áreas de Legends: Arceus (Obsidian Fieldlands, Crimson Mirelands,
+  Cobalt Coastlands, Coronet Highlands e Alabaster Icelands) são as rotas, e os sublocais de cada
+  uma (Horseshoe Plains, Lake Verity...) são as áreas. Fonte: `encounter_la.pkl` e
+  `text_la_00000_en.txt` do PKHeX. Entram os encontros normais (`overworld`), de marcos
+  (`landmark`) e de distorções espaço-temporais (`space-time-distortion`); os surtos em massa,
+  aleatórios, ficam de fora. Pokémon alfa têm a condição `alpha`.
+- Em Paldea e Hisui não há chance de encontro por slot (`chancePercent` = 0). Em Paldea, as
+  restrições de horário viram condições (`time-day`, `time-night`, `time-dusk`, `time-morning`);
+  as versões não são separadas (`scarlet-violet`).
 - As rotas de Sinnoh a Galar foram geradas dos CSVs da PokéAPI
   (`data/v2/csv`: `locations`, `location_areas`, `encounters`,
   `encounter_slots` e tabelas relacionadas), no mesmo formato do seed original,
