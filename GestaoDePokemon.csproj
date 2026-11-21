@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="View\Telas - background\*.png" />
+    <Resource Include="View\Telas - background\*.png" />
+    <None Remove="View\images\types\*.png" />
+    <Resource Include="View\images\types\*.png" />
+    <None Remove="View\images\types\*.jpg" />
+    <Resource Include="View\images\types\*.jpg" />
+    <None Remove="View\images\buttons\*.png" />
+    <Resource Include="View\images\buttons\*.png" />
+    <None Remove="View\images\Pixelmon\*.png" />
+    <Resource Include="View\images\Pixelmon\*.png" />
+    <None Remove="View\images\hert-full.png" />
+    <Resource Include="View\images\hert-full.png" />
+    <None Remove="View\images\hert-full-vazio.png" />
+    <Resource Include="View\images\hert-full-vazio.png" />
+    <None Remove="View\fonts\*.ttf" />
+    <Resource Include="View\fonts\*.ttf" />
+    <None Remove="View\cursors\*.cur" />
+    <Resource Include="View\cursors\*.cur" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Mantém a árvore frontNormal/frontShiny/mini no diretório de saída. -->
+    <None Remove="Data/images/pokemon/**/*.png" />
+    <Resource Remove="Data/images/pokemon/**/*.png" />
+    <Content Include="Data/images/pokemon/**/*.png" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest">
+      <TargetPath>Data/images/pokemon/%(RecursiveDir)%(Filename)%(Extension)</TargetPath>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Data/Persistence/Seed/pokemon-seed.json" LogicalName="GestaoDePokemon.Data.Persistence.Seed.pokemon-seed.json" />
+    <None Update="Data/Persistence/Seed/abilities-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Update="Data/Persistence/Seed/move-catalog-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Update="Data/Persistence/Seed/pokemon-learnsets-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Update="Data/Persistence/Seed/pokemon-evolutions-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Update="Data/Persistence/Seed/rotas-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data/Persistence/Seed/generation-i-v-forms-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Update="Data/Persistence/Seed/pokemon-measurements-seed.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

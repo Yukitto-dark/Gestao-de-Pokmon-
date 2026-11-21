@@ -1,0 +1,2516 @@
+[
+  {
+    "NationalDexNumber": 1,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 69
+  },
+  {
+    "NationalDexNumber": 2,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 130
+  },
+  {
+    "NationalDexNumber": 3,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 1000
+  },
+  {
+    "NationalDexNumber": 4,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 85
+  },
+  {
+    "NationalDexNumber": 5,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 190
+  },
+  {
+    "NationalDexNumber": 6,
+    "FormName": "Normal",
+    "Height": 17,
+    "Weight": 905
+  },
+  {
+    "NationalDexNumber": 7,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 90
+  },
+  {
+    "NationalDexNumber": 8,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 225
+  },
+  {
+    "NationalDexNumber": 9,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 855
+  },
+  {
+    "NationalDexNumber": 10,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 29
+  },
+  {
+    "NationalDexNumber": 11,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 99
+  },
+  {
+    "NationalDexNumber": 12,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 320
+  },
+  {
+    "NationalDexNumber": 13,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 32
+  },
+  {
+    "NationalDexNumber": 14,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 100
+  },
+  {
+    "NationalDexNumber": 15,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 295
+  },
+  {
+    "NationalDexNumber": 16,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 18
+  },
+  {
+    "NationalDexNumber": 17,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 300
+  },
+  {
+    "NationalDexNumber": 18,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 395
+  },
+  {
+    "NationalDexNumber": 19,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 35
+  },
+  {
+    "NationalDexNumber": 20,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 185
+  },
+  {
+    "NationalDexNumber": 21,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 20
+  },
+  {
+    "NationalDexNumber": 22,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 380
+  },
+  {
+    "NationalDexNumber": 23,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 69
+  },
+  {
+    "NationalDexNumber": 24,
+    "FormName": "Normal",
+    "Height": 35,
+    "Weight": 650
+  },
+  {
+    "NationalDexNumber": 25,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 26,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 300
+  },
+  {
+    "NationalDexNumber": 27,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 120
+  },
+  {
+    "NationalDexNumber": 28,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 295
+  },
+  {
+    "NationalDexNumber": 29,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 70
+  },
+  {
+    "NationalDexNumber": 30,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 200
+  },
+  {
+    "NationalDexNumber": 31,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 600
+  },
+  {
+    "NationalDexNumber": 32,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 90
+  },
+  {
+    "NationalDexNumber": 33,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 195
+  },
+  {
+    "NationalDexNumber": 34,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 620
+  },
+  {
+    "NationalDexNumber": 35,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 75
+  },
+  {
+    "NationalDexNumber": 36,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 400
+  },
+  {
+    "NationalDexNumber": 37,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 99
+  },
+  {
+    "NationalDexNumber": 38,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 199
+  },
+  {
+    "NationalDexNumber": 39,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 55
+  },
+  {
+    "NationalDexNumber": 40,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 120
+  },
+  {
+    "NationalDexNumber": 41,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 75
+  },
+  {
+    "NationalDexNumber": 42,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 550
+  },
+  {
+    "NationalDexNumber": 43,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 54
+  },
+  {
+    "NationalDexNumber": 44,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 86
+  },
+  {
+    "NationalDexNumber": 45,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 186
+  },
+  {
+    "NationalDexNumber": 46,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 54
+  },
+  {
+    "NationalDexNumber": 47,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 295
+  },
+  {
+    "NationalDexNumber": 48,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 300
+  },
+  {
+    "NationalDexNumber": 49,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 125
+  },
+  {
+    "NationalDexNumber": 50,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 8
+  },
+  {
+    "NationalDexNumber": 51,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 333
+  },
+  {
+    "NationalDexNumber": 52,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 42
+  },
+  {
+    "NationalDexNumber": 53,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 320
+  },
+  {
+    "NationalDexNumber": 54,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 196
+  },
+  {
+    "NationalDexNumber": 55,
+    "FormName": "Normal",
+    "Height": 17,
+    "Weight": 766
+  },
+  {
+    "NationalDexNumber": 56,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 280
+  },
+  {
+    "NationalDexNumber": 57,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 320
+  },
+  {
+    "NationalDexNumber": 58,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 190
+  },
+  {
+    "NationalDexNumber": 59,
+    "FormName": "Normal",
+    "Height": 19,
+    "Weight": 1550
+  },
+  {
+    "NationalDexNumber": 60,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 124
+  },
+  {
+    "NationalDexNumber": 61,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 200
+  },
+  {
+    "NationalDexNumber": 62,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 540
+  },
+  {
+    "NationalDexNumber": 63,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 195
+  },
+  {
+    "NationalDexNumber": 64,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 565
+  },
+  {
+    "NationalDexNumber": 65,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 480
+  },
+  {
+    "NationalDexNumber": 66,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 195
+  },
+  {
+    "NationalDexNumber": 67,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 705
+  },
+  {
+    "NationalDexNumber": 68,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 1300
+  },
+  {
+    "NationalDexNumber": 69,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 40
+  },
+  {
+    "NationalDexNumber": 70,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 64
+  },
+  {
+    "NationalDexNumber": 71,
+    "FormName": "Normal",
+    "Height": 17,
+    "Weight": 155
+  },
+  {
+    "NationalDexNumber": 72,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 455
+  },
+  {
+    "NationalDexNumber": 73,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 550
+  },
+  {
+    "NationalDexNumber": 74,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 200
+  },
+  {
+    "NationalDexNumber": 75,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 1050
+  },
+  {
+    "NationalDexNumber": 76,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 3000
+  },
+  {
+    "NationalDexNumber": 77,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 300
+  },
+  {
+    "NationalDexNumber": 78,
+    "FormName": "Normal",
+    "Height": 17,
+    "Weight": 950
+  },
+  {
+    "NationalDexNumber": 79,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 360
+  },
+  {
+    "NationalDexNumber": 80,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 785
+  },
+  {
+    "NationalDexNumber": 81,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 82,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 600
+  },
+  {
+    "NationalDexNumber": 83,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 150
+  },
+  {
+    "NationalDexNumber": 84,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 392
+  },
+  {
+    "NationalDexNumber": 85,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 852
+  },
+  {
+    "NationalDexNumber": 86,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 900
+  },
+  {
+    "NationalDexNumber": 87,
+    "FormName": "Normal",
+    "Height": 17,
+    "Weight": 1200
+  },
+  {
+    "NationalDexNumber": 88,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 300
+  },
+  {
+    "NationalDexNumber": 89,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 300
+  },
+  {
+    "NationalDexNumber": 90,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 40
+  },
+  {
+    "NationalDexNumber": 91,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 1325
+  },
+  {
+    "NationalDexNumber": 92,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 1
+  },
+  {
+    "NationalDexNumber": 93,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 1
+  },
+  {
+    "NationalDexNumber": 94,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 405
+  },
+  {
+    "NationalDexNumber": 95,
+    "FormName": "Normal",
+    "Height": 88,
+    "Weight": 2100
+  },
+  {
+    "NationalDexNumber": 96,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 324
+  },
+  {
+    "NationalDexNumber": 97,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 756
+  },
+  {
+    "NationalDexNumber": 98,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 65
+  },
+  {
+    "NationalDexNumber": 99,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 600
+  },
+  {
+    "NationalDexNumber": 100,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 104
+  },
+  {
+    "NationalDexNumber": 101,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 666
+  },
+  {
+    "NationalDexNumber": 102,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 25
+  },
+  {
+    "NationalDexNumber": 103,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 1200
+  },
+  {
+    "NationalDexNumber": 104,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 65
+  },
+  {
+    "NationalDexNumber": 105,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 450
+  },
+  {
+    "NationalDexNumber": 106,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 498
+  },
+  {
+    "NationalDexNumber": 107,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 502
+  },
+  {
+    "NationalDexNumber": 108,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 655
+  },
+  {
+    "NationalDexNumber": 109,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 10
+  },
+  {
+    "NationalDexNumber": 110,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 95
+  },
+  {
+    "NationalDexNumber": 111,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 1150
+  },
+  {
+    "NationalDexNumber": 112,
+    "FormName": "Normal",
+    "Height": 19,
+    "Weight": 1200
+  },
+  {
+    "NationalDexNumber": 113,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 346
+  },
+  {
+    "NationalDexNumber": 114,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 350
+  },
+  {
+    "NationalDexNumber": 115,
+    "FormName": "Normal",
+    "Height": 22,
+    "Weight": 800
+  },
+  {
+    "NationalDexNumber": 116,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 80
+  },
+  {
+    "NationalDexNumber": 117,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 250
+  },
+  {
+    "NationalDexNumber": 118,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 150
+  },
+  {
+    "NationalDexNumber": 119,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 390
+  },
+  {
+    "NationalDexNumber": 120,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 345
+  },
+  {
+    "NationalDexNumber": 121,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 800
+  },
+  {
+    "NationalDexNumber": 122,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 545
+  },
+  {
+    "NationalDexNumber": 123,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 560
+  },
+  {
+    "NationalDexNumber": 124,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 406
+  },
+  {
+    "NationalDexNumber": 125,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 300
+  },
+  {
+    "NationalDexNumber": 126,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 445
+  },
+  {
+    "NationalDexNumber": 127,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 550
+  },
+  {
+    "NationalDexNumber": 128,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 884
+  },
+  {
+    "NationalDexNumber": 129,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 100
+  },
+  {
+    "NationalDexNumber": 130,
+    "FormName": "Normal",
+    "Height": 65,
+    "Weight": 2350
+  },
+  {
+    "NationalDexNumber": 131,
+    "FormName": "Normal",
+    "Height": 25,
+    "Weight": 2200
+  },
+  {
+    "NationalDexNumber": 132,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 40
+  },
+  {
+    "NationalDexNumber": 133,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 65
+  },
+  {
+    "NationalDexNumber": 134,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 290
+  },
+  {
+    "NationalDexNumber": 135,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 245
+  },
+  {
+    "NationalDexNumber": 136,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 250
+  },
+  {
+    "NationalDexNumber": 137,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 365
+  },
+  {
+    "NationalDexNumber": 138,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 75
+  },
+  {
+    "NationalDexNumber": 139,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 350
+  },
+  {
+    "NationalDexNumber": 140,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 115
+  },
+  {
+    "NationalDexNumber": 141,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 405
+  },
+  {
+    "NationalDexNumber": 142,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 590
+  },
+  {
+    "NationalDexNumber": 143,
+    "FormName": "Normal",
+    "Height": 21,
+    "Weight": 4600
+  },
+  {
+    "NationalDexNumber": 144,
+    "FormName": "Normal",
+    "Height": 17,
+    "Weight": 554
+  },
+  {
+    "NationalDexNumber": 145,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 526
+  },
+  {
+    "NationalDexNumber": 146,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 600
+  },
+  {
+    "NationalDexNumber": 147,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 33
+  },
+  {
+    "NationalDexNumber": 148,
+    "FormName": "Normal",
+    "Height": 40,
+    "Weight": 165
+  },
+  {
+    "NationalDexNumber": 149,
+    "FormName": "Normal",
+    "Height": 22,
+    "Weight": 2100
+  },
+  {
+    "NationalDexNumber": 150,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 1220
+  },
+  {
+    "NationalDexNumber": 151,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 40
+  },
+  {
+    "NationalDexNumber": 152,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 64
+  },
+  {
+    "NationalDexNumber": 153,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 158
+  },
+  {
+    "NationalDexNumber": 154,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 1005
+  },
+  {
+    "NationalDexNumber": 155,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 79
+  },
+  {
+    "NationalDexNumber": 156,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 190
+  },
+  {
+    "NationalDexNumber": 157,
+    "FormName": "Normal",
+    "Height": 17,
+    "Weight": 795
+  },
+  {
+    "NationalDexNumber": 158,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 95
+  },
+  {
+    "NationalDexNumber": 159,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 250
+  },
+  {
+    "NationalDexNumber": 160,
+    "FormName": "Normal",
+    "Height": 23,
+    "Weight": 888
+  },
+  {
+    "NationalDexNumber": 161,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 162,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 325
+  },
+  {
+    "NationalDexNumber": 163,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 212
+  },
+  {
+    "NationalDexNumber": 164,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 408
+  },
+  {
+    "NationalDexNumber": 165,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 108
+  },
+  {
+    "NationalDexNumber": 166,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 356
+  },
+  {
+    "NationalDexNumber": 167,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 85
+  },
+  {
+    "NationalDexNumber": 168,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 335
+  },
+  {
+    "NationalDexNumber": 169,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 750
+  },
+  {
+    "NationalDexNumber": 170,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 120
+  },
+  {
+    "NationalDexNumber": 171,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 225
+  },
+  {
+    "NationalDexNumber": 172,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 20
+  },
+  {
+    "NationalDexNumber": 173,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 30
+  },
+  {
+    "NationalDexNumber": 174,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 10
+  },
+  {
+    "NationalDexNumber": 175,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 15
+  },
+  {
+    "NationalDexNumber": 176,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 32
+  },
+  {
+    "NationalDexNumber": 177,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 20
+  },
+  {
+    "NationalDexNumber": 178,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 150
+  },
+  {
+    "NationalDexNumber": 179,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 78
+  },
+  {
+    "NationalDexNumber": 180,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 133
+  },
+  {
+    "NationalDexNumber": 181,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 615
+  },
+  {
+    "NationalDexNumber": 182,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 58
+  },
+  {
+    "NationalDexNumber": 183,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 85
+  },
+  {
+    "NationalDexNumber": 184,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 285
+  },
+  {
+    "NationalDexNumber": 185,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 380
+  },
+  {
+    "NationalDexNumber": 186,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 339
+  },
+  {
+    "NationalDexNumber": 187,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 5
+  },
+  {
+    "NationalDexNumber": 188,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 10
+  },
+  {
+    "NationalDexNumber": 189,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 30
+  },
+  {
+    "NationalDexNumber": 190,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 115
+  },
+  {
+    "NationalDexNumber": 191,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 18
+  },
+  {
+    "NationalDexNumber": 192,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 85
+  },
+  {
+    "NationalDexNumber": 193,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 380
+  },
+  {
+    "NationalDexNumber": 194,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 85
+  },
+  {
+    "NationalDexNumber": 195,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 750
+  },
+  {
+    "NationalDexNumber": 196,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 265
+  },
+  {
+    "NationalDexNumber": 197,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 270
+  },
+  {
+    "NationalDexNumber": 198,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 21
+  },
+  {
+    "NationalDexNumber": 199,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 795
+  },
+  {
+    "NationalDexNumber": 200,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 10
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown B",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown C",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown D",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown E",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown Exclamation",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown F",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown G",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown H",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown I",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown J",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown K",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown L",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown M",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown N",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown O",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown P",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown Q",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown Question",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown R",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown S",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown T",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown U",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown V",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown W",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown X",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown Y",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown Z",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 202,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 285
+  },
+  {
+    "NationalDexNumber": 203,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 415
+  },
+  {
+    "NationalDexNumber": 204,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 72
+  },
+  {
+    "NationalDexNumber": 205,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 1258
+  },
+  {
+    "NationalDexNumber": 206,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 140
+  },
+  {
+    "NationalDexNumber": 207,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 648
+  },
+  {
+    "NationalDexNumber": 208,
+    "FormName": "Normal",
+    "Height": 92,
+    "Weight": 4000
+  },
+  {
+    "NationalDexNumber": 209,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 78
+  },
+  {
+    "NationalDexNumber": 210,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 487
+  },
+  {
+    "NationalDexNumber": 211,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 39
+  },
+  {
+    "NationalDexNumber": 212,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 1180
+  },
+  {
+    "NationalDexNumber": 213,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 205
+  },
+  {
+    "NationalDexNumber": 214,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 540
+  },
+  {
+    "NationalDexNumber": 215,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 280
+  },
+  {
+    "NationalDexNumber": 216,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 88
+  },
+  {
+    "NationalDexNumber": 217,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 1258
+  },
+  {
+    "NationalDexNumber": 218,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 350
+  },
+  {
+    "NationalDexNumber": 219,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 550
+  },
+  {
+    "NationalDexNumber": 220,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 65
+  },
+  {
+    "NationalDexNumber": 221,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 558
+  },
+  {
+    "NationalDexNumber": 222,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 223,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 120
+  },
+  {
+    "NationalDexNumber": 224,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 285
+  },
+  {
+    "NationalDexNumber": 225,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 160
+  },
+  {
+    "NationalDexNumber": 226,
+    "FormName": "Normal",
+    "Height": 21,
+    "Weight": 2200
+  },
+  {
+    "NationalDexNumber": 227,
+    "FormName": "Normal",
+    "Height": 17,
+    "Weight": 505
+  },
+  {
+    "NationalDexNumber": 228,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 108
+  },
+  {
+    "NationalDexNumber": 229,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 350
+  },
+  {
+    "NationalDexNumber": 230,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 1520
+  },
+  {
+    "NationalDexNumber": 231,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 335
+  },
+  {
+    "NationalDexNumber": 232,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 1200
+  },
+  {
+    "NationalDexNumber": 233,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 325
+  },
+  {
+    "NationalDexNumber": 234,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 712
+  },
+  {
+    "NationalDexNumber": 235,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 580
+  },
+  {
+    "NationalDexNumber": 236,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 210
+  },
+  {
+    "NationalDexNumber": 237,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 480
+  },
+  {
+    "NationalDexNumber": 238,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 60
+  },
+  {
+    "NationalDexNumber": 239,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 235
+  },
+  {
+    "NationalDexNumber": 240,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 214
+  },
+  {
+    "NationalDexNumber": 241,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 755
+  },
+  {
+    "NationalDexNumber": 242,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 468
+  },
+  {
+    "NationalDexNumber": 243,
+    "FormName": "Normal",
+    "Height": 19,
+    "Weight": 1780
+  },
+  {
+    "NationalDexNumber": 244,
+    "FormName": "Normal",
+    "Height": 21,
+    "Weight": 1980
+  },
+  {
+    "NationalDexNumber": 245,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 1870
+  },
+  {
+    "NationalDexNumber": 246,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 720
+  },
+  {
+    "NationalDexNumber": 247,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 1520
+  },
+  {
+    "NationalDexNumber": 248,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 2020
+  },
+  {
+    "NationalDexNumber": 249,
+    "FormName": "Normal",
+    "Height": 52,
+    "Weight": 2160
+  },
+  {
+    "NationalDexNumber": 250,
+    "FormName": "Normal",
+    "Height": 38,
+    "Weight": 1990
+  },
+  {
+    "NationalDexNumber": 251,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 252,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 253,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 216
+  },
+  {
+    "NationalDexNumber": 254,
+    "FormName": "Normal",
+    "Height": 17,
+    "Weight": 522
+  },
+  {
+    "NationalDexNumber": 255,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 25
+  },
+  {
+    "NationalDexNumber": 256,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 195
+  },
+  {
+    "NationalDexNumber": 257,
+    "FormName": "Normal",
+    "Height": 19,
+    "Weight": 520
+  },
+  {
+    "NationalDexNumber": 258,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 76
+  },
+  {
+    "NationalDexNumber": 259,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 280
+  },
+  {
+    "NationalDexNumber": 260,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 819
+  },
+  {
+    "NationalDexNumber": 261,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 136
+  },
+  {
+    "NationalDexNumber": 262,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 370
+  },
+  {
+    "NationalDexNumber": 263,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 175
+  },
+  {
+    "NationalDexNumber": 264,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 325
+  },
+  {
+    "NationalDexNumber": 265,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 36
+  },
+  {
+    "NationalDexNumber": 266,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 100
+  },
+  {
+    "NationalDexNumber": 267,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 284
+  },
+  {
+    "NationalDexNumber": 268,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 115
+  },
+  {
+    "NationalDexNumber": 269,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 316
+  },
+  {
+    "NationalDexNumber": 270,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 26
+  },
+  {
+    "NationalDexNumber": 271,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 325
+  },
+  {
+    "NationalDexNumber": 272,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 550
+  },
+  {
+    "NationalDexNumber": 273,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 40
+  },
+  {
+    "NationalDexNumber": 274,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 280
+  },
+  {
+    "NationalDexNumber": 275,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 596
+  },
+  {
+    "NationalDexNumber": 276,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 23
+  },
+  {
+    "NationalDexNumber": 277,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 198
+  },
+  {
+    "NationalDexNumber": 278,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 95
+  },
+  {
+    "NationalDexNumber": 279,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 280
+  },
+  {
+    "NationalDexNumber": 280,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 66
+  },
+  {
+    "NationalDexNumber": 281,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 202
+  },
+  {
+    "NationalDexNumber": 282,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 484
+  },
+  {
+    "NationalDexNumber": 283,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 17
+  },
+  {
+    "NationalDexNumber": 284,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 36
+  },
+  {
+    "NationalDexNumber": 285,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 45
+  },
+  {
+    "NationalDexNumber": 286,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 392
+  },
+  {
+    "NationalDexNumber": 287,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 240
+  },
+  {
+    "NationalDexNumber": 288,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 465
+  },
+  {
+    "NationalDexNumber": 289,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 1305
+  },
+  {
+    "NationalDexNumber": 290,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 55
+  },
+  {
+    "NationalDexNumber": 291,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 120
+  },
+  {
+    "NationalDexNumber": 292,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 12
+  },
+  {
+    "NationalDexNumber": 293,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 163
+  },
+  {
+    "NationalDexNumber": 294,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 405
+  },
+  {
+    "NationalDexNumber": 295,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 840
+  },
+  {
+    "NationalDexNumber": 296,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 864
+  },
+  {
+    "NationalDexNumber": 297,
+    "FormName": "Normal",
+    "Height": 23,
+    "Weight": 2538
+  },
+  {
+    "NationalDexNumber": 298,
+    "FormName": "Normal",
+    "Height": 2,
+    "Weight": 20
+  },
+  {
+    "NationalDexNumber": 299,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 970
+  },
+  {
+    "NationalDexNumber": 300,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 110
+  },
+  {
+    "NationalDexNumber": 301,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 326
+  },
+  {
+    "NationalDexNumber": 302,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 110
+  },
+  {
+    "NationalDexNumber": 303,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 115
+  },
+  {
+    "NationalDexNumber": 304,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 600
+  },
+  {
+    "NationalDexNumber": 305,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 1200
+  },
+  {
+    "NationalDexNumber": 306,
+    "FormName": "Normal",
+    "Height": 21,
+    "Weight": 3600
+  },
+  {
+    "NationalDexNumber": 307,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 112
+  },
+  {
+    "NationalDexNumber": 308,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 315
+  },
+  {
+    "NationalDexNumber": 309,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 152
+  },
+  {
+    "NationalDexNumber": 310,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 402
+  },
+  {
+    "NationalDexNumber": 311,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 42
+  },
+  {
+    "NationalDexNumber": 312,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 42
+  },
+  {
+    "NationalDexNumber": 313,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 177
+  },
+  {
+    "NationalDexNumber": 314,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 177
+  },
+  {
+    "NationalDexNumber": 315,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 20
+  },
+  {
+    "NationalDexNumber": 316,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 103
+  },
+  {
+    "NationalDexNumber": 317,
+    "FormName": "Normal",
+    "Height": 17,
+    "Weight": 800
+  },
+  {
+    "NationalDexNumber": 318,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 208
+  },
+  {
+    "NationalDexNumber": 319,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 888
+  },
+  {
+    "NationalDexNumber": 320,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 1300
+  },
+  {
+    "NationalDexNumber": 321,
+    "FormName": "Normal",
+    "Height": 145,
+    "Weight": 3980
+  },
+  {
+    "NationalDexNumber": 322,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 240
+  },
+  {
+    "NationalDexNumber": 323,
+    "FormName": "Normal",
+    "Height": 19,
+    "Weight": 2200
+  },
+  {
+    "NationalDexNumber": 324,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 804
+  },
+  {
+    "NationalDexNumber": 325,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 306
+  },
+  {
+    "NationalDexNumber": 326,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 715
+  },
+  {
+    "NationalDexNumber": 327,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 50
+  },
+  {
+    "NationalDexNumber": 328,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 150
+  },
+  {
+    "NationalDexNumber": 329,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 153
+  },
+  {
+    "NationalDexNumber": 330,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 820
+  },
+  {
+    "NationalDexNumber": 331,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 513
+  },
+  {
+    "NationalDexNumber": 332,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 774
+  },
+  {
+    "NationalDexNumber": 333,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 12
+  },
+  {
+    "NationalDexNumber": 334,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 206
+  },
+  {
+    "NationalDexNumber": 335,
+    "FormName": "Normal",
+    "Height": 13,
+    "Weight": 403
+  },
+  {
+    "NationalDexNumber": 336,
+    "FormName": "Normal",
+    "Height": 27,
+    "Weight": 525
+  },
+  {
+    "NationalDexNumber": 337,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 1680
+  },
+  {
+    "NationalDexNumber": 338,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 1540
+  },
+  {
+    "NationalDexNumber": 339,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 19
+  },
+  {
+    "NationalDexNumber": 340,
+    "FormName": "Normal",
+    "Height": 9,
+    "Weight": 236
+  },
+  {
+    "NationalDexNumber": 341,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 115
+  },
+  {
+    "NationalDexNumber": 342,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 328
+  },
+  {
+    "NationalDexNumber": 343,
+    "FormName": "Normal",
+    "Height": 5,
+    "Weight": 215
+  },
+  {
+    "NationalDexNumber": 344,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 1080
+  },
+  {
+    "NationalDexNumber": 345,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 238
+  },
+  {
+    "NationalDexNumber": 346,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 604
+  },
+  {
+    "NationalDexNumber": 347,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 125
+  },
+  {
+    "NationalDexNumber": 348,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 682
+  },
+  {
+    "NationalDexNumber": 349,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 74
+  },
+  {
+    "NationalDexNumber": 350,
+    "FormName": "Normal",
+    "Height": 62,
+    "Weight": 1620
+  },
+  {
+    "NationalDexNumber": 351,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 8
+  },
+  {
+    "NationalDexNumber": 351,
+    "FormName": "Rainy Form",
+    "Height": 3,
+    "Weight": 8
+  },
+  {
+    "NationalDexNumber": 351,
+    "FormName": "Snowy Form",
+    "Height": 3,
+    "Weight": 8
+  },
+  {
+    "NationalDexNumber": 351,
+    "FormName": "Sunny Form",
+    "Height": 3,
+    "Weight": 8
+  },
+  {
+    "NationalDexNumber": 352,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 220
+  },
+  {
+    "NationalDexNumber": 353,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 23
+  },
+  {
+    "NationalDexNumber": 354,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 125
+  },
+  {
+    "NationalDexNumber": 355,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 150
+  },
+  {
+    "NationalDexNumber": 356,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 306
+  },
+  {
+    "NationalDexNumber": 357,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 1000
+  },
+  {
+    "NationalDexNumber": 358,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 10
+  },
+  {
+    "NationalDexNumber": 359,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 470
+  },
+  {
+    "NationalDexNumber": 360,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 140
+  },
+  {
+    "NationalDexNumber": 361,
+    "FormName": "Normal",
+    "Height": 7,
+    "Weight": 168
+  },
+  {
+    "NationalDexNumber": 362,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 2565
+  },
+  {
+    "NationalDexNumber": 363,
+    "FormName": "Normal",
+    "Height": 8,
+    "Weight": 395
+  },
+  {
+    "NationalDexNumber": 364,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 876
+  },
+  {
+    "NationalDexNumber": 365,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 1506
+  },
+  {
+    "NationalDexNumber": 366,
+    "FormName": "Normal",
+    "Height": 4,
+    "Weight": 525
+  },
+  {
+    "NationalDexNumber": 367,
+    "FormName": "Normal",
+    "Height": 17,
+    "Weight": 270
+  },
+  {
+    "NationalDexNumber": 368,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 226
+  },
+  {
+    "NationalDexNumber": 369,
+    "FormName": "Normal",
+    "Height": 10,
+    "Weight": 234
+  },
+  {
+    "NationalDexNumber": 370,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 87
+  },
+  {
+    "NationalDexNumber": 371,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 421
+  },
+  {
+    "NationalDexNumber": 372,
+    "FormName": "Normal",
+    "Height": 11,
+    "Weight": 1105
+  },
+  {
+    "NationalDexNumber": 373,
+    "FormName": "Normal",
+    "Height": 15,
+    "Weight": 1026
+  },
+  {
+    "NationalDexNumber": 374,
+    "FormName": "Normal",
+    "Height": 6,
+    "Weight": 952
+  },
+  {
+    "NationalDexNumber": 375,
+    "FormName": "Normal",
+    "Height": 12,
+    "Weight": 2025
+  },
+  {
+    "NationalDexNumber": 376,
+    "FormName": "Normal",
+    "Height": 16,
+    "Weight": 5500
+  },
+  {
+    "NationalDexNumber": 377,
+    "FormName": "Normal",
+    "Height": 17,
+    "Weight": 2300
+  },
+  {
+    "NationalDexNumber": 378,
+    "FormName": "Normal",
+    "Height": 18,
+    "Weight": 1750
+  },
+  {
+    "NationalDexNumber": 379,
+    "FormName": "Normal",
+    "Height": 19,
+    "Weight": 2050
+  },
+  {
+    "NationalDexNumber": 380,
+    "FormName": "Normal",
+    "Height": 14,
+    "Weight": 400
+  },
+  {
+    "NationalDexNumber": 381,
+    "FormName": "Normal",
+    "Height": 20,
+    "Weight": 600
+  },
+  {
+    "NationalDexNumber": 382,
+    "FormName": "Normal",
+    "Height": 45,
+    "Weight": 3520
+  },
+  {
+    "NationalDexNumber": 383,
+    "FormName": "Normal",
+    "Height": 35,
+    "Weight": 9500
+  },
+  {
+    "NationalDexNumber": 384,
+    "FormName": "Normal",
+    "Height": 70,
+    "Weight": 2065
+  },
+  {
+    "NationalDexNumber": 385,
+    "FormName": "Normal",
+    "Height": 3,
+    "Weight": 11
+  },
+  {
+    "NationalDexNumber": 386,
+    "FormName": "Attack Forme",
+    "Height": 17,
+    "Weight": 608
+  },
+  {
+    "NationalDexNumber": 386,
+    "FormName": "Defense Forme",
+    "Height": 17,
+    "Weight": 608
+  },
+  {
+    "NationalDexNumber": 386,
+    "FormName": "Normal",
+    "Height": 17,
+    "Weight": 608
+  },
+  {
+    "NationalDexNumber": 386,
+    "FormName": "Speed Forme",
+    "Height": 17,
+    "Weight": 608
+  }
+]

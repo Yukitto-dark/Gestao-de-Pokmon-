@@ -1,0 +1,4907 @@
+[
+  {
+    "NationalDexNumber": 386,
+    "FormName": "Attack Forme",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 50,
+      "Atk": 180,
+      "Def": 20,
+      "SpAtk": 180,
+      "SpDef": 20,
+      "Speed": 150
+    },
+    "Abilities": [
+      {
+        "Name": "Pressure",
+        "Description": "Increases the PP cost of moves targetting the Pokémon by one.",
+        "Slot": "First",
+        "ApiId": 46
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/386/deoxys-attack/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/386/deoxys-attack/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/386/deoxys-attack/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 35,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 43,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 101,
+        "Method": "LevelUp",
+        "Level": 9,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 100,
+        "Method": "LevelUp",
+        "Level": 17,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 269,
+        "Method": "LevelUp",
+        "Level": 25,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 228,
+        "Method": "LevelUp",
+        "Level": 33,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 94,
+        "Method": "LevelUp",
+        "Level": 41,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 276,
+        "Method": "LevelUp",
+        "Level": 49,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 322,
+        "Method": "LevelUp",
+        "Level": 73,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 192,
+        "Method": "LevelUp",
+        "Level": 81,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 354,
+        "Method": "LevelUp",
+        "Level": 89,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 63,
+        "Method": "LevelUp",
+        "Level": 97,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 15,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 58,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 63,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 70,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 76,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 85,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 86,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 87,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 92,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 94,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 104,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 113,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 115,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 138,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 148,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 156,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 157,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 164,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 182,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 207,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 216,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 218,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 219,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 240,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 241,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 244,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 247,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 249,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 259,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 263,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 269,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 280,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 317,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 332,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 347,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 20,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 67,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 173,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 214,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 271,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 272,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 276,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 277,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 278,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 285,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 289,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 324,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 35,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 43,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 101,
+        "Method": "LevelUp",
+        "Level": 9,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 100,
+        "Method": "LevelUp",
+        "Level": 17,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 269,
+        "Method": "LevelUp",
+        "Level": 25,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 228,
+        "Method": "LevelUp",
+        "Level": 33,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 94,
+        "Method": "LevelUp",
+        "Level": 41,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 276,
+        "Method": "LevelUp",
+        "Level": 49,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 322,
+        "Method": "LevelUp",
+        "Level": 73,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 192,
+        "Method": "LevelUp",
+        "Level": 81,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 354,
+        "Method": "LevelUp",
+        "Level": 89,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 63,
+        "Method": "LevelUp",
+        "Level": 97,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 15,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 58,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 63,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 70,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 76,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 85,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 86,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 87,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 92,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 94,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 104,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 113,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 115,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 138,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 148,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 156,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 157,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 164,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 182,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 207,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 216,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 218,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 219,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 237,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 240,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 241,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 244,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 247,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 249,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 259,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 263,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 269,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 280,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 317,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 332,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 347,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 386,
+    "FormName": "Defense Forme",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 50,
+      "Atk": 70,
+      "Def": 160,
+      "SpAtk": 70,
+      "SpDef": 160,
+      "Speed": 90
+    },
+    "Abilities": [
+      {
+        "Name": "Pressure",
+        "Description": "Increases the PP cost of moves targetting the Pokémon by one.",
+        "Slot": "First",
+        "ApiId": 46
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/386/deoxys-defense/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/386/deoxys-defense/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/386/deoxys-defense/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 35,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 43,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 101,
+        "Method": "LevelUp",
+        "Level": 9,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 100,
+        "Method": "LevelUp",
+        "Level": 17,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 282,
+        "Method": "LevelUp",
+        "Level": 25,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 191,
+        "Method": "LevelUp",
+        "Level": 33,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 94,
+        "Method": "LevelUp",
+        "Level": 41,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 289,
+        "Method": "LevelUp",
+        "Level": 49,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 133,
+        "Method": "LevelUp",
+        "Level": 73,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 334,
+        "Method": "LevelUp",
+        "Level": 73,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 105,
+        "Method": "LevelUp",
+        "Level": 81,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 354,
+        "Method": "LevelUp",
+        "Level": 89,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 68,
+        "Method": "LevelUp",
+        "Level": 97,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 243,
+        "Method": "LevelUp",
+        "Level": 97,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 15,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 58,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 63,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 70,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 76,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 85,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 86,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 87,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 92,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 94,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 104,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 113,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 115,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 138,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 148,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 156,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 157,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 164,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 182,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 207,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 216,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 218,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 219,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 240,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 241,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 244,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 247,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 249,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 259,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 263,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 269,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 280,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 317,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 332,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 347,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 20,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 67,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 173,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 214,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 271,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 272,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 277,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 278,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 282,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 285,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 289,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 324,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 334,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 35,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 43,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 101,
+        "Method": "LevelUp",
+        "Level": 9,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 100,
+        "Method": "LevelUp",
+        "Level": 17,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 282,
+        "Method": "LevelUp",
+        "Level": 25,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 191,
+        "Method": "LevelUp",
+        "Level": 33,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 94,
+        "Method": "LevelUp",
+        "Level": 41,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 289,
+        "Method": "LevelUp",
+        "Level": 49,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 133,
+        "Method": "LevelUp",
+        "Level": 73,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 334,
+        "Method": "LevelUp",
+        "Level": 73,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 105,
+        "Method": "LevelUp",
+        "Level": 81,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 354,
+        "Method": "LevelUp",
+        "Level": 89,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 68,
+        "Method": "LevelUp",
+        "Level": 97,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 243,
+        "Method": "LevelUp",
+        "Level": 97,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 15,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 58,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 63,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 70,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 76,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 85,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 86,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 87,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 92,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 94,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 104,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 113,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 115,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 138,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 148,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 156,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 157,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 164,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 182,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 207,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 216,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 218,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 219,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 237,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 240,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 241,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 244,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 247,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 249,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 259,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 263,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 269,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 280,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 317,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 332,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 347,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 386,
+    "FormName": "Speed Forme",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 50,
+      "Atk": 95,
+      "Def": 90,
+      "SpAtk": 95,
+      "SpDef": 90,
+      "Speed": 180
+    },
+    "Abilities": [
+      {
+        "Name": "Pressure",
+        "Description": "Increases the PP cost of moves targetting the Pokémon by one.",
+        "Slot": "First",
+        "ApiId": 46
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/386/deoxys-speed/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/386/deoxys-speed/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/386/deoxys-speed/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 35,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 43,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 101,
+        "Method": "LevelUp",
+        "Level": 9,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 104,
+        "Method": "LevelUp",
+        "Level": 17,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 282,
+        "Method": "LevelUp",
+        "Level": 25,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 228,
+        "Method": "LevelUp",
+        "Level": 33,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 94,
+        "Method": "LevelUp",
+        "Level": 41,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 129,
+        "Method": "LevelUp",
+        "Level": 49,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 97,
+        "Method": "LevelUp",
+        "Level": 73,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 105,
+        "Method": "LevelUp",
+        "Level": 81,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 354,
+        "Method": "LevelUp",
+        "Level": 89,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 245,
+        "Method": "LevelUp",
+        "Level": 97,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 15,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 58,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 63,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 70,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 76,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 85,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 86,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 87,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 92,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 94,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 104,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 113,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 115,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 138,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 148,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 156,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 157,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 164,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 182,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 207,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 216,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 218,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 219,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 240,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 241,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 244,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 247,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 249,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 259,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 263,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 269,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 280,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 317,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 332,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 347,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 7,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 8,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 9,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 20,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 67,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 173,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 214,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 271,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 272,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 277,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 278,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 282,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 285,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 289,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 324,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 35,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 43,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 101,
+        "Method": "LevelUp",
+        "Level": 9,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 104,
+        "Method": "LevelUp",
+        "Level": 17,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 282,
+        "Method": "LevelUp",
+        "Level": 25,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 228,
+        "Method": "LevelUp",
+        "Level": 33,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 94,
+        "Method": "LevelUp",
+        "Level": 41,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 129,
+        "Method": "LevelUp",
+        "Level": 49,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 97,
+        "Method": "LevelUp",
+        "Level": 73,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 105,
+        "Method": "LevelUp",
+        "Level": 81,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 354,
+        "Method": "LevelUp",
+        "Level": 89,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 245,
+        "Method": "LevelUp",
+        "Level": 97,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 15,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 58,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 63,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 70,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 76,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 85,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 86,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 87,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 92,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 94,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 104,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 113,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 115,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 138,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 148,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 156,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 157,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 164,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 182,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 207,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 216,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 218,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 219,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 237,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 240,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 241,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 244,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 247,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 249,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 259,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 263,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 269,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 280,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 317,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 332,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 347,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 351,
+    "FormName": "Sunny Form",
+    "Types": [
+      "Fire"
+    ],
+    "Stats": {
+      "HP": 70,
+      "Atk": 70,
+      "Def": 70,
+      "SpAtk": 70,
+      "SpDef": 70,
+      "Speed": 70
+    },
+    "Abilities": [
+      {
+        "Name": "Forecast",
+        "Description": "Changes Castform's type and form to match the weather.",
+        "Slot": "First",
+        "ApiId": 59
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/351/castform-sunny/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/351/castform-sunny/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/351/castform-sunny/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 50,
+        "Method": "Egg",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 133,
+        "Method": "Egg",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 248,
+        "Method": "Egg",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 33,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 52,
+        "Method": "LevelUp",
+        "Level": 10,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 55,
+        "Method": "LevelUp",
+        "Level": 10,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 181,
+        "Method": "LevelUp",
+        "Level": 10,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 29,
+        "Method": "LevelUp",
+        "Level": 20,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 240,
+        "Method": "LevelUp",
+        "Level": 30,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 241,
+        "Method": "LevelUp",
+        "Level": 30,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 258,
+        "Method": "LevelUp",
+        "Level": 30,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 311,
+        "Method": "LevelUp",
+        "Level": 40,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 56,
+        "Method": "LevelUp",
+        "Level": 50,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 59,
+        "Method": "LevelUp",
+        "Level": 50,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 126,
+        "Method": "LevelUp",
+        "Level": 50,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 53,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 58,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 59,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 76,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 85,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 86,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 87,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 92,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 104,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 126,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 148,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 156,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 164,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 168,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 182,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 201,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 207,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 213,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 216,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 218,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 240,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 241,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 244,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 247,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 258,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 263,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 173,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 196,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 214,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 50,
+        "Method": "Egg",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 133,
+        "Method": "Egg",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 248,
+        "Method": "Egg",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 33,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 52,
+        "Method": "LevelUp",
+        "Level": 10,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 55,
+        "Method": "LevelUp",
+        "Level": 10,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 181,
+        "Method": "LevelUp",
+        "Level": 10,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 29,
+        "Method": "LevelUp",
+        "Level": 20,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 240,
+        "Method": "LevelUp",
+        "Level": 30,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 241,
+        "Method": "LevelUp",
+        "Level": 30,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 258,
+        "Method": "LevelUp",
+        "Level": 30,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 311,
+        "Method": "LevelUp",
+        "Level": 40,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 56,
+        "Method": "LevelUp",
+        "Level": 50,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 59,
+        "Method": "LevelUp",
+        "Level": 50,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 126,
+        "Method": "LevelUp",
+        "Level": 50,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 53,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 58,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 59,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 76,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 85,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 86,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 87,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 92,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 104,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 126,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 148,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 156,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 164,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 168,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 182,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 201,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 207,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 213,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 216,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 218,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 237,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 240,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 241,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 244,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 247,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 258,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 263,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 351,
+    "FormName": "Rainy Form",
+    "Types": [
+      "Water"
+    ],
+    "Stats": {
+      "HP": 70,
+      "Atk": 70,
+      "Def": 70,
+      "SpAtk": 70,
+      "SpDef": 70,
+      "Speed": 70
+    },
+    "Abilities": [
+      {
+        "Name": "Forecast",
+        "Description": "Changes Castform's type and form to match the weather.",
+        "Slot": "First",
+        "ApiId": 59
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/351/castform-rainy/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/351/castform-rainy/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/351/castform-rainy/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 50,
+        "Method": "Egg",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 133,
+        "Method": "Egg",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 248,
+        "Method": "Egg",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 33,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 52,
+        "Method": "LevelUp",
+        "Level": 10,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 55,
+        "Method": "LevelUp",
+        "Level": 10,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 181,
+        "Method": "LevelUp",
+        "Level": 10,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 29,
+        "Method": "LevelUp",
+        "Level": 20,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 240,
+        "Method": "LevelUp",
+        "Level": 30,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 241,
+        "Method": "LevelUp",
+        "Level": 30,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 258,
+        "Method": "LevelUp",
+        "Level": 30,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 311,
+        "Method": "LevelUp",
+        "Level": 40,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 56,
+        "Method": "LevelUp",
+        "Level": 50,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 59,
+        "Method": "LevelUp",
+        "Level": 50,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 126,
+        "Method": "LevelUp",
+        "Level": 50,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 53,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 58,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 59,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 76,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 85,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 86,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 87,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 92,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 104,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 126,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 148,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 156,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 164,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 168,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 182,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 201,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 207,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 213,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 216,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 218,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 240,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 241,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 244,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 247,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 258,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 263,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 173,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 196,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 214,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 50,
+        "Method": "Egg",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 133,
+        "Method": "Egg",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 248,
+        "Method": "Egg",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 33,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 52,
+        "Method": "LevelUp",
+        "Level": 10,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 55,
+        "Method": "LevelUp",
+        "Level": 10,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 181,
+        "Method": "LevelUp",
+        "Level": 10,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 29,
+        "Method": "LevelUp",
+        "Level": 20,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 240,
+        "Method": "LevelUp",
+        "Level": 30,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 241,
+        "Method": "LevelUp",
+        "Level": 30,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 258,
+        "Method": "LevelUp",
+        "Level": 30,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 311,
+        "Method": "LevelUp",
+        "Level": 40,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 56,
+        "Method": "LevelUp",
+        "Level": 50,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 59,
+        "Method": "LevelUp",
+        "Level": 50,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 126,
+        "Method": "LevelUp",
+        "Level": 50,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 53,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 58,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 59,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 76,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 85,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 86,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 87,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 92,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 104,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 126,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 148,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 156,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 164,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 168,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 182,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 201,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 207,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 213,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 216,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 218,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 237,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 240,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 241,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 244,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 247,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 258,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 263,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 351,
+    "FormName": "Snowy Form",
+    "Types": [
+      "Ice"
+    ],
+    "Stats": {
+      "HP": 70,
+      "Atk": 70,
+      "Def": 70,
+      "SpAtk": 70,
+      "SpDef": 70,
+      "Speed": 70
+    },
+    "Abilities": [
+      {
+        "Name": "Forecast",
+        "Description": "Changes Castform's type and form to match the weather.",
+        "Slot": "First",
+        "ApiId": 59
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/351/castform-snowy/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/351/castform-snowy/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/351/castform-snowy/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 50,
+        "Method": "Egg",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 133,
+        "Method": "Egg",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 248,
+        "Method": "Egg",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 33,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 52,
+        "Method": "LevelUp",
+        "Level": 10,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 55,
+        "Method": "LevelUp",
+        "Level": 10,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 181,
+        "Method": "LevelUp",
+        "Level": 10,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 29,
+        "Method": "LevelUp",
+        "Level": 20,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 240,
+        "Method": "LevelUp",
+        "Level": 30,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 241,
+        "Method": "LevelUp",
+        "Level": 30,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 258,
+        "Method": "LevelUp",
+        "Level": 30,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 311,
+        "Method": "LevelUp",
+        "Level": 40,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 56,
+        "Method": "LevelUp",
+        "Level": 50,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 59,
+        "Method": "LevelUp",
+        "Level": 50,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 126,
+        "Method": "LevelUp",
+        "Level": 50,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 53,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 58,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 59,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 76,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 85,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 86,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 87,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 92,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 104,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 126,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 148,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 156,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 164,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 168,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 182,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 201,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 207,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 213,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 216,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 218,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 240,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 241,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 244,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 247,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 258,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 263,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 173,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 196,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 214,
+        "Method": "Tutor",
+        "Level": 0,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 50,
+        "Method": "Egg",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 133,
+        "Method": "Egg",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 248,
+        "Method": "Egg",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 33,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 52,
+        "Method": "LevelUp",
+        "Level": 10,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 55,
+        "Method": "LevelUp",
+        "Level": 10,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 181,
+        "Method": "LevelUp",
+        "Level": 10,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 29,
+        "Method": "LevelUp",
+        "Level": 20,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 240,
+        "Method": "LevelUp",
+        "Level": 30,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 241,
+        "Method": "LevelUp",
+        "Level": 30,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 258,
+        "Method": "LevelUp",
+        "Level": 30,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 311,
+        "Method": "LevelUp",
+        "Level": 40,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 56,
+        "Method": "LevelUp",
+        "Level": 50,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 59,
+        "Method": "LevelUp",
+        "Level": 50,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 126,
+        "Method": "LevelUp",
+        "Level": 50,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 53,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 58,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 59,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 76,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 85,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 86,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 87,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 92,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 104,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 126,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 148,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 156,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 164,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 168,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 182,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 201,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 207,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 213,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 216,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 218,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 237,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 240,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 241,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 244,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 247,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 258,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      },
+      {
+        "MoveId": 263,
+        "Method": "TM",
+        "Level": 0,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown B",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-b/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-b/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-b/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown C",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-c/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-c/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-c/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown D",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-d/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-d/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-d/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown E",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-e/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-e/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-e/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown F",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-f/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-f/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-f/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown G",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-g/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-g/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-g/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown H",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-h/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-h/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-h/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown I",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-i/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-i/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-i/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown J",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-j/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-j/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-j/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown K",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-k/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-k/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-k/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown L",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-l/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-l/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-l/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown M",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-m/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-m/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-m/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown N",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-n/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-n/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-n/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown O",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-o/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-o/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-o/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown P",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-p/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-p/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-p/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown Q",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-q/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-q/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-q/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown R",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-r/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-r/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-r/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown S",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-s/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-s/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-s/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown T",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-t/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-t/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-t/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown U",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-u/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-u/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-u/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown V",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-v/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-v/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-v/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown W",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-w/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-w/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-w/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown X",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-x/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-x/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-x/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown Y",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-y/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-y/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-y/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown Z",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-z/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-z/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-z/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown Exclamation",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-exclamation/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-exclamation/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-exclamation/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  },
+  {
+    "NationalDexNumber": 201,
+    "FormName": "Unown Question",
+    "Types": [
+      "Psychic"
+    ],
+    "Stats": {
+      "HP": 48,
+      "Atk": 72,
+      "Def": 48,
+      "SpAtk": 72,
+      "SpDef": 48,
+      "Speed": 48
+    },
+    "Abilities": [
+      {
+        "Name": "Levitate",
+        "Description": "Evades Ground moves.",
+        "Slot": "First",
+        "ApiId": 26
+      }
+    ],
+    "Sprites": {
+      "ExhibitionDefault": "Data/images/pokemon/forms/201/unown-question/front.png",
+      "BoxDefault": "Data/images/pokemon/forms/201/unown-question/box.png",
+      "ExhibitionShiny": "Data/images/pokemon/forms/201/unown-question/front-shiny.png",
+      "BoxShiny": null
+    },
+    "Learnset": [
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-2-white-2"
+      },
+      {
+        "MoveId": 237,
+        "Method": "LevelUp",
+        "Level": 1,
+        "GameVersion": "black-white"
+      }
+    ]
+  }
+]

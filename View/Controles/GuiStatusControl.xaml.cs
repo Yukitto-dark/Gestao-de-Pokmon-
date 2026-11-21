@@ -1,0 +1,280 @@
+using System;
+using System.Globalization;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Input;
+using System.Windows.Media;
+using GestaoDePokemon.Controller;
+using GestaoDePokemon.model;
+
+namespace GestaoDePokemon.View.Controles
+{
+    public partial class GuiStatusControl : UserControl
+    {
+        private static readonly double[] LinhasRotulo = { 25, 90, 140, 194, 254, 308 };
+
+        private readonly TextBox _editor;
+        private Label? _labelEditando;
+        private PokemonStat _statEditando;
+        private PokemonSetController.SetInfo? _info;
+        private int _pokemonId;
+        private PokemonNature _naturezaInicial;
+        private bool _editandoNatureza;
+        private bool _carregandoNatureza;
+
+        public event Action? IrResumo;
+        public event Action? IrMoves;
+        public event Action? VoltarTime;
+        public event Action? SetAlterado;
+
+        public GuiStatusControl()
+        {
+            InitializeComponent();
+            Ir_summary.Click += (_, _) => IrResumo?.Invoke();
+            Ir_moves.Click += (_, _) => IrMoves?.Invoke();
+            Voltar_Time.Click += (_, _) => VoltarTime?.Invoke();
+
+            _editor = new TextBox
+            {
+                Name = "EV_editor",
+                Visibility = Visibility.Collapsed,
+                FontFamily = new FontFamily("/View/fonts/#Pokemon Fire Red"),
+                FontSize = 30,
+                Foreground = Brushes.White,
+                Background = new SolidColorBrush(Color.FromRgb(48, 48, 48)),
+                BorderBrush = Brushes.White,
+                BorderThickness = new Thickness(1),
+                TextAlignment = TextAlignment.Center,
+                VerticalContentAlignment = VerticalAlignment.Center,
+                Padding = new Thickness(0)
+            };
+            _editor.KeyDown += Editor_KeyDown;
+            _editor.LostFocus += (_, _) => ConfirmarEdicao();
+            Raiz.Children.Add(_editor);
+
+            Label[] labels = { EV_hp, EV_attack, EV_defense, EV_special_attack, EV_special_defense, EV_speed };
+            for (int i = 0; i < labels.Length; i++)
+            {
+                Label label = labels[i];
+                PokemonStat stat = EffortValues.Estatisticas[i];
+
+                label.Cursor = Cursors.Hand;
+                label.MouseLeftButtonUp += (_, _) => AbrirEdicao(label, stat);
+
+                Button hotspot = new()
+                {
+                    Name = $"EV_rotulo_{stat}",
+                    Opacity = 0,
+                    HorizontalAlignment = System.Windows.HorizontalAlignment.Left,
+                    VerticalAlignment = VerticalAlignment.Top,
+                    Height = 30,
+                    Width = 180,
+                    Margin = new Thickness(268, LinhasRotulo[i], 0, 0),
+                    ToolTip = $"Editar EV de {stat}"
+                };
+                hotspot.Click += (_, _) => AbrirEdicao(label, stat);
+                Camada.Children.Add(hotspot);
+            }
+
+            EdicaoInline.Nivel(lvl_pokemon, valor =>
+            {
+                try
+                {
+                    new PokemonSetController().AtualizarNivel(_pokemonId, valor);
+                    lvl_pokemon.Content = valor;
+                    SetAlterado?.Invoke();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Não foi possível salvar o nível: {ex.Message}", "Time",
+                        MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            });
+
+            Nature_select.ItemsSource = Enum.GetValues<PokemonNature>();
+            Nature_pokemon.Cursor = Cursors.Hand;
+            Nature_pokemon.MouseLeftButtonUp += (_, _) => AbrirNatureza();
+            Nature_select.DropDownClosed += (_, _) => FecharNatureza();
+            Nature_select.SelectionChanged += (_, _) =>
+            {
+                if (_editandoNatureza && !_carregandoNatureza)
+                    FecharNatureza();
+            };
+        }
+
+        public void Carregar(PokemonSetController.SetInfo info, bool shiny)
+        {
+            _info = info;
+            _pokemonId = info.PokemonId;
+            PokemonForm? form = GuiDados.ObterForma(info.PokemonId);
+
+            Id_pokemon.Content = GuiDados.Id(info);
+            Nome_pokemon.Content = GuiDados.Nome(info);
+            lvl_pokemon.Content = info.Level.ToString();
+
+            EV_hp.Content = info.EVs.HP;
+            EV_attack.Content = info.EVs.Attack;
+            EV_defense.Content = info.EVs.Defense;
+            EV_special_attack.Content = info.EVs.SpecialAttack;
+            EV_special_defense.Content = info.EVs.SpecialDefense;
+            EV_speed.Content = info.EVs.Speed;
+            AtualizarDisponivel(info.EVs);
+
+            Nature_pokemon.Content = info.Nature.ToString();
+            Nature_effect.Content = GuiDados.NaturezaEfeito(info.Nature);
+            happiness_pokemon.Content = "—";
+            Size_A.Content = form?.Height is double altura
+                ? altura.ToString("0.0", CultureInfo.InvariantCulture) + " m"
+                : "—";
+            Size_subA.Content = form?.Weight is double peso
+                ? peso.ToString("0.0", CultureInfo.InvariantCulture) + " kg"
+                : "—";
+
+            GuiDados.Tipos(Type_pokemon, Type_pokemon2, form?.Types ?? Array.Empty<PokemonType>(), 37, 172);
+
+            GuiDados.Sprite(Imagem_pokemon, info.SpriteUrl);
+        }
+
+        private void AbrirEdicao(Label label, PokemonStat stat)
+        {
+            if (_info is null)
+                return;
+
+            ConfirmarEdicao();
+
+            _labelEditando = label;
+            _statEditando = stat;
+            _editor.Text = _info.EVs.GetValue(stat).ToString(CultureInfo.InvariantCulture);
+            _editor.HorizontalAlignment = label.HorizontalAlignment;
+            _editor.VerticalAlignment = label.VerticalAlignment;
+            _editor.Margin = label.Margin;
+            _editor.Width = label.Width;
+            _editor.Height = label.Height;
+            label.Visibility = Visibility.Collapsed;
+            _editor.Visibility = Visibility.Visible;
+            _editor.Focus();
+            _editor.SelectAll();
+        }
+
+        private void Editor_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+                ConfirmarEdicao();
+            else if (e.Key == Key.Escape)
+                CancelarEdicao();
+        }
+
+        private void ConfirmarEdicao()
+        {
+            if (_labelEditando is null || _info is null)
+                return;
+
+            Label label = _labelEditando;
+            PokemonStat stat = _statEditando;
+            string texto = _editor.Text.Trim();
+
+            _labelEditando = null;
+            _editor.Visibility = Visibility.Collapsed;
+            label.Visibility = Visibility.Visible;
+
+            if (!int.TryParse(texto, NumberStyles.Integer, CultureInfo.InvariantCulture, out int valor)
+                || valor < 0
+                || valor > EffortValues.MaxPerStat)
+            {
+                MessageBox.Show($"Cada atributo deve possuir entre {EffortValues.MinPerStat} e {EffortValues.MaxPerStat} EVs.", "Time",
+                    MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            if (valor < EffortValues.MinPerStat)
+            {
+                MessageBox.Show($"O mínimo por estatística é {EffortValues.MinPerStat} EV.", "Time",
+                    MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            if (valor == _info.EVs.GetValue(stat))
+                return;
+
+            int disponivel = EffortValues.MaxTotal - _info.EVs.Total;
+            if (valor - _info.EVs.GetValue(stat) > disponivel)
+            {
+                MessageBox.Show($"O total de EVs não pode ultrapassar {EffortValues.MaxTotal}.", "Time",
+                    MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            try
+            {
+                EffortValues evs = new PokemonSetController()
+                    .AtualizarEV(_info.PokemonId, stat, valor);
+                label.Content = valor;
+                AtualizarDisponivel(evs);
+                SetAlterado?.Invoke();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Não foi possível salvar o EV: {ex.Message}", "Time",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void CancelarEdicao()
+        {
+            if (_labelEditando is null)
+                return;
+
+            _labelEditando.Visibility = Visibility.Visible;
+            _labelEditando = null;
+            _editor.Visibility = Visibility.Collapsed;
+        }
+
+        private void AbrirNatureza()
+        {
+            if (_info is null)
+                return;
+
+            _naturezaInicial = _info.Nature;
+            _editandoNatureza = true;
+            _carregandoNatureza = true;
+            Nature_select.SelectedItem = _naturezaInicial;
+            _carregandoNatureza = false;
+            Nature_pokemon.Visibility = Visibility.Collapsed;
+            Nature_select.Visibility = Visibility.Visible;
+            Nature_select.Focus();
+            Nature_select.IsDropDownOpen = true;
+        }
+
+        private void FecharNatureza()
+        {
+            if (!_editandoNatureza)
+                return;
+
+            _editandoNatureza = false;
+            Nature_select.IsDropDownOpen = false;
+            Nature_select.Visibility = Visibility.Collapsed;
+            Nature_pokemon.Visibility = Visibility.Visible;
+
+            if (_info is null || Nature_select.SelectedItem is not PokemonNature nature)
+                return;
+
+            if (nature == _naturezaInicial)
+                return;
+
+            try
+            {
+                new PokemonSetController().AtualizarNatureza(_pokemonId, nature);
+                Nature_pokemon.Content = nature;
+                SetAlterado?.Invoke();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Não foi possível salvar a natureza: {ex.Message}", "Time",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void AtualizarDisponivel(EffortValues evs) =>
+            EVs_disponiveis.Content = $"EVs disponíveis: {EffortValues.MaxTotal - evs.Total}";
+    }
+}

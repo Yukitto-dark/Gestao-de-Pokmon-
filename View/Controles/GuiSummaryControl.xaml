@@ -1,0 +1,53 @@
+<UserControl x:Class="GestaoDePokemon.View.Controles.GuiSummaryControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignWidth="827" d:DesignHeight="657"
+             Width="827" Height="657" Background="Transparent">
+    <UserControl.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="/View/fonts/#Pokemon Fire Red"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="Black" ShadowDepth="3" Direction="315" BlurRadius="0" Opacity="1"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <Image Source="/View/Telas - background/Gui-Summary.png"
+               Stretch="Fill" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+        <Grid/>
+
+        <Image x:Name="Type_pokemon" HorizontalAlignment="Left" Height="32" Margin="66,111,0,0" VerticalAlignment="Top" Width="78"/>
+        <Image x:Name="Type_pokemon2" HorizontalAlignment="Left" Height="32" Margin="148,111,0,0" VerticalAlignment="Top" Width="78"/>
+        <Image x:Name="Imagem_pokemon" HorizontalAlignment="Left" Height="180" Margin="56,151,0,0" VerticalAlignment="Top" Width="180"/>
+
+        <Label x:Name="Id_pokemon" Content="Label" HorizontalAlignment="Left" Height="37" Margin="84,27,0,0" VerticalAlignment="Top" Width="52" FontSize="35"/>
+        <Label x:Name="lvl_pokemon" Content="Label" HorizontalAlignment="Left" Height="38" Margin="216,27,0,0" VerticalAlignment="Top" Width="52" FontSize="35"/>
+        <Label x:Name="Vida" Content="X/Y" HorizontalAlignment="Left" Height="44" Margin="527,25,0,0" VerticalAlignment="Top" Width="108" FontSize="35"/>
+        <Label x:Name="Nome_pokemon" Content="Label" HorizontalAlignment="Left" Height="43" Margin="56,351,0,0" VerticalAlignment="Top" Width="180" FontSize="35"/>
+        <Label x:Name="Experiencia" Content="X" HorizontalAlignment="Left" Height="38" Margin="505,258,0,0" VerticalAlignment="Top" Width="110" FontSize="35"/>
+        <Label x:Name="XP_faltando" Content="X" HorizontalAlignment="Left" Height="37" Margin="505,368,0,0" VerticalAlignment="Top" Width="110" FontSize="35"/>
+        <Label x:Name="Ability" Content="Label" HorizontalAlignment="Left" Height="40" Margin="546,449,0,0" VerticalAlignment="Top" Width="141" FontSize="36"/>
+        <TextBlock x:Name="Info_ability" Text="Label" HorizontalAlignment="Left" Height="77" Margin="340,510,0,0" VerticalAlignment="Top" Width="445"
+                   FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="30" Foreground="White"
+                   TextWrapping="Wrap" TextAlignment="Left" MaxWidth="445">
+            <TextBlock.Effect>
+                <DropShadowEffect Color="Black" ShadowDepth="3" Direction="315" BlurRadius="0" Opacity="1"/>
+            </TextBlock.Effect>
+        </TextBlock>
+
+        <Button x:Name="Ir_Moves" Content="Button" Opacity="0" HorizontalAlignment="Left" Height="48" Margin="310,609,0,0" VerticalAlignment="Top" Width="212"/>
+        <Button x:Name="Ir_stats" Content="Button" Opacity="0" HorizontalAlignment="Left" Height="48" Margin="527,609,0,0" VerticalAlignment="Top" Width="216"/>
+        <Button x:Name="Voltar_Time" Content="Button" Opacity="0" HorizontalAlignment="Left" Height="44" Margin="756,609,0,0" VerticalAlignment="Top" Width="71"/>
+        <Image x:Name="Ir_Move" Opacity="0" HorizontalAlignment="Left" Height="51" Margin="70,100,0,0" VerticalAlignment="Top" Width="152"/>
+    </Grid>
+</UserControl>

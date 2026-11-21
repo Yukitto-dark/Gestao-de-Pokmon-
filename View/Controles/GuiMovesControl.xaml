@@ -1,0 +1,112 @@
+<UserControl x:Class="GestaoDePokemon.View.Controles.GuiMovesControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignWidth="895" d:DesignHeight="664"
+             Width="895" Height="664" Background="Transparent">
+    <UserControl.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="/View/fonts/#Pokemon Fire Red"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="Black" ShadowDepth="3" Direction="315" BlurRadius="0" Opacity="1"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <Image Source="/View/Telas - background/Gui-Moves.png"
+               Stretch="Fill" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+        <Grid/>
+
+        <Image x:Name="Type_pokemon" HorizontalAlignment="Left" Height="32" Margin="83,109,0,0" VerticalAlignment="Top" Width="78"/>
+        <Image x:Name="Type_pokemon2" HorizontalAlignment="Left" Height="32" Margin="165,109,0,0" VerticalAlignment="Top" Width="78"/>
+        <Image x:Name="Imagem_pokemon1" HorizontalAlignment="Left" Height="188" Margin="65,149,0,0" VerticalAlignment="Top" Width="196"/>
+
+        <Image x:Name="Move_type1" HorizontalAlignment="Left" Height="32" Margin="372,65,0,0" VerticalAlignment="Top" Width="77"/>
+        <Image x:Name="Move_type2" HorizontalAlignment="Left" Height="32" Margin="372,138,0,0" VerticalAlignment="Top" Width="77"/>
+        <Image x:Name="Move_type3" HorizontalAlignment="Left" Height="32" Margin="377,212,0,0" VerticalAlignment="Top" Width="77"/>
+        <Image x:Name="Move_type4" HorizontalAlignment="Left" Height="32" Margin="377,279,0,0" VerticalAlignment="Top" Width="77"/>
+
+        <Label x:Name="Id_pokemon" Content="Label" HorizontalAlignment="Left" Height="39" Margin="85,31,0,0" VerticalAlignment="Top" Width="58" FontSize="35"/>
+        <Label x:Name="lvl_pokemon" Content="Label" HorizontalAlignment="Left" Height="36" Margin="234,31,0,0" VerticalAlignment="Top" Width="60" FontSize="35"/>
+        <Label x:Name="Nome_pokemon" Content="Label" HorizontalAlignment="Left" Height="42" Margin="65,359,0,0" VerticalAlignment="Top" Width="196" FontSize="35"/>
+
+        <Label x:Name="PP_move1" Content="Label" HorizontalAlignment="Left" Height="46" Margin="785,54,0,0" VerticalAlignment="Top" Width="80" FontSize="35"/>
+        <Label x:Name="PP_move2" Content="Label" HorizontalAlignment="Left" Height="46" Margin="785,126,0,0" VerticalAlignment="Top" Width="80" FontSize="35"/>
+        <Label x:Name="PP_move3" Content="Label" HorizontalAlignment="Left" Height="46" Margin="785,198,0,0" VerticalAlignment="Top" Width="80" FontSize="35"/>
+        <Label x:Name="PP_move4" Content="Label" HorizontalAlignment="Left" Height="46" Margin="785,269,0,0" VerticalAlignment="Top" Width="80" FontSize="35"/>
+
+        <Label x:Name="Move_name1" Content="Label" HorizontalAlignment="Left" Height="43" Margin="505,54,0,0" VerticalAlignment="Top" Width="199" FontSize="35"/>
+        <Label x:Name="Move_name1_Copiar" Content="Label" HorizontalAlignment="Left" Height="43" Margin="505,126,0,0" VerticalAlignment="Top" Width="199" FontSize="35"/>
+        <Label x:Name="Move_name1_Copiar1" Content="Label" HorizontalAlignment="Left" Height="46" Margin="505,198,0,0" VerticalAlignment="Top" Width="199" FontSize="35"/>
+        <Label x:Name="Move_name1_Copiar2" Content="Label" HorizontalAlignment="Left" Height="43" Margin="505,269,0,0" VerticalAlignment="Top" Width="199" FontSize="35"/>
+
+        <ComboBox x:Name="Move_select1" Visibility="Collapsed" HorizontalAlignment="Left" Height="43" Margin="505,54,0,0" VerticalAlignment="Top" Width="199"
+                  DisplayMemberPath="Nome" FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="20" Foreground="White" Background="#FF303030" BorderBrush="White">
+            <ComboBox.ItemContainerStyle>
+                <Style TargetType="ComboBoxItem">
+                    <Setter Property="FontFamily" Value="/View/fonts/#Pokemon Fire Red"/>
+                    <Setter Property="FontSize" Value="20"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Background" Value="#FF303030"/>
+                </Style>
+            </ComboBox.ItemContainerStyle>
+        </ComboBox>
+        <ComboBox x:Name="Move_select2" Visibility="Collapsed" HorizontalAlignment="Left" Height="43" Margin="505,126,0,0" VerticalAlignment="Top" Width="199"
+                  DisplayMemberPath="Nome" FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="20" Foreground="White" Background="#FF303030" BorderBrush="White">
+            <ComboBox.ItemContainerStyle>
+                <Style TargetType="ComboBoxItem">
+                    <Setter Property="FontFamily" Value="/View/fonts/#Pokemon Fire Red"/>
+                    <Setter Property="FontSize" Value="20"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Background" Value="#FF303030"/>
+                </Style>
+            </ComboBox.ItemContainerStyle>
+        </ComboBox>
+        <ComboBox x:Name="Move_select3" Visibility="Collapsed" HorizontalAlignment="Left" Height="46" Margin="505,198,0,0" VerticalAlignment="Top" Width="199"
+                  DisplayMemberPath="Nome" FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="20" Foreground="White" Background="#FF303030" BorderBrush="White">
+            <ComboBox.ItemContainerStyle>
+                <Style TargetType="ComboBoxItem">
+                    <Setter Property="FontFamily" Value="/View/fonts/#Pokemon Fire Red"/>
+                    <Setter Property="FontSize" Value="20"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Background" Value="#FF303030"/>
+                </Style>
+            </ComboBox.ItemContainerStyle>
+        </ComboBox>
+        <ComboBox x:Name="Move_select4" Visibility="Collapsed" HorizontalAlignment="Left" Height="43" Margin="505,269,0,0" VerticalAlignment="Top" Width="199"
+                  DisplayMemberPath="Nome" FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="20" Foreground="White" Background="#FF303030" BorderBrush="White">
+            <ComboBox.ItemContainerStyle>
+                <Style TargetType="ComboBoxItem">
+                    <Setter Property="FontFamily" Value="/View/fonts/#Pokemon Fire Red"/>
+                    <Setter Property="FontSize" Value="20"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Background" Value="#FF303030"/>
+                </Style>
+            </ComboBox.ItemContainerStyle>
+        </ComboBox>
+
+        <Label x:Name="Move_power" Content="Label" HorizontalAlignment="Left" Height="39" Margin="224,493,0,0" VerticalAlignment="Top" Width="73" FontSize="35" HorizontalContentAlignment="Right"/>
+        <Label x:Name="Move_accuracy" Content="Label" HorizontalAlignment="Left" Height="40" Margin="217,527,0,0" VerticalAlignment="Top" Width="80" FontSize="35" HorizontalContentAlignment="Right"/>
+        <Label x:Name="Move_typeofhit" Content="Label" HorizontalAlignment="Left" Height="43" Margin="194,559,0,0" VerticalAlignment="Top" Width="103" FontSize="35" HorizontalContentAlignment="Right"/>
+        <TextBlock x:Name="Move_description" Text="Label" HorizontalAlignment="Left" Height="101" Margin="402,470,0,0" VerticalAlignment="Top" Width="418"
+                   FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="35" Foreground="White"
+                   TextWrapping="Wrap" TextAlignment="Left">
+            <TextBlock.Effect>
+                <DropShadowEffect Color="Black" ShadowDepth="3" Direction="315" BlurRadius="0" Opacity="1"/>
+            </TextBlock.Effect>
+        </TextBlock>
+
+        <Button x:Name="Ir_summary" Content="Button" Opacity="0" HorizontalAlignment="Left" Height="50" Margin="0,614,0,0" VerticalAlignment="Top" Width="323"/>
+        <Button x:Name="Ir_stats" Content="Button" Opacity="0" HorizontalAlignment="Left" Height="50" Margin="572,614,0,0" VerticalAlignment="Top" Width="229"/>
+        <Button x:Name="Voltar_Time" Content="Button" Opacity="0" HorizontalAlignment="Left" Height="50" Margin="818,612,0,0" VerticalAlignment="Top" Width="71"/>
+    </Grid>
+</UserControl>

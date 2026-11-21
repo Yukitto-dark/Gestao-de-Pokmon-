@@ -1,0 +1,67 @@
+<UserControl x:Class="GestaoDePokemon.View.Controles.GuiStatusControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignWidth="703" d:DesignHeight="559"
+             Width="703" Height="559" Background="Transparent">
+    <UserControl.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="/View/fonts/#Pokemon Fire Red"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="Black" ShadowDepth="3" Direction="315" BlurRadius="0" Opacity="1"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid x:Name="Raiz">
+        <Image Source="/View/Telas - background/Gui-Status.png"
+               Stretch="Fill" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+        <Grid x:Name="Camada"/>
+
+        <Image x:Name="Type_pokemon" HorizontalAlignment="Left" Height="32" Margin="43,65,0,0" VerticalAlignment="Top" Width="78"/>
+        <Image x:Name="Type_pokemon2" HorizontalAlignment="Left" Height="32" Margin="125,65,0,0" VerticalAlignment="Top" Width="78"/>
+        <Image x:Name="Imagem_pokemon" HorizontalAlignment="Left" Height="163" Margin="37,103,0,0" VerticalAlignment="Top" Width="172"/>
+
+        <Label x:Name="Id_pokemon" Content="Label" HorizontalAlignment="Left" Height="33" Margin="65,20,0,0" VerticalAlignment="Top" Width="52" FontSize="30"/>
+        <Label x:Name="lvl_pokemon" Content="Label" HorizontalAlignment="Left" Height="33" Margin="185,20,0,0" VerticalAlignment="Top" Width="52" FontSize="30"/>
+        <Label x:Name="Nome_pokemon" Content="Label" HorizontalAlignment="Left" Height="34" Margin="37,298,0,0" VerticalAlignment="Top" Width="172" FontSize="30"/>
+
+        <Label x:Name="EV_hp" Content="Label" HorizontalAlignment="Left" Height="46" Margin="625,24,0,0" VerticalAlignment="Top" Width="53" FontSize="30"/>
+        <Label x:Name="EV_attack" Content="Label" HorizontalAlignment="Left" Height="46" Margin="625,80,0,0" VerticalAlignment="Top" Width="53" FontSize="30"/>
+        <Label x:Name="EV_defense" Content="Label" HorizontalAlignment="Left" Height="46" Margin="625,132,0,0" VerticalAlignment="Top" Width="53" FontSize="30"/>
+        <Label x:Name="EV_special_attack" Content="Label" HorizontalAlignment="Left" Height="46" Margin="625,190,0,0" VerticalAlignment="Top" Width="53" FontSize="30"/>
+        <Label x:Name="EV_special_defense" Content="Label" HorizontalAlignment="Left" Height="46" Margin="625,243,0,0" VerticalAlignment="Top" Width="53" FontSize="30"/>
+        <Label x:Name="EV_speed" Content="Label" HorizontalAlignment="Left" Height="46" Margin="625,302,0,0" VerticalAlignment="Top" Width="53" FontSize="30"/>
+        <Label x:Name="EVs_disponiveis" Content="EVs disponíveis: 510" HorizontalAlignment="Left" Height="28" Margin="537,5,0,0" VerticalAlignment="Top" Width="180" FontSize="20"/>
+
+        <Label x:Name="Nature_pokemon" Content="Label" HorizontalAlignment="Left" Height="42" Margin="527,422,0,0" VerticalAlignment="Top" Width="125" FontSize="35"/>
+        <ComboBox x:Name="Nature_select" Visibility="Collapsed" HorizontalAlignment="Left" Height="42" Margin="527,431,0,0" VerticalAlignment="Top" Width="125"
+                  FontFamily="/View/fonts/#Pokemon Fire Red" FontSize="20" Foreground="White" Background="#FF303030" BorderBrush="White">
+            <ComboBox.ItemContainerStyle>
+                <Style TargetType="ComboBoxItem">
+                    <Setter Property="FontFamily" Value="/View/fonts/#Pokemon Fire Red"/>
+                    <Setter Property="FontSize" Value="20"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Background" Value="#FF303030"/>
+                </Style>
+            </ComboBox.ItemContainerStyle>
+        </ComboBox>
+        <Label x:Name="Nature_effect" Content="sem efeito" HorizontalAlignment="Left" Height="42" Margin="503,454,0,0" VerticalAlignment="Top" Width="175" FontSize="30"/>
+        <Label x:Name="happiness_pokemon" Content="Label" HorizontalAlignment="Left" Height="32" Margin="340,431,0,0" VerticalAlignment="Top" Width="44" FontSize="30"/>
+        <Label Content="Éxi" HorizontalAlignment="Left" Height="34" Margin="81,408,0,0" VerticalAlignment="Top" Width="74" FontSize="30"/>
+        <Label x:Name="Size_A" Content="Label" HorizontalAlignment="Left" Height="42" Margin="81,431,0,0" VerticalAlignment="Top" Width="74" FontSize="30"/>
+        <Label x:Name="Size_subA" Content="Label" HorizontalAlignment="Left" Height="40" Margin="81,459,0,0" VerticalAlignment="Top" Width="74" FontSize="30"/>
+
+        <Button x:Name="Voltar_Time" Content="Button" Opacity="0" HorizontalAlignment="Left" Height="50" Margin="639,509,0,0" VerticalAlignment="Top" Width="64"/>
+        <Button x:Name="Ir_summary" Content="Button" Opacity="0" HorizontalAlignment="Left" Height="50" Margin="0,509,0,0" VerticalAlignment="Top" Width="254"/>
+        <Button x:Name="Ir_moves" Content="Button" Opacity="0" HorizontalAlignment="Center" Height="50" Margin="0,509,0,0" VerticalAlignment="Top" Width="184"/>
+    </Grid>
+</UserControl>
