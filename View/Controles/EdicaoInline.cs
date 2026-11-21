@@ -4,6 +4,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Threading;
 
 namespace GestaoDePokemon.View.Controles
 {
@@ -25,9 +26,15 @@ namespace GestaoDePokemon.View.Controles
                     editor.KeyDown += (_, e) =>
                     {
                         if (e.Key == Key.Enter)
+                        {
+                            e.Handled = true;
                             Confirmar();
+                        }
                         else if (e.Key == Key.Escape)
+                        {
+                            e.Handled = true;
                             Cancelar();
+                        }
                     };
                     editor.LostFocus += (_, _) => Confirmar();
                 }
@@ -48,6 +55,12 @@ namespace GestaoDePokemon.View.Controles
                 editor.Visibility = Visibility.Collapsed;
                 label.Visibility = Visibility.Visible;
 
+                // Mensagem, gravação e recarga das páginas só depois do evento de tecla/foco terminar.
+                label.Dispatcher.BeginInvoke(() => Aplicar(texto), DispatcherPriority.Background);
+            }
+
+            void Aplicar(string texto)
+            {
                 if (!int.TryParse(texto, NumberStyles.Integer, CultureInfo.InvariantCulture, out int valor)
                     || valor < 1
                     || valor > 100)

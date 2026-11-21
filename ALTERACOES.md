@@ -242,3 +242,19 @@ evoluções (194), medidas (419), formas alternativas (33) e nenhuma mega.
   `%LOCALAPPDATA%\GestaoDePokemon\erro-banco.txt` e exibe os avisos das etapas opcionais.
 - Testado com banco criado pelo código da `master` e tabelas de rotas pré-criadas com restrição única nos
   encontros (importa as 181 rotas) e com esquema de rotas incompatível (abre com aviso; favoritos preservados).
+
+## Correção: aplicativo fechando ao editar um status
+
+- Sintoma: ao confirmar um EV (ou a natureza) na página Status da build, o aplicativo fechava.
+- Causa provável: a gravação, a recarga das três páginas e as mensagens de aviso aconteciam dentro dos
+  eventos `KeyDown`/`LostFocus`/`SelectionChanged` do próprio controle que estava sendo escondido. Esse tipo de
+  reentrância é frágil no WPF e ainda mais no Wine; e, sem tratamento global, qualquer exceção fechava o app.
+- `GuiStatusControl`: o editor de EV é escondido no evento, mas a validação, a gravação e a recarga rodam
+  depois (`Dispatcher.BeginInvoke`). O mesmo vale para a natureza (`SelectionChanged`/`DropDownClosed`).
+  O editor de EV usa a fonte do próprio rótulo, em vez de um `FontFamily` criado em código com caminho relativo.
+- `EdicaoInline` (nível digitado) e `GuiMovesControl` (`SelectionChanged` dos golpes): mesma regra de adiar a
+  gravação; o `DropDownClosed` dos golpes já era adiado.
+- `App.xaml.cs`: `DispatcherUnhandledException` registra o erro em
+  `%LOCALAPPDATA%\GestaoDePokemon\erro-app.txt`, mostra a mensagem e mantém o aplicativo aberto.
+- Não foi possível reproduzir o fechamento aqui (o Wine não roda no ambiente de testes); se ainda ocorrer
+  algum erro, ele aparece na tela e fica registrado em `erro-app.txt`.

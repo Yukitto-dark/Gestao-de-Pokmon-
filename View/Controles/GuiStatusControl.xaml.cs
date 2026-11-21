@@ -4,6 +4,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Threading;
 using GestaoDePokemon.Controller;
 using GestaoDePokemon.model;
 
@@ -34,11 +35,12 @@ namespace GestaoDePokemon.View.Controles
             Ir_moves.Click += (_, _) => IrMoves?.Invoke();
             Voltar_Time.Click += (_, _) => VoltarTime?.Invoke();
 
+            // A fonte é copiada do rótulo ao abrir a edição (ver AbrirEdicao): um FontFamily criado em código
+            // com caminho relativo ("/View/fonts/#...") não tem a URI base que o XAML resolve.
             _editor = new TextBox
             {
                 Name = "EV_editor",
                 Visibility = Visibility.Collapsed,
-                FontFamily = new FontFamily("/View/fonts/#Pokemon Fire Red"),
                 FontSize = 30,
                 Foreground = Brushes.White,
                 Background = new SolidColorBrush(Color.FromRgb(48, 48, 48)),
@@ -94,11 +96,14 @@ namespace GestaoDePokemon.View.Controles
             Nature_select.ItemsSource = Enum.GetValues<PokemonNature>();
             Nature_pokemon.Cursor = Cursors.Hand;
             Nature_pokemon.MouseLeftButtonUp += (_, _) => AbrirNatureza();
-            Nature_select.DropDownClosed += (_, _) => FecharNatureza();
+            // O ComboBox é escondido e a natureza é gravada depois que o evento dele termina: esconder o
+            // controle e recarregar as páginas dentro do próprio SelectionChanged/DropDownClosed (com o
+            // popup ainda fechando) pode derrubar o aplicativo, principalmente no Wine.
+            Nature_select.DropDownClosed += (_, _) => Adiar(FecharNatureza);
             Nature_select.SelectionChanged += (_, _) =>
             {
                 if (_editandoNatureza && !_carregandoNatureza)
-                    FecharNatureza();
+                    Adiar(FecharNatureza);
             };
         }
 
@@ -145,6 +150,7 @@ namespace GestaoDePokemon.View.Controles
             _labelEditando = label;
             _statEditando = stat;
             _editor.Text = _info.EVs.GetValue(stat).ToString(CultureInfo.InvariantCulture);
+            _editor.FontFamily = label.FontFamily;
             _editor.HorizontalAlignment = label.HorizontalAlignment;
             _editor.VerticalAlignment = label.VerticalAlignment;
             _editor.Margin = label.Margin;
@@ -159,10 +165,20 @@ namespace GestaoDePokemon.View.Controles
         private void Editor_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter)
+            {
+                e.Handled = true;
                 ConfirmarEdicao();
+            }
             else if (e.Key == Key.Escape)
+            {
+                e.Handled = true;
                 CancelarEdicao();
+            }
         }
+
+        // Executa a ação depois que o evento atual (tecla, foco, seleção) termina de ser processado.
+        private void Adiar(Action acao) =>
+            Dispatcher.BeginInvoke(acao, DispatcherPriority.Background);
 
         private void ConfirmarEdicao()
         {
@@ -176,6 +192,16 @@ namespace GestaoDePokemon.View.Controles
             _labelEditando = null;
             _editor.Visibility = Visibility.Collapsed;
             label.Visibility = Visibility.Visible;
+
+            // Validação, gravação e recarga das páginas ficam para depois do evento de tecla/foco:
+            // abrir uma mensagem ou recarregar as páginas no meio dele derrubava o aplicativo.
+            Adiar(() => AplicarEV(label, stat, texto));
+        }
+
+        private void AplicarEV(Label label, PokemonStat stat, string texto)
+        {
+            if (_info is null)
+                return;
 
             if (!int.TryParse(texto, NumberStyles.Integer, CultureInfo.InvariantCulture, out int valor)
                 || valor < 0

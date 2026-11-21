@@ -52,10 +52,18 @@ namespace GestaoDePokemon.View.Controles
                     AbrirSlot(indice);
                 };
 
+                // Como no DropDownClosed: o slot é fechado e salvo depois que o evento do ComboBox termina,
+                // para não esconder o controle e recarregar as páginas no meio da seleção.
                 _seletores[i].SelectionChanged += (_, _) =>
                 {
-                    if (indice == _slotEditando && !_carregando)
-                        ConfirmarSlot(indice);
+                    if (indice != _slotEditando || _carregando)
+                        return;
+
+                    Dispatcher.BeginInvoke(new Action(() =>
+                    {
+                        if (indice == _slotEditando)
+                            ConfirmarSlot(indice);
+                    }));
                 };
                 _seletores[i].DropDownClosed += (_, _) =>
                 {
