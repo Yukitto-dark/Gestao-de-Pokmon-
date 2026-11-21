@@ -20,7 +20,8 @@ condições do encontro.
 - Paldea e Hisui não possuem rotas numeradas com encontros na PokéAPI.
 - As rotas de Sinnoh a Galar foram geradas dos CSVs da PokéAPI
   (`data/v2/csv`: `locations`, `location_areas`, `encounters`,
-  `encounter_slots` e tabelas relacionadas), no mesmo formato do seed original.
+  `encounter_slots` e tabelas relacionadas), no mesmo formato do seed original,
+  com encontros idênticos (mesmos dados em outro slot) registrados uma vez só.
 - A importação é incremental: rotas já gravadas (mesma região e número) não
   são alteradas, e as que faltam são acrescentadas na abertura do aplicativo.
 - Somente espécies existentes na tabela `Pokemons` do banco local são

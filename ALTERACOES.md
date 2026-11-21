@@ -211,7 +211,7 @@ evoluções (194), medidas (419), formas alternativas (33) e nenhuma mega.
 - Seletor de nível na build (`GuiSummaryControl`, quadro "Level Up"): botões `-`/`+` e uma barra de 1 a
   100. A prévia do nível e do HP é imediata; a gravação acontece quando a barra para (350 ms) e também
   ao fechar o popup ou abrir outro Pokémon. O clique no número do nível continua funcionando nas três páginas.
-- Rotas: `rotas-seed.json` ganhou 101 rotas de Sinnoh, Unova, Kalos, Alola e Galar (11.771 encontros),
+- Rotas: `rotas-seed.json` ganhou 101 rotas de Sinnoh, Unova, Kalos, Alola e Galar (11.175 encontros),
   geradas dos CSVs da PokéAPI no mesmo formato; as 80 rotas originais não mudaram. `SeedRotas` ficou
   incremental (acrescenta só as rotas que faltam). `RotaSqliteRepository` conhece os nomes de todas as
   versões. A tela de Regiões usa abas compactas em duas linhas quando há mais de quatro regiões e avisa
@@ -224,3 +224,21 @@ evoluções (194), medidas (419), formas alternativas (33) e nenhuma mega.
   testada em um projeto de console com SQLite real: banco novo (1025 espécies, 1525 formas, 181 rotas,
   nenhum sprite inexistente) e banco criado pelo código da `master` com time antigo (migração dos caminhos,
   do índice e da forma do time, favoritos preservados).
+
+## Correção: falha ao inicializar o banco existente
+
+- Sintoma: "Não foi possível inicializar o banco de dados. An error occurred while saving the entity changes."
+  ao abrir com um `gestaopokemon.db` que já existia.
+- `rotas-seed.json`: as rotas novas tinham 596 encontros repetidos (mesmos dados em slots diferentes da PokéAPI).
+  O seed original não tem nenhum, porque o importador original já descartava repetidos, e tabelas de rotas
+  criadas por esse importador podem recusá-los. O gerador agora descarta os repetidos (reproduz 79 das 80 rotas
+  originais exatamente) e `SeedRotas` também ignora encontros idênticos na mesma área.
+- `DatabaseInitializer`: a importação das rotas deixou de ser obrigatória. Se as tabelas de rotas do banco
+  recusarem os dados (esquema criado por outra ferramenta, por exemplo), só essa gravação é desfeita
+  (savepoint do EF), o restante é gravado e o aplicativo abre mostrando um aviso com o motivo.
+- `DatabaseInitializer`: cada etapa é registrada; um erro agora diz a etapa e a mensagem do SQLite
+  ("Falha na etapa \"rotas\": ... table Routes has no column named ..."), em vez da mensagem genérica do EF.
+- `App.xaml.cs`: mostra a mensagem completa, grava a exceção inteira em
+  `%LOCALAPPDATA%\GestaoDePokemon\erro-banco.txt` e exibe os avisos das etapas opcionais.
+- Testado com banco criado pelo código da `master` e tabelas de rotas pré-criadas com restrição única nos
+  encontros (importa as 181 rotas) e com esquema de rotas incompatível (abre com aviso; favoritos preservados).

@@ -1,5 +1,6 @@
 using System;
 using System.Data;
+using System.Data.Common;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -23,10 +24,52 @@ public static class DatabaseInitializer
         Converters = { new JsonStringEnumConverter() }
     };
 
+    private static readonly List<string> _avisos = new();
+    private static string _etapa = "abertura do banco";
+
+    /// <summary>
+    /// Etapas opcionais que não puderam ser concluídas. O aplicativo abre mesmo assim e mostra os avisos.
+    /// </summary>
+    public static IReadOnlyList<string> Avisos => _avisos;
+
     public static void Inicializar()
     {
+        _avisos.Clear();
+        _etapa = "abertura do banco";
+
+        try
+        {
+            InicializarEtapas();
+        }
+        catch (Exception ex)
+        {
+            // A mensagem do EF ("An error occurred while saving the entity changes") não diz o motivo;
+            // o motivo real (tabela, coluna ou restrição) fica na exceção interna do SQLite.
+            throw new InvalidOperationException(
+                $"Falha na etapa \"{_etapa}\": {MensagemCompleta(ex)}", ex);
+        }
+    }
+
+    /// <summary>Mensagens da exceção e das exceções internas, da mais externa para a mais interna.</summary>
+    public static string MensagemCompleta(Exception ex)
+    {
+        var mensagens = new List<string>();
+        for (Exception? atual = ex; atual is not null; atual = atual.InnerException)
+        {
+            string texto = atual.Message.Trim();
+            if (texto.Length > 0 && !mensagens.Contains(texto))
+                mensagens.Add(texto);
+        }
+
+        return string.Join(" -> ", mensagens);
+    }
+
+    private static void InicializarEtapas()
+    {
         using var db = new AppDbContext();
+        _etapa = "criação das tabelas";
         db.Database.EnsureCreated();
+        _etapa = "atualização da estrutura do banco";
         EnsureRouteSchema(db);
         EnsurePartySchema(db);
         EnsureShinyColumns(db);
@@ -42,9 +85,11 @@ public static class DatabaseInitializer
         // Isso permite executar a atualização dos sprites em bancos já criados.
         using var transaction = db.Database.BeginTransaction();
 
+        _etapa = "regiões";
         SeedRegions(db);
         db.SaveChanges();
 
+        _etapa = "espécies";
         List<PokemonSeed> pokemonSeeds = LoadPokemonSeeds();
 
         // Inserção incremental: inclui apenas espécies ausentes, mesmo em bancos já preenchidos.
@@ -54,88 +99,121 @@ public static class DatabaseInitializer
         // BaseStats já faz parte de PokemonForm. Esta rotina apenas repara
         // formas existentes que estejam sem valores válidos, sem sobrescrever
         // atributos que já foram cadastrados corretamente.
+        _etapa = "atributos base";
         EnsureBaseStats(db, pokemonSeeds);
         db.SaveChanges();
 
         // Corrige dados legados sem remover Sinnoh, necessária à Geração IV.
+        _etapa = "correção de dados antigos";
         NormalizeLegacyPokedexData(db);
         CorrectKnownBaseStats(db);
 
         // Importa o catálogo completo de habilidades e seus slots (1, 2 e oculto).
+        _etapa = "habilidades";
         SeedAbilities(db);
         db.SaveChanges();
 
+        _etapa = "sprites";
         SeedSprites(db);
         db.SaveChanges();
 
         // A importação é incremental e não duplica movimentos nem learnsets.
+        _etapa = "golpes e learnsets";
         SeedMoveCatalogAndLearnsets(db);
         db.SaveChanges();
 
         // Relacionamentos pai/filho: importa as evoluções sem duplicar registros
         // e sem apagar relações que já existam no banco.
+        _etapa = "evoluções";
         SeedEvolutions(db);
         db.SaveChanges();
 
         // Formas alternativas de Kyurem: não criam espécies nem evoluções.
+        _etapa = "formas de Kyurem";
         KyuremFormsInitializer.Inicializar(db);
         db.SaveChanges();
 
         // Formas alternativas das gerações I-V: sincroniza PokemonForms, habilidades, sprites e learnsets, sem modificar espécies ou evoluções.
+        _etapa = "formas das gerações I a V";
         GenerationVFormsInitializer.Inicializar(db);
         db.SaveChanges();
 
         // Formas de Kalos e demais formas até a Geração VI (sem Mega Evoluções).
         // Só insere o que ainda não existe no banco; formas já cadastradas não são tocadas.
+        _etapa = "formas da Geração VI";
         GenerationVFormsInitializer.Inicializar(db, "generation-vi-forms-seed.json", 1, 721, onlyInsertMissing: true);
         db.SaveChanges();
 
         // Mega Evoluções da Geração VI: as formas Mega (só insere o que falta) e, em seguida,
         // a relação forma base -> forma Mega (Mega Pedra ou golpe).
+        _etapa = "Mega Evoluções da Geração VI";
         GenerationVFormsInitializer.Inicializar(db, "generation-vi-megas-seed.json", 1, 721, onlyInsertMissing: true);
         db.SaveChanges();
 
         // Formas de Alola, Galar, Hisui e Paldea (inclusive de espécies antigas): só insere o que falta.
+        _etapa = "formas de Alola, Galar, Hisui e Paldea";
         GenerationVFormsInitializer.Inicializar(db, "generation-vii-ix-forms-seed.json", 1, 1025, onlyInsertMissing: true);
         db.SaveChanges();
 
         // Mega Evoluções de Pokémon Legends: Z-A.
+        _etapa = "Mega Evoluções de Legends: Z-A";
         GenerationVFormsInitializer.Inicializar(db, "generation-ix-megas-seed.json", 1, 1025, onlyInsertMissing: true);
         db.SaveChanges();
 
         // Evoluções que só valem para uma forma (Meowth de Galar -> Perrserker, Rattata de Alola -> Raticate
         // de Alola...): precisam das formas acima e não alteram as relações por espécie já gravadas.
+        _etapa = "evoluções por forma";
         EvolutionFormsInitializer.Inicializar(db);
         db.SaveChanges();
 
+        _etapa = "Mega Evoluções";
         MegaEvolutionsInitializer.Inicializar(db);
         db.SaveChanges();
 
         // Golpes dos jogos da Geração VII em diante e jogos principais de cada região.
+        _etapa = "golpes da Geração VII em diante";
         GameLearnsetsInitializer.Inicializar(db);
         db.SaveChanges();
 
         // Rotas de todas as regiões com encontros na PokéAPI. Incremental: só entram as rotas que faltam.
-        SeedRotas(db);
-        db.SaveChanges();
+        // As rotas não são essenciais: se o banco tiver tabelas de rotas criadas por outra ferramenta
+        // (ex.: o importador Python) e elas recusarem os dados, o aplicativo abre mesmo assim, com um aviso.
+        // Dentro da transação, o EF desfaz só esta gravação (savepoint) e as etapas seguintes continuam.
+        _etapa = "rotas";
+        try
+        {
+            SeedRotas(db);
+            db.SaveChanges();
+        }
+        catch (Exception ex) when (ex is DbUpdateException or DbException or InvalidDataException or JsonException)
+        {
+            db.ChangeTracker.Clear();
+            _avisos.Add($"As rotas das regiões novas não foram importadas: {MensagemCompleta(ex)}");
+        }
 
+        _etapa = "jogos das regiões";
         RegionGamesInitializer.Inicializar(db);
         db.SaveChanges();
 
         // Formas que ganharam ícone próprio da Box passam a usá-lo no lugar do ícone da espécie.
+        _etapa = "ícones da Box";
         BoxIconsInitializer.Inicializar(db);
         db.SaveChanges();
 
         // Ícones shiny da Box (espécies e formas), depois que todos os sprites já existem.
+        _etapa = "ícones shiny da Box";
         SeedBoxShinySprites(db);
         db.SaveChanges();
 
         // Atualiza altura e peso somente depois de todas as formas já existirem.
+        _etapa = "altura e peso";
         PokemonMeasurementsInitializer.Inicializar(db);
 
         // Membros do time gravados antes da coluna PokemonFormId passam a apontar para a forma Normal.
+        _etapa = "formas do time";
         PreencherFormasDoTime(db);
 
+        _etapa = "gravação final";
         transaction.Commit();
     }
 
@@ -689,8 +767,23 @@ public static class DatabaseInitializer
                     PokeApiAreaId = areaSeed.PokeApiAreaId
                 };
 
+                var encontrosDaArea = new HashSet<(int, string, int, int, int, string, string)>();
+
                 foreach (RouteEncounterSeed encounterSeed in areaSeed.Encounters)
                 {
+                    // Encontros idênticos (mesmos dados em outro slot) entram uma vez só.
+                    if (!encontrosDaArea.Add((
+                            encounterSeed.NationalDexNumber,
+                            encounterSeed.EncounterMethod,
+                            encounterSeed.MinimumLevel,
+                            encounterSeed.MaximumLevel,
+                            encounterSeed.ChancePercent,
+                            encounterSeed.GameVersion,
+                            encounterSeed.ConditionsJson)))
+                    {
+                        continue;
+                    }
+
                     if (!pokemons.TryGetValue(
                             encounterSeed.NationalDexNumber,
                             out Pokemon? pokemon))
