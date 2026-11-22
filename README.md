@@ -44,10 +44,10 @@
 ## 1. Vídeo de apresentação
 
 <p align="center">
-  <a href="COLE_AQUI_O_LINK_DO_VIDEO"><img src="docs/assets/video-thumb.png" alt="Assistir ao vídeo de apresentação do projeto" width="720"></a>
+  <a href="https://youtu.be/-kgivk_78yQ"><img src="docs/assets/video-thumb.png" alt="Assistir ao vídeo de apresentação do projeto" width="720"></a>
 </p>
 
-**Link do vídeo:** COLE_AQUI_O_LINK_DO_VIDEO
+**Link do vídeo:** [https://youtu.be/-kgivk_78yQ](https://youtu.be/-kgivk_78yQ)
 
 <p align="center"><sub>Clique na imagem para abrir o vídeo.</sub></p>
 
