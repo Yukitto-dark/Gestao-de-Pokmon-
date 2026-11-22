@@ -12,6 +12,7 @@
 | **Repositório** | [Yukitto-dark/Gestao-de-Pokmon-](https://github.com/Yukitto-dark/Gestao-de-Pokmon-) |
 | **Versão documentada** | branch `master`, commit `d926e26` ("Adição das rotas de paldeia e hisui") |
 | **Autoria / disciplina** | _preencher_ |
+| **Uso de IA** | Ferramenta de apoio ao desenvolvimento e à documentação, no nível **IA-2** (a IA automatiza parte da tarefa, com supervisão humana contínua); registro na [seção 9](#uso-de-ia) |
 
 ## Sumário
 
@@ -23,18 +24,18 @@
 6. [Arquitetura](#arquitetura)
 7. [Princípios SOLID](#solid)
 8. [Clean Code](#clean-code)
-9. [Modelo de dados](#modelo-de-dados)
-10. [Inicialização do banco e seeds](#inicializacao)
-11. [Fontes de dados e scripts de geração](#fontes)
-12. [Tecnologias](#tecnologias)
-13. [Como executar](#como-executar)
-14. [Testes e validação](#testes)
-15. [Diagnóstico de problemas](#diagnostico)
-16. [Limitações conhecidas](#limitacoes)
-17. [Créditos e aviso legal](#creditos)
-18. [Apêndice A — Glossário](#glossario)
-19. [Apêndice B — Consultas SQL úteis](#consultas)
-
+9. [Uso e documentação de IA](#uso-de-ia)
+10. [Modelo de dados](#modelo-de-dados)
+11. [Inicialização do banco e seeds](#inicializacao)
+12. [Fontes de dados e scripts de geração](#fontes)
+13. [Tecnologias](#tecnologias)
+14. [Como executar](#como-executar)
+15. [Testes e validação](#testes)
+16. [Diagnóstico de problemas](#diagnostico)
+17. [Limitações conhecidas](#limitacoes)
+18. [Créditos e aviso legal](#creditos)
+19. [Apêndice A — Glossário](#glossario)
+20. [Apêndice B — Consultas SQL úteis](#consultas)
 <a id="video"></a>
 
 ## 1. Vídeo de apresentação
@@ -435,15 +436,89 @@ private bool TentarAdicionar(AppDbContext db, int id, bool shiny)
 | 2 | Quebrar em métodos menores os oito métodos com mais de 100 linhas |
 | 3 | Padronizar a língua dos nomes e a formatação dos arquivos |
 
+<a id="uso-de-ia"></a>
+
+## 9. Uso e documentação de IA
+
+Esta seção registra **como** a inteligência artificial foi usada no projeto, **onde** isso aparece e **como** o resultado foi verificado. As informações vêm do histórico do Git, do repositório e dos pedidos feitos à ferramenta; o que o histórico não registra não aparece neste registro. O recorte é o resultado final da branch `master`.
+
+### 9.1 Resumo
+
+- O aplicativo **não usa IA em tempo de execução**: o código não tem chamadas de rede (nenhum uso de `HttpClient`, `WebClient` ou `WebRequest`) nem bibliotecas de IA; os únicos pacotes são `Microsoft.EntityFrameworkCore.Sqlite` e `Microsoft.EntityFrameworkCore.Design`.
+- A IA foi usada como **ferramenta de apoio ao desenvolvimento e à documentação**: geração dos scripts que montam os seeds, integração e correção de código, e elaboração desta documentação.
+- Os **dados da Pokédex não foram criados por IA**: vêm da PokéAPI e de repositórios de sprites ([seção 12](#fontes)); a IA escreveu os scripts que os importam.
+- Princípio adotado: a saída da IA é **rascunho até ser verificada**, e os autores respondem pelo conteúdo entregue.
+- **Nível de uso:** o trabalho aceita IA até o nível **IA-2** (a IA automatiza parte da tarefa, com supervisão humana contínua). O enquadramento está em [9.6](#uso-de-ia-nivel).
+
+### 9.2 Ferramentas
+
+| Ferramenta | Modelo | Uso no projeto |
+|---|---|---|
+| Claude (Anthropic), em modo de código | Claude Opus 5.5 (informado nos commits) | Dois commits na `master` com coautoria (veja 9.3) |
+| Claude (Anthropic), em conversas do Projeto "Sistema de gerenciamento de pokémons" | não registrado no projeto | Scripts Python e SQL de importação e de conferência dos dados |
+| Claude (Anthropic) | Claude Sonnet 5.5 | Esta documentação: texto, diagramas, PDF e README |
+
+### 9.3 Registro do uso
+
+| Quando / etapa | O que a IA fez | Onde | Verificação registrada |
+|---|---|---|---|
+| Etapas de importação de dados (Gerações VI a IX) | Escreveu os scripts `importar_kalos.py`, `importar_megas.py`, `importar_regioes.py`, `importar_box_shiny.py` e `corrigir_dados_base.py`, e o painel `testes_regioes.sql` | Fora do repositório (`scripts/` está no `.gitignore`); guardados no Projeto do claude.ai. Seus resultados são os seeds em `Data/Persistence/Seed/` e os sprites em `Data/images/` | Os scripts validam os dados antes de gravar e oferecem `--dry-run`; `testes_regioes.sql` traz 87 conferências "esperado × obtido" |
+| 21/11/2026, commit `8494d03` ("Une a branch alt aos dados de todas as regiões da master") | Integrou o código da branch `alt` aos seeds e inicializadores da `master`: Box com uma célula por forma, time por forma, build com golpes restritos ao learnset, seletor de nível, rotas das regiões e ícones shiny | `Controller/PokemonSetController.cs`, `Controller/TimeController.cs`, `Data/Repositories/SQLite/*`, `Data/Persistence/Initialization/*`, `View/Controles/*` e outros | Descrição das mudanças no corpo do commit; o repositório não tem testes automatizados ([seção 15](#testes)) |
+| 21/11/2026, commit `bb527e7` ("Corrige falha ao inicializar banco existente") | Corrigiu a falha de abertura com banco já existente: a importação das rotas passou a degradar para um aviso, e os erros de inicialização informam a etapa e gravam `erro-banco.txt` | `Data/Persistence/Initialization/DatabaseInitializer.cs`, `App.xaml.cs`, `rotas-seed.json` | Descrição no corpo do commit |
+| 21/11/2026, esta documentação | Leu o código-fonte, recontou os seeds, produziu o texto, os diagramas, o PDF e o `README.md` | `README.md`, pasta `docs/` | Contagens recalculadas sobre os seeds da `master`; nomes, regras e comportamentos conferidos no código. A conferência corrigiu imprecisões do primeiro rascunho (por exemplo, o nível digitado na build e o escopo do filtro de formas) |
+
+Os commits `8494d03` e `bb527e7` trazem a linha `Co-Authored-By: Claude Opus 5.5` no corpo da mensagem. Eles são os únicos dos 34 commits da `master` com essa marca; os outros 32 estão em nome do autor do repositório.
+
+### 9.4 Pedidos feitos à IA
+
+Registro resumido dos pedidos que originaram o conteúdo gerado:
+
+| Pedido (resumo) | Resultado |
+|---|---|
+| Importar Kalos (#650–#721) pela PokéAPI, sem duplicar espécies e sem escrever direto no SQLite | `importar_kalos.py` |
+| Estender a importação para as formas alternativas até a Geração VI (de batalha, que mudam atributos, e cosméticas, que mantêm os atributos), sem repetir formas já existentes | `importar_kalos.py` |
+| Adicionar os ícones shiny da Box para todos os Pokémon do banco | `importar_box_shiny.py` |
+| Adicionar as Mega Evoluções da Geração VI | `importar_megas.py` |
+| Adicionar Alola, Galar, Paldea e Hisui, com formas, evoluções por forma, Mega Evoluções de Legends: Z-A, golpes dos jogos de Alola em diante e todos os sprites | `importar_regioes.py` |
+| Elaborar a documentação do projeto, com espaço para o link do vídeo, e uma versão para o README do GitHub com link para um PDF | Esta documentação: `README.md`, PDF, HTML e imagens da pasta `docs/` |
+| Incluir a aplicação e a localização dos princípios SOLID e do Clean Code | Seções 7 e 8 |
+| Incluir o uso e a documentação de IA | Esta seção |
+
+### 9.5 Uso responsável e limites
+
+- **Verificação.** Os scripts validam antes de gravar; os dados foram conferidos por contagem nos seeds; e o texto desta documentação foi conferido contra o código.
+- **Sem dados pessoais.** O projeto trabalha apenas com dados públicos de Pokémon; o aplicativo não coleta nem envia informações de usuários (favoritos e time ficam no SQLite local).
+- **Erros possíveis.** Uma IA pode produzir código ou texto incorreto, e por isso o resultado deve ser executado ou conferido antes de ser aceito. A principal lacuna é a ausência de testes automatizados ([seção 17](#limitacoes)): a correção do código gerado depende de conferência manual.
+- **Autoria.** O Git registra o uso de IA apenas nos dois commits acima. A branch `alt` (de onde veio o código integrado em `8494d03`) tem commits em nome do autor do repositório e não indica quem escreveu cada arquivo; o uso fora dos commits marcados não aparece no histórico e não está coberto por este registro.
+
+<a id="uso-de-ia-nivel"></a>
+
+### 9.6 Enquadramento no nível IA-2
+
+Este trabalho aceita o uso de IA até o nível **IA-2**: a IA automatiza parte da tarefa, com supervisão humana contínua. A tabela compara essa definição com o uso registrado nesta seção.
+
+| Parte da definição | Como o uso registrado se enquadra |
+|---|---|
+| **A IA automatiza parte da tarefa** | A IA executou tarefas delimitadas: escrever os scripts que importam e validam os dados da PokéAPI ([9.3](#uso-de-ia)), integrar código ao `master` e corrigir a abertura do banco (commits `8494d03` e `bb527e7`) e redigir esta documentação. O escopo de cada etapa veio dos pedidos dos autores ([9.4](#uso-de-ia)), e o aplicativo não usa IA ao ser executado ([9.1](#uso-de-ia)). |
+| **Supervisão humana contínua** | O trabalho andou por pedidos sucessivos, e não em uma entrega única. Os scripts têm modo `--dry-run` e validam os dados antes de gravar, e o `testes_regioes.sql` traz 87 conferências do tipo esperado × obtido. A documentação passou por pedidos de correção e de novas seções (SOLID, Clean Code e IA). Rodar os scripts, ler os resultados e aceitar o conteúdo são atos dos autores, que respondem pelo conteúdo entregue. |
+
+Ressalvas:
+
+- A documentação foi redigida quase toda pela IA. O enquadramento no IA-2 só vale se os autores a leram, conferiram e assumem o conteúdo.
+- Nem o Git nem este texto comprovam a supervisão: ela é informada pelos autores, e o histórico não a prova.
+- O uso de IA fora dos dois commits marcados (por exemplo, no código da branch `alt`) não aparece no histórico e não está coberto por este registro. Se esse uso foi além de "parte da tarefa" ou ocorreu sem supervisão, o nível precisa ser reavaliado.
+
+**Enquadramento: IA-2**, desde que a supervisão descrita acima tenha ocorrido.
+
 <a id="modelo-de-dados"></a>
 
-## 9. Modelo de dados
+## 10. Modelo de dados
 
 O contexto `AppDbContext` mapeia as entidades abaixo para o arquivo `gestaopokemon.db`. Listas e objetos de valor (tipos, atributos, grupos de ovo, IVs) são gravados como **JSON** em uma coluna de texto, por conversores de valor do EF Core.
 
 ![Diagrama do modelo de dados: regiões, rotas, Pokémon, formas, habilidades, golpes, evoluções, Mega Evoluções, favoritos e time](docs/assets/modelo-de-dados.svg)
 
-### 9.1 Entidades
+### 10.1 Entidades
 
 | Entidade (tabela) | Descrição |
 |---|---|
@@ -462,17 +537,17 @@ O contexto `AppDbContext` mapeia as entidades abaixo para o arquivo `gestaopokem
 | `PokemonPartyMember` (`Party`) | Membro do time e sua build |
 | `PokemonFoundInRegion` | Tabela de junção N:N entre espécies e regiões onde são encontradas (sem classe própria; criada pelo mapeamento do EF Core) |
 
-### 9.2 Time (`Party`)
+### 10.2 Time (`Party`)
 
 Cada linha guarda a forma escolhida (`PokemonFormId`, único), a espécie, o nível, a natureza (como texto), a habilidade, os IVs (JSON), os EVs (colunas `EV_HP`, `EV_Attack`, `EV_Defense`, `EV_SpecialAttack`, `EV_SpecialDefense` e `EV_Speed`), os identificadores dos golpes (`MoveIdsJson`), o indicador shiny e a data de inclusão.
 
-### 9.3 Evoluções
+### 10.3 Evoluções
 
 `PokemonEvolution` guarda o método (`LevelUp`, `UseItem`, `Trade`, `Friendship`, `Beauty`, `KnowMove`, `AtLocation` ou `Other`) e as condições que o modelo sabe representar: nível, item, item segurado, horário, amizade, beleza, gênero, local, golpe, espécie na equipe, espécie na troca, tipo na equipe, tipo do golpe, comparação entre Ataque e Defesa, afeição, passos, contagem mínima de golpes (`MinimumMoveCount`), chuva, virar o console de cabeça para baixo, espaço livre na equipe, Poké Ball na bolsa e o jogo.
 
 **Evoluções por forma.** As colunas opcionais `FromFormId` e `ToFormId` restringem uma linha a uma forma: só o Meowth de Galar evolui para Perrserker, e só o Rattata de Alola evolui para o Raticate de Alola. Regra de consulta para uma forma **F**: use as linhas com `FromFormId = F.Id`; se não houver nenhuma, use as de `FromFormId` nulo. `ToFormId` informa qual forma resulta (Exeggcute → Exeggutor de Alola).
 
-### 9.4 Regras de integridade
+### 10.4 Regras de integridade
 
 - `NationalDexNumber` é único em `Pokemons`; `Region.Name` é único; `Route` é único por (região, número); `RouteArea` é único por (rota, nome na PokéAPI).
 - A exclusão de uma espécie remove, em cascata, suas formas (com sprites, habilidades e golpes), favoritos, membros do time e a junção de regiões. Encontros em rotas, evoluções e a região de origem usam `Restrict` e impedem a exclusão; o mesmo vale para as Mega Evoluções e para a habilidade escolhida no time.
@@ -480,9 +555,9 @@ Cada linha guarda a forma escolhida (`PokemonFormId`, único), a espécie, o ní
 
 <a id="inicializacao"></a>
 
-## 10. Inicialização do banco e seeds
+## 11. Inicialização do banco e seeds
 
-### 10.1 Princípios
+### 11.1 Princípios
 
 - **Banco criado por `EnsureCreated()`**, sem migrations. Como `EnsureCreated()` não altera tabelas existentes, o `DatabaseInitializer` executa **atualizações de esquema manuais e idempotentes** (`Ensure*`) para que bancos criados por versões anteriores ganhem colunas e índices novos sem perder favoritos nem o time.
 - **Importação incremental:** os seeds só inserem o que falta e nunca duplicam registros; reexecutar a inicialização é seguro.
@@ -490,11 +565,11 @@ Cada linha guarda a forma escolhida (`PokemonFormId`, único), a espécie, o ní
 - **Rotas não são essenciais:** se a importação das rotas falhar, o erro vira um aviso, a gravação daquela etapa é desfeita e o aplicativo abre mesmo assim.
 - **Mensagens de erro úteis:** qualquer falha é reportada com o nome da etapa e a cadeia de exceções internas.
 
-### 10.2 Atualizações de esquema
+### 11.2 Atualizações de esquema
 
 Antes da carga dos dados, são executadas, nesta ordem: `EnsureRouteSchema`, `EnsurePartySchema`, `EnsureShinyColumns`, `EnsureSetColumns`, `EnsurePartyFormSchema`, `MigrarEVsPadrao`, `EnsureFormMeasurementsSchema`, `MigrateLegacySpritePaths`, `EnsureEvolutionSchema` e `EnsureMegaEvolutionSchema`.
 
-### 10.3 Etapas da carga (dentro da transação)
+### 11.3 Etapas da carga (dentro da transação)
 
 | # | Etapa | O que faz |
 |---|---|---|
@@ -525,7 +600,7 @@ Antes da carga dos dados, são executadas, nesta ordem: `EnsureRouteSchema`, `En
 
 > **Primeira execução:** a carga importa cerca de 590 mil linhas de golpes e pode demorar; a estimativa dos scripts de importação para a parte mais recente (cerca de 280 mil linhas) é de alguns segundos a cerca de um minuto. As inicializações seguintes são mais rápidas, pois só inserem o que falta.
 
-### 10.4 Arquivos de seed
+### 11.4 Arquivos de seed
 
 Ficam em `Data/Persistence/Seed/`. O `pokemon-seed.json` é um **recurso embutido** no executável; os demais são copiados para a saída do build.
 
@@ -548,7 +623,7 @@ Ficam em `Data/Persistence/Seed/`. O `pokemon-seed.json` é um **recurso embutid
 | `pokemon-mega-evolutions-seed.json` | Relação base → Mega | 96 |
 | `rotas-seed.json` | Rotas das 10 regiões | 218 rotas, 365 áreas, 30.475 encontros |
 
-### 10.5 Sprites
+### 11.5 Sprites
 
 Os sprites ficam em `Data/images/pokemon/` e são copiados para a saída do build.
 
@@ -562,9 +637,9 @@ Os sprites ficam em `Data/images/pokemon/` e são copiados para a saída do buil
 
 <a id="fontes"></a>
 
-## 11. Fontes de dados e scripts de geração
+## 12. Fontes de dados e scripts de geração
 
-### 11.1 Fontes
+### 12.1 Fontes
 
 | Fonte | Uso |
 |---|---|
@@ -574,7 +649,7 @@ Os sprites ficam em `Data/images/pokemon/` e são copiados para a saída do buil
 | [Smogon sprites](https://github.com/smogon/sprites) | Ícones em pixel da Geração IX e de formas que o PokeSprite não tem (feitos por fãs) |
 | [PKHeX](https://github.com/kwsch/PKHeX) | Encontros e nomes de locais de Paldea (Scarlet/Violet) e Hisui (Legends: Arceus), que a PokéAPI não possui |
 
-### 11.2 Scripts de importação
+### 12.2 Scripts de importação
 
 Os seeds e os sprites foram gerados por scripts Python mantidos **fora do repositório** (a pasta `scripts/` está no `.gitignore`). Eles seguem a mesma arquitetura do aplicativo: **não escrevem no banco**; geram ou atualizam os seeds, baixam os sprites e ajustam o mínimo de código C# necessário. O banco é preenchido na próxima inicialização do aplicativo.
 
@@ -592,7 +667,7 @@ Propriedades comuns: são **idempotentes** e **"tudo ou nada"** (validam os dado
 
 <a id="tecnologias"></a>
 
-## 12. Tecnologias
+## 13. Tecnologias
 
 | Tecnologia | Utilização |
 |---|---|
@@ -608,9 +683,9 @@ Pacotes principais: `Microsoft.EntityFrameworkCore.Sqlite 10.0.14` e `Microsoft.
 
 <a id="como-executar"></a>
 
-## 13. Como executar
+## 14. Como executar
 
-### 13.1 No Windows
+### 14.1 No Windows
 
 **Requisitos:** Windows com suporte a WPF, [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) e Git.
 
@@ -631,7 +706,7 @@ Para publicar uma versão Release:
 dotnet publish GestaoDePokemon.csproj -c Release -o ./publish
 ```
 
-### 13.2 No Linux (via Wine)
+### 14.2 No Linux (via Wine)
 
 O WPF é uma tecnologia do Windows; **não é possível executar o aplicativo nativamente no Linux**. É possível compilar com o SDK do .NET instalado no Linux e executar o aplicativo pelo **Wine**. O procedimento vale para Linux Mint, Ubuntu, Arch Linux e CachyOS.
 
@@ -724,13 +799,13 @@ wine ./bin/Release/net10.0-windows/GestaoDePokemon.exe
 
 > **Importante:** mantenha o prefixo do Wine para preservar o banco, os favoritos e o time. Excluir o prefixo também remove o banco que está dentro dele.
 
-### 13.3 Compatibilidade
+### 14.3 Compatibilidade
 
 `EnableWindowsTargeting` permite **compilar** em outros sistemas, mas isso não torna o WPF multiplataforma. A execução no Linux depende de uma camada de compatibilidade (Wine), pode variar entre versões do Wine Staging e não é garantida pelo projeto.
 
 <a id="testes"></a>
 
-## 14. Testes e validação
+## 15. Testes e validação
 
 O repositório **não possui projeto de testes automatizados** (por exemplo, xUnit). A validação dos dados é feita em três níveis:
 
@@ -749,7 +824,7 @@ O repositório **não possui projeto de testes automatizados** (por exemplo, xUn
 
 <a id="diagnostico"></a>
 
-## 15. Diagnóstico de problemas
+## 16. Diagnóstico de problemas
 
 | Sintoma | Causa provável e o que fazer |
 |---|---|
@@ -763,7 +838,7 @@ O repositório **não possui projeto de testes automatizados** (por exemplo, xUn
 
 <a id="limitacoes"></a>
 
-## 16. Limitações conhecidas
+## 17. Limitações conhecidas
 
 - **Somente Windows** para execução nativa (WPF).
 - **Sem migrations:** mudanças de esquema dependem de atualizações manuais no `DatabaseInitializer`.
@@ -775,9 +850,9 @@ O repositório **não possui projeto de testes automatizados** (por exemplo, xUn
 
 <a id="creditos"></a>
 
-## 17. Créditos e aviso legal
+## 18. Créditos e aviso legal
 
-Os dados de Pokémon, golpes, habilidades, evoluções e sprites vêm das fontes listadas na [seção 11](#fontes). Os encontros de Paldea (Scarlet/Violet) e Hisui (Legends: Arceus) vieram das tabelas de encontros selvagens e dos nomes de locais do PKHeX.
+Os dados de Pokémon, golpes, habilidades, evoluções e sprites vêm das fontes listadas na [seção 12](#fontes). Os encontros de Paldea (Scarlet/Violet) e Hisui (Legends: Arceus) vieram das tabelas de encontros selvagens e dos nomes de locais do PKHeX.
 
 Pokémon e suas marcas, personagens e recursos visuais pertencem aos respectivos titulares. Este projeto é um trabalho independente, **sem associação oficial** com a The Pokémon Company, a Nintendo, a Game Freak ou a Creatures.
 
