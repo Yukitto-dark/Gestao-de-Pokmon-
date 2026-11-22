@@ -11,7 +11,10 @@
 | **Tecnologias** | C# · .NET 10 · WPF/XAML · Entity Framework Core 10 · SQLite |
 | **Repositório** | [Yukitto-dark/Gestao-de-Pokmon-](https://github.com/Yukitto-dark/Gestao-de-Pokmon-) |
 | **Versão documentada** | branch `master`, commit `d926e26` ("Adição das rotas de paldeia e hisui") |
-| **Autoria / disciplina** | _preencher_ |
+| **Autores** | Francisco Renato Spinelli Vieira<br>Gabriel Polese<br>Felipe Servare do Santo<br>Davi Camporez Viganor |
+| **Grupo** | Grupo 2 |
+| **Disciplina** | POO2 |
+| **Atividade** | Atividade avaliativa — Stack |
 | **Uso de IA** | Ferramenta de apoio ao desenvolvimento e à documentação, no nível **IA-2** (a IA automatiza parte da tarefa, com supervisão humana contínua); registro na [seção 9](#uso-de-ia) |
 
 ## Sumário
