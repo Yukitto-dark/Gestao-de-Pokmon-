@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 570" width="760" height="570" font-family="Inter, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect width="760" height="570" fill="#ffffff"/>
+
+  <!-- View -->
+  <rect x="15" y="15" width="560" height="110" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="30" y="40" font-size="16" font-weight="700" fill="#0f172a">View — WPF / XAML</text>
+  <text x="30" y="65" font-size="13" fill="#0f172a">Telas: Home · Box · Time · Mapas · Regiões</text>
+  <text x="30" y="85" font-size="13" fill="#0f172a">Controles: PokemonSetPopup (Resumo · Status · Moves)</text>
+  <text x="30" y="105" font-size="13" fill="#0f172a">GuiDados (fórmulas de atributos) · EdicaoInline · MainWindow</text>
+
+  <!-- Controller -->
+  <rect x="15" y="160" width="560" height="85" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="30" y="185" font-size="16" font-weight="700" fill="#0f172a">Controller</text>
+  <text x="30" y="210" font-size="13" fill="#0f172a">NavegacaoController · BoxController · TimeController</text>
+  <text x="30" y="230" font-size="13" fill="#0f172a">PokemonSetController (regras da build) · RegioesController</text>
+
+  <!-- Data -->
+  <rect x="15" y="280" width="560" height="110" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="30" y="305" font-size="16" font-weight="700" fill="#0f172a">Data</text>
+  <text x="30" y="330" font-size="13" fill="#0f172a">Configuration/AppServices — compõe os repositórios usados pelas telas</text>
+  <text x="30" y="350" font-size="13" fill="#0f172a">Filters/PokemonFilter — critérios de filtragem da Box</text>
+  <text x="30" y="370" font-size="13" fill="#0f172a">Repositories: Contracts (interfaces) + SQLite (implementações)</text>
+
+  <!-- Persistence -->
+  <rect x="15" y="425" width="560" height="125" rx="10" fill="#fce7f3" stroke="#ec4899" stroke-width="1.5"/>
+  <text x="30" y="450" font-size="16" font-weight="700" fill="#0f172a">Data/Persistence</text>
+  <g font-size="11" fill="#0f172a" text-anchor="middle">
+    <rect x="30" y="468" width="122" height="62" rx="7" fill="#ffffff" stroke="#ec4899"/>
+    <text x="91" y="494" font-weight="700" font-size="12">Seeds JSON</text>
+    <text x="91" y="512">Persistence/Seed</text>
+    <rect x="166" y="468" width="122" height="62" rx="7" fill="#ffffff" stroke="#ec4899"/>
+    <text x="227" y="494" font-weight="700" font-size="12">DatabaseInitializer</text>
+    <text x="227" y="512">+ 8 inicializadores</text>
+    <rect x="302" y="468" width="122" height="62" rx="7" fill="#ffffff" stroke="#ec4899"/>
+    <text x="363" y="494" font-weight="700" font-size="12">AppDbContext</text>
+    <text x="363" y="512">EF Core 10</text>
+    <rect x="438" y="468" width="122" height="62" rx="7" fill="#ffffff" stroke="#ec4899"/>
+    <text x="499" y="494" font-weight="700" font-size="12">gestaopokemon.db</text>
+    <text x="499" y="512">SQLite (local)</text>
+  </g>
+  <g stroke="#475569" stroke-width="1.5" marker-end="url(#seta)">
+    <line x1="152" y1="499" x2="164" y2="499"/>
+    <line x1="288" y1="499" x2="300" y2="499"/>
+    <line x1="424" y1="499" x2="436" y2="499"/>
+  </g>
+
+  <!-- setas entre camadas -->
+  <g stroke="#475569" stroke-width="1.8" marker-end="url(#seta)">
+    <line x1="295" y1="125" x2="295" y2="158"/>
+    <line x1="295" y1="245" x2="295" y2="278"/>
+    <line x1="295" y1="390" x2="295" y2="423"/>
+  </g>
+  <g font-size="11" fill="#475569">
+    <text x="305" y="146">chama</text>
+    <text x="305" y="266">usa</text>
+    <text x="305" y="411">lê e grava</text>
+  </g>
+
+  <!-- model -->
+  <rect x="600" y="15" width="145" height="535" rx="10" fill="#ede9fe" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="672" y="40" font-size="16" font-weight="700" fill="#0f172a" text-anchor="middle">model</text>
+  <text x="672" y="58" font-size="11" fill="#475569" text-anchor="middle">(usado por todas as camadas)</text>
+  <g font-size="12" fill="#0f172a" text-anchor="middle">
+    <rect x="615" y="80" width="115" height="62" rx="7" fill="#ffffff" stroke="#8b5cf6"/>
+    <text x="672" y="104" font-weight="700">Entities</text>
+    <text x="672" y="122" font-size="11">Pokemon, Form, Move…</text>
+    <rect x="615" y="156" width="115" height="62" rx="7" fill="#ffffff" stroke="#8b5cf6"/>
+    <text x="672" y="180" font-weight="700">Enums</text>
+    <text x="672" y="198" font-size="11">Tipo, Natureza, Método</text>
+    <rect x="615" y="232" width="115" height="62" rx="7" fill="#ffffff" stroke="#8b5cf6"/>
+    <text x="672" y="256" font-weight="700">Rules</text>
+    <text x="672" y="274" font-size="11">PokemonNatureRules</text>
+    <rect x="615" y="308" width="115" height="62" rx="7" fill="#ffffff" stroke="#8b5cf6"/>
+    <text x="672" y="332" font-weight="700">ValueObjects</text>
+    <text x="672" y="350" font-size="11">BaseStats, IVs, EVs</text>
+    <rect x="615" y="384" width="115" height="62" rx="7" fill="#ffffff" stroke="#8b5cf6"/>
+    <text x="672" y="408" font-weight="700">metadata</text>
+    <text x="672" y="426" font-size="11">PokemonTypeCatalog</text>
+  </g>
+  <g stroke="#8b5cf6" stroke-width="1.2" stroke-dasharray="4 3">
+    <line x1="575" y1="70" x2="600" y2="70"/>
+    <line x1="575" y1="202" x2="600" y2="202"/>
+    <line x1="575" y1="335" x2="600" y2="335"/>
+    <line x1="575" y1="488" x2="600" y2="488"/>
+  </g>
+</svg>
