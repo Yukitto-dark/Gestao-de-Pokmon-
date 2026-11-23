@@ -505,14 +505,6 @@ Este trabalho aceita o uso de IA até o nível **IA-2**: a IA automatiza parte d
 | **A IA automatiza parte da tarefa** | A IA executou tarefas delimitadas: escrever os scripts que importam e validam os dados da PokéAPI ([9.3](#uso-de-ia)), integrar código ao `master` e corrigir a abertura do banco (commits `8494d03` e `bb527e7`) e redigir esta documentação. O escopo de cada etapa veio dos pedidos dos autores ([9.4](#uso-de-ia)), e o aplicativo não usa IA ao ser executado ([9.1](#uso-de-ia)). |
 | **Supervisão humana contínua** | O trabalho andou por pedidos sucessivos, e não em uma entrega única. Os scripts têm modo `--dry-run` e validam os dados antes de gravar, e o `testes_regioes.sql` traz 87 conferências do tipo esperado × obtido. A documentação passou por pedidos de correção e de novas seções (SOLID, Clean Code e IA). Rodar os scripts, ler os resultados e aceitar o conteúdo são atos dos autores, que respondem pelo conteúdo entregue. |
 
-Ressalvas:
-
-- A documentação foi redigida quase toda pela IA. O enquadramento no IA-2 só vale se os autores a leram, conferiram e assumem o conteúdo.
-- Nem o Git nem este texto comprovam a supervisão: ela é informada pelos autores, e o histórico não a prova.
-- O uso de IA fora dos dois commits marcados (por exemplo, no código da branch `alt`) não aparece no histórico e não está coberto por este registro. Se esse uso foi além de "parte da tarefa" ou ocorreu sem supervisão, o nível precisa ser reavaliado.
-
-**Enquadramento: IA-2**, desde que a supervisão descrita acima tenha ocorrido.
-
 <a id="modelo-de-dados"></a>
 
 ## 10. Modelo de dados
